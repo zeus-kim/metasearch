@@ -230,3 +230,70 @@
 {"lang":"ja","url":"https://news.yahoo.co.jp/rss/topics/top-picks.xml","category":"news","country":"JP","source":"Yahoo!ニュース","tier":1}
 {"lang":"ja","url":"https://news.livedoor.com/topics/rss/top.xml","category":"news","country":"JP","source":"livedoorニュース","tier":1}
 {"lang":"ja","url":"https://gigazine.net/news/rss_2.0/","category":"tech","country":"JP","source":"GIGAZINE","tier":1}
+
+# === BG ===
+{"lang": "bg", "url": "https://www.dnevnik.bg/rss/", "category": "news", "country": "BG", "source": "Dnevnik", "tier": 1}
+
+# === CA ===
+{"lang": "ca", "url": "https://www.vilaweb.cat/feed/", "category": "news", "country": "ES", "source": "VilaWeb", "tier": 1}
+{"lang": "ca", "url": "https://www.ara.cat/rss/", "category": "news", "country": "ES", "source": "Ara", "tier": 1}
+{"lang": "ca", "url": "https://www.naciodigital.cat/rss", "category": "news", "country": "ES", "source": "NacióDigital", "tier": 1}
+
+# === ET ===
+{"lang": "et", "url": "https://www.err.ee/rss", "category": "news", "country": "EE", "source": "ERR", "tier": 1}
+{"lang": "et", "url": "https://www.postimees.ee/rss/", "category": "news", "country": "EE", "source": "Postimees", "tier": 1}
+
+# === HR ===
+{"lang": "hr", "url": "https://www.index.hr/rss", "category": "news", "country": "HR", "source": "Index.hr", "tier": 1}
+{"lang": "hr", "url": "https://www.vecernji.hr/rss", "category": "news", "country": "HR", "source": "Vecernji list", "tier": 1}
+
+# === HY ===
+{"lang": "hy", "url": "https://www.azatutyun.am/api/", "category": "news", "country": "AM", "source": "Radio Free Europe/RL Armenian", "tier": 1}
+
+# === IT ===
+{"lang": "it", "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml", "category": "news", "country": "IT", "source": "La Repubblica", "tier": 1}
+{"lang": "it", "url": "https://www.corriere.it/rss/homepage.xml", "category": "news", "country": "IT", "source": "Corriere della Sera", "tier": 1}
+{"lang": "it", "url": "https://www.ilsole24ore.com/rss/italia.xml", "category": "news", "country": "IT", "source": "Il Sole 24 Ore", "tier": 1}
+{"lang": "it", "url": "https://www.ansa.it/sito/ansait_rss.xml", "category": "news", "country": "IT", "source": "ANSA", "tier": 1}
+
+# === KA ===
+{"lang": "ka", "url": "https://civil.ge/rss", "category": "news", "country": "GE", "source": "Civil.ge", "tier": 1}
+{"lang": "ka", "url": "https://www.radiotavisupleba.ge/api/", "category": "news", "country": "GE", "source": "Radio Free Europe/RL Georgian", "tier": 1}
+
+# === KK ===
+{"lang": "kk", "url": "https://www.azattyq.org/api/", "category": "news", "country": "KZ", "source": "Radio Free Europe/RL Kazakh", "tier": 1}
+
+# === LT ===
+{"lang": "lt", "url": "https://www.15min.lt/rss", "category": "news", "country": "LT", "source": "15min", "tier": 1}
+{"lang": "lt", "url": "https://www.delfi.lt/rss", "category": "news", "country": "LT", "source": "Delfi Lithuania", "tier": 1}
+
+# === LV ===
+{"lang": "lv", "url": "https://www.tvnet.lv/rss", "category": "news", "country": "LV", "source": "TVNET", "tier": 1}
+{"lang": "lv", "url": "https://www.lsm.lv/rss", "category": "news", "country": "LV", "source": "LSM", "tier": 1}
+
+# === MK ===
+{"lang": "mk", "url": "https://meta.mk/rss/", "category": "news", "country": "MK", "source": "Meta.mk", "tier": 1}
+{"lang": "mk", "url": "https://www.slobodnaevropa.mk/api/", "category": "news", "country": "MK", "source": "Radio Free Europe/RL Macedonian", "tier": 1}
+
+# === MY ===
+{"lang": "my", "url": "https://burmese.voanews.com/api/", "category": "news", "country": "MM", "source": "VOA Burmese", "tier": 1}
+{"lang": "my", "url": "https://www.rfa.org/burmese/rss2.xml", "category": "news", "country": "MM", "source": "RFA Burmese", "tier": 1}
+
+# === NE ===
+{"lang": "ne", "url": "https://www.onlinekhabar.com/rss", "category": "news", "country": "NP", "source": "Online Khabar", "tier": 1}
+
+# === SI ===
+{"lang": "si", "url": "https://www.adaderana.lk/rss.php", "category": "news", "country": "LK", "source": "Ada Derana", "tier": 1}
+
+# === SK ===
+{"lang": "sk", "url": "https://www.sme.sk/rss", "category": "news", "country": "SK", "source": "SME", "tier": 1}
+{"lang": "sk", "url": "https://dennikn.sk/rss/", "category": "news", "country": "SK", "source": "Dennik N", "tier": 1}
+{"lang": "sk", "url": "https://www.aktuality.sk/rss", "category": "news", "country": "SK", "source": "Aktuality", "tier": 1}
+
+# === SL ===
+{"lang": "sl", "url": "https://www.24ur.com/rss", "category": "news", "country": "SI", "source": "24ur", "tier": 1}
+{"lang": "sl", "url": "https://www.delo.si/rss/", "category": "news", "country": "SI", "source": "Delo", "tier": 1}
+
+# === UZ ===
+{"lang": "uz", "url": "https://kun.uz/rss/", "category": "news", "country": "UZ", "source": "Kun.uz", "tier": 1}
+{"lang": "uz", "url": "https://www.ozodlik.org/api/", "category": "news", "country": "UZ", "source": "Radio Free Europe/RL Uzbek", "tier": 1}
