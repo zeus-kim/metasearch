@@ -1,0 +1,35 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "12345": {
+        "pageid": 12345,
+        "ns": 6,
+        "title": "File:Cat poster 1.jpg",
+        "index": 1,
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat_poster_1.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cat_poster_1.jpg",
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat_poster_1.jpg/320px-Cat_poster_1.jpg",
+            "thumbwidth": 320,
+            "thumbheight": 240
+          }
+        ]
+      },
+      "67890": {
+        "pageid": 67890,
+        "ns": 6,
+        "title": "File:Kitten.jpg",
+        "index": 2,
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Kitten.jpg",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kitten.jpg",
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kitten.jpg/320px-Kitten.jpg"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yandexsearch version="1.0">
+  <response date="20240115T040000">
+    <found priority="phrase">12000000</found>
+    <found priority="strict">9000000</found>
+    <results>
+      <grouping attr="" mode="flat" groups-on-page="10" docs-in-group="1">
+        <found priority="phrase">12000000</found>
+        <group>
+          <categories />
+          <doccount>1</doccount>
+          <doc id="Z1">
+            <relevance priority="phrase" />
+            <url>https://www.rust-lang.org/</url>
+            <domain>www.rust-lang.org</domain>
+            <title><hlword>Rust</hlword> Programming Language</title>
+            <headline>A language empowering everyone to build software.</headline>
+            <modtime>20240115T040000</modtime>
+            <size>26938</size>
+            <charset>utf-8</charset>
+            <passages>
+              <passage>A language empowering everyone to build <hlword>reliable</hlword> and efficient software.</passage>
+            </passages>
+            <mime-type>text/html</mime-type>
+          </doc>
+        </group>
+        <group>
+          <categories />
+          <doccount>1</doccount>
+          <doc id="Z2">
+            <relevance priority="phrase" />
+            <url>https://en.wikipedia.org/wiki/Rust_(programming_language)</url>
+            <domain>en.wikipedia.org</domain>
+            <title><hlword>Rust</hlword> (programming language) - Wikipedia</title>
+            <headline>General-purpose programming language.</headline>
+            <modtime>20240110T120000</modtime>
+            <passages>
+              <passage><hlword>Rust</hlword> is a general-purpose language emphasizing performance and safety.</passage>
+            </passages>
+          </doc>
+        </group>
+      </grouping>
+    </results>
+  </response>
+</yandexsearch>

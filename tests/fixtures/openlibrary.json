@@ -1,0 +1,23 @@
+{
+  "numFound": 12,
+  "start": 0,
+  "numFoundExact": true,
+  "docs": [
+    {
+      "key": "/works/OL24209721W",
+      "title": "The Rust Programming Language",
+      "author_name": ["Steve Klabnik", "Carol Nichols"],
+      "first_publish_year": 2018,
+      "cover_i": 9276880,
+      "edition_count": 5
+    },
+    {
+      "key": "/works/OL12345678W",
+      "title": "Programming Rust",
+      "author_name": ["Jim Blandy", "Jason Orendorff"],
+      "first_publish_year": 2017,
+      "cover_i": 8123456,
+      "edition_count": 3
+    }
+  ]
+}

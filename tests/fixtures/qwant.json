@@ -1,0 +1,47 @@
+{
+  "status": "success",
+  "data": {
+    "query": {
+      "locale": "en_US",
+      "query": "rust programming language",
+      "offset": 0
+    },
+    "result": {
+      "total": 12000000,
+      "items": {
+        "mainline": [
+          {
+            "type": "ads",
+            "items": [
+              {
+                "type": "ad",
+                "title": "Buy Rust Cleaner",
+                "url": "https://ads.example.com/rust"
+              }
+            ]
+          },
+          {
+            "type": "web",
+            "items": [
+              {
+                "type": "web",
+                "title": "Rust <b>Programming</b> Language",
+                "favicon": "https://s.qwant.com/fav/r/u/www_rust_lang_org.ico",
+                "url": "https://www.rust-lang.org/",
+                "source": "https://www.rust-lang.org",
+                "desc": "A language empowering everyone to build <b>reliable</b> and efficient software."
+              },
+              {
+                "type": "web",
+                "title": "Rust (programming language) - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+                "source": "https://en.wikipedia.org",
+                "desc": "Rust is a general-purpose programming language emphasizing performance and safety."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "responseData": {
+    "translatedText": "Bonjour le monde",
+    "match": 1
+  },
+  "responseStatus": 200,
+  "matches": [
+    {
+      "translation": "Bonjour le monde",
+      "source": "en",
+      "target": "fr"
+    }
+  ]
+}

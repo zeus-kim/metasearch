@@ -1,0 +1,23 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "searchinfo": { "totalhits": 312 },
+    "search": [
+      {
+        "ns": 0,
+        "title": "Python Programming",
+        "pageid": 12345,
+        "size": 9000,
+        "wordcount": 1200,
+        "snippet": "<span class=\"searchmatch\">Python</span> is a high-level, general-purpose programming language.",
+        "timestamp": "2026-02-02T00:00:00Z"
+      },
+      {
+        "ns": 0,
+        "title": "Python Programming/Basic Math",
+        "pageid": 12346,
+        "snippet": "Basic math in <span class=\"searchmatch\">Python</span>."
+      }
+    ]
+  }
+}

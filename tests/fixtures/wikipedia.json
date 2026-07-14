@@ -1,0 +1,20 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "searchinfo": { "totalhits": 12453, "suggestion": "albert einstein" },
+    "search": [
+      {
+        "ns": 0,
+        "title": "Albert Einstein",
+        "pageid": 736,
+        "snippet": "German-born <span class=\"searchmatch\">physicist</span> who developed the theory of relativity &amp; more."
+      },
+      {
+        "ns": 0,
+        "title": "Theory of relativity",
+        "pageid": 19555,
+        "snippet": "The <span class=\"searchmatch\">theory</span> of relativity usually encompasses two theories."
+      }
+    ]
+  }
+}

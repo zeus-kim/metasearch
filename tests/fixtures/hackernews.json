@@ -1,0 +1,24 @@
+{
+  "hits": [
+    {
+      "objectID": "38765432",
+      "title": "Show HN: A privacy-respecting metasearch engine",
+      "url": "https://example.com/metasearch",
+      "author": "pg",
+      "points": 412,
+      "num_comments": 137,
+      "created_at": "2026-05-01T12:34:56.000Z"
+    },
+    {
+      "objectID": "38765999",
+      "story_title": "Self-post without a URL",
+      "url": "",
+      "author": "dang",
+      "points": 88,
+      "num_comments": 12,
+      "created_at": "2026-05-02T08:00:00.000Z"
+    }
+  ],
+  "nbHits": 2,
+  "page": 0
+}

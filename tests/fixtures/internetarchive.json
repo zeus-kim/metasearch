@@ -1,0 +1,27 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 12,
+    "params": { "query": "rust programming", "rows": "10" }
+  },
+  "response": {
+    "numFound": 240,
+    "start": 0,
+    "docs": [
+      {
+        "identifier": "rust-programming-language",
+        "title": "The Rust Programming Language (audiobook)",
+        "description": ["A complete read-through of the official Rust book."],
+        "mediatype": "audio",
+        "year": "2020"
+      },
+      {
+        "identifier": "intro-to-rust-lecture",
+        "title": "Introduction to Rust - University Lecture",
+        "description": "Recorded lecture introducing systems programming with Rust.",
+        "mediatype": "movies",
+        "year": "2019"
+      }
+    ]
+  }
+}

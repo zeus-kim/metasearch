@@ -1,0 +1,38 @@
+{
+  "_type": "News",
+  "totalEstimatedMatches": 250,
+  "value": [
+    {
+      "name": "Rust 1.0 released to widespread acclaim",
+      "url": "https://news.example.com/rust-1-0",
+      "description": "The Rust programming language reaches a major milestone with its first stable release.",
+      "datePublished": "2026-05-29T08:30:00.0000000Z",
+      "category": "ScienceAndTechnology",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "Example News"
+        }
+      ],
+      "image": {
+        "thumbnail": {
+          "contentUrl": "https://www.bing.com/th?id=ON.rust1",
+          "width": 700,
+          "height": 466
+        }
+      }
+    },
+    {
+      "name": "Why developers love Rust",
+      "url": "https://blog.example.org/why-rust",
+      "description": "A look at the features that make Rust a favorite in surveys.",
+      "datePublished": "2026-05-28T14:00:00.0000000Z",
+      "provider": [
+        {
+          "_type": "Organization",
+          "name": "Example Blog"
+        }
+      ]
+    }
+  ]
+}

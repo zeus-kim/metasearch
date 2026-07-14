@@ -1,0 +1,24 @@
+{
+  "_type": "SearchResponse",
+  "webPages": {
+    "webSearchUrl": "https://www.bing.com/search?q=rust",
+    "totalEstimatedMatches": 14200000,
+    "value": [
+      {
+        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
+        "name": "Rust Programming Language",
+        "url": "https://www.rust-lang.org/",
+        "displayUrl": "https://www.rust-lang.org",
+        "snippet": "A language empowering everyone to build reliable and efficient software.",
+        "datePublished": "2024-01-10T00:00:00.0000000"
+      },
+      {
+        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
+        "name": "Install Rust",
+        "url": "https://www.rust-lang.org/tools/install",
+        "displayUrl": "https://www.rust-lang.org/tools/install",
+        "snippet": "Rustup: the Rust installer and version management tool."
+      }
+    ]
+  }
+}

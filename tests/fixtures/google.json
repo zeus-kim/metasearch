@@ -1,0 +1,27 @@
+{
+  "kind": "customsearch#search",
+  "searchInformation": {
+    "totalResults": "12300000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Rust Programming Language",
+      "link": "https://www.rust-lang.org/",
+      "displayLink": "www.rust-lang.org",
+      "snippet": "A language empowering everyone to build reliable and\nmemory-safe software.",
+      "pagemap": {
+        "cse_thumbnail": [
+          { "src": "https://example.com/thumb.png", "width": "300", "height": "168" }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Rust Programming Language - The Rust Book",
+      "link": "https://doc.rust-lang.org/book/",
+      "displayLink": "doc.rust-lang.org",
+      "snippet": "Welcome to The Rust Programming Language, an introductory book about Rust."
+    }
+  ]
+}

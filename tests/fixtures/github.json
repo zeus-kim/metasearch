@@ -1,0 +1,22 @@
+{
+  "total_count": 2,
+  "incomplete_results": false,
+  "items": [
+    {
+      "full_name": "BurntSushi/ripgrep",
+      "html_url": "https://github.com/BurntSushi/ripgrep",
+      "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+      "stargazers_count": 48000,
+      "language": "Rust",
+      "updated_at": "2026-05-20T10:00:00Z"
+    },
+    {
+      "full_name": "sharkdp/fd",
+      "html_url": "https://github.com/sharkdp/fd",
+      "description": "A simple, fast and user-friendly alternative to 'find'",
+      "stargazers_count": 33000,
+      "language": "Rust",
+      "updated_at": "2026-05-19T09:00:00Z"
+    }
+  ]
+}

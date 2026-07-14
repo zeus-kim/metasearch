@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "id": 211684,
+      "name": "forgejo",
+      "full_name": "forgejo/forgejo",
+      "description": "Beyond coding. We forge.",
+      "html_url": "https://codeberg.org/forgejo/forgejo",
+      "language": "Go",
+      "stars_count": 4763,
+      "forks_count": 821,
+      "updated_at": "2026-05-30T02:57:07+02:00"
+    },
+    {
+      "id": 222,
+      "name": "forgejo-docs",
+      "full_name": "forgejo/docs",
+      "description": "",
+      "html_url": "https://codeberg.org/forgejo/docs",
+      "language": "",
+      "stars_count": 42,
+      "forks_count": 10,
+      "updated_at": "2026-01-01T00:00:00+02:00"
+    }
+  ]
+}

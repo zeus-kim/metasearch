@@ -1,0 +1,22 @@
+{
+  "Heading": "Rust",
+  "AbstractText": "Rust is a multi-paradigm, general-purpose programming language that emphasizes performance, type safety, and concurrency.",
+  "AbstractSource": "Wikipedia",
+  "AbstractURL": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+  "Image": "/i/9c8a2f.png",
+  "RelatedTopics": [
+    {
+      "FirstURL": "https://duckduckgo.com/Rust_(video_game)",
+      "Text": "Rust (video game) - A survival game developed by Facepunch Studios."
+    },
+    {
+      "Name": "Programming",
+      "Topics": [
+        {
+          "FirstURL": "https://duckduckgo.com/Cargo_(software)",
+          "Text": "Cargo - The Rust package manager."
+        }
+      ]
+    }
+  ]
+}

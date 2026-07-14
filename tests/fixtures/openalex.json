@@ -1,0 +1,30 @@
+{
+  "meta": { "count": 1030466, "page": 1, "per_page": 2 },
+  "results": [
+    {
+      "id": "https://openalex.org/W2963403868",
+      "doi": "https://doi.org/10.5555/3295222.3295349",
+      "title": "Attention Is All You Need",
+      "publication_year": 2017,
+      "publication_date": "2017-06-12",
+      "cited_by_count": 95000,
+      "authorships": [
+        { "author": { "display_name": "Ashish Vaswani" } },
+        { "author": { "display_name": "Noam Shazeer" } },
+        { "author": { "display_name": "Niki Parmar" } },
+        { "author": { "display_name": "Jakob Uszkoreit" } }
+      ],
+      "primary_location": { "landing_page_url": "https://doi.org/10.5555/3295222.3295349" }
+    },
+    {
+      "id": "https://openalex.org/W4386075553",
+      "doi": "",
+      "title": "Neighborhood Attention Transformer",
+      "publication_year": 2023,
+      "publication_date": "2023-06-01",
+      "cited_by_count": 120,
+      "authorships": [{ "author": { "display_name": "Ali Hassani" } }],
+      "primary_location": { "landing_page_url": "https://doi.org/10.1109/cvpr52729.2023.00599" }
+    }
+  ]
+}

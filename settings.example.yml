@@ -1,0 +1,468 @@
+search:
+  formats:
+  - html
+  - json
+  - rss
+  - csv
+  default_lang: en
+  default_language: auto
+  safe_search: 0
+  default_categories:
+  - general
+  autocomplete: duckduckgo
+  favicon_resolver: https://icons.duckduckgo.com/ip3/{domain}.ico
+  domain_trust: []
+  personalization: false
+  news:
+    per_source_cap: 2
+    freshness_half_life_hours: 18.0
+    freshness_weight: 0.5
+    dedup_title_similarity: 0.6
+    cache_ttl_secs: 180
+    discover_cache_ttl_hours: 2
+    discover_max_age_hours: 48
+    discover_min_image_count: 5
+    enrich_max: 0
+    enrich_concurrency: 8
+    enrich_timeout_ms: 3500
+    enrich_budget_ms: 6000
+    max_age_days: 14
+    min_results: 3
+server:
+  bind_address: 0.0.0.0  # Allow LAN access (use 127.0.0.1 for local only)
+  port: 8889
+  rate_limit:
+    enabled: true
+    search_requests_per_minute: 60
+    preferences_requests_per_minute: 10
+    window_secs: 60
+  request_timeout_secs: 9
+  max_results_per_engine: 10
+  max_connections: 64
+  read_timeout_secs: 10
+  cache_ttl_secs: 300
+  engine_min_interval_ms: 200
+  image_proxy: true
+  cache_backend: memory
+  cache_dir: .metasearch-cache
+  redis_url: redis://127.0.0.1:6379
+  proxies: []
+  max_retries: 1
+  engine_failure_threshold: 5
+  engine_cooldown_secs: 60
+  empty_result_tracking: true
+  allow_private_urls: false
+ai:
+  enabled: true
+  # Local Ollama (recommended for personal use)
+  base_url: http://localhost:11434
+  model: llama3.2:3b  # or gemma3:4b, qwen2.5:7b
+  article_model: llama3.2:3b
+  embedding_model: nomic-embed-text
+  answer: true
+  expand: false
+  rerank: false
+  cluster: false
+  conversational: false
+  vision: false
+  vision_model: llava
+  answer_top_n: 5
+  timeout_secs: 30
+  answer_language: auto  # auto-detect query language
+  api_key: # Optional: set via OPENAI_API_KEY for cloud APIs
+  input_cost_per_million: 0.0  # Free for local Ollama
+  output_cost_per_million: 0.0
+  track_usage: false
+branding:
+  app_name: Metasearch
+feeds:
+  enabled: true
+  retention_days: 7
+  poll_interval_mins: 30
+  languages: []
+  disabled_feeds: []
+engines:
+- name: wikipedia
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: wikidata
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: duckduckgo
+  enabled: true
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: duckduckgo_lite
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: brave
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: mojeek
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: github
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: stackexchange
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: arxiv
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: hackernews
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  - news
+  base_url: null
+  timeout_secs: null
+- name: wikicommons
+  enabled: false
+  weight: 1.0
+  categories:
+  - images
+  base_url: null
+  timeout_secs: null
+- name: duckduckgo_images
+  enabled: true
+  weight: 1.0
+  categories:
+  - images
+  base_url: null
+  timeout_secs: null
+- name: duckduckgo_videos
+  enabled: false
+  weight: 1.0
+  categories:
+  - videos
+  base_url: null
+  timeout_secs: null
+- name: bing_images
+  enabled: false
+  weight: 1.0
+  categories:
+  - images
+  base_url: null
+  timeout_secs: null
+- name: brave_images
+  enabled: false
+  weight: 1.0
+  categories:
+  - images
+  base_url: null
+  timeout_secs: null
+- name: openverse
+  enabled: false
+  weight: 1.0
+  categories:
+  - images
+  base_url: null
+  timeout_secs: null
+- name: archive_music
+  enabled: false
+  weight: 1.0
+  categories:
+  - music
+  base_url: null
+  timeout_secs: null
+- name: gitlab
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: codeberg
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: crates_io
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: npm
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: packagist
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: rubygems
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: dockerhub
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: askubuntu
+  enabled: false
+  weight: 1.0
+  categories:
+  - it
+  base_url: null
+  timeout_secs: null
+- name: wiktionary
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: wikibooks
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: wikiquote
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: wikisource
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: openlibrary
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  - files
+  base_url: null
+  timeout_secs: null
+- name: internetarchive
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  - files
+  base_url: null
+  timeout_secs: null
+- name: openalex
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: crossref
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: europepmc
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: semanticscholar
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: doaj
+  enabled: false
+  weight: 1.0
+  categories:
+  - science
+  base_url: null
+  timeout_secs: null
+- name: wikinews
+  enabled: false
+  weight: 1.0
+  categories:
+  - news
+  base_url: null
+  timeout_secs: null
+- name: googlenews
+  enabled: false
+  weight: 1.0
+  categories:
+  - news
+  base_url: null
+  timeout_secs: null
+- name: gdelt
+  enabled: false
+  weight: 1.0
+  categories:
+  - news
+  base_url: null
+  timeout_secs: null
+- name: lemmy
+  enabled: false
+  weight: 1.0
+  categories:
+  - social
+  - news
+  base_url: null
+  timeout_secs: null
+- name: peertube
+  enabled: false
+  weight: 1.0
+  categories:
+  - videos
+  base_url: null
+  timeout_secs: null
+- name: openstreetmap
+  enabled: false
+  weight: 1.0
+  categories:
+  - map
+  base_url: null
+  timeout_secs: null
+- name: startpage
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: qwant
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: google
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: bing
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: brave_api
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: yandex
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: bingnews
+  enabled: false
+  weight: 1.0
+  categories:
+  - news
+  base_url: null
+  timeout_secs: null
+- name: reddit
+  enabled: false
+  weight: 1.0
+  categories:
+  - social
+  base_url: null
+  timeout_secs: null
+- name: marginalia
+  enabled: false
+  weight: 1.0
+  categories:
+  - general
+  base_url: null
+  timeout_secs: null
+- name: local_feeds
+  enabled: true
+  weight: 1.5
+  categories:
+  - general
+  - news
+  base_url: null
+  timeout_secs: null
+- name: local_news
+  enabled: true
+  weight: 1.0
+  categories:
+  - news
+  base_url: null
+  timeout_secs: null
+- name: googlenews
+  enabled: false
+  weight: 1.2
+  categories:
+  - general
+  - news
+  base_url: null
+  timeout_secs: null

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Example Search</ShortName>
+  <Description>Example OpenSearch description document for the generic adapter.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html"
+       template="https://search.example.com/?q={searchTerms}"/>
+  <Url type="application/json"
+       template="https://search.example.com/api?q={searchTerms}&amp;format=json&amp;count={count?}"/>
+  <Url type="application/rss+xml"
+       template="https://search.example.com/feed?q={searchTerms}&amp;format=rss"/>
+</OpenSearchDescription>

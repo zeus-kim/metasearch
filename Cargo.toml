@@ -1,0 +1,62 @@
+[package]
+name = "metasearch"
+version = "0.1.0"
+edition = "2021"
+default-run = "metasearch"
+description = "Self-hostable, privacy-first answer engine with AI-powered search."
+authors = ["Orgos contributors"]
+license = "MIT"
+readme = "README.md"
+keywords = ["search", "metasearch", "ai", "rag", "privacy"]
+categories = ["web-programming", "command-line-utilities"]
+
+[lib]
+name = "metasearch"
+path = "src/lib.rs"
+
+# Standalone HTTP server binary (JSON API + streaming /answer).
+[[bin]]
+name = "metasearch"
+path = "src/main.rs"
+
+# Terminal client: `cargo run --bin ask -- "your question"`.
+[[bin]]
+name = "ask"
+path = "src/bin/ask.rs"
+
+# MCP stdio server for Cursor / Claude Desktop agents.
+[[bin]]
+name = "metasearch-mcp"
+path = "src/bin/mcp.rs"
+
+[features]
+default = []
+# Re-attempt previously-dropped engines (bot-block-prone). Opt-in at build time.
+reddit = []
+marginalia = []
+# Optional Redis-backed persistent cache. Uses a hand-rolled minimal RESP client
+# over tokio (no extra crate), so enabling it never requires fetching new deps.
+redis = []
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+reqwest = { version = "0.12", features = ["json", "cookies"] }
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3"
+scraper = "0.20"
+url = "2"
+quick-xml = "0.39"
+chrono = "0.4"
+rusqlite = { version = "0.32", features = ["bundled"] }
+rand = "0.8"
+sha2 = "0.10"
+flate2 = "1"
+regex = "1.12.4"
+
+[dev-dependencies]
+# `test-util` enables tokio's paused-clock test runtime (deterministic, instant
+# time-based tests). It only flips a feature flag on the already-vendored tokio
+# crate, so it pulls no new dependencies.
+tokio = { version = "1", features = ["full", "test-util"] }

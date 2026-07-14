@@ -1,0 +1,21 @@
+{
+  "searchinfo": { "search": "einstein" },
+  "search": [
+    {
+      "id": "Q937",
+      "title": "Q937",
+      "label": "Albert Einstein",
+      "description": "German-born theoretical physicist (1879–1955)",
+      "concepturi": "http://www.wikidata.org/entity/Q937",
+      "url": "//www.wikidata.org/wiki/Q937"
+    },
+    {
+      "id": "Q11942",
+      "title": "Q11942",
+      "label": "Einsteinium",
+      "description": "chemical element with symbol Es and atomic number 99",
+      "concepturi": "http://www.wikidata.org/entity/Q11942"
+    }
+  ],
+  "success": 1
+}

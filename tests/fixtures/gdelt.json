@@ -1,0 +1,24 @@
+{
+  "articles": [
+    {
+      "url": "https://example.com/news/rust-2026",
+      "url_mobile": "",
+      "title": "Rust adoption surges across the industry in 2026",
+      "seendate": "20260530T101500Z",
+      "socialimage": "https://example.com/img/rust.jpg",
+      "domain": "example.com",
+      "language": "English",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://news.example.org/rust-foundation",
+      "url_mobile": "",
+      "title": "Rust Foundation announces new funding round",
+      "seendate": "20260529T180000Z",
+      "socialimage": "",
+      "domain": "news.example.org",
+      "language": "English",
+      "sourcecountry": "United Kingdom"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "total": 57,
+  "page": 1,
+  "pageSize": 10,
+  "results": [
+    {
+      "id": "abc123",
+      "bibjson": {
+        "title": "Open Access and the Future of Scholarly Publishing",
+        "year": "2021",
+        "author": [{ "name": "Jane Researcher" }, { "name": "John Scholar" }],
+        "journal": { "title": "Journal of Open Science" },
+        "link": [
+          { "type": "fulltext", "url": "https://journal.example/articles/123" }
+        ],
+        "identifier": [{ "type": "doi", "id": "10.1234/jos.2021.123" }]
+      }
+    },
+    {
+      "id": "def456",
+      "bibjson": {
+        "title": "Measuring the Impact of Open Repositories",
+        "year": "2022",
+        "author": [{ "name": "Maria Lopez" }],
+        "journal": { "title": "Open Metrics Review" },
+        "link": [],
+        "identifier": [{ "type": "doi", "id": "10.1234/omr.2022.456" }]
+      }
+    }
+  ]
+}

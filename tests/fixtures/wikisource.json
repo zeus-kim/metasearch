@@ -1,0 +1,21 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "searchinfo": { "totalhits": 153 },
+    "search": [
+      {
+        "ns": 0,
+        "title": "On the Origin of Species",
+        "pageid": 4501,
+        "snippet": "The full text of <span class=\"searchmatch\">On the Origin of Species</span> by Charles Darwin.",
+        "timestamp": "2026-03-03T00:00:00Z"
+      },
+      {
+        "ns": 0,
+        "title": "Relativity: The Special and General Theory",
+        "pageid": 4502,
+        "snippet": "Text by Albert <span class=\"searchmatch\">Einstein</span>."
+      }
+    ]
+  }
+}

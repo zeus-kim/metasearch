@@ -1,0 +1,31 @@
+{
+  "total": 12500,
+  "offset": 0,
+  "next": 10,
+  "data": [
+    {
+      "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "externalIds": { "DOI": "10.48550/arXiv.1706.03762" },
+      "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "title": "Attention Is All You Need",
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks.",
+      "year": 2017,
+      "citationCount": 95000,
+      "authors": [
+        { "authorId": "1", "name": "Ashish Vaswani" },
+        { "authorId": "2", "name": "Noam Shazeer" },
+        { "authorId": "3", "name": "Niki Parmar" }
+      ]
+    },
+    {
+      "paperId": "abc",
+      "externalIds": {},
+      "url": "https://www.semanticscholar.org/paper/abc",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+      "abstract": "We introduce a new language representation model called BERT.",
+      "year": 2019,
+      "citationCount": 80000,
+      "authors": [{ "authorId": "4", "name": "Jacob Devlin" }]
+    }
+  ]
+}

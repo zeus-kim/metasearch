@@ -1,0 +1,23 @@
+{
+  "query": "cat",
+  "results": [
+    {
+      "title": "Test Cat Image",
+      "image": "https://example.com/cat-full.jpg",
+      "thumbnail": "https://example.com/cat-thumb.jpg",
+      "url": "https://example.com/cat-page",
+      "source": "Example",
+      "height": 768,
+      "width": 1024
+    },
+    {
+      "title": "Another Cat",
+      "image": "https://example.com/kitten-full.jpg",
+      "thumbnail": "https://example.com/kitten-thumb.jpg",
+      "url": "https://example.com/kitten-page",
+      "source": "Example",
+      "height": 600,
+      "width": 800
+    }
+  ]
+}

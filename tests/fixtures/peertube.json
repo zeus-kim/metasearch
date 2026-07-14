@@ -1,0 +1,30 @@
+{
+  "total": 10000,
+  "data": [
+    {
+      "id": 167978,
+      "uuid": "da5463ca-fbc7-4311-948a-356594d5c70a",
+      "shortUUID": "sXGnj113k5GYzdzzYmr4cY",
+      "name": "Installing Linux Doesn't Need to Change. The Experience Does.",
+      "description": "People online complain that Linux is hard to install for new users.",
+      "duration": 754,
+      "views": 12873,
+      "publishedAt": "2025-05-11T20:36:00.942Z",
+      "thumbnailUrl": "https://spectra.video/lazy-static/thumbnails/e6b77993.jpg",
+      "url": "https://spectra.video/w/sXGnj113k5GYzdzzYmr4cY",
+      "account": { "displayName": "Trafotin" },
+      "channel": { "displayName": "Trafotin" }
+    },
+    {
+      "id": 2,
+      "name": "Short clip",
+      "description": "",
+      "duration": 42,
+      "views": 5,
+      "publishedAt": "2026-01-01T00:00:00.000Z",
+      "thumbnailUrl": "",
+      "url": "https://tube.example/w/abc",
+      "channel": { "displayName": "Example" }
+    }
+  ]
+}

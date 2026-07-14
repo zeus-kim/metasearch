@@ -1,0 +1,32 @@
+/target
+**/*.rs.bk
+*.pdb
+
+# Local runtime cache (privacy: may contain cached upstream responses)
+.metasearch-cache/
+
+# Local settings overrides / secrets
+settings.yml
+settings.local.yml
+.env
+
+# Logs & OS noise
+**/*.log
+.DS_Store
+
+# Generated data
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Backup files
+*.bak
+*.bak.*
+
+# Generated databases
+*.db
+
+# Experiment directories (not for public release)
+services/tokmor/

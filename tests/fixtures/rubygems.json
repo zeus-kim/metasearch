@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rails",
+    "downloads": 500000000,
+    "version": "7.1.3",
+    "info": "Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity.",
+    "project_uri": "https://rubygems.org/gems/rails",
+    "homepage_uri": "https://rubyonrails.org"
+  },
+  {
+    "name": "rake",
+    "downloads": 900000000,
+    "version": "13.1.0",
+    "info": "Rake is a Make-like program implemented in Ruby.",
+    "project_uri": "https://rubygems.org/gems/rake",
+    "homepage_uri": "https://github.com/ruby/rake"
+  }
+]

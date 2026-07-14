@@ -1,0 +1,24 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "778899": {
+        "pageid": 778899,
+        "ns": 0,
+        "title": "Scientists report breakthrough in battery technology",
+        "snippet": "Researchers announced a <span class=\"searchmatch\">breakthrough</span> in solid-state battery technology today.",
+        "thumbnail": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Battery_icon.svg/320px-Battery_icon.svg.png",
+          "width": 320,
+          "height": 320
+        }
+      },
+      "778900": {
+        "pageid": 778900,
+        "ns": 0,
+        "title": "Election results announced in major vote",
+        "snippet": "Official <span class=\"searchmatch\">results</span> were announced this morning."
+      }
+    }
+  }
+}

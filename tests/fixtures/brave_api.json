@@ -1,0 +1,44 @@
+{
+  "type": "search",
+  "query": {
+    "original": "rust programming language",
+    "show_strict_warning": false,
+    "country": "us"
+  },
+  "web": {
+    "type": "search",
+    "results": [
+      {
+        "title": "Rust Programming Language",
+        "url": "https://www.rust-lang.org/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "A language empowering everyone to build <strong>reliable</strong> and efficient software.",
+        "page_age": "2024-01-15T00:00:00",
+        "profile": {
+          "name": "Rust-lang",
+          "url": "https://www.rust-lang.org/",
+          "long_name": "rust-lang.org"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/rust-thumb.jpg",
+          "original": "https://www.rust-lang.org/static/images/rust-social.jpg",
+          "logo": false
+        }
+      },
+      {
+        "title": "Rust (programming language) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+        "description": "<strong>Rust</strong> is a general-purpose programming language emphasizing performance, type safety, and concurrency.",
+        "age": "3 weeks ago",
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result"
+      }
+    ]
+  }
+}

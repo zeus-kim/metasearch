@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "express",
+        "version": "5.2.1",
+        "description": "Fast, unopinionated, minimalist web framework",
+        "keywords": ["express", "framework", "web", "http", "rest"],
+        "date": "2025-12-01T20:49:43.268Z",
+        "links": {
+          "homepage": "https://expressjs.com/",
+          "repository": "git+https://github.com/expressjs/express.git",
+          "npm": "https://www.npmjs.com/package/express"
+        }
+      },
+      "searchScore": 2256.907
+    },
+    {
+      "package": {
+        "name": "express-session",
+        "version": "1.18.1",
+        "description": "Simple session middleware for Express",
+        "date": "2024-12-01T00:00:00.000Z",
+        "links": {}
+      }
+    }
+  ],
+  "total": 12345
+}

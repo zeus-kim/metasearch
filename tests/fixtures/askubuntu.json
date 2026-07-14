@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "tags": ["apt", "package-management", "updates"],
+      "is_answered": true,
+      "answer_count": 5,
+      "score": 421,
+      "link": "https://askubuntu.com/questions/1234/how-do-i-fix-a-broken-package",
+      "title": "How do I fix a broken package with &#39;apt&#39;?"
+    },
+    {
+      "tags": ["boot", "grub2"],
+      "is_answered": true,
+      "answer_count": 2,
+      "score": 38,
+      "link": "https://askubuntu.com/questions/5678/grub-rescue-prompt-on-boot",
+      "title": "GRUB rescue prompt on boot &amp; recovery"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 300,
+  "quota_remaining": 298
+}

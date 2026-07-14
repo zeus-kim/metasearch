@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example Feed</title>
+    <link>https://example.com/</link>
+    <description>A small RSS 2.0 fixture for the generic feed adapter.</description>
+    <item>
+      <title>First Post</title>
+      <link>https://example.com/first</link>
+      <description>A short summary of the first post, with some &lt;b&gt;markup&lt;/b&gt;.</description>
+      <pubDate>Mon, 05 Jan 2026 09:00:00 GMT</pubDate>
+      <guid>https://example.com/first</guid>
+    </item>
+    <item>
+      <title>Second Post</title>
+      <link>https://example.com/second</link>
+      <description>Summary of the second post.</description>
+      <pubDate>Tue, 06 Jan 2026 10:30:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,232 @@
+# === 한국어 (ko) - 대한민국 ===
+{"lang":"ko","url":"https://www.yna.co.kr/rss/news.xml","category":"news","country":"KR","source":"연합뉴스","tier":1}
+{"lang":"ko","url":"https://www.yonhapnewstv.co.kr/browse/feed/","category":"news","country":"KR","source":"연합뉴스TV","tier":1}
+{"lang":"ko","url":"https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml","category":"news","country":"KR","source":"조선일보","tier":1}
+{"lang":"ko","url":"https://rss.joins.com/joins_news_list.xml","category":"news","country":"KR","source":"중앙일보","tier":1}
+{"lang":"ko","url":"https://www.donga.com/news/rss/","category":"news","country":"KR","source":"동아일보","tier":1}
+{"lang":"ko","url":"https://www.hani.co.kr/rss/","category":"news","country":"KR","source":"한겨레","tier":1}
+{"lang":"ko","url":"https://www.khan.co.kr/rss/rssdata/total_news.xml","category":"news","country":"KR","source":"경향신문","tier":1}
+{"lang":"ko","url":"https://www.mk.co.kr/rss/30000001/","category":"news","country":"KR","source":"매일경제","tier":1}
+{"lang":"ko","url":"https://www.hankyung.com/feed/all-news","category":"news","country":"KR","source":"한국경제","tier":1}
+{"lang":"ko","url":"https://www.sedaily.com/RSS/All","category":"news","country":"KR","source":"서울경제","tier":1}
+{"lang":"ko","url":"https://www.newsis.com/rss/","category":"news","country":"KR","source":"뉴시스","tier":1}
+{"lang":"ko","url":"https://www.news1.kr/rss/","category":"news","country":"KR","source":"뉴스1","tier":1}
+
+# === 영어 (en) - 미국 ===
+{"lang":"en","url":"https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml","category":"news","country":"US","source":"NYTimes","tier":1}
+{"lang":"en","url":"https://feeds.washingtonpost.com/rss/world","category":"news","country":"US","source":"WashingtonPost","tier":1}
+{"lang":"en","url":"http://rss.cnn.com/rss/edition.rss","category":"news","country":"US","source":"CNN","tier":1}
+{"lang":"en","url":"https://feeds.npr.org/1001/rss.xml","category":"news","country":"US","source":"NPR","tier":1}
+{"lang":"en","url":"https://feeds.foxnews.com/foxnews/latest","category":"news","country":"US","source":"FoxNews","tier":1}
+{"lang":"en","url":"https://abcnews.go.com/abcnews/topstories","category":"news","country":"US","source":"ABCNews","tier":1}
+{"lang":"en","url":"https://www.cbsnews.com/latest/rss/main","category":"news","country":"US","source":"CBSNews","tier":1}
+
+# === 영어 (en) - 영국 ===
+{"lang":"en","url":"https://feeds.bbci.co.uk/news/rss.xml","category":"news","country":"GB","source":"BBC","tier":1}
+{"lang":"en","url":"https://www.theguardian.com/world/rss","category":"news","country":"GB","source":"Guardian","tier":1}
+{"lang":"en","url":"https://www.telegraph.co.uk/rss.xml","category":"news","country":"GB","source":"Telegraph","tier":1}
+{"lang":"en","url":"https://www.independent.co.uk/rss","category":"news","country":"GB","source":"Independent","tier":1}
+
+# === 영어 (en) - 국제 통신사 ===
+{"lang":"en","url":"https://feeds.reuters.com/reuters/topNews","category":"news","country":"INT","source":"Reuters","tier":1}
+{"lang":"en","url":"https://feeds.apnews.com/apf-topnews","category":"news","country":"INT","source":"AP","tier":1}
+{"lang":"en","url":"https://www.aljazeera.com/xml/rss/all.xml","category":"news","country":"QA","source":"AlJazeera-EN","tier":1}
+
+# === 일본어 (ja) - 일본 ===
+
+# === 중국어 (zh) - 중국/대만/싱가포르 ===
+{"lang":"zh","url":"https://www.zaobao.com/rss","category":"news","country":"SG","source":"联合早报","tier":1}
+{"lang":"zh","url":"https://www.rfa.org/mandarin/RSS","category":"news","country":"US","source":"RFA中文","tier":1}
+{"lang":"zh","url":"https://www.bbc.com/zhongwen/simp/index.xml","category":"news","country":"GB","source":"BBC中文","tier":1}
+{"lang":"zh","url":"https://cn.nytimes.com/rss/","category":"news","country":"US","source":"纽约时报中文","tier":1}
+{"lang":"zh","url":"https://www.dw.com/zh/rss","category":"news","country":"DE","source":"德国之声中文","tier":1}
+
+# === 독일어 (de) - 독일 ===
+{"lang":"de","url":"https://www.tagesschau.de/xml/rss2/","category":"news","country":"DE","source":"Tagesschau","tier":1}
+{"lang":"de","url":"https://rss.sueddeutsche.de/rss/Topthemen","category":"news","country":"DE","source":"Süddeutsche","tier":1}
+{"lang":"de","url":"https://www.spiegel.de/schlagzeilen/tops/index.rss","category":"news","country":"DE","source":"Spiegel","tier":1}
+{"lang":"de","url":"https://www.faz.net/rss/aktuell/","category":"news","country":"DE","source":"FAZ","tier":1}
+{"lang":"de","url":"https://www.welt.de/feeds/latest.rss","category":"news","country":"DE","source":"Welt","tier":1}
+{"lang":"de","url":"https://www.zeit.de/index","category":"news","country":"DE","source":"Zeit","tier":1}
+
+# === 프랑스어 (fr) - 프랑스 ===
+{"lang":"fr","url":"https://www.lemonde.fr/rss/une.xml","category":"news","country":"FR","source":"LeMonde","tier":1}
+{"lang":"fr","url":"https://www.lefigaro.fr/rss/figaro_actualites.xml","category":"news","country":"FR","source":"LeFigaro","tier":1}
+{"lang":"fr","url":"https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml","category":"news","country":"FR","source":"Libération","tier":1}
+{"lang":"fr","url":"https://www.france24.com/fr/rss","category":"news","country":"FR","source":"France24","tier":1}
+{"lang":"fr","url":"https://www.rfi.fr/fr/rss","category":"news","country":"FR","source":"RFI","tier":1}
+{"lang":"fr","url":"https://www.bfmtv.com/rss/news-24-7/","category":"news","country":"FR","source":"BFMTV","tier":1}
+
+# === 스페인어 (es) - 스페인 ===
+{"lang":"es","url":"https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada","category":"news","country":"ES","source":"ElPaís","tier":1}
+{"lang":"es","url":"https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml","category":"news","country":"ES","source":"ElMundo","tier":1}
+{"lang":"es","url":"https://www.abc.es/rss/feeds/abcPortada.xml","category":"news","country":"ES","source":"ABC","tier":1}
+{"lang":"es","url":"https://www.lavanguardia.com/rss/home.xml","category":"news","country":"ES","source":"LaVanguardia","tier":1}
+
+# === 스페인어 (es) - 중남미 ===
+{"lang":"es","url":"https://www.infobae.com/feeds/rss/","category":"news","country":"AR","source":"Infobae","tier":1}
+{"lang":"es","url":"https://www.clarin.com/rss/lo-ultimo/","category":"news","country":"AR","source":"Clarín","tier":1}
+
+# === 포르투갈어 (pt) - 브라질 ===
+{"lang":"pt","url":"https://g1.globo.com/rss/g1/","category":"news","country":"BR","source":"G1","tier":1}
+{"lang":"pt","url":"https://feeds.folha.uol.com.br/emcimadahora/rss091.xml","category":"news","country":"BR","source":"Folha","tier":1}
+{"lang":"pt","url":"https://www.estadao.com.br/rss/ultimas.xml","category":"news","country":"BR","source":"Estadão","tier":1}
+{"lang":"pt","url":"https://noticias.uol.com.br/rss.xml","category":"news","country":"BR","source":"UOL","tier":1}
+
+# === 포르투갈어 (pt) - 포르투갈 ===
+{"lang":"pt","url":"https://www.publico.pt/rss","category":"news","country":"PT","source":"Público","tier":1}
+{"lang":"pt","url":"https://www.rtp.pt/noticias/rss/","category":"news","country":"PT","source":"RTP","tier":1}
+
+# === 러시아어 (ru) - 러시아 ===
+{"lang":"ru","url":"https://lenta.ru/rss","category":"news","country":"RU","source":"Lenta","tier":1}
+{"lang":"ru","url":"https://ria.ru/export/rss2/archive/index.xml","category":"news","country":"RU","source":"RIA","tier":1}
+{"lang":"ru","url":"https://tass.com/rss/v2.xml","category":"news","country":"RU","source":"TASS","tier":1}
+{"lang":"ru","url":"https://www.kommersant.ru/RSS/news.xml","category":"news","country":"RU","source":"Kommersant","tier":1}
+
+# === 아랍어 (ar) - 중동 ===
+{"lang":"ar","url":"https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9","category":"news","country":"QA","source":"AlJazeera","tier":1}
+{"lang":"ar","url":"https://www.alarabiya.net/.mrss/ar.xml","category":"news","country":"SA","source":"AlArabiya","tier":1}
+{"lang":"ar","url":"https://www.skynewsarabia.com/web/rss","category":"news","country":"AE","source":"SkyNewsArabia","tier":1}
+{"lang":"ar","url":"https://www.bbc.com/arabic/index.xml","category":"news","country":"GB","source":"BBC-Arabic","tier":1}
+
+# === 힌디어 (hi) - 인도 ===
+{"lang":"hi","url":"https://www.ndtv.com/feeds/hindi/rss","category":"news","country":"IN","source":"NDTV-Hindi","tier":1}
+{"lang":"hi","url":"https://www.aajtak.in/rss/top-news.xml","category":"news","country":"IN","source":"AajTak","tier":1}
+{"lang":"hi","url":"https://www.abplive.com/feed","category":"news","country":"IN","source":"ABPNews","tier":1}
+{"lang":"hi","url":"https://navbharattimes.indiatimes.com/rssfeedsdefault.cms","category":"news","country":"IN","source":"NavbharatTimes","tier":1}
+
+# === 태국어 (th) - 태국 ===
+{"lang":"th","url":"https://www.thairath.co.th/rss/news.xml","category":"news","country":"TH","source":"Thairath","tier":1}
+{"lang":"th","url":"https://www.dailynews.co.th/rss/","category":"news","country":"TH","source":"DailyNews","tier":1}
+{"lang":"th","url":"https://www.matichon.co.th/feed","category":"news","country":"TH","source":"Matichon","tier":1}
+{"lang":"th","url":"https://www.bangkokpost.com/rss/data/topstories.xml","category":"news","country":"TH","source":"BangkokPost","tier":1}
+{"lang":"th","url":"https://www.nationthailand.com/rss/news.xml","category":"news","country":"TH","source":"TheNation","tier":1}
+
+# === 베트남어 (vi) - 베트남 ===
+{"lang":"vi","url":"https://vnexpress.net/rss/tin-moi-nhat.rss","category":"news","country":"VN","source":"VnExpress","tier":1}
+{"lang":"vi","url":"https://tuoitre.vn/rss/tin-moi-nhat.rss","category":"news","country":"VN","source":"TuoiTre","tier":1}
+{"lang":"vi","url":"https://thanhnien.vn/rss/home.rss","category":"news","country":"VN","source":"ThanhNien","tier":1}
+{"lang":"vi","url":"https://dantri.com.vn/rss/home.rss","category":"news","country":"VN","source":"DanTri","tier":1}
+{"lang":"vi","url":"https://vietnamnet.vn/rss/home.rss","category":"news","country":"VN","source":"VietnamNet","tier":1}
+
+# === 인도네시아어 (id) - 인도네시아 ===
+{"lang":"id","url":"https://www.kompas.com/rss/","category":"news","country":"ID","source":"Kompas","tier":1}
+{"lang":"id","url":"https://rss.detik.com/index.php/detikcom","category":"news","country":"ID","source":"Detik","tier":1}
+{"lang":"id","url":"https://www.liputan6.com/rss","category":"news","country":"ID","source":"Liputan6","tier":1}
+{"lang":"id","url":"https://www.tribunnews.com/rss","category":"news","country":"ID","source":"Tribunnews","tier":1}
+{"lang":"id","url":"https://www.tempo.co/rss/terkini","category":"news","country":"ID","source":"Tempo","tier":1}
+
+# === 터키어 (tr) - 터키 ===
+{"lang":"tr","url":"https://www.hurriyet.com.tr/rss/gundem","category":"news","country":"TR","source":"Hürriyet","tier":1}
+{"lang":"tr","url":"https://www.sabah.com.tr/rss/gundem.xml","category":"news","country":"TR","source":"Sabah","tier":1}
+{"lang":"tr","url":"https://www.milliyet.com.tr/rss/rssNew/gundemRss.xml","category":"news","country":"TR","source":"Milliyet","tier":1}
+{"lang":"tr","url":"https://www.ntv.com.tr/son-dakika.rss","category":"news","country":"TR","source":"NTV","tier":1}
+{"lang":"tr","url":"https://www.trthaber.com/xml/rss.xml","category":"news","country":"TR","source":"TRT","tier":1}
+
+# === 폴란드어 (pl) - 폴란드 ===
+{"lang":"pl","url":"https://tvn24.pl/najnowsze.xml","category":"news","country":"PL","source":"TVN24","tier":1}
+{"lang":"pl","url":"https://www.onet.pl/rss/","category":"news","country":"PL","source":"Onet","tier":1}
+{"lang":"pl","url":"https://www.wp.pl/rss.xml","category":"news","country":"PL","source":"WP","tier":1}
+{"lang":"pl","url":"https://www.polsatnews.pl/rss/wszystkie.xml","category":"news","country":"PL","source":"PolsatNews","tier":1}
+
+# === 네덜란드어 (nl) - 네덜란드/벨기에 ===
+{"lang":"nl","url":"https://www.nu.nl/rss/Algemeen","category":"news","country":"NL","source":"NU.nl","tier":1}
+{"lang":"nl","url":"https://www.rtlnieuws.nl/rss.xml","category":"news","country":"NL","source":"RTL","tier":1}
+{"lang":"nl","url":"https://www.nos.nl/rss/","category":"news","country":"NL","source":"NOS","tier":1}
+{"lang":"nl","url":"https://www.telegraaf.nl/rss","category":"news","country":"NL","source":"Telegraaf","tier":1}
+
+# === 스웨덴어 (sv) - 스웨덴 ===
+{"lang":"sv","url":"https://www.svt.se/nyheter/rss.xml","category":"news","country":"SE","source":"SVT","tier":1}
+{"lang":"sv","url":"https://www.dn.se/rss/","category":"news","country":"SE","source":"DN","tier":1}
+{"lang":"sv","url":"https://www.aftonbladet.se/rss.xml","category":"news","country":"SE","source":"Aftonbladet","tier":1}
+
+# === 노르웨이어 (no) - 노르웨이 ===
+{"lang":"no","url":"https://www.nrk.no/toppsaker.rss","category":"news","country":"NO","source":"NRK","tier":1}
+{"lang":"no","url":"https://www.vg.no/rss/feed","category":"news","country":"NO","source":"VG","tier":1}
+{"lang":"no","url":"https://www.dagbladet.no/rss","category":"news","country":"NO","source":"Dagbladet","tier":1}
+
+# === 덴마크어 (da) - 덴마크 ===
+{"lang":"da","url":"https://www.dr.dk/nyheder/service/feeds/allenyheder","category":"news","country":"DK","source":"DR","tier":1}
+{"lang":"da","url":"https://politiken.dk/rss/senestenyt.rss","category":"news","country":"DK","source":"Politiken","tier":1}
+{"lang":"da","url":"https://ekstrabladet.dk/rssfeed/all","category":"news","country":"DK","source":"Ekstrabladet","tier":1}
+
+# === 핀란드어 (fi) - 핀란드 ===
+{"lang":"fi","url":"https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET","category":"news","country":"FI","source":"YLE","tier":1}
+{"lang":"fi","url":"https://www.hs.fi/rss/tuoreimmat.xml","category":"news","country":"FI","source":"HS","tier":1}
+{"lang":"fi","url":"https://www.iltalehti.fi/rss.xml","category":"news","country":"FI","source":"Iltalehti","tier":1}
+
+# === 체코어 (cs) - 체코 ===
+{"lang":"cs","url":"https://www.idnes.cz/rss","category":"news","country":"CZ","source":"iDNES","tier":1}
+{"lang":"cs","url":"https://www.novinky.cz/rss","category":"news","country":"CZ","source":"Novinky","tier":1}
+{"lang":"cs","url":"https://ct24.ceskatelevize.cz/rss/hlavni-zpravy","category":"news","country":"CZ","source":"CT24","tier":1}
+
+# === 헝가리어 (hu) - 헝가리 ===
+{"lang":"hu","url":"https://index.hu/24ora/rss/","category":"news","country":"HU","source":"Index","tier":1}
+{"lang":"hu","url":"https://444.hu/feed","category":"news","country":"HU","source":"444","tier":1}
+{"lang":"hu","url":"https://hvg.hu/rss","category":"news","country":"HU","source":"HVG","tier":1}
+
+# === 루마니아어 (ro) - 루마니아 ===
+{"lang":"ro","url":"https://www.digi24.ro/rss","category":"news","country":"RO","source":"Digi24","tier":1}
+{"lang":"ro","url":"https://www.hotnews.ro/rss","category":"news","country":"RO","source":"HotNews","tier":1}
+{"lang":"ro","url":"https://stirileprotv.ro/rss","category":"news","country":"RO","source":"ProTV","tier":1}
+
+# === 우크라이나어 (uk) - 우크라이나 ===
+{"lang":"uk","url":"https://www.pravda.com.ua/rss/","category":"news","country":"UA","source":"Pravda","tier":1}
+{"lang":"uk","url":"https://www.unian.ua/rss/","category":"news","country":"UA","source":"UNIAN","tier":1}
+{"lang":"uk","url":"https://www.ukrinform.ua/rss","category":"news","country":"UA","source":"Ukrinform","tier":1}
+
+# === 그리스어 (el) - 그리스 ===
+{"lang":"el","url":"https://www.kathimerini.gr/rss","category":"news","country":"GR","source":"Kathimerini","tier":1}
+{"lang":"el","url":"https://www.protothema.gr/rss/","category":"news","country":"GR","source":"ProtoThema","tier":1}
+{"lang":"el","url":"https://www.in.gr/feed/","category":"news","country":"GR","source":"in.gr","tier":1}
+
+# === 히브리어 (he) - 이스라엘 ===
+{"lang":"he","url":"https://www.ynet.co.il/Integration/StoryRss2.xml","category":"news","country":"IL","source":"Ynet","tier":1}
+{"lang":"he","url":"https://www.haaretz.co.il/cmlink/1.1500233","category":"news","country":"IL","source":"Haaretz","tier":1}
+{"lang":"he","url":"https://www.maariv.co.il/Rss/RssChad498","category":"news","country":"IL","source":"Maariv","tier":1}
+
+# === 페르시아어 (fa) - 이란 ===
+{"lang":"fa","url":"https://www.bbc.com/persian/index.xml","category":"news","country":"GB","source":"BBC-Persian","tier":1}
+{"lang":"fa","url":"https://www.radiofarda.com/api/z_qpetiqmt","category":"news","country":"US","source":"RadioFarda","tier":1}
+{"lang":"fa","url":"https://ir.voanews.com/api/zq_opet_qmt","category":"news","country":"US","source":"VOA-Persian","tier":1}
+
+# === 말레이어 (ms) - 말레이시아 ===
+{"lang":"ms","url":"https://www.astroawani.com/rss/latest/","category":"news","country":"MY","source":"AstroAwani","tier":1}
+{"lang":"ms","url":"https://www.bharian.com.my/rss/berita","category":"news","country":"MY","source":"BHarian","tier":1}
+{"lang":"ms","url":"https://www.utusan.com.my/feed/","category":"news","country":"MY","source":"Utusan","tier":1}
+
+# === 필리핀어 (tl) - 필리핀 ===
+{"lang":"tl","url":"https://www.gmanetwork.com/news/rss/news/","category":"news","country":"PH","source":"GMA","tier":1}
+{"lang":"tl","url":"https://www.abs-cbn.com/rss","category":"news","country":"PH","source":"ABS-CBN","tier":1}
+{"lang":"tl","url":"https://www.rappler.com/feed/","category":"news","country":"PH","source":"Rappler","tier":1}
+
+# === 벵골어 (bn) - 방글라데시/인도 ===
+{"lang":"bn","url":"https://www.prothomalo.com/feed/","category":"news","country":"BD","source":"ProthomAlo","tier":1}
+{"lang":"bn","url":"https://www.bbc.com/bengali/index.xml","category":"news","country":"GB","source":"BBC-Bengali","tier":1}
+{"lang":"bn","url":"https://www.anandabazar.com/rss/","category":"news","country":"IN","source":"Anandabazar","tier":1}
+
+# === 타밀어 (ta) - 인도/스리랑카 ===
+{"lang":"ta","url":"https://www.bbc.com/tamil/index.xml","category":"news","country":"GB","source":"BBC-Tamil","tier":1}
+{"lang":"ta","url":"https://www.dinamalar.com/rss","category":"news","country":"IN","source":"Dinamalar","tier":1}
+{"lang":"ta","url":"https://www.dinamani.com/rss.aspx","category":"news","country":"IN","source":"Dinamani","tier":1}
+
+# === 텔루구어 (te) - 인도 ===
+{"lang":"te","url":"https://www.eenadu.net/rss/rssnews.xml","category":"news","country":"IN","source":"Eenadu","tier":1}
+{"lang":"te","url":"https://www.sakshi.com/rss-feeds","category":"news","country":"IN","source":"Sakshi","tier":1}
+
+# === 마라티어 (mr) - 인도 ===
+{"lang":"mr","url":"https://www.loksatta.com/feed/","category":"news","country":"IN","source":"Loksatta","tier":1}
+{"lang":"mr","url":"https://www.maharashtratimes.com/rssfeed/","category":"news","country":"IN","source":"MaharashtraTimes","tier":1}
+
+# === 스와힐리어 (sw) - 동아프리카 ===
+{"lang":"sw","url":"https://www.bbc.com/swahili/index.xml","category":"news","country":"GB","source":"BBC-Swahili","tier":1}
+{"lang":"sw","url":"https://www.dw.com/sw/rss","category":"news","country":"DE","source":"DW-Swahili","tier":1}
+# === 日本語 (ja) - 日本 ===
+{"lang":"ja","url":"https://www3.nhk.or.jp/rss/news/cat0.xml","category":"news","country":"JP","source":"NHK","tier":1}
+{"lang":"ja","url":"https://www.kyodo.co.jp/feed/","category":"news","country":"JP","source":"共同通信","tier":1}
+{"lang":"ja","url":"https://www.asahi.com/rss/asahi/newsheadlines.rdf","category":"news","country":"JP","source":"朝日新聞","tier":1}
+{"lang":"ja","url":"https://mainichi.jp/rss/etc/mainichi-flash.rss","category":"news","country":"JP","source":"毎日新聞","tier":1}
+{"lang":"ja","url":"https://www.jiji.com/rss/ranking.rdf","category":"news","country":"JP","source":"時事通信","tier":1}
+{"lang":"ja","url":"https://news.yahoo.co.jp/rss/topics/top-picks.xml","category":"news","country":"JP","source":"Yahoo!ニュース","tier":1}
+{"lang":"ja","url":"https://news.livedoor.com/topics/rss/top.xml","category":"news","country":"JP","source":"livedoorニュース","tier":1}
+{"lang":"ja","url":"https://gigazine.net/news/rss_2.0/","category":"tech","country":"JP","source":"GIGAZINE","tier":1}

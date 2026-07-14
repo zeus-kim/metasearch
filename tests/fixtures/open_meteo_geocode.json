@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "id": 2643743,
+      "name": "London",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "timezone": "Europe/London"
+    }
+  ],
+  "generationtime_ms": 0.7
+}

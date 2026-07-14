@@ -1,0 +1,119 @@
+{
+  "politics": {
+    "ko": ["정치", "국회", "대통령", "청와대", "여당", "야당", "선거", "의원", "장관", "법안", "입법"],
+    "en": ["politics", "president", "congress", "parliament", "election", "minister", "government", "legislation", "law", "policy", "democrat", "republican"],
+    "ja": ["政治", "国会", "首相", "選挙", "議員", "大臣", "政府", "法案"],
+    "zh": ["政治", "国会", "总统", "选举", "议员", "部长", "政府", "立法"],
+    "es": ["politica", "presidente", "congreso", "eleccion", "ministro", "gobierno"],
+    "fr": ["politique", "president", "parlement", "election", "ministre", "gouvernement"],
+    "de": ["politik", "prasident", "bundestag", "wahl", "minister", "regierung"]
+  },
+  "business": {
+    "ko": ["경제", "기업", "산업", "무역", "수출", "수입", "GDP", "성장률", "경기", "회사", "비즈니스"],
+    "en": ["business", "economy", "company", "industry", "trade", "export", "import", "corporate", "commerce", "market", "retail", "manufacturing"],
+    "ja": ["経済", "企業", "産業", "貿易", "輸出", "輸入", "市場", "ビジネス"],
+    "zh": ["经济", "企业", "产业", "贸易", "出口", "进口", "市场", "商业"],
+    "es": ["economia", "empresa", "industria", "comercio", "mercado", "negocio"],
+    "fr": ["economie", "entreprise", "industrie", "commerce", "marche", "affaires"],
+    "de": ["wirtschaft", "unternehmen", "industrie", "handel", "markt", "geschaft"]
+  },
+  "finance": {
+    "ko": ["금융", "주식", "증시", "코스피", "코스닥", "환율", "금리", "은행", "투자", "펀드", "채권"],
+    "en": ["finance", "stock", "market", "nasdaq", "dow", "exchange", "bank", "invest", "crypto", "bitcoin", "bond", "fund", "trading"],
+    "ja": ["金融", "株式", "市場", "為替", "銀行", "投資", "ファンド"],
+    "zh": ["金融", "股票", "市场", "汇率", "银行", "投资", "基金"],
+    "es": ["finanzas", "acciones", "mercado", "banco", "inversion"],
+    "fr": ["finance", "bourse", "marche", "banque", "investissement"],
+    "de": ["finanzen", "aktien", "markt", "bank", "investition"]
+  },
+  "tech": {
+    "ko": ["기술", "IT", "테크", "스마트폰", "앱", "소프트웨어", "하드웨어", "반도체", "AI", "인공지능", "머신러닝", "클라우드", "데이터", "스타트업"],
+    "en": ["tech", "technology", "software", "hardware", "app", "smartphone", "chip", "artificial intelligence", "machine learning", "cloud", "startup", "silicon", "AI", "semiconductor"],
+    "ja": ["技術", "テクノロジー", "ソフトウェア", "ハードウェア", "スマートフォン", "半導体", "AI", "人工知能", "クラウド", "スタートアップ"],
+    "zh": ["技术", "科技", "软件", "硬件", "智能手机", "芯片", "人工智能", "机器学习", "云", "创业"],
+    "es": ["tecnologia", "software", "hardware", "inteligencia artificial", "nube"],
+    "fr": ["technologie", "logiciel", "materiel", "intelligence artificielle", "cloud"],
+    "de": ["technologie", "software", "hardware", "kunstliche intelligenz", "cloud"]
+  },
+  "world": {
+    "ko": ["세계", "국제", "외신", "해외", "미국", "중국", "일본", "유럽", "러시아", "외교", "정상회담"],
+    "en": ["world", "international", "global", "foreign", "america", "china", "japan", "europe", "russia", "united nations", "diplomacy", "summit"],
+    "ja": ["世界", "国際", "海外", "アメリカ", "中国", "ヨーロッパ", "外交", "サミット"],
+    "zh": ["世界", "国际", "海外", "美国", "中国", "日本", "欧洲", "外交", "峰会"],
+    "es": ["mundo", "internacional", "global", "extranjero", "diplomacia"],
+    "fr": ["monde", "international", "global", "etranger", "diplomatie"],
+    "de": ["welt", "international", "global", "ausland", "diplomatie"]
+  },
+  "sports": {
+    "ko": ["스포츠", "축구", "야구", "농구", "골프", "테니스", "올림픽", "월드컵", "프리미어리그", "MLB", "NBA", "KBO", "K리그", "손흥민", "오타니", "경기", "승리"],
+    "en": ["sports", "football", "soccer", "baseball", "basketball", "golf", "tennis", "olympic", "world cup", "premier league", "champion", "athlete", "game", "match", "victory"],
+    "ja": ["スポーツ", "サッカー", "野球", "バスケットボール", "ゴルフ", "テニス", "オリンピック", "ワールドカップ", "試合", "勝利"],
+    "zh": ["体育", "足球", "棒球", "篮球", "高尔夫", "网球", "奥运会", "世界杯", "比赛", "胜利"],
+    "es": ["deportes", "futbol", "beisbol", "baloncesto", "golf", "tenis", "olimpiadas"],
+    "fr": ["sports", "football", "baseball", "basketball", "golf", "tennis", "olympiques"],
+    "de": ["sport", "fussball", "baseball", "basketball", "golf", "tennis", "olympische"]
+  },
+  "entertainment": {
+    "ko": ["연예", "방송", "드라마", "영화", "아이돌", "K-pop", "케이팝", "가수", "배우", "예능", "콘서트", "앨범", "뮤직", "넷플릭스", "OTT"],
+    "en": ["entertainment", "celebrity", "movie", "drama", "idol", "kpop", "singer", "actor", "actress", "concert", "album", "netflix", "streaming", "hollywood"],
+    "ja": ["芸能", "ドラマ", "映画", "アイドル", "歌手", "俳優", "コンサート", "アルバム"],
+    "zh": ["娱乐", "明星", "电影", "电视剧", "偶像", "歌手", "演员", "演唱会"],
+    "es": ["entretenimiento", "celebridad", "pelicula", "drama", "cantante", "actor"],
+    "fr": ["divertissement", "celebrite", "film", "drame", "chanteur", "acteur"],
+    "de": ["unterhaltung", "prominente", "film", "drama", "sanger", "schauspieler"]
+  },
+  "health": {
+    "ko": ["건강", "의료", "병원", "의사", "질병", "치료", "약", "백신", "코로나", "헬스", "다이어트", "운동", "영양", "정신건강"],
+    "en": ["health", "medical", "hospital", "doctor", "disease", "treatment", "vaccine", "covid", "fitness", "diet", "nutrition", "mental health", "wellness"],
+    "ja": ["健康", "医療", "病院", "医師", "病気", "治療", "ワクチン", "フィットネス", "ダイエット"],
+    "zh": ["健康", "医疗", "医院", "医生", "疾病", "治疗", "疫苗", "健身", "饮食"],
+    "es": ["salud", "medico", "hospital", "enfermedad", "tratamiento", "vacuna"],
+    "fr": ["sante", "medical", "hopital", "maladie", "traitement", "vaccin"],
+    "de": ["gesundheit", "medizin", "krankenhaus", "krankheit", "behandlung", "impfstoff"]
+  },
+  "science": {
+    "ko": ["과학", "연구", "실험", "논문", "학술", "발견", "우주", "NASA", "물리", "화학", "생물", "기후"],
+    "en": ["science", "research", "study", "discovery", "space", "nasa", "physics", "chemistry", "biology", "quantum", "genome", "climate", "environment"],
+    "ja": ["科学", "研究", "実験", "発見", "宇宙", "物理", "化学", "生物", "環境"],
+    "zh": ["科学", "研究", "实验", "发现", "太空", "物理", "化学", "生物", "环境"],
+    "es": ["ciencia", "investigacion", "descubrimiento", "espacio", "fisica", "quimica"],
+    "fr": ["science", "recherche", "decouverte", "espace", "physique", "chimie"],
+    "de": ["wissenschaft", "forschung", "entdeckung", "weltraum", "physik", "chemie"]
+  },
+  "culture": {
+    "ko": ["문화", "예술", "전시", "공연", "미술", "음악", "클래식", "책", "문학", "역사", "축제"],
+    "en": ["culture", "art", "exhibition", "museum", "music", "classical", "book", "literature", "history", "heritage", "festival", "theater"],
+    "ja": ["文化", "芸術", "展示", "美術", "音楽", "本", "文学", "歴史", "祭り"],
+    "zh": ["文化", "艺术", "展览", "美术", "音乐", "书", "文学", "历史", "节日"],
+    "es": ["cultura", "arte", "exposicion", "museo", "musica", "libro", "literatura"],
+    "fr": ["culture", "art", "exposition", "musee", "musique", "livre", "litterature"],
+    "de": ["kultur", "kunst", "ausstellung", "museum", "musik", "buch", "literatur"]
+  },
+  "opinion": {
+    "ko": ["오피니언", "사설", "칼럼", "논평", "기고", "시론", "분석", "의견"],
+    "en": ["opinion", "editorial", "column", "commentary", "analysis", "perspective", "viewpoint"],
+    "ja": ["オピニオン", "社説", "コラム", "論評", "分析"],
+    "zh": ["观点", "社论", "专栏", "评论", "分析"],
+    "es": ["opinion", "editorial", "columna", "comentario", "analisis"],
+    "fr": ["opinion", "editorial", "chronique", "commentaire", "analyse"],
+    "de": ["meinung", "leitartikel", "kolumne", "kommentar", "analyse"]
+  },
+  "lifestyle": {
+    "ko": ["라이프", "생활", "여행", "맛집", "요리", "패션", "뷰티", "인테리어", "육아", "반려동물", "취미", "드라이브"],
+    "en": ["lifestyle", "life", "travel", "food", "recipe", "fashion", "beauty", "interior", "parenting", "pet", "hobby", "driving"],
+    "ja": ["ライフ", "生活", "旅行", "グルメ", "料理", "ファッション", "ビューティー", "インテリア", "育児", "ペット"],
+    "zh": ["生活", "旅行", "美食", "时尚", "美容", "家居", "育儿", "宠物"],
+    "es": ["vida", "viaje", "comida", "moda", "belleza", "hogar"],
+    "fr": ["vie", "voyage", "cuisine", "mode", "beaute", "maison"],
+    "de": ["leben", "reise", "essen", "mode", "schonheit", "haus"]
+  },
+  "society": {
+    "ko": ["사회", "사건", "사고", "범죄", "경찰", "검찰", "법원", "재판", "교육", "학교", "노동", "환경", "재해", "화재", "교통사고"],
+    "en": ["society", "accident", "crime", "police", "court", "trial", "education", "school", "labor", "environment", "disaster", "fire", "traffic"],
+    "ja": ["社会", "事件", "事故", "犯罪", "警察", "裁判", "教育", "学校", "労働", "環境", "災害"],
+    "zh": ["社会", "事件", "事故", "犯罪", "警察", "法院", "教育", "学校", "劳动", "环境", "灾害"],
+    "es": ["sociedad", "accidente", "crimen", "policia", "tribunal", "educacion", "trabajo", "ambiente"],
+    "fr": ["societe", "accident", "crime", "police", "tribunal", "education", "travail", "environnement"],
+    "de": ["gesellschaft", "unfall", "verbrechen", "polizei", "gericht", "bildung", "arbeit", "umwelt"]
+  }
+}

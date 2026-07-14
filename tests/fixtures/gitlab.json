@@ -1,0 +1,24 @@
+[
+  {
+    "id": 250833,
+    "description": "GitLab Runner is the open source project that is used to run your CI/CD jobs and send the results back to GitLab",
+    "name": "gitlab-runner",
+    "name_with_namespace": "GitLab.org / gitlab-runner",
+    "path_with_namespace": "gitlab-org/gitlab-runner",
+    "web_url": "https://gitlab.com/gitlab-org/gitlab-runner",
+    "star_count": 3421,
+    "forks_count": 2789,
+    "topics": ["ci", "cd"],
+    "last_activity_at": "2026-05-29T10:11:12.000Z"
+  },
+  {
+    "id": 999,
+    "description": "",
+    "name": "runner-helper",
+    "name_with_namespace": "Acme / runner-helper",
+    "web_url": "https://gitlab.com/acme/runner-helper",
+    "star_count": 12,
+    "forks_count": 3,
+    "last_activity_at": "2025-01-02T00:00:00.000Z"
+  }
+]

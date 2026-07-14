@@ -1,0 +1,21 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "searchinfo": { "totalhits": 88 },
+    "search": [
+      {
+        "ns": 0,
+        "title": "Albert Einstein",
+        "pageid": 736,
+        "snippet": "<span class=\"searchmatch\">Einstein</span> quotations on science, life and imagination.",
+        "timestamp": "2026-01-10T00:00:00Z"
+      },
+      {
+        "ns": 0,
+        "title": "Science",
+        "pageid": 737,
+        "snippet": "Quotes about <span class=\"searchmatch\">science</span>."
+      }
+    ]
+  }
+}

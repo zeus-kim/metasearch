@@ -1,0 +1,21 @@
+{
+  "meta": { "total": 2 },
+  "data": {
+    "items": [
+      {
+        "name": "Result One",
+        "link": "https://example.com/one",
+        "description": "First result description",
+        "image": { "src": "https://example.com/one.png" },
+        "created_at": "2026-01-01"
+      },
+      {
+        "name": "Result Two",
+        "link": "https://example.com/two",
+        "description": "Second result description",
+        "image": { "src": "https://example.com/two.png" },
+        "created_at": "2026-01-02"
+      }
+    ]
+  }
+}

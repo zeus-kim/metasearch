@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "monolog/monolog",
+      "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+      "url": "https://packagist.org/packages/monolog/monolog",
+      "repository": "https://github.com/Seldaek/monolog",
+      "downloads": 700000000,
+      "favers": 21000
+    },
+    {
+      "name": "guzzlehttp/guzzle",
+      "description": "Guzzle is a PHP HTTP client library",
+      "url": "https://packagist.org/packages/guzzlehttp/guzzle",
+      "repository": "https://github.com/guzzle/guzzle",
+      "downloads": 600000000,
+      "favers": 23000
+    }
+  ],
+  "total": 2,
+  "next": ""
+}

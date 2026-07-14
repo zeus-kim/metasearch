@@ -1,0 +1,39 @@
+{
+  "type_": "Posts",
+  "comments": [],
+  "posts": [
+    {
+      "post": {
+        "id": 47517454,
+        "name": "Why privacy matters in 2026",
+        "url": "https://example.org/privacy-2026",
+        "body": "A long-form discussion about why <b>privacy</b> still matters and what you can do about it today.",
+        "ap_id": "https://lemmy.world/post/47517454",
+        "published": "2026-05-29T23:20:46.372173Z"
+      },
+      "community": { "name": "privacy", "title": "Privacy", "icon": "https://lemmy.world/pictrs/image/icon.png" },
+      "counts": {
+        "post_id": 47517454,
+        "comments": 34,
+        "score": 512,
+        "upvotes": 520,
+        "downvotes": 8,
+        "published": "2026-05-29T23:20:46.372173Z"
+      }
+    },
+    {
+      "post": {
+        "id": 1,
+        "name": "No-link text post",
+        "url": "",
+        "body": "",
+        "ap_id": "https://lemmy.world/post/1",
+        "published": "2026-01-01T00:00:00Z"
+      },
+      "community": { "name": "test" },
+      "counts": { "comments": 0, "score": 1, "published": "2026-01-01T00:00:00Z" }
+    }
+  ],
+  "communities": [],
+  "users": []
+}

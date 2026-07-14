@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "tags": ["rust", "borrow-checker", "lifetimes"],
+      "is_answered": true,
+      "answer_count": 3,
+      "score": 152,
+      "link": "https://stackoverflow.com/questions/1234567/how-does-the-borrow-checker-work",
+      "title": "How does the &#39;borrow checker&#39; work in Rust?"
+    },
+    {
+      "tags": ["rust", "async"],
+      "is_answered": false,
+      "answer_count": 0,
+      "score": 4,
+      "link": "https://stackoverflow.com/questions/7654321/async-trait-objects",
+      "title": "Async trait objects &amp; dynamic dispatch"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 300,
+  "quota_remaining": 299
+}

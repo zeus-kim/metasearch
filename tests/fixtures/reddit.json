@@ -1,0 +1,32 @@
+{
+  "kind": "Listing",
+  "data": {
+    "after": "t3_abc",
+    "children": [
+      {
+        "kind": "t3",
+        "data": {
+          "title": "Why I love Rust",
+          "permalink": "/r/rust/comments/abc123/why_i_love_rust/",
+          "subreddit": "rust",
+          "subreddit_name_prefixed": "r/rust",
+          "score": 1287,
+          "num_comments": 342,
+          "selftext": "After a year of using Rust full-time, here is what won me over: the borrow checker, fearless concurrency, and a great toolchain."
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "title": "Rust 2.0 wishlist thread",
+          "permalink": "/r/rust/comments/def456/rust_20_wishlist/",
+          "subreddit": "rust",
+          "subreddit_name_prefixed": "r/rust",
+          "score": 845,
+          "num_comments": 210,
+          "selftext": ""
+        }
+      }
+    ]
+  }
+}

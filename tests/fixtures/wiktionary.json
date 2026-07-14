@@ -1,0 +1,24 @@
+{
+  "batchcomplete": "",
+  "continue": { "sroffset": 2, "continue": "-||" },
+  "query": {
+    "searchinfo": { "totalhits": 446 },
+    "search": [
+      {
+        "ns": 0,
+        "title": "ostensible",
+        "pageid": 58408,
+        "size": 5532,
+        "wordcount": 491,
+        "snippet": "Borrowed from French <span class=\"searchmatch\">ostensible</span>, from Latin ostendere.",
+        "timestamp": "2026-01-01T00:00:00Z"
+      },
+      {
+        "ns": 0,
+        "title": "ostensibly",
+        "pageid": 58409,
+        "snippet": "From <span class=\"searchmatch\">ostensible</span> + -ly."
+      }
+    ]
+  }
+}

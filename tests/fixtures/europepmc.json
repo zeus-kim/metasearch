@@ -1,0 +1,29 @@
+{
+  "version": "6.9",
+  "hitCount": 220814,
+  "resultList": {
+    "result": [
+      {
+        "id": "PMC13199036",
+        "source": "PMC",
+        "pmcid": "PMC13199036",
+        "doi": "",
+        "title": "CRISPR-Cas systems as next-generation antimicrobials: a systemic review of mechanisms, delivery strategies, and translational challenges",
+        "authorString": "Wizrah M, Kumar A.",
+        "journalTitle": "Front Microbiol",
+        "pubYear": "2025",
+        "firstPublicationDate": "2025-06-01"
+      },
+      {
+        "id": "39000001",
+        "source": "MED",
+        "doi": "10.1038/s41586-024-00001-0",
+        "title": "Programmable base editing with CRISPR",
+        "authorString": "Doe J.",
+        "journalTitle": "Nature",
+        "pubYear": "2024",
+        "firstPublicationDate": "2024-02-01"
+      }
+    ]
+  }
+}

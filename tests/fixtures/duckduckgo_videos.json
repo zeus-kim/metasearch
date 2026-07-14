@@ -1,0 +1,25 @@
+{
+  "query": "rust",
+  "results": [
+    {
+      "title": "Rust Programming Language",
+      "content": "https://example.com/rust-video",
+      "publisher": "Mozilla",
+      "uploader": "Mozilla",
+      "duration": "12:34",
+      "images": {
+        "large": "https://example.com/rust-thumb-lg.jpg",
+        "medium": "https://example.com/rust-thumb-md.jpg"
+      }
+    },
+    {
+      "title": "Learn Rust in 10 Minutes",
+      "content": "https://example.com/learn-rust",
+      "publisher": "Example Channel",
+      "duration": "10:00",
+      "images": {
+        "small": "https://example.com/learn-rust-thumb.jpg"
+      }
+    }
+  ]
+}

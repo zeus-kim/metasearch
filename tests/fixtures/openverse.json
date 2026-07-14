@@ -1,0 +1,26 @@
+{
+  "result_count": 240,
+  "page_count": 80,
+  "page_size": 2,
+  "page": 1,
+  "results": [
+    {
+      "id": "f94097cc-b971-4276-94f2-8f7a6877ee81",
+      "title": "cat",
+      "foreign_landing_url": "https://www.flickr.com/photos/18090920@N07/4615211501",
+      "url": "https://live.staticflickr.com/4067/4615211501_f0cee1c22b_b.jpg",
+      "creator": "Sean MacEntee",
+      "license": "by",
+      "thumbnail": "https://api.openverse.org/v1/images/f94097cc-b971-4276-94f2-8f7a6877ee81/thumb/"
+    },
+    {
+      "id": "9ee77a50-70ba-4d4e-9972-16981b460f64",
+      "title": "Cat",
+      "foreign_landing_url": "https://www.flickr.com/photos/50642338@N00/8378612",
+      "url": "https://live.staticflickr.com/6/8378612_34ab6787ae_b.jpg",
+      "creator": "sfllaw",
+      "license": "by-sa",
+      "thumbnail": "https://api.openverse.org/v1/images/9ee77a50-70ba-4d4e-9972-16981b460f64/thumb/"
+    }
+  ]
+}
