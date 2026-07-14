@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metasearch-briefing"
+version = "0.1.0"
+description = "AI-generated audio news briefings with Edge TTS"
+license = "MIT"
+authors = [{ name = "Zeus Kim", email = "zeus@zeus.kim" }]
+keywords = ["news", "briefing", "tts", "ai", "audio"]
+requires-python = ">=3.9"
+dependencies = ["aiohttp>=3.8.0", "edge-tts>=6.1.0"]
+
+[project.urls]
+Homepage = "https://github.com/zeus-kim/metasearch"
+
+[project.scripts]
+metasearch-briefing = "metasearch_briefing:main"
