@@ -182,6 +182,18 @@ impl FeedCache {
         registry.iter().skip(offset).take(limit).collect()
     }
 
+    /// Bulk fetch specific URLs (for boost phase)
+    pub async fn bulk_fetch_urls(&self, urls: &[String], workers: usize) {
+        let registry = load_registry();
+        let url_set: std::collections::HashSet<_> = urls.iter().collect();
+        let feeds: Vec<_> = registry.iter()
+            .filter(|f| url_set.contains(&f.url))
+            .collect();
+        if !feeds.is_empty() {
+            self.bulk_fetch_impl(&feeds, workers, 0).await;
+        }
+    }
+
     /// Bulk fetch feeds in a range - saves to DB immediately
     pub async fn bulk_fetch_range(&self, offset: usize, limit: usize, workers: usize, cycle: u64) {
         let feeds = self.get_feeds_range(offset, limit);
@@ -796,6 +808,44 @@ impl FeedPoller {
         let batch_size = 500;   // 배치당 500개 (CPU 부하 감소)
         let workers = 10;       // 동시 워커 10개
         let mut offset = 0;
+
+        // === BOOST PHASE: Tier 1 feeds first ===
+        let tier1_feeds: Vec<_> = load_registry().iter()
+            .filter(|f| f.tier == 1)
+            .collect();
+        let tier1_count = tier1_feeds.len();
+
+        if tier1_count > 0 {
+            eprintln!("\n[BOOST] Starting rapid indexing of {} tier-1 major news sources...", tier1_count);
+            eprintln!("[BOOST] Your Discover feed will be ready in ~2-3 minutes\n");
+
+            let boost_start = Instant::now();
+            let boost_batch = 50; // Smaller batches for progress visibility
+            let mut fetched = 0;
+
+            for chunk in tier1_feeds.chunks(boost_batch) {
+                let urls: Vec<_> = chunk.iter().map(|f| f.url.clone()).collect();
+                self.cache.bulk_fetch_urls(&urls, 20).await; // 20 concurrent
+                fetched += chunk.len();
+
+                let elapsed = boost_start.elapsed().as_secs();
+                let eta = if fetched > 0 {
+                    (elapsed as f64 / fetched as f64 * (tier1_count - fetched) as f64) as u64
+                } else { 0 };
+
+                eprintln!("[BOOST] {}/{} sources indexed ({} sec, ~{} sec remaining)",
+                    fetched, tier1_count, elapsed, eta);
+            }
+
+            let db_articles = self.cache.store.as_ref()
+                .and_then(|s| s.stats().ok())
+                .map(|s| s.total_articles)
+                .unwrap_or(0);
+
+            eprintln!("\n[BOOST] Complete! {} articles ready in {} seconds",
+                db_articles, boost_start.elapsed().as_secs());
+            eprintln!("[BOOST] Open /discover to see today's top news\n");
+        }
 
         eprintln!("[RSS] Starting continuous feed polling: {} feeds, {}개씩 배치 (with quality filtering)", total_feeds, batch_size);
 

@@ -5,10 +5,11 @@
 ## Features
 
 - **AI-powered answers** — streaming cited answers from local Ollama
-- **54 search engines** — concurrent fan-out, de-duplication, ranking
+- **335K+ sources** — 56 search engines, 311K news feeds, 24K radio stations
 - **Privacy-first** — no query logging, no telemetry, no accounts
 - **Multi-language** — 63 UI languages, auto-detect query language
 - **News aggregation** — Discover feed with trending topics
+- **Boost mode** — tier-1 news sources indexed in 2-3 minutes on first run
 - **Offline-capable** — PWA with service worker caching
 
 ## Quick Start
