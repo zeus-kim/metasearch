@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Salom, men Hera Kim. Bugungi eng muhim yangiliklar bilan tanishing.",
+    "anchor_outro": "Hozircha shuncha. Men Hera Kim. Yaxshi kun tilayman."
   }
 }

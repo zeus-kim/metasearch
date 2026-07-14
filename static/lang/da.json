@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Hej, jeg er Hera Kim. Her er dagens vigtigste nyheder.",
+    "anchor_outro": "Det var alt for nu. Jeg er Hera Kim. Hav en fantastisk dag."
   }
 }

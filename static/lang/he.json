@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "שלום, אני הרא קים. הנה הכותרות המרכזיות של היום.",
+    "anchor_outro": "זה הכל לעכשיו. אני הרא קים. שיהיה לכם יום נהדר."
   }
 }

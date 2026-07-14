@@ -428,5 +428,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "こんにちは、ヘラ・キムです。本日の主要ニュースをお伝えします。",
+    "anchor_outro": "以上、ヘラ・キムがお伝えしました。良い一日を。"
   }
 }

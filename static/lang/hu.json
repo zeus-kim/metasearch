@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Üdvözlöm, Hera Kim vagyok. Íme a mai nap legfontosabb hírei.",
+    "anchor_outro": "Ennyi volt mára. Én Hera Kim vagyok. Legyen szép napja!"
   }
 }

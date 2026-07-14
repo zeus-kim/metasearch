@@ -439,5 +439,9 @@
     "select_all": "All",
     "clear_all": "Clear",
     "run": "Compare"
+  },
+  "briefing": {
+    "anchor_intro": "Hello, I'm Hera Kim. Here are today's top stories.",
+    "anchor_outro": "That's all for now. I'm Hera Kim. Have a great day."
   }
 }

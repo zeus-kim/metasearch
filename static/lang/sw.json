@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Habari, mimi ni Hera Kim. Hapa kuna habari kuu za leo.",
+    "anchor_outro": "Hiyo ndiyo yote kwa sasa. Mimi ni Hera Kim. Kuwa na siku njema."
   }
 }

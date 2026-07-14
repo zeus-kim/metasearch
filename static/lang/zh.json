@@ -429,5 +429,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "大家好，我是赫拉·金。以下是今日要闻。",
+    "anchor_outro": "以上就是今天的新闻。我是赫拉·金，祝您愉快。"
   }
 }

@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Magandang araw, ako si Hera Kim. Narito ang mga pangunahing balita para sa araw na ito.",
+    "anchor_outro": "Iyan na ang lahat sa ngayon. Ako si Hera Kim. Magandang araw sa inyong lahat."
   }
 }

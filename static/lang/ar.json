@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "مرحباً، أنا هيرا كيم. إليكم أبرز الأخبار اليوم.",
+    "anchor_outro": "هذا كل شيء في الوقت الحالي. أنا هيرا كيم. أتمنى لكم يوماً سعيداً."
   }
 }

@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Hei, olen Hera Kim. Tässä ovat tän päivän tärkeimmät uutiset.",
+    "anchor_outro": "Siinä kaikki tältä erää. Olen Hera Kim. Mukavaa päivää!"
   }
 }

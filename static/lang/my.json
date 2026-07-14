@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "မင်္ဂလာပါ၊ ကျွန်ုပ်သည် Hera Kim ဖြစ်ပါသည်။ ယနေ့၏ ထိပ်တန်း သတင်းများကို ကြည့်ကြပါစို့။",
+    "anchor_outro": "ယခုအချိန်အတွက် အထိမ်းအမှတ်အနေဖြင့် အထက်ပါအချက်အလက်များသာ ဖြစ်ပါသည်။ ကျွန်ုပ်မှာ Hera Kim ဖြစ်ပါသည်။ သင်တို့အား အထူးနေ့လေးဖြစ်ပါစေ။"
   }
 }

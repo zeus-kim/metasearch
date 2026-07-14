@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "გამარჯობა, მე ვარ ჰერა კიმი. აქ არის დღევანდელი მთავარი ამბები.",
+    "anchor_outro": "ამ ეტაპზე ეს ყველაფერი არის. მე ვარ ჰერა კიმ. კარგი დღე გისურვებთ."
   }
 }

@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Pozdravljeni, sem Hera Kim. Tukaj so današnje glavne novice.",
+    "anchor_outro": "To je vse za zdaj. Jaz sem Hera Kim. Želim vam čudovit dan."
   }
 }

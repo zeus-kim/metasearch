@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "سلام، من هرا کیم هستم. در اینجا مهم‌ترین اخبار امروز را برای شما داریم.",
+    "anchor_outro": "این همه برای حالا است. من هرا کیم هستم. روز خوبی داشته باشید."
   }
 }

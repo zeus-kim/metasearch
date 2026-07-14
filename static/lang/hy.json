@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Բարև, ես Հերա Քիմն եմ: Ահա այսօրվա գլխավոր նորությունները:",
+    "anchor_outro": "Այսքանն է այս պահին։ Ես Հերա Քիմ եմ։ Լավ օր մաղթում եմ։"
   }
 }

@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Sveiki, aš esu Hera Kim. Štai šiandienos svarbiausios naujienos.",
+    "anchor_outro": "Tai tiek šiam kartui. Aš esu Hera Kim. Turėkite puikią dieną."
   }
 }

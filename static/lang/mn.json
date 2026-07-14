@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Сайн байна уу, би Хера Ким. Өнөөдрийн гол мэдээнүүдийг танилцуулж байна.",
+    "anchor_outro": "Энэ бол одоогоор бүх зүйл. Би Хера Ким. Сайхан өдөр өнгөрүүлээрэй."
   }
 }

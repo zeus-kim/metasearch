@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "ආයුබෝවන්, මම Hera Kim. අද දිනයේ ප්‍රධාන පුවත් මෙන්න.",
+    "anchor_outro": "මෙය දැන් සම්පූර්ණයි. මම හෙරා කිම්. ඔබට සුභ දවසක් වේවා."
   }
 }

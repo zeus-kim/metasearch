@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "नमस्कार, म हेरा किम हुँ। यहाँ आजका प्रमुख समाचारहरू छन्।",
+    "anchor_outro": "यति नै हो। म हेरा किम हुँ। तपाईंको दिन शुभ रहोस्।"
   }
 }

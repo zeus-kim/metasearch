@@ -429,5 +429,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Hallo, ich bin Hera Kim. Hier sind die heutigen Top-Nachrichten.",
+    "anchor_outro": "Das ist alles für jetzt. Ich bin Hera Kim. Einen schönen Tag noch."
   }
 }

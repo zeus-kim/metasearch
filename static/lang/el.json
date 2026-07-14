@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Γειά σας, είμαι η Hera Kim. Ακολουθούν οι κορυφαίες ειδήσεις της ημέρας.",
+    "anchor_outro": "Αυτά είναι όλα για τώρα. Είμαι η Hera Kim. Να έχετε μια υπέροχη μέρα."
   }
 }

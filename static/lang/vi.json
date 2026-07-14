@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Xin chào, tôi là Hera Kim. Dưới đây là những tin tức nổi bật hôm nay.",
+    "anchor_outro": "Đó là tất cả cho bây giờ. Tôi là Hera Kim. Chúc bạn một ngày tuyệt vời."
   }
 }

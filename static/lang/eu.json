@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Kaixo, ni Hera Kim naiz. Hona hemen gaurko albiste nagusiak.",
+    "anchor_outro": "Hori da guztia orain. Ni Hera Kim naiz. Egun ona izan."
   }
 }

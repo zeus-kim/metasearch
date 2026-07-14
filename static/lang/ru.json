@@ -428,5 +428,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Здравствуйте, я Хера Ким. Вот главные новости сегодняшнего дня.",
+    "anchor_outro": "На этом всё. Я Хера Ким. Хорошего вам дня."
   }
 }

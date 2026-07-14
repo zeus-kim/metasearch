@@ -4331,6 +4331,9 @@ body.full-toolbar .model-badge { display: inline-block; }
         </div>
         <audio id="briefingAudioFull" controls style="width:100%;margin:1rem 0;display:none"></audio>
 
+        <!-- Anchor intro -->
+        <div class="briefing-intro" id="briefingIntro" style="display:none;padding:1rem;background:var(--bg-secondary);border-radius:var(--radius);margin-bottom:1rem;font-size:1rem;line-height:1.6"></div>
+
         <!-- Two sections: Local + World -->
         <div class="briefing-sections" id="briefingSections" style="display:none">
           <div class="briefing-section">
@@ -4342,6 +4345,9 @@ body.full-toolbar .model-badge { display: inline-block; }
             <div class="briefing-headlines-world" id="briefingHeadlinesWorld"></div>
           </div>
         </div>
+
+        <!-- Anchor outro -->
+        <div class="briefing-outro" id="briefingOutro" style="display:none;padding:1rem;background:var(--bg-secondary);border-radius:var(--radius);margin-top:1rem;font-size:1rem;line-height:1.6;text-align:right;font-style:italic"></div>
 
         <details class="briefing-script-details" style="margin-top:1rem">
           <summary>📝 <span data-i18n="briefing.script">Script</span></summary>
@@ -6009,14 +6015,14 @@ body.full-toolbar .model-badge { display: inline-block; }
 
   // Staged fallback for a news card image: real image → publisher favicon →
   // letter avatar. Driven by data-* attributes so it works inline.
-  function newsImgError(img) {
+  window.newsImgError = function(img) {
     const letter = img.getAttribute('data-letter') || '?';
     const div = document.createElement('div');
     div.className = 'news-thumb-placeholder';
     div.textContent = letter;
     div.setAttribute('aria-hidden', 'true');
     img.replaceWith(div);
-  }
+  };
 
   function newsMediaHtml(r, placeholderClass) {
     const thumb = newsThumb(r);
@@ -7339,12 +7345,33 @@ body.full-toolbar .model-badge { display: inline-block; }
         const discoverResp = await fetch(`/api/v1/discover_snapshot?lang=${lang}&limit=20`, { signal: AbortSignal.timeout(30000) });
         const discoverData = await discoverResp.json();
 
+        // Clean headline - remove series tags, hashtags, brackets
+        const cleanHeadline = (title) => {
+          return title
+            // "Day X of #series:" or "Day X of series:"
+            .replace(/^Day\s+\d+\s+of\s+#?\w+[:\s]+/i, '')
+            // "Episode X:" or "Ep X:"
+            .replace(/^(Episode|Ep\.?)\s*\d+[:\s]+/i, '')
+            // "#100DaysOf..." at start
+            .replace(/^#\d+Days(Of)?\w*[:\s]+/i, '')
+            // "Show HN:" "Ask HN:" "Launch HN:"
+            .replace(/^(Show|Ask|Launch|Tell)\s+HN[:\s]+/i, '')
+            // "[Tag]" or "[Series Name]" at start
+            .replace(/^\[[^\]]+\]\s*/g, '')
+            // "Part X:" at start
+            .replace(/^Part\s+\d+[:\s]+/i, '')
+            // Leading hashtags
+            .replace(/^#\w+\s+/g, '')
+            // Clean up whitespace
+            .trim();
+        };
+
         // Convert discover articles to briefing format
         const articles = discoverData.articles || [];
-        const localHeadlines = articles.slice(0, 10).map(a => a.title);
+        const localHeadlines = articles.slice(0, 10).map(a => cleanHeadline(a.title));
         const worldHeadlines = articles.filter(a =>
           a.category === 'world' || a.category === 'international'
-        ).slice(0, 5).map(a => a.title);
+        ).slice(0, 5).map(a => cleanHeadline(a.title));
 
         data = {
           audio_url: null,
@@ -7372,6 +7399,9 @@ body.full-toolbar .model-badge { display: inline-block; }
     const scriptEl = document.getElementById('briefingScriptFull');
     const localEl = document.getElementById('briefingHeadlinesLocal');
     const worldEl = document.getElementById('briefingHeadlinesWorld');
+    const introEl = document.getElementById('briefingIntro');
+
+    // Anchor intro from language pack (63 languages supported)
 
     // Check if we have any headlines
     const hasHeadlines = data && ((data.local_headlines && data.local_headlines.length > 0) ||
@@ -7379,10 +7409,20 @@ body.full-toolbar .model-badge { display: inline-block; }
 
     if (!data || !hasHeadlines) {
       status.innerHTML = `<span style="color:var(--muted)">${t('briefing.not_ready') || 'No news available'}</span>`;
+      if (introEl) introEl.style.display = 'none';
       return;
     }
 
     status.style.display = 'none';
+
+    // Show anchor intro from language pack
+    if (introEl) {
+      const intro = t('briefing.anchor_intro');
+      if (intro && intro !== 'briefing.anchor_intro') {
+        introEl.textContent = intro;
+        introEl.style.display = 'block';
+      }
+    }
 
     // Audio is optional now - only show if available
     if (data.audio_url) {
@@ -7399,26 +7439,49 @@ body.full-toolbar .model-badge { display: inline-block; }
     const articles = data.articles || [];
 
     // If we have article objects, make headlines clickable
+    // Clean headline function
+    const cleanHeadline = (title) => {
+      return title
+        .replace(/^Day\s+\d+\s+of\s+#?\w+[:\s]+/i, '')
+        .replace(/^(Episode|Ep\.?)\s*\d+[:\s]+/i, '')
+        .replace(/^#\d+Days(Of)?\w*[:\s]+/i, '')
+        .replace(/^(Show|Ask|Launch|Tell)\s+HN[:\s]+/i, '')
+        .replace(/^\[[^\]]+\]\s*/g, '')
+        .replace(/^Part\s+\d+[:\s]+/i, '')
+        .replace(/^#\w+\s+/g, '')
+        .trim();
+    };
+
     if (articles.length > 0) {
       localEl.innerHTML = articles.slice(0, 10).map(a =>
-        `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>`
+        `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(cleanHeadline(a.title))}</a></div>`
       ).join('');
 
       const worldArticles = articles.filter(a =>
         a.category === 'world' || a.category === 'international'
       ).slice(0, 5);
       worldEl.innerHTML = worldArticles.length > 0
-        ? worldArticles.map(a => `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>`).join('')
-        : articles.slice(10, 15).map(a => `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>`).join('');
+        ? worldArticles.map(a => `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(cleanHeadline(a.title))}</a></div>`).join('')
+        : articles.slice(10, 15).map(a => `<div class="briefing-headline-item"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(cleanHeadline(a.title))}</a></div>`).join('');
     } else {
-      localEl.innerHTML = local.map(h => `<div class="briefing-headline-item">${esc(h)}</div>`).join('');
+      localEl.innerHTML = local.map(h => `<div class="briefing-headline-item">${esc(cleanHeadline(h))}</div>`).join('');
       worldEl.innerHTML = world.length > 0
-        ? world.map(h => `<div class="briefing-headline-item">${esc(h)}</div>`).join('')
+        ? world.map(h => `<div class="briefing-headline-item">${esc(cleanHeadline(h))}</div>`).join('')
         : `<div style="color:var(--muted);font-size:.85rem">${t('briefing.no_world') || 'No world news'}</div>`;
     }
 
     sections.style.display = 'flex';
     scriptEl.textContent = data.script || '';
+
+    // Add outro from language pack
+    const outroEl = document.getElementById('briefingOutro');
+    if (outroEl) {
+      const outro = t('briefing.anchor_outro');
+      if (outro && outro !== 'briefing.anchor_outro') {
+        outroEl.textContent = outro;
+        outroEl.style.display = 'block';
+      }
+    }
   }
 
   document.getElementById('briefingGenerateBtn')?.addEventListener('click', () => {

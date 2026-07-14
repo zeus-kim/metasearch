@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Bună, sunt Hera Kim. Iată cele mai importante știri de astăzi.",
+    "anchor_outro": "Asta e tot pentru acum. Eu sunt Hera Kim. Să aveți o zi minunată."
   }
 }

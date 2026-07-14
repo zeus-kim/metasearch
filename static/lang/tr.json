@@ -427,5 +427,9 @@
     "daily_limit": "Daily token limit",
     "cost_limit": "Daily cost limit ($)",
     "reset": "Reset session"
+  },
+  "briefing": {
+    "anchor_intro": "Merhaba, ben Hera Kim. İşte bugünün öne çıkan haberleri.",
+    "anchor_outro": "Şimdilik bu kadar. Ben Hera Kim. Harika bir gün geçirmeniz dileğiyle."
   }
 }
