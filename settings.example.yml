@@ -1,468 +1,1544 @@
-search:
-  formats:
-  - html
-  - json
-  - rss
-  - csv
-  default_lang: en
-  default_language: auto
-  safe_search: 0
-  default_categories:
-  - general
-  autocomplete: duckduckgo
-  favicon_resolver: https://icons.duckduckgo.com/ip3/{domain}.ico
-  domain_trust: []
-  personalization: false
-  news:
-    per_source_cap: 2
-    freshness_half_life_hours: 18.0
-    freshness_weight: 0.5
-    dedup_title_similarity: 0.6
-    cache_ttl_secs: 180
-    discover_cache_ttl_hours: 2
-    discover_max_age_hours: 48
-    discover_min_image_count: 5
-    enrich_max: 0
-    enrich_concurrency: 8
-    enrich_timeout_ms: 3500
-    enrich_budget_ms: 6000
-    max_age_days: 14
-    min_results: 3
-server:
-  bind_address: 0.0.0.0  # Allow LAN access (use 127.0.0.1 for local only)
-  port: 8889
-  rate_limit:
-    enabled: true
-    search_requests_per_minute: 60
-    preferences_requests_per_minute: 10
-    window_secs: 60
-  request_timeout_secs: 9
-  max_results_per_engine: 10
-  max_connections: 64
-  read_timeout_secs: 10
-  cache_ttl_secs: 300
-  engine_min_interval_ms: 200
-  image_proxy: true
-  cache_backend: memory
-  cache_dir: .metasearch-cache
-  redis_url: redis://127.0.0.1:6379
-  proxies: []
-  max_retries: 1
-  engine_failure_threshold: 5
-  engine_cooldown_secs: 60
-  empty_result_tracking: true
-  allow_private_urls: false
-ai:
-  enabled: true
-  # Local Ollama (recommended for personal use)
-  base_url: http://localhost:11434
-  model: llama3.2:3b  # or gemma3:4b, qwen2.5:7b
-  article_model: llama3.2:3b
-  embedding_model: nomic-embed-text
-  answer: true
-  expand: false
-  rerank: false
-  cluster: false
-  conversational: false
-  vision: false
-  vision_model: llava
-  answer_top_n: 5
-  timeout_secs: 30
-  answer_language: auto  # auto-detect query language
-  api_key: # Optional: set via OPENAI_API_KEY for cloud APIs
-  input_cost_per_million: 0.0  # Free for local Ollama
-  output_cost_per_million: 0.0
-  track_usage: false
-branding:
-  app_name: Metasearch
-feeds:
-  enabled: true
-  retention_days: 7
-  poll_interval_mins: 30
-  languages: []
-  disabled_feeds: []
+
+# ============================================================================
+# Metasearch Engine Configuration
+# Total: 200+ search engines
+# ============================================================================
+
+# ============================================================================
+# Native Engine Overrides & Family Instances
+# ============================================================================
 engines:
-- name: wikipedia
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: wikidata
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: duckduckgo
-  enabled: true
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: duckduckgo_lite
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: brave
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: mojeek
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: github
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: stackexchange
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: arxiv
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: hackernews
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  - news
-  base_url: null
-  timeout_secs: null
-- name: wikicommons
-  enabled: false
-  weight: 1.0
-  categories:
-  - images
-  base_url: null
-  timeout_secs: null
-- name: duckduckgo_images
-  enabled: true
-  weight: 1.0
-  categories:
-  - images
-  base_url: null
-  timeout_secs: null
-- name: duckduckgo_videos
-  enabled: false
-  weight: 1.0
-  categories:
-  - videos
-  base_url: null
-  timeout_secs: null
-- name: bing_images
-  enabled: false
-  weight: 1.0
-  categories:
-  - images
-  base_url: null
-  timeout_secs: null
-- name: brave_images
-  enabled: false
-  weight: 1.0
-  categories:
-  - images
-  base_url: null
-  timeout_secs: null
-- name: openverse
-  enabled: false
-  weight: 1.0
-  categories:
-  - images
-  base_url: null
-  timeout_secs: null
-- name: archive_music
-  enabled: false
-  weight: 1.0
-  categories:
-  - music
-  base_url: null
-  timeout_secs: null
-- name: gitlab
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: codeberg
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: crates_io
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: npm
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: packagist
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: rubygems
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: dockerhub
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: askubuntu
-  enabled: false
-  weight: 1.0
-  categories:
-  - it
-  base_url: null
-  timeout_secs: null
-- name: wiktionary
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: wikibooks
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: wikiquote
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: wikisource
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: openlibrary
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  - files
-  base_url: null
-  timeout_secs: null
-- name: internetarchive
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  - files
-  base_url: null
-  timeout_secs: null
-- name: openalex
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: crossref
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: europepmc
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: semanticscholar
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: doaj
-  enabled: false
-  weight: 1.0
-  categories:
-  - science
-  base_url: null
-  timeout_secs: null
-- name: wikinews
-  enabled: false
-  weight: 1.0
-  categories:
-  - news
-  base_url: null
-  timeout_secs: null
-- name: googlenews
-  enabled: false
-  weight: 1.0
-  categories:
-  - news
-  base_url: null
-  timeout_secs: null
-- name: gdelt
-  enabled: false
-  weight: 1.0
-  categories:
-  - news
-  base_url: null
-  timeout_secs: null
-- name: lemmy
-  enabled: false
-  weight: 1.0
-  categories:
-  - social
-  - news
-  base_url: null
-  timeout_secs: null
-- name: peertube
-  enabled: false
-  weight: 1.0
-  categories:
-  - videos
-  base_url: null
-  timeout_secs: null
-- name: openstreetmap
-  enabled: false
-  weight: 1.0
-  categories:
-  - map
-  base_url: null
-  timeout_secs: null
-- name: startpage
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: qwant
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: google
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: bing
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: brave_api
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: yandex
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: bingnews
-  enabled: false
-  weight: 1.0
-  categories:
-  - news
-  base_url: null
-  timeout_secs: null
-- name: reddit
-  enabled: false
-  weight: 1.0
-  categories:
-  - social
-  base_url: null
-  timeout_secs: null
-- name: marginalia
-  enabled: false
-  weight: 1.0
-  categories:
-  - general
-  base_url: null
-  timeout_secs: null
-- name: local_feeds
-  enabled: true
-  weight: 1.5
-  categories:
-  - general
-  - news
-  base_url: null
-  timeout_secs: null
-- name: local_news
-  enabled: true
-  weight: 1.0
-  categories:
-  - news
-  base_url: null
-  timeout_secs: null
-- name: googlenews
-  enabled: false
-  weight: 1.2
-  categories:
-  - general
-  - news
-  base_url: null
-  timeout_secs: null
+  # --- StackExchange Sites (25 communities) ---
+  - name: stackexchange_superuser
+    enabled: true
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_serverfault
+    enabled: true
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_unix
+    enabled: true
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_apple
+    enabled: false
+    weight: 0.8
+    categories: [it]
+
+  - name: stackexchange_security
+    enabled: true
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_dba
+    enabled: false
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_softwareengineering
+    enabled: false
+    weight: 0.9
+    categories: [it]
+
+  - name: stackexchange_codereview
+    enabled: false
+    weight: 0.8
+    categories: [it]
+
+  - name: stackexchange_webmasters
+    enabled: false
+    weight: 0.8
+    categories: [it]
+
+  - name: stackexchange_wordpress
+    enabled: false
+    weight: 0.8
+    categories: [it]
+
+  - name: stackexchange_math
+    enabled: true
+    weight: 0.9
+    categories: [science]
+
+  - name: stackexchange_physics
+    enabled: true
+    weight: 0.9
+    categories: [science]
+
+  - name: stackexchange_chemistry
+    enabled: false
+    weight: 0.8
+    categories: [science]
+
+  - name: stackexchange_biology
+    enabled: false
+    weight: 0.8
+    categories: [science]
+
+  - name: stackexchange_stats
+    enabled: false
+    weight: 0.9
+    categories: [science]
+
+  - name: stackexchange_datascience
+    enabled: false
+    weight: 0.9
+    categories: [it, science]
+
+  - name: stackexchange_ai
+    enabled: false
+    weight: 0.9
+    categories: [it, science]
+
+  - name: stackexchange_gamedev
+    enabled: false
+    weight: 0.8
+    categories: [it, games]
+
+  - name: stackexchange_gaming
+    enabled: false
+    weight: 0.8
+    categories: [games]
+
+  - name: stackexchange_travel
+    enabled: false
+    weight: 0.8
+    categories: [general]
+
+  - name: stackexchange_cooking
+    enabled: false
+    weight: 0.7
+    categories: [general]
+
+  - name: stackexchange_money
+    enabled: false
+    weight: 0.8
+    categories: [general]
+
+  - name: stackexchange_english
+    enabled: true
+    weight: 0.8
+    categories: [general]
+
+  - name: stackexchange_ux
+    enabled: false
+    weight: 0.8
+    categories: [it]
+
+  - name: stackexchange_electronics
+    enabled: false
+    weight: 0.8
+    categories: [science, it]
+
+  # --- MediaWiki Instances (15 wikis) ---
+  - name: mediawiki_archwiki
+    enabled: true
+    weight: 0.9
+    categories: [it]
+    base_url: "https://wiki.archlinux.org/api.php"
+
+  - name: mediawiki_gentoo
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://wiki.gentoo.org/api.php"
+
+  - name: mediawiki_debian
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://wiki.debian.org/api.php"
+
+  - name: mediawiki_fedora
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://fedoraproject.org/wiki/api.php"
+
+  - name: mediawiki_freebsd
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://wiki.freebsd.org/api.php"
+
+  - name: mediawiki_osm
+    enabled: false
+    weight: 0.8
+    categories: [map]
+    base_url: "https://wiki.openstreetmap.org/w/api.php"
+
+  - name: mediawiki_wikivoyage
+    enabled: false
+    weight: 0.8
+    categories: [general]
+    base_url: "https://en.wikivoyage.org/w/api.php"
+
+  - name: mediawiki_wikitravel
+    enabled: false
+    weight: 0.7
+    categories: [general]
+    base_url: "https://wikitravel.org/wiki/en/api.php"
+
+  - name: mediawiki_mozilla
+    enabled: true
+    weight: 0.9
+    categories: [it]
+    base_url: "https://wiki.mozilla.org/api.php"
+
+  - name: mediawiki_kernel
+    enabled: false
+    weight: 0.9
+    categories: [it]
+    base_url: "https://wiki.kernel.org/api.php"
+
+  - name: mediawiki_selfhosted
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://wiki.selfhosted.show/api.php"
+
+  - name: mediawiki_privacyguides
+    enabled: false
+    weight: 0.8
+    categories: [it]
+    base_url: "https://www.privacyguides.org/wiki/api.php"
+
+  - name: mediawiki_installgentoo
+    enabled: false
+    weight: 0.7
+    categories: [it]
+    base_url: "https://installgentoo.com/wiki/api.php"
+
+  - name: mediawiki_pcgamingwiki
+    enabled: false
+    weight: 0.8
+    categories: [games]
+    base_url: "https://www.pcgamingwiki.com/w/api.php"
+
+  - name: mediawiki_strategywiki
+    enabled: false
+    weight: 0.7
+    categories: [games]
+    base_url: "https://strategywiki.org/w/api.php"
+
+  # --- Lemmy Instances (10 communities) ---
+  - name: lemmy_world
+    enabled: false
+    weight: 0.9
+    categories: [social, news]
+    base_url: "https://lemmy.world"
+
+  - name: lemmy_dbzer0
+    enabled: false
+    weight: 0.8
+    categories: [social, news]
+    base_url: "https://lemmy.dbzer0.com"
+
+  - name: lemmy_blahaj
+    enabled: false
+    weight: 0.8
+    categories: [social]
+    base_url: "https://lemmy.blahaj.zone"
+
+  - name: lemmy_programming
+    enabled: false
+    weight: 0.9
+    categories: [it, social]
+    base_url: "https://programming.dev"
+
+  - name: lemmy_fedia
+    enabled: false
+    weight: 0.8
+    categories: [social]
+    base_url: "https://fedia.io"
+
+  - name: lemmy_sopuli
+    enabled: false
+    weight: 0.7
+    categories: [social]
+    base_url: "https://sopuli.xyz"
+
+  - name: lemmy_aussie
+    enabled: false
+    weight: 0.7
+    categories: [social, news]
+    base_url: "https://aussie.zone"
+
+  - name: lemmy_infosec
+    enabled: false
+    weight: 0.8
+    categories: [it, social]
+    base_url: "https://infosec.pub"
+
+  - name: lemmy_discuss
+    enabled: false
+    weight: 0.8
+    categories: [social]
+    base_url: "https://discuss.online"
+
+  - name: lemmy_feddit
+    enabled: false
+    weight: 0.8
+    categories: [social, news]
+    base_url: "https://feddit.de"
+
+# ============================================================================
+# Custom Search Engines (JSON/RSS APIs) - 100+ engines
+# ============================================================================
+custom_engines:
+  # --- Social & Community (15) ---
+  - name: reddit_search
+    type: json
+    url_template: "https://www.reddit.com/search.json?q={query}&limit=25"
+    categories: [social]
+    enabled: false
+    weight: 0.9
+    result_path: "data.children"
+    url_field: "data.url"
+    title_field: "data.title"
+    content_field: "data.selftext"
+
+  - name: hn_algolia
+    type: json
+    url_template: "https://hn.algolia.com/api/v1/search?query={query}&tags=story"
+    categories: [tech, social]
+    enabled: true
+    weight: 1.0
+    result_path: "hits"
+    url_field: "url"
+    title_field: "title"
+
+  - name: lobsters_search
+    type: rss
+    url_template: "https://lobste.rs/search?q={query}&what=stories&order=relevance&format=rss"
+    categories: [tech]
+    enabled: false
+    weight: 0.9
+
+  - name: devto_search
+    type: json
+    url_template: "https://dev.to/api/articles?tag={query}&per_page=25"
+    categories: [tech]
+    enabled: false
+    weight: 0.8
+    result_path: ""
+    url_field: "url"
+    title_field: "title"
+    content_field: "description"
+
+  - name: hashnode
+    type: json
+    url_template: "https://hashnode.com/api/search?q={query}"
+    categories: [tech]
+    enabled: false
+    weight: 0.7
+    result_path: "posts"
+    url_field: "url"
+    title_field: "title"
+    content_field: "brief"
+
+  - name: medium_tags
+    type: rss
+    url_template: "https://medium.com/feed/tag/{query}"
+    categories: [general]
+    enabled: false
+    weight: 0.7
+
+  - name: indiehackers
+    type: rss
+    url_template: "https://www.indiehackers.com/feed.xml?q={query}"
+    categories: [tech]
+    enabled: false
+    weight: 0.7
+
+  # slashdot: RSS feed without search (disabled - no {query} support)
+  # - name: slashdot
+  #   type: rss
+  #   url_template: "https://rss.slashdot.org/Slashdot/slashdotMain"
+  #   categories: [tech, news]
+  #   enabled: false
+  #   weight: 0.7
+
+  - name: tildes
+    type: rss
+    url_template: "https://tildes.net/search?q={query}&order=new&format=atom"
+    categories: [social]
+    enabled: false
+    weight: 0.7
+
+  - name: kbin
+    type: json
+    url_template: "https://kbin.social/api/search?q={query}"
+    categories: [social]
+    enabled: false
+    weight: 0.7
+    result_path: "items"
+    url_field: "url"
+    title_field: "title"
+    content_field: "body"
+
+  - name: producthunt
+    type: rss
+    url_template: "https://www.producthunt.com/feed?q={query}"
+    categories: [tech]
+    enabled: false
+    weight: 0.7
+
+  - name: discourse_meta
+    type: json
+    url_template: "https://meta.discourse.org/search.json?q={query}"
+    categories: [tech]
+    enabled: false
+    weight: 0.7
+    result_path: "topics"
+    url_field: "slug"
+    title_field: "title"
+
+  - name: quora
+    type: rss
+    url_template: "https://www.quora.com/topic/{query}/rss"
+    categories: [general]
+    enabled: false
+    weight: 0.6
+
+  - name: xda_forums
+    type: rss
+    url_template: "https://forum.xda-developers.com/search/posts?query={query}&format=rss"
+    categories: [tech]
+    enabled: false
+    weight: 0.7
+
+  - name: tweakers
+    type: rss
+    url_template: "https://tweakers.net/feeds/mixed.xml?q={query}"
+    categories: [tech, news]
+    enabled: false
+    weight: 0.7
+
+  # --- Images (10) ---
+  - name: unsplash
+    type: json
+    url_template: "https://unsplash.com/napi/search/photos?query={query}&per_page=25"
+    categories: [images]
+    enabled: false
+    weight: 0.9
+    result_path: "results"
+    url_field: "links.html"
+    title_field: "description"
+    thumbnail_field: "urls.thumb"
+
+  - name: flickr_search
+    type: rss
+    url_template: "https://www.flickr.com/services/feeds/photos_public.gne?tags={query}&format=rss2"
+    categories: [images]
+    enabled: false
+    weight: 0.8
+
+  - name: pixabay
+    type: json
+    url_template: "https://pixabay.com/api/?key=2488108-3c13e6c6d3de5f6b9ebeee659&q={query}&per_page=25"
+    categories: [images]
+    enabled: false
+    weight: 0.9
+    result_path: "hits"
+    url_field: "pageURL"
+    title_field: "tags"
+    thumbnail_field: "previewURL"
+
+  - name: pexels
+    type: json
+    url_template: "https://api.pexels.com/v1/search?query={query}&per_page=25"
+    categories: [images]
+    enabled: false
+    weight: 0.8
+    result_path: "photos"
+    url_field: "url"
+    title_field: "alt"
+    thumbnail_field: "src.medium"
+
+  - name: deviantart
+    type: rss
+    url_template: "https://backend.deviantart.com/rss.xml?q={query}"
+    categories: [images]
+    enabled: false
+    weight: 0.7
+
+  - name: imgur_gallery
+    type: json
+    url_template: "https://api.imgur.com/3/gallery/search?q={query}"
+    categories: [images]
+    enabled: false
+    weight: 0.7
+    result_path: "data"
+    url_field: "link"
+    title_field: "title"
+
+  - name: giphy
+    type: json
+    url_template: "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q={query}&limit=25"
+    categories: [images]
+    enabled: false
+    weight: 0.6
+    result_path: "data"
+    url_field: "url"
+    title_field: "title"
+    thumbnail_field: "images.fixed_height.url"
+
+  - name: freepik
+    type: rss
+    url_template: "https://www.freepik.com/search?format=rss&query={query}"
+    categories: [images]
+    enabled: false
+    weight: 0.7
+
+  - name: stocksnap
+    type: rss
+    url_template: "https://stocksnap.io/search/{query}?format=rss"
+    categories: [images]
+    enabled: false
+    weight: 0.6
+
+  - name: reshot
+    type: rss
+    url_template: "https://www.reshot.com/search/{query}?format=rss"
+    categories: [images]
+    enabled: false
+    weight: 0.6
+
+  # --- Videos (10) ---
+  - name: vimeo_search
+    type: rss
+    url_template: "https://vimeo.com/search/feed?q={query}"
+    categories: [videos]
+    enabled: false
+    weight: 0.8
+
+  - name: dailymotion
+    type: json
+    url_template: "https://api.dailymotion.com/videos?search={query}&limit=25&fields=url,title,description,thumbnail_url"
+    categories: [videos]
+    enabled: false
+    weight: 0.7
+    result_path: "list"
+    url_field: "url"
+    title_field: "title"
+    content_field: "description"
+    thumbnail_field: "thumbnail_url"
+
+  - name: archive_video
+    type: json
+    url_template: "https://archive.org/advancedsearch.php?q={query}+mediatype:movies&output=json&rows=25"
+    categories: [videos]
+    enabled: false
+    weight: 0.8
+    result_path: "response.docs"
+    url_field: "identifier"
+    title_field: "title"
+    content_field: "description"
+
+  - name: odysee
+    type: json
+    url_template: "https://odysee.com/$/search?q={query}&type=file"
+    categories: [videos]
+    enabled: false
+    weight: 0.7
+    result_path: "data"
+    url_field: "permanent_url"
+    title_field: "title"
+    content_field: "description"
+
+  - name: rumble
+    type: rss
+    url_template: "https://rumble.com/search/all?q={query}&format=rss"
+    categories: [videos]
+    enabled: false
+    weight: 0.6
+
+  - name: bitchute
+    type: rss
+    url_template: "https://www.bitchute.com/search/?query={query}&format=rss"
+    categories: [videos]
+    enabled: false
+    weight: 0.5
+
+  - name: ted_talks
+    type: rss
+    url_template: "https://www.ted.com/talks/rss?q={query}"
+    categories: [videos]
+    enabled: false
+    weight: 0.8
+
+  - name: c_span
+    type: rss
+    url_template: "https://www.c-span.org/search/?searchtype=Videos&query={query}&format=rss"
+    categories: [videos, news]
+    enabled: false
+    weight: 0.7
+
+  - name: twitch_vods
+    type: json
+    url_template: "https://www.twitch.tv/search?term={query}&type=videos"
+    categories: [videos]
+    enabled: false
+    weight: 0.6
+    result_path: "data"
+    url_field: "url"
+    title_field: "title"
+
+  - name: nebula
+    type: rss
+    url_template: "https://nebula.tv/search?q={query}&format=rss"
+    categories: [videos]
+    enabled: false
+    weight: 0.7
+
+  # --- Music & Audio (10) ---
+  # archive_music: native engine exists, removed duplicate
+  # - name: archive_music
+  #   type: json
+  #   url_template: "https://archive.org/advancedsearch.php?q={query}+mediatype:audio&output=json&rows=25"
+
+  - name: discogs
+    type: json
+    url_template: "https://api.discogs.com/database/search?q={query}&per_page=25"
+    categories: [music]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "uri"
+    title_field: "title"
+    content_field: "type"
+
+  - name: musicbrainz
+    type: json
+    url_template: "https://musicbrainz.org/ws/2/recording?query={query}&fmt=json&limit=25"
+    categories: [music]
+    enabled: false
+    weight: 0.9
+    result_path: "recordings"
+    url_field: "id"
+    title_field: "title"
+
+  - name: bandcamp
+    type: rss
+    url_template: "https://bandcamp.com/search?q={query}&format=rss"
+    categories: [music]
+    enabled: false
+    weight: 0.8
+
+  - name: soundcloud
+    type: rss
+    url_template: "https://soundcloud.com/search/sounds?q={query}&format=rss"
+    categories: [music]
+    enabled: false
+    weight: 0.7
+
+  - name: jamendo
+    type: json
+    url_template: "https://api.jamendo.com/v3.0/tracks/?client_id=demo&search={query}&limit=25"
+    categories: [music]
+    enabled: false
+    weight: 0.7
+    result_path: "results"
+    url_field: "shareurl"
+    title_field: "name"
+    content_field: "artist_name"
+
+  - name: freemusicarchive
+    type: rss
+    url_template: "https://freemusicarchive.org/search?query={query}&format=rss"
+    categories: [music]
+    enabled: false
+    weight: 0.7
+
+  - name: podcastindex
+    type: json
+    url_template: "https://podcastindex.org/api/1.0/search/byterm?q={query}"
+    categories: [music]
+    enabled: false
+    weight: 0.8
+    result_path: "feeds"
+    url_field: "url"
+    title_field: "title"
+    content_field: "description"
+
+  - name: listennotes
+    type: json
+    url_template: "https://listen-api.listennotes.com/api/v2/search?q={query}&type=podcast"
+    categories: [music]
+    enabled: false
+    weight: 0.7
+    result_path: "results"
+    url_field: "website"
+    title_field: "title_original"
+    content_field: "description_original"
+
+  - name: mixcloud
+    type: rss
+    url_template: "https://www.mixcloud.com/search/?q={query}&format=rss"
+    categories: [music]
+    enabled: false
+    weight: 0.6
+
+  # --- Books & Literature (10) ---
+  - name: archive_books
+    type: json
+    url_template: "https://archive.org/advancedsearch.php?q={query}+mediatype:texts&output=json&rows=25"
+    categories: [books]
+    enabled: false
+    weight: 0.9
+    result_path: "response.docs"
+    url_field: "identifier"
+    title_field: "title"
+    content_field: "description"
+
+  - name: goodreads_search
+    type: rss
+    url_template: "https://www.goodreads.com/search.rss?q={query}"
+    categories: [books]
+    enabled: false
+    weight: 0.8
+
+  - name: gutenberg
+    type: rss
+    url_template: "https://www.gutenberg.org/ebooks/search/?query={query}&format=rss"
+    categories: [books]
+    enabled: false
+    weight: 0.8
+
+  - name: standardebooks
+    type: rss
+    url_template: "https://standardebooks.org/rss/new-releases?q={query}"
+    categories: [books]
+    enabled: false
+    weight: 0.7
+
+  - name: librivox
+    type: rss
+    url_template: "https://librivox.org/rss/latest_releases?q={query}"
+    categories: [books, music]
+    enabled: false
+    weight: 0.7
+
+  - name: hathitrust
+    type: rss
+    url_template: "https://catalog.hathitrust.org/Search/RSS?lookfor={query}"
+    categories: [books]
+    enabled: false
+    weight: 0.8
+
+  - name: worldcat
+    type: rss
+    url_template: "https://www.worldcat.org/search?q={query}&format=rss"
+    categories: [books]
+    enabled: false
+    weight: 0.8
+
+  - name: google_books
+    type: json
+    url_template: "https://www.googleapis.com/books/v1/volumes?q={query}&maxResults=25"
+    categories: [books]
+    enabled: false
+    weight: 0.9
+    result_path: "items"
+    url_field: "volumeInfo.infoLink"
+    title_field: "volumeInfo.title"
+    content_field: "volumeInfo.description"
+
+  - name: openlibrary_works
+    type: json
+    url_template: "https://openlibrary.org/search.json?q={query}&limit=25"
+    categories: [books]
+    enabled: false
+    weight: 0.9
+    result_path: "docs"
+    url_field: "key"
+    title_field: "title"
+    content_field: "first_sentence"
+
+  - name: bookfinder
+    type: rss
+    url_template: "https://www.bookfinder.com/search/?keywords={query}&format=rss"
+    categories: [books, shopping]
+    enabled: false
+    weight: 0.6
+
+  # --- Science & Academic (12) ---
+  # pubmed: incomplete config (needs url_field/title_field mapping)
+  # - name: pubmed
+  #   type: json
+  #   url_template: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term={query}&retmode=json&retmax=25"
+
+  - name: biorxiv
+    type: rss
+    url_template: "https://connect.biorxiv.org/biorxiv_xml.php?subject=all&q={query}"
+    categories: [science]
+    enabled: false
+    weight: 0.9
+
+  - name: medrxiv
+    type: rss
+    url_template: "https://connect.medrxiv.org/medrxiv_xml.php?subject=all&q={query}"
+    categories: [science]
+    enabled: false
+    weight: 0.8
+
+  - name: chemrxiv
+    type: rss
+    url_template: "https://chemrxiv.org/engage/chemrxiv/public-dashboard?q={query}&format=rss"
+    categories: [science]
+    enabled: false
+    weight: 0.7
+
+  - name: ssrn
+    type: rss
+    url_template: "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID{query}.xml"
+    categories: [science]
+    enabled: false
+    weight: 0.8
+
+  - name: zenodo
+    type: json
+    url_template: "https://zenodo.org/api/records/?q={query}&size=25"
+    categories: [science, files]
+    enabled: false
+    weight: 0.8
+    result_path: "hits.hits"
+    url_field: "links.html"
+    title_field: "metadata.title"
+    content_field: "metadata.description"
+
+  - name: figshare
+    type: json
+    url_template: "https://api.figshare.com/v2/articles/search?search_for={query}&page_size=25"
+    categories: [science, files]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "url"
+    title_field: "title"
+    content_field: "description"
+
+  - name: core_ac
+    type: json
+    url_template: "https://api.core.ac.uk/v3/search/works?q={query}&limit=25"
+    categories: [science]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "downloadUrl"
+    title_field: "title"
+    content_field: "abstract"
+
+  - name: base_search
+    type: json
+    url_template: "https://api.base-search.net/cgi-bin/BaseHttpSearchInterface.fcgi?func=PerformSearch&query={query}&format=json"
+    categories: [science]
+    enabled: false
+    weight: 0.8
+    result_path: "response.docs"
+    url_field: "url"
+    title_field: "dctitle"
+    content_field: "dcsubject"
+
+  - name: dimensions
+    type: json
+    url_template: "https://app.dimensions.ai/discover/publication?search_text={query}&format=json"
+    categories: [science]
+    enabled: false
+    weight: 0.7
+    result_path: "publications"
+    url_field: "doi"
+    title_field: "title"
+
+  - name: philpapers
+    type: rss
+    url_template: "https://philpapers.org/search.rss?searchString={query}"
+    categories: [science]
+    enabled: false
+    weight: 0.7
+
+  - name: dblp
+    type: json
+    url_template: "https://dblp.org/search/publ/api?q={query}&format=json&h=25"
+    categories: [science, it]
+    enabled: false
+    weight: 0.8
+    result_path: "result.hits.hit"
+    url_field: "info.url"
+    title_field: "info.title"
+
+  # --- Code & Development (15) ---
+  - name: pypi
+    type: json
+    url_template: "https://pypi.org/pypi/{query}/json"
+    categories: [it]
+    enabled: false
+    weight: 0.9
+    result_path: "info"
+    url_field: "project_url"
+    title_field: "name"
+    content_field: "summary"
+
+  - name: hexpm
+    type: json
+    url_template: "https://hex.pm/api/packages?search={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "url"
+    title_field: "name"
+    content_field: "meta.description"
+
+  - name: pubdev
+    type: json
+    url_template: "https://pub.dev/api/search?q={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: "packages"
+    url_field: "package"
+    title_field: "package"
+
+  - name: nuget
+    type: json
+    url_template: "https://api.nuget.org/v3/query?q={query}&take=25"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "data"
+    url_field: "projectUrl"
+    title_field: "title"
+    content_field: "description"
+
+  - name: composer
+    type: json
+    url_template: "https://packagist.org/search.json?q={query}&per_page=25"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "url"
+    title_field: "name"
+    content_field: "description"
+
+  - name: cocoapods
+    type: json
+    url_template: "https://cdn.cocoapods.org/all_pods.json?q={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "url"
+    title_field: "name"
+
+  - name: aur
+    type: json
+    url_template: "https://aur.archlinux.org/rpc/v5/search/{query}"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "URL"
+    title_field: "Name"
+    content_field: "Description"
+
+  - name: snapcraft
+    type: json
+    url_template: "https://api.snapcraft.io/v2/snaps/find?q={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: "results"
+    url_field: "store_url"
+    title_field: "name"
+    content_field: "summary"
+
+  - name: flathub
+    type: json
+    url_template: "https://flathub.org/api/v2/search?q={query}&per_page=25"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: "hits"
+    url_field: "id"
+    title_field: "name"
+    content_field: "summary"
+
+  - name: repology
+    type: json
+    url_template: "https://repology.org/api/v1/projects/?search={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "repo"
+    title_field: "name"
+
+  - name: sourcegraph
+    type: json
+    url_template: "https://sourcegraph.com/.api/search/stream?q={query}&v=V3&t=literal&display=25"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "url"
+    title_field: "name"
+
+  - name: searchcode
+    type: json
+    url_template: "https://searchcode.com/api/codesearch_I/?q={query}&per_page=25"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "url"
+    title_field: "name"
+    content_field: "filename"
+
+  - name: libhunt
+    type: rss
+    url_template: "https://www.libhunt.com/search?query={query}&format=rss"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+
+  - name: readthedocs
+    type: json
+    url_template: "https://readthedocs.org/api/v3/search/?q={query}&page_size=25"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "domain"
+    title_field: "project.name"
+    content_field: "highlights.content"
+
+  - name: alternativeto
+    type: rss
+    url_template: "https://alternativeto.net/browse/search/?q={query}&format=rss"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+
+  # --- Jobs & Careers (8) ---
+  - name: indeed
+    type: rss
+    url_template: "https://www.indeed.com/rss?q={query}&l="
+    categories: [jobs]
+    enabled: false
+    weight: 0.8
+
+  - name: weworkremotely
+    type: rss
+    url_template: "https://weworkremotely.com/remote-jobs.rss?search={query}"
+    categories: [jobs, tech]
+    enabled: false
+    weight: 0.8
+
+  - name: remoteok
+    type: json
+    url_template: "https://remoteok.com/api?tag={query}"
+    categories: [jobs, tech]
+    enabled: false
+    weight: 0.8
+    result_path: ""
+    url_field: "url"
+    title_field: "position"
+    content_field: "company"
+
+  - name: ycombinator_jobs
+    type: rss
+    url_template: "https://news.ycombinator.com/jobs.rss?q={query}"
+    categories: [jobs, tech]
+    enabled: false
+    weight: 0.9
+
+  - name: authentic_jobs
+    type: rss
+    url_template: "https://authenticjobs.com/rss/feed?q={query}"
+    categories: [jobs]
+    enabled: false
+    weight: 0.7
+
+  - name: dribbble_jobs
+    type: rss
+    url_template: "https://dribbble.com/jobs.rss?q={query}"
+    categories: [jobs]
+    enabled: false
+    weight: 0.7
+
+  - name: angel_jobs
+    type: rss
+    url_template: "https://angel.co/jobs/rss?q={query}"
+    categories: [jobs, tech]
+    enabled: false
+    weight: 0.7
+
+  - name: github_jobs
+    type: json
+    url_template: "https://jobs.github.com/positions.json?description={query}"
+    categories: [jobs, tech]
+    enabled: false
+    weight: 0.9
+    result_path: ""
+    url_field: "url"
+    title_field: "title"
+    content_field: "description"
+
+  # --- Shopping & Products (8) ---
+  - name: ebay
+    type: rss
+    url_template: "https://www.ebay.com/sch/i.html?_nkw={query}&_rss=1"
+    categories: [shopping]
+    enabled: false
+    weight: 0.7
+
+  - name: etsy
+    type: rss
+    url_template: "https://www.etsy.com/search?q={query}&format=rss"
+    categories: [shopping]
+    enabled: false
+    weight: 0.7
+
+  - name: aliexpress
+    type: rss
+    url_template: "https://www.aliexpress.com/wholesale?SearchText={query}&format=rss"
+    categories: [shopping]
+    enabled: false
+    weight: 0.6
+
+  - name: newegg
+    type: rss
+    url_template: "https://www.newegg.com/RSS.aspx?Submit=ENE&DEPA=0&Order=BESTMATCH&Description={query}"
+    categories: [shopping, tech]
+    enabled: false
+    weight: 0.7
+
+  - name: pricerunner
+    type: rss
+    url_template: "https://www.pricerunner.com/rss/search?q={query}"
+    categories: [shopping]
+    enabled: false
+    weight: 0.6
+
+  - name: camelcamelcamel
+    type: rss
+    url_template: "https://camelcamelcamel.com/search?sq={query}&format=rss"
+    categories: [shopping]
+    enabled: false
+    weight: 0.6
+
+  - name: slickdeals
+    type: rss
+    url_template: "https://slickdeals.net/newsearch.php?searchin=all&q={query}&format=rss"
+    categories: [shopping]
+    enabled: false
+    weight: 0.7
+
+  - name: thriftbooks
+    type: rss
+    url_template: "https://www.thriftbooks.com/browse/?b.search={query}&format=rss"
+    categories: [shopping, books]
+    enabled: false
+    weight: 0.6
+
+  # --- Maps & Location (6) ---
+  - name: photon_osm
+    type: json
+    url_template: "https://photon.komoot.io/api/?q={query}&limit=25"
+    categories: [map]
+    enabled: false
+    weight: 0.9
+    result_path: "features"
+    url_field: "properties.osm_id"
+    title_field: "properties.name"
+    content_field: "properties.street"
+
+  - name: nominatim
+    type: json
+    url_template: "https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=25"
+    categories: [map]
+    enabled: false
+    weight: 0.9
+    result_path: ""
+    url_field: "osm_id"
+    title_field: "display_name"
+    content_field: "type"
+
+  - name: geonames
+    type: json
+    url_template: "https://secure.geonames.org/searchJSON?q={query}&maxRows=25&username=demo"
+    categories: [map]
+    enabled: false
+    weight: 0.7
+    result_path: "geonames"
+    url_field: "geonameId"
+    title_field: "name"
+    content_field: "countryName"
+
+  - name: overpass
+    type: json
+    url_template: "https://overpass-api.de/api/interpreter?data=[out:json];node[name~\"{query}\"];out 25;"
+    categories: [map]
+    enabled: false
+    weight: 0.7
+    result_path: "elements"
+    url_field: "id"
+    title_field: "tags.name"
+
+  - name: wikimapia
+    type: json
+    url_template: "https://api.wikimapia.org/?function=search&q={query}&format=json&count=25"
+    categories: [map]
+    enabled: false
+    weight: 0.6
+    result_path: "places"
+    url_field: "url"
+    title_field: "name"
+
+  - name: hiking_project
+    type: json
+    url_template: "https://www.hikingproject.com/data/get-trails?q={query}&maxResults=25"
+    categories: [map]
+    enabled: false
+    weight: 0.6
+    result_path: "trails"
+    url_field: "url"
+    title_field: "name"
+    content_field: "summary"
+
+  # --- Dictionary & Reference (6) ---
+  - name: urbandictionary
+    type: json
+    url_template: "https://api.urbandictionary.com/v0/define?term={query}"
+    categories: [dictionary]
+    enabled: false
+    weight: 0.7
+    result_path: "list"
+    url_field: "permalink"
+    title_field: "word"
+    content_field: "definition"
+
+  - name: dictionary_api
+    type: json
+    url_template: "https://api.dictionaryapi.dev/api/v2/entries/en/{query}"
+    categories: [dictionary]
+    enabled: false
+    weight: 0.8
+    result_path: ""
+    url_field: "sourceUrls"
+    title_field: "word"
+    content_field: "meanings[0].definitions[0].definition"
+
+  - name: thesaurus
+    type: json
+    url_template: "https://api.datamuse.com/words?rel_syn={query}&max=25"
+    categories: [dictionary]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "word"
+    title_field: "word"
+
+  - name: forvo
+    type: rss
+    url_template: "https://forvo.com/search/{query}/rss"
+    categories: [dictionary]
+    enabled: false
+    weight: 0.6
+
+  - name: youglish
+    type: rss
+    url_template: "https://youglish.com/pronounce/{query}/english?format=rss"
+    categories: [dictionary, videos]
+    enabled: false
+    weight: 0.6
+
+  - name: linguee
+    type: rss
+    url_template: "https://www.linguee.com/english-german/search?source=auto&query={query}&format=rss"
+    categories: [dictionary]
+    enabled: false
+    weight: 0.7
+
+  # --- Games (6) ---
+  - name: itch_io
+    type: rss
+    url_template: "https://itch.io/games.xml?search={query}"
+    categories: [games]
+    enabled: false
+    weight: 0.8
+
+  - name: gog
+    type: json
+    url_template: "https://www.gog.com/games/ajax/filtered?search={query}&limit=25"
+    categories: [games]
+    enabled: false
+    weight: 0.8
+    result_path: "products"
+    url_field: "url"
+    title_field: "title"
+    content_field: "category"
+
+  - name: steam_search
+    type: rss
+    url_template: "https://store.steampowered.com/search/results?term={query}&format=rss"
+    categories: [games]
+    enabled: false
+    weight: 0.9
+
+  - name: igdb
+    type: json
+    url_template: "https://api.igdb.com/v4/games?search={query}&limit=25"
+    categories: [games]
+    enabled: false
+    weight: 0.8
+    result_path: ""
+    url_field: "url"
+    title_field: "name"
+    content_field: "summary"
+
+  - name: rawg
+    type: json
+    url_template: "https://api.rawg.io/api/games?search={query}&page_size=25"
+    categories: [games]
+    enabled: false
+    weight: 0.8
+    result_path: "results"
+    url_field: "slug"
+    title_field: "name"
+
+  - name: boardgamegeek
+    type: rss
+    url_template: "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q={query}&format=rss"
+    categories: [games]
+    enabled: false
+    weight: 0.7
+
+  # --- How-To & DIY (4) ---
+  - name: ifixit
+    type: rss
+    url_template: "https://www.ifixit.com/api/2.0/search/{query}?format=rss"
+    categories: [howto]
+    enabled: false
+    weight: 0.8
+
+  - name: instructables
+    type: rss
+    url_template: "https://www.instructables.com/search/?q={query}&format=rss"
+    categories: [howto]
+    enabled: false
+    weight: 0.8
+
+  - name: wikihow
+    type: rss
+    url_template: "https://www.wikihow.com/wikiHowTo?search={query}&format=rss"
+    categories: [howto]
+    enabled: false
+    weight: 0.7
+
+  - name: diy_stackexchange
+    type: rss
+    url_template: "https://diy.stackexchange.com/feeds/tag/{query}"
+    categories: [howto]
+    enabled: false
+    weight: 0.8
+
+  # --- News & Current Events (8) ---
+  - name: reuters_rss
+    type: rss
+    url_template: "https://www.reutersagency.com/feed/?best-topics={query}"
+    categories: [news]
+    enabled: false
+    weight: 0.9
+
+  - name: ap_news
+    type: rss
+    url_template: "https://rsshub.app/apnews/topics/{query}"
+    categories: [news]
+    enabled: false
+    weight: 0.9
+
+  - name: npr_search
+    type: rss
+    url_template: "https://www.npr.org/rss/rss.php?id={query}"
+    categories: [news]
+    enabled: false
+    weight: 0.8
+
+  - name: bbc_news
+    type: rss
+    url_template: "https://feeds.bbci.co.uk/news/rss.xml?q={query}"
+    categories: [news]
+    enabled: false
+    weight: 0.9
+
+  - name: ars_technica
+    type: rss
+    url_template: "https://feeds.arstechnica.com/arstechnica/search?q={query}"
+    categories: [news, tech]
+    enabled: false
+    weight: 0.8
+
+  - name: the_verge
+    type: rss
+    url_template: "https://www.theverge.com/rss/search?q={query}"
+    categories: [news, tech]
+    enabled: false
+    weight: 0.8
+
+  - name: techcrunch
+    type: rss
+    url_template: "https://techcrunch.com/feed/?s={query}"
+    categories: [news, tech]
+    enabled: false
+    weight: 0.8
+
+  - name: wired
+    type: rss
+    url_template: "https://www.wired.com/feed/search?q={query}"
+    categories: [news, tech]
+    enabled: false
+    weight: 0.8
+
+  # --- Finance & Crypto (6) ---
+  - name: coingecko
+    type: json
+    url_template: "https://api.coingecko.com/api/v3/search?query={query}"
+    categories: [finance]
+    enabled: false
+    weight: 0.8
+    result_path: "coins"
+    url_field: "id"
+    title_field: "name"
+    content_field: "symbol"
+
+  - name: coinmarketcap
+    type: json
+    url_template: "https://api.coinmarketcap.com/v1/ticker/?search={query}"
+    categories: [finance]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "id"
+    title_field: "name"
+    content_field: "symbol"
+
+  - name: defillama
+    type: json
+    url_template: "https://api.llama.fi/protocols?search={query}"
+    categories: [finance]
+    enabled: false
+    weight: 0.7
+    result_path: ""
+    url_field: "url"
+    title_field: "name"
+    content_field: "category"
+
+  - name: sec_edgar
+    type: rss
+    url_template: "https://www.sec.gov/cgi-bin/srch-ia?text={query}&format=rss"
+    categories: [finance]
+    enabled: false
+    weight: 0.8
+
+  - name: yahoo_finance
+    type: json
+    url_template: "https://query1.finance.yahoo.com/v1/finance/search?q={query}&quotesCount=25"
+    categories: [finance]
+    enabled: false
+    weight: 0.8
+    result_path: "quotes"
+    url_field: "symbol"
+    title_field: "shortname"
+    content_field: "longname"
+
+  - name: investing_com
+    type: rss
+    url_template: "https://www.investing.com/rss/news_rss.php?q={query}"
+    categories: [finance, news]
+    enabled: false
+    weight: 0.7
+
+  # --- Legal & Government (4) ---
+  - name: courtlistener
+    type: json
+    url_template: "https://www.courtlistener.com/api/rest/v3/search/?q={query}&format=json"
+    categories: [general]
+    enabled: false
+    weight: 0.7
+    result_path: "results"
+    url_field: "absolute_url"
+    title_field: "caseName"
+    content_field: "snippet"
+
+  - name: regulations_gov
+    type: json
+    url_template: "https://api.regulations.gov/v4/documents?filter[searchTerm]={query}&page[size]=25"
+    categories: [general]
+    enabled: false
+    weight: 0.7
+    result_path: "data"
+    url_field: "links.self"
+    title_field: "attributes.title"
+
+  - name: congress_gov
+    type: rss
+    url_template: "https://www.congress.gov/rss/search?q={query}"
+    categories: [general, news]
+    enabled: false
+    weight: 0.7
+
+  - name: fdaopen
+    type: json
+    url_template: "https://api.fda.gov/drug/label.json?search={query}&limit=25"
+    categories: [science]
+    enabled: false
+    weight: 0.7
+    result_path: "results"
+    url_field: "openfda.brand_name"
+    title_field: "openfda.brand_name"
+    content_field: "description"
+
+  # --- Security & CVE (4) ---
+  - name: nvd_cve
+    type: json
+    url_template: "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch={query}&resultsPerPage=25"
+    categories: [it]
+    enabled: false
+    weight: 0.9
+    result_path: "vulnerabilities"
+    url_field: "cve.id"
+    title_field: "cve.id"
+    content_field: "cve.descriptions[0].value"
+
+  - name: exploit_db
+    type: rss
+    url_template: "https://www.exploit-db.com/rss.xml?q={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.8
+
+  - name: cvedetails
+    type: rss
+    url_template: "https://www.cvedetails.com/cve-feed.php?q={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+
+  - name: shodan
+    type: json
+    url_template: "https://api.shodan.io/shodan/host/search?query={query}"
+    categories: [it]
+    enabled: false
+    weight: 0.7
+    result_path: "matches"
+    url_field: "ip_str"
+    title_field: "hostnames"
+    content_field: "org"
