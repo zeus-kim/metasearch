@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Built-in RSS feeds for standalone mode",
+    "total_languages": 63
+  },
+  "feeds": {
+    "ko": {
+      "name": "한국어",
+      "sources": [
+        {"name": "동아일보", "url": "https://rss.donga.com/total.xml", "category": "general"},
+        {"name": "조선일보", "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", "category": "general"},
+        {"name": "한겨레", "url": "https://www.hani.co.kr/rss/", "category": "general"},
+        {"name": "경향신문", "url": "https://www.khan.co.kr/rss/rssdata/total_news.xml", "category": "general"},
+        {"name": "한국경제", "url": "https://www.hankyung.com/feed/all-news", "category": "general"},
+        {"name": "매일경제", "url": "https://www.mk.co.kr/rss/30000001/", "category": "general"},
+        {"name": "연합뉴스", "url": "https://www.yna.co.kr/rss/news.xml", "category": "general"},
+        {"name": "서울신문", "url": "https://www.seoul.co.kr/xml/rss/google_flash_seoul.xml", "category": "general"}
+      ]
+    },
+    "en": {
+      "name": "English",
+      "sources": [
+        {"name": "Reuters", "url": "https://www.reutersagency.com/feed/", "category": "general"},
+        {"name": "AP News", "url": "https://apnews.com/index.rss", "category": "general"},
+        {"name": "BBC", "url": "https://feeds.bbci.co.uk/news/rss.xml", "category": "general"},
+        {"name": "NPR", "url": "https://feeds.npr.org/1001/rss.xml", "category": "general"},
+        {"name": "The Guardian", "url": "https://www.theguardian.com/world/rss", "category": "general"},
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "category": "general"},
+        {"name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "tech"},
+        {"name": "TechCrunch", "url": "https://techcrunch.com/feed/", "category": "tech"},
+        {"name": "Hacker News", "url": "https://hnrss.org/frontpage", "category": "tech"},
+        {"name": "The Verge", "url": "https://www.theverge.com/rss/index.xml", "category": "tech"}
+      ]
+    },
+    "ja": {
+      "name": "日本語",
+      "sources": [
+        {"name": "NHK", "url": "https://www.nhk.or.jp/rss/news/cat0.xml", "category": "general"},
+        {"name": "朝日新聞", "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf", "category": "general"},
+        {"name": "読売新聞", "url": "https://www.yomiuri.co.jp/feed/", "category": "general"},
+        {"name": "毎日新聞", "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss", "category": "general"},
+        {"name": "共同通信", "url": "https://www.47news.jp/rss/all.rss", "category": "general"},
+        {"name": "ITmedia", "url": "https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml", "category": "tech"},
+        {"name": "CNET Japan", "url": "https://japan.cnet.com/rss/index.rdf", "category": "tech"}
+      ]
+    },
+    "zh": {
+      "name": "中文",
+      "sources": [
+        {"name": "BBC中文", "url": "https://www.bbc.com/zhongwen/simp/index.xml", "category": "general"},
+        {"name": "联合早报", "url": "https://www.zaobao.com/rss", "category": "general"},
+        {"name": "VOA中文", "url": "https://www.voachinese.com/api/", "category": "general"},
+        {"name": "端传媒", "url": "https://theinitium.com/newsfeed/", "category": "general"},
+        {"name": "36氪", "url": "https://36kr.com/feed", "category": "tech"},
+        {"name": "少数派", "url": "https://sspai.com/feed", "category": "tech"}
+      ]
+    },
+    "de": {
+      "name": "Deutsch",
+      "sources": [
+        {"name": "Tagesschau", "url": "https://www.tagesschau.de/xml/rss2/", "category": "general"},
+        {"name": "Der Spiegel", "url": "https://www.spiegel.de/schlagzeilen/index.rss", "category": "general"},
+        {"name": "FAZ", "url": "https://www.faz.net/rss/aktuell/", "category": "general"},
+        {"name": "Die Zeit", "url": "https://newsfeed.zeit.de/index", "category": "general"},
+        {"name": "Heise", "url": "https://www.heise.de/rss/heise-atom.xml", "category": "tech"},
+        {"name": "Golem", "url": "https://rss.golem.de/rss.php?feed=ATOM1.0", "category": "tech"}
+      ]
+    },
+    "fr": {
+      "name": "Français",
+      "sources": [
+        {"name": "Le Monde", "url": "https://www.lemonde.fr/rss/une.xml", "category": "general"},
+        {"name": "France24", "url": "https://www.france24.com/fr/rss", "category": "general"},
+        {"name": "Le Figaro", "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml", "category": "general"},
+        {"name": "RFI", "url": "https://www.rfi.fr/fr/rss", "category": "general"},
+        {"name": "Libération", "url": "https://www.liberation.fr/arc/outboundfeeds/rss/", "category": "general"},
+        {"name": "Numerama", "url": "https://www.numerama.com/feed/", "category": "tech"}
+      ]
+    },
+    "es": {
+      "name": "Español",
+      "sources": [
+        {"name": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", "category": "general"},
+        {"name": "El Mundo", "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml", "category": "general"},
+        {"name": "BBC Mundo", "url": "https://www.bbc.com/mundo/index.xml", "category": "general"},
+        {"name": "RT Español", "url": "https://actualidad.rt.com/feeds/all.rss", "category": "general"},
+        {"name": "Xataka", "url": "https://www.xataka.com/feedburner.xml", "category": "tech"},
+        {"name": "Genbeta", "url": "https://www.genbeta.com/feedburner.xml", "category": "tech"}
+      ]
+    },
+    "pt": {
+      "name": "Português",
+      "sources": [
+        {"name": "G1", "url": "https://g1.globo.com/rss/g1/", "category": "general"},
+        {"name": "Folha", "url": "https://feeds.folha.uol.com.br/folha/emcimadahora/rss091.xml", "category": "general"},
+        {"name": "Público", "url": "https://www.publico.pt/rss", "category": "general"},
+        {"name": "RTP", "url": "https://www.rtp.pt/noticias/rss", "category": "general"},
+        {"name": "Tecnoblog", "url": "https://tecnoblog.net/feed/", "category": "tech"}
+      ]
+    },
+    "ru": {
+      "name": "Русский",
+      "sources": [
+        {"name": "РИА Новости", "url": "https://ria.ru/export/rss2/archive/index.xml", "category": "general"},
+        {"name": "ТАСС", "url": "https://tass.ru/rss/v2.xml", "category": "general"},
+        {"name": "Meduza", "url": "https://meduza.io/rss/all", "category": "general"},
+        {"name": "Коммерсант", "url": "https://www.kommersant.ru/RSS/news.xml", "category": "general"},
+        {"name": "Хабр", "url": "https://habr.com/ru/rss/all/all/", "category": "tech"}
+      ]
+    },
+    "it": {
+      "name": "Italiano",
+      "sources": [
+        {"name": "ANSA", "url": "https://www.ansa.it/sito/ansait_rss.xml", "category": "general"},
+        {"name": "La Repubblica", "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml", "category": "general"},
+        {"name": "Corriere della Sera", "url": "https://xml2.corriereobjects.it/rss/homepage.xml", "category": "general"},
+        {"name": "RAI News", "url": "https://www.rainews.it/rss/all", "category": "general"}
+      ]
+    },
+    "nl": {
+      "name": "Nederlands",
+      "sources": [
+        {"name": "NOS", "url": "https://feeds.nos.nl/nosnieuwsalgemeen", "category": "general"},
+        {"name": "De Telegraaf", "url": "https://www.telegraaf.nl/rss", "category": "general"},
+        {"name": "NU.nl", "url": "https://www.nu.nl/rss/Algemeen", "category": "general"},
+        {"name": "Tweakers", "url": "https://feeds.feedburner.com/tweakers/mixed", "category": "tech"}
+      ]
+    },
+    "pl": {
+      "name": "Polski",
+      "sources": [
+        {"name": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "category": "general"},
+        {"name": "Gazeta.pl", "url": "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.xml", "category": "general"},
+        {"name": "Rzeczpospolita", "url": "https://www.rp.pl/rss_main", "category": "general"},
+        {"name": "Antyweb", "url": "https://antyweb.pl/feed", "category": "tech"}
+      ]
+    },
+    "tr": {
+      "name": "Türkçe",
+      "sources": [
+        {"name": "TRT Haber", "url": "https://www.trthaber.com/sondakika.rss", "category": "general"},
+        {"name": "Hürriyet", "url": "https://www.hurriyet.com.tr/rss/gundem", "category": "general"},
+        {"name": "Anadolu Agency", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel", "category": "general"},
+        {"name": "Webrazzi", "url": "https://webrazzi.com/feed", "category": "tech"}
+      ]
+    },
+    "ar": {
+      "name": "العربية",
+      "sources": [
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9", "category": "general"},
+        {"name": "Al Arabiya", "url": "https://www.alarabiya.net/feed/rss2/ar.xml", "category": "general"},
+        {"name": "BBC Arabic", "url": "https://www.bbc.com/arabic/index.xml", "category": "general"},
+        {"name": "Sky News Arabia", "url": "https://www.skynewsarabia.com/web/rss", "category": "general"}
+      ]
+    },
+    "fa": {
+      "name": "فارسی",
+      "sources": [
+        {"name": "BBC Persian", "url": "https://www.bbc.com/persian/index.xml", "category": "general"},
+        {"name": "Radio Farda", "url": "https://www.radiofarda.com/api/", "category": "general"},
+        {"name": "Iran International", "url": "https://www.iranintl.com/fa/rss", "category": "general"}
+      ]
+    },
+    "he": {
+      "name": "עברית",
+      "sources": [
+        {"name": "Ynet", "url": "https://www.ynet.co.il/Integration/StoryRss2.xml", "category": "general"},
+        {"name": "Haaretz", "url": "https://www.haaretz.co.il/cmlink/1.1617539", "category": "general"},
+        {"name": "Israel Hayom", "url": "https://www.israelhayom.co.il/rss.xml", "category": "general"}
+      ]
+    },
+    "hi": {
+      "name": "हिन्दी",
+      "sources": [
+        {"name": "BBC Hindi", "url": "https://www.bbc.com/hindi/index.xml", "category": "general"},
+        {"name": "NDTV India", "url": "https://feeds.feedburner.com/ndtvkhabar", "category": "general"},
+        {"name": "Dainik Bhaskar", "url": "https://www.bhaskar.com/rss-v1--category-1061.xml", "category": "general"},
+        {"name": "Aaj Tak", "url": "https://www.aajtak.in/rss/india-news", "category": "general"}
+      ]
+    },
+    "bn": {
+      "name": "বাংলা",
+      "sources": [
+        {"name": "BBC Bangla", "url": "https://www.bbc.com/bengali/index.xml", "category": "general"},
+        {"name": "Prothom Alo", "url": "https://www.prothomalo.com/feed", "category": "general"},
+        {"name": "Daily Star", "url": "https://www.thedailystar.net/bangla/rss.xml", "category": "general"}
+      ]
+    },
+    "th": {
+      "name": "ไทย",
+      "sources": [
+        {"name": "BBC Thai", "url": "https://www.bbc.com/thai/index.xml", "category": "general"},
+        {"name": "Thai PBS", "url": "https://www.thaipbs.or.th/rss/news", "category": "general"},
+        {"name": "Matichon", "url": "https://www.matichon.co.th/feed", "category": "general"}
+      ]
+    },
+    "vi": {
+      "name": "Tiếng Việt",
+      "sources": [
+        {"name": "VnExpress", "url": "https://vnexpress.net/rss/tin-moi-nhat.rss", "category": "general"},
+        {"name": "Tuổi Trẻ", "url": "https://tuoitre.vn/rss/tin-moi-nhat.rss", "category": "general"},
+        {"name": "BBC Vietnamese", "url": "https://www.bbc.com/vietnamese/index.xml", "category": "general"},
+        {"name": "VietnamNet", "url": "https://vietnamnet.vn/rss/home.rss", "category": "general"}
+      ]
+    },
+    "id": {
+      "name": "Bahasa Indonesia",
+      "sources": [
+        {"name": "Kompas", "url": "https://www.kompas.com/rss", "category": "general"},
+        {"name": "Detik", "url": "https://rss.detik.com/index.php/detikcom", "category": "general"},
+        {"name": "Tempo", "url": "https://www.tempo.co/rss/terkini", "category": "general"},
+        {"name": "BBC Indonesia", "url": "https://www.bbc.com/indonesia/index.xml", "category": "general"}
+      ]
+    },
+    "ms": {
+      "name": "Bahasa Melayu",
+      "sources": [
+        {"name": "Berita Harian", "url": "https://www.bharian.com.my/rss", "category": "general"},
+        {"name": "Astro Awani", "url": "https://www.astroawani.com/rss/latest/public", "category": "general"},
+        {"name": "Utusan", "url": "https://www.utusan.com.my/feed/", "category": "general"}
+      ]
+    },
+    "tl": {
+      "name": "Filipino",
+      "sources": [
+        {"name": "ABS-CBN", "url": "https://news.abs-cbn.com/rss", "category": "general"},
+        {"name": "GMA News", "url": "https://data.gmanetwork.com/gno/rss/news/nation/feed.xml", "category": "general"},
+        {"name": "Rappler", "url": "https://www.rappler.com/feed", "category": "general"}
+      ]
+    },
+    "uk": {
+      "name": "Українська",
+      "sources": [
+        {"name": "BBC Ukrainian", "url": "https://www.bbc.com/ukrainian/index.xml", "category": "general"},
+        {"name": "Ukrayinska Pravda", "url": "https://www.pravda.com.ua/rss/", "category": "general"},
+        {"name": "UNIAN", "url": "https://rss.unian.net/site/news_ukr.rss", "category": "general"},
+        {"name": "Radio Svoboda", "url": "https://www.radiosvoboda.org/api/", "category": "general"}
+      ]
+    },
+    "sv": {
+      "name": "Svenska",
+      "sources": [
+        {"name": "SVT Nyheter", "url": "https://www.svt.se/nyheter/rss.xml", "category": "general"},
+        {"name": "Aftonbladet", "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/", "category": "general"},
+        {"name": "Dagens Nyheter", "url": "https://www.dn.se/rss/", "category": "general"}
+      ]
+    },
+    "no": {
+      "name": "Norsk",
+      "sources": [
+        {"name": "NRK", "url": "https://www.nrk.no/toppsaker.rss", "category": "general"},
+        {"name": "VG", "url": "https://www.vg.no/rss/feed", "category": "general"},
+        {"name": "Aftenposten", "url": "https://www.aftenposten.no/rss", "category": "general"}
+      ]
+    },
+    "da": {
+      "name": "Dansk",
+      "sources": [
+        {"name": "DR", "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder", "category": "general"},
+        {"name": "Politiken", "url": "https://politiken.dk/rss/senestenyt.rss", "category": "general"},
+        {"name": "Berlingske", "url": "https://www.berlingske.dk/rss", "category": "general"}
+      ]
+    },
+    "fi": {
+      "name": "Suomi",
+      "sources": [
+        {"name": "Yle", "url": "https://feeds.yle.fi/uutiset/v1/majorHeadlines/YLE_UUTISET.rss", "category": "general"},
+        {"name": "Helsingin Sanomat", "url": "https://www.hs.fi/rss/", "category": "general"},
+        {"name": "Ilta-Sanomat", "url": "https://www.is.fi/rss/", "category": "general"}
+      ]
+    },
+    "el": {
+      "name": "Ελληνικά",
+      "sources": [
+        {"name": "Kathimerini", "url": "https://www.kathimerini.gr/rss", "category": "general"},
+        {"name": "in.gr", "url": "https://www.in.gr/feed/", "category": "general"},
+        {"name": "Proto Thema", "url": "https://www.protothema.gr/rss/", "category": "general"}
+      ]
+    },
+    "cs": {
+      "name": "Čeština",
+      "sources": [
+        {"name": "iDNES", "url": "https://www.idnes.cz/rss", "category": "general"},
+        {"name": "Seznam Zprávy", "url": "https://www.seznamzpravy.cz/rss", "category": "general"},
+        {"name": "Novinky", "url": "https://www.novinky.cz/rss", "category": "general"}
+      ]
+    },
+    "hu": {
+      "name": "Magyar",
+      "sources": [
+        {"name": "Index", "url": "https://index.hu/24ora/rss/", "category": "general"},
+        {"name": "Telex", "url": "https://telex.hu/rss", "category": "general"},
+        {"name": "HVG", "url": "https://hvg.hu/rss", "category": "general"}
+      ]
+    },
+    "ro": {
+      "name": "Română",
+      "sources": [
+        {"name": "Digi24", "url": "https://www.digi24.ro/rss", "category": "general"},
+        {"name": "Mediafax", "url": "https://www.mediafax.ro/rss/", "category": "general"},
+        {"name": "Hotnews", "url": "https://www.hotnews.ro/rss", "category": "general"}
+      ]
+    },
+    "bg": {
+      "name": "Български",
+      "sources": [
+        {"name": "BNT", "url": "https://bnt.bg/rss", "category": "general"},
+        {"name": "Dnevnik", "url": "https://www.dnevnik.bg/rss/", "category": "general"},
+        {"name": "News.bg", "url": "https://news.bg/rss.html", "category": "general"}
+      ]
+    },
+    "hr": {
+      "name": "Hrvatski",
+      "sources": [
+        {"name": "HRT", "url": "https://vijesti.hrt.hr/rss", "category": "general"},
+        {"name": "Index.hr", "url": "https://www.index.hr/rss", "category": "general"},
+        {"name": "Jutarnji", "url": "https://www.jutarnji.hr/rss", "category": "general"}
+      ]
+    },
+    "sr": {
+      "name": "Српски",
+      "sources": [
+        {"name": "RTS", "url": "https://www.rts.rs/page/stories/ci/rss.html", "category": "general"},
+        {"name": "B92", "url": "https://www.b92.net/feed/", "category": "general"},
+        {"name": "Blic", "url": "https://www.blic.rs/rss", "category": "general"}
+      ]
+    },
+    "sk": {
+      "name": "Slovenčina",
+      "sources": [
+        {"name": "SME", "url": "https://www.sme.sk/rss", "category": "general"},
+        {"name": "Pravda", "url": "https://spravy.pravda.sk/rss/xml/", "category": "general"},
+        {"name": "Aktuality", "url": "https://www.aktuality.sk/rss/", "category": "general"}
+      ]
+    },
+    "sl": {
+      "name": "Slovenščina",
+      "sources": [
+        {"name": "RTV Slovenija", "url": "https://www.rtvslo.si/feeds/00.xml", "category": "general"},
+        {"name": "24ur", "url": "https://www.24ur.com/rss", "category": "general"},
+        {"name": "Delo", "url": "https://www.delo.si/rss/", "category": "general"}
+      ]
+    },
+    "lt": {
+      "name": "Lietuvių",
+      "sources": [
+        {"name": "Delfi", "url": "https://www.delfi.lt/rss/feeds/", "category": "general"},
+        {"name": "LRT", "url": "https://www.lrt.lt/rss", "category": "general"},
+        {"name": "15min", "url": "https://www.15min.lt/rss", "category": "general"}
+      ]
+    },
+    "lv": {
+      "name": "Latviešu",
+      "sources": [
+        {"name": "Delfi Latvia", "url": "https://www.delfi.lv/rss/", "category": "general"},
+        {"name": "LSM", "url": "https://www.lsm.lv/rss/", "category": "general"},
+        {"name": "TVNet", "url": "https://www.tvnet.lv/rss", "category": "general"}
+      ]
+    },
+    "et": {
+      "name": "Eesti",
+      "sources": [
+        {"name": "Delfi Estonia", "url": "https://www.delfi.ee/rss/", "category": "general"},
+        {"name": "ERR", "url": "https://www.err.ee/rss", "category": "general"},
+        {"name": "Postimees", "url": "https://www.postimees.ee/rss/", "category": "general"}
+      ]
+    },
+    "sq": {
+      "name": "Shqip",
+      "sources": [
+        {"name": "Top Channel", "url": "https://top-channel.tv/feed/", "category": "general"},
+        {"name": "Koha", "url": "https://www.koha.net/feed/", "category": "general"}
+      ]
+    },
+    "mk": {
+      "name": "Македонски",
+      "sources": [
+        {"name": "MRT", "url": "https://www.mrt.com.mk/rss", "category": "general"},
+        {"name": "A1on", "url": "https://a1on.mk/feed/", "category": "general"}
+      ]
+    },
+    "is": {
+      "name": "Íslenska",
+      "sources": [
+        {"name": "RÚV", "url": "https://www.ruv.is/rss/frettir", "category": "general"},
+        {"name": "Vísir", "url": "https://www.visir.is/rss/", "category": "general"}
+      ]
+    },
+    "af": {
+      "name": "Afrikaans",
+      "sources": [
+        {"name": "Netwerk24", "url": "https://www.netwerk24.com/rss", "category": "general"},
+        {"name": "News24", "url": "https://feeds.news24.com/articles/news24/TopStories/rss", "category": "general"}
+      ]
+    },
+    "sw": {
+      "name": "Kiswahili",
+      "sources": [
+        {"name": "BBC Swahili", "url": "https://www.bbc.com/swahili/index.xml", "category": "general"},
+        {"name": "DW Kiswahili", "url": "https://rss.dw.com/xml/rss-sw-all", "category": "general"}
+      ]
+    },
+    "ur": {
+      "name": "اردو",
+      "sources": [
+        {"name": "BBC Urdu", "url": "https://www.bbc.com/urdu/index.xml", "category": "general"},
+        {"name": "VOA Urdu", "url": "https://www.urduvoa.com/api/", "category": "general"},
+        {"name": "Geo News", "url": "https://urdu.geo.tv/rss/1/0", "category": "general"}
+      ]
+    },
+    "pa": {
+      "name": "ਪੰਜਾਬੀ",
+      "sources": [
+        {"name": "BBC Punjabi", "url": "https://www.bbc.com/punjabi/index.xml", "category": "general"},
+        {"name": "Ajit", "url": "https://www.ajitjalandhar.com/feed/", "category": "general"}
+      ]
+    },
+    "ta": {
+      "name": "தமிழ்",
+      "sources": [
+        {"name": "BBC Tamil", "url": "https://www.bbc.com/tamil/index.xml", "category": "general"},
+        {"name": "Dinamalar", "url": "https://www.dinamalar.com/rss/", "category": "general"}
+      ]
+    },
+    "te": {
+      "name": "తెలుగు",
+      "sources": [
+        {"name": "BBC Telugu", "url": "https://www.bbc.com/telugu/index.xml", "category": "general"},
+        {"name": "Eenadu", "url": "https://www.eenadu.net/rss/", "category": "general"}
+      ]
+    },
+    "ml": {
+      "name": "മലയാളം",
+      "sources": [
+        {"name": "Manorama", "url": "https://www.manoramaonline.com/rss/news.xml", "category": "general"},
+        {"name": "Mathrubhumi", "url": "https://www.mathrubhumi.com/rss/news", "category": "general"}
+      ]
+    },
+    "mr": {
+      "name": "मराठी",
+      "sources": [
+        {"name": "BBC Marathi", "url": "https://www.bbc.com/marathi/index.xml", "category": "general"},
+        {"name": "Loksatta", "url": "https://www.loksatta.com/feed/", "category": "general"}
+      ]
+    },
+    "ne": {
+      "name": "नेपाली",
+      "sources": [
+        {"name": "BBC Nepali", "url": "https://www.bbc.com/nepali/index.xml", "category": "general"},
+        {"name": "Kantipur", "url": "https://ekantipur.com/rss", "category": "general"}
+      ]
+    },
+    "si": {
+      "name": "සිංහල",
+      "sources": [
+        {"name": "BBC Sinhala", "url": "https://www.bbc.com/sinhala/index.xml", "category": "general"},
+        {"name": "Lankadeepa", "url": "https://www.lankadeepa.lk/rss", "category": "general"}
+      ]
+    },
+    "my": {
+      "name": "မြန်မာ",
+      "sources": [
+        {"name": "BBC Burmese", "url": "https://www.bbc.com/burmese/index.xml", "category": "general"},
+        {"name": "RFA Burmese", "url": "https://www.rfa.org/burmese/rss2.xml", "category": "general"}
+      ]
+    },
+    "km": {
+      "name": "ភាសាខ្មែរ",
+      "sources": [
+        {"name": "VOA Khmer", "url": "https://khmer.voanews.com/api/", "category": "general"},
+        {"name": "RFI Khmer", "url": "https://www.rfi.fr/km/rss", "category": "general"}
+      ]
+    },
+    "ka": {
+      "name": "ქართული",
+      "sources": [
+        {"name": "1TV Georgia", "url": "https://1tv.ge/rss/", "category": "general"},
+        {"name": "Civil.ge", "url": "https://civil.ge/ka/feed", "category": "general"}
+      ]
+    },
+    "hy": {
+      "name": "Հայերdelays",
+      "sources": [
+        {"name": "Armenpress", "url": "https://armenpress.am/arm/rss/news/", "category": "general"},
+        {"name": "News.am", "url": "https://news.am/arm/news/rss/", "category": "general"}
+      ]
+    },
+    "kk": {
+      "name": "Қазақ",
+      "sources": [
+        {"name": "BBC Kazakh", "url": "https://www.bbc.com/kazakh/index.xml", "category": "general"},
+        {"name": "Azattyq", "url": "https://www.azattyq.org/api/", "category": "general"}
+      ]
+    },
+    "uz": {
+      "name": "Oʻzbek",
+      "sources": [
+        {"name": "BBC Uzbek", "url": "https://www.bbc.com/uzbek/index.xml", "category": "general"},
+        {"name": "Kun.uz", "url": "https://kun.uz/rss", "category": "general"}
+      ]
+    },
+    "mn": {
+      "name": "Монгол",
+      "sources": [
+        {"name": "Montsame", "url": "https://montsame.mn/rss", "category": "general"},
+        {"name": "News.mn", "url": "https://news.mn/feed/", "category": "general"}
+      ]
+    },
+    "ca": {
+      "name": "Català",
+      "sources": [
+        {"name": "TV3", "url": "https://www.ccma.cat/tv3/alacarta/rss/", "category": "general"},
+        {"name": "El Periódico", "url": "https://www.elperiodico.cat/rss", "category": "general"}
+      ]
+    },
+    "gl": {
+      "name": "Galego",
+      "sources": [
+        {"name": "Galicia Confidencial", "url": "https://www.galiciaconfidencial.com/rss", "category": "general"},
+        {"name": "Sermos Galiza", "url": "https://www.sermosgaliza.gal/feed/", "category": "general"}
+      ]
+    },
+    "eu": {
+      "name": "Euskara",
+      "sources": [
+        {"name": "Berria", "url": "https://www.berria.eus/rss/", "category": "general"},
+        {"name": "EITB", "url": "https://www.eitb.eus/eu/rss/", "category": "general"}
+      ]
+    }
+  }
+}
