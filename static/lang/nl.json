@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Vraag het web, privé"
+  },
+  "nav": {
+    "ask": "Vraag",
+    "discover": "Ontdekken",
+    "history": "Geschiedenis",
+    "options": "Opties",
+    "classic": "Klassiek",
+    "stats": "Statistieken",
+    "preferences": "Voorkeuren"
+  },
+  "tabs": {
+    "general": "Algemeen",
+    "images": "Afbeeldingen",
+    "videos": "Video's",
+    "papers": "Papieren",
+    "news": "Nieuws",
+    "shopping": "Winkelen"
+  },
+  "search": {
+    "placeholder": "Vraag iets...",
+    "placeholder_news": "Voer een nieuwsonderwerp in, druk op Vraag",
+    "placeholder_images": "Zoek afbeeldingen...",
+    "placeholder_papers": "Voer een vraag in, druk op Vraag",
+    "placeholder_general": "Voer een vraag of onderwerp in, druk op Vraag",
+    "placeholder_shopping": "Zoek producten...",
+    "placeholder_videos": "Zoek video's...",
+    "button": "Vraag",
+    "button_search": "Zoeken"
+  },
+  "status": {
+    "loading": "Laden...",
+    "loading_stories": "Verhalen laden...",
+    "searching": "Zoeken...",
+    "searching_web": "Zoeken op het web...",
+    "searching_images": "Afbeeldingen zoeken...",
+    "searching_news": "Nieuwsbronnen zoeken...",
+    "searching_papers": "Academische bronnen zoeken...",
+    "searching_shopping": "Producten zoeken...",
+    "searching_videos": "Video's zoeken...",
+    "search_complete": "Zoekopdracht voltooid.",
+    "search_failed": "Zoekopdracht mislukt.",
+    "answer_ready": "Antwoord gereed.",
+    "fetching_article": "Artikel ophalen...",
+    "fetching_publisher": "Artikel van de uitgever ophalen...",
+    "resolving_article": "Artikel oplossen...",
+    "resolving_gn": "Google News-link oplossen...",
+    "rewriting": "Artikel herschrijven...",
+    "rewriting_korean": "Herschrijven in het Koreaans...",
+    "preparing_rewrite": "Voorbereiden op volledige herschrijving...",
+    "extracted_rewriting": "Uitgetrokken artikeltekst — herschrijven...",
+    "viewing_prior": "Vorige beurt bekijken — stel hieronder een vervolgvraag."
+  },
+  "error": {
+    "no_answer": "Geen AI-antwoord gegenereerd — zoekresultaten hieronder.",
+    "no_news": "Geen nieuws gevonden — probeer een andere zoekopdracht.",
+    "no_stories": "Geen verhalen gevonden — probeer een andere zoekopdracht.",
+    "no_stories_category": "Geen verhalen gevonden voor deze categorie — probeer een andere pill.",
+    "rewrite_empty": "Artikelherschrijving gaf lege tekst terug.",
+    "rewrite_failed": "Kon artikel niet herschrijven",
+    "load_news_failed": "Kon nieuws niet laden — controleer de server.",
+    "model_not_found": "Model niet gevonden — voer ollama pull uit voor uw geconfigureerde model, of kies een andere in Opties.",
+    "ollama_not_running": "Ollama draait niet — antwoorden zullen alleen via zoekopdrachten zijn. Start: ollama serve",
+    "invalid_thread": "Ongeldige thread JSON.",
+    "enter_question": "Voer een vraag in.",
+    "enter_search": "Voer een zoekterm in."
+  },
+  "article": {
+    "sources": "Bronnen",
+    "research_progress": "Onderzoeksvoortgang",
+    "thinking": "Denken",
+    "answer": "Antwoord",
+    "key_points": "Belangrijke punten",
+    "summary": "Samenvatting",
+    "related_media": "Gerelateerde media",
+    "view_more": "Bekijk {count} meer",
+    "back": "Terug",
+    "read_original": "Lees origineel",
+    "related_image": "Gerelateerde afbeelding",
+    "related": "Gerelateerd"
+  },
+  "discover": {
+    "updated": "Bijgewerkt {time}",
+    "scope": {
+      "all": "📰 Alles",
+      "local": "🏠 Lokaal",
+      "world": "🌍 Wereld"
+    },
+    "categories": {
+      "politics": "Politiek",
+      "economy": "Economie",
+      "sports": "Sport",
+      "world": "Wereld",
+      "entertainment": "Entertainment",
+      "tech": "Technologie & Wetenschap",
+      "culture": "Cultuur",
+      "health": "Gezondheid",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "technologie wetenschap",
+      "ai": "kunstmatige intelligentie AI machine learning",
+      "world": "wereldnieuws internationaal",
+      "politics": "politiek overheid verkiezingen",
+      "business": "bedrijf economie bedrijven",
+      "finance": "financiën markten aandelen",
+      "health": "gezondheid geneeskunde welzijn",
+      "climate": "klimaatverandering milieu",
+      "sports": "sport",
+      "entertainment": "entertainment beroemdheid",
+      "art": "kunst cultuur",
+      "top": "topnieuws koppen"
+    }
+  },
+  "history": {
+    "open": "Open geschiedenis",
+    "close": "Sluit geschiedenis",
+    "imported": "Geïmporteerd {count}",
+    "export": "Exporteer JSON",
+    "import": "Importeer JSON",
+    "clear": "Wis geschiedenis",
+    "empty": "Uw vragen verschijnen hier.",
+    "new_chat": "Nieuwe chat"
+  },
+  "panel": {
+    "history": "Geschiedenis",
+    "bookmarks": "Bladwijzers",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Alle bladwijzers",
+    "empty": "Bladwijzer resultaten om ze hier op te slaan.",
+    "export": "Exporteer",
+    "clear_all": "Alles wissen",
+    "new_collection": "Nieuwe collectie"
+  },
+  "hero": {
+    "private": "Privé",
+    "ai_powered": "AI-Aangedreven",
+    "local_first": "Lokaal-Eerst"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Diepgaand onderzoek",
+    "focus": "Focus",
+    "theme": "Thema",
+    "language": "Taal",
+    "answer_language": "AI Taal",
+    "answer_auto": "Automatisch",
+    "research": "Onderzoek",
+    "fact_check": "Feitencontrole"
+  },
+  "preferences": {
+    "title": "Voorkeuren",
+    "language": "Taal",
+    "language_desc": "Selecteer uw voorkeurstaal voor de interface",
+    "language_storage": "De interfacetaal wordt opgeslagen in uw browser.",
+    "branding": "Branding",
+    "branding_desc": "Pas de applicatienaam, logo en favicon aan die in de UI worden weergegeven.",
+    "app_name": "Applicatienaam",
+    "app_name_hint": "Naam die in de kop en paginatitels wordt weergegeven",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "URL of pad naar uw logo-afbeelding (laat leeg voor standaard)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL of pad naar uw favicon (laat leeg voor browserstandaard)",
+    "appearance": "Uiterlijk",
+    "appearance_desc": "Pas de visuele stijl en lay-out aan.",
+    "theme": "Thema",
+    "font_size": "Lettergrootte",
+    "results_layout": "Resultatenlay-out",
+    "search": "Zoeken",
+    "search_desc": "Standaardinstellingen toegepast op alle zoekopdrachten.",
+    "ui_language": "UI Taal",
+    "ui_language_hint": "Interface taal (opgeslagen in browser localStorage)",
+    "interface_language": "Interface taal",
+    "stored_in_browser": "Opgeslagen in browser (localStorage)",
+    "search_defaults": "Zoekstandaarden",
+    "search_language": "Zoektaal",
+    "search_language_hint": "automatisch = detecteren van query (Hangul → ko-KR); of alles, of een vaste locale zoals ko-KR",
+    "fallback_language": "Fallback Taalcode",
+    "fallback_language_hint": "Gebruikt wanneer autodetectie niet conclusief is",
+    "safe_search": "Veilige Zoekopdracht",
+    "safe_off": "Uit",
+    "safe_moderate": "Gemiddeld",
+    "safe_strict": "Strikt",
+    "results_per_engine": "Resultaten Per Engine",
+    "ai": "AI",
+    "ai_desc": "Configureer AI-modellen voor antwoordsynthetisatie en artikelherschrijving.",
+    "ai_provider": "Provider",
+    "ai_provider_local": "Lokaal (Ollama)",
+    "ai_provider_custom": "Aangepast",
+    "ai_base_url": "API Basis URL",
+    "ai_base_url_hint": "Lokaal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Sleutel",
+    "ai_api_key_hint": "Vereist voor cloudproviders (OpenAI, Anthropic, enz.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Chat/instructiemodel voor antwoordsynthetisatie en query-uitbreiding",
+    "ai_article_model": "Artikelmodel",
+    "ai_article_model_hint": "Model voor volledige herschrijvingen van nieuwsartikelen (standaard naar hoofdmodel)",
+    "ai_timeout": "Time-out (seconden)",
+    "ai_timeout_hint": "Per-verzoek time-out voor modelaanroepen",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Kenmerken",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Nieuws",
+    "news_desc": "Nieuwsaggregatie en artikelinstellingen.",
+    "news_per_source": "Artikelen per bron",
+    "news_freshness": "Versheid halfwaardetijd (uren)",
+    "news_freshness_weight": "Versheidsgewicht",
+    "news_dedup": "Dedup similariteit drempel",
+    "news_max_age": "Max leeftijd (dagen)",
+    "news_cache_ttl": "Cache TTL (seconden)",
+    "news_enrich_max": "Max artikelen om te verrijken",
+    "engines": "Zoekmachines",
+    "engines_desc": "Schakel engines in/uit en pas hun rangschikkingsgewichten aan. Hogere gewicht = meer invloed op de volgorde van resultaten.",
+    "engine": "engine",
+    "categories": "categorieën",
+    "weight": "gewicht",
+    "privacy": "Privacy",
+    "privacy_desc": "Beheer hoe uw gegevens worden behandeld.",
+    "proxy_images": "Proxy-afbeeldingen",
+    "proxy_images_hint": "Routeer afbeeldingen via de server om uw IP voor derden te verbergen",
+    "remove_trackers": "Verwijder trackingparameters",
+    "remove_trackers_hint": "Verwijder UTM- en andere trackingparameters uit URL's",
+    "save_history": "Bewaar zoekgeschiedenis",
+    "save_history_hint": "Bewaar zoekopdrachten lokaal in de browser (nooit naar de server verzonden)",
+    "clear_data": "Gegevens wissen",
+    "clear_localstorage": "Wis lokale opslag",
+    "clear_indexeddb": "Wis IndexedDB",
+    "shortcuts": "Sneltoetsen",
+    "shortcuts_desc": "Snelle toegangstoetsen voor power users.",
+    "shortcut_focus_search": "Focus zoekvak",
+    "shortcut_close": "Sluit paneel / Annuleer",
+    "shortcut_navigate": "Navigeer door resultaten",
+    "shortcut_open": "Open geselecteerd resultaat",
+    "shortcut_new_tab": "Open in nieuw tabblad",
+    "shortcut_switch_mode": "Schakel zoekmodus",
+    "shortcut_help": "Toon deze hulp",
+    "server": "Server",
+    "server_desc": "Serverconfiguratie en netwerkinstellingen.",
+    "bind_address": "Bindadres",
+    "port": "Poort",
+    "max_connections": "Max Verbindingen",
+    "image_proxy": "Schakel afbeeldingsproxy in",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Geavanceerd",
+    "advanced_desc": "Cache- en time-outinstellingen.",
+    "cache_ttl": "Cache TTL (seconden)",
+    "cache_ttl_hint": "Resultaat cache tijd-tot-leven (0 schakelt caching uit)",
+    "request_timeout": "Verzoek Time-out (seconden)",
+    "request_timeout_hint": "Per-engine netwerk time-out",
+    "save": "Bewaar Voorkeuren",
+    "saved": "Opgeslagen",
+    "saved_msg": "geschreven naar settings.yml en toegepast op nieuwe zoekopdrachten.",
+    "server_settings": "Deze instellingen worden serverzijde bewaard",
+    "raw_config": "Config JSON",
+    "stats": "Statistieken",
+    "home": "Home",
+    "logout": "Uitloggen",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Algemeen",
+    "academic": "Academisch",
+    "writing": "Schrijven",
+    "code": "Code"
+  },
+  "footer": {
+    "grounded_answers": "Gegronde antwoorden van uw lokale model — 200+ zoekmachines, geen query logging.",
+    "academic_papers": "Academische papers van arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, en meer.",
+    "news_digest": "Nieuws digest: haalt artikelpagina's op, herschrijft samenvattingen lokaal via Ollama — grote afbeeldingen alleen, geen favicon upscale.",
+    "images": "Wikimedia Commons afbeelding zoeken — miniaturen geproxied voor privacy.",
+    "api_docs": "API Docs",
+    "status": "Status",
+    "version": "Versie",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "Probeer een voorbeeld",
+    "general": [
+      {
+        "q": "Rust async programmeren beste praktijken",
+        "label": "Rust async"
+      },
+      {
+        "q": "Laatste LLM onderzoeksartikelen 2025",
+        "label": "Laatste LLM artikelen"
+      },
+      {
+        "q": "Hoe werkt DNS",
+        "label": "Hoe werkt DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Laatste LLM onderzoeksartikelen 2025",
+        "label": "Laatste LLM artikelen"
+      },
+      {
+        "q": "CRISPR genbewerking review artikelen",
+        "label": "CRISPR review"
+      },
+      {
+        "q": "transformer architectuur overzicht",
+        "label": "Transformer overzicht"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI-regulering",
+        "label": "AI-regulering"
+      },
+      {
+        "q": "Korea tech nieuws",
+        "label": "Korea tech"
+      },
+      {
+        "q": "klimaatbeleid updates",
+        "label": "Klimaatbeleid"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesses (Voor U)",
+    "add_placeholder": "Voeg interesse toe...",
+    "empty": "Interesses worden automatisch toegevoegd terwijl u zoekt",
+    "remove": "Verwijder"
+  },
+  "factcheck": {
+    "title": "Feitencontrole Resultaten",
+    "checking": "Analyseren...",
+    "analyzing": "Analyseren van bronnen op tegenstrijdigheden...",
+    "no_contradictions": "Geen tegenstrijdigheden gevonden in bronnen",
+    "found": "Tegenstrijdigheden gevonden"
+  },
+  "foryou": {
+    "title": "Voor U",
+    "based_on": "Gebaseerd op: {interests}",
+    "no_interests": "Nog geen interesses. Zoek om uw interesses op te bouwen!",
+    "loading": "Persoonlijke feed laden..."
+  },
+  "common": {
+    "search": "Zoeken",
+    "clear": "Wissen",
+    "close": "Sluiten",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "loading": "Laden...",
+    "error": "Fout",
+    "retry": "Probeer opnieuw",
+    "more": "Meer",
+    "less": "Minder"
+  },
+  "trends": {
+    "title": "Trending Nu",
+    "loading": "Trends laden...",
+    "error": "Mislukt om trends te laden",
+    "empty": "Geen trending onderwerpen"
+  },
+  "onboarding": {
+    "welcome": "Welkom bij Metasearch",
+    "subtitle": "Uw privé, AI-aangedreven zoekmachine",
+    "private_search": "Privé Zoekopdracht",
+    "private_search_desc": "Nooit query logging, ooit",
+    "ai_answers": "AI Antwoorden",
+    "ai_answers_desc": "Lokale AI vat resultaten samen",
+    "news_digest": "Nieuws Digest",
+    "news_digest_desc": "Geselecteerde nieuws met analyse",
+    "local_first": "Lokaal-Eerst",
+    "local_first_desc": "Uw gegevens blijven op uw apparaat",
+    "get_started": "Aan de slag"
+  },
+  "feeds": {
+    "find": "Vind Feeds",
+    "subscribe": "Abonneren",
+    "unsubscribe": "Afmelden"
+  },
+  "errors": {
+    "load_trends": "Mislukt om trends te laden",
+    "load_feed": "Mislukt om persoonlijke feed te laden",
+    "load_global": "Mislukt om globale feed te laden",
+    "translation": "Vertaling mislukt"
+  },
+  "compare": {
+    "title": "Vergelijk Resultaten",
+    "button": "Vergelijk",
+    "clear": "Alles wissen",
+    "global_title": "🌍 Globaal perspectief",
+    "global_desc": "Vergelijk zoekresultaten uit verschillende regio's",
+    "select_all": "Alles",
+    "clear_all": "Wissen",
+    "run": "Vergelijken"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

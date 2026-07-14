@@ -1,0 +1,433 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Pregunta a la web, de forma privada"
+  },
+  "nav": {
+    "ask": "Preguntar",
+    "discover": "Descubrir",
+    "history": "Historia",
+    "options": "Opciones",
+    "classic": "Clásico",
+    "stats": "Estadísticas",
+    "preferences": "Preferencias"
+  },
+  "tabs": {
+    "general": "General",
+    "images": "Imágenes",
+    "videos": "Videos",
+    "papers": "Artículos",
+    "news": "Noticias",
+    "shopping": "Compras"
+  },
+  "search": {
+    "placeholder": "Pregunta cualquier cosa…",
+    "placeholder_news": "Ingresa un tema de noticias, presiona Preguntar",
+    "placeholder_images": "Buscar imágenes…",
+    "placeholder_papers": "Ingresa una pregunta, presiona Preguntar",
+    "placeholder_general": "Ingresa una pregunta o tema, presiona Preguntar",
+    "placeholder_shopping": "Buscar productos…",
+    "placeholder_videos": "Buscar videos…",
+    "button": "Preguntar",
+    "button_search": "Buscar"
+  },
+  "status": {
+    "loading": "Cargando…",
+    "loading_stories": "Cargando historias…",
+    "searching": "Buscando…",
+    "searching_web": "Buscando en la web…",
+    "searching_images": "Buscando imágenes…",
+    "searching_news": "Buscando fuentes de noticias…",
+    "searching_papers": "Buscando fuentes académicas…",
+    "searching_shopping": "Buscando productos…",
+    "searching_videos": "Buscando videos…",
+    "search_complete": "Búsqueda completa.",
+    "search_failed": "La búsqueda falló.",
+    "answer_ready": "Respuesta lista.",
+    "fetching_article": "Obteniendo artículo…",
+    "fetching_publisher": "Obteniendo artículo del editor…",
+    "resolving_article": "Resolviendo artículo…",
+    "resolving_gn": "Resolviendo enlace de Google News…",
+    "rewriting": "Reescribiendo artículo…",
+    "rewriting_korean": "Reescribiendo en coreano…",
+    "preparing_rewrite": "Preparando reescritura completa…",
+    "extracted_rewriting": "Texto del artículo extraído — reescribiendo…",
+    "viewing_prior": "Viendo turno anterior — pregunta un seguimiento a continuación."
+  },
+  "error": {
+    "no_answer": "No se generó respuesta de IA — resultados de búsqueda a continuación.",
+    "no_news": "No se encontraron noticias — intenta otra consulta.",
+    "no_stories": "No se encontraron historias — intenta otra consulta.",
+    "no_stories_category": "No se encontraron historias para esta categoría — intenta otra pestaña.",
+    "rewrite_empty": "La reescritura del artículo devolvió texto vacío.",
+    "rewrite_failed": "No se pudo reescribir el artículo",
+    "load_news_failed": "No se pudieron cargar noticias — verifica el servidor.",
+    "model_not_found": "Modelo no encontrado — ejecuta ollama pull para tu modelo configurado, o elige otro en Opciones.",
+    "ollama_not_running": "Ollama no está en funcionamiento — las respuestas serán solo de búsqueda. Inicia: ollama serve",
+    "invalid_thread": "JSON de hilo no válido.",
+    "enter_question": "Ingresa una pregunta.",
+    "enter_search": "Ingresa un término de búsqueda."
+  },
+  "article": {
+    "sources": "Fuentes",
+    "research_progress": "Progreso de Investigación",
+    "thinking": "Pensando",
+    "answer": "Respuesta",
+    "key_points": "Puntos Clave",
+    "summary": "Resumen",
+    "related_media": "Medios Relacionados",
+    "view_more": "Ver {count} más",
+    "back": "Atrás",
+    "read_original": "Leer original",
+    "related_image": "Imagen relacionada",
+    "related": "Relacionado"
+  },
+  "discover": {
+    "updated": "Actualizado {time}",
+    "load_more": "Cargar más",
+    "scope": {
+      "all": "📰 Todos",
+      "local": "🏠 Local",
+      "world": "🌍 Mundo"
+    },
+    "categories": {
+      "politics": "Política",
+      "economy": "Economía",
+      "sports": "Deportes",
+      "world": "Mundo",
+      "entertainment": "Entretenimiento",
+      "tech": "Tecnología y Ciencia",
+      "culture": "Cultura",
+      "health": "Salud",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ciencia de la tecnología",
+      "ai": "inteligencia artificial IA aprendizaje automático",
+      "world": "noticias del mundo internacional",
+      "politics": "política gobierno elecciones",
+      "business": "negocios economía empresas",
+      "finance": "finanzas mercados acciones",
+      "health": "Salud",
+      "telegram": "Telegram",
+      "climate": "cambio climático medio ambiente",
+      "sports": "deportes",
+      "entertainment": "entretenimiento celebridad",
+      "art": "arte cultura",
+      "top": "noticias principales titulares"
+    }
+  },
+  "history": {
+    "open": "Abrir historia",
+    "close": "Cerrar historia",
+    "imported": "Importado {count}",
+    "export": "Exportar JSON",
+    "import": "Importar JSON",
+    "clear": "Borrar historia",
+    "empty": "Tus preguntas aparecen aquí.",
+    "new_chat": "Nuevo chat"
+  },
+  "panel": {
+    "history": "Historia",
+    "bookmarks": "Marcadores",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Todos los Marcadores",
+    "empty": "Marca resultados para guardarlos aquí.",
+    "export": "Exportar",
+    "clear_all": "Borrar todo",
+    "new_collection": "Nueva colección"
+  },
+  "hero": {
+    "private": "Privado",
+    "ai_powered": "Impulsado por IA",
+    "local_first": "Local-Primero"
+  },
+  "options": {
+    "model": "Modelo",
+    "deep_research": "Investigación profunda",
+    "focus": "Enfoque",
+    "theme": "Tema",
+    "language": "Idioma",
+    "answer_language": "Idioma de IA",
+    "answer_auto": "Automático",
+    "research": "Investigación",
+    "fact_check": "Verificación de hechos"
+  },
+  "preferences": {
+    "title": "Preferencias",
+    "language": "Idioma",
+    "language_desc": "Seleccione su idioma de interfaz preferido",
+    "language_storage": "El idioma de la interfaz se guarda en su navegador.",
+    "branding": "Marca",
+    "branding_desc": "Personaliza el nombre de la aplicación, el logo y el favicon que se muestran en la interfaz.",
+    "app_name": "Nombre de la Aplicación",
+    "app_name_hint": "Nombre mostrado en el encabezado y títulos de página",
+    "logo_url": "URL del Logo",
+    "logo_url_hint": "URL o ruta a tu imagen de logo (deja vacío para predeterminado)",
+    "favicon_url": "URL del Favicon",
+    "favicon_url_hint": "URL o ruta a tu favicon (deja vacío para el predeterminado del navegador)",
+    "appearance": "Apariencia",
+    "appearance_desc": "Personaliza el estilo visual y el diseño.",
+    "theme": "Tema",
+    "font_size": "Tamaño de Fuente",
+    "results_layout": "Diseño de Resultados",
+    "search": "Buscar",
+    "search_desc": "Configuraciones predeterminadas aplicadas a todas las búsquedas.",
+    "ui_language": "Idioma de la Interfaz",
+    "ui_language_hint": "Idioma de la interfaz (almacenado en localStorage del navegador)",
+    "interface_language": "Idioma de la interfaz",
+    "stored_in_browser": "Almacenado en el navegador (localStorage)",
+    "search_defaults": "Predeterminados de búsqueda",
+    "search_language": "Idioma de búsqueda",
+    "search_language_hint": "automático = detectar de la consulta (Hangul → ko-KR); o todos, o un locale fijo como ko-KR",
+    "fallback_language": "Código de Idioma de Respaldo",
+    "fallback_language_hint": "Usado cuando la detección automática es inconclusa",
+    "safe_search": "Búsqueda Segura",
+    "safe_off": "Desactivado",
+    "safe_moderate": "Moderado",
+    "safe_strict": "Estricto",
+    "results_per_engine": "Resultados Por Motor",
+    "ai": "IA",
+    "ai_desc": "Configura modelos de IA para síntesis de respuestas y reescritura de artículos.",
+    "ai_provider": "Proveedor",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Personalizado",
+    "ai_base_url": "URL Base de la API",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Clave de API",
+    "ai_api_key_hint": "Requerido para proveedores en la nube (OpenAI, Anthropic, etc.)",
+    "ai_model": "Modelo",
+    "ai_model_hint": "Modelo de chat/instrucción para síntesis de respuestas y expansión de consultas",
+    "ai_article_model": "Modelo de Artículo",
+    "ai_article_model_hint": "Modelo para reescrituras de artículos de noticias de página completa (predeterminado al modelo principal)",
+    "ai_timeout": "Tiempo de espera (segundos)",
+    "ai_timeout_hint": "Tiempo de espera por solicitud para llamadas de modelo",
+    "ai_cost_tracking": "Seguimiento de Costos",
+    "ai_track_usage": "Rastrear uso de tokens",
+    "ai_track_usage_hint": "Mostrar conteo de tokens y costo estimado para respuestas de IA",
+    "ai_input_cost": "Costo de entrada ($/1M tokens)",
+    "ai_output_cost": "Costo de salida ($/1M tokens)",
+    "ai_features": "Características",
+    "ai_answer_synthesis": "Síntesis de respuestas",
+    "ai_query_expansion": "Expansión de consultas",
+    "ai_reranking": "Reclasificación",
+    "ai_clustering": "Agrupamiento",
+    "ai_vision": "Visión",
+    "news": "Noticias",
+    "news_desc": "Agregación de noticias y configuraciones de artículos.",
+    "news_per_source": "Artículos por fuente",
+    "news_freshness": "Vida media de frescura (horas)",
+    "news_freshness_weight": "Peso de frescura",
+    "news_dedup": "Umbral de similitud de deduplicación",
+    "news_max_age": "Edad máxima (días)",
+    "news_cache_ttl": "TTL de caché (segundos)",
+    "news_enrich_max": "Máximo de artículos a enriquecer",
+    "engines": "Motores de Búsqueda",
+    "engines_desc": "Habilitar/deshabilitar motores y ajustar sus pesos de clasificación. Mayor peso = más influencia en el orden de resultados.",
+    "engine": "motor",
+    "categories": "categorías",
+    "weight": "peso",
+    "privacy": "Privacidad",
+    "privacy_desc": "Controla cómo se maneja tu información.",
+    "proxy_images": "Proxy de imágenes",
+    "proxy_images_hint": "Rutea imágenes a través del servidor para ocultar tu IP de terceros",
+    "remove_trackers": "Eliminar parámetros de seguimiento",
+    "remove_trackers_hint": "Eliminar parámetros de seguimiento UTM y otros de las URLs",
+    "save_history": "Guardar historial de búsqueda",
+    "save_history_hint": "Almacenar búsquedas localmente en el navegador (nunca enviadas al servidor)",
+    "clear_data": "Borrar Datos",
+    "clear_localstorage": "Borrar Almacenamiento Local",
+    "clear_indexeddb": "Borrar IndexedDB",
+    "shortcuts": "Atajos de Teclado",
+    "shortcuts_desc": "Teclas de acceso rápido para usuarios avanzados.",
+    "shortcut_focus_search": "Enfocar caja de búsqueda",
+    "shortcut_close": "Cerrar panel / Cancelar",
+    "shortcut_navigate": "Navegar resultados",
+    "shortcut_open": "Abrir resultado seleccionado",
+    "shortcut_new_tab": "Abrir en nueva pestaña",
+    "shortcut_switch_mode": "Cambiar modo de búsqueda",
+    "shortcut_help": "Mostrar esta ayuda",
+    "server": "Servidor",
+    "server_desc": "Configuración del servidor y ajustes de red.",
+    "bind_address": "Dirección de enlace",
+    "port": "Puerto",
+    "max_connections": "Máx. Conexiones",
+    "image_proxy": "Habilitar Proxy de Imágenes",
+    "cache_backend": "Backend de Caché",
+    "cache_dir": "Directorio de Caché",
+    "redis_url": "URL de Redis",
+    "advanced": "Avanzado",
+    "advanced_desc": "Configuraciones de caché y tiempo de espera.",
+    "cache_ttl": "TTL de caché (segundos)",
+    "cache_ttl_hint": "Tiempo de vida de la caché de resultados (0 desactiva la caché)",
+    "request_timeout": "Tiempo de espera de solicitud (segundos)",
+    "request_timeout_hint": "Tiempo de espera de red por motor",
+    "save": "Guardar Preferencias",
+    "saved": "Guardado",
+    "saved_msg": "escrito en settings.yml y aplicado a nuevas búsquedas.",
+    "server_settings": "Estas configuraciones se persisten del lado del servidor a",
+    "raw_config": "Config JSON",
+    "stats": "Estadísticas",
+    "home": "Inicio",
+    "logout": "Cerrar sesión",
+    "ai_embedding_model": "Modelo de incrustación",
+    "ai_vision_model": "Modelo de visión",
+    "ai_answer_top_n": "Top N de respuestas",
+    "ai_answer_top_n_hint": "Número de resultados para síntesis de respuesta",
+    "ai_news_prompt_ko": "Prompt de análisis de noticias coreanas",
+    "ai_news_prompt_ko_hint": "Prompt personalizado para análisis de noticias coreanas",
+    "ai_news_prompt_ko_placeholder": "Dejar vacío para prompt predeterminado.",
+    "ai_news_prompt_en": "Prompt de análisis de noticias en inglés",
+    "ai_news_prompt_en_hint": "Prompt personalizado para análisis de noticias en inglés",
+    "ai_news_prompt_en_placeholder": "Dejar vacío para prompt predeterminado.",
+    "ai_answer_language": "Idioma de respuesta",
+    "ai_answer_language_hint": "Idioma objetivo para respuestas generadas por IA",
+    "ai_answer_auto": "Detección automática"
+  },
+  "focus": {
+    "general": "General",
+    "academic": "Académico",
+    "writing": "Escritura",
+    "code": "Código"
+  },
+  "footer": {
+    "grounded_answers": "Respuestas fundamentadas de tu modelo local — 200+ motores de búsqueda, cero registro de consultas.",
+    "academic_papers": "Artículos académicos de arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, y más.",
+    "news_digest": "Resumen de noticias: obtiene páginas de artículos, reescribe resúmenes localmente a través de Ollama — solo imágenes grandes, sin aumento de favicon.",
+    "images": "Búsqueda de imágenes de Wikimedia Commons — miniaturas enrutadas para privacidad.",
+    "api_docs": "Documentación de API",
+    "status": "Estado",
+    "version": "Versión",
+    "engines_count": "232 motores"
+  },
+  "examples": {
+    "try": "Prueba un ejemplo",
+    "general": [
+      {
+        "q": "Mejores prácticas de programación asíncrona en Rust",
+        "label": "Rust asíncrono"
+      },
+      {
+        "q": "Últimos artículos de investigación LLM 2025",
+        "label": "Últimos artículos LLM"
+      },
+      {
+        "q": "¿Cómo funciona DNS?",
+        "label": "¿Cómo funciona DNS?"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Últimos artículos de investigación LLM 2025",
+        "label": "Últimos artículos LLM"
+      },
+      {
+        "q": "Artículos de revisión de edición genética CRISPR",
+        "label": "Revisión de CRISPR"
+      },
+      {
+        "q": "encuesta de arquitectura de transformadores",
+        "label": "Encuesta de transformadores"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulación de IA",
+        "label": "Regulación de IA"
+      },
+      {
+        "q": "Noticias tecnológicas de Corea",
+        "label": "Tecnología de Corea"
+      },
+      {
+        "q": "actualizaciones de políticas climáticas",
+        "label": "Política climática"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Intereses (Para Ti)",
+    "add_placeholder": "Agregar interés...",
+    "empty": "Los intereses se agregan automáticamente a medida que buscas",
+    "remove": "Eliminar"
+  },
+  "factcheck": {
+    "title": "Resultados de Verificación de Hechos",
+    "checking": "Analizando...",
+    "analyzing": "Analizando fuentes en busca de contradicciones...",
+    "no_contradictions": "No se encontraron contradicciones en las fuentes",
+    "found": "Contradicciones encontradas"
+  },
+  "foryou": {
+    "title": "Para Ti",
+    "based_on": "Basado en: {interests}",
+    "no_interests": "Aún no hay intereses. ¡Busca para construir tus intereses!",
+    "loading": "Cargando feed personalizado..."
+  },
+  "common": {
+    "search": "Buscar",
+    "clear": "Borrar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "more": "Más",
+    "less": "Menos"
+  },
+  "trends": {
+    "title": "Tendencias Ahora",
+    "loading": "Cargando tendencias...",
+    "error": "Error al cargar tendencias",
+    "empty": "No hay temas en tendencia"
+  },
+  "onboarding": {
+    "welcome": "Bienvenido a Metabúsqueda",
+    "subtitle": "Tu motor de búsqueda privado, impulsado por IA",
+    "private_search": "Búsqueda Privada",
+    "private_search_desc": "Sin registro de consultas, nunca",
+    "ai_answers": "Respuestas de IA",
+    "ai_answers_desc": "IA local resume resultados",
+    "news_digest": "Resumen de Noticias",
+    "news_digest_desc": "Noticias curadas con análisis",
+    "local_first": "Local-Primero",
+    "local_first_desc": "Tus datos permanecen en tu dispositivo",
+    "get_started": "Comenzar"
+  },
+  "feeds": {
+    "find": "Encontrar Feeds",
+    "subscribe": "Suscribirse",
+    "unsubscribe": "Darse de baja"
+  },
+  "errors": {
+    "load_trends": "Error al cargar tendencias",
+    "load_feed": "Error al cargar feed personalizado",
+    "load_global": "Error al cargar feed global",
+    "translation": "Error de traducción"
+  },
+  "compare": {
+    "title": "Comparar Resultados",
+    "button": "Comparar",
+    "clear": "Borrar Todo",
+    "global_title": "🌍 Perspectiva global",
+    "global_desc": "Compara cómo varían los resultados en diferentes regiones",
+    "select_all": "Todo",
+    "clear_all": "Borrar",
+    "run": "Comparar"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

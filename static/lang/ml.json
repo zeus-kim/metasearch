@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "വെബ്ബിൽ ചോദിക്കുക, സ്വകാര്യമായി"
+  },
+  "nav": {
+    "ask": "ചോദിക്കുക",
+    "discover": "കണ്ടെത്തുക",
+    "history": "ചരിത്രം",
+    "options": "ഓപ്ഷനുകൾ",
+    "classic": "ക്ലാസിക്",
+    "stats": "സ്ഥിതിവിവരക്കണക്കുകൾ",
+    "preferences": "ആഗ്രഹങ്ങൾ"
+  },
+  "tabs": {
+    "general": "സാധാരണ",
+    "images": "ചിത്രങ്ങൾ",
+    "videos": "വീഡിയോ",
+    "papers": "പത്രങ്ങൾ",
+    "news": "വാർത്ത",
+    "shopping": "ഷോപ്പിംഗ്"
+  },
+  "search": {
+    "placeholder": "എന്തെങ്കിലും ചോദിക്കുക…",
+    "placeholder_news": "ഒരു വാർത്താ വിഷയം നൽകുക, ചോദിക്കുക അമർത്തുക",
+    "placeholder_images": "ചിത്രങ്ങൾ തിരയുക…",
+    "placeholder_papers": "ഒരു ചോദ്യം നൽകുക, ചോദിക്കുക അമർത്തുക",
+    "placeholder_general": "ഒരു ചോദ്യം അല്ലെങ്കിൽ വിഷയം നൽകുക, ചോദിക്കുക അമർത്തുക",
+    "placeholder_shopping": "ഉൽപ്പന്നങ്ങൾ തിരയുക…",
+    "placeholder_videos": "വീഡിയോകൾ തിരയുക…",
+    "button": "ചോദിക്കുക",
+    "button_search": "തിരയുക"
+  },
+  "status": {
+    "loading": "ലോഡുചെയ്യുന്നു…",
+    "loading_stories": "കഥകൾ ലോഡുചെയ്യുന്നു…",
+    "searching": "തിരയുന്നു…",
+    "searching_web": "വെബ്ബിൽ തിരയുന്നു…",
+    "searching_images": "ചിത്രങ്ങൾ തിരയുന്നു…",
+    "searching_news": "വാർത്താ ഉറവിടങ്ങൾ തിരയുന്നു…",
+    "searching_papers": "അക്കാദമിക് ഉറവിടങ്ങൾ തിരയുന്നു…",
+    "searching_shopping": "ഉൽപ്പന്നങ്ങൾ തിരയുന്നു…",
+    "searching_videos": "വീഡിയോകൾ തിരയുന്നു…",
+    "search_complete": "തിരച്ചിൽ പൂർത്തിയായി.",
+    "search_failed": "തിരച്ചിൽ പരാജയപ്പെട്ടു.",
+    "answer_ready": "ഉത്തരം തയ്യാറാണ്.",
+    "fetching_article": "ലേഖനം എടുക്കുന്നു…",
+    "fetching_publisher": "പ്രസാധക ലേഖനം എടുക്കുന്നു…",
+    "resolving_article": "ലേഖനം പരിഹരിക്കുന്നു…",
+    "resolving_gn": "ഗൂഗിൾ വാർത്താ ലിങ്ക് പരിഹരിക്കുന്നു…",
+    "rewriting": "ലേഖനം പുനരാഖ്യാനം ചെയ്യുന്നു…",
+    "rewriting_korean": "കൊറിയൻ ഭാഷയിൽ പുനരാഖ്യാനം ചെയ്യുന്നു…",
+    "preparing_rewrite": "പൂർണ്ണ പുനരാഖ്യാനം ഒരുക്കുന്നു…",
+    "extracted_rewriting": "എടുക്കപ്പെട്ട ലേഖനത്തിന്റെ ടെക്സ്റ്റ് — പുനരാഖ്യാനം ചെയ്യുന്നു…",
+    "viewing_prior": "മുൻവട്ടം കാണുന്നു — താഴെ ഒരു ഫോളോ-അപ്പ് ചോദിക്കുക."
+  },
+  "error": {
+    "no_answer": "AI ഉത്തരം സൃഷ്ടിച്ചില്ല — താഴെ തിരച്ചിൽ ഫലങ്ങൾ.",
+    "no_news": "വാർത്ത കണ്ടെത്തിയില്ല — മറ്റൊരു ചോദ്യം ശ്രമിക്കുക.",
+    "no_stories": "കഥകൾ കണ്ടെത്തിയില്ല — മറ്റൊരു ചോദ്യം ശ്രമിക്കുക.",
+    "no_stories_category": "ഈ വിഭാഗത്തിന് കഥകൾ കണ്ടെത്തിയില്ല — മറ്റൊരു പിൽക്കാലം ശ്രമിക്കുക.",
+    "rewrite_empty": "ലേഖനത്തിന്റെ പുനരാഖ്യാനം ശൂന്യമായ ടെക്സ്റ്റ് തിരിച്ചു.",
+    "rewrite_failed": "ലേഖനം പുനരാഖ്യാനം ചെയ്യാൻ കഴിയുന്നില്ല",
+    "load_news_failed": "വാർത്ത ലോഡുചെയ്യാൻ കഴിയുന്നില്ല — സർവറിനെ പരിശോധിക്കുക.",
+    "model_not_found": "മോഡൽ കണ്ടെത്തിയില്ല — നിങ്ങളുടെ ക്രമീകരിച്ച മോഡലിന് ollama pull നടത്തുക, അല്ലെങ്കിൽ ഓപ്ഷനുകളിൽ മറ്റൊന്ന് തിരഞ്ഞെടുക്കുക.",
+    "ollama_not_running": "Ollama പ്രവർത്തിക്കുന്നില്ല — ഉത്തരങ്ങൾ തിരച്ചിൽ മാത്രം ആയിരിക്കും. ആരംഭിക്കുക: ollama serve",
+    "invalid_thread": "അസാധുവായ ത്രെഡ് JSON.",
+    "enter_question": "ഒരു ചോദ്യം നൽകുക.",
+    "enter_search": "ഒരു തിരച്ചിൽ പദം നൽകുക."
+  },
+  "article": {
+    "sources": "ഉറവിടങ്ങൾ",
+    "research_progress": "ഗവേഷണ പുരോഗതി",
+    "thinking": "ചിന്തിക്കുന്നു",
+    "answer": "ഉത്തരം",
+    "key_points": "പ്രധാന ബിന്ദുക്കൾ",
+    "summary": "സംഗ്രഹം",
+    "related_media": "ബന്ധപ്പെട്ട മീഡിയ",
+    "view_more": "കൂടുതൽ {count} കാണുക",
+    "back": "മടങ്ങുക",
+    "read_original": "മൂലവാചകം വായിക്കുക",
+    "related_image": "ബന്ധപ്പെട്ട ചിത്രം",
+    "related": "ബന്ധപ്പെട്ട"
+  },
+  "discover": {
+    "updated": "അപ്ഡേറ്റ് ചെയ്തത് {time}",
+    "scope": {
+      "all": "📰 എല്ലാം",
+      "local": "🏠 പ്രാദേശികം",
+      "world": "🌍 ലോകം"
+    },
+    "categories": {
+      "politics": "രാഷ്ട്രീയം",
+      "economy": "ആർത്ഥികം",
+      "sports": "കായികം",
+      "world": "ലോകം",
+      "entertainment": "മനോരഞ്ജനം",
+      "tech": "ടെക് & ശാസ്ത്രം",
+      "culture": "സാംസ്കാരികം",
+      "health": "ആരോഗ്യം",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ടെക്നോളജി ശാസ്ത്രം",
+      "ai": "കൃത്രിമ ബുദ്ധി AI മെഷീൻ പഠനം",
+      "world": "ലോക വാർത്ത അന്താരാഷ്ട്രം",
+      "politics": "രാഷ്ട്രീയം സർക്കാർ തിരഞ്ഞെടുപ്പ്",
+      "business": "ബിസിനസ് സാമ്പത്തികം കമ്പനികൾ",
+      "finance": "ഫിനാൻസ് മാർക്കറ്റുകൾ സ്റ്റോക്ക്",
+      "health": "ആരോഗ്യം മെഡിസിൻ വെൽനെസ്",
+      "climate": "കാലാവസ്ഥ മാറ്റം പരിസ്ഥിതി",
+      "sports": "കായികം",
+      "entertainment": "മനോരഞ്ജനം സെലിബ്രിറ്റി",
+      "art": "കല സാംസ്കാരികം",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "ചരിത്രം തുറക്കുക",
+    "close": "ചരിത്രം അടയ്ക്കുക",
+    "imported": "ഇമ്പോർട്ട് ചെയ്തത് {count}",
+    "export": "ജേസൺ എക്സ്പോർട്ട് ചെയ്യുക",
+    "import": "ജേസൺ ഇമ്പോർട്ട് ചെയ്യുക",
+    "clear": "ചരിത്രം ക്ലിയർ ചെയ്യുക",
+    "empty": "നിങ്ങളുടെ ചോദ്യങ്ങൾ ഇവിടെ പ്രത്യക്ഷപ്പെടുന്നു.",
+    "new_chat": "പുതിയ ചാറ്റ്"
+  },
+  "panel": {
+    "history": "ചരിത്രം",
+    "bookmarks": "ബുക്ക്മാർക്കുകൾ",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "എല്ലാ ബുക്ക്മാർക്കുകൾ",
+    "empty": "ബുക്ക്മാർക്ക് ഫലങ്ങൾ ഇവിടെ സൂക്ഷിക്കാൻ.",
+    "export": "എക്സ്പോർട്ട്",
+    "clear_all": "എല്ലാം ക്ലിയർ ചെയ്യുക",
+    "new_collection": "പുതിയ ശേഖരം"
+  },
+  "hero": {
+    "private": "സ്വകാര്യ",
+    "ai_powered": "AI-ശക്തിയുള്ള",
+    "local_first": "പ്രാദേശിക-മുന്നണിയിൽ"
+  },
+  "options": {
+    "model": "മോഡൽ",
+    "deep_research": "ഗഹന ഗവേഷണം",
+    "focus": "കേന്ദ്രം",
+    "theme": "തീം",
+    "language": "ഭാഷ",
+    "answer_language": "AI ഭാഷ",
+    "answer_auto": "ഓട്ടോ",
+    "research": "ഗവേഷണം",
+    "fact_check": "തത്വപരിശോധന"
+  },
+  "preferences": {
+    "title": "ആഗ്രഹങ്ങൾ",
+    "language": "ഭാഷ",
+    "language_desc": "നിങ്ങളുടെ ഇഷ്ടപ്പെട്ട ഇന്റർഫേസ് ഭാഷ തിരഞ്ഞെടുക്കുക",
+    "language_storage": "ഇന്റർഫേസ് ഭാഷ നിങ്ങളുടെ ബ്രൗസറിൽ സംഭരിച്ചിരിക്കുന്നു.",
+    "branding": "ബ്രാൻഡിംഗ്",
+    "branding_desc": "UI-യിൽ പ്രദർശിപ്പിക്കുന്ന ആപ്ലിക്കേഷൻ നാമം, ലോഗോ, ഫേവിക്കോൺ ഇഷ്ടാനുസൃതമാക്കുക.",
+    "app_name": "ആപ്ലിക്കേഷൻ നാമം",
+    "app_name_hint": "തലക്കെട്ടിലും പേജിന്റെ തലക്കെട്ടിലും കാണുന്ന പേര്",
+    "logo_url": "ലോഗോ URL",
+    "logo_url_hint": "നിങ്ങളുടെ ലോഗോ ചിത്രത്തിന്റെ URL അല്ലെങ്കിൽ പാത (ഡിഫോൾട്ടിന് ശൂന്യമായി വിടുക)",
+    "favicon_url": "ഫേവിക്കോൺ URL",
+    "favicon_url_hint": "നിങ്ങളുടെ ഫേവിക്കോൺ URL അല്ലെങ്കിൽ പാത (ഡിഫോൾട്ടിന് ശൂന്യമായി വിടുക)",
+    "appearance": "ദൃശ്യം",
+    "appearance_desc": "ദൃശ്യ ശൈലി மற்றும் ലേഔട്ട് ഇഷ്ടാനുസൃതമാക്കുക.",
+    "theme": "തീം",
+    "font_size": "ഫോണ്ട് വലുപ്പം",
+    "results_layout": "ഫലങ്ങളുടെ ലേഔട്ട്",
+    "search": "തിരയുക",
+    "search_desc": "എല്ലാ തിരച്ചിലുകൾക്കും പ്രാഥമിക ക്രമീകരണങ്ങൾ പ്രയോഗിക്കുന്നു.",
+    "ui_language": "UI ഭാഷ",
+    "ui_language_hint": "ഇന്റർഫേസ് ഭാഷ (ബ്രൗസർ localStorage-ൽ സൂക്ഷിക്കുന്നു)",
+    "interface_language": "ഇന്റർഫേസ് ഭാഷ",
+    "stored_in_browser": "ബ്രൗസറിൽ സൂക്ഷിക്കുന്നു (localStorage)",
+    "search_defaults": "തിരച്ചിൽ ഡിഫോൾട്ടുകൾ",
+    "search_language": "തിരച്ചിൽ ഭാഷ",
+    "search_language_hint": "ഓട്ടോ = ചോദ്യം മുതൽ കണ്ടെത്തുക (ഹംഗുൾ → ko-KR); അല്ലെങ്കിൽ എല്ലാം, അല്ലെങ്കിൽ ko-KR പോലുള്ള ഒരു സ്ഥിരമായ പ്രദേശികം",
+    "fallback_language": "ഫാൾബാക്ക് ഭാഷാ കോഡ്",
+    "fallback_language_hint": "ഓട്ടോ-കണ്ടെത്തൽ അനിശ്ചിതമായപ്പോൾ ഉപയോഗിക്കുന്നു",
+    "safe_search": "സുരക്ഷിത തിരച്ചിൽ",
+    "safe_off": "അടയ്ക്കുക",
+    "safe_moderate": "മിതമായ",
+    "safe_strict": "കഠിനമായ",
+    "results_per_engine": "എഞ്ചിനിന് ഫലങ്ങൾ",
+    "ai": "AI",
+    "ai_desc": "ഉത്തരം സംയോജനത്തിനും ലേഖനം പുനരാഖ്യാനത്തിനും AI മോഡലുകൾ ക്രമീകരിക്കുക.",
+    "ai_provider": "പ്രവർത്തക",
+    "ai_provider_local": "പ്രാദേശിക (Ollama)",
+    "ai_provider_custom": "കസ്റ്റം",
+    "ai_base_url": "API അടിസ്ഥാന URL",
+    "ai_base_url_hint": "പ്രാദേശികം: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API കീ",
+    "ai_api_key_hint": "ക്ലൗഡ് പ്രദാതാക്കൾക്കായി ആവശ്യമാണ് (OpenAI, Anthropic, മുതലായവ)",
+    "ai_model": "മോഡൽ",
+    "ai_model_hint": "ഉത്തരം സംയോജനത്തിനും ചോദ്യം വിപുലീകരണത്തിനും ചാറ്റ്/നിർദ്ദേശ മോഡൽ",
+    "ai_article_model": "ലേഖന മോഡൽ",
+    "ai_article_model_hint": "പൂർണ്ണ-പേജ് വാർത്താ ലേഖനങ്ങൾ പുനരാഖ്യാനം ചെയ്യുന്നതിനുള്ള മോഡൽ (പ്രധാന മോഡലിലേക്ക് ഡിഫോൾട്ട്)",
+    "ai_timeout": "ടൈംഔട്ട് (സെക്കൻഡ്)",
+    "ai_timeout_hint": "മോഡൽ വിളികൾക്കുള്ള ഓരോ അഭ്യർത്ഥനയ്ക്കും ടൈംഔട്ട്",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "സവിശേഷതകൾ",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "വാർത്ത",
+    "news_desc": "വാർത്ത സമാഹരണം ಮತ್ತು ലേഖന ക്രമീകരണങ്ങൾ.",
+    "news_per_source": "ഉറവിടത്തിന് ലേഖനങ്ങൾ",
+    "news_freshness": "താജ്ജ്വലതയുടെ അർദ്ധജീവിതം (മണിക്കൂർ)",
+    "news_freshness_weight": "താജ്ജ്വലത ഭാരം",
+    "news_dedup": "ഡിഡ്യൂപ് സമാനതാ ത്രെഷോൾഡ്",
+    "news_max_age": "മാക്സ് പ്രായം (ദിവസം)",
+    "news_cache_ttl": "കാഷെ TTL (സെക്കൻഡ്)",
+    "news_enrich_max": "സമൃദ്ധമാക്കാൻ പരമാവധി ലേഖനങ്ങൾ",
+    "engines": "തിരച്ചിൽ എഞ്ചിനുകൾ",
+    "engines_desc": "എഞ്ചിനുകൾ സജീവമാക്കുക/നിഷേധിക്കുക, അവയുടെ റാങ്കിംഗ് ഭാരം ക്രമീകരിക്കുക. ഉയർന്ന ഭാരം = ഫലങ്ങളുടെ ക്രമത്തിൽ കൂടുതൽ സ്വാധീനം.",
+    "engine": "എഞ്ചിൻ",
+    "categories": "വകുപ്പുകൾ",
+    "weight": "ഭാരം",
+    "privacy": "സ്വകാര്യത",
+    "privacy_desc": "നിങ്ങളുടെ ഡാറ്റ എങ്ങനെ കൈകാര്യം ചെയ്യപ്പെടുന്നു എന്ന് നിയന്ത്രിക്കുക.",
+    "proxy_images": "പ്രോക്സി ചിത്രങ്ങൾ",
+    "proxy_images_hint": "മൂല്യവത്തായ ചിത്രങ്ങൾക്കായി സർവറിൽ വഴി മാറ്റുക, നിങ്ങളുടെ IP മൂന്നാം കക്ഷികളിൽ നിന്ന് മറയ്ക്കാൻ",
+    "remove_trackers": "ട്രാക്കിംഗ് പാരാമീറ്ററുകൾ നീക്കം ചെയ്യുക",
+    "remove_trackers_hint": "URLs-ൽ നിന്ന് UTM എന്നിവയും മറ്റ് ട്രാക്കിംഗ് പാരാമീറ്ററുകളും നീക്കം ചെയ്യുക",
+    "save_history": "തിരച്ചിൽ ചരിത്രം സംരക്ഷിക്കുക",
+    "save_history_hint": "ബ്രൗസറിൽ പ്രാദേശികമായി തിരച്ചിലുകൾ സൂക്ഷിക്കുക (സർവറിലേക്ക് ഒരിക്കലും അയക്കില്ല)",
+    "clear_data": "ഡാറ്റ ക്ലിയർ ചെയ്യുക",
+    "clear_localstorage": "ലോകൽ സ്റ്റോറേജ് ക്ലിയർ ചെയ്യുക",
+    "clear_indexeddb": "ഇൻഡക്സ് ചെയ്ത DB ക്ലിയർ ചെയ്യുക",
+    "shortcuts": "കീബോർഡ് ഷോർട്ട്കട്ടുകൾ",
+    "shortcuts_desc": "ശക്തമായ ഉപയോക്താക്കൾക്കായി വേഗത്തിലുള്ള ആക്‌സസ് കീകൾ.",
+    "shortcut_focus_search": "തിരച്ചിൽ ബോക്സിൽ ശ്രദ്ധ കേന്ദ്രീകരിക്കുക",
+    "shortcut_close": "പാനൽ അടയ്ക്കുക / റദ്ദാക്കുക",
+    "shortcut_navigate": "ഫലങ്ങൾ നാവിഗേറ്റ് ചെയ്യുക",
+    "shortcut_open": "തിരഞ്ഞെടുത്ത ഫലം തുറക്കുക",
+    "shortcut_new_tab": "പുതിയ ടാബിൽ തുറക്കുക",
+    "shortcut_switch_mode": "തിരച്ചിൽ മോഡ് മാറ്റുക",
+    "shortcut_help": "ഈ സഹായം കാണിക്കുക",
+    "server": "സർവർ",
+    "server_desc": "സർവർ ക്രമീകരണങ്ങളും നെറ്റ്‌വർക്കും.",
+    "bind_address": "ബൈൻഡ് വിലാസം",
+    "port": "പോർട്ട്",
+    "max_connections": "പരമാവധി ബന്ധങ്ങൾ",
+    "image_proxy": "ചിത്ര പ്രോക്സി സജീവമാക്കുക",
+    "cache_backend": "കാഷെ ബാക്ക്‌എൻഡ്",
+    "cache_dir": "കാഷെ ഡയറക്ടറി",
+    "redis_url": "Redis URL",
+    "advanced": "അവസാന",
+    "advanced_desc": "കാഷെയും ടൈംഔട്ടും ക്രമീകരണങ്ങൾ.",
+    "cache_ttl": "കാഷെ TTL (സെക്കൻഡ്)",
+    "cache_ttl_hint": "ഫലങ്ങളുടെ കാഷെ ജീവൻ (0 കാഷെ അപ്രാപ്തമാക്കുന്നു)",
+    "request_timeout": "അഭ്യർത്ഥന ടൈംഔട്ട് (സെക്കൻഡ്)",
+    "request_timeout_hint": "എഞ്ചിനിന് നെറ്റ്‌വർക്കിന്റെ ടൈംഔട്ട്",
+    "save": "ആഗ്രഹങ്ങൾ സംരക്ഷിക്കുക",
+    "saved": "സംരക്ഷിച്ചു",
+    "saved_msg": "settings.yml-ൽ എഴുതിയിട്ടുണ്ട്, പുതിയ തിരച്ചിലുകൾക്ക് പ്രയോഗിച്ചു.",
+    "server_settings": "ഈ ക്രമീകരണങ്ങൾ സർവർ-പക്ഷത്ത് നിലനിൽക്കുന്നു",
+    "raw_config": "കോൺഫിഗ് JSON",
+    "stats": "സ്ഥിതിവിവരക്കണക്കുകൾ",
+    "home": "മൂലസ്ഥലം",
+    "logout": "ലോഗ് ഔട്ട്",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "സാധാരണ",
+    "academic": "അക്കാദമിക്",
+    "writing": "എഴുത്ത്",
+    "code": "കോഡ്"
+  },
+  "footer": {
+    "grounded_answers": "നിങ്ങളുടെ പ്രാദേശിക മോഡലിൽ നിന്നുള്ള ഭൂതകാല ഉത്തറങ്ങൾ — 200+ തിരച്ചിൽ എഞ്ചിനുകൾ, ശൂന്യമായ ചോദ്യം ലോഗിംഗ്.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ എന്നിവയിൽ നിന്നുള്ള അക്കാദമിക് പത്രങ്ങൾ.",
+    "news_digest": "വാർത്ത സമാഹാരം: ലേഖന പേജുകൾ എടുക്കുന്നു, Ollama വഴി സംഗ്രഹങ്ങൾ പുനരാഖ്യാനം ചെയ്യുന്നു — വലിയ ചിത്രങ്ങൾ മാത്രം, ഫേവിക്കോൺ ഉയർത്തുക ഇല്ല.",
+    "images": "വിക്കിമീഡിയ കോമൺസിന്റെ ചിത്രം തിരച്ചിൽ — സ്വകാര്യതയ്ക്കായി പ്രോക്സി ചെയ്ത തുമ്പികൾ.",
+    "api_docs": "API ഡോക്യുമെന്റുകൾ",
+    "status": "സ്ഥിതി",
+    "version": "വർഷം",
+    "engines_count": "232 എഞ്ചിനുകൾ"
+  },
+  "examples": {
+    "try": "ഒരു ഉദാഹരണം ശ്രമിക്കുക",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS എങ്ങനെ പ്രവർത്തിക്കുന്നു"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR അവലോകനം"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer സർവേ"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI നിയന്ത്രണം"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "കൊറിയ ടെക്"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "കാലാവസ്ഥ നയത്തിലെ പുതുക്കലുകൾ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "നിങ്ങൾക്കായി ആഗ്രഹങ്ങൾ",
+    "add_placeholder": "ആഗ്രഹം ചേർക്കുക...",
+    "empty": "നിങ്ങളുടെ തിരച്ചിലുകൾക്കനുസരിച്ച് ആഗ്രഹങ്ങൾ സ്വയം ചേർക്കുന്നു",
+    "remove": "നീക്കം ചെയ്യുക"
+  },
+  "factcheck": {
+    "title": "തത്വപരിശോധന ഫലങ്ങൾ",
+    "checking": "വിശകലനം ചെയ്യുന്നു...",
+    "analyzing": "വിരുദ്ധതകൾക്കായി ഉറവിടങ്ങൾ വിശകലനം ചെയ്യുന്നു...",
+    "no_contradictions": "ഉറവിടങ്ങളിൽ വിരുദ്ധതകൾ കണ്ടെത്തിയില്ല",
+    "found": "വിരുദ്ധതകൾ കണ്ടെത്തി"
+  },
+  "foryou": {
+    "title": "നിങ്ങൾക്കായി",
+    "based_on": "അനുസരിച്ച്: {interests}",
+    "no_interests": "ഇന്നുവരെ ആഗ്രഹങ്ങൾ ഇല്ല. നിങ്ങളുടെ ആഗ്രഹങ്ങൾ നിർമ്മിക്കാൻ തിരയുക!",
+    "loading": "വ്യക്തിഗത ഫീഡ് ലോഡുചെയ്യുന്നു..."
+  },
+  "common": {
+    "search": "തിരയുക",
+    "clear": "ക്ലിയർ",
+    "close": "അടയ്ക്കുക",
+    "save": "സംരക്ഷിക്കുക",
+    "cancel": "റദ്ദാക്കുക",
+    "loading": "ലോഡുചെയ്യുന്നു...",
+    "error": "തകരാർ",
+    "retry": "മറുപടി",
+    "more": "കൂടുതൽ",
+    "less": "കുറഞ്ഞത്"
+  },
+  "trends": {
+    "title": "ഇപ്പോൾ ട്രെൻഡിംഗ്",
+    "loading": "ട്രെൻഡുകൾ ലോഡുചെയ്യുന്നു...",
+    "error": "ട്രെൻഡുകൾ ലോഡുചെയ്യാൻ പരാജയപ്പെട്ടു",
+    "empty": "ട്രെൻഡിംഗ് വിഷയങ്ങൾ ഇല്ല"
+  },
+  "onboarding": {
+    "welcome": "Metasearch-ലേക്ക് സ്വാഗതം",
+    "subtitle": "നിങ്ങളുടെ സ്വകാര്യ, AI-ശക്തിയുള്ള തിരച്ചിൽ എഞ്ചിൻ",
+    "private_search": "സ്വകാര്യ തിരച്ചിൽ",
+    "private_search_desc": "ഒരിക്കലും ചോദ്യം ലോഗിംഗ് ഇല്ല",
+    "ai_answers": "AI ഉത്തറുകൾ",
+    "ai_answers_desc": "പ്രാദേശിക AI ഫലങ്ങൾ സംഗ്രഹിക്കുന്നു",
+    "news_digest": "വാർത്ത സമാഹാരം",
+    "news_digest_desc": "വിശകലനത്തോടെ ക്യൂറേറ്റഡ് വാർത്ത",
+    "local_first": "പ്രാദേശിക-മുന്നണിയിൽ",
+    "local_first_desc": "നിങ്ങളുടെ ഡാറ്റ നിങ്ങളുടെ ഉപകരണത്തിൽ തന്നെ നിലനിൽക്കുന്നു",
+    "get_started": "ആരംഭിക്കുക"
+  },
+  "feeds": {
+    "find": "ഫീഡുകൾ കണ്ടെത്തുക",
+    "subscribe": "സബ്സ്ക്രൈബ് ചെയ്യുക",
+    "unsubscribe": "അസബ്സ്ക്രൈബ് ചെയ്യുക"
+  },
+  "errors": {
+    "load_trends": "ട്രെൻഡുകൾ ലോഡുചെയ്യാൻ പരാജയപ്പെട്ടു",
+    "load_feed": "വ്യക്തിഗത ഫീഡ് ലോഡുചെയ്യാൻ പരാജയപ്പെട്ടു",
+    "load_global": "ഗ്ലോബൽ ഫീഡ് ലോഡുചെയ്യാൻ പരാജയപ്പെട്ടു",
+    "translation": "ഭാഷാന്തരം പരാജയപ്പെട്ടു"
+  },
+  "compare": {
+    "title": "ഫലങ്ങൾ താരതമ്യം ചെയ്യുക",
+    "button": "താരതമ്യം ചെയ്യുക",
+    "clear": "എല്ലാം ക്ലിയർ ചെയ്യുക",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

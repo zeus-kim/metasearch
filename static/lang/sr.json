@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Pitajte internet, privatno"
+  },
+  "nav": {
+    "ask": "Pitaj",
+    "discover": "Otkrij",
+    "history": "Istorija",
+    "options": "Opcije",
+    "classic": "Klasično",
+    "stats": "Statistika",
+    "preferences": "Podešavanja"
+  },
+  "tabs": {
+    "general": "Opšte",
+    "images": "Slike",
+    "videos": "Video",
+    "papers": "Radovi",
+    "news": "Vesti",
+    "shopping": "Kupovina"
+  },
+  "search": {
+    "placeholder": "Pitajte bilo šta…",
+    "placeholder_news": "Unesite temu vesti, pritisnite Pitaj",
+    "placeholder_images": "Pretraži slike…",
+    "placeholder_papers": "Unesite pitanje, pritisnite Pitaj",
+    "placeholder_general": "Unesite pitanje ili temu, pritisnite Pitaj",
+    "placeholder_shopping": "Pretraži proizvode…",
+    "placeholder_videos": "Pretraži video…",
+    "button": "Pitaj",
+    "button_search": "Pretraži"
+  },
+  "status": {
+    "loading": "Učitavanje…",
+    "loading_stories": "Učitavanje priča…",
+    "searching": "Pretraživanje…",
+    "searching_web": "Pretraživanje interneta…",
+    "searching_images": "Pretraživanje slika…",
+    "searching_news": "Pretraživanje izvora vesti…",
+    "searching_papers": "Pretraživanje akademskih izvora…",
+    "searching_shopping": "Pretraživanje proizvoda…",
+    "searching_videos": "Pretraživanje videa…",
+    "search_complete": "Pretraga završena.",
+    "search_failed": "Pretraga nije uspela.",
+    "answer_ready": "Odgovor je spreman.",
+    "fetching_article": "Preuzimanje članka…",
+    "fetching_publisher": "Preuzimanje članka izdavača…",
+    "resolving_article": "Rešavanje članka…",
+    "resolving_gn": "Rešavanje Google News linka…",
+    "rewriting": "Prepisivanje članka…",
+    "rewriting_korean": "Prepisivanje na korejskom…",
+    "preparing_rewrite": "Priprema potpunog prepisivanja…",
+    "extracted_rewriting": "Izvučen tekst članka — prepisivanje…",
+    "viewing_prior": "Pregled prethodnog odgovora — postavite dodatno pitanje ispod."
+  },
+  "error": {
+    "no_answer": "Nema generisanog AI odgovora — rezultati pretrage ispod.",
+    "no_news": "Nema pronađenih vesti — pokušajte sa drugim upitom.",
+    "no_stories": "Nema pronađenih priča — pokušajte sa drugim upitom.",
+    "no_stories_category": "Nema pronađenih priča za ovu kategoriju — pokušajte sa drugom opcijom.",
+    "rewrite_empty": "Prepisivanje članka je vratilo prazan tekst.",
+    "rewrite_failed": "Nije moguće prepisati članak",
+    "load_news_failed": "Nije moguće učitati vesti — proverite server.",
+    "model_not_found": "Model nije pronađen — pokrenite ollama pull za vaš konfigurisan model, ili izaberite drugi u Opcijama.",
+    "ollama_not_running": "Ollama nije pokrenut — odgovori će biti samo pretraga. Pokrenite: ollama serve",
+    "invalid_thread": "Nevalidan thread JSON.",
+    "enter_question": "Unesite pitanje.",
+    "enter_search": "Unesite termin pretrage."
+  },
+  "article": {
+    "sources": "Izvori",
+    "research_progress": "Napredak istraživanja",
+    "thinking": "Razmišljanje",
+    "answer": "Odgovor",
+    "key_points": "Ključne tačke",
+    "summary": "Sažetak",
+    "related_media": "Povezani mediji",
+    "view_more": "Pogledajte još {count}",
+    "back": "Nazad",
+    "read_original": "Pročitajte original",
+    "related_image": "Povezana slika",
+    "related": "Povezano"
+  },
+  "discover": {
+    "updated": "Ažurirano {time}",
+    "scope": {
+      "all": "📰 Sve",
+      "local": "🏠 Lokalno",
+      "world": "🌍 Svet"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomija",
+      "sports": "Sport",
+      "world": "Svet",
+      "entertainment": "Zabava",
+      "tech": "Tehnologija i nauka",
+      "culture": "Kultura",
+      "health": "Zdravlje",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "tehnološka nauka",
+      "ai": "veštačka inteligencija AI mašinsko učenje",
+      "world": "svetske vesti međunarodne",
+      "politics": "politika vlada izbori",
+      "business": "poslovanje ekonomija kompanije",
+      "finance": "finansije tržišta akcije",
+      "health": "zdravlje medicina wellness",
+      "climate": "klimatske promene životna sredina",
+      "sports": "sport",
+      "entertainment": "zabava poznati",
+      "art": "umetnost kultura",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Otvorite istoriju",
+    "close": "Zatvorite istoriju",
+    "imported": "Uvezeno {count}",
+    "export": "Izvezi JSON",
+    "import": "Uvezi JSON",
+    "clear": "Obriši istoriju",
+    "empty": "Vaša pitanja se ovde pojavljuju.",
+    "new_chat": "Nova chat"
+  },
+  "panel": {
+    "history": "Istorija",
+    "bookmarks": "Obeleživači",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Svi obeleživači",
+    "empty": "Obeležite rezultate da biste ih sačuvali ovde.",
+    "export": "Izvezi",
+    "clear_all": "Obriši sve",
+    "new_collection": "Nova kolekcija"
+  },
+  "hero": {
+    "private": "Privatno",
+    "ai_powered": "Pogonjeno AI-jem",
+    "local_first": "Lokalno-prvo"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Dubinsko istraživanje",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Jezik",
+    "answer_language": "Jezik AI-a",
+    "answer_auto": "Automatski",
+    "research": "Istraživanje",
+    "fact_check": "Provera činjenica"
+  },
+  "preferences": {
+    "title": "Podešavanja",
+    "language": "Језик",
+    "language_desc": "Изаберите жељени језик интерфејса",
+    "language_storage": "Језик интерфејса се чува у вашем прегледачу.",
+    "branding": "Brendiranje",
+    "branding_desc": "Prilagodite naziv aplikacije, logo i favicon prikazane u UI.",
+    "app_name": "Naziv aplikacije",
+    "app_name_hint": "Naziv prikazan u zaglavlju i naslovima stranica",
+    "logo_url": "URL logotipa",
+    "logo_url_hint": "URL ili putanja do slike vašeg logotipa (ostavite prazno za podrazumevano)",
+    "favicon_url": "URL favikona",
+    "favicon_url_hint": "URL ili putanja do vašeg favikona (ostavite prazno za podrazumevano u pretraživaču)",
+    "appearance": "Izgled",
+    "appearance_desc": "Prilagodite vizuelni stil i raspored.",
+    "theme": "Tema",
+    "font_size": "Veličina fonta",
+    "results_layout": "Raspored rezultata",
+    "search": "Pretraga",
+    "search_desc": "Podrazumevana podešavanja primenjena na sve pretrage.",
+    "ui_language": "Jezik UI",
+    "ui_language_hint": "Jezik interfejsa (čuva se u lokalnom skladištu pretraživača)",
+    "interface_language": "Jezik interfejsa",
+    "stored_in_browser": "Skladišti se u pretraživaču (lokalno skladište)",
+    "search_defaults": "Podrazumevane pretrage",
+    "search_language": "Jezik pretrage",
+    "search_language_hint": "automatski = detektuj iz upita (Hangul → ko-KR); ili svi, ili fiksna lokacija kao što je ko-KR",
+    "fallback_language": "Kod rezervnog jezika",
+    "fallback_language_hint": "Koristi se kada automatska detekcija nije konačna",
+    "safe_search": "Sigurna pretraga",
+    "safe_off": "Isključeno",
+    "safe_moderate": "Umereno",
+    "safe_strict": "Strogo",
+    "results_per_engine": "Rezultati po pretraživaču",
+    "ai": "AI",
+    "ai_desc": "Konfigurišite AI modele za sintezu odgovora i prepisivanje članaka.",
+    "ai_provider": "Provajder",
+    "ai_provider_local": "Lokalno (Ollama)",
+    "ai_provider_custom": "Prilagođeno",
+    "ai_base_url": "API osnovni URL",
+    "ai_base_url_hint": "Lokalno: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API ključ",
+    "ai_api_key_hint": "Potrebno za cloud provajdere (OpenAI, Anthropic, itd.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Chat/instrukcijski model za sintezu odgovora i proširenje upita",
+    "ai_article_model": "Model članka",
+    "ai_article_model_hint": "Model za prepisivanje članaka sa punom stranicom (podrazumevano na glavni model)",
+    "ai_timeout": "Vreme isteka (sekunde)",
+    "ai_timeout_hint": "Vreme isteka po zahtevu za pozive modela",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Karakteristike",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Vesti",
+    "news_desc": "Agregacija vesti i podešavanja članaka.",
+    "news_per_source": "Članci po izvoru",
+    "news_freshness": "Svežina polu-vremena (sati)",
+    "news_freshness_weight": "Težina svežine",
+    "news_dedup": "Prag sličnosti za dedup",
+    "news_max_age": "Maksimalna starost (dani)",
+    "news_cache_ttl": "TTL keša (sekunde)",
+    "news_enrich_max": "Maksimalan broj članaka za obogaćivanje",
+    "engines": "Pretraživači",
+    "engines_desc": "Omogućite/Onemogućite pretraživače i prilagodite njihove težinske redoslede. Veća težina = veći uticaj na redosled rezultata.",
+    "engine": "pretraživač",
+    "categories": "kategorije",
+    "weight": "težina",
+    "privacy": "Privatnost",
+    "privacy_desc": "Kontrolišite kako se vaši podaci obrađuju.",
+    "proxy_images": "Proxy slike",
+    "proxy_images_hint": "Usmerite slike kroz server da sakrijete svoj IP od trećih strana",
+    "remove_trackers": "Ukloni parametre za praćenje",
+    "remove_trackers_hint": "Uklonite UTM i druge parametre za praćenje iz URL-ova",
+    "save_history": "Sačuvaj istoriju pretrage",
+    "save_history_hint": "Skladišti pretrage lokalno u pretraživaču (nikada se ne šalje na server)",
+    "clear_data": "Obriši podatke",
+    "clear_localstorage": "Obriši lokalno skladište",
+    "clear_indexeddb": "Obriši IndexedDB",
+    "shortcuts": "Prečice na tastaturi",
+    "shortcuts_desc": "Brzi pristup za moćne korisnike.",
+    "shortcut_focus_search": "Fokusiraj se na pretraživački okvir",
+    "shortcut_close": "Zatvori panel / Otkaži",
+    "shortcut_navigate": "Navigiraj kroz rezultate",
+    "shortcut_open": "Otvorite izabrani rezultat",
+    "shortcut_new_tab": "Otvorite u novoj kartici",
+    "shortcut_switch_mode": "Prebaci način pretrage",
+    "shortcut_help": "Prikaži ovu pomoć",
+    "server": "Server",
+    "server_desc": "Podešavanja servera i mreže.",
+    "bind_address": "Adresa vezivanja",
+    "port": "Port",
+    "max_connections": "Maksimalne veze",
+    "image_proxy": "Omogući proxy za slike",
+    "cache_backend": "Keš backend",
+    "cache_dir": "Direktorijum keša",
+    "redis_url": "Redis URL",
+    "advanced": "Napredno",
+    "advanced_desc": "Podešavanja keša i vremena isteka.",
+    "cache_ttl": "TTL keša (sekunde)",
+    "cache_ttl_hint": "Vreme trajanja keša rezultata (0 onemogućava keširanje)",
+    "request_timeout": "Vreme isteka zahteva (sekunde)",
+    "request_timeout_hint": "Vreme isteka mreže po pretraživaču",
+    "save": "Sačuvaj podešavanja",
+    "saved": "Sačuvano",
+    "saved_msg": "napisano u settings.yml i primenjeno na nove pretrage.",
+    "server_settings": "Ova podešavanja se čuvaju na strani servera",
+    "raw_config": "Config JSON",
+    "stats": "Statistika",
+    "home": "Početna",
+    "logout": "Odjavi se",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Opšte",
+    "academic": "Akademsko",
+    "writing": "Pisanje",
+    "code": "Kod"
+  },
+  "footer": {
+    "grounded_answers": "Osnovani odgovori iz vašeg lokalnog modela — 200+ pretraživača, bez beleženja upita.",
+    "academic_papers": "Akademski radovi iz arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, i više.",
+    "news_digest": "Sažetak vesti: preuzima stranice članaka, prepisuje sažetke lokalno putem Ollama — velike slike samo, bez povećanja favikona.",
+    "images": "Pretraga slika Wikimedia Commons — sličice proxy-ovane za privatnost.",
+    "api_docs": "API dokumentacija",
+    "status": "Status",
+    "version": "Verzija",
+    "engines_count": "232 pretraživača"
+  },
+  "examples": {
+    "try": "Pokušajte primer",
+    "general": [
+      {
+        "q": "Najbolje prakse Rust async programiranja",
+        "label": "Rust async"
+      },
+      {
+        "q": "Najnoviji LLM istraživački radovi 2025",
+        "label": "Najnoviji LLM radovi"
+      },
+      {
+        "q": "Kako funkcioniše DNS",
+        "label": "Kako funkcioniše DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Najnoviji LLM istraživački radovi 2025",
+        "label": "Najnoviji LLM radovi"
+      },
+      {
+        "q": "CRISPR pregled radova o genetskom inženjeringu",
+        "label": "CRISPR pregled"
+      },
+      {
+        "q": "anketa o transformer arhitekturi",
+        "label": "Transformer anketa"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulacija AI-a",
+        "label": "Regulacija AI-a"
+      },
+      {
+        "q": "Tehnološke vesti iz Koreje",
+        "label": "Tehnološke vesti iz Koreje"
+      },
+      {
+        "q": "Ažuriranja klimatske politike",
+        "label": "Klimatska politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesi (Za Vas)",
+    "add_placeholder": "Dodajte interes…",
+    "empty": "Interesi se automatski dodaju dok pretražujete",
+    "remove": "Ukloni"
+  },
+  "factcheck": {
+    "title": "Rezultati provere činjenica",
+    "checking": "Analiziram…",
+    "analyzing": "Analiziram izvore za kontradikcije…",
+    "no_contradictions": "Nema pronađenih kontradikcija u izvorima",
+    "found": "Pronađene kontradikcije"
+  },
+  "foryou": {
+    "title": "Za Vas",
+    "based_on": "Na osnovu: {interests}",
+    "no_interests": "Nema interesa još. Pretražujte da izgradite svoje interese!",
+    "loading": "Učitavanje personalizovanog sadržaja…"
+  },
+  "common": {
+    "search": "Pretraga",
+    "clear": "Obriši",
+    "close": "Zatvori",
+    "save": "Sačuvaj",
+    "cancel": "Otkaži",
+    "loading": "Učitavanje…",
+    "error": "Greška",
+    "retry": "Pokušaj ponovo",
+    "more": "Više",
+    "less": "Manje"
+  },
+  "trends": {
+    "title": "Trenutni trendovi",
+    "loading": "Učitavanje trendova…",
+    "error": "Nije uspelo učitavanje trendova",
+    "empty": "Nema trend tema"
+  },
+  "onboarding": {
+    "welcome": "Dobrodošli u Metasearch",
+    "subtitle": "Vaš privatni, AI-pogonjeni pretraživač",
+    "private_search": "Privatna pretraga",
+    "private_search_desc": "Nikada ne beležimo upite",
+    "ai_answers": "AI odgovori",
+    "ai_answers_desc": "Lokalni AI sumira rezultate",
+    "news_digest": "Sažetak vesti",
+    "news_digest_desc": "Kuratne vesti sa analizom",
+    "local_first": "Lokalno-prvo",
+    "local_first_desc": "Vaši podaci ostaju na vašem uređaju",
+    "get_started": "Započnite"
+  },
+  "feeds": {
+    "find": "Pronađite Feede",
+    "subscribe": "Pretplatite se",
+    "unsubscribe": "Odjavite se"
+  },
+  "errors": {
+    "load_trends": "Nije uspelo učitavanje trendova",
+    "load_feed": "Nije uspelo učitavanje personalizovanog sadržaja",
+    "load_global": "Nije uspelo učitavanje globalnog sadržaja",
+    "translation": "Prevod nije uspeo"
+  },
+  "compare": {
+    "title": "Uporedite rezultate",
+    "button": "Uporedite",
+    "clear": "Obriši sve",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

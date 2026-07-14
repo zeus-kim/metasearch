@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "اسأل الويب، بشكل خاص"
+  },
+  "nav": {
+    "ask": "اسأل",
+    "discover": "اكتشف",
+    "history": "التاريخ",
+    "options": "الخيارات",
+    "classic": "كلاسيكي",
+    "stats": "الإحصائيات",
+    "preferences": "التفضيلات"
+  },
+  "tabs": {
+    "general": "عام",
+    "images": "صور",
+    "videos": "فيديوهات",
+    "papers": "أبحاث",
+    "news": "أخبار",
+    "shopping": "تسوق"
+  },
+  "search": {
+    "placeholder": "اسأل أي شيء...",
+    "placeholder_news": "أدخل موضوع الأخبار، اضغط اسأل",
+    "placeholder_images": "ابحث عن الصور...",
+    "placeholder_papers": "أدخل سؤالاً، اضغط اسأل",
+    "placeholder_general": "أدخل سؤالاً أو موضوعاً، اضغط اسأل",
+    "placeholder_shopping": "ابحث عن المنتجات...",
+    "placeholder_videos": "ابحث عن الفيديوهات...",
+    "button": "اسأل",
+    "button_search": "بحث"
+  },
+  "status": {
+    "loading": "جارٍ التحميل...",
+    "loading_stories": "جارٍ تحميل القصص...",
+    "searching": "جارٍ البحث...",
+    "searching_web": "جارٍ البحث في الويب...",
+    "searching_images": "جارٍ البحث عن الصور...",
+    "searching_news": "جارٍ البحث عن مصادر الأخبار...",
+    "searching_papers": "جارٍ البحث عن المصادر الأكاديمية...",
+    "searching_shopping": "جارٍ البحث عن المنتجات...",
+    "searching_videos": "جارٍ البحث عن الفيديوهات...",
+    "search_complete": "اكتمل البحث.",
+    "search_failed": "فشل البحث.",
+    "answer_ready": "الإجابة جاهزة.",
+    "fetching_article": "جارٍ جلب المقال...",
+    "fetching_publisher": "جارٍ جلب مقال الناشر...",
+    "resolving_article": "جارٍ حل المقال...",
+    "resolving_gn": "جارٍ حل رابط أخبار جوجل...",
+    "rewriting": "جارٍ إعادة كتابة المقال...",
+    "rewriting_korean": "جارٍ إعادة الكتابة باللغة الكورية...",
+    "preparing_rewrite": "جارٍ إعداد إعادة الكتابة الكاملة...",
+    "extracted_rewriting": "نص المقال المستخرج — جارٍ إعادة الكتابة...",
+    "viewing_prior": "عرض الدور السابق — اسأل متابعة أدناه."
+  },
+  "error": {
+    "no_answer": "لم يتم توليد إجابة من الذكاء الاصطناعي — نتائج البحث أدناه.",
+    "no_news": "لم يتم العثور على أخبار — جرب استعلامًا آخر.",
+    "no_stories": "لم يتم العثور على قصص — جرب استعلامًا آخر.",
+    "no_stories_category": "لم يتم العثور على قصص لهذه الفئة — جرب حبة أخرى.",
+    "rewrite_empty": "إعادة كتابة المقال أعادت نصًا فارغًا.",
+    "rewrite_failed": "لم يتمكن من إعادة كتابة المقال",
+    "load_news_failed": "لم يتمكن من تحميل الأخبار — تحقق من الخادم.",
+    "model_not_found": "لم يتم العثور على النموذج — قم بتشغيل ollama pull لنموذجك المكون، أو اختر آخر في الخيارات.",
+    "ollama_not_running": "Ollama غير قيد التشغيل — ستكون الإجابات بحثية فقط. ابدأ: ollama serve",
+    "invalid_thread": "JSON خيط غير صالح.",
+    "enter_question": "أدخل سؤالاً.",
+    "enter_search": "أدخل مصطلح البحث."
+  },
+  "article": {
+    "sources": "المصادر",
+    "research_progress": "تقدم البحث",
+    "thinking": "تفكير",
+    "answer": "إجابة",
+    "key_points": "النقاط الرئيسية",
+    "summary": "ملخص",
+    "related_media": "وسائط ذات صلة",
+    "view_more": "عرض {count} المزيد",
+    "back": "رجوع",
+    "read_original": "اقرأ الأصل",
+    "related_image": "صورة ذات صلة",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "تم التحديث {time}",
+    "scope": {
+      "all": "📰 الكل",
+      "local": "🏠 محلي",
+      "world": "🌍 عالمي"
+    },
+    "categories": {
+      "politics": "سياسة",
+      "economy": "اقتصاد",
+      "sports": "رياضة",
+      "world": "عالم",
+      "entertainment": "ترفيه",
+      "tech": "تكنولوجيا وعلم",
+      "culture": "ثقافة",
+      "health": "صحة",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "علم التكنولوجيا",
+      "ai": "الذكاء الاصطناعي AI التعلم الآلي",
+      "world": "أخبار العالم الدولية",
+      "politics": "سياسة حكومة انتخابات",
+      "business": "أعمال اقتصاد شركات",
+      "finance": "مالية أسواق أسهم",
+      "health": "صحة طب رفاهية",
+      "climate": "تغير المناخ بيئة",
+      "sports": "رياضة",
+      "entertainment": "ترفيه مشاهير",
+      "art": "فن ثقافة",
+      "top": "أهم الأخبار العناوين"
+    }
+  },
+  "history": {
+    "open": "فتح التاريخ",
+    "close": "إغلاق التاريخ",
+    "imported": "تم استيراد {count}",
+    "export": "تصدير JSON",
+    "import": "استيراد JSON",
+    "clear": "مسح التاريخ",
+    "empty": "تظهر أسئلتك هنا.",
+    "new_chat": "دردشة جديدة"
+  },
+  "panel": {
+    "history": "التاريخ",
+    "bookmarks": "الإشارات المرجعية",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "جميع الإشارات المرجعية",
+    "empty": "احفظ النتائج هنا.",
+    "export": "تصدير",
+    "clear_all": "مسح الكل",
+    "new_collection": "مجموعة جديدة"
+  },
+  "hero": {
+    "private": "خاص",
+    "ai_powered": "مدعوم بالذكاء الاصطناعي",
+    "local_first": "محلي أولاً"
+  },
+  "options": {
+    "model": "نموذج",
+    "deep_research": "بحث عميق",
+    "focus": "تركيز",
+    "theme": "ثيم",
+    "language": "لغة",
+    "answer_language": "لغة الذكاء الاصطناعي",
+    "answer_auto": "تلقائي",
+    "research": "بحث",
+    "fact_check": "تحقق من الحقائق"
+  },
+  "preferences": {
+    "title": "التفضيلات",
+    "language": "اللغة",
+    "language_desc": "اختر لغة الواجهة المفضلة لديك",
+    "language_storage": "يتم حفظ لغة الواجهة في متصفحك.",
+    "branding": "العلامة التجارية",
+    "branding_desc": "خصص اسم التطبيق، الشعار، والرمز المفضل المعروض في واجهة المستخدم.",
+    "app_name": "اسم التطبيق",
+    "app_name_hint": "الاسم المعروض في العنوان وعناوين الصفحات",
+    "logo_url": "رابط الشعار",
+    "logo_url_hint": "رابط أو مسار لصورة الشعار الخاصة بك (اترك فارغًا للاستخدام الافتراضي)",
+    "favicon_url": "رابط الرمز المفضل",
+    "favicon_url_hint": "رابط أو مسار للرمز المفضل الخاص بك (اترك فارغًا للاستخدام الافتراضي في المتصفح)",
+    "appearance": "المظهر",
+    "appearance_desc": "خصص النمط البصري والتخطيط.",
+    "theme": "ثيم",
+    "font_size": "حجم الخط",
+    "results_layout": "تخطيط النتائج",
+    "search": "بحث",
+    "search_desc": "الإعدادات الافتراضية المطبقة على جميع عمليات البحث.",
+    "ui_language": "لغة واجهة المستخدم",
+    "ui_language_hint": "لغة الواجهة (مخزنة في localStorage للمتصفح)",
+    "interface_language": "لغة الواجهة",
+    "stored_in_browser": "مخزنة في المتصفح (localStorage)",
+    "search_defaults": "الإعدادات الافتراضية للبحث",
+    "search_language": "لغة البحث",
+    "search_language_hint": "تلقائي = الكشف من الاستعلام (هانغول → ko-KR)؛ أو الكل، أو منطقة ثابتة مثل ko-KR",
+    "fallback_language": "رمز لغة النسخ الاحتياطي",
+    "fallback_language_hint": "يستخدم عندما يكون الكشف التلقائي غير حاسم",
+    "safe_search": "بحث آمن",
+    "safe_off": "إيقاف",
+    "safe_moderate": "معتدل",
+    "safe_strict": "صارم",
+    "results_per_engine": "النتائج لكل محرك",
+    "ai": "الذكاء الاصطناعي",
+    "ai_desc": "قم بتكوين نماذج الذكاء الاصطناعي لتوليف الإجابات وإعادة كتابة المقالات.",
+    "ai_provider": "المزود",
+    "ai_provider_local": "محلي (Ollama)",
+    "ai_provider_custom": "مخصص",
+    "ai_base_url": "رابط API الأساسي",
+    "ai_base_url_hint": "محلي: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "مفتاح API",
+    "ai_api_key_hint": "مطلوب لمزودي السحابة (OpenAI، Anthropic، إلخ.)",
+    "ai_model": "نموذج",
+    "ai_model_hint": "نموذج دردشة/تعليمات لتوليف الإجابات وتوسيع الاستعلام",
+    "ai_article_model": "نموذج المقال",
+    "ai_article_model_hint": "نموذج لإعادة كتابة مقالات الأخبار الكاملة (يعود إلى النموذج الرئيسي)",
+    "ai_timeout": "مهلة (ثواني)",
+    "ai_timeout_hint": "مهلة لكل طلب لاستدعاءات النموذج",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "الميزات",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "أخبار",
+    "news_desc": "إعدادات تجميع الأخبار والمقالات.",
+    "news_per_source": "مقالات لكل مصدر",
+    "news_freshness": "نصف عمر النضارة (ساعات)",
+    "news_freshness_weight": "وزن النضارة",
+    "news_dedup": "عتبة تشابه إزالة التكرار",
+    "news_max_age": "الحد الأقصى للعمر (أيام)",
+    "news_cache_ttl": "مدة صلاحية التخزين المؤقت (ثواني)",
+    "news_enrich_max": "الحد الأقصى للمقالات للتغني",
+    "engines": "محركات البحث",
+    "engines_desc": "تمكين/تعطيل المحركات وضبط أوزان ترتيبها. وزن أعلى = تأثير أكبر على ترتيب النتائج.",
+    "engine": "محرك",
+    "categories": "الفئات",
+    "weight": "الوزن",
+    "privacy": "الخصوصية",
+    "privacy_desc": "تحكم في كيفية التعامل مع بياناتك.",
+    "proxy_images": "صور الوكيل",
+    "proxy_images_hint": "توجيه الصور عبر الخادم لإخفاء عنوان IP الخاص بك عن الأطراف الثالثة",
+    "remove_trackers": "إزالة معلمات التتبع",
+    "remove_trackers_hint": "إزالة معلمات UTM وغيرها من معلمات التتبع من الروابط",
+    "save_history": "حفظ سجل البحث",
+    "save_history_hint": "تخزين عمليات البحث محليًا في المتصفح (لا ترسل أبدًا إلى الخادم)",
+    "clear_data": "مسح البيانات",
+    "clear_localstorage": "مسح التخزين المحلي",
+    "clear_indexeddb": "مسح IndexedDB",
+    "shortcuts": "اختصارات لوحة المفاتيح",
+    "shortcuts_desc": "مفاتيح الوصول السريع للمستخدمين المتقدمين.",
+    "shortcut_focus_search": "تركيز مربع البحث",
+    "shortcut_close": "إغلاق اللوحة / إلغاء",
+    "shortcut_navigate": "التنقل في النتائج",
+    "shortcut_open": "فتح النتيجة المحددة",
+    "shortcut_new_tab": "فتح في علامة تبويب جديدة",
+    "shortcut_switch_mode": "تبديل وضع البحث",
+    "shortcut_help": "عرض هذه المساعدة",
+    "server": "الخادم",
+    "server_desc": "إعدادات تكوين الخادم والشبكة.",
+    "bind_address": "عنوان الربط",
+    "port": "المنفذ",
+    "max_connections": "الحد الأقصى من الاتصالات",
+    "image_proxy": "تمكين وكيل الصور",
+    "cache_backend": "خلفية التخزين المؤقت",
+    "cache_dir": "دليل التخزين المؤقت",
+    "redis_url": "رابط Redis",
+    "advanced": "متقدم",
+    "advanced_desc": "إعدادات التخزين المؤقت والمهلة.",
+    "cache_ttl": "مدة صلاحية التخزين المؤقت (ثواني)",
+    "cache_ttl_hint": "مدة صلاحية التخزين المؤقت للنتائج (0 تعطل التخزين المؤقت)",
+    "request_timeout": "مهلة الطلب (ثواني)",
+    "request_timeout_hint": "مهلة الشبكة لكل محرك",
+    "save": "حفظ التفضيلات",
+    "saved": "تم الحفظ",
+    "saved_msg": "تمت الكتابة إلى settings.yml وتطبيقها على عمليات البحث الجديدة.",
+    "server_settings": "تظل هذه الإعدادات محفوظة على جانب الخادم إلى",
+    "raw_config": "تكوين JSON",
+    "stats": "الإحصائيات",
+    "home": "الرئيسية",
+    "logout": "تسجيل الخروج",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "عام",
+    "academic": "أكاديمي",
+    "writing": "كتابة",
+    "code": "كود"
+  },
+  "footer": {
+    "grounded_answers": "إجابات مستندة من نموذجك المحلي — 200+ محرك بحث، صفر تسجيل استعلام.",
+    "academic_papers": "أبحاث أكاديمية من arXiv، OpenAlex، Crossref، Europe PMC، Semantic Scholar، DOAJ، والمزيد.",
+    "news_digest": "ملخص الأخبار: يجلب صفحات المقالات، يعيد كتابة الملخصات محليًا عبر Ollama — صور كبيرة فقط، لا ترقية للرمز المفضل.",
+    "images": "بحث صور ويكيميديا كومنز — صور مصغرة عبرت للخصوصية.",
+    "api_docs": "وثائق API",
+    "status": "الحالة",
+    "version": "الإصدار",
+    "engines_count": "232 محرك"
+  },
+  "examples": {
+    "try": "جرب مثالاً",
+    "general": [
+      {
+        "q": "أفضل ممارسات برمجة Rust غير المتزامنة",
+        "label": "Rust غير المتزامنة"
+      },
+      {
+        "q": "أحدث أوراق بحثية في LLM 2025",
+        "label": "أحدث أوراق LLM"
+      },
+      {
+        "q": "كيف يعمل DNS",
+        "label": "كيف يعمل DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "أحدث أوراق بحثية في LLM 2025",
+        "label": "أحدث أوراق LLM"
+      },
+      {
+        "q": "أوراق مراجعة تحرير الجينات CRISPR",
+        "label": "مراجعة CRISPR"
+      },
+      {
+        "q": "استطلاع بنية المحولات",
+        "label": "استطلاع المحولات"
+      }
+    ],
+    "news": [
+      {
+        "q": "تنظيم الذكاء الاصطناعي",
+        "label": "تنظيم الذكاء الاصطناعي"
+      },
+      {
+        "q": "أخبار التكنولوجيا في كوريا",
+        "label": "تكنولوجيا كوريا"
+      },
+      {
+        "q": "تحديثات سياسة المناخ",
+        "label": "سياسة المناخ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "الاهتمامات (لك)",
+    "add_placeholder": "أضف اهتمامًا...",
+    "empty": "تتم إضافة الاهتمامات تلقائيًا أثناء البحث",
+    "remove": "إزالة"
+  },
+  "factcheck": {
+    "title": "نتائج التحقق من الحقائق",
+    "checking": "جارٍ التحليل...",
+    "analyzing": "جارٍ تحليل المصادر للمتناقضات...",
+    "no_contradictions": "لم يتم العثور على متناقضات في المصادر",
+    "found": "تم العثور على متناقضات"
+  },
+  "foryou": {
+    "title": "لك",
+    "based_on": "استنادًا إلى: {interests}",
+    "no_interests": "لا توجد اهتمامات بعد. ابحث لبناء اهتماماتك!",
+    "loading": "جارٍ تحميل المحتوى المخصص..."
+  },
+  "common": {
+    "search": "بحث",
+    "clear": "مسح",
+    "close": "إغلاق",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "loading": "جارٍ التحميل...",
+    "error": "خطأ",
+    "retry": "إعادة المحاولة",
+    "more": "المزيد",
+    "less": "أقل"
+  },
+  "trends": {
+    "title": "الرائجة الآن",
+    "loading": "جارٍ تحميل الاتجاهات...",
+    "error": "فشل في تحميل الاتجاهات",
+    "empty": "لا توجد مواضيع رائجة"
+  },
+  "onboarding": {
+    "welcome": "مرحبًا بك في Metasearch",
+    "subtitle": "محرك البحث الخاص بك المدعوم بالذكاء الاصطناعي",
+    "private_search": "بحث خاص",
+    "private_search_desc": "لا تسجيل استعلامات، أبدًا",
+    "ai_answers": "إجابات الذكاء الاصطناعي",
+    "ai_answers_desc": "الذكاء الاصطناعي المحلي يلخص النتائج",
+    "news_digest": "ملخص الأخبار",
+    "news_digest_desc": "أخبار منسقة مع تحليل",
+    "local_first": "محلي أولاً",
+    "local_first_desc": "تظل بياناتك على جهازك",
+    "get_started": "ابدأ"
+  },
+  "feeds": {
+    "find": "ابحث عن الخلاصات",
+    "subscribe": "اشترك",
+    "unsubscribe": "إلغاء الاشتراك"
+  },
+  "errors": {
+    "load_trends": "فشل في تحميل الاتجاهات",
+    "load_feed": "فشل في تحميل المحتوى المخصص",
+    "load_global": "فشل في تحميل الخلاصة العالمية",
+    "translation": "فشل في الترجمة"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 منظور عالمي",
+    "global_desc": "قارن كيف تختلف نتائج البحث حسب المنطقة",
+    "select_all": "الكل",
+    "clear_all": "مسح",
+    "run": "مقارنة"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

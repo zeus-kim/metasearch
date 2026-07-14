@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Hoi web rieng tu"
+  },
+  "nav": {
+    "ask": "Hoi",
+    "discover": "Kham pha",
+    "history": "Lich su",
+    "options": "Tuy chon",
+    "classic": "Classic",
+    "stats": "Stats",
+    "preferences": "Preferences"
+  },
+  "tabs": {
+    "general": "Chung",
+    "images": "Hinh anh",
+    "videos": "Videos",
+    "papers": "Bai bao",
+    "news": "Tin tuc",
+    "shopping": "Shopping"
+  },
+  "search": {
+    "placeholder": "Hoi bat cu dieu gi...",
+    "placeholder_news": "Nhap chu de tin tuc, nhan Hoi",
+    "placeholder_images": "Tim kiem hinh anh...",
+    "placeholder_papers": "Nhap cau hoi, nhan Hoi",
+    "placeholder_general": "Nhap cau hoi hoac chu de, nhan Hoi",
+    "placeholder_shopping": "Search products…",
+    "placeholder_videos": "Search videos…",
+    "button": "Hoi",
+    "button_search": "Tim kiem"
+  },
+  "status": {
+    "loading": "Dang tai...",
+    "loading_stories": "Dang tai bai viet...",
+    "searching": "Dang tim kiem...",
+    "searching_web": "Dang tim kiem tren web...",
+    "searching_images": "Dang tim kiem hinh anh...",
+    "searching_news": "Dang tim kiem nguon tin tuc...",
+    "searching_papers": "Dang tim kiem nguon hoc thuat...",
+    "searching_shopping": "Searching products…",
+    "searching_videos": "Searching videos…",
+    "search_complete": "Tim kiem hoan tat.",
+    "search_failed": "Tim kiem that bai.",
+    "answer_ready": "Cau tra loi da san sang.",
+    "fetching_article": "Dang tai bai viet...",
+    "fetching_publisher": "Dang tai bai tu nha xuat ban...",
+    "resolving_article": "Dang xu ly bai viet...",
+    "resolving_gn": "Dang xu ly lien ket Google News...",
+    "rewriting": "Dang viet lai bai viet...",
+    "rewriting_korean": "Dang viet lai bang tieng Han...",
+    "preparing_rewrite": "Dang chuan bi viet lai day du...",
+    "extracted_rewriting": "Da trich xuat noi dung bai viet — dang viet lai...",
+    "viewing_prior": "Dang xem luot truoc — dat cau hoi tiep theo ben duoi."
+  },
+  "error": {
+    "no_answer": "Khong tao duoc cau tra loi AI — ket qua tim kiem ben duoi.",
+    "no_news": "Khong tim thay tin tuc — thu truy van khac.",
+    "no_stories": "Khong tim thay bai viet — thu truy van khac.",
+    "no_stories_category": "Khong tim thay bai viet cho danh muc nay — thu danh muc khac.",
+    "rewrite_empty": "Viet lai bai viet tra ve van ban trong.",
+    "rewrite_failed": "Khong the viet lai bai viet",
+    "load_news_failed": "Khong the tai tin tuc — kiem tra may chu.",
+    "model_not_found": "Khong tim thay mo hinh — chay ollama pull cho mo hinh da cau hinh, hoac chon mo hinh khac trong Tuy chon.",
+    "ollama_not_running": "Ollama khong chay — cau tra loi chi tu tim kiem. Khoi dong: ollama serve",
+    "invalid_thread": "JSON luong khong hop le.",
+    "enter_question": "Nhap cau hoi.",
+    "enter_search": "Nhap tu khoa tim kiem."
+  },
+  "article": {
+    "sources": "Nguon",
+    "research_progress": "Tien trinh nghien cuu",
+    "thinking": "Dang suy nghi",
+    "answer": "Cau tra loi",
+    "key_points": "Diem chinh",
+    "summary": "Tom tat",
+    "related_media": "Media lien quan",
+    "view_more": "Xem them {count}",
+    "back": "Quay lai",
+    "read_original": "Doc ban goc",
+    "related_image": "Hinh anh lien quan",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "Cap nhat {time}",
+    "scope": {
+      "all": "📰 Tat ca",
+      "local": "🏠 Dia phuong",
+      "world": "🌍 The gioi"
+    },
+    "categories": {
+      "politics": "Chinh tri",
+      "economy": "Kinh te",
+      "sports": "The thao",
+      "world": "The gioi",
+      "entertainment": "Giai tri",
+      "tech": "Cong nghe & Khoa hoc",
+      "culture": "Van hoa",
+      "health": "Suc khoe",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "cong nghe khoa hoc",
+      "ai": "tri tue nhan tao AI hoc may",
+      "world": "tin the gioi quoc te",
+      "politics": "chinh tri chinh phu bau cu",
+      "business": "kinh doanh kinh te cong ty",
+      "finance": "tai chinh thi truong chung khoan",
+      "health": "suc khoe y te cham soc suc khoe",
+      "climate": "bien doi khi hau moi truong",
+      "sports": "the thao",
+      "entertainment": "giai tri nguoi noi tieng",
+      "art": "nghe thuat van hoa",
+      "top": "tin tức hàng đầu"
+    }
+  },
+  "history": {
+    "open": "Mo lich su",
+    "close": "Dong lich su",
+    "imported": "Da nhap {count}",
+    "export": "Xuat",
+    "import": "Nhap",
+    "clear": "Xoa",
+    "empty": "Your questions appear here.",
+    "new_chat": "New chat"
+  },
+  "panel": {
+    "history": "History",
+    "bookmarks": "Bookmarks",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "All Bookmarks",
+    "empty": "Bookmark results to save them here.",
+    "export": "Export",
+    "clear_all": "Clear all",
+    "new_collection": "New collection"
+  },
+  "hero": {
+    "private": "Private",
+    "ai_powered": "AI-Powered",
+    "local_first": "Local-First"
+  },
+  "options": {
+    "model": "Mo hinh",
+    "deep_research": "Nghien cuu sau",
+    "focus": "Tieu diem",
+    "theme": "Chu de",
+    "language": "Ngon ngu",
+    "answer_language": "AI Language",
+    "answer_auto": "Auto",
+    "research": "Research",
+    "fact_check": "Fact-check"
+  },
+  "preferences": {
+    "title": "Tuy chon",
+    "language": "Ngôn ngữ",
+    "language_desc": "Chọn ngôn ngữ giao diện ưa thích",
+    "language_storage": "Ngôn ngữ giao diện được lưu trong trình duyệt.",
+    "branding": "Thuong hieu",
+    "branding_desc": "Tuy chinh ten ung dung, logo va favicon hien thi trong giao dien.",
+    "app_name": "Ten ung dung",
+    "app_name_hint": "Ten hien thi trong header va tieu de trang",
+    "logo_url": "URL Logo",
+    "logo_url_hint": "URL hoac duong dan den anh logo (de trong cho mac dinh)",
+    "favicon_url": "URL Favicon",
+    "favicon_url_hint": "URL hoac duong dan den favicon (de trong cho mac dinh trinh duyet)",
+    "appearance": "Appearance",
+    "appearance_desc": "Customize the visual style and layout.",
+    "theme": "Theme",
+    "font_size": "Font Size",
+    "results_layout": "Results Layout",
+    "search": "Tim kiem",
+    "search_desc": "Cai dat mac dinh ap dung cho tat ca cac tim kiem.",
+    "ui_language": "Ngon ngu giao dien",
+    "ui_language_hint": "Ngon ngu giao dien (luu trong localStorage trinh duyet)",
+    "interface_language": "Ngon ngu giao dien",
+    "stored_in_browser": "Luu trong trinh duyet (localStorage)",
+    "search_defaults": "Mac dinh tim kiem",
+    "search_language": "Ngon ngu tim kiem",
+    "search_language_hint": "auto = tu dong nhan dien tu truy van (Hangul → ko-KR); hoac all, hoac locale co dinh nhu ko-KR",
+    "fallback_language": "Ma ngon ngu du phong",
+    "fallback_language_hint": "Duoc su dung khi tu dong nhan dien khong chac chan",
+    "safe_search": "Tim kiem an toan",
+    "safe_off": "Tat",
+    "safe_moderate": "Vua phai",
+    "safe_strict": "Nghiem ngat",
+    "results_per_engine": "Ket qua moi cong cu tim kiem",
+    "ai": "AI",
+    "ai_desc": "Cau hinh mo hinh AI de tong hop cau tra loi va viet lai bai viet.",
+    "ai_provider": "Provider",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Custom",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "Required for cloud providers (OpenAI, Anthropic, etc.)",
+    "ai_model": "Mo hinh",
+    "ai_model_hint": "Mo hinh chat/huong dan de tong hop cau tra loi va mo rong truy van",
+    "ai_article_model": "Mo hinh bai viet",
+    "ai_article_model_hint": "Mo hinh de viet lai bai tin tuc toan trang (mac dinh la mo hinh chinh)",
+    "ai_timeout": "Thoi gian cho (giay)",
+    "ai_timeout_hint": "Thoi gian cho moi yeu cau goi mo hinh",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Features",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "News",
+    "news_desc": "News aggregation and article settings.",
+    "news_per_source": "Articles per source",
+    "news_freshness": "Freshness half-life (hours)",
+    "news_freshness_weight": "Freshness weight",
+    "news_dedup": "Dedup similarity threshold",
+    "news_max_age": "Max age (days)",
+    "news_cache_ttl": "Cache TTL (seconds)",
+    "news_enrich_max": "Max articles to enrich",
+    "engines": "Cong cu tim kiem",
+    "engines_desc": "Bat/tat cong cu tim kiem va dieu chinh trong so xep hang. Trong so cao hon = anh huong nhieu hon den thu tu ket qua.",
+    "engine": "cong cu",
+    "categories": "danh muc",
+    "weight": "trong so",
+    "privacy": "Privacy",
+    "privacy_desc": "Control how your data is handled.",
+    "proxy_images": "Proxy images",
+    "proxy_images_hint": "Route images through server to hide your IP from third parties",
+    "remove_trackers": "Remove tracking parameters",
+    "remove_trackers_hint": "Strip UTM and other tracking parameters from URLs",
+    "save_history": "Save search history",
+    "save_history_hint": "Store searches locally in browser (never sent to server)",
+    "clear_data": "Clear Data",
+    "clear_localstorage": "Clear Local Storage",
+    "clear_indexeddb": "Clear IndexedDB",
+    "shortcuts": "Keyboard Shortcuts",
+    "shortcuts_desc": "Quick access keys for power users.",
+    "shortcut_focus_search": "Focus search box",
+    "shortcut_close": "Close panel / Cancel",
+    "shortcut_navigate": "Navigate results",
+    "shortcut_open": "Open selected result",
+    "shortcut_new_tab": "Open in new tab",
+    "shortcut_switch_mode": "Switch search mode",
+    "shortcut_help": "Show this help",
+    "server": "Server",
+    "server_desc": "Server configuration and network settings.",
+    "bind_address": "Bind Address",
+    "port": "Port",
+    "max_connections": "Max Connections",
+    "image_proxy": "Enable Image Proxy",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Nang cao",
+    "advanced_desc": "Cai dat bo nho dem va thoi gian cho.",
+    "cache_ttl": "TTL bo nho dem (giay)",
+    "cache_ttl_hint": "Thoi gian song cua bo nho dem ket qua (0 tat bo nho dem)",
+    "request_timeout": "Thoi gian cho yeu cau (giay)",
+    "request_timeout_hint": "Thoi gian cho mang moi cong cu tim kiem",
+    "save": "Luu tuy chon",
+    "saved": "Da luu",
+    "saved_msg": "da ghi vao settings.yml va ap dung cho cac tim kiem moi.",
+    "server_settings": "Cac cai dat nay duoc luu tren may chu tai",
+    "raw_config": "JSON cau hinh",
+    "stats": "Thong ke",
+    "home": "Trang chu",
+    "logout": "Logout",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Chung",
+    "academic": "Hoc thuat",
+    "writing": "Viet",
+    "code": "Ma nguon"
+  },
+  "footer": {
+    "grounded_answers": "Cau tra loi co can cu tu mo hinh cuc bo cua ban — khoang 46 cong cu tim kiem, khong ghi nhat ky truy van.",
+    "academic_papers": "Bai bao hoc thuat tu arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, va hon nua.",
+    "news_digest": "Tom tat tin tuc: lay trang bai viet, viet lai tom tat cuc bo qua Ollama — chi hinh anh lon, khong phong to favicon.",
+    "images": "Tim kiem hinh anh Wikimedia Commons — hinh thu nho duoc proxy de bao mat.",
+    "api_docs": "API Docs",
+    "status": "Status",
+    "version": "Version",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "Thu mot vi du",
+    "general": [
+      {
+        "q": "Thuc hanh tot nhat lap trinh Rust async",
+        "label": "Rust async"
+      },
+      {
+        "q": "Bai nghien cuu LLM moi nhat 2025",
+        "label": "Bai LLM moi nhat"
+      },
+      {
+        "q": "DNS hoat dong nhu the nao",
+        "label": "DNS hoat dong nhu the nao"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Bai nghien cuu LLM moi nhat 2025",
+        "label": "Bai LLM moi nhat"
+      },
+      {
+        "q": "Bai tong quan ve chinh sua gen CRISPR",
+        "label": "Tong quan CRISPR"
+      },
+      {
+        "q": "Khao sat kien truc transformer",
+        "label": "Khao sat Transformer"
+      }
+    ],
+    "news": [
+      {
+        "q": "Quy dinh AI",
+        "label": "Quy dinh AI"
+      },
+      {
+        "q": "Tin cong nghe Han Quoc",
+        "label": "Cong nghe Han Quoc"
+      },
+      {
+        "q": "Cap nhat chinh sach khi hau",
+        "label": "Chinh sach khi hau"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Sở thích",
+    "add_placeholder": "Thêm sở thích...",
+    "empty": "Sở thích được tự động thêm khi bạn tìm kiếm",
+    "remove": "Xóa"
+  },
+  "factcheck": {
+    "title": "Fact-check Results",
+    "checking": "Analyzing...",
+    "analyzing": "Analyzing sources for contradictions...",
+    "no_contradictions": "No contradictions found in sources",
+    "found": "Contradictions found"
+  },
+  "foryou": {
+    "title": "Dành cho bạn",
+    "based_on": "Dựa trên: {interests}",
+    "no_interests": "Chưa có sở thích. Tìm kiếm để xây dựng sở thích của bạn!",
+    "loading": "Đang tải nguồn cấp dữ liệu cá nhân..."
+  },
+  "common": {
+    "search": "Search",
+    "clear": "Clear",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "more": "More",
+    "less": "Less"
+  },
+  "trends": {
+    "title": "Trending Now",
+    "loading": "Loading trends...",
+    "error": "Failed to load trends",
+    "empty": "No trending topics"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Metasearch",
+    "subtitle": "Your private, AI-powered search engine",
+    "private_search": "Private Search",
+    "private_search_desc": "No query logging, ever",
+    "ai_answers": "AI Answers",
+    "ai_answers_desc": "Local AI summarizes results",
+    "news_digest": "News Digest",
+    "news_digest_desc": "Curated news with analysis",
+    "local_first": "Local-First",
+    "local_first_desc": "Your data stays on your device",
+    "get_started": "Get Started"
+  },
+  "feeds": {
+    "find": "Find Feeds",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe"
+  },
+  "errors": {
+    "load_trends": "Failed to load trends",
+    "load_feed": "Failed to load personalized feed",
+    "load_global": "Failed to load global feed",
+    "translation": "Translation failed"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 Góc nhìn toàn cầu",
+    "global_desc": "So sánh kết quả tìm kiếm giữa các khu vực",
+    "select_all": "Tất cả",
+    "clear_all": "Xóa",
+    "run": "So sánh"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

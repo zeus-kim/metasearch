@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "ဝက်ဘ်ကို မျှော်လင့်စွာ မေးပါ"
+  },
+  "nav": {
+    "ask": "မေးပါ",
+    "discover": "ရှာဖွေပါ",
+    "history": "သမိုင်း",
+    "options": "ရွေးချယ်မှုများ",
+    "classic": "အထွေထွေ",
+    "stats": "အချက်အလက်များ",
+    "preferences": "ကြိုက်နှစ်သက်မှုများ"
+  },
+  "tabs": {
+    "general": "အထွေထွေ",
+    "images": "ပုံများ",
+    "videos": "ဗီဒီယိုများ",
+    "papers": "စာရွက်များ",
+    "news": "သတင်းများ",
+    "shopping": "ဝယ်ယူမှု"
+  },
+  "search": {
+    "placeholder": "မည်သည့်အရာကိုမဆို မေးပါ...",
+    "placeholder_news": "သတင်းအကြောင်းအရာထည့်ပါ၊ မေးပါကိုနှိပ်ပါ",
+    "placeholder_images": "ပုံများရှာပါ...",
+    "placeholder_papers": "မေးခွန်းထည့်ပါ၊ မေးပါကိုနှိပ်ပါ",
+    "placeholder_general": "မေးခွန်း သို့မဟုတ် အကြောင်းအရာထည့်ပါ၊ မေးပါကိုနှိပ်ပါ",
+    "placeholder_shopping": "ထုတ်ကုန်များရှာပါ...",
+    "placeholder_videos": "ဗီဒီယိုများရှာပါ...",
+    "button": "မေးပါ",
+    "button_search": "ရှာပါ"
+  },
+  "status": {
+    "loading": "လွှတ်ပေးနေသည်...",
+    "loading_stories": "ဇာတ်လမ်းများကို လွှတ်ပေးနေသည်...",
+    "searching": "ရှာဖွေနေသည်...",
+    "searching_web": "ဝက်ဘ်ကို ရှာဖွေနေသည်...",
+    "searching_images": "ပုံများကို ရှာဖွေနေသည်...",
+    "searching_news": "သတင်းအရင်းအမြစ်များကို ရှာဖွေနေသည်...",
+    "searching_papers": "သင်္ချာအရင်းအမြစ်များကို ရှာဖွေနေသည်...",
+    "searching_shopping": "ထုတ်ကုန်များကို ရှာဖွေနေသည်...",
+    "searching_videos": "ဗီဒီယိုများကို ရှာဖွေနေသည်...",
+    "search_complete": "ရှာဖွေမှုပြီးစီးပါပြီ။",
+    "search_failed": "ရှာဖွေမှုမအောင်မြင်ပါ။",
+    "answer_ready": "အဖြေပြင်ဆင်ပြီးပါပြီ။",
+    "fetching_article": "ဆောင်းပါးကို ရယူနေသည်...",
+    "fetching_publisher": "ထုတ်ဝေသူဆောင်းပါးကို ရယူနေသည်...",
+    "resolving_article": "ဆောင်းပါးကို ဖြေရှင်းနေသည်...",
+    "resolving_gn": "Google News လင့်ခ်ကို ဖြေရှင်းနေသည်...",
+    "rewriting": "ဆောင်းပါးကို ပြန်ရေးနေသည်...",
+    "rewriting_korean": "ကိုရီးယားဘာသာဖြင့် ပြန်ရေးနေသည်...",
+    "preparing_rewrite": "ပြန်ရေးမှုအပြည့်အစုံကို ပြင်ဆင်နေသည်...",
+    "extracted_rewriting": "ဆောင်းပါးစာသားကို ထုတ်ယူပြီး — ပြန်ရေးနေသည်...",
+    "viewing_prior": "ယခင်အကြောင်းအရာကို ကြည့်နေသည် — အောက်တွင် ဆက်မေးပါ။"
+  },
+  "error": {
+    "no_answer": "AI အဖြေမရှိပါ — အောက်တွင် ရှာဖွေမှုရလဒ်များ။",
+    "no_news": "သတင်းမတွေ့ပါ — အခြားမေးခွန်းကို ကြိုးစားပါ။",
+    "no_stories": "ဇာတ်လမ်းမတွေ့ပါ — အခြားမေးခွန်းကို ကြိုးစားပါ။",
+    "no_stories_category": "ဤအမျိုးအစားအတွက် ဇာတ်လမ်းမတွေ့ပါ — အခြား pill ကို ကြိုးစားပါ။",
+    "rewrite_empty": "ဆောင်းပါးပြန်ရေးသည် အထွက်မရှိပါ။",
+    "rewrite_failed": "ဆောင်းပါးကို ပြန်ရေး၍မရပါ",
+    "load_news_failed": "သတင်းကို လွှတ်ပေး၍မရပါ — ဆာဗာကို စစ်ဆေးပါ။",
+    "model_not_found": "မော်ဒယ်မတွေ့ပါ — သင့်ဖွဲ့စည်းထားသော မော်ဒယ်အတွက် ollama pull ကို လည်ပတ်ပါ၊ သို့မဟုတ် Options တွင် အခြားတစ်ခုကို ရွေးချယ်ပါ။",
+    "ollama_not_running": "Ollama မလည်ပတ်ပါ — အဖြေများသည် ရှာဖွေမှုသာဖြစ်ပါမည်။ စတင်ရန်: ollama serve",
+    "invalid_thread": "မမှန်ကန်သော thread JSON။",
+    "enter_question": "မေးခွန်းထည့်ပါ။",
+    "enter_search": "ရှာဖွေရန် စကားလုံးထည့်ပါ။"
+  },
+  "article": {
+    "sources": "အရင်းအမြစ်များ",
+    "research_progress": "သုတေသန တိုးတက်မှု",
+    "thinking": "စဉ်းစားနေသည်",
+    "answer": "အဖြေ",
+    "key_points": "အချက်အလက်များ",
+    "summary": "အကျဉ်းချုပ်",
+    "related_media": "သက်ဆိုင်သော မီဒီယာ",
+    "view_more": "ထပ်မံကြည့်ရန် {count}",
+    "back": "ပြန်သွားပါ",
+    "read_original": "မူရင်းကို ဖတ်ပါ",
+    "related_image": "သက်ဆိုင်သော ပုံ",
+    "related": "သက်ဆိုင်သည်"
+  },
+  "discover": {
+    "updated": "အပ်ဒိတ်လုပ်ပြီး {time}",
+    "scope": {
+      "all": "📰 အားလုံး",
+      "local": "🏠 ဒေသခံ",
+      "world": "🌍 ကမ္ဘာ"
+    },
+    "categories": {
+      "politics": "နိုင်ငံရေး",
+      "economy": "စီးပွားရေး",
+      "sports": "အားကစား",
+      "world": "ကမ္ဘာ",
+      "entertainment": "ဖျော်ဖြေရန်",
+      "tech": "နည်းပညာနှင့် သိပ္ပံ",
+      "culture": "ယဉ်ကျေးမှု",
+      "health": "ကျန်းမာရေး",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "နည်းပညာ သိပ္ပံ",
+      "ai": "အတုစိတ်ကူး AI စက်လေ့လာမှု",
+      "world": "ကမ္ဘာ့သတင်း အပြည်ပြည်ဆိုင်ရာ",
+      "politics": "နိုင်ငံရေး အစိုးရ ရွေးကောက်ပွဲ",
+      "business": "စီးပွားရေး ကုမ္ပဏီများ",
+      "finance": "ငွေကြေး စျေးကွက်",
+      "health": "ကျန်းမာရေး ဆေးဝါး ကောင်းမွန်မှု",
+      "climate": "ရာသီဥတု ပြောင်းလဲမှု ပတ်ဝန်းကျင်",
+      "sports": "အားကစား",
+      "entertainment": "ဖျော်ဖြေရန် ရုပ်ရှင်",
+      "art": "အနုပညာ ယဉ်ကျေးမှု",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "သမိုင်းကို ဖွင့်ပါ",
+    "close": "သမိုင်းကို ပိတ်ပါ",
+    "imported": "သွင်းယူပြီး {count}",
+    "export": "JSON ထုတ်ယူပါ",
+    "import": "JSON သွင်းယူပါ",
+    "clear": "သမိုင်းကို ရှင်းလင်းပါ",
+    "empty": "သင်၏မေးခွန်းများသည် ဤနေရာတွင် ဖျော်ဖြေရန်ရှိသည်။",
+    "new_chat": "အသစ်သော စကားပြော"
+  },
+  "panel": {
+    "history": "သမိုင်း",
+    "bookmarks": "အမှတ်တံဆိပ်များ",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "အမှတ်တံဆိပ်များအားလုံး",
+    "empty": "အမှတ်တံဆိပ်ရလဒ်များကို ဤနေရာတွင် သိမ်းဆည်းပါ။",
+    "export": "ထုတ်ယူပါ",
+    "clear_all": "အားလုံးကို ရှင်းလင်းပါ",
+    "new_collection": "အသစ်သော စုစည်းမှု"
+  },
+  "hero": {
+    "private": "ကိုယ်ရေးကိုယ်တာ",
+    "ai_powered": "AI-အားဖြင့်",
+    "local_first": "ဒေသခံ-ပထမ"
+  },
+  "options": {
+    "model": "မော်ဒယ်",
+    "deep_research": "နက်ရှိုင်းသော သုတေသန",
+    "focus": "အာရုံစိုက်မှု",
+    "theme": "အကြောင်းအရာ",
+    "language": "ဘာသာစကား",
+    "answer_language": "AI ဘာသာစကား",
+    "answer_auto": "အလိုအလျောက်",
+    "research": "သုတေသန",
+    "fact_check": "အချက်အလက်စစ်ဆေးမှု"
+  },
+  "preferences": {
+    "title": "ကြိုက်နှစ်သက်မှုများ",
+    "language": "ဘာသာစကား",
+    "language_desc": "သင်နှစ်သက်သော အင်တာဖေ့စ်ဘာသာစကားကို ရွေးချယ်ပါ",
+    "language_storage": "အင်တာဖေ့စ်ဘာသာစကားကို သင့်ဘရောက်ဆာတွင် သိမ်းဆည်းထားသည်။",
+    "branding": "အမှတ်တံဆိပ်",
+    "branding_desc": "UI တွင် ပြသသော အက်ပ်အမည်၊ လိုဂိုနှင့် favicon ကို အထူးပြုလုပ်ပါ။",
+    "app_name": "အက်ပ်အမည်",
+    "app_name_hint": "ခေါင်းစဉ်နှင့် စာမျက်နှာခေါင်းစဉ်များတွင် ပြသသော အမည်",
+    "logo_url": "လိုဂို URL",
+    "logo_url_hint": "သင့်လိုဂိုပုံရိပ်အတွက် URL သို့မဟုတ် လမ်းကြောင်း (မရှိပါက မူရင်းအတွက် ထားပါ)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "သင့်favicon အတွက် URL သို့မဟုတ် လမ်းကြောင်း (မရှိပါက ဘရောက်ဇာမူရင်းအတွက် ထားပါ)",
+    "appearance": "ရုပ်သိမ်းမှု",
+    "appearance_desc": "ရုပ်ပိုင်းဆိုင်ရာစတိုင်နှင့် အဆင့်ကို အထူးပြုလုပ်ပါ။",
+    "theme": "အကြောင်းအရာ",
+    "font_size": "စာလုံးအရွယ်",
+    "results_layout": "ရလဒ်အဆင့်",
+    "search": "ရှာဖွေမှု",
+    "search_desc": "အားလုံးသော ရှာဖွေမှုများအတွက် မူရင်းစနစ်များကို လျှောက်ထားပါ။",
+    "ui_language": "UI ဘာသာစကား",
+    "ui_language_hint": "အင်တာဖေ့စ်ဘာသာစကား (browser localStorage တွင် သိမ်းဆည်းထားသည်)",
+    "interface_language": "အင်တာဖေ့စ်ဘာသာစကား",
+    "stored_in_browser": "Browser တွင် သိမ်းဆည်းထားသည် (localStorage)",
+    "search_defaults": "ရှာဖွေမှု မူရင်းများ",
+    "search_language": "ရှာဖွေမှု ဘာသာစကား",
+    "search_language_hint": "auto = မေးခွန်းမှ ရှာဖွေပါ (Hangul → ko-KR); သို့မဟုတ် အားလုံး၊ သို့မဟုတ် ko-KR ကဲ့သို့သော တိကျသော ဒေသ",
+    "fallback_language": "Fallback ဘာသာစကားကုဒ်",
+    "fallback_language_hint": "အလိုအလျောက်ရှာဖွေရန် မသေချာပါက အသုံးပြုသည်",
+    "safe_search": "လုံခြုံသော ရှာဖွေမှု",
+    "safe_off": "ပိတ်",
+    "safe_moderate": "အလယ်",
+    "safe_strict": "ခိုင်မာ",
+    "results_per_engine": "Engine တစ်ခုလျှင် ရလဒ်",
+    "ai": "AI",
+    "ai_desc": "အဖြေများကို စုစည်းရန်နှင့် ဆောင်းပါးပြန်ရေးရန် AI မော်ဒယ်များကို ဖွဲ့စည်းပါ။",
+    "ai_provider": "ပံ့ပိုးသူ",
+    "ai_provider_local": "ဒေသခံ (Ollama)",
+    "ai_provider_custom": "စိတ်ကြိုက်",
+    "ai_base_url": "API အခြေခံ URL",
+    "ai_base_url_hint": "ဒေသခံ: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API ကီး",
+    "ai_api_key_hint": "Cloud ပံ့ပိုးသူများအတွက် လိုအပ်သည် (OpenAI, Anthropic, စသည်)",
+    "ai_model": "မော်ဒယ်",
+    "ai_model_hint": "အဖြေများကို စုစည်းရန်နှင့် မေးခွန်းများကို တိုးချဲ့ရန် Chat/instruct မော်ဒယ်",
+    "ai_article_model": "ဆောင်းပါး မော်ဒယ်",
+    "ai_article_model_hint": "ပြည့်စုံသော စာမျက်နှာသတင်းဆောင်းပါးပြန်ရေးရန် မော်ဒယ် (မူရင်းမော်ဒယ်သို့ သွားပါ)",
+    "ai_timeout": "အချိန်ကုန် (စက္ကန့်)",
+    "ai_timeout_hint": "မော်ဒယ်ခေါ်ဆိုမှုအတွက် တစ်ခုချင်းစီအချိန်ကုန်",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "အင်္ဂါရပ်များ",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "သတင်း",
+    "news_desc": "သတင်းစုစည်းခြင်းနှင့် ဆောင်းပါးဆက်စပ်မှုများ။",
+    "news_per_source": "အရင်းအမြစ်တစ်ခုလျှင် ဆောင်းပါးများ",
+    "news_freshness": "သစ်လွင်မှု အချိန်ပိုင်း (နာရီ)",
+    "news_freshness_weight": "သစ်လွင်မှု အလေးချိန်",
+    "news_dedup": "Dedup ဆင်တူမှု အဆင့်",
+    "news_max_age": "အရွယ်အစားအများဆုံး (ရက်)",
+    "news_cache_ttl": "Cache TTL (စက္ကန့်)",
+    "news_enrich_max": "အများဆုံး ဆောင်းပါးများကို အဆင်ပြေစေရန်",
+    "engines": "ရှာဖွေရန် Engine များ",
+    "engines_desc": "Engine များကို ဖွင့်/ပိတ်လုပ်ပါနှင့် ၎င်းတို့၏ အလေးချိန်များကို ပြင်ဆင်ပါ။ အလေးချိန်မြင့် = ရလဒ်အမှာအမည်မှာ ပိုမိုသက်ရောက်မှုရှိသည်။",
+    "engine": "engine",
+    "categories": "အမျိုးအစားများ",
+    "weight": "အလေးချိန်",
+    "privacy": "ကိုယ်ရေးကိုယ်တာ",
+    "privacy_desc": "သင့်ဒေတာကို ဘယ်လို ကိုင်တွယ်မလဲကို ထိန်းချုပ်ပါ။",
+    "proxy_images": "ပုံများကို Proxy လုပ်ပါ",
+    "proxy_images_hint": "သင့် IP ကို တစ်စိတ်တစ်ပိုင်းမှ ဖျောက်ရန် ဆာဗာမှ ပုံများကို လမ်းကြောင်းပြောင်းပါ",
+    "remove_trackers": "Tracking parameters ကို ဖျက်ပါ",
+    "remove_trackers_hint": "URLs မှ UTM နှင့် အခြား tracking parameters များကို ဖျက်ပါ",
+    "save_history": "ရှာဖွေမှု သမိုင်းကို သိမ်းဆည်းပါ",
+    "save_history_hint": "Browser တွင် ဒေသခံအားဖြင့် ရှာဖွေမှုများကို သိမ်းဆည်းပါ (ဆာဗာသို့ မပို့ပါ)",
+    "clear_data": "ဒေတာကို ရှင်းလင်းပါ",
+    "clear_localstorage": "Local Storage ကို ရှင်းလင်းပါ",
+    "clear_indexeddb": "IndexedDB ကို ရှင်းလင်းပါ",
+    "shortcuts": "ကီးဘုတ် အထွေထွေ",
+    "shortcuts_desc": "စွမ်းဆောင်ရည်ရှိသော အသုံးပြုသူများအတွက် အမြန်ဝင်ရောက်မှု ခလုတ်များ။",
+    "shortcut_focus_search": "ရှာဖွေရန် ဘောက်စ်ကို အာရုံစိုက်ပါ",
+    "shortcut_close": "ပန်ကာ / ဖျက်ပါ",
+    "shortcut_navigate": "ရလဒ်များကို လမ်းညွှန်ပါ",
+    "shortcut_open": "ရွေးချယ်ထားသော ရလဒ်ကို ဖွင့်ပါ",
+    "shortcut_new_tab": "အသစ်သော tab တွင် ဖွင့်ပါ",
+    "shortcut_switch_mode": "ရှာဖွေရန် မော်ဒယ်ကို ပြောင်းပါ",
+    "shortcut_help": "ဤအကူအညီကို ပြသပါ",
+    "server": "ဆာဗာ",
+    "server_desc": "ဆာဗာ ဖွဲ့စည်းမှုနှင့် ကွန်ယက်ဆက်စပ်မှုများ။",
+    "bind_address": "ချိတ်ဆက်မည့် လိပ်စာ",
+    "port": "ပေါက်",
+    "max_connections": "အများဆုံး ချိတ်ဆက်မှုများ",
+    "image_proxy": "ပုံများကို Proxy လုပ်ပါ",
+    "cache_backend": "Cache နောက်ခံ",
+    "cache_dir": "Cache ဒိုင်ရက်ထရီ",
+    "redis_url": "Redis URL",
+    "advanced": "အဆင့်မြင့်",
+    "advanced_desc": "Cache နှင့် အချိန်ကုန်ဆောင်မှုများ။",
+    "cache_ttl": "Cache TTL (စက္ကန့်)",
+    "cache_ttl_hint": "ရလဒ် cache အချိန်သက်တမ်း (0 သည် caching ကို ပိတ်သည်)",
+    "request_timeout": "တောင်းဆိုမှု အချိန်ကုန် (စက္ကန့်)",
+    "request_timeout_hint": "Engine တစ်ခုချင်းစီအတွက် ကွန်ယက်အချိန်ကုန်",
+    "save": "ကြိုက်နှစ်သက်မှုများကို သိမ်းဆည်းပါ",
+    "saved": "သိမ်းဆည်းပြီး",
+    "saved_msg": "settings.yml တွင် ရေးသားပြီး အသစ်သော ရှာဖွေမှုများတွင် လျှောက်ထားသည်။",
+    "server_settings": "ဤဆက်စပ်မှုများသည် ဆာဗာဘက်တွင် သိမ်းဆည်းထားသည်",
+    "raw_config": "Config JSON",
+    "stats": "အချက်အလက်များ",
+    "home": "မူလစာမျက်နှာ",
+    "logout": "ထွက်ပါ",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "အထွေထွေ",
+    "academic": "သင်္ချာ",
+    "writing": "ရေးသားခြင်း",
+    "code": "ကုဒ်"
+  },
+  "footer": {
+    "grounded_answers": "သင့်ဒေသခံမော်ဒယ်မှ အခြေခံထားသော အဖြေများ — 200+ ရှာဖွေရန် engine များ၊ မေးခွန်းမှတ်တမ်းမရှိပါ။",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ နှင့် အခြားများမှ သင်္ချာဆောင်းပါးများ။",
+    "news_digest": "သတင်းအကျဉ်းချုပ်: ဆောင်းပါးစာမျက်နှာများကို ရယူပြီး Ollama မှတဆင့် အကျဉ်းချုပ်များကို ပြန်ရေးသည် — အကြီးစားပုံများသာ၊ favicon အဆင့်မြှင့်မလုပ်ပါ။",
+    "images": "Wikimedia Commons ပုံရှာဖွေရန် — ပုံသေးများကို ကိုယ်ရေးကိုယ်တာအတွက် Proxy လုပ်ထားသည်။",
+    "api_docs": "API Docs",
+    "status": "အခြေအနေ",
+    "version": "ဗားရှင်း",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "ဥပမာကို ကြိုးစားပါ",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS ဘယ်လိုလုပ်သလဲ"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR ပြန်လည်သုံးသပ်"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer စစ်တမ်း"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI စည်းမျဉ်း"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "ကိုရီးယား နည်းပညာ"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "ရာသီဥတု မူဝါဒ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "စိတ်ဝင်စားမှုများ (သင့်အတွက်)",
+    "add_placeholder": "စိတ်ဝင်စားမှုထည့်ပါ...",
+    "empty": "သင်ရှာဖွေရန်အခါ အလိုအလျောက် စိတ်ဝင်စားမှုများကို ထည့်သွင်းထားသည်",
+    "remove": "ဖျက်ပါ"
+  },
+  "factcheck": {
+    "title": "အချက်အလက်စစ်ဆေးမှု ရလဒ်များ",
+    "checking": "သုံးသပ်နေသည်...",
+    "analyzing": "ဆန့်ကျင်မှုများအတွက် အရင်းအမြစ်များကို သုံးသပ်နေသည်...",
+    "no_contradictions": "အရင်းအမြစ်များတွင် ဆန့်ကျင်မှုမတွေ့ပါ",
+    "found": "ဆန့်ကျင်မှုတွေ့ရှိသည်"
+  },
+  "foryou": {
+    "title": "သင့်အတွက်",
+    "based_on": "အခြေခံသည်: {interests}",
+    "no_interests": "စိတ်ဝင်စားမှုမရှိသေးပါ။ စိတ်ဝင်စားမှုများကို ဖွဲ့စည်းရန် ရှာဖွေပါ!",
+    "loading": "ကိုယ်ပိုင် feed ကို လွှတ်ပေးနေသည်..."
+  },
+  "common": {
+    "search": "ရှာဖွေမှု",
+    "clear": "ရှင်းလင်းပါ",
+    "close": "ပိတ်ပါ",
+    "save": "သိမ်းဆည်းပါ",
+    "cancel": "ဖျက်ပါ",
+    "loading": "လွှတ်ပေးနေသည်...",
+    "error": "အမှား",
+    "retry": "ပြန်ကြိုးစားပါ",
+    "more": "ပိုမို",
+    "less": "နည်း"
+  },
+  "trends": {
+    "title": "ယခုခေတ်တွင် လှုပ်ရှားနေသည်",
+    "loading": "လှုပ်ရှားမှုများကို လွှတ်ပေးနေသည်...",
+    "error": "လှုပ်ရှားမှုများကို လွှတ်ပေး၍မရပါ",
+    "empty": "လှုပ်ရှားမှုများမရှိပါ"
+  },
+  "onboarding": {
+    "welcome": "Metasearch သို့ ကြိုဆိုပါတယ်",
+    "subtitle": "သင့်ကိုယ်ပိုင်၊ AI-အားဖြင့် ရှာဖွေရန် စက်",
+    "private_search": "ကိုယ်ရေးကိုယ်တာ ရှာဖွေမှု",
+    "private_search_desc": "မည်သည့်မေးခွန်းမှတ်တမ်းမရှိပါ၊ အမြဲ",
+    "ai_answers": "AI အဖြေများ",
+    "ai_answers_desc": "ဒေသခံ AI သည် ရလဒ်များကို အကျဉ်းချုပ်သည်",
+    "news_digest": "သတင်းအကျဉ်းချုပ်",
+    "news_digest_desc": "သတင်းကို စီစဉ်ပြီး အကဲဖြတ်မှုများ",
+    "local_first": "ဒေသခံ-ပထမ",
+    "local_first_desc": "သင့်ဒေတာသည် သင့်စက်ပေါ်တွင်သာရှိသည်",
+    "get_started": "စတင်ပါ"
+  },
+  "feeds": {
+    "find": "Feed များကို ရှာပါ",
+    "subscribe": "စာရင်းသွင်းပါ",
+    "unsubscribe": "စာရင်းမှ ထုတ်ပါ"
+  },
+  "errors": {
+    "load_trends": "လှုပ်ရှားမှုများကို လွှတ်ပေး၍မရပါ",
+    "load_feed": "ကိုယ်ပိုင် feed ကို လွှတ်ပေး၍မရပါ",
+    "load_global": "ကမ္ဘာလုံးဆိုင်ရာ feed ကို လွှတ်ပေး၍မရပါ",
+    "translation": "ဘာသာပြန်မှုမအောင်မြင်ပါ"
+  },
+  "compare": {
+    "title": "ရလဒ်များကို နှိုင်းယှဉ်ပါ",
+    "button": "နှိုင်းယှဉ်ပါ",
+    "clear": "အားလုံးကို ရှင်းလင်းပါ",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

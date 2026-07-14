@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Spyrðu á vefnum, einkarétt"
+  },
+  "nav": {
+    "ask": "Spyrja",
+    "discover": "Uppgötva",
+    "history": "Saga",
+    "options": "Valkostir",
+    "classic": "Klassískt",
+    "stats": "Tölfræði",
+    "preferences": "Valkostir"
+  },
+  "tabs": {
+    "general": "Almennt",
+    "images": "Myndir",
+    "videos": "Myndbönd",
+    "papers": "Ritgerðir",
+    "news": "Fréttir",
+    "shopping": "Verslun"
+  },
+  "search": {
+    "placeholder": "Spyrðu um hvað sem er…",
+    "placeholder_news": "Sláðu inn fréttatengt efni, ýttu á Spyrja",
+    "placeholder_images": "Leita að myndum…",
+    "placeholder_papers": "Sláðu inn spurningu, ýttu á Spyrja",
+    "placeholder_general": "Sláðu inn spurningu eða efni, ýttu á Spyrja",
+    "placeholder_shopping": "Leita að vörum…",
+    "placeholder_videos": "Leita að myndböndum…",
+    "button": "Spyrja",
+    "button_search": "Leita"
+  },
+  "status": {
+    "loading": "Hlaða…",
+    "loading_stories": "Hlaða sögum…",
+    "searching": "Leita…",
+    "searching_web": "Leita á vefnum…",
+    "searching_images": "Leita að myndum…",
+    "searching_news": "Leita að fréttagjöfum…",
+    "searching_papers": "Leita að fræðilegum heimildum…",
+    "searching_shopping": "Leita að vörum…",
+    "searching_videos": "Leita að myndböndum…",
+    "search_complete": "Leit lokið.",
+    "search_failed": "Leit mistókst.",
+    "answer_ready": "Svar tilbúið.",
+    "fetching_article": "Sæki grein…",
+    "fetching_publisher": "Sæki útgefanda greinar…",
+    "resolving_article": "Leyst grein…",
+    "resolving_gn": "Leyst Google News tengil…",
+    "rewriting": "Endurskrifa grein…",
+    "rewriting_korean": "Endurskrifa á kóresku…",
+    "preparing_rewrite": "Undirbúa fulla endurskrifun…",
+    "extracted_rewriting": "Útdráttur greinatexti — endurskrifa…",
+    "viewing_prior": "Skoða fyrri umferð — spyrðu um áframhaldandi spurningu hér að neðan."
+  },
+  "error": {
+    "no_answer": "Engin AI svar myndað — leitarniðurstöður hér að neðan.",
+    "no_news": "Engar fréttir fundust — reyndu aðra fyrirspurn.",
+    "no_stories": "Engar sögur fundust — reyndu aðra fyrirspurn.",
+    "no_stories_category": "Engar sögur fundust fyrir þessa flokk — reyndu aðra pillu.",
+    "rewrite_empty": "Endurskrifa greinar skilaði tómu texta.",
+    "rewrite_failed": "Gat ekki endurskrifað grein",
+    "load_news_failed": "Gat ekki hlaðið fréttum — athugaðu þjóninn.",
+    "model_not_found": "Gerð fannst ekki — keyrðu ollama pull fyrir stilltu gerðina þína, eða veldu aðra í Valkostum.",
+    "ollama_not_running": "Ollama ekki í gangi — svör verða aðeins leitar. Byrjaðu: ollama serve",
+    "invalid_thread": "Ógild þráð JSON.",
+    "enter_question": "Sláðu inn spurningu.",
+    "enter_search": "Sláðu inn leitarorð."
+  },
+  "article": {
+    "sources": "Heimildir",
+    "research_progress": "Rannsóknarframvinda",
+    "thinking": "Hugsa",
+    "answer": "Svar",
+    "key_points": "Aðalatriði",
+    "summary": "Samantekt",
+    "related_media": "Tengd miðlun",
+    "view_more": "Skoða {count} fleiri",
+    "back": "Til baka",
+    "read_original": "Lestu upprunalega",
+    "related_image": "Tengd mynd",
+    "related": "Tengt"
+  },
+  "discover": {
+    "updated": "Uppfært {time}",
+    "scope": {
+      "all": "📰 Allt",
+      "local": "🏠 Staðbundið",
+      "world": "🌍 Heimurinn"
+    },
+    "categories": {
+      "politics": "Pólitík",
+      "economy": "Efnahagur",
+      "sports": "Íþróttir",
+      "world": "Heimurinn",
+      "entertainment": "Skemmtun",
+      "tech": "Tækni & Vísindi",
+      "culture": "Menning",
+      "health": "Heilsa",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "tækni vísindi",
+      "ai": "gervigreind AI vélar nám",
+      "world": "heim fréttir alþjóðlegar",
+      "politics": "pólitík ríkisstjórn kosningar",
+      "business": "viðskipti efnahagur fyrirtæki",
+      "finance": "fjármál markaðir hlutabréf",
+      "health": "heilsa læknisfræði vellíðan",
+      "climate": "loftslagsbreytingar umhverfi",
+      "sports": "íþróttir",
+      "entertainment": "skemmtun frægð",
+      "art": "list menning",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Opna sögu",
+    "close": "Loka sögu",
+    "imported": "Flutt inn {count}",
+    "export": "Flytja út JSON",
+    "import": "Flytja inn JSON",
+    "clear": "Hreinsa sögu",
+    "empty": "Spurningar þínar birtast hér.",
+    "new_chat": "Nýr spjall"
+  },
+  "panel": {
+    "history": "Saga",
+    "bookmarks": "Bókmerki",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Öll Bókmerki",
+    "empty": "Bókmerki niðurstöður til að vista þær hér.",
+    "export": "Flytja út",
+    "clear_all": "Hreinsa allt",
+    "new_collection": "Ný safn"
+  },
+  "hero": {
+    "private": "Einkarétt",
+    "ai_powered": "Gervigreind knúin",
+    "local_first": "Staðbundið fyrst"
+  },
+  "options": {
+    "model": "Gerð",
+    "deep_research": "Djúp rannsókn",
+    "focus": "Fókus",
+    "theme": "Þema",
+    "language": "Tungumál",
+    "answer_language": "AI Tungumál",
+    "answer_auto": "Sjálfvirkt",
+    "research": "Rannsókn",
+    "fact_check": "Faktakönnun"
+  },
+  "preferences": {
+    "title": "Valkostir",
+    "language": "Tungumál",
+    "language_desc": "Veldu valið viðmótstungumál",
+    "language_storage": "Viðmótstungumálið er geymt í vafranum þínum.",
+    "branding": "Merki",
+    "branding_desc": "Sérsníddu nafn forritsins, merki og favicon sem sýnd er í UI.",
+    "app_name": "Nafn forrits",
+    "app_name_hint": "Nafn sýnt í fyrirsagnir og síðum",
+    "logo_url": "Merki URL",
+    "logo_url_hint": "URL eða slóð að merki myndinni þinni (láttu tómt fyrir sjálfgefið)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL eða slóð að favicon þinni (láttu tómt fyrir sjálfgefið í vafranum)",
+    "appearance": "Útlit",
+    "appearance_desc": "Sérsníddu sjónræna stíl og uppsetningu.",
+    "theme": "Þema",
+    "font_size": "Leturstærð",
+    "results_layout": "Uppsetning niðurstaðna",
+    "search": "Leita",
+    "search_desc": "Sjálfgefnar stillingar beittar á allar leitar.",
+    "ui_language": "UI Tungumál",
+    "ui_language_hint": "Tungumál viðmóts (geymt í vafra localStorage)",
+    "interface_language": "Tungumál viðmóts",
+    "stored_in_browser": "Geymt í vafra (localStorage)",
+    "search_defaults": "Sjálfgefnar leitar",
+    "search_language": "Leitar tungumál",
+    "search_language_hint": "sjálfvirkt = greina frá fyrirspurn (Hangul → ko-KR); eða allt, eða fast staðsetning eins og ko-KR",
+    "fallback_language": "Falla tungumál kóði",
+    "fallback_language_hint": "Notað þegar sjálfgreining er óljós",
+    "safe_search": "Örugg leit",
+    "safe_off": "Slökkt",
+    "safe_moderate": "Mild",
+    "safe_strict": "Strangt",
+    "results_per_engine": "Niðurstöður á vél",
+    "ai": "AI",
+    "ai_desc": "Stilltu AI gerðir fyrir svar samsetningu og grein endurskrifun.",
+    "ai_provider": "Veitandi",
+    "ai_provider_local": "Staðbundið (Ollama)",
+    "ai_provider_custom": "Sérsniðið",
+    "ai_base_url": "API Grunn URL",
+    "ai_base_url_hint": "Staðbundið: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Lykill",
+    "ai_api_key_hint": "Nauðsynlegt fyrir skýjaveitendur (OpenAI, Anthropic, o.s.frv.)",
+    "ai_model": "Gerð",
+    "ai_model_hint": "Samskipta/leiðbeininga gerð fyrir svar samsetningu og fyrirspurn útvíkningu",
+    "ai_article_model": "Grein Gerð",
+    "ai_article_model_hint": "Gerð fyrir fulla síðu fréttagrein endurskrifana (sjálfgefið aðal gerð)",
+    "ai_timeout": "Tími út (sekúndur)",
+    "ai_timeout_hint": "Tími út fyrir hverja beiðni fyrir gerðarköll",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Eiginleikar",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Fréttir",
+    "news_desc": "Fréttasöfnun og greinastillingar.",
+    "news_per_source": "Greinar á heimild",
+    "news_freshness": "Ferskleiki hálf-líftími (klukkustundir)",
+    "news_freshness_weight": "Ferskleiki þyngd",
+    "news_dedup": "Dedup svipaða þröskuld",
+    "news_max_age": "Max aldur (dagar)",
+    "news_cache_ttl": "Cache TTL (sekúndur)",
+    "news_enrich_max": "Max greinar til að auðga",
+    "engines": "Leitarvélar",
+    "engines_desc": "Virkja/deaktivera vélar og stilla þeirra röðun þyngdir. Hærri þyngd = meira áhrif á niðurstöðupöntun.",
+    "engine": "vél",
+    "categories": "flokkar",
+    "weight": "þyngd",
+    "privacy": "Persónuvernd",
+    "privacy_desc": "Stjórna hvernig gögnum þínum er stjórnað.",
+    "proxy_images": "Proxy myndir",
+    "proxy_images_hint": "Leiða myndir í gegnum þjóninn til að fela IP þína frá þriðja aðila",
+    "remove_trackers": "Fjarlægja rekjanlegar breytur",
+    "remove_trackers_hint": "Fjarlægja UTM og aðrar rekjanlegar breytur úr URL",
+    "save_history": "Vista leitar sögu",
+    "save_history_hint": "Geyma leitar staðbundið í vafranum (aldrei sent á þjóninn)",
+    "clear_data": "Hreinsa gögn",
+    "clear_localstorage": "Hreinsa Local Storage",
+    "clear_indexeddb": "Hreinsa IndexedDB",
+    "shortcuts": "Skammstafanir",
+    "shortcuts_desc": "Fljótleg aðgangstenglar fyrir afkastamikla notendur.",
+    "shortcut_focus_search": "Fókus á leitarbox",
+    "shortcut_close": "Loka panel / Hætta",
+    "shortcut_navigate": "Fara um niðurstöður",
+    "shortcut_open": "Opna valda niðurstöðu",
+    "shortcut_new_tab": "Opna í nýjum flipa",
+    "shortcut_switch_mode": "Skipta um leitarham",
+    "shortcut_help": "Sýna þessa hjálp",
+    "server": "Þjónn",
+    "server_desc": "Þjónustustillingar og netstillingar.",
+    "bind_address": "Bind Address",
+    "port": "Port",
+    "max_connections": "Max tengingar",
+    "image_proxy": "Virkja myndar proxy",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Fyrirferð",
+    "advanced_desc": "Cache og tímasetningarstillingar.",
+    "cache_ttl": "Cache TTL (sekúndur)",
+    "cache_ttl_hint": "Niðurstöðus cache tími-til-lífs (0 slokkar caching)",
+    "request_timeout": "Beiðni Tími út (sekúndur)",
+    "request_timeout_hint": "Net tíma út fyrir hverja vél",
+    "save": "Vista valkosti",
+    "saved": "Vistað",
+    "saved_msg": "skráð í settings.yml og beitt á nýjar leitar.",
+    "server_settings": "Þessar stillingar eru varðveittar á þjóninum",
+    "raw_config": "Config JSON",
+    "stats": "Tölfræði",
+    "home": "Heim",
+    "logout": "Skrá út",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Almennt",
+    "academic": "Fræðilegt",
+    "writing": "Ritun",
+    "code": "Kóði"
+  },
+  "footer": {
+    "grounded_answers": "Grunnsvar frá staðbundinni gerð — 200+ leitarvélar, engin fyrirspurn skráð.",
+    "academic_papers": "Fræðilegar greinar frá arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, og fleira.",
+    "news_digest": "Fréttasafn: sækir greinarsíður, endurskrifar samantektir staðbundið í gegnum Ollama — stórar myndir aðeins, engin favicon uppskrift.",
+    "images": "Wikimedia Commons myndaleit — myndir proxy fyrir persónuvernd.",
+    "api_docs": "API Skjöl",
+    "status": "Staða",
+    "version": "Útgáfa",
+    "engines_count": "232 vélar"
+  },
+  "examples": {
+    "try": "Reyndu dæmi",
+    "general": [
+      {
+        "q": "Rust async forritun bestu venjur",
+        "label": "Rust async"
+      },
+      {
+        "q": "Nýjustu LLM rannsóknargreinar 2025",
+        "label": "Nýjustu LLM greinar"
+      },
+      {
+        "q": "Hvernig virkar DNS",
+        "label": "Hvernig virkar DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Nýjustu LLM rannsóknargreinar 2025",
+        "label": "Nýjustu LLM greinar"
+      },
+      {
+        "q": "CRISPR genabreytingar endurskoðunargreinar",
+        "label": "CRISPR endurskoðun"
+      },
+      {
+        "q": "transformer arkitektúr könnun",
+        "label": "Transformer könnun"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI reglugerð",
+        "label": "AI reglugerð"
+      },
+      {
+        "q": "Kóreu tækni fréttir",
+        "label": "Kóreu tækni"
+      },
+      {
+        "q": "loftslagsstefna uppfærslur",
+        "label": "Loftslagsstefna"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Áhugi (Fyrir Þig)",
+    "add_placeholder": "Bæta við áhuga...",
+    "empty": "Áhugi bætist sjálfkrafa við þegar þú leitar",
+    "remove": "Fjarlægja"
+  },
+  "factcheck": {
+    "title": "Faktakönnun Niðurstöður",
+    "checking": "Greina…",
+    "analyzing": "Greina heimildir fyrir mótsagnir…",
+    "no_contradictions": "Engar mótsagnir fundust í heimildum",
+    "found": "Mótsagnir fundust"
+  },
+  "foryou": {
+    "title": "Fyrir Þig",
+    "based_on": "Byggt á: {interests}",
+    "no_interests": "Engir áhugamál enn. Leitaðu til að byggja upp áhugamál þín!",
+    "loading": "Hlaða persónulegu straumi…"
+  },
+  "common": {
+    "search": "Leita",
+    "clear": "Hreinsa",
+    "close": "Loka",
+    "save": "Vista",
+    "cancel": "Hætta",
+    "loading": "Hlaða…",
+    "error": "Villa",
+    "retry": "Reyna aftur",
+    "more": "Meira",
+    "less": "Minna"
+  },
+  "trends": {
+    "title": "Vinsælt núna",
+    "loading": "Hlaða straumum…",
+    "error": "Mistókst að hlaða straumum",
+    "empty": "Engar vinsælar efni"
+  },
+  "onboarding": {
+    "welcome": "Velkomin í Metasearch",
+    "subtitle": "Þín einkarétt, AI-knúin leitarvél",
+    "private_search": "Einkaleit",
+    "private_search_desc": "Engin fyrirspurn skráð, aldrei",
+    "ai_answers": "AI Svar",
+    "ai_answers_desc": "Staðbundin AI samantekt niðurstaðna",
+    "news_digest": "Fréttasafn",
+    "news_digest_desc": "Sérvaldar fréttir með greiningu",
+    "local_first": "Staðbundið fyrst",
+    "local_first_desc": "Gögnin þín eru á tækinu þínu",
+    "get_started": "Byrjaðu"
+  },
+  "feeds": {
+    "find": "Finna strauma",
+    "subscribe": "Skrá sig",
+    "unsubscribe": "Afskrá"
+  },
+  "errors": {
+    "load_trends": "Mistókst að hlaða straumum",
+    "load_feed": "Mistókst að hlaða persónulegu straumi",
+    "load_global": "Mistókst að hlaða alþjóðlegum straumi",
+    "translation": "Þýðing mistókst"
+  },
+  "compare": {
+    "title": "Samanburður Niðurstöður",
+    "button": "Samanburður",
+    "clear": "Hreinsa allt",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

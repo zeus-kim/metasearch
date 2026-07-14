@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Vra die web, privaat"
+  },
+  "nav": {
+    "ask": "Vra",
+    "discover": "Ontdek",
+    "history": "Gesiedenis",
+    "options": "Opsies",
+    "classic": "Klassiek",
+    "stats": "Statistieke",
+    "preferences": "Voorkeure"
+  },
+  "tabs": {
+    "general": "Algemeen",
+    "images": "Beelde",
+    "videos": "Video's",
+    "papers": "Dokumente",
+    "news": "Nuus",
+    "shopping": "Inkopies"
+  },
+  "search": {
+    "placeholder": "Vra enigiets…",
+    "placeholder_news": "Voer 'n nuusonderwerp in, druk Vra",
+    "placeholder_images": "Soek beelde…",
+    "placeholder_papers": "Voer 'n vraag in, druk Vra",
+    "placeholder_general": "Voer 'n vraag of onderwerp in, druk Vra",
+    "placeholder_shopping": "Soek produkte…",
+    "placeholder_videos": "Soek video's…",
+    "button": "Vra",
+    "button_search": "Soek"
+  },
+  "status": {
+    "loading": "Laai…",
+    "loading_stories": "Laai stories…",
+    "searching": "Soek…",
+    "searching_web": "Soek die web…",
+    "searching_images": "Soek beelde…",
+    "searching_news": "Soek nuusbronne…",
+    "searching_papers": "Soek akademiese bronne…",
+    "searching_shopping": "Soek produkte…",
+    "searching_videos": "Soek video's…",
+    "search_complete": "Soek voltooi.",
+    "search_failed": "Soek het misluk.",
+    "answer_ready": "Antwoord gereed.",
+    "fetching_article": "Besig om artikel te haal…",
+    "fetching_publisher": "Besig om uitgewer-artikel te haal…",
+    "resolving_article": "Besig om artikel op te los…",
+    "resolving_gn": "Besig om Google News skakel op te los…",
+    "rewriting": "Herskryf artikel…",
+    "rewriting_korean": "Herskryf in Koreaans…",
+    "preparing_rewrite": "Bereid volledige herskrywing voor…",
+    "extracted_rewriting": "Onthaalde artikel teks — herskryf…",
+    "viewing_prior": "Besig om vorige beurt te sien — vra 'n opvolgvraag hieronder."
+  },
+  "error": {
+    "no_answer": "Geen KI-antwoord gegenereer nie — soekresultate hieronder.",
+    "no_news": "Geen nuus gevind nie — probeer 'n ander navraag.",
+    "no_stories": "Geen stories gevind nie — probeer 'n ander navraag.",
+    "no_stories_category": "Geen stories gevind vir hierdie kategorie nie — probeer 'n ander pil.",
+    "rewrite_empty": "Artikel herskrywing het leë teks teruggegee.",
+    "rewrite_failed": "Kon nie artikel herskryf nie",
+    "load_news_failed": "Kon nie nuus laai nie — kontroleer bediener.",
+    "model_not_found": "Model nie gevind nie — voer ollama pull uit vir jou gekonfigureerde model, of kies 'n ander in Opsies.",
+    "ollama_not_running": "Ollama loop nie — antwoorde sal slegs soek wees. Begin: ollama serve",
+    "invalid_thread": "Ongeldige thread JSON.",
+    "enter_question": "Voer 'n vraag in.",
+    "enter_search": "Voer 'n soekterm in."
+  },
+  "article": {
+    "sources": "Bronne",
+    "research_progress": "Navorsingsvordering",
+    "thinking": "Dink",
+    "answer": "Antwoord",
+    "key_points": "Sleutelpunte",
+    "summary": "Opsomming",
+    "related_media": "Verwante Media",
+    "view_more": "Sien {count} meer",
+    "back": "Terug",
+    "read_original": "Lees oorspronklike",
+    "related_image": "Verwante beeld",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "Opgedateer {time}",
+    "scope": {
+      "all": "📰 Alles",
+      "local": "🏠 Plaaslik",
+      "world": "🌍 Wêreld"
+    },
+    "categories": {
+      "politics": "Politiek",
+      "economy": "Ekonomie",
+      "sports": "Sport",
+      "world": "Wêreld",
+      "entertainment": "Vermaak",
+      "tech": "Tegnologie & Wetenskap",
+      "culture": "Kultuur",
+      "health": "Gesondheid",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "tegnologie wetenskap",
+      "ai": "kunstmagtige intelligensie KI masjienleer",
+      "world": "wêreldnuus internasionaal",
+      "politics": "politiek regering verkiesing",
+      "business": "besigheid ekonomie maatskappye",
+      "finance": "finansies markte aandele",
+      "health": "gesondheid medisyne welstand",
+      "climate": "klimaatsverandering omgewing",
+      "sports": "sport",
+      "entertainment": "vermaak beroepe",
+      "art": "kuns kultuur",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Open gesiedenis",
+    "close": "Sluit gesiedenis",
+    "imported": "Geïmporteer {count}",
+    "export": "Eksporteer JSON",
+    "import": "Implementeer JSON",
+    "clear": "Maak geskiedenis skoon",
+    "empty": "Jou vrae verskyn hier.",
+    "new_chat": "Nuwe gesprek"
+  },
+  "panel": {
+    "history": "Gesiedenis",
+    "bookmarks": "Bladmerke",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Alle Bladmerke",
+    "empty": "Merk resultate om hulle hier te stoor.",
+    "export": "Eksporteer",
+    "clear_all": "Maak alles skoon",
+    "new_collection": "Nuwe versameling"
+  },
+  "hero": {
+    "private": "Privaat",
+    "ai_powered": "KI-Aangedrewe",
+    "local_first": "Plaaslik Eerst"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Diep navorsing",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Taal",
+    "answer_language": "KI Taal",
+    "answer_auto": "Outomaties",
+    "research": "Navorsing",
+    "fact_check": "Feit-ondersoek"
+  },
+  "preferences": {
+    "title": "Voorkeure",
+    "language": "Taal",
+    "language_desc": "Kies jou voorkeur koppelvlaktaal",
+    "language_storage": "Die koppelvlaktaal word in jou blaaier gestoor.",
+    "branding": "Branding",
+    "branding_desc": "Pas die toepassingsnaam, logo, en favicon aan wat in die UI vertoon word.",
+    "app_name": "Toepassing Naam",
+    "app_name_hint": "Naam wat in die kop en bladtitels vertoon word",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "URL of pad na jou logo beeld (laat leeg vir verstek)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL of pad na jou favicon (laat leeg vir blaaier verstek)",
+    "appearance": "Verskyning",
+    "appearance_desc": "Pas die visuele styl en uitleg aan.",
+    "theme": "Tema",
+    "font_size": "Fontgrootte",
+    "results_layout": "Resultate Uitleg",
+    "search": "Soek",
+    "search_desc": "Verstekinstellings toegepas op alle soeke.",
+    "ui_language": "UI Taal",
+    "ui_language_hint": "Koppelvlaktaal (gestoor in blaaier localStorage)",
+    "interface_language": "Koppelvlaktaal",
+    "stored_in_browser": "Gestoor in blaaier (localStorage)",
+    "search_defaults": "Soek verstek",
+    "search_language": "Soektaal",
+    "search_language_hint": "outomaties = opspoor uit navraag (Hangul → ko-KR); of alles, of 'n vaste plek soos ko-KR",
+    "fallback_language": "Terugval Taalkode",
+    "fallback_language_hint": "Gebruik wanneer outomatiese opsporing onduidelik is",
+    "safe_search": "Veilige Soek",
+    "safe_off": "Af",
+    "safe_moderate": "Gemiddeld",
+    "safe_strict": "Streng",
+    "results_per_engine": "Resultate Per Enjin",
+    "ai": "KI",
+    "ai_desc": "Konfigureer KI-modelle vir antwoord sintese en artikel herskrywing.",
+    "ai_provider": "Verskaffer",
+    "ai_provider_local": "Plaaslik (Ollama)",
+    "ai_provider_custom": "Pasgemaak",
+    "ai_base_url": "API Basis URL",
+    "ai_base_url_hint": "Plaaslik: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Sleutel",
+    "ai_api_key_hint": "Benodig vir wolkverskaffers (OpenAI, Anthropic, ens.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Chat/instruksie model vir antwoord sintese en navraag uitbreiding",
+    "ai_article_model": "Artikel Model",
+    "ai_article_model_hint": "Model vir volledige nuusartikel herskrywings (standaard na hoofmodel)",
+    "ai_timeout": "Tydsduur (sekondes)",
+    "ai_timeout_hint": "Per-versoek tydsduur vir model oproepe",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Kenmerke",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Nuus",
+    "news_desc": "Nuus aggregasie en artikel instellings.",
+    "news_per_source": "Artikels per bron",
+    "news_freshness": "Varsheid halflewe (ure)",
+    "news_freshness_weight": "Varsheid gewig",
+    "news_dedup": "Dedup similariteit drempel",
+    "news_max_age": "Max ouderdom (dae)",
+    "news_cache_ttl": "Cache TTL (sekondes)",
+    "news_enrich_max": "Max artikels om te verryk",
+    "engines": "Soek Enjins",
+    "engines_desc": "Aktiveer/deaktiveer enjins en pas hul rangorde gewigte aan. Hoe hoër gewig = meer invloed op resultaatorde.",
+    "engine": "enjin",
+    "categories": "kategorieë",
+    "weight": "gewig",
+    "privacy": "Privaatheid",
+    "privacy_desc": "Beheer hoe jou data hanteer word.",
+    "proxy_images": "Proxy beelde",
+    "proxy_images_hint": "Roteer beelde deur bediener om jou IP van derde partye te verberg",
+    "remove_trackers": "Verwyder opsporing parameters",
+    "remove_trackers_hint": "Verwyder UTM en ander opsporing parameters van URL's",
+    "save_history": "Stoor soekgeskiedenis",
+    "save_history_hint": "Stoor soeke plaaslik in blaaier (nooit na bediener gestuur)",
+    "clear_data": "Maak Data Skoon",
+    "clear_localstorage": "Maak Plaaslike Berging Skoon",
+    "clear_indexeddb": "Maak IndexedDB Skoon",
+    "shortcuts": "Toetskombinasies",
+    "shortcuts_desc": "Vinige toegang sleutels vir kraggebruikers.",
+    "shortcut_focus_search": "Fokus soekboks",
+    "shortcut_close": "Sluit paneel / Kanselleer",
+    "shortcut_navigate": "Navigeer resultate",
+    "shortcut_open": "Open geselekteerde resultaat",
+    "shortcut_new_tab": "Open in nuwe oortjie",
+    "shortcut_switch_mode": "Wissel soekmodus",
+    "shortcut_help": "Wys hierdie hulp",
+    "server": "Bediener",
+    "server_desc": "Bediener konfigurasie en netwerk instellings.",
+    "bind_address": "Bind Adres",
+    "port": "Poort",
+    "max_connections": "Max Verbindinge",
+    "image_proxy": "Aktiveer Beeld Proxy",
+    "cache_backend": "Cache Agtergrond",
+    "cache_dir": "Cache Gids",
+    "redis_url": "Redis URL",
+    "advanced": "Geavanceerd",
+    "advanced_desc": "Cache en tydsduur instellings.",
+    "cache_ttl": "Cache TTL (sekondes)",
+    "cache_ttl_hint": "Resultaat cache tyd-tot-lewe (0 deaktiveer caching)",
+    "request_timeout": "Versoek Tydsduur (sekondes)",
+    "request_timeout_hint": "Per-enjin netwerk tydsduur",
+    "save": "Stoor Voorkeure",
+    "saved": "Gestoor",
+    "saved_msg": "geskryf na settings.yml en toegepas op nuwe soeke.",
+    "server_settings": "Hierdie instellings word bediener-kant bewaar",
+    "raw_config": "Konfig JSON",
+    "stats": "Statistieke",
+    "home": "Tuis",
+    "logout": "Teken uit",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Algemeen",
+    "academic": "Akademies",
+    "writing": "Skryf",
+    "code": "Kode"
+  },
+  "footer": {
+    "grounded_answers": "Gegronde antwoorde van jou plaaslike model — 200+ soek enjins, nul navraag logging.",
+    "academic_papers": "Akademiese dokumente van arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, en meer.",
+    "news_digest": "Nuus digest: haal artikel bladsye, herskryf opsommings plaaslik via Ollama — groot beelde slegs, geen favicon opgradering.",
+    "images": "Wikimedia Commons beeld soek — miniatuur beelde geproksied vir privaatheid.",
+    "api_docs": "API Dokumentasie",
+    "status": "Status",
+    "version": "Weergawe",
+    "engines_count": "232 enjins"
+  },
+  "examples": {
+    "try": "Probeer 'n voorbeeld",
+    "general": [
+      {
+        "q": "Rust async programmering beste praktyke",
+        "label": "Rust async"
+      },
+      {
+        "q": "Laatste LLM navorsingsdokumente 2025",
+        "label": "Laatste LLM dokumente"
+      },
+      {
+        "q": "Hoe werk DNS",
+        "label": "Hoe werk DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Laatste LLM navorsingsdokumente 2025",
+        "label": "Laatste LLM dokumente"
+      },
+      {
+        "q": "CRISPR gene redigering hersieningsdokumente",
+        "label": "CRISPR hersiening"
+      },
+      {
+        "q": "transformer argitektuur opname",
+        "label": "Transformer opname"
+      }
+    ],
+    "news": [
+      {
+        "q": "KI regulering",
+        "label": "KI regulering"
+      },
+      {
+        "q": "Korea tegnologie nuus",
+        "label": "Korea tegnologie"
+      },
+      {
+        "q": "klimaat beleid opdaterings",
+        "label": "Klimaat beleid"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Belangstellings (Vir Jou)",
+    "add_placeholder": "Voeg belangstelling by...",
+    "empty": "Belangstellings word outomaties bygevoeg soos jy soek",
+    "remove": "Verwyder"
+  },
+  "factcheck": {
+    "title": "Feit-ondersoek Resultate",
+    "checking": "Analiseer...",
+    "analyzing": "Analiseer bronne vir teenstrydighede...",
+    "no_contradictions": "Geen teenstrydighede in bronne gevind",
+    "found": "Teenstrydighede gevind"
+  },
+  "foryou": {
+    "title": "Vir Jou",
+    "based_on": "Gebaseer op: {interests}",
+    "no_interests": "Geen belangstellings nog. Soek om jou belangstellings op te bou!",
+    "loading": "Laai persoonlike voer..."
+  },
+  "common": {
+    "search": "Soek",
+    "clear": "Maak skoon",
+    "close": "Sluit",
+    "save": "Stoor",
+    "cancel": "Kanselleer",
+    "loading": "Laai...",
+    "error": "Fout",
+    "retry": "Probeer weer",
+    "more": "Meer",
+    "less": "Minder"
+  },
+  "trends": {
+    "title": "Tendense Nou",
+    "loading": "Laai tendense...",
+    "error": "Kon nie tendense laai nie",
+    "empty": "Geen tendense onderwerpe"
+  },
+  "onboarding": {
+    "welcome": "Welkom by Metasearch",
+    "subtitle": "Jou privaat, KI-aangedrewe soekenjin",
+    "private_search": "Privaat Soek",
+    "private_search_desc": "Geen navraag logging, ooit",
+    "ai_answers": "KI Antwoorde",
+    "ai_answers_desc": "Plaaslike KI som die resultate op",
+    "news_digest": "Nuus Digest",
+    "news_digest_desc": "Gekureerde nuus met analise",
+    "local_first": "Plaaslik Eerst",
+    "local_first_desc": "Jou data bly op jou toestel",
+    "get_started": "Begin"
+  },
+  "feeds": {
+    "find": "Vind Voedsels",
+    "subscribe": "Teken in",
+    "unsubscribe": "Teken uit"
+  },
+  "errors": {
+    "load_trends": "Kon nie tendense laai nie",
+    "load_feed": "Kon nie persoonlike voer laai nie",
+    "load_global": "Kon nie globale voer laai nie",
+    "translation": "Vertaling het misluk"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

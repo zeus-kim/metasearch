@@ -1,0 +1,432 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "ウェブにプライベートに質問する"
+  },
+  "nav": {
+    "ask": "質問する",
+    "discover": "発見する",
+    "history": "履歴",
+    "options": "オプション",
+    "classic": "クラシック",
+    "stats": "統計",
+    "preferences": "設定"
+  },
+  "tabs": {
+    "general": "一般",
+    "images": "画像",
+    "videos": "動画",
+    "papers": "論文",
+    "news": "ニュース",
+    "shopping": "ショッピング"
+  },
+  "search": {
+    "placeholder": "何でも質問…",
+    "placeholder_news": "ニューストピックを入力し、質問するを押してください",
+    "placeholder_images": "画像を検索…",
+    "placeholder_papers": "質問を入力し、質問するを押してください",
+    "placeholder_general": "質問またはトピックを入力し、質問するを押してください",
+    "placeholder_shopping": "商品を検索…",
+    "placeholder_videos": "動画を検索…",
+    "button": "質問する",
+    "button_search": "検索"
+  },
+  "status": {
+    "loading": "読み込み中…",
+    "loading_stories": "ストーリーを読み込み中…",
+    "searching": "検索中…",
+    "searching_web": "ウェブを検索中…",
+    "searching_images": "画像を検索中…",
+    "searching_news": "ニュースソースを検索中…",
+    "searching_papers": "学術ソースを検索中…",
+    "searching_shopping": "商品を検索中…",
+    "searching_videos": "動画を検索中…",
+    "search_complete": "検索完了。",
+    "search_failed": "検索に失敗しました。",
+    "answer_ready": "回答準備完了。",
+    "fetching_article": "記事を取得中…",
+    "fetching_publisher": "出版社の記事を取得中…",
+    "resolving_article": "記事を解決中…",
+    "resolving_gn": "Googleニュースリンクを解決中…",
+    "rewriting": "記事を再執筆中…",
+    "rewriting_korean": "韓国語で再執筆中…",
+    "preparing_rewrite": "完全な再執筆を準備中…",
+    "extracted_rewriting": "抽出された記事テキスト — 再執筆中…",
+    "viewing_prior": "前のターンを表示中 — 下にフォローアップを質問してください。"
+  },
+  "error": {
+    "no_answer": "AIの回答が生成されませんでした — 下の検索結果を参照してください。",
+    "no_news": "ニュースが見つかりませんでした — 別のクエリを試してください。",
+    "no_stories": "ストーリーが見つかりませんでした — 別のクエリを試してください。",
+    "no_stories_category": "このカテゴリのストーリーが見つかりませんでした — 別のタブを試してください。",
+    "rewrite_empty": "記事の再執筆が空のテキストを返しました。",
+    "rewrite_failed": "記事を再執筆できませんでした。",
+    "load_news_failed": "ニュースを読み込めませんでした — サーバーを確認してください。",
+    "model_not_found": "モデルが見つかりませんでした — 設定されたモデルのためにollama pullを実行するか、オプションで別のモデルを選択してください。",
+    "ollama_not_running": "Ollamaが実行されていません — 回答は検索のみになります。開始: ollama serve",
+    "invalid_thread": "無効なスレッドJSON。",
+    "enter_question": "質問を入力してください。",
+    "enter_search": "検索語を入力してください。"
+  },
+  "article": {
+    "sources": "ソース",
+    "research_progress": "研究の進捗",
+    "thinking": "考え中",
+    "answer": "回答",
+    "key_points": "重要なポイント",
+    "summary": "要約",
+    "related_media": "関連メディア",
+    "view_more": "さらに{count}を表示",
+    "back": "戻る",
+    "read_original": "元のものを読む",
+    "related_image": "関連画像",
+    "related": "関連"
+  },
+  "discover": {
+    "updated": "更新された{time}",
+    "load_more": "もっと見る",
+    "scope": {
+      "all": "📰 すべて",
+      "local": "🏠 地元",
+      "world": "🌍 世界"
+    },
+    "categories": {
+      "politics": "政治",
+      "economy": "経済",
+      "sports": "スポーツ",
+      "world": "世界",
+      "entertainment": "エンターテイメント",
+      "tech": "テクノロジーと科学",
+      "culture": "文化",
+      "health": "健康",
+      "telegram": "テレグラム"
+    },
+    "seeds": {
+      "tech": "テクノロジー科学",
+      "ai": "人工知能 AI 機械学習",
+      "world": "世界のニュース 国際",
+      "politics": "政治 政府 選挙",
+      "business": "ビジネス 経済 企業",
+      "finance": "金融 市場 株式",
+      "health": "健康 医学 ウェルネス",
+      "climate": "気候変動 環境",
+      "sports": "スポーツ",
+      "entertainment": "エンターテイメント セレブリティ",
+      "art": "アート 文化",
+      "top": "トップニュース 最新 見出し"
+    }
+  },
+  "history": {
+    "open": "履歴を開く",
+    "close": "履歴を閉じる",
+    "imported": "インポートされた{count}",
+    "export": "JSONをエクスポート",
+    "import": "JSONをインポート",
+    "clear": "履歴をクリア",
+    "empty": "あなたの質問がここに表示されます。",
+    "new_chat": "新しいチャット"
+  },
+  "panel": {
+    "history": "履歴",
+    "bookmarks": "ブックマーク",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "すべてのブックマーク",
+    "empty": "ブックマーク結果をここに保存してください。",
+    "export": "エクスポート",
+    "clear_all": "すべてクリア",
+    "new_collection": "新しいコレクション"
+  },
+  "hero": {
+    "private": "プライベート",
+    "ai_powered": "AI搭載",
+    "local_first": "ローカルファースト"
+  },
+  "options": {
+    "model": "モデル",
+    "deep_research": "深い研究",
+    "focus": "フォーカス",
+    "theme": "テーマ",
+    "language": "言語",
+    "answer_language": "AI言語",
+    "answer_auto": "自動",
+    "research": "研究",
+    "fact_check": "ファクトチェック"
+  },
+  "preferences": {
+    "title": "設定",
+    "language": "言語",
+    "language_desc": "インターフェース言語を選択してください",
+    "language_storage": "インターフェース言語はブラウザに保存されます。",
+    "branding": "ブランディング",
+    "branding_desc": "UIに表示されるアプリケーション名、ロゴ、ファビコンをカスタマイズします。",
+    "app_name": "アプリケーション名",
+    "app_name_hint": "ヘッダーとページタイトルに表示される名前",
+    "logo_url": "ロゴURL",
+    "logo_url_hint": "ロゴ画像のURLまたはパス（デフォルトの場合は空のままにします）",
+    "favicon_url": "ファビコンURL",
+    "favicon_url_hint": "ファビコンのURLまたはパス（ブラウザのデフォルトの場合は空のままにします）",
+    "appearance": "外観",
+    "appearance_desc": "視覚スタイルとレイアウトをカスタマイズします。",
+    "theme": "テーマ",
+    "font_size": "フォントサイズ",
+    "results_layout": "結果のレイアウト",
+    "search": "検索",
+    "search_desc": "すべての検索に適用されるデフォルト設定。",
+    "ui_language": "UI言語",
+    "ui_language_hint": "インターフェース言語（ブラウザのlocalStorageに保存）",
+    "interface_language": "インターフェース言語",
+    "stored_in_browser": "ブラウザに保存（localStorage）",
+    "search_defaults": "検索のデフォルト",
+    "search_language": "検索言語",
+    "search_language_hint": "auto = クエリから検出（ハングル → ko-KR）；またはすべて、またはko-KRのような固定ロケール",
+    "fallback_language": "フォールバック言語コード",
+    "fallback_language_hint": "自動検出が不確定な場合に使用されます",
+    "safe_search": "安全な検索",
+    "safe_off": "オフ",
+    "safe_moderate": "中程度",
+    "safe_strict": "厳格",
+    "results_per_engine": "エンジンごとの結果",
+    "ai": "AI",
+    "ai_desc": "回答合成と記事再執筆のためのAIモデルを構成します。",
+    "ai_provider": "プロバイダー",
+    "ai_provider_local": "ローカル（Ollama）",
+    "ai_provider_custom": "カスタム",
+    "ai_base_url": "APIベースURL",
+    "ai_base_url_hint": "ローカル: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "APIキー",
+    "ai_api_key_hint": "クラウドプロバイダー（OpenAI、Anthropicなど）に必要です。",
+    "ai_model": "モデル",
+    "ai_model_hint": "回答合成とクエリ拡張のためのチャット/指示モデル",
+    "ai_article_model": "記事モデル",
+    "ai_article_model_hint": "フルページのニュース記事再執筆のためのモデル（デフォルトはメインモデル）",
+    "ai_timeout": "タイムアウト（秒）",
+    "ai_timeout_hint": "モデル呼び出しのリクエストごとのタイムアウト",
+    "ai_cost_tracking": "コスト追跡",
+    "ai_track_usage": "トークン使用量を追跡",
+    "ai_track_usage_hint": "AI応答のトークン数と推定コストを表示",
+    "ai_input_cost": "入力コスト（$/1Mトークン）",
+    "ai_output_cost": "出力コスト（$/1Mトークン）",
+    "ai_features": "機能",
+    "ai_answer_synthesis": "回答合成",
+    "ai_query_expansion": "クエリ拡張",
+    "ai_reranking": "再ランキング",
+    "ai_clustering": "クラスタリング",
+    "ai_vision": "ビジョン",
+    "news": "ニュース",
+    "news_desc": "ニュース集約と記事設定。",
+    "news_per_source": "ソースごとの記事",
+    "news_freshness": "新鮮さの半減期（時間）",
+    "news_freshness_weight": "新鮮さの重み",
+    "news_dedup": "重複排除の類似性閾値",
+    "news_max_age": "最大年齢（日）",
+    "news_cache_ttl": "キャッシュTTL（秒）",
+    "news_enrich_max": "強化する最大記事数",
+    "engines": "検索エンジン",
+    "engines_desc": "エンジンを有効/無効にし、そのランキング重みを調整します。重みが高いほど、結果の順序に影響を与えます。",
+    "engine": "エンジン",
+    "categories": "カテゴリ",
+    "weight": "重み",
+    "privacy": "プライバシー",
+    "privacy_desc": "データの取り扱いを制御します。",
+    "proxy_images": "画像をプロキシ",
+    "proxy_images_hint": "サーバーを通じて画像をルーティングし、第三者からIPを隠します",
+    "remove_trackers": "トラッキングパラメータを削除",
+    "remove_trackers_hint": "URLからUTMやその他のトラッキングパラメータを削除します",
+    "save_history": "検索履歴を保存",
+    "save_history_hint": "検索をローカルにブラウザに保存します（サーバーには送信されません）",
+    "clear_data": "データをクリア",
+    "clear_localstorage": "ローカルストレージをクリア",
+    "clear_indexeddb": "IndexedDBをクリア",
+    "shortcuts": "キーボードショートカット",
+    "shortcuts_desc": "パワーユーザーのためのクイックアクセスキー。",
+    "shortcut_focus_search": "検索ボックスにフォーカス",
+    "shortcut_close": "パネルを閉じる / キャンセル",
+    "shortcut_navigate": "結果をナビゲート",
+    "shortcut_open": "選択した結果を開く",
+    "shortcut_new_tab": "新しいタブで開く",
+    "shortcut_switch_mode": "検索モードを切り替える",
+    "shortcut_help": "このヘルプを表示",
+    "server": "サーバー",
+    "server_desc": "サーバー設定とネットワーク設定。",
+    "bind_address": "バインドアドレス",
+    "port": "ポート",
+    "max_connections": "最大接続数",
+    "image_proxy": "画像プロキシを有効にする",
+    "cache_backend": "キャッシュバックエンド",
+    "cache_dir": "キャッシュディレクトリ",
+    "redis_url": "Redis URL",
+    "advanced": "高度な設定",
+    "advanced_desc": "キャッシュとタイムアウトの設定。",
+    "cache_ttl": "キャッシュTTL（秒）",
+    "cache_ttl_hint": "結果キャッシュの有効期限（0はキャッシュを無効にします）",
+    "request_timeout": "リクエストタイムアウト（秒）",
+    "request_timeout_hint": "エンジンごとのネットワークタイムアウト",
+    "save": "設定を保存",
+    "saved": "保存されました",
+    "saved_msg": "settings.ymlに書き込まれ、新しい検索に適用されました。",
+    "server_settings": "これらの設定はサーバー側に永続化されます",
+    "raw_config": "設定JSON",
+    "stats": "統計",
+    "home": "ホーム",
+    "logout": "ログアウト",
+    "ai_embedding_model": "埋め込みモデル",
+    "ai_vision_model": "ビジョンモデル",
+    "ai_answer_top_n": "回答上位N件",
+    "ai_answer_top_n_hint": "回答合成に使用する上位結果の数",
+    "ai_news_prompt_ko": "韓国語ニュース分析プロンプト",
+    "ai_news_prompt_ko_hint": "韓国語ニュース記事分析用プロンプト",
+    "ai_news_prompt_ko_placeholder": "デフォルトプロンプトを使用するには空のままにしてください。",
+    "ai_news_prompt_en": "英語ニュース分析プロンプト",
+    "ai_news_prompt_en_hint": "英語ニュース記事分析用プロンプト",
+    "ai_news_prompt_en_placeholder": "デフォルトプロンプトを使用するには空のままにしてください。",
+    "ai_answer_language": "回答言語",
+    "ai_answer_language_hint": "AI生成応答の対象言語",
+    "ai_answer_auto": "自動検出"
+  },
+  "focus": {
+    "general": "一般",
+    "academic": "学術",
+    "writing": "執筆",
+    "code": "コード"
+  },
+  "footer": {
+    "grounded_answers": "ローカルモデルからの根拠のある回答 — 200以上の検索エンジン、クエリログなし。",
+    "academic_papers": "arXiv、OpenAlex、Crossref、Europe PMC、Semantic Scholar、DOAJなどからの学術論文。",
+    "news_digest": "ニュースダイジェスト：記事ページを取得し、Ollamaを介して要約をローカルに再執筆 — 大きな画像のみ、ファビコンのアップスケールなし。",
+    "images": "ウィキメディアコモンズの画像検索 — プライバシーのためにサムネイルをプロキシ。",
+    "api_docs": "APIドキュメント",
+    "status": "ステータス",
+    "version": "バージョン",
+    "engines_count": "232エンジン"
+  },
+  "examples": {
+    "try": "例を試す",
+    "general": [
+      {
+        "q": "Rustの非同期プログラミングのベストプラクティス",
+        "label": "Rust非同期"
+      },
+      {
+        "q": "最新のLLM研究論文2025",
+        "label": "最新のLLM論文"
+      },
+      {
+        "q": "DNSはどのように機能するか",
+        "label": "DNSはどのように機能するか"
+      }
+    ],
+    "papers": [
+      {
+        "q": "最新のLLM研究論文2025",
+        "label": "最新のLLM論文"
+      },
+      {
+        "q": "CRISPR遺伝子編集レビュー論文",
+        "label": "CRISPRレビュー"
+      },
+      {
+        "q": "トランスフォーマーアーキテクチャ調査",
+        "label": "トランスフォーマー調査"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI規制",
+        "label": "AI規制"
+      },
+      {
+        "q": "韓国のテクノロジーニュース",
+        "label": "韓国テクノロジー"
+      },
+      {
+        "q": "気候政策の更新",
+        "label": "気候政策"
+      }
+    ]
+  },
+  "interests": {
+    "title": "あなたのための興味",
+    "add_placeholder": "興味を追加...",
+    "empty": "検索することで自動的に興味が追加されます",
+    "remove": "削除"
+  },
+  "factcheck": {
+    "title": "ファクトチェック結果",
+    "checking": "分析中...",
+    "analyzing": "矛盾のためのソースを分析中...",
+    "no_contradictions": "ソースに矛盾は見つかりませんでした",
+    "found": "矛盾が見つかりました"
+  },
+  "foryou": {
+    "title": "あなたのために",
+    "based_on": "基づいて: {interests}",
+    "no_interests": "まだ興味がありません。検索して興味を構築してください！",
+    "loading": "パーソナライズされたフィードを読み込み中..."
+  },
+  "common": {
+    "search": "検索",
+    "clear": "クリア",
+    "close": "閉じる",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "retry": "再試行",
+    "more": "もっと",
+    "less": "少なく"
+  },
+  "trends": {
+    "title": "現在のトレンド",
+    "loading": "トレンドを読み込み中...",
+    "error": "トレンドの読み込みに失敗しました",
+    "empty": "トレンドトピックはありません"
+  },
+  "onboarding": {
+    "welcome": "メタサーチへようこそ",
+    "subtitle": "あなたのプライベートなAI搭載検索エンジン",
+    "private_search": "プライベート検索",
+    "private_search_desc": "クエリログは一切ありません",
+    "ai_answers": "AIの回答",
+    "ai_answers_desc": "ローカルAIが結果を要約します",
+    "news_digest": "ニュースダイジェスト",
+    "news_digest_desc": "分析付きのキュレーションされたニュース",
+    "local_first": "ローカルファースト",
+    "local_first_desc": "あなたのデータはデバイスに留まります",
+    "get_started": "始める"
+  },
+  "feeds": {
+    "find": "フィードを見つける",
+    "subscribe": "購読する",
+    "unsubscribe": "購読を解除する"
+  },
+  "errors": {
+    "load_trends": "トレンドの読み込みに失敗しました",
+    "load_feed": "パーソナライズされたフィードの読み込みに失敗しました",
+    "load_global": "グローバルフィードの読み込みに失敗しました",
+    "translation": "翻訳に失敗しました"
+  },
+  "compare": {
+    "title": "結果を比較",
+    "button": "比較する",
+    "clear": "すべてクリア",
+    "global_title": "🌍 グローバル視点",
+    "global_desc": "地域ごとの検索結果の違いを比較",
+    "select_all": "全選択",
+    "clear_all": "クリア",
+    "run": "比較"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Հարցրեք ցանցին, մասնավոր"
+  },
+  "nav": {
+    "ask": "Հարցնել",
+    "discover": "Բացահայտել",
+    "history": "Պատմություն",
+    "options": "ընտրանքներ",
+    "classic": "Կլասիկ",
+    "stats": "Վիճակագրություն",
+    "preferences": "Նախընտրություններ"
+  },
+  "tabs": {
+    "general": "Ընդհանուր",
+    "images": "Պատկերներ",
+    "videos": "Տեսանյութեր",
+    "papers": "Թերթեր",
+    "news": "Նորություններ",
+    "shopping": "Գնումներ"
+  },
+  "search": {
+    "placeholder": "Հարցրեք ինչ-որ բան…",
+    "placeholder_news": "Մուտքագրեք նորությունների թեմա, սեղմեք Հարցնել",
+    "placeholder_images": "Որոնել պատկերներ…",
+    "placeholder_papers": "Մուտքագրեք հարց, սեղմեք Հարցնել",
+    "placeholder_general": "Մուտքագրեք հարց կամ թեմա, սեղմեք Հարցնել",
+    "placeholder_shopping": "Որոնել ապրանքներ…",
+    "placeholder_videos": "Որոնել տեսանյութեր…",
+    "button": "Հարցնել",
+    "button_search": "Որոնել"
+  },
+  "status": {
+    "loading": "Բեռնվում է…",
+    "loading_stories": "Բեռնվում են պատմություններ…",
+    "searching": "Որոնում է…",
+    "searching_web": "Որոնում է ցանցում…",
+    "searching_images": "Որոնում է պատկերներ…",
+    "searching_news": "Որոնում է նորությունների աղբյուրներ…",
+    "searching_papers": "Որոնում է ակադեմիական աղբյուրներ…",
+    "searching_shopping": "Որոնում է ապրանքներ…",
+    "searching_videos": "Որոնում է տեսանյութեր…",
+    "search_complete": "Որոնումը ավարտված է։",
+    "search_failed": "Որոնումը ձախողվեց։",
+    "answer_ready": "Պատասխանը պատրաստ է։",
+    "fetching_article": "Բեռնում է հոդվածը…",
+    "fetching_publisher": "Բեռնում է հրատարակչի հոդվածը…",
+    "resolving_article": "Լուծում է հոդվածը…",
+    "resolving_gn": "Լուծում է Google News հղումը…",
+    "rewriting": "Վերագրում է հոդվածը…",
+    "rewriting_korean": "Վերագրում է կորեական…",
+    "preparing_rewrite": "Պատրաստում է ամբողջ վերագրումը…",
+    "extracted_rewriting": "Հոդվածի տեքստը extracted — վերագրում…",
+    "viewing_prior": "Դիտում է նախորդ շրջանը — հարցրեք հետևյալը ստորև։"
+  },
+  "error": {
+    "no_answer": "AI պատասխան չի ստեղծվել — որոնման արդյունքները ստորև։",
+    "no_news": "Նորություններ չեն գտնվել — փորձեք այլ հարցում։",
+    "no_stories": "Պատմություններ չեն գտնվել — փորձեք այլ հարցում։",
+    "no_stories_category": "Այս կատեգորիայի համար պատմություններ չեն գտնվել — փորձեք այլ պիլլ։",
+    "rewrite_empty": "Հոդվածի վերագրումը վերադարձրել է դատարկ տեքստ։",
+    "rewrite_failed": "Չհաջողվեց վերագրել հոդվածը",
+    "load_news_failed": "Չհաջողվեց բեռնել նորությունները — ստուգեք սերվերը։",
+    "model_not_found": "Մոդելը չի գտնվել — կատարեք ollama pull ձեր կոնֆիգուրացված մոդելի համար, կամ ընտրեք այլընտրանք Options-ում։",
+    "ollama_not_running": "Ollama չի աշխատում — պատասխանները կլինեն միայն որոնման։ Սկսեք՝ ollama serve",
+    "invalid_thread": "Չի վավեր թել JSON։",
+    "enter_question": "Մուտքագրեք հարց։",
+    "enter_search": "Մուտքագրեք որոնման տերմին։"
+  },
+  "article": {
+    "sources": "Աղբյուրներ",
+    "research_progress": "Հետազոտության առաջընթաց",
+    "thinking": "Մտածում",
+    "answer": "Պատասխան",
+    "key_points": "Հիմնական կետեր",
+    "summary": "Ամփոփում",
+    "related_media": "Համապատասխան մեդիա",
+    "view_more": "Դիտել {count} ավել",
+    "back": "Հետ",
+    "read_original": "Կարդալ սկզբնական",
+    "related_image": "Համապատասխան պատկեր",
+    "related": "Համապատասխան"
+  },
+  "discover": {
+    "updated": "Թարմացվել է {time}",
+    "scope": {
+      "all": "📰 Բոլորը",
+      "local": "🏠 Տեղական",
+      "world": "🌍 Աշխարհ"
+    },
+    "categories": {
+      "politics": "Քաղաքականություն",
+      "economy": "Տնտեսություն",
+      "sports": "Սպորտ",
+      "world": "Աշխարհ",
+      "entertainment": "Մասշտաբային",
+      "tech": "Տեխնոլոգիա և գիտություն",
+      "culture": "Մշակույթ",
+      "health": "Առողջություն",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "տեխնոլոգիա գիտություն",
+      "ai": "արհեստական բանականություն AI մեքենայական ուսուցում",
+      "world": "աշխարհի նորություններ միջազգային",
+      "politics": "քաղաքականություն կառավարություն ընտրություն",
+      "business": "բիզնես տնտեսություն ընկերություններ",
+      "finance": "ֆինանսներ շուկաներ բաժնետոմսեր",
+      "health": "առողջություն բժշկություն բարեկեցություն",
+      "climate": "կլիմայի փոփոխություն շրջակա միջավայր",
+      "sports": "սպորտ",
+      "entertainment": "մասշտաբային հայտնիություն",
+      "art": "արվեստ մշակույթ",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Բացել պատմությունը",
+    "close": "Փակել պատմությունը",
+    "imported": "Ներմուծված {count}",
+    "export": "Արտահանել JSON",
+    "import": "Ներմուծել JSON",
+    "clear": "Մաքրել պատմությունը",
+    "empty": "Ձեր հարցերը այստեղ են երևում։",
+    "new_chat": "Նոր զրույց"
+  },
+  "panel": {
+    "history": "Պատմություն",
+    "bookmarks": "Նշումներ",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Բոլոր նշումները",
+    "empty": "Նշումներ ավելացնելու համար պահպանեք դրանք այստեղ։",
+    "export": "Արտահանել",
+    "clear_all": "Մաքրել բոլորը",
+    "new_collection": "Նոր հավաքածու"
+  },
+  "hero": {
+    "private": "Մասնավոր",
+    "ai_powered": "AI-ով հագեցած",
+    "local_first": "Տեղական-Առաջին"
+  },
+  "options": {
+    "model": "Մոդել",
+    "deep_research": "Խորը հետազոտություն",
+    "focus": "Ուշադրություն",
+    "theme": "Թեմա",
+    "language": "Լեզու",
+    "answer_language": "AI լեզու",
+    "answer_auto": "Ավտոմատ",
+    "research": "Հետազոտություն",
+    "fact_check": "Փաստերի ստուգում"
+  },
+  "preferences": {
+    "title": "Նախընտրություններ",
+    "language": "Լdelays",
+    "language_desc": "Ընdelays",
+    "language_storage": "Indelays delays.",
+    "branding": "Բրենդավորում",
+    "branding_desc": "Անհատականացրեք ծրագրի անունը, լոգոն և favicon-ը, որոնք ցուցադրվում են UI-ում։",
+    "app_name": "Ծրագրի անուն",
+    "app_name_hint": "Անունը, որը ցուցադրվում է վերնագրում և էջի վերնագրերում",
+    "logo_url": "Լոգոյի URL",
+    "logo_url_hint": "Լոգոյի պատկերին հասցե կամ ճանապարհ (թողեք դատարկ՝ ըստ նախնականի)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Favicon-ի հասցե կամ ճանապարհ (թողեք դատարկ՝ ըստ բրաուզերի նախնականի)",
+    "appearance": "Ներքին տեսք",
+    "appearance_desc": "Անհատականացրեք տեսողական ոճն ու դասավորությունը։",
+    "theme": "Թեմա",
+    "font_size": "Տառի չափ",
+    "results_layout": "Արդյունքների դասավորություն",
+    "search": "Որոնել",
+    "search_desc": "Անհրաժեշտ կարգավորումները կիրառվում են բոլոր որոնումների համար։",
+    "ui_language": "UI լեզու",
+    "ui_language_hint": "Ինտերֆեյսի լեզու (պահպանվում է բրաուզերի localStorage-ում)",
+    "interface_language": "Ինտերֆեյսի լեզու",
+    "stored_in_browser": "Պահպանված է բրաուզերում (localStorage)",
+    "search_defaults": "Որոնման նախադրյալներ",
+    "search_language": "Որոնման լեզու",
+    "search_language_hint": "ավտո = հայտնաբերել հարցից (Հանգուլ → ko-KR); կամ բոլորը, կամ ֆիքսված տեղական լեզու, ինչպես ko-KR",
+    "fallback_language": "Փոխարինող լեզվի կոդ",
+    "fallback_language_hint": "Օգտագործվում է, երբ ավտո-հայտնաբերումն անորոշ է",
+    "safe_search": "Անվտանգ որոնում",
+    "safe_off": "Անջատված",
+    "safe_moderate": "Միջին",
+    "safe_strict": "Կոշտ",
+    "results_per_engine": "Արդյունքներ յուրաքանչյուր շարժիչի համար",
+    "ai": "AI",
+    "ai_desc": "Կոնֆիգուրացրեք AI մոդելները պատասխանների սինթեզի և հոդվածի վերագրումների համար։",
+    "ai_provider": "Մատակարար",
+    "ai_provider_local": "Տեղական (Ollama)",
+    "ai_provider_custom": "Անհատականացված",
+    "ai_base_url": "API հիմնական URL",
+    "ai_base_url_hint": "Տեղական: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API բանալին",
+    "ai_api_key_hint": "Պահանջվում է ամպային մատակարարների համար (OpenAI, Anthropic և այլն)",
+    "ai_model": "Մոդել",
+    "ai_model_hint": "Խոսակցություն/հրաման մոդել պատասխանների սինթեզի և հարցի ընդլայնման համար",
+    "ai_article_model": "Հոդվածի մոդել",
+    "ai_article_model_hint": "Մոդել ամբողջ էջի նորությունների հոդվածների վերագրումների համար (նախնական մոդել)",
+    "ai_timeout": "Ժամանակի ավարտ (վայրկյան)",
+    "ai_timeout_hint": "Մոդելի զանգերի համար յուրաքանչյուր հարցման ժամանակի ավարտ",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Հատկություններ",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Նորություններ",
+    "news_desc": "Նորությունների հավաքում և հոդվածի կարգավորումներ։",
+    "news_per_source": "Հոդվածներ յուրաքանչյուր աղբյուրի համար",
+    "news_freshness": "Թարմության կես կյանք (ժամեր)",
+    "news_freshness_weight": "Թարմության քաշ",
+    "news_dedup": "Հեռացնել նմանության շեմը",
+    "news_max_age": "Максимальный возраст (дни)",
+    "news_cache_ttl": "Cache TTL (վայրկյան)",
+    "news_enrich_max": "Максимальное количество статей для обогащения",
+    "engines": "Որոնման շարժիչներ",
+    "engines_desc": "Աջակցել/անջատել շարժիչները և կարգավորել նրանց դասավորության քաշերը։ Բարձր քաշ = ավելի մեծ ազդեցություն արդյունքների կարգի վրա։",
+    "engine": "շարժիչ",
+    "categories": "կատեգորիաներ",
+    "weight": "քաշ",
+    "privacy": "Գաղտնիություն",
+    "privacy_desc": "Կառավարեք, թե ինչպես է ձեր տվյալները մշակվում։",
+    "proxy_images": "Պրոքսի պատկերներ",
+    "proxy_images_hint": "Պատկերները ուղարկեք սերվերի միջոցով, որպեսզի թաքցնեք ձեր IP-ն երրորդ կողմերից",
+    "remove_trackers": "Հեռացնել հետևող պարամետրերը",
+    "remove_trackers_hint": "Հեռացնել UTM և այլ հետևող պարամետրերը URL-ներից",
+    "save_history": "Պահպանել որոնման պատմությունը",
+    "save_history_hint": "Պահպանել որոնումները տեղական բրաուզերում (չի ուղարկվում սերվեր)",
+    "clear_data": "Մաքրել տվյալները",
+    "clear_localstorage": "Մաքրել տեղական պահեստը",
+    "clear_indexeddb": "Մաքրել IndexedDB",
+    "shortcuts": "Արագ մուտք",
+    "shortcuts_desc": "Արագ մուտքի բանալիներ ուժեղ օգտվողների համար։",
+    "shortcut_focus_search": "Ուշադրություն որոնման տուփին",
+    "shortcut_close": "Փակել պանել / Չեղարկել",
+    "shortcut_navigate": "Նավարկել արդյունքների մեջ",
+    "shortcut_open": "Բացել ընտրված արդյունքը",
+    "shortcut_new_tab": "Բացել նոր թերթիկում",
+    "shortcut_switch_mode": "Փոխել որոնման ռեժիմը",
+    "shortcut_help": "Ցուցադրել այս օգնությունը",
+    "server": "Սերվեր",
+    "server_desc": "Սերվերի կարգավորումներ և ցանցային կարգավորումներ։",
+    "bind_address": "Կապի հասցե",
+    "port": "Պորտ",
+    "max_connections": "Максимальное количество подключений",
+    "image_proxy": "Աջակցել պատկերների պրոքսի",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Անհրաժեշտ",
+    "advanced_desc": "Cache և ժամանակի ավարտի կարգավորումներ։",
+    "cache_ttl": "Cache TTL (վայրկյան)",
+    "cache_ttl_hint": "Արդյունքի cache ժամանակի կյանք (0-ը անջատում է caching-ը)",
+    "request_timeout": "Հարցման ժամանակի ավարտ (վայրկյան)",
+    "request_timeout_hint": "Յուրաքանչյուր շարժիչի ցանցային ժամանակի ավարտ",
+    "save": "Պահպանել նախընտրությունները",
+    "saved": "Պահպանված",
+    "saved_msg": "գրված է settings.yml և կիրառվել նոր որոնումների համար։",
+    "server_settings": "Այս կարգավորումները պահպանվում են սերվերի կողմից",
+    "raw_config": "Config JSON",
+    "stats": "Վիճակագրություն",
+    "home": "Գլխավոր",
+    "logout": "Ելք",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Ընդհանուր",
+    "academic": "Ակադեմիական",
+    "writing": "Գրություն",
+    "code": "Կոդ"
+  },
+  "footer": {
+    "grounded_answers": "Հիմնավորված պատասխաններ ձեր տեղական մոդելից — 200+ որոնման շարժիչներ, զրո հարցման գրանցում։",
+    "academic_papers": "Ակադեմիական թերթեր arXiv-ից, OpenAlex-ից, Crossref-ից, Europe PMC-ից, Semantic Scholar-ից, DOAJ-ից և ավելին։",
+    "news_digest": "Նորությունների ամփոփում՝ բեռնում է հոդվածների էջեր, վերագրում է ամփոփումներ տեղական միջոցով Ollama — մեծ պատկերներ միայն, առանց favicon-ի մեծացման։",
+    "images": "Wikimedia Commons պատկերների որոնում — մանրապատկերներ պրոքսիացված գաղտնիության համար։",
+    "api_docs": "API Docs",
+    "status": "Կարգավիճակ",
+    "version": "Մոդել",
+    "engines_count": "232 շարժիչ"
+  },
+  "examples": {
+    "try": "Փորձեք օրինակ",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Վերջին LLM թերթեր"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "Ինչպես է աշխատում DNS-ը"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Վերջին LLM թերթեր"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR վերանայում"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer հարցում"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI կարգավորում"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "Կորեայի տեխնոլոգիական նորություններ"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "Կլիմայի քաղաքականության թարմացումներ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Հետաքրքրություններ (Ձեր համար)",
+    "add_placeholder": "Ավելացնել հետաքրքրություն…",
+    "empty": "Հետաքրքրությունները ավտոմատ կերպով ավելացվում են, երբ դուք որոնում եք",
+    "remove": "Հեռացնել"
+  },
+  "factcheck": {
+    "title": "Փաստերի ստուգման արդյունքներ",
+    "checking": "Վերլուծում…",
+    "analyzing": "Վերլուծում է աղբյուրները հակասությունների համար…",
+    "no_contradictions": "Հակասություններ չեն հայտնաբերվել աղբյուրներում",
+    "found": "Հակասություններ հայտնաբերվել են"
+  },
+  "foryou": {
+    "title": "Ձեր համար",
+    "based_on": "Հիմնված է՝ {interests}",
+    "no_interests": "Հետաքրքրություններ դեռ չկան։ Որոնեք, որպեսզի կառուցեք ձեր հետաքրքրությունները!",
+    "loading": "Բեռնվում է անհատականացված ֆիդ…"
+  },
+  "common": {
+    "search": "Որոնել",
+    "clear": "Մաքրել",
+    "close": "Փակել",
+    "save": "Պահպանել",
+    "cancel": "Չեղարկել",
+    "loading": "Բեռնվում է…",
+    "error": "Սխալ",
+    "retry": "Կրկնել",
+    "more": "Ավելի",
+    "less": "Քիչ"
+  },
+  "trends": {
+    "title": "Հանրաճանաչ հիմա",
+    "loading": "Բեռնվում են միտումները…",
+    "error": "Չհաջողվեց բեռնել միտումները",
+    "empty": "Չկան հանրաճանաչ թեմաներ"
+  },
+  "onboarding": {
+    "welcome": "Բարի գալուստ Metasearch",
+    "subtitle": "Ձեր մասնավոր, AI-ով հագեցած որոնիչը",
+    "private_search": "Մասնավոր որոնում",
+    "private_search_desc": "Ոչ մի հարցման գրանցում, երբեք",
+    "ai_answers": "AI պատասխաններ",
+    "ai_answers_desc": "Տեղական AI-ն ամփոփում է արդյունքները",
+    "news_digest": "Նորությունների ամփոփում",
+    "news_digest_desc": "Ընտրված նորություններ վերլուծությամբ",
+    "local_first": "Տեղական-Առաջին",
+    "local_first_desc": "Ձեր տվյալները մնում են ձեր սարքում",
+    "get_started": "Սկսեք"
+  },
+  "feeds": {
+    "find": "Գտնել ֆիդեր",
+    "subscribe": "Բաժանորդագրվել",
+    "unsubscribe": "Բաժանորդագրությունը չեղարկել"
+  },
+  "errors": {
+    "load_trends": "Չհաջողվեց բեռնել միտումները",
+    "load_feed": "Չհաջողվեց բեռնել անհատականացված ֆիդը",
+    "load_global": "Չհաջողվեց բեռնել գլոբալ ֆիդը",
+    "translation": "Թարգմանությունը ձախողվեց"
+  },
+  "compare": {
+    "title": "Համեմատել արդյունքները",
+    "button": "Համեմատել",
+    "clear": "Մաքրել բոլորը",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

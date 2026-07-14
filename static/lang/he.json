@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "שאל את הרשת, בפרטיות"
+  },
+  "nav": {
+    "ask": "שאל",
+    "discover": "גלה",
+    "history": "היסטוריה",
+    "options": "אפשרויות",
+    "classic": "קלאסי",
+    "stats": "סטטיסטיקות",
+    "preferences": "העדפות"
+  },
+  "tabs": {
+    "general": "כללי",
+    "images": "תמונות",
+    "videos": "וידאוים",
+    "papers": "מסמכים",
+    "news": "חדשות",
+    "shopping": "קניות"
+  },
+  "search": {
+    "placeholder": "שאל כל דבר…",
+    "placeholder_news": "הכנס נושא חדשות, לחץ על שאל",
+    "placeholder_images": "חפש תמונות…",
+    "placeholder_papers": "הכנס שאלה, לחץ על שאל",
+    "placeholder_general": "הכנס שאלה או נושא, לחץ על שאל",
+    "placeholder_shopping": "חפש מוצרים…",
+    "placeholder_videos": "חפש וידאוים…",
+    "button": "שאל",
+    "button_search": "חפש"
+  },
+  "status": {
+    "loading": "טוען…",
+    "loading_stories": "טוען סיפורים…",
+    "searching": "מחפש…",
+    "searching_web": "מחפש ברשת…",
+    "searching_images": "מחפש תמונות…",
+    "searching_news": "מחפש מקורות חדשות…",
+    "searching_papers": "מחפש מקורות אקדמיים…",
+    "searching_shopping": "מחפש מוצרים…",
+    "searching_videos": "מחפש וידאוים…",
+    "search_complete": "החיפוש הושלם.",
+    "search_failed": "החיפוש נכשל.",
+    "answer_ready": "התשובה מוכנה.",
+    "fetching_article": "מושך מאמר…",
+    "fetching_publisher": "מושך מאמר מפרסם…",
+    "resolving_article": "פותר מאמר…",
+    "resolving_gn": "פותר קישור חדשות גוגל…",
+    "rewriting": "מחדש את המאמר…",
+    "rewriting_korean": "מחדש בקוריאנית…",
+    "preparing_rewrite": "מכין חידוש מלא…",
+    "extracted_rewriting": "טקסט המאמר שנמשך — מחדש…",
+    "viewing_prior": "צופה בתור הקודם — שאל שאלה נוספת למטה."
+  },
+  "error": {
+    "no_answer": "לא נוצרה תשובה על ידי AI — תוצאות החיפוש למטה.",
+    "no_news": "לא נמצאו חדשות — נסה שאילתה אחרת.",
+    "no_stories": "לא נמצאו סיפורים — נסה שאילתה אחרת.",
+    "no_stories_category": "לא נמצאו סיפורים בקטגוריה זו — נסה פיסת מידע אחרת.",
+    "rewrite_empty": "חידוש המאמר החזיר טקסט ריק.",
+    "rewrite_failed": "לא ניתן לחדש את המאמר",
+    "load_news_failed": "לא ניתן לטעון חדשות — בדוק את השרת.",
+    "model_not_found": "המודל לא נמצא — הרץ ollama pull עבור המודל שלך, או בחר אחר באפשרויות.",
+    "ollama_not_running": "Ollama לא פועל — התשובות יהיו רק חיפוש. התחל: ollama serve",
+    "invalid_thread": "JSON של חוט לא תקין.",
+    "enter_question": "הכנס שאלה.",
+    "enter_search": "הכנס מונח חיפוש."
+  },
+  "article": {
+    "sources": "מקורות",
+    "research_progress": "התקדמות מחקר",
+    "thinking": "חושב",
+    "answer": "תשובה",
+    "key_points": "נקודות מפתח",
+    "summary": "סיכום",
+    "related_media": "מדיה קשורה",
+    "view_more": "ראה {count} נוספים",
+    "back": "חזור",
+    "read_original": "קרא את המקורי",
+    "related_image": "תמונה קשורה",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "עודכן {time}",
+    "scope": {
+      "all": "📰 הכל",
+      "local": "🏠 מקומי",
+      "world": "🌍 עולמי"
+    },
+    "categories": {
+      "politics": "פוליטיקה",
+      "economy": "כלכלה",
+      "sports": "ספורט",
+      "world": "עולם",
+      "entertainment": "בידור",
+      "tech": "טכנולוגיה ומדע",
+      "culture": "תרבות",
+      "health": "בריאות",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "מדע טכנולוגי",
+      "ai": "בינה מלאכותית AI ולמידת מכונה",
+      "world": "חדשות עולמיות בינלאומיות",
+      "politics": "פוליטיקה ממשלה בחירות",
+      "business": "עסקים כלכלה חברות",
+      "finance": "מימון שווקים מניות",
+      "health": "בריאות רפואה רווחה",
+      "climate": "שינוי אקלים סביבה",
+      "sports": "ספורט",
+      "entertainment": "בידור סלבריטאים",
+      "art": "אמנות תרבות",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "פתח היסטוריה",
+    "close": "סגור היסטוריה",
+    "imported": "יובא {count}",
+    "export": "ייצא JSON",
+    "import": "ייבא JSON",
+    "clear": "נקה היסטוריה",
+    "empty": "השאלות שלך מופיעות כאן.",
+    "new_chat": "שיחה חדשה"
+  },
+  "panel": {
+    "history": "היסטוריה",
+    "bookmarks": "סימניות",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "כל הסימניות",
+    "empty": "סמן תוצאות כדי לשמור אותן כאן.",
+    "export": "ייצא",
+    "clear_all": "נקה הכל",
+    "new_collection": "אוסף חדש"
+  },
+  "hero": {
+    "private": "פרטי",
+    "ai_powered": "מופעל על ידי AI",
+    "local_first": "מקומי ראשון"
+  },
+  "options": {
+    "model": "מודל",
+    "deep_research": "מחקר מעמיק",
+    "focus": "מיקוד",
+    "theme": "נושא",
+    "language": "שפה",
+    "answer_language": "שפת AI",
+    "answer_auto": "אוטומטי",
+    "research": "מחקר",
+    "fact_check": "בדיקת עובדות"
+  },
+  "preferences": {
+    "title": "העדפות",
+    "language": "שפה",
+    "language_desc": "בחר את שפת הממשק המועדפת עליך",
+    "language_storage": "שפת הממשק נשמרת בדפדפן שלך.",
+    "branding": "מותג",
+    "branding_desc": "התאם אישית את שם האפליקציה, הלוגו והאייקון המוצגים בממשק.",
+    "app_name": "שם האפליקציה",
+    "app_name_hint": "שם המוצג בכותרת ובכותרות הדפים",
+    "logo_url": "כתובת URL של הלוגו",
+    "logo_url_hint": "כתובת URL או נתיב לתמונה של הלוגו שלך (השאר ריק עבור ברירת מחדל)",
+    "favicon_url": "כתובת URL של האייקון",
+    "favicon_url_hint": "כתובת URL או נתיב לאייקון שלך (השאר ריק עבור ברירת מחדל של הדפדפן)",
+    "appearance": "מראה",
+    "appearance_desc": "התאם אישית את הסגנון החזותי והפריסה.",
+    "theme": "נושא",
+    "font_size": "גודל גופן",
+    "results_layout": "פריסת תוצאות",
+    "search": "חיפוש",
+    "search_desc": "הגדרות ברירת מחדל המיועדות לכל החיפושים.",
+    "ui_language": "שפת ממשק",
+    "ui_language_hint": "שפת הממשק (מאוחסנת ב-localStorage של הדפדפן)",
+    "interface_language": "שפת ממשק",
+    "stored_in_browser": "מאוחסן בדפדפן (localStorage)",
+    "search_defaults": "ברירות מחדל לחיפוש",
+    "search_language": "שפת חיפוש",
+    "search_language_hint": "אוטומטי = זיהוי משאילתה (הנגול → ko-KR); או כל, או מקומית קבועה כמו ko-KR",
+    "fallback_language": "קוד שפת גיבוי",
+    "fallback_language_hint": "משמש כאשר זיהוי אוטומטי אינו חד משמעי",
+    "safe_search": "חיפוש בטוח",
+    "safe_off": "כבוי",
+    "safe_moderate": "מתון",
+    "safe_strict": "מחמיר",
+    "results_per_engine": "תוצאות לכל מנוע",
+    "ai": "AI",
+    "ai_desc": "הגדר מודלים של AI לסינתזת תשובות וחידוש מאמרים.",
+    "ai_provider": "ספק",
+    "ai_provider_local": "מקומי (Ollama)",
+    "ai_provider_custom": "מותאם אישית",
+    "ai_base_url": "כתובת בסיס API",
+    "ai_base_url_hint": "מקומי: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "מפתח API",
+    "ai_api_key_hint": "נדרש עבור ספקי ענן (OpenAI, Anthropic וכו').",
+    "ai_model": "מודל",
+    "ai_model_hint": "מודל צ'אט/הדרכה עבור סינתזת תשובות והרחבת שאילתה",
+    "ai_article_model": "מודל מאמר",
+    "ai_article_model_hint": "מודל לחידוש מאמרי חדשות בעמוד מלא (ברירת מחדל למודל הראשי)",
+    "ai_timeout": "זמן פסק (שניות)",
+    "ai_timeout_hint": "זמן פסק לכל בקשה עבור קריאות מודל",
+    "ai_cost_tracking": "מעקב עלויות",
+    "ai_track_usage": "מעקב שימוש בטוקנים",
+    "ai_track_usage_hint": "הצג ספירת טוקנים ועלות",
+    "ai_input_cost": "עלות קלט",
+    "ai_output_cost": "עלות פלט",
+    "ai_features": "תכונות",
+    "ai_answer_synthesis": "סינתזת תשובה",
+    "ai_query_expansion": "הרחבת שאילתה",
+    "ai_reranking": "דירוג מחדש",
+    "ai_clustering": "קיבוץ",
+    "ai_vision": "ראייה",
+    "news": "חדשות",
+    "news_desc": "אגרגציה של חדשות והגדרות מאמרים.",
+    "news_per_source": "מאמרים לכל מקור",
+    "news_freshness": "חיי רעננות (שעות)",
+    "news_freshness_weight": "משקל רעננות",
+    "news_dedup": "סף דדופ דמיון",
+    "news_max_age": "גיל מקסימלי (ימים)",
+    "news_cache_ttl": "TTL של מטמון (שניות)",
+    "news_enrich_max": "מקסימום מאמרים להעשיר",
+    "engines": "מנועי חיפוש",
+    "engines_desc": "אפשר/בטל מנועים והתאם את משקלי הדירוג שלהם. משקל גבוה = יותר השפעה על סדר התוצאה.",
+    "engine": "מנוע",
+    "categories": "קטגוריות",
+    "weight": "משקל",
+    "privacy": "פרטיות",
+    "privacy_desc": "שלוט כיצד הנתונים שלך מטופלים.",
+    "proxy_images": "תמונות פרוקסי",
+    "proxy_images_hint": "נתב תמונות דרך השרת כדי להסתיר את ה-IP שלך מגורמים שלישיים",
+    "remove_trackers": "הסר פרמטרי מעקב",
+    "remove_trackers_hint": "הסר פרמטרי UTM ופרמטרי מעקב אחרים מ-URLs",
+    "save_history": "שמור היסטוריית חיפוש",
+    "save_history_hint": "אחסן חיפושים מקומית בדפדפן (לעולם לא נשלח לשרת)",
+    "clear_data": "נקה נתונים",
+    "clear_localstorage": "נקה אחסון מקומי",
+    "clear_indexeddb": "נקה IndexedDB",
+    "shortcuts": "קיצורי דרך",
+    "shortcuts_desc": "מפתחות גישה מהירה למשתמשים מתקדמים.",
+    "shortcut_focus_search": "מקד את תיבת החיפוש",
+    "shortcut_close": "סגור פאנל / ביטול",
+    "shortcut_navigate": "נווט בתוצאות",
+    "shortcut_open": "פתח תוצאה שנבחרה",
+    "shortcut_new_tab": "פתח בלשונית חדשה",
+    "shortcut_switch_mode": "שנה מצב חיפוש",
+    "shortcut_help": "הצג עזרה זו",
+    "server": "שרת",
+    "server_desc": "הגדרות שרת ורשת.",
+    "bind_address": "כתובת חיבור",
+    "port": "פורט",
+    "max_connections": "מקסימום חיבורים",
+    "image_proxy": "אפשר פרוקסי תמונות",
+    "cache_backend": "מטמון אחורי",
+    "cache_dir": "תיקיית מטמון",
+    "redis_url": "כתובת URL של Redis",
+    "advanced": "מתקדם",
+    "advanced_desc": "הגדרות מטמון וזמן פסק.",
+    "cache_ttl": "TTL של מטמון (שניות)",
+    "cache_ttl_hint": "זמן חיי מטמון התוצאה (0 מבטל את המטמון)",
+    "request_timeout": "זמן פסק לבקשה (שניות)",
+    "request_timeout_hint": "זמן פסק לרשת לכל מנוע",
+    "save": "שמור העדפות",
+    "saved": "נשמר",
+    "saved_msg": "נכתב ל-settings.yml ויושם על חיפושים חדשים.",
+    "server_settings": "הגדרות אלו נשמרות בצד השרת ל",
+    "raw_config": "JSON של הגדרות",
+    "stats": "סטטיסטיקות",
+    "home": "בית",
+    "logout": "התנתק",
+    "ai_embedding_model": "מודל הטמעה",
+    "ai_vision_model": "מודל ראייה",
+    "ai_answer_top_n": "N תשובות מובילות",
+    "ai_answer_top_n_hint": "מספר תוצאות לסינתזת תשובה",
+    "ai_news_prompt_ko": "פרומפט ניתוח חדשות קוריאניות",
+    "ai_news_prompt_ko_hint": "פרומפט מותאם לחדשות קוריאניות",
+    "ai_news_prompt_ko_placeholder": "השאר ריק לברירת מחדל.",
+    "ai_news_prompt_en": "פרומפט ניתוח חדשות אנגליות",
+    "ai_news_prompt_en_hint": "פרומפט מותאם לחדשות אנגליות",
+    "ai_news_prompt_en_placeholder": "השאר ריק לברירת מחדל.",
+    "ai_answer_language": "שפת תשובה",
+    "ai_answer_language_hint": "שפת יעד לתשובות AI",
+    "ai_answer_auto": "זיהוי אוטומטי"
+  },
+  "focus": {
+    "general": "כללי",
+    "academic": "אקדמי",
+    "writing": "כתיבה",
+    "code": "קוד"
+  },
+  "footer": {
+    "grounded_answers": "תשובות מבוססות מהמודל המקומי שלך — 200+ מנועי חיפוש, אפס רישום שאילתה.",
+    "academic_papers": "מאמרים אקדמיים מ-arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ ועוד.",
+    "news_digest": "סיכום חדשות: מושך דפי מאמרים, מחדש סיכומים מקומית דרך Ollama — תמונות גדולות בלבד, ללא שדרוג אייקון.",
+    "images": "חיפוש תמונות מ-Wikimedia Commons — תמונות ממוזערות פרוקסיות לפרטיות.",
+    "api_docs": "מסמכי API",
+    "status": "סטטוס",
+    "version": "גרסה",
+    "engines_count": "232 מנועים"
+  },
+  "examples": {
+    "try": "נסה דוגמה",
+    "general": [
+      {
+        "q": "שיטות הטובות ביותר לתכנות אסינכרוני ב-Rust",
+        "label": "Rust אסינכרוני"
+      },
+      {
+        "q": "מאמרי מחקר LLM האחרונים 2025",
+        "label": "מאמרי LLM האחרונים"
+      },
+      {
+        "q": "איך עובד DNS",
+        "label": "איך עובד DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "מאמרי מחקר LLM האחרונים 2025",
+        "label": "מאמרי LLM האחרונים"
+      },
+      {
+        "q": "מאמרי סקירה על עריכת גנים CRISPR",
+        "label": "סקירת CRISPR"
+      },
+      {
+        "q": "סקר ארכיטקטורת טרנספורמר",
+        "label": "סקר טרנספורמר"
+      }
+    ],
+    "news": [
+      {
+        "q": "רגולציה על AI",
+        "label": "רגולציה על AI"
+      },
+      {
+        "q": "חדשות טכנולוגיה מקוריאה",
+        "label": "טכנולוגיה מקוריאה"
+      },
+      {
+        "q": "עדכוני מדיניות אקלים",
+        "label": "מדיניות אקלים"
+      }
+    ]
+  },
+  "interests": {
+    "title": "תחומי עניין (בשבילך)",
+    "add_placeholder": "הוסף עניין...",
+    "empty": "תחומי עניין מתווספים אוטומטית כשאתה מחפש",
+    "remove": "הסר"
+  },
+  "factcheck": {
+    "title": "תוצאות בדיקת עובדות",
+    "checking": "מנתח...",
+    "analyzing": "מנתח מקורות לסתירות...",
+    "no_contradictions": "לא נמצאו סתירות במקורות",
+    "found": "נמצאו סתירות"
+  },
+  "foryou": {
+    "title": "בשבילך",
+    "based_on": "מבוסס על: {interests}",
+    "no_interests": "אין עדיין תחומי עניין. חפש כדי לבנות את תחומי העניין שלך!",
+    "loading": "טוען פיד מותאם אישית..."
+  },
+  "common": {
+    "search": "חפש",
+    "clear": "נקה",
+    "close": "סגור",
+    "save": "שמור",
+    "cancel": "ביטול",
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "retry": "נסה שוב",
+    "more": "עוד",
+    "less": "פחות"
+  },
+  "trends": {
+    "title": "טרנדים עכשיו",
+    "loading": "טוען טרנדים...",
+    "error": "נכשל לטעון טרנדים",
+    "empty": "אין נושאים טרנדיים"
+  },
+  "onboarding": {
+    "welcome": "ברוך הבא למטא-חיפוש",
+    "subtitle": "מנוע החיפוש הפרטי שלך, המופעל על ידי AI",
+    "private_search": "חיפוש פרטי",
+    "private_search_desc": "אין רישום שאילתה, לעולם",
+    "ai_answers": "תשובות AI",
+    "ai_answers_desc": "AI מקומי מסכם תוצאות",
+    "news_digest": "סיכום חדשות",
+    "news_digest_desc": "חדשות מסוננות עם ניתוח",
+    "local_first": "מקומי ראשון",
+    "local_first_desc": "הנתונים שלך נשארים במכשיר שלך",
+    "get_started": "התחל"
+  },
+  "feeds": {
+    "find": "מצא פידים",
+    "subscribe": "הירשם",
+    "unsubscribe": "בטל רישום"
+  },
+  "errors": {
+    "load_trends": "נכשל לטעון טרנדים",
+    "load_feed": "נכשל לטעון פיד מותאם אישית",
+    "load_global": "נכשל לטעון פיד גלובלי",
+    "translation": "התרגום נכשל"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

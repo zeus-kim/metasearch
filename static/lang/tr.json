@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Web'e gizlilikle sorun"
+  },
+  "nav": {
+    "ask": "Sor",
+    "discover": "Kesfet",
+    "history": "Gecmis",
+    "options": "Secenekler",
+    "classic": "Classic",
+    "stats": "Stats",
+    "preferences": "Preferences"
+  },
+  "tabs": {
+    "general": "Genel",
+    "images": "Gorseller",
+    "videos": "Videos",
+    "papers": "Makaleler",
+    "news": "Haberler",
+    "shopping": "Shopping"
+  },
+  "search": {
+    "placeholder": "Herhangi bir sey sorun...",
+    "placeholder_news": "Haber konusu girin, Sor'a basin",
+    "placeholder_images": "Gorsel ara...",
+    "placeholder_papers": "Soru girin, Sor'a basin",
+    "placeholder_general": "Soru veya konu girin, Sor'a basin",
+    "placeholder_shopping": "Search products…",
+    "placeholder_videos": "Search videos…",
+    "button": "Sor",
+    "button_search": "Ara"
+  },
+  "status": {
+    "loading": "Yukleniyor...",
+    "loading_stories": "Hikayeler yukleniyor...",
+    "searching": "Araniyor...",
+    "searching_web": "Web'de araniyor...",
+    "searching_images": "Gorseller araniyor...",
+    "searching_news": "Haber kaynaklari araniyor...",
+    "searching_papers": "Akademik kaynaklar araniyor...",
+    "searching_shopping": "Searching products…",
+    "searching_videos": "Searching videos…",
+    "search_complete": "Arama tamamlandi.",
+    "search_failed": "Arama basarisiz.",
+    "answer_ready": "Cevap hazir.",
+    "fetching_article": "Makale getiriliyor...",
+    "fetching_publisher": "Yayinci makalesi getiriliyor...",
+    "resolving_article": "Makale cozumleniyor...",
+    "resolving_gn": "Google News baglantisi cozumleniyor...",
+    "rewriting": "Makale yeniden yaziliyor...",
+    "rewriting_korean": "Koreceye cevriliyor...",
+    "preparing_rewrite": "Tam yeniden yazim hazirlaniyor...",
+    "extracted_rewriting": "Makale metni cikarildi - yeniden yaziliyor...",
+    "viewing_prior": "Onceki adim goruntuleniyor - asagiya takip sorusu yazin."
+  },
+  "error": {
+    "no_answer": "YZ cevabi uretilemedi - arama sonuclari asagida.",
+    "no_news": "Haber bulunamadi - baska bir sorgu deneyin.",
+    "no_stories": "Hikaye bulunamadi - baska bir sorgu deneyin.",
+    "no_stories_category": "Bu kategori icin hikaye bulunamadi - baska bir sekme deneyin.",
+    "rewrite_empty": "Makale yeniden yazimi bos metin dondurdu.",
+    "rewrite_failed": "Makale yeniden yazilamadi",
+    "load_news_failed": "Haberler yuklenemedi - sunucuyu kontrol edin.",
+    "model_not_found": "Model bulunamadi - yapilandirilan model icin ollama pull calistirin veya Secenekler'den baska bir model secin.",
+    "ollama_not_running": "Ollama calismiyor - cevaplar yalnizca arama olacak. Baslatin: ollama serve",
+    "invalid_thread": "Gecersiz ileti dizisi JSON'u.",
+    "enter_question": "Soru girin.",
+    "enter_search": "Arama terimi girin."
+  },
+  "article": {
+    "sources": "Kaynaklar",
+    "research_progress": "Arastirma Ilerlemesi",
+    "thinking": "Dusunuyor",
+    "answer": "Cevap",
+    "key_points": "Onemli Noktalar",
+    "summary": "Ozet",
+    "related_media": "Ilgili Medya",
+    "view_more": "{count} tane daha gor",
+    "back": "Geri",
+    "read_original": "Originali oku",
+    "related_image": "Ilgili gorsel",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "Guncellendi {time}",
+    "scope": {
+      "all": "📰 Tumu",
+      "local": "🏠 Yerel",
+      "world": "🌍 Dunya"
+    },
+    "categories": {
+      "politics": "Siyaset",
+      "economy": "Ekonomi",
+      "sports": "Spor",
+      "world": "Dunya",
+      "entertainment": "Eglence",
+      "tech": "Teknoloji ve Bilim",
+      "culture": "Kultur",
+      "health": "Saglik",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknoloji bilim",
+      "ai": "yapay zeka YZ makine ogrenmesi",
+      "world": "dunya haberleri uluslararasi",
+      "politics": "siyaset hukumet secim",
+      "business": "is ekonomi sirketler",
+      "finance": "finans piyasalar borsa",
+      "health": "saglik tip wellness",
+      "climate": "iklim degisikligi cevre",
+      "sports": "spor",
+      "entertainment": "eglence unluler",
+      "art": "sanat kultur",
+      "top": "ana haberler başlıklar"
+    }
+  },
+  "history": {
+    "open": "Gecmisi ac",
+    "close": "Gecmisi kapat",
+    "imported": "{count} icerik aktarildi",
+    "export": "Disari Aktar",
+    "import": "Iceri Aktar",
+    "clear": "Temizle",
+    "empty": "Your questions appear here.",
+    "new_chat": "New chat"
+  },
+  "panel": {
+    "history": "History",
+    "bookmarks": "Bookmarks",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "All Bookmarks",
+    "empty": "Bookmark results to save them here.",
+    "export": "Export",
+    "clear_all": "Clear all",
+    "new_collection": "New collection"
+  },
+  "hero": {
+    "private": "Private",
+    "ai_powered": "AI-Powered",
+    "local_first": "Local-First"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Derin arastirma",
+    "focus": "Odak",
+    "theme": "Tema",
+    "language": "Dil",
+    "answer_language": "AI Language",
+    "answer_auto": "Auto",
+    "research": "Research",
+    "fact_check": "Fact-check"
+  },
+  "preferences": {
+    "title": "Tercihler",
+    "language": "Dil",
+    "language_desc": "Tercih ettiğiniz arayüz dilini seçin",
+    "language_storage": "Arayüz dili tarayıcınızda saklanır.",
+    "branding": "Marka",
+    "branding_desc": "Arayuzde gorunen uygulama adi, logo ve favicon'u ozellestirin.",
+    "app_name": "Uygulama Adi",
+    "app_name_hint": "Ust bilgi ve sayfa basliklarinda gosterilen ad",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "Logo gorselinizin URL'si veya yolu (varsayilan icin bos birakin)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Favicon'unuzun URL'si veya yolu (tarayici varsayilani icin bos birakin)",
+    "appearance": "Appearance",
+    "appearance_desc": "Customize the visual style and layout.",
+    "theme": "Theme",
+    "font_size": "Font Size",
+    "results_layout": "Results Layout",
+    "search": "Arama",
+    "search_desc": "Tum aramalara uygulanan varsayilan ayarlar.",
+    "ui_language": "Arayuz Dili",
+    "ui_language_hint": "Arayuz dili (tarayici localStorage'da saklanir)",
+    "interface_language": "Arayuz dili",
+    "stored_in_browser": "Tarayicida saklanir (localStorage)",
+    "search_defaults": "Arama varsayilanlari",
+    "search_language": "Arama Dili",
+    "search_language_hint": "auto = sorgudan algila (Hangul → ko-KR); veya all, veya ko-KR gibi sabit yerel ayar",
+    "fallback_language": "Yedek Dil Kodu",
+    "fallback_language_hint": "Otomatik algilama belirsiz oldugunda kullanilir",
+    "safe_search": "Guvenli Arama",
+    "safe_off": "Kapali",
+    "safe_moderate": "Orta",
+    "safe_strict": "Siki",
+    "results_per_engine": "Motor Basina Sonuc",
+    "ai": "YZ",
+    "ai_desc": "Cevap sentezi ve makale yeniden yazimi icin YZ modellerini yapilandirin.",
+    "ai_provider": "Provider",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Custom",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "Required for cloud providers (OpenAI, Anthropic, etc.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Cevap sentezi ve sorgu genisletme icin sohbet/talimat modeli",
+    "ai_article_model": "Makale Modeli",
+    "ai_article_model_hint": "Tam sayfa haber makalesi yeniden yazimlari icin model (varsayilan ana model)",
+    "ai_timeout": "Zaman Asimi (saniye)",
+    "ai_timeout_hint": "Model cagrilari icin istek basina zaman asimi",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Features",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "News",
+    "news_desc": "News aggregation and article settings.",
+    "news_per_source": "Articles per source",
+    "news_freshness": "Freshness half-life (hours)",
+    "news_freshness_weight": "Freshness weight",
+    "news_dedup": "Dedup similarity threshold",
+    "news_max_age": "Max age (days)",
+    "news_cache_ttl": "Cache TTL (seconds)",
+    "news_enrich_max": "Max articles to enrich",
+    "engines": "Arama Motorlari",
+    "engines_desc": "Motorlari etkinlestirin/devre disi birakin ve siralama agirliklarini ayarlayin. Daha yuksek agirlik = sonuc sirasinda daha fazla etki.",
+    "engine": "motor",
+    "categories": "kategoriler",
+    "weight": "agirlik",
+    "privacy": "Privacy",
+    "privacy_desc": "Control how your data is handled.",
+    "proxy_images": "Proxy images",
+    "proxy_images_hint": "Route images through server to hide your IP from third parties",
+    "remove_trackers": "Remove tracking parameters",
+    "remove_trackers_hint": "Strip UTM and other tracking parameters from URLs",
+    "save_history": "Save search history",
+    "save_history_hint": "Store searches locally in browser (never sent to server)",
+    "clear_data": "Clear Data",
+    "clear_localstorage": "Clear Local Storage",
+    "clear_indexeddb": "Clear IndexedDB",
+    "shortcuts": "Keyboard Shortcuts",
+    "shortcuts_desc": "Quick access keys for power users.",
+    "shortcut_focus_search": "Focus search box",
+    "shortcut_close": "Close panel / Cancel",
+    "shortcut_navigate": "Navigate results",
+    "shortcut_open": "Open selected result",
+    "shortcut_new_tab": "Open in new tab",
+    "shortcut_switch_mode": "Switch search mode",
+    "shortcut_help": "Show this help",
+    "server": "Server",
+    "server_desc": "Server configuration and network settings.",
+    "bind_address": "Bind Address",
+    "port": "Port",
+    "max_connections": "Max Connections",
+    "image_proxy": "Enable Image Proxy",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Gelismis",
+    "advanced_desc": "Onbellek ve zaman asimi ayarlari.",
+    "cache_ttl": "Onbellek TTL (saniye)",
+    "cache_ttl_hint": "Sonuc onbellek yasam suresi (0 onbelleklemeyi devre disi birakir)",
+    "request_timeout": "Istek Zaman Asimi (saniye)",
+    "request_timeout_hint": "Motor basina ag zaman asimi",
+    "save": "Tercihleri Kaydet",
+    "saved": "Kaydedildi",
+    "saved_msg": "settings.yml'ye yazildi ve yeni aramalara uygulandi.",
+    "server_settings": "Bu ayarlar sunucu tarafinda su konumda saklanir:",
+    "raw_config": "Yapilandirma JSON",
+    "stats": "Istatistikler",
+    "home": "Ana Sayfa",
+    "logout": "Logout",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Genel",
+    "academic": "Akademik",
+    "writing": "Yazim",
+    "code": "Kod"
+  },
+  "footer": {
+    "grounded_answers": "Yerel modelinizden temelli cevaplar - yaklasik 46 arama motoru, sifir sorgu kaydi.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ ve daha fazlasindan akademik makaleler.",
+    "news_digest": "Haber ozeti: makale sayfalarini getirir, ozetleri Ollama ile yerel olarak yeniden yazar - yalnizca buyuk gorseller, favicon buyutme yok.",
+    "images": "Wikimedia Commons gorsel aramasi - gizlilik icin proxy uzerinden kucuk gorseller.",
+    "api_docs": "API Docs",
+    "status": "Status",
+    "version": "Version",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "Ornek deneyin",
+    "general": [
+      {
+        "q": "Rust asenkron programlama en iyi uygulamalar",
+        "label": "Rust asenkron"
+      },
+      {
+        "q": "En son LLM arastirma makaleleri 2025",
+        "label": "En son LLM makaleleri"
+      },
+      {
+        "q": "DNS nasil calisir",
+        "label": "DNS nasil calisir"
+      }
+    ],
+    "papers": [
+      {
+        "q": "En son LLM arastirma makaleleri 2025",
+        "label": "En son LLM makaleleri"
+      },
+      {
+        "q": "CRISPR gen duzenlemesi derleme makaleleri",
+        "label": "CRISPR derleme"
+      },
+      {
+        "q": "transformer mimarisi arastirmasi",
+        "label": "Transformer arastirmasi"
+      }
+    ],
+    "news": [
+      {
+        "q": "YZ duzenleme",
+        "label": "YZ duzenleme"
+      },
+      {
+        "q": "Kore teknoloji haberleri",
+        "label": "Kore teknoloji"
+      },
+      {
+        "q": "iklim politikasi guncellemeleri",
+        "label": "Iklim politikasi"
+      }
+    ]
+  },
+  "interests": {
+    "title": "İlgi Alanları",
+    "add_placeholder": "İlgi alanı ekle...",
+    "empty": "Arama yaparken ilgi alanları otomatik eklenir",
+    "remove": "Kaldır"
+  },
+  "factcheck": {
+    "title": "Fact-check Results",
+    "checking": "Analyzing...",
+    "analyzing": "Analyzing sources for contradictions...",
+    "no_contradictions": "No contradictions found in sources",
+    "found": "Contradictions found"
+  },
+  "foryou": {
+    "title": "Senin için",
+    "based_on": "Şuna göre: {interests}",
+    "no_interests": "Henüz ilgi alanı yok. İlgi alanlarını oluşturmak için ara!",
+    "loading": "Kişiselleştirilmiş akış yükleniyor..."
+  },
+  "common": {
+    "search": "Search",
+    "clear": "Clear",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "more": "More",
+    "less": "Less"
+  },
+  "trends": {
+    "title": "Trending Now",
+    "loading": "Loading trends...",
+    "error": "Failed to load trends",
+    "empty": "No trending topics"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Metasearch",
+    "subtitle": "Your private, AI-powered search engine",
+    "private_search": "Private Search",
+    "private_search_desc": "No query logging, ever",
+    "ai_answers": "AI Answers",
+    "ai_answers_desc": "Local AI summarizes results",
+    "news_digest": "News Digest",
+    "news_digest_desc": "Curated news with analysis",
+    "local_first": "Local-First",
+    "local_first_desc": "Your data stays on your device",
+    "get_started": "Get Started"
+  },
+  "feeds": {
+    "find": "Find Feeds",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe"
+  },
+  "errors": {
+    "load_trends": "Failed to load trends",
+    "load_feed": "Failed to load personalized feed",
+    "load_global": "Failed to load global feed",
+    "translation": "Translation failed"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 Küresel Bakış",
+    "global_desc": "Bölgelere göre arama sonuçlarını karşılaştırın",
+    "select_all": "Tümü",
+    "clear_all": "Temizle",
+    "run": "Karşılaştır"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

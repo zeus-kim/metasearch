@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Pregunta a la web, de manera privada"
+  },
+  "nav": {
+    "ask": "Pregunta",
+    "discover": "Descobreix",
+    "history": "Història",
+    "options": "Opcions",
+    "classic": "Clàssic",
+    "stats": "Estadístiques",
+    "preferences": "Preferències"
+  },
+  "tabs": {
+    "general": "General",
+    "images": "Imatges",
+    "videos": "Vídeos",
+    "papers": "Documents",
+    "news": "Notícies",
+    "shopping": "Compra"
+  },
+  "search": {
+    "placeholder": "Pregunta qualsevol cosa…",
+    "placeholder_news": "Introdueix un tema de notícies, prem Pregunta",
+    "placeholder_images": "Cerca imatges…",
+    "placeholder_papers": "Introdueix una pregunta, prem Pregunta",
+    "placeholder_general": "Introdueix una pregunta o tema, prem Pregunta",
+    "placeholder_shopping": "Cerca productes…",
+    "placeholder_videos": "Cerca vídeos…",
+    "button": "Pregunta",
+    "button_search": "Cerca"
+  },
+  "status": {
+    "loading": "Carregant…",
+    "loading_stories": "Carregant històries…",
+    "searching": "Cercant…",
+    "searching_web": "Cercant a la web…",
+    "searching_images": "Cercant imatges…",
+    "searching_news": "Cercant fonts de notícies…",
+    "searching_papers": "Cercant fonts acadèmiques…",
+    "searching_shopping": "Cercant productes…",
+    "searching_videos": "Cercant vídeos…",
+    "search_complete": "Cerca completa.",
+    "search_failed": "La cerca ha fallat.",
+    "answer_ready": "Resposta llesta.",
+    "fetching_article": "Obtenint article…",
+    "fetching_publisher": "Obtenint article del publicador…",
+    "resolving_article": "Resolent article…",
+    "resolving_gn": "Resolent enllaç de Google News…",
+    "rewriting": "Reescrivint article…",
+    "rewriting_korean": "Reescrivint en coreà…",
+    "preparing_rewrite": "Preparant reescriptura completa…",
+    "extracted_rewriting": "Text de l'article extret — reescrivint…",
+    "viewing_prior": "Veient torn anterior — pregunta un seguiment a continuació."
+  },
+  "error": {
+    "no_answer": "No s'ha generat cap resposta d'IA — resultats de cerca a continuació.",
+    "no_news": "No s'han trobat notícies — prova una altra consulta.",
+    "no_stories": "No s'han trobat històries — prova una altra consulta.",
+    "no_stories_category": "No s'han trobat històries per a aquesta categoria — prova una altra pestanya.",
+    "rewrite_empty": "La reescriptura de l'article ha tornat text buit.",
+    "rewrite_failed": "No s'ha pogut reescriure l'article",
+    "load_news_failed": "No s'han pogut carregar les notícies — comprova el servidor.",
+    "model_not_found": "Model no trobat — executa ollama pull per al teu model configurat, o tria un altre a Opcions.",
+    "ollama_not_running": "Ollama no s'està executant — les respostes seran només de cerca. Inicia: ollama serve",
+    "invalid_thread": "JSON de fil no vàlid.",
+    "enter_question": "Introdueix una pregunta.",
+    "enter_search": "Introdueix un terme de cerca."
+  },
+  "article": {
+    "sources": "Fonts",
+    "research_progress": "Progrés de la Investigació",
+    "thinking": "Pensant",
+    "answer": "Resposta",
+    "key_points": "Punts Clau",
+    "summary": "Resum",
+    "related_media": "Mitjans Relacionats",
+    "view_more": "Veure {count} més",
+    "back": "Enrere",
+    "read_original": "Llegir original",
+    "related_image": "Imatge relacionada",
+    "related": "Relacionat"
+  },
+  "discover": {
+    "updated": "Actualitzat {time}",
+    "scope": {
+      "all": "📰 Tots",
+      "local": "🏠 Local",
+      "world": "🌍 Mundial"
+    },
+    "categories": {
+      "politics": "Política",
+      "economy": "Economia",
+      "sports": "Esports",
+      "world": "Món",
+      "entertainment": "Entreteniment",
+      "tech": "Tecnologia i Ciència",
+      "culture": "Cultura",
+      "health": "Salut",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ciència de la tecnologia",
+      "ai": "intel·ligència artificial IA aprenentatge automàtic",
+      "world": "notícies mundials internacionals",
+      "politics": "política govern elecció",
+      "business": "negoci economia empreses",
+      "finance": "finances mercats borsa",
+      "health": "salut medicina benestar",
+      "climate": "canvi climàtic medi ambient",
+      "sports": "esports",
+      "entertainment": "entreteniment celebritat",
+      "art": "art cultura",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Obrir història",
+    "close": "Tancar història",
+    "imported": "Importat {count}",
+    "export": "Exportar JSON",
+    "import": "Importar JSON",
+    "clear": "Esborrar història",
+    "empty": "Les teves preguntes apareixen aquí.",
+    "new_chat": "Nova conversa"
+  },
+  "panel": {
+    "history": "Història",
+    "bookmarks": "Adreces",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Totes les Adreces",
+    "empty": "Afegeix resultats a les adreces per desar-los aquí.",
+    "export": "Exportar",
+    "clear_all": "Esborrar tot",
+    "new_collection": "Nova col·lecció"
+  },
+  "hero": {
+    "private": "Privat",
+    "ai_powered": "Impulsat per IA",
+    "local_first": "Local Primer"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Investigació profunda",
+    "focus": "Focus",
+    "theme": "Tema",
+    "language": "Idioma",
+    "answer_language": "Idioma de l'IA",
+    "answer_auto": "Automàtic",
+    "research": "Investigació",
+    "fact_check": "Verificació de fets"
+  },
+  "preferences": {
+    "title": "Preferències",
+    "language": "Idioma",
+    "language_desc": "Seleccioneu el vostre idioma d'interfície",
+    "language_storage": "L'idioma de la interfície s'emmagatzema al vostre navegador.",
+    "branding": "Marca",
+    "branding_desc": "Personalitza el nom de l'aplicació, el logotip i el favicon que es mostren a la interfície.",
+    "app_name": "Nom de l'Aplicació",
+    "app_name_hint": "Nom que es mostra a la capçalera i als títols de les pàgines",
+    "logo_url": "URL del Logotip",
+    "logo_url_hint": "URL o ruta a la teva imatge de logotip (deixa buit per defecte)",
+    "favicon_url": "URL del Favicon",
+    "favicon_url_hint": "URL o ruta al teu favicon (deixa buit per defecte del navegador)",
+    "appearance": "Aparença",
+    "appearance_desc": "Personalitza l'estil visual i el disseny.",
+    "theme": "Tema",
+    "font_size": "Mida de la Font",
+    "results_layout": "Disseny dels Resultats",
+    "search": "Cerca",
+    "search_desc": "Configuracions per defecte aplicades a totes les cerques.",
+    "ui_language": "Idioma de la UI",
+    "ui_language_hint": "Idioma de la interfície (emmagatzemat a localStorage del navegador)",
+    "interface_language": "Idioma de la interfície",
+    "stored_in_browser": "Emmagatzemat al navegador (localStorage)",
+    "search_defaults": "Per defecte de cerca",
+    "search_language": "Idioma de Cerca",
+    "search_language_hint": "automàtic = detectar de la consulta (Hangul → ko-KR); o tots, o una localització fixa com ko-KR",
+    "fallback_language": "Codi d'Idioma de Respaldo",
+    "fallback_language_hint": "Utilitzat quan la detecció automàtica no és concloent",
+    "safe_search": "Cerca Segura",
+    "safe_off": "Apagat",
+    "safe_moderate": "Moderada",
+    "safe_strict": "Estricte",
+    "results_per_engine": "Resultats per Motor",
+    "ai": "IA",
+    "ai_desc": "Configura models d'IA per a la síntesi de respostes i reescriptura d'articles.",
+    "ai_provider": "Proveïdor",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Personalitzat",
+    "ai_base_url": "URL Base de l'API",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Clau de l'API",
+    "ai_api_key_hint": "Requerida per a proveïdors al núvol (OpenAI, Anthropic, etc.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Model de xat/instrucció per a la síntesi de respostes i expansió de consultes",
+    "ai_article_model": "Model d'Article",
+    "ai_article_model_hint": "Model per a reescriptures d'articles de notícies de pàgina completa (per defecte al model principal)",
+    "ai_timeout": "Temps d'espera (segons)",
+    "ai_timeout_hint": "Temps d'espera per sol·licitud per a trucades de model",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Funcions",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Notícies",
+    "news_desc": "Agregació de notícies i configuracions d'articles.",
+    "news_per_source": "Articles per font",
+    "news_freshness": "Meitat de vida de frescor (hores)",
+    "news_freshness_weight": "Pes de frescor",
+    "news_dedup": "Límit de similitud de deduplicació",
+    "news_max_age": "Edat màxima (dies)",
+    "news_cache_ttl": "TTL de memòria cau (segons)",
+    "news_enrich_max": "Màxim d'articles per enriquir",
+    "engines": "Motors de Cerca",
+    "engines_desc": "Activa/desactiva motors i ajusta els seus pesos de classificació. Pes més alt = més influència en l'ordre dels resultats.",
+    "engine": "motor",
+    "categories": "categories",
+    "weight": "pes",
+    "privacy": "Privadesa",
+    "privacy_desc": "Controla com es gestiona la teva dada.",
+    "proxy_images": "Imatges de proxy",
+    "proxy_images_hint": "Ruteja imatges a través del servidor per ocultar la teva IP de tercers",
+    "remove_trackers": "Eliminar paràmetres de seguiment",
+    "remove_trackers_hint": "Elimina UTM i altres paràmetres de seguiment d'URLs",
+    "save_history": "Desar l'historial de cerques",
+    "save_history_hint": "Emmagatzema cerques localment al navegador (mai enviades al servidor)",
+    "clear_data": "Esborrar Dades",
+    "clear_localstorage": "Esborrar Emmagatzematge Local",
+    "clear_indexeddb": "Esborrar IndexedDB",
+    "shortcuts": "Dreceres de Teclat",
+    "shortcuts_desc": "Tecles d'accés ràpid per a usuaris avançats.",
+    "shortcut_focus_search": "Enfocar caixa de cerca",
+    "shortcut_close": "Tancar panell / Cancel·lar",
+    "shortcut_navigate": "Navegar resultats",
+    "shortcut_open": "Obrir resultat seleccionat",
+    "shortcut_new_tab": "Obrir en nova pestanya",
+    "shortcut_switch_mode": "Canviar mode de cerca",
+    "shortcut_help": "Mostrar aquesta ajuda",
+    "server": "Servidor",
+    "server_desc": "Configuració del servidor i ajustaments de xarxa.",
+    "bind_address": "Adreça de vinculació",
+    "port": "Port",
+    "max_connections": "Màx. Connexions",
+    "image_proxy": "Habilitar Proxy d'Imatges",
+    "cache_backend": "Backend de Memòria Cau",
+    "cache_dir": "Directori de Memòria Cau",
+    "redis_url": "URL de Redis",
+    "advanced": "Avançat",
+    "advanced_desc": "Configuracions de memòria cau i temps d'espera.",
+    "cache_ttl": "TTL de Memòria Cau (segons)",
+    "cache_ttl_hint": "Temps de vida de la memòria cau dels resultats (0 desactiva la memòria cau)",
+    "request_timeout": "Temps d'espera de la sol·licitud (segons)",
+    "request_timeout_hint": "Temps d'espera de xarxa per motor",
+    "save": "Desar Preferències",
+    "saved": "Desat",
+    "saved_msg": "escrit a settings.yml i aplicat a noves cerques.",
+    "server_settings": "Aquests ajustaments es mantenen al costat del servidor per",
+    "raw_config": "Config JSON",
+    "stats": "Estadístiques",
+    "home": "Inici",
+    "logout": "Tancar sessió",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "General",
+    "academic": "Acadèmic",
+    "writing": "Escriptura",
+    "code": "Codi"
+  },
+  "footer": {
+    "grounded_answers": "Respostes fonamentades del teu model local — 200+ motors de cerca, zero registre de consultes.",
+    "academic_papers": "Documents acadèmics d'arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, i més.",
+    "news_digest": "Resum de notícies: obté pàgines d'articles, reescriu resums localment a través d'Ollama — només imatges grans, sense ampliació de favicon.",
+    "images": "Cerca d'imatges de Wikimedia Commons — miniatures rutejades per a la privadesa.",
+    "api_docs": "Docs de l'API",
+    "status": "Estat",
+    "version": "Versió",
+    "engines_count": "232 motors"
+  },
+  "examples": {
+    "try": "Prova un exemple",
+    "general": [
+      {
+        "q": "Millors pràctiques de programació asíncrona en Rust",
+        "label": "Rust asíncron"
+      },
+      {
+        "q": "Últims articles de recerca LLM 2025",
+        "label": "Últims articles LLM"
+      },
+      {
+        "q": "Com funciona DNS",
+        "label": "Com funciona DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Últims articles de recerca LLM 2025",
+        "label": "Últims articles LLM"
+      },
+      {
+        "q": "Articles de revisió sobre edició genètica CRISPR",
+        "label": "Revisió CRISPR"
+      },
+      {
+        "q": "enquesta sobre arquitectura transformer",
+        "label": "Enquesta sobre transformers"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulació de la IA",
+        "label": "Regulació de la IA"
+      },
+      {
+        "q": "Notícies tecnològiques de Corea",
+        "label": "Tecnologia de Corea"
+      },
+      {
+        "q": "actualitzacions de política climàtica",
+        "label": "Política climàtica"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interessos (Per a Tu)",
+    "add_placeholder": "Afegeix interès...",
+    "empty": "Els interessos s'afegeixen automàticament a mesura que cerques",
+    "remove": "Eliminar"
+  },
+  "factcheck": {
+    "title": "Resultats de Verificació de Fets",
+    "checking": "Analitzant...",
+    "analyzing": "Analitzant fonts per contradiccions...",
+    "no_contradictions": "No s'han trobat contradiccions a les fonts",
+    "found": "S'han trobat contradiccions"
+  },
+  "foryou": {
+    "title": "Per Tu",
+    "based_on": "Basat en: {interests}",
+    "no_interests": "Encara no hi ha interessos. Cerca per construir els teus interessos!",
+    "loading": "Carregant feed personalitzat..."
+  },
+  "common": {
+    "search": "Cerca",
+    "clear": "Esborrar",
+    "close": "Tancar",
+    "save": "Desar",
+    "cancel": "Cancel·lar",
+    "loading": "Carregant...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "more": "Més",
+    "less": "Menys"
+  },
+  "trends": {
+    "title": "Tendències Actuals",
+    "loading": "Carregant tendències...",
+    "error": "No s'han pogut carregar les tendències",
+    "empty": "No hi ha temes tendents"
+  },
+  "onboarding": {
+    "welcome": "Benvingut a Metasearch",
+    "subtitle": "El teu motor de cerca privat, impulsat per IA",
+    "private_search": "Cerca Privada",
+    "private_search_desc": "Sense registre de consultes, mai",
+    "ai_answers": "Respostes d'IA",
+    "ai_answers_desc": "L'IA local resumeix els resultats",
+    "news_digest": "Resum de Notícies",
+    "news_digest_desc": "Notícies curades amb anàlisi",
+    "local_first": "Local Primer",
+    "local_first_desc": "Les teves dades es queden al teu dispositiu",
+    "get_started": "Comença"
+  },
+  "feeds": {
+    "find": "Troba Feeds",
+    "subscribe": "Subscriure's",
+    "unsubscribe": "Donar-se de baixa"
+  },
+  "errors": {
+    "load_trends": "No s'han pogut carregar les tendències",
+    "load_feed": "No s'ha pogut carregar el feed personalitzat",
+    "load_global": "No s'ha pogut carregar el feed global",
+    "translation": "La traducció ha fallat"
+  },
+  "compare": {
+    "title": "Comparar Resultats",
+    "button": "Comparar",
+    "clear": "Esborrar Tot",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

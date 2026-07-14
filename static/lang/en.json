@@ -1,0 +1,443 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Ask the web, privately"
+  },
+  "nav": {
+    "ask": "Ask",
+    "discover": "Discover",
+    "history": "History",
+    "options": "Options",
+    "classic": "Classic",
+    "stats": "Stats",
+    "preferences": "Preferences"
+  },
+  "tabs": {
+    "general": "General",
+    "images": "Images",
+    "videos": "Videos",
+    "papers": "Papers",
+    "news": "News",
+    "shopping": "Shopping",
+    "code": "Code",
+    "social": "Social",
+    "music": "Music",
+    "books": "Books",
+    "qa": "Q&A",
+    "maps": "Maps",
+    "packages": "Packages",
+    "files": "Files"
+  },
+  "search": {
+    "placeholder": "Ask anything…",
+    "placeholder_news": "Enter a news topic, press Ask",
+    "placeholder_images": "Search images…",
+    "placeholder_papers": "Enter a question, press Ask",
+    "placeholder_general": "Enter a question or topic, press Ask",
+    "placeholder_shopping": "Search products…",
+    "placeholder_videos": "Search videos…",
+    "button": "Ask",
+    "button_search": "Search"
+  },
+  "status": {
+    "loading": "Loading…",
+    "loading_stories": "Loading stories…",
+    "searching": "Searching…",
+    "searching_web": "Searching the web…",
+    "searching_images": "Searching images…",
+    "searching_news": "Searching news sources…",
+    "searching_papers": "Searching academic sources…",
+    "searching_shopping": "Searching products…",
+    "searching_videos": "Searching videos…",
+    "search_complete": "Search complete.",
+    "search_failed": "Search failed.",
+    "answer_ready": "Answer ready.",
+    "fetching_article": "Fetching article…",
+    "fetching_publisher": "Fetching publisher article…",
+    "resolving_article": "Resolving article…",
+    "resolving_gn": "Resolving Google News link…",
+    "rewriting": "Rewriting article…",
+    "rewriting_korean": "Rewriting in Korean…",
+    "preparing_rewrite": "Preparing full rewrite…",
+    "extracted_rewriting": "Extracted article text — rewriting…",
+    "viewing_prior": "Viewing prior turn — ask a follow-up below."
+  },
+  "error": {
+    "no_answer": "No AI answer generated — search results below.",
+    "no_news": "No news found — try another query.",
+    "no_stories": "No stories found — try another query.",
+    "no_stories_category": "No stories found for this category — try another pill.",
+    "rewrite_empty": "Article rewrite returned empty text.",
+    "rewrite_failed": "Could not rewrite article",
+    "load_news_failed": "Could not load news — check server.",
+    "model_not_found": "Model not found — run ollama pull for your configured model, or pick another in Options.",
+    "ollama_not_running": "Ollama not running — answers will be search-only. Start: ollama serve",
+    "invalid_thread": "Invalid thread JSON.",
+    "enter_question": "Enter a question.",
+    "enter_search": "Enter a search term."
+  },
+  "article": {
+    "sources": "Sources",
+    "research_progress": "Research Progress",
+    "thinking": "Thinking",
+    "answer": "Answer",
+    "key_points": "Key Points",
+    "summary": "Summary",
+    "related_media": "Related Media",
+    "view_more": "View {count} more",
+    "back": "Back",
+    "read_original": "Read original",
+    "related_image": "Related image",
+    "related": "Related",
+    "question_placeholder": "Ask about this article...",
+    "ask": "Ask"
+  },
+  "discover": {
+    "updated": "Updated {time}",
+    "load_more": "Load More",
+    "scope": {
+      "all": "📰 All",
+      "local": "🏠 Local",
+      "world": "🌍 World"
+    },
+    "categories": {
+      "politics": "Politics",
+      "economy": "Economy",
+      "sports": "Sports",
+      "world": "World",
+      "entertainment": "Entertainment",
+      "tech": "Tech & Science",
+      "culture": "Culture",
+      "health": "Health",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "technology science",
+      "ai": "artificial intelligence AI machine learning",
+      "world": "world news international",
+      "politics": "politics government election",
+      "business": "business economy companies",
+      "finance": "finance markets stock",
+      "health": "health medicine wellness",
+      "climate": "climate change environment",
+      "sports": "sports",
+      "entertainment": "entertainment celebrity",
+      "art": "art culture",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Open history",
+    "close": "Close history",
+    "imported": "Imported {count}",
+    "export": "Export JSON",
+    "import": "Import JSON",
+    "clear": "Clear history",
+    "empty": "Your questions appear here.",
+    "new_chat": "New chat"
+  },
+  "panel": {
+    "history": "History",
+    "bookmarks": "Bookmarks",
+    "tokens": "Tokens"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  },
+  "bookmarks": {
+    "all": "All Bookmarks",
+    "empty": "Bookmark results to save them here.",
+    "export": "Export",
+    "clear_all": "Clear all",
+    "new_collection": "New collection"
+  },
+  "hero": {
+    "private": "Private",
+    "ai_powered": "AI-Powered",
+    "local_first": "Local-First"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Deep research",
+    "focus": "Focus",
+    "theme": "Theme",
+    "language": "Language",
+    "answer_language": "AI Language",
+    "answer_auto": "Auto",
+    "research": "Research",
+    "fact_check": "Fact-check"
+  },
+  "preferences": {
+    "title": "Preferences",
+    "language": "Language",
+    "language_desc": "Configure interface and search language settings.",
+    "language_storage": "Interface language is stored in your browser.",
+    "branding": "Branding",
+    "branding_desc": "Customize the application name, logo, and favicon displayed in the UI.",
+    "app_name": "Application Name",
+    "app_name_hint": "Name shown in the header and page titles",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "URL or path to your logo image (leave empty for default)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL or path to your favicon (leave empty for browser default)",
+    "appearance": "Appearance",
+    "appearance_desc": "Customize the visual style and layout.",
+    "theme": "Theme",
+    "font_size": "Font Size",
+    "results_layout": "Results Layout",
+    "search": "Search",
+    "search_desc": "Default settings applied to all searches.",
+    "ui_language": "UI Language",
+    "ui_language_hint": "Interface language (stored in browser localStorage)",
+    "interface_language": "Interface language",
+    "stored_in_browser": "Stored in browser (localStorage)",
+    "search_defaults": "Search defaults",
+    "search_language": "Search Language",
+    "search_language_hint": "auto = detect from query (Hangul → ko-KR); or all, or a fixed locale like ko-KR",
+    "fallback_language": "Fallback Language Code",
+    "fallback_language_hint": "Used when auto-detection is inconclusive",
+    "safe_search": "Safe Search",
+    "safe_off": "Off",
+    "safe_moderate": "Moderate",
+    "safe_strict": "Strict",
+    "results_per_engine": "Results Per Engine",
+    "ai": "AI",
+    "ai_desc": "Configure AI models for answer synthesis and article rewriting.",
+    "ai_provider": "Provider",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Custom",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "Required for cloud providers (OpenAI, Anthropic, etc.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Chat/instruct model for answer synthesis and query expansion",
+    "ai_article_model": "Article Model",
+    "ai_article_model_hint": "Model for full-page news article rewrites (defaults to main model)",
+    "ai_timeout": "Timeout (seconds)",
+    "ai_timeout_hint": "Per-request timeout for model calls",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Display token count and estimated cost for AI responses",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of top results fed into answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news article analysis",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default prompt. Use {title} and {excerpt} placeholders.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news article analysis",
+    "ai_news_prompt_en_placeholder": "Leave empty for default prompt. Use {title} and {excerpt} placeholders.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI-generated responses (news rewrite, answers)",
+    "ai_answer_auto": "Auto-detect",
+    "ai_features": "Features",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "News",
+    "news_desc": "News aggregation and article settings.",
+    "news_per_source": "Articles per source",
+    "news_freshness": "Freshness half-life (hours)",
+    "news_freshness_weight": "Freshness weight",
+    "news_dedup": "Dedup similarity threshold",
+    "news_max_age": "Max age (days)",
+    "news_cache_ttl": "Cache TTL (seconds)",
+    "news_enrich_max": "Max articles to enrich",
+    "engines": "Search Engines",
+    "engines_desc": "Enable/disable engines and adjust their ranking weights. Higher weight = more influence on result order.",
+    "engine": "engine",
+    "categories": "categories",
+    "weight": "weight",
+    "privacy": "Privacy",
+    "privacy_desc": "Control how your data is handled.",
+    "proxy_images": "Proxy images",
+    "proxy_images_hint": "Route images through server to hide your IP from third parties",
+    "remove_trackers": "Remove tracking parameters",
+    "remove_trackers_hint": "Strip UTM and other tracking parameters from URLs",
+    "save_history": "Save search history",
+    "save_history_hint": "Store searches locally in browser (never sent to server)",
+    "clear_data": "Clear Data",
+    "clear_localstorage": "Clear Local Storage",
+    "clear_indexeddb": "Clear IndexedDB",
+    "shortcuts": "Keyboard Shortcuts",
+    "shortcuts_desc": "Quick access keys for power users.",
+    "shortcut_focus_search": "Focus search box",
+    "shortcut_close": "Close panel / Cancel",
+    "shortcut_navigate": "Navigate results",
+    "shortcut_open": "Open selected result",
+    "shortcut_new_tab": "Open in new tab",
+    "shortcut_switch_mode": "Switch search mode",
+    "shortcut_help": "Show this help",
+    "server": "Server",
+    "server_desc": "Server configuration and network settings.",
+    "bind_address": "Bind Address",
+    "port": "Port",
+    "max_connections": "Max Connections",
+    "image_proxy": "Enable Image Proxy",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Advanced",
+    "advanced_desc": "Cache and timeout settings.",
+    "cache_ttl": "Cache TTL (seconds)",
+    "cache_ttl_hint": "Result cache time-to-live (0 disables caching)",
+    "request_timeout": "Request Timeout (seconds)",
+    "request_timeout_hint": "Per-engine network timeout",
+    "save": "Save Preferences",
+    "saved": "Saved",
+    "saved_msg": "written to settings.yml and applied to new searches.",
+    "server_settings": "These settings are persisted server-side to",
+    "raw_config": "Config JSON",
+    "stats": "Stats",
+    "home": "Home",
+    "logout": "Logout"
+  },
+  "focus": {
+    "general": "General",
+    "academic": "Academic",
+    "writing": "Writing",
+    "code": "Code"
+  },
+  "footer": {
+    "grounded_answers": "Grounded answers from your local model — 200+ search engines, zero query logging.",
+    "academic_papers": "Academic papers from arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, and more.",
+    "news_digest": "News digest: fetches article pages, rewrites summaries locally via Ollama — large images only, no favicon upscale.",
+    "images": "Wikimedia Commons image search — thumbnails proxied for privacy.",
+    "api_docs": "API Docs",
+    "status": "Status",
+    "version": "Version",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "Try an example",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "How does DNS work"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR review"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer survey"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI regulation"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "Korea tech"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "Climate policy"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests (For You)",
+    "add_placeholder": "Add interest...",
+    "empty": "Interests are added automatically as you search",
+    "remove": "Remove"
+  },
+  "factcheck": {
+    "title": "Fact-check Results",
+    "checking": "Analyzing...",
+    "analyzing": "Analyzing sources for contradictions...",
+    "no_contradictions": "No contradictions found in sources",
+    "found": "Contradictions found"
+  },
+  "foryou": {
+    "title": "For You",
+    "based_on": "Based on: {interests}",
+    "no_interests": "No interests yet. Search to build your interests!",
+    "no_results": "No news found for your interests.",
+    "loading": "Loading personalized feed..."
+  },
+  "common": {
+    "search": "Search",
+    "clear": "Clear",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "more": "More",
+    "less": "Less"
+  },
+  "trends": {
+    "title": "Trending Now",
+    "loading": "Loading trends...",
+    "error": "Failed to load trends",
+    "empty": "No trending topics"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Metasearch",
+    "subtitle": "Your private, AI-powered search engine",
+    "private_search": "Private Search",
+    "private_search_desc": "No query logging, ever",
+    "ai_answers": "AI Answers",
+    "ai_answers_desc": "Local AI summarizes results",
+    "news_digest": "News Digest",
+    "news_digest_desc": "Curated news with analysis",
+    "local_first": "Local-First",
+    "local_first_desc": "Your data stays on your device",
+    "get_started": "Get Started"
+  },
+  "feeds": {
+    "find": "Find Feeds",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe"
+  },
+  "errors": {
+    "load_trends": "Failed to load trends",
+    "load_feed": "Failed to load personalized feed",
+    "load_global": "Failed to load global feed",
+    "translation": "Translation failed"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  }
+}

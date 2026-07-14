@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Întreabă web-ul, în privat"
+  },
+  "nav": {
+    "ask": "Întreabă",
+    "discover": "Descoperă",
+    "history": "Istoric",
+    "options": "Opțiuni",
+    "classic": "Clasic",
+    "stats": "Statistici",
+    "preferences": "Preferințe"
+  },
+  "tabs": {
+    "general": "General",
+    "images": "Imagini",
+    "videos": "Videoclipuri",
+    "papers": "Articole",
+    "news": "Știri",
+    "shopping": "Shopping"
+  },
+  "search": {
+    "placeholder": "Întreabă orice…",
+    "placeholder_news": "Introdu un subiect de știri, apasă Întreabă",
+    "placeholder_images": "Caută imagini…",
+    "placeholder_papers": "Introdu o întrebare, apasă Întreabă",
+    "placeholder_general": "Introdu o întrebare sau un subiect, apasă Întreabă",
+    "placeholder_shopping": "Caută produse…",
+    "placeholder_videos": "Caută videoclipuri…",
+    "button": "Întreabă",
+    "button_search": "Caută"
+  },
+  "status": {
+    "loading": "Se încarcă…",
+    "loading_stories": "Se încarcă povești…",
+    "searching": "Caută…",
+    "searching_web": "Caută pe web…",
+    "searching_images": "Caută imagini…",
+    "searching_news": "Caută surse de știri…",
+    "searching_papers": "Caută surse academice…",
+    "searching_shopping": "Caută produse…",
+    "searching_videos": "Caută videoclipuri…",
+    "search_complete": "Căutare completă.",
+    "search_failed": "Căutarea a eșuat.",
+    "answer_ready": "Răspunsul este gata.",
+    "fetching_article": "Se preia articolul…",
+    "fetching_publisher": "Se preia articolul editorului…",
+    "resolving_article": "Se rezolvă articolul…",
+    "resolving_gn": "Se rezolvă linkul Google News…",
+    "rewriting": "Se rescrie articolul…",
+    "rewriting_korean": "Se rescrie în coreeană…",
+    "preparing_rewrite": "Se pregătește rescrierea completă…",
+    "extracted_rewriting": "Textul articolului extras — se rescrie…",
+    "viewing_prior": "Vizualizează turul anterior — întreabă o întrebare suplimentară mai jos."
+  },
+  "error": {
+    "no_answer": "Nu s-a generat un răspuns AI — rezultatele căutării sunt mai jos.",
+    "no_news": "Nu s-au găsit știri — încearcă o altă întrebare.",
+    "no_stories": "Nu s-au găsit povești — încearcă o altă întrebare.",
+    "no_stories_category": "Nu s-au găsit povești pentru această categorie — încearcă o altă opțiune.",
+    "rewrite_empty": "Rescrierea articolului a returnat text gol.",
+    "rewrite_failed": "Nu s-a putut rescrie articolul",
+    "load_news_failed": "Nu s-au putut încărca știrile — verifică serverul.",
+    "model_not_found": "Modelul nu a fost găsit — rulează ollama pull pentru modelul tău configurat sau alege altul în Opțiuni.",
+    "ollama_not_running": "Ollama nu rulează — răspunsurile vor fi doar căutare. Începe: ollama serve",
+    "invalid_thread": "JSON-ul firului este invalid.",
+    "enter_question": "Introdu o întrebare.",
+    "enter_search": "Introdu un termen de căutare."
+  },
+  "article": {
+    "sources": "Surse",
+    "research_progress": "Progresul cercetării",
+    "thinking": "Gândire",
+    "answer": "Răspuns",
+    "key_points": "Puncte cheie",
+    "summary": "Rezumat",
+    "related_media": "Media asociată",
+    "view_more": "Vezi {count} mai mult",
+    "back": "Înapoi",
+    "read_original": "Citește originalul",
+    "related_image": "Imagine asociată",
+    "related": "Asociat"
+  },
+  "discover": {
+    "updated": "Actualizat {time}",
+    "scope": {
+      "all": "📰 Toate",
+      "local": "🏠 Local",
+      "world": "🌍 Lume"
+    },
+    "categories": {
+      "politics": "Politică",
+      "economy": "Economia",
+      "sports": "Sport",
+      "world": "Lume",
+      "entertainment": "Divertisment",
+      "tech": "Tehnologie & Știință",
+      "culture": "Cultură",
+      "health": "Sănătate",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "știința tehnologiei",
+      "ai": "inteligență artificială AI învățare automată",
+      "world": "știri mondiale internaționale",
+      "politics": "politică guvern alegeri",
+      "business": "afaceri economie companii",
+      "finance": "finanțe piețe acțiuni",
+      "health": "sănătate medicină bunăstare",
+      "climate": "schimbări climatice mediu",
+      "sports": "sport",
+      "entertainment": "divertisment celebrități",
+      "art": "artă cultură",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Deschide istoricul",
+    "close": "Închide istoricul",
+    "imported": "Importat {count}",
+    "export": "Exportă JSON",
+    "import": "Importă JSON",
+    "clear": "Șterge istoricul",
+    "empty": "Întrebările tale apar aici.",
+    "new_chat": "Chat nou"
+  },
+  "panel": {
+    "history": "Istoric",
+    "bookmarks": "Marcaje",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Toate marcajele",
+    "empty": "Marchează rezultatele pentru a le salva aici.",
+    "export": "Exportă",
+    "clear_all": "Șterge tot",
+    "new_collection": "Colecție nouă"
+  },
+  "hero": {
+    "private": "Privat",
+    "ai_powered": "Puterea AI",
+    "local_first": "Local-First"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Cercetare profundă",
+    "focus": "Focalizare",
+    "theme": "Temă",
+    "language": "Limbă",
+    "answer_language": "Limba AI",
+    "answer_auto": "Automat",
+    "research": "Cercetare",
+    "fact_check": "Verificare fapte"
+  },
+  "preferences": {
+    "title": "Preferințe",
+    "language": "Limbă",
+    "language_desc": "Selectați limba preferată a interfeței",
+    "language_storage": "Limba interfeței este stocată în browserul dvs.",
+    "branding": "Branding",
+    "branding_desc": "Personalizează numele aplicației, logo-ul și favicon-ul afișate în UI.",
+    "app_name": "Numele aplicației",
+    "app_name_hint": "Numele afișat în antet și titlurile paginilor",
+    "logo_url": "URL logo",
+    "logo_url_hint": "URL sau cale către imaginea logo-ului tău (lasă gol pentru implicit)",
+    "favicon_url": "URL favicon",
+    "favicon_url_hint": "URL sau cale către favicon-ul tău (lasă gol pentru implicit în browser)",
+    "appearance": "Aspect",
+    "appearance_desc": "Personalizează stilul vizual și layout-ul.",
+    "theme": "Temă",
+    "font_size": "Dimensiunea fontului",
+    "results_layout": "Layout rezultate",
+    "search": "Caută",
+    "search_desc": "Setările implicite aplicate tuturor căutărilor.",
+    "ui_language": "Limba UI",
+    "ui_language_hint": "Limba interfeței (stocată în localStorage-ul browserului)",
+    "interface_language": "Limba interfeței",
+    "stored_in_browser": "Stocată în browser (localStorage)",
+    "search_defaults": "Setări implicite de căutare",
+    "search_language": "Limba de căutare",
+    "search_language_hint": "auto = detectare din interogare (Hangul → ko-KR); sau toate, sau o localitate fixă precum ko-KR",
+    "fallback_language": "Cod limbă de rezervă",
+    "fallback_language_hint": "Utilizat când detectarea automată este inconcludentă",
+    "safe_search": "Căutare sigură",
+    "safe_off": "Dezactivat",
+    "safe_moderate": "Moderat",
+    "safe_strict": "Strict",
+    "results_per_engine": "Rezultate pe motor",
+    "ai": "AI",
+    "ai_desc": "Configurează modelele AI pentru sinteza răspunsurilor și rescrierea articolelor.",
+    "ai_provider": "Furnizor",
+    "ai_provider_local": "Local (Ollama)",
+    "ai_provider_custom": "Personalizat",
+    "ai_base_url": "URL de bază API",
+    "ai_base_url_hint": "Local: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Cheie API",
+    "ai_api_key_hint": "Necesar pentru furnizorii de cloud (OpenAI, Anthropic, etc.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Model de chat/instrucțiuni pentru sinteza răspunsurilor și extinderea interogărilor",
+    "ai_article_model": "Model de articol",
+    "ai_article_model_hint": "Model pentru rescrierea articolelor de știri pe pagină completă (se folosește modelul principal implicit)",
+    "ai_timeout": "Timeout (secunde)",
+    "ai_timeout_hint": "Timeout pe cerere pentru apelurile modelului",
+    "ai_cost_tracking": "Urmărirea costurilor",
+    "ai_track_usage": "Urmărire utilizare token",
+    "ai_track_usage_hint": "Afișare număr token și cost estimat",
+    "ai_input_cost": "Cost intrare",
+    "ai_output_cost": "Cost ieșire",
+    "ai_features": "Funcții",
+    "ai_answer_synthesis": "Sinteză răspuns",
+    "ai_query_expansion": "Expansiune interogare",
+    "ai_reranking": "Reranjare",
+    "ai_clustering": "Grupare",
+    "ai_vision": "Viziune",
+    "news": "Știri",
+    "news_desc": "Agregare de știri și setări pentru articole.",
+    "news_per_source": "Articole pe sursă",
+    "news_freshness": "Freshness half-life (ore)",
+    "news_freshness_weight": "Greutatea fresh-ului",
+    "news_dedup": "Prag de similaritate deduplicare",
+    "news_max_age": "Vârstă maximă (zile)",
+    "news_cache_ttl": "Cache TTL (secunde)",
+    "news_enrich_max": "Maxim articole de îmbogățit",
+    "engines": "Motoare de căutare",
+    "engines_desc": "Activează/dezactivează motoare și ajustează greutățile lor de clasificare. Greutate mai mare = mai multă influență asupra ordinii rezultatelor.",
+    "engine": "motor",
+    "categories": "categorii",
+    "weight": "greutate",
+    "privacy": "Confidențialitate",
+    "privacy_desc": "Controlează modul în care sunt gestionate datele tale.",
+    "proxy_images": "Proxy pentru imagini",
+    "proxy_images_hint": "Rutează imaginile prin server pentru a ascunde IP-ul tău de terțe părți",
+    "remove_trackers": "Elimină parametrii de urmărire",
+    "remove_trackers_hint": "Îndepărtează parametrii UTM și alți parametrii de urmărire din URL-uri",
+    "save_history": "Salvează istoricul căutărilor",
+    "save_history_hint": "Stochează căutările local în browser (niciodată trimise la server)",
+    "clear_data": "Șterge datele",
+    "clear_localstorage": "Șterge Local Storage",
+    "clear_indexeddb": "Șterge IndexedDB",
+    "shortcuts": "Scurtături de tastatură",
+    "shortcuts_desc": "Taste rapide pentru utilizatorii avansați.",
+    "shortcut_focus_search": "Focalizează caseta de căutare",
+    "shortcut_close": "Închide panoul / Anulează",
+    "shortcut_navigate": "Navighează rezultatele",
+    "shortcut_open": "Deschide rezultatul selectat",
+    "shortcut_new_tab": "Deschide într-un tab nou",
+    "shortcut_switch_mode": "Schimbă modul de căutare",
+    "shortcut_help": "Afișează acest ajutor",
+    "server": "Server",
+    "server_desc": "Configurarea serverului și setările de rețea.",
+    "bind_address": "Adresă de legare",
+    "port": "Port",
+    "max_connections": "Conexiuni maxime",
+    "image_proxy": "Activează Proxy pentru imagini",
+    "cache_backend": "Backend de cache",
+    "cache_dir": "Director cache",
+    "redis_url": "URL Redis",
+    "advanced": "Avansat",
+    "advanced_desc": "Setări de cache și timeout.",
+    "cache_ttl": "Cache TTL (secunde)",
+    "cache_ttl_hint": "Timpul de viață al cache-ului rezultatelor (0 dezactivează caching-ul)",
+    "request_timeout": "Timeout pentru cerere (secunde)",
+    "request_timeout_hint": "Timeout de rețea pe motor",
+    "save": "Salvează Preferințele",
+    "saved": "Salvat",
+    "saved_msg": "scris în settings.yml și aplicat la căutările noi.",
+    "server_settings": "Aceste setări sunt persistente pe server",
+    "raw_config": "Config JSON",
+    "stats": "Statistici",
+    "home": "Acasă",
+    "logout": "Deconectare",
+    "ai_embedding_model": "Model de încorporare",
+    "ai_vision_model": "Model de viziune",
+    "ai_answer_top_n": "Top N răspunsuri",
+    "ai_answer_top_n_hint": "Numărul de rezultate pentru sinteza răspunsului",
+    "ai_news_prompt_ko": "Prompt analiză știri coreene",
+    "ai_news_prompt_ko_hint": "Prompt personalizat pentru analiză știri coreene",
+    "ai_news_prompt_ko_placeholder": "Lăsați gol pentru implicit.",
+    "ai_news_prompt_en": "Prompt analiză știri engleze",
+    "ai_news_prompt_en_hint": "Prompt personalizat pentru analiză știri engleze",
+    "ai_news_prompt_en_placeholder": "Lăsați gol pentru implicit.",
+    "ai_answer_language": "Limba răspunsului",
+    "ai_answer_language_hint": "Limba țintă pentru răspunsuri AI",
+    "ai_answer_auto": "Detectare automată"
+  },
+  "focus": {
+    "general": "General",
+    "academic": "Academic",
+    "writing": "Scriere",
+    "code": "Cod"
+  },
+  "footer": {
+    "grounded_answers": "Răspunsuri fundamentate de modelul tău local — 200+ motoare de căutare, zero înregistrări de interogare.",
+    "academic_papers": "Articole academice de la arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ și altele.",
+    "news_digest": "Digest de știri: preia paginile articolelor, rescrie rezumate local prin Ollama — doar imagini mari, fără upscale pentru favicon.",
+    "images": "Căutare imagini Wikimedia Commons — miniaturi proxied pentru confidențialitate.",
+    "api_docs": "Documentația API",
+    "status": "Stare",
+    "version": "Versiune",
+    "engines_count": "232 motoare"
+  },
+  "examples": {
+    "try": "Încearcă un exemplu",
+    "general": [
+      {
+        "q": "Cele mai bune practici în programarea asincronă Rust",
+        "label": "Rust asincron"
+      },
+      {
+        "q": "Cele mai recente articole de cercetare LLM 2025",
+        "label": "Cele mai recente articole LLM"
+      },
+      {
+        "q": "Cum funcționează DNS",
+        "label": "Cum funcționează DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Cele mai recente articole de cercetare LLM 2025",
+        "label": "Cele mai recente articole LLM"
+      },
+      {
+        "q": "Articole de revizuire a editării genelor CRISPR",
+        "label": "Revizuire CRISPR"
+      },
+      {
+        "q": "studiu despre arhitectura transformer",
+        "label": "Studiu transformer"
+      }
+    ],
+    "news": [
+      {
+        "q": "Reglementarea AI",
+        "label": "Reglementarea AI"
+      },
+      {
+        "q": "Știri tehnologice din Coreea",
+        "label": "Tehnologie Coreea"
+      },
+      {
+        "q": "actualizări ale politicii climatice",
+        "label": "Politica climatică"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interese (Pentru tine)",
+    "add_placeholder": "Adaugă interes...",
+    "empty": "Interesele sunt adăugate automat pe măsură ce cauți",
+    "remove": "Elimină"
+  },
+  "factcheck": {
+    "title": "Rezultatele verificării faptelor",
+    "checking": "Analizăm...",
+    "analyzing": "Analizăm sursele pentru contradicții...",
+    "no_contradictions": "Nu s-au găsit contradicții în surse",
+    "found": "Contradicții găsite"
+  },
+  "foryou": {
+    "title": "Pentru tine",
+    "based_on": "Pe baza: {interests}",
+    "no_interests": "Nu ai interese încă. Caută pentru a-ți construi interesele!",
+    "loading": "Se încarcă fluxul personalizat..."
+  },
+  "common": {
+    "search": "Caută",
+    "clear": "Șterge",
+    "close": "Închide",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "retry": "Reîncercare",
+    "more": "Mai mult",
+    "less": "Mai puțin"
+  },
+  "trends": {
+    "title": "Tendințe Acum",
+    "loading": "Se încarcă tendințele...",
+    "error": "Nu s-au putut încărca tendințele",
+    "empty": "Nu există subiecte în tendințe"
+  },
+  "onboarding": {
+    "welcome": "Bine ai venit la Metasearch",
+    "subtitle": "Motorul tău de căutare privat, alimentat de AI",
+    "private_search": "Căutare privată",
+    "private_search_desc": "Niciodată nu se înregistrează interogările",
+    "ai_answers": "Răspunsuri AI",
+    "ai_answers_desc": "AI local rezumă rezultatele",
+    "news_digest": "Digest de știri",
+    "news_digest_desc": "Știri curate cu analiză",
+    "local_first": "Local-First",
+    "local_first_desc": "Datele tale rămân pe dispozitivul tău",
+    "get_started": "Începe"
+  },
+  "feeds": {
+    "find": "Găsește fluxuri",
+    "subscribe": "Abonează-te",
+    "unsubscribe": "Dezabonare"
+  },
+  "errors": {
+    "load_trends": "Nu s-au putut încărca tendințele",
+    "load_feed": "Nu s-a putut încărca fluxul personalizat",
+    "load_global": "Nu s-a putut încărca fluxul global",
+    "translation": "Traducerea a eșuat"
+  },
+  "compare": {
+    "title": "Compară rezultatele",
+    "button": "Compară",
+    "clear": "Șterge tot",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

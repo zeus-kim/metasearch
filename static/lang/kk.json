@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Интернеттен сұрау, жеке"
+  },
+  "nav": {
+    "ask": "Сұрау",
+    "discover": "Ашу",
+    "history": "Тарих",
+    "options": "Опциялар",
+    "classic": "Классикалық",
+    "stats": "Статистика",
+    "preferences": "Параметрлер"
+  },
+  "tabs": {
+    "general": "Жалпы",
+    "images": "Суреттер",
+    "videos": "Бейне",
+    "papers": "Мақалалар",
+    "news": "Жаңалықтар",
+    "shopping": "Сатып алу"
+  },
+  "search": {
+    "placeholder": "Барлығын сұрау...",
+    "placeholder_news": "Жаңалық тақырыбын енгізіңіз, Сұрау батырмасын басыңыз",
+    "placeholder_images": "Суреттерді іздеу...",
+    "placeholder_papers": "Сұрақ енгізіңіз, Сұрау батырмасын басыңыз",
+    "placeholder_general": "Сұрақ немесе тақырып енгізіңіз, Сұрау батырмасын басыңыз",
+    "placeholder_shopping": "Өнімдерді іздеу...",
+    "placeholder_videos": "Бейне іздеу...",
+    "button": "Сұрау",
+    "button_search": "Іздеу"
+  },
+  "status": {
+    "loading": "Жүктелуде...",
+    "loading_stories": "Әңгімелер жүктелуде...",
+    "searching": "Ізделуде...",
+    "searching_web": "Интернетті іздеу...",
+    "searching_images": "Суреттерді іздеу...",
+    "searching_news": "Жаңалық көздерін іздеу...",
+    "searching_papers": "Ғылыми көздерді іздеу...",
+    "searching_shopping": "Өнімдерді іздеу...",
+    "searching_videos": "Бейнелерді іздеу...",
+    "search_complete": "Іздеу аяқталды.",
+    "search_failed": "Іздеу сәтсіз аяқталды.",
+    "answer_ready": "Жауап дайын.",
+    "fetching_article": "Мақаланы алу...",
+    "fetching_publisher": "Баспа мақаласын алу...",
+    "resolving_article": "Мақаланы шешу...",
+    "resolving_gn": "Google News сілтемесін шешу...",
+    "rewriting": "Мақаланы қайта жазу...",
+    "rewriting_korean": "Корей тілінде қайта жазу...",
+    "preparing_rewrite": "Толық қайта жазуды дайындау...",
+    "extracted_rewriting": "Шығарылған мақала мәтіні — қайта жазу...",
+    "viewing_prior": "Алдыңғы айналымды қарау — төменде қосымша сұрау жасаңыз."
+  },
+  "error": {
+    "no_answer": "AI жауап жасалмады — төменде іздеу нәтижелері.",
+    "no_news": "Жаңалықтар табылмады — басқа сұрау жасаңыз.",
+    "no_stories": "Әңгімелер табылмады — басқа сұрау жасаңыз.",
+    "no_stories_category": "Бұл категория үшін әңгімелер табылмады — басқа бөлімді таңдаңыз.",
+    "rewrite_empty": "Мақала қайта жазу бос мәтін қайтарды.",
+    "rewrite_failed": "Мақаланы қайта жаза алмады",
+    "load_news_failed": "Жаңалықтарды жүктей алмады — серверді тексеріңіз.",
+    "model_not_found": "Модель табылмады — конфигурацияланған модель үшін ollama pull командасын іске қосыңыз, немесе Опциялардан басқа модельді таңдаңыз.",
+    "ollama_not_running": "Ollama жұмыс істемейді — жауаптар тек іздеу бойынша болады. Бастау: ollama serve",
+    "invalid_thread": "Жарамсыз жіп JSON.",
+    "enter_question": "Сұрақ енгізіңіз.",
+    "enter_search": "Іздеу терминін енгізіңіз."
+  },
+  "article": {
+    "sources": "Дереккөздер",
+    "research_progress": "Зерттеу барысы",
+    "thinking": "Ойлану",
+    "answer": "Жауап",
+    "key_points": "Негізгі тармақтар",
+    "summary": "Қорытынды",
+    "related_media": "Қатысты медиа",
+    "view_more": "Көбірек {count} қарау",
+    "back": "Артқа",
+    "read_original": "Түпнұсқаны оқу",
+    "related_image": "Қатысты сурет",
+    "related": "Қатысты"
+  },
+  "discover": {
+    "updated": "Жаңартылды {time}",
+    "scope": {
+      "all": "📰 Барлығы",
+      "local": "🏠 Жергілікті",
+      "world": "🌍 Дүние"
+    },
+    "categories": {
+      "politics": "Саясат",
+      "economy": "Экономика",
+      "sports": "Спорт",
+      "world": "Дүние",
+      "entertainment": "Көңіл көтеру",
+      "tech": "Технология және ғылым",
+      "culture": "Мәдениет",
+      "health": "Денсаулық",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "технология ғылым",
+      "ai": "жасанды интеллект AI машиналық оқыту",
+      "world": "дүниежүзілік жаңалықтар халықаралық",
+      "politics": "саясат үкімет сайлау",
+      "business": "бизнес экономика компаниялар",
+      "finance": "қаржы нарықтар акция",
+      "health": "денсаулық медицина сауықтыру",
+      "climate": "климаттың өзгеруі қоршаған орта",
+      "sports": "спорт",
+      "entertainment": "көңіл көтеру жұлдыз",
+      "art": "өнер мәдениет",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Тарихты ашу",
+    "close": "Тарихты жабу",
+    "imported": "Импортталған {count}",
+    "export": "JSON экспорттау",
+    "import": "JSON импорттау",
+    "clear": "Тарихты тазалау",
+    "empty": "Сіздің сұрақтарыңыз мұнда пайда болады.",
+    "new_chat": "Жаңа чат"
+  },
+  "panel": {
+    "history": "Тарих",
+    "bookmarks": "Белгішелер",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Барлық белгішелер",
+    "empty": "Нәтижелерді мұнда сақтау үшін белгілеңіз.",
+    "export": "Экспорттау",
+    "clear_all": "Барлығын тазалау",
+    "new_collection": "Жаңа жинақ"
+  },
+  "hero": {
+    "private": "Жеке",
+    "ai_powered": "AI қуатталған",
+    "local_first": "Алдымен жергілікті"
+  },
+  "options": {
+    "model": "Модель",
+    "deep_research": "Терең зерттеу",
+    "focus": "Назар аудару",
+    "theme": "Тақырып",
+    "language": "Тіл",
+    "answer_language": "AI тілі",
+    "answer_auto": "Авто",
+    "research": "Зерттеу",
+    "fact_check": "Факт тексеру"
+  },
+  "preferences": {
+    "title": "Параметрлер",
+    "language": "Тіл",
+    "language_desc": "Қажетті интерфейс тілін таңдаңыз",
+    "language_storage": "Интерфейс тілі браузеріңізде сақталады.",
+    "branding": "Брендинг",
+    "branding_desc": "Қолданба атауын, логотипін және UI-де көрсетілетін favicon-ды теңшеу.",
+    "app_name": "Қолданба атауы",
+    "app_name_hint": "Бас тақырыпта және бет атауларында көрсетілетін атау",
+    "logo_url": "Логотип URL",
+    "logo_url_hint": "Логотип суретіңізге URL немесе жол (әдепкі үшін бос қалдырыңыз)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Сіздің favicon-ыңызға URL немесе жол (браузердің әдепкісі үшін бос қалдырыңыз)",
+    "appearance": "Көрініс",
+    "appearance_desc": "Көрнекі стиль мен макетті теңшеу.",
+    "theme": "Тақырып",
+    "font_size": "Шрифт өлшемі",
+    "results_layout": "Нәтижелер макеті",
+    "search": "Іздеу",
+    "search_desc": "Барлық іздеулерге қолданылатын әдепкі параметрлер.",
+    "ui_language": "UI тілі",
+    "ui_language_hint": "Интерфейс тілі (браузердің localStorage-да сақталады)",
+    "interface_language": "Интерфейс тілі",
+    "stored_in_browser": "Браузерде сақталған (localStorage)",
+    "search_defaults": "Іздеу әдепкілері",
+    "search_language": "Іздеу тілі",
+    "search_language_hint": "авто = сұраудан анықтау (Хангыль → ko-KR); немесе барлығы, немесе ko-KR сияқты фиксирленген локаль",
+    "fallback_language": "Резервтік тіл коды",
+    "fallback_language_hint": "Авто-анықтау нәтижесіз болғанда қолданылады",
+    "safe_search": "Қауіпсіз іздеу",
+    "safe_off": "Өшірулі",
+    "safe_moderate": "Орташа",
+    "safe_strict": "Қатаң",
+    "results_per_engine": "Әр қозғалтқышқа нәтижелер",
+    "ai": "AI",
+    "ai_desc": "Жауап синтезі мен мақала қайта жазу үшін AI модельдерін конфигурациялау.",
+    "ai_provider": "Жеткізуші",
+    "ai_provider_local": "Жергілікті (Ollama)",
+    "ai_provider_custom": "Басқа",
+    "ai_base_url": "API Негізгі URL",
+    "ai_base_url_hint": "Жергілікті: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Кілті",
+    "ai_api_key_hint": "Бұлт жеткізушілері үшін қажет (OpenAI, Anthropic және т.б.)",
+    "ai_model": "Модель",
+    "ai_model_hint": "Жауап синтезі мен сұрау кеңейту үшін чат/нұсқаулық моделі",
+    "ai_article_model": "Мақала моделі",
+    "ai_article_model_hint": "Толық бет жаңалық мақалаларын қайта жазу моделі (негізгі модельге әдепкі)",
+    "ai_timeout": "Уақыт аяқталуы (секунд)",
+    "ai_timeout_hint": "Модель шақырулары үшін сұрау бойынша уақыт аяқталуы",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Мүмкіндіктер",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Жаңалықтар",
+    "news_desc": "Жаңалықтарды жинау және мақала параметрлері.",
+    "news_per_source": "Дереккөздер бойынша мақалалар",
+    "news_freshness": "Жаңалықтың жаңа болуының жартылай өмірі (сағат)",
+    "news_freshness_weight": "Жаңалықтың жаңа болуының салмағы",
+    "news_dedup": "Дедуп ұқсастық шегі",
+    "news_max_age": "Максималды жас (күн)",
+    "news_cache_ttl": "Кэш TTL (секунд)",
+    "news_enrich_max": "Байыту үшін максималды мақалалар",
+    "engines": "Іздеу қозғалтқыштары",
+    "engines_desc": "Қозғалтқыштарды қосу/өшіру және олардың рейтинг салмақтарын реттеу. Жоғары салмақ = нәтиже тәртібіне көбірек әсер.",
+    "engine": "қозғалтқыш",
+    "categories": "категориялар",
+    "weight": "салмақ",
+    "privacy": "Жеке өмір",
+    "privacy_desc": "Деректеріңіз қалай өңделетінін бақылау.",
+    "proxy_images": "Суреттерді прокси арқылы",
+    "proxy_images_hint": "Суреттерді сервер арқылы бағыттау, IP-ді үшінші тараптардан жасыру үшін",
+    "remove_trackers": "Трекер параметрлерін жою",
+    "remove_trackers_hint": "URL-дан UTM және басқа трекер параметрлерін алып тастау",
+    "save_history": "Іздеу тарихын сақтау",
+    "save_history_hint": "Іздеулерді жергілікті түрде браузерде сақтау (серверге жіберілмейді)",
+    "clear_data": "Деректерді тазалау",
+    "clear_localstorage": "Жергілікті сақтау орнын тазалау",
+    "clear_indexeddb": "IndexedDB-ді тазалау",
+    "shortcuts": "Пернетақта комбинациялары",
+    "shortcuts_desc": "Күшті пайдаланушылар үшін жылдам қол жеткізу кілттері.",
+    "shortcut_focus_search": "Іздеу жолағына назар аудару",
+    "shortcut_close": "Панельді жабу / Болдырмау",
+    "shortcut_navigate": "Нәтижелерді навигациялау",
+    "shortcut_open": "Таңдалған нәтижені ашу",
+    "shortcut_new_tab": "Жаңа қойындыда ашу",
+    "shortcut_switch_mode": "Іздеу режимін ауыстыру",
+    "shortcut_help": "Бұл көмекті көрсету",
+    "server": "Сервер",
+    "server_desc": "Сервер конфигурациясы және желі параметрлері.",
+    "bind_address": "Байланыс адресі",
+    "port": "Порт",
+    "max_connections": "Максималды байланыстар",
+    "image_proxy": "Сурет проксиін қосу",
+    "cache_backend": "Кэш артқы жағы",
+    "cache_dir": "Кэш директориясы",
+    "redis_url": "Redis URL",
+    "advanced": "Алдын ала",
+    "advanced_desc": "Кэш және уақыт аяқталу параметрлері.",
+    "cache_ttl": "Кэш TTL (секунд)",
+    "cache_ttl_hint": "Нәтиже кэшінің өмір сүру уақыты (0 кэштеуді өшіреді)",
+    "request_timeout": "Сұрау уақыты (секунд)",
+    "request_timeout_hint": "Әр қозғалтқыш үшін желі уақытының аяқталуы",
+    "save": "Параметрлерді сақтау",
+    "saved": "Сақталды",
+    "saved_msg": "settings.yml-ге жазылды және жаңа іздеулерге қолданылды.",
+    "server_settings": "Бұл параметрлер сервер жағында сақталады",
+    "raw_config": "Конфигурация JSON",
+    "stats": "Статистика",
+    "home": "Басты бет",
+    "logout": "Шығу",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Жалпы",
+    "academic": "Ғылыми",
+    "writing": "Жазу",
+    "code": "Код"
+  },
+  "footer": {
+    "grounded_answers": "Сіздің жергілікті моделіңізден алынған негізделген жауаптар — 200+ іздеу қозғалтқышы, сұрау журналы жоқ.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ және басқалардан ғылыми мақалалар.",
+    "news_digest": "Жаңалықтар жинағы: мақала беттерін алады, жергілікті түрде Ollama арқылы қорытындыларды қайта жазады — тек үлкен суреттер, favicon-ды үлкейту жоқ.",
+    "images": "Wikimedia Commons сурет іздеу — жеке үшін прокси арқылы кішірейтілген суреттер.",
+    "api_docs": "API құжаттары",
+    "status": "Статус",
+    "version": "Нұсқа",
+    "engines_count": "232 қозғалтқыш"
+  },
+  "examples": {
+    "try": "Мысалды сынап көріңіз",
+    "general": [
+      {
+        "q": "Rust асинхронды бағдарламалау үздік тәжірибелері",
+        "label": "Rust асинхронды"
+      },
+      {
+        "q": "2025 жылғы соңғы LLM зерттеу мақалалары",
+        "label": "Соңғы LLM мақалалары"
+      },
+      {
+        "q": "DNS қалай жұмыс істейді",
+        "label": "DNS қалай жұмыс істейді"
+      }
+    ],
+    "papers": [
+      {
+        "q": "2025 жылғы соңғы LLM зерттеу мақалалары",
+        "label": "Соңғы LLM мақалалары"
+      },
+      {
+        "q": "CRISPR ген редакциялау шолуы",
+        "label": "CRISPR шолуы"
+      },
+      {
+        "q": "трансформатор архитектурасы шолуы",
+        "label": "Трансформатор шолуы"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI реттеуі",
+        "label": "AI реттеуі"
+      },
+      {
+        "q": "Корея технология жаңалықтары",
+        "label": "Корея технологиясы"
+      },
+      {
+        "q": "климат саясаты жаңартулары",
+        "label": "Климат саясаты"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Сіз үшін қызығушылықтар",
+    "add_placeholder": "Қызығушылық қосу...",
+    "empty": "Іздеу кезінде қызығушылықтар автоматты түрде қосылады",
+    "remove": "Жою"
+  },
+  "factcheck": {
+    "title": "Факт тексеру нәтижелері",
+    "checking": "Талдау...",
+    "analyzing": "Қарама-қайшылықтар үшін дереккөздерді талдау...",
+    "no_contradictions": "Дереккөздерде қарама-қайшылықтар табылмады",
+    "found": "Қарама-қайшылықтар табылды"
+  },
+  "foryou": {
+    "title": "Сіз үшін",
+    "based_on": "Негізінде: {interests}",
+    "no_interests": "Әлі қызығушылықтар жоқ. Қызығушылықтарыңызды құру үшін іздеңіз!",
+    "loading": "Жеке арнаны жүктеп жатыр..."
+  },
+  "common": {
+    "search": "Іздеу",
+    "clear": "Тазалау",
+    "close": "Жабу",
+    "save": "Сақтау",
+    "cancel": "Болдырмау",
+    "loading": "Жүктелуде...",
+    "error": "Қате",
+    "retry": "Қайтадан көріңіз",
+    "more": "Көбірек",
+    "less": "Аз"
+  },
+  "trends": {
+    "title": "Қазіргі трендтер",
+    "loading": "Трендтерді жүктеп жатыр...",
+    "error": "Трендтерді жүктеуде сәтсіздік",
+    "empty": "Трендтегі тақырыптар жоқ"
+  },
+  "onboarding": {
+    "welcome": "Metasearch-ке қош келдіңіз",
+    "subtitle": "Сіздің жеке, AI қуатталған іздеу жүйеңіз",
+    "private_search": "Жеке іздеу",
+    "private_search_desc": "Сұрау журналы жоқ, ешқашан",
+    "ai_answers": "AI жауаптары",
+    "ai_answers_desc": "Жергілікті AI нәтижелерді қорытындылайды",
+    "news_digest": "Жаңалықтар жинағы",
+    "news_digest_desc": "Талдаумен бірге жинақталған жаңалықтар",
+    "local_first": "Алдымен жергілікті",
+    "local_first_desc": "Сіздің деректеріңіз құрылғыңызда қалады",
+    "get_started": "Бастау"
+  },
+  "feeds": {
+    "find": "Арналарды табу",
+    "subscribe": "Жазылу",
+    "unsubscribe": "Жазылудан шығу"
+  },
+  "errors": {
+    "load_trends": "Трендтерді жүктеуде сәтсіздік",
+    "load_feed": "Жеке арнаны жүктеуде сәтсіздік",
+    "load_global": "Жалпы арнаны жүктеуде сәтсіздік",
+    "translation": "Аударма сәтсіз аяқталды"
+  },
+  "compare": {
+    "title": "Нәтижелерді салыстыру",
+    "button": "Салыстыру",
+    "clear": "Барлығын тазалау",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

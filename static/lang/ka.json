@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "კითხვის ვებსაიტზე, პირადად"
+  },
+  "nav": {
+    "ask": "კითხე",
+    "discover": "აღმოაჩინე",
+    "history": "ისტორია",
+    "options": "პარამეტრები",
+    "classic": "კლასიკური",
+    "stats": "სტატისტიკა",
+    "preferences": "პარამეტრები"
+  },
+  "tabs": {
+    "general": "ზოგადი",
+    "images": "სურათები",
+    "videos": "ვიდეოები",
+    "papers": "მეცნიერების ნაშრომები",
+    "news": "ახალი ამბები",
+    "shopping": "შოპინგი"
+  },
+  "search": {
+    "placeholder": "კითხე რამე…",
+    "placeholder_news": "შეიყვანეთ ახალი ამბების თემა, დააწკაპეთ კითხვაზე",
+    "placeholder_images": "ძებნა სურათები…",
+    "placeholder_papers": "შეიყვანეთ კითხვა, დააწკაპეთ კითხვაზე",
+    "placeholder_general": "შეიყვანეთ კითხვა ან თემა, დააწკაპეთ კითხვაზე",
+    "placeholder_shopping": "ძებნა პროდუქტები…",
+    "placeholder_videos": "ძებნა ვიდეოები…",
+    "button": "კითხე",
+    "button_search": "ძებნა"
+  },
+  "status": {
+    "loading": "იტვირთება…",
+    "loading_stories": "იტვირთება ისტორიები…",
+    "searching": "ძებნა…",
+    "searching_web": "ძებნა ვებსაიტზე…",
+    "searching_images": "ძებნა სურათებზე…",
+    "searching_news": "ძებნა ახალი ამბების წყაროებზე…",
+    "searching_papers": "ძებნა აკადემიური წყაროებზე…",
+    "searching_shopping": "ძებნა პროდუქტებზე…",
+    "searching_videos": "ძებნა ვიდეოებზე…",
+    "search_complete": "ძებნა დასრულდა.",
+    "search_failed": "ძებნა ვერ განხორციელდა.",
+    "answer_ready": "პასუხი მზადაა.",
+    "fetching_article": "სტატიის მოპოვება…",
+    "fetching_publisher": "გამომცემლის სტატიის მოპოვება…",
+    "resolving_article": "სტატიის გადაჭრა…",
+    "resolving_gn": "Google News ბმულის გადაჭრა…",
+    "rewriting": "სტატიის ხელახალი წერა…",
+    "rewriting_korean": "კორეულში ხელახალი წერა…",
+    "preparing_rewrite": "სრული ხელახალი წერის მომზადება…",
+    "extracted_rewriting": "გამოწვდილი სტატიის ტექსტი — ხელახალი წერა…",
+    "viewing_prior": "წინა ტურის ნახვა — ქვემოთ დააყენეთ დამატებითი კითხვა."
+  },
+  "error": {
+    "no_answer": "AI პასუხი არ იქნა გენერირებული — ძებნის შედეგები ქვემოთ.",
+    "no_news": "ახალი ამბები ვერ მოიძებნა — სცადეთ სხვა შეკითხვა.",
+    "no_stories": "ისტორიები ვერ მოიძებნა — სცადეთ სხვა შეკითხვა.",
+    "no_stories_category": "ამ კატეგორიისთვის ისტორიები ვერ მოიძებნა — სცადეთ სხვა კატეგორია.",
+    "rewrite_empty": "სტატიის ხელახალი წერა ცარიელი ტექსტით დაბრუნდა.",
+    "rewrite_failed": "სტატიის ხელახალი წერა ვერ განხორციელდა",
+    "load_news_failed": "ახალი ამბების დატვირთვა ვერ განხორციელდა — შეამოწმეთ სერვერი.",
+    "model_not_found": "მოდელი ვერ მოიძებნა — გაწვდეთ ollama pull თქვენი კონფიგურირებული მოდელისთვის, ან აირჩიეთ სხვა პარამეტრებში.",
+    "ollama_not_running": "Ollama არ მუშაობს — პასუხები მხოლოდ ძებნის იქნება. დაიწყეთ: ollama serve",
+    "invalid_thread": "არასწორი თემა JSON.",
+    "enter_question": "შეიყვანეთ კითხვა.",
+    "enter_search": "შეიყვანეთ ძებნის ტერმინი."
+  },
+  "article": {
+    "sources": "წყაროები",
+    "research_progress": "კვლევის პროგრესი",
+    "thinking": "მოსაზრება",
+    "answer": "პასუხი",
+    "key_points": "მნიშვნელოვანი პუნქტები",
+    "summary": "შედეგები",
+    "related_media": "დაკავშირებული მედია",
+    "view_more": "ნახეთ {count} მეტი",
+    "back": "უკან",
+    "read_original": "წაიკითხეთ ორიგინალი",
+    "related_image": "დაკავშირებული სურათი",
+    "related": "დაკავშირებული"
+  },
+  "discover": {
+    "updated": "განახლებულია {time}",
+    "scope": {
+      "all": "📰 ყველა",
+      "local": "🏠 ადგილობრივი",
+      "world": "🌍 მსოფლიო"
+    },
+    "categories": {
+      "politics": "პოლიტიკა",
+      "economy": "ეკონომიკა",
+      "sports": "სპორტი",
+      "world": "მსოფლიო",
+      "entertainment": "გასართობი",
+      "tech": "ტექნოლოგია და მეცნიერება",
+      "culture": "კულტურა",
+      "health": "ჯანმრთელობა",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ტექნოლოგია მეცნიერება",
+      "ai": "ხელოვნური ინტელექტი AI მანქანური სწავლება",
+      "world": "მსოფლიო ახალი ამბები საერთაშორისო",
+      "politics": "პოლიტიკა მთავრობა არჩევნები",
+      "business": "ბიზნესი ეკონომიკა კომპანიები",
+      "finance": "ფინანსები ბაზრები აქციები",
+      "health": "ჯანმრთელობა მედიცინა კეთილდღეობა",
+      "climate": "კლიმატის ცვლილება გარემო",
+      "sports": "სპორტი",
+      "entertainment": "გასართობი ცნობილი პირები",
+      "art": "ხელოვნება კულტურა",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "ისტორიის გახსნა",
+    "close": "ისტორიის დახურვა",
+    "imported": "იმპორტირებული {count}",
+    "export": "ექსპორტი JSON",
+    "import": "იმპორტი JSON",
+    "clear": "ისტორიის გასუფთავება",
+    "empty": "თქვენი კითხვები აქ გამოჩნდება.",
+    "new_chat": "ახალი საუბარი"
+  },
+  "panel": {
+    "history": "ისტორია",
+    "bookmarks": "ბუკმარკები",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "ყველა ბუკმარკი",
+    "empty": "ბუკმარკების შედეგები აქ შეინახეთ.",
+    "export": "ექსპორტი",
+    "clear_all": "ყველას გასუფთავება",
+    "new_collection": "ახალი კოლექცია"
+  },
+  "hero": {
+    "private": "პირადი",
+    "ai_powered": "AI-ძალად",
+    "local_first": "ადგილობრივი პირველი"
+  },
+  "options": {
+    "model": "მოდელი",
+    "deep_research": "ღრმა კვლევა",
+    "focus": "ფოკუსი",
+    "theme": "თემა",
+    "language": "ენა",
+    "answer_language": "AI ენა",
+    "answer_auto": "ავტომატური",
+    "research": "კვლევა",
+    "fact_check": "ფაქტების შემოწმება"
+  },
+  "preferences": {
+    "title": "პარამეტრები",
+    "language": "ენა",
+    "language_desc": "აირჩიეთ სასურველი ინტერფეისის ენა",
+    "language_storage": "ინტერფეისის ენა ინახება თქვენს ბრაუზერში.",
+    "branding": "ბრენდინგი",
+    "branding_desc": "კონფიგურაცია აპლიკაციის სახელი, ლოგო და ფავიკონი, რომელიც გამოჩნდება UI-ში.",
+    "app_name": "აპლიკაციის სახელი",
+    "app_name_hint": "სახელი, რომელიც გამოჩნდება სათაურებში და გვერდის სათაურებში",
+    "logo_url": "ლოგოს URL",
+    "logo_url_hint": "URL ან გზა თქვენი ლოგოს სურათისკენ (დატოვეთ ცარიელი დეფოლტისთვის)",
+    "favicon_url": "ფავიკონის URL",
+    "favicon_url_hint": "URL ან გზა თქვენი ფავიკონისკენ (დატოვეთ ცარიელი ბრაუზერის დეფოლტისთვის)",
+    "appearance": "გამოჩენა",
+    "appearance_desc": "კონფიგურაცია ვიზუალური სტილი და განლაგება.",
+    "theme": "თემა",
+    "font_size": "ფონტის ზომა",
+    "results_layout": "შედეგების განლაგება",
+    "search": "ძებნა",
+    "search_desc": "დეფოლტური პარამეტრები ყველა ძებნაზე.",
+    "ui_language": "UI ენა",
+    "ui_language_hint": "ინტერფეისის ენა (შენახულია ბრაუზერის localStorage-ში)",
+    "interface_language": "ინტერფეისის ენა",
+    "stored_in_browser": "შენახულია ბრაუზერში (localStorage)",
+    "search_defaults": "ძებნის დეფოლტები",
+    "search_language": "ძებნის ენა",
+    "search_language_hint": "ავტომატური = გამოვლენა შეკითხვის მიხედვით (Hangul → ko-KR); ან ყველა, ან ფიქსირებული ლოკალით როგორიცაა ko-KR",
+    "fallback_language": "Fallback ენის კოდი",
+    "fallback_language_hint": "გამოყენებული, როდესაც ავტომატური გამოვლენა არ არის გარკვეული",
+    "safe_search": "უსაფრთხო ძებნა",
+    "safe_off": "გამორთული",
+    "safe_moderate": "მოდერატული",
+    "safe_strict": "კაცური",
+    "results_per_engine": "შედეგები თითო ძრავისთვის",
+    "ai": "AI",
+    "ai_desc": "კონფიგურაცია AI მოდელების პასუხების სინთეზისთვის და სტატიის ხელახალი წერისთვის.",
+    "ai_provider": "მომწოდებელი",
+    "ai_provider_local": "ადგილობრივი (Ollama)",
+    "ai_provider_custom": "კონფიგურირებული",
+    "ai_base_url": "API ბაზის URL",
+    "ai_base_url_hint": "ადგილობრივი: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API გასაღები",
+    "ai_api_key_hint": "მطلოვანია ღრუბლოვანი მომწოდებლებისთვის (OpenAI, Anthropic და სხვ.)",
+    "ai_model": "მოდელი",
+    "ai_model_hint": "ჩატ/ინსტრუქცია მოდელი პასუხების სინთეზისთვის და შეკითხვის გაფართოებისთვის",
+    "ai_article_model": "სტატიის მოდელი",
+    "ai_article_model_hint": "მოდელი სრული გვერდის ახალი ამბების სტატიის ხელახალი წერისთვის (დეფოლტად მთავარ მოდელს)",
+    "ai_timeout": "დროის გასვლის დრო (წამებში)",
+    "ai_timeout_hint": "მოდელების ზარისთვის მოთხოვნის დრო",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "მახასიათებლები",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "ახალი ამბები",
+    "news_desc": "ახალი ამბების აგრეგაცია და სტატიის პარამეტრები.",
+    "news_per_source": "სტატიები თითო წყაროდან",
+    "news_freshness": "ახალი ამბების სიხშირე (საათებში)",
+    "news_freshness_weight": "ახალი ამბების სიხშირის წონა",
+    "news_dedup": "დედუპის მსგავსების ზღვრები",
+    "news_max_age": "მაქსიმალური ასაკი (დღეებში)",
+    "news_cache_ttl": "კეშის TTL (წამებში)",
+    "news_enrich_max": "მაქსიმალური სტატიები გასამდიდრებლად",
+    "engines": "ძებნის ძრავები",
+    "engines_desc": "ჩართეთ/გამორთეთ ძრავები და დაარეგულირეთ მათი რეიტინგის წონები. მაღალი წონა = მეტი გავლენა შედეგების წესრიგზე.",
+    "engine": "ძრავა",
+    "categories": "კატეგორიები",
+    "weight": "წონა",
+    "privacy": "კონფიდენციალურობა",
+    "privacy_desc": "კონტროლი როგორ უნდა მოექცეთ თქვენს მონაცემებს.",
+    "proxy_images": "სურათების პროქსი",
+    "proxy_images_hint": "სურათები სერვერის საშუალებით, რათა დაიმალოს თქვენი IP მესამე მხარეებისგან",
+    "remove_trackers": "მონიტორინგის პარამეტრების მოშლა",
+    "remove_trackers_hint": "UTM და სხვა მონიტორინგის პარამეტრების მოშლა URL-ებიდან",
+    "save_history": "ძებნის ისტორიის შენახვა",
+    "save_history_hint": "შენახეთ ძებნები ადგილობრივად ბრაუზერში (არასდროს გაიგზავნება სერვერზე)",
+    "clear_data": "მონაცემების გასუფთავება",
+    "clear_localstorage": "ადგილობრივი შენახვის გასუფთავება",
+    "clear_indexeddb": "IndexedDB-ის გასუფთავება",
+    "shortcuts": "კლავიატურის მოკლე გზები",
+    "shortcuts_desc": "სწრაფი წვდომის გასაღებები ძლიერი მომხმარებლებისთვის.",
+    "shortcut_focus_search": "ძებნის ყუთზე ფოკუსირება",
+    "shortcut_close": "პანელის დახურვა / გაუქმება",
+    "shortcut_navigate": "შედეგების ნავიგაცია",
+    "shortcut_open": "გადაიყვანეთ არჩეული შედეგი",
+    "shortcut_new_tab": "ახალ ტაბში გახსნა",
+    "shortcut_switch_mode": "ძებნის რეჟიმის შეცვლა",
+    "shortcut_help": "აჩვენეთ ეს დახმარება",
+    "server": "სერვერი",
+    "server_desc": "სერვერის კონფიგურაცია და ქსელის პარამეტრები.",
+    "bind_address": "ბმული მისამართი",
+    "port": "პორტი",
+    "max_connections": "მაქსიმალური კავშირები",
+    "image_proxy": "სურათების პროქსის ჩართვა",
+    "cache_backend": "კეშის უკანა მხარე",
+    "cache_dir": "კეშის დირექტორია",
+    "redis_url": "Redis URL",
+    "advanced": "განვითარებული",
+    "advanced_desc": "კეშისა და დროის გასვლის პარამეტრები.",
+    "cache_ttl": "კეშის TTL (წამებში)",
+    "cache_ttl_hint": "შედეგების კეშის სიცოცხლის დრო (0 გამორთავს კეშს)",
+    "request_timeout": "მოთხოვნის დროის გასვლის დრო (წამებში)",
+    "request_timeout_hint": "თითო ძრავის ქსელის დროის გასვლის დრო",
+    "save": "შენახვა პარამეტრები",
+    "saved": "შენახულია",
+    "saved_msg": "წერილი settings.yml-ში და გამოყენებულია ახალ ძებნებზე.",
+    "server_settings": "ეს პარამეტრები შენახულია სერვერზე",
+    "raw_config": "კონფიგურაციის JSON",
+    "stats": "სტატისტიკა",
+    "home": "მთავარი",
+    "logout": "გამოსვლა",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "ზოგადი",
+    "academic": "აკადემიური",
+    "writing": "წერა",
+    "code": "კოდი"
+  },
+  "footer": {
+    "grounded_answers": "გაგზავნილი პასუხები თქვენი ადგილობრივი მოდელიდან — 200+ ძებნის ძრავა, ნულოვანი შეკითხვის რეგისტრაცია.",
+    "academic_papers": "აკადემიური ნაშრომები arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ და სხვა.",
+    "news_digest": "ახალი ამბების მიმოხილვა: სტატიის გვერდების მოპოვება, ადგილობრივად ხელახალი წერა Ollama-ს საშუალებით — დიდი სურათები მხოლოდ, არანაირი ფავიკონის გაზრდა.",
+    "images": "Wikimedia Commons სურათების ძებნა — მინიატურები პროქსირებული კონფიდენციალურობისთვის.",
+    "api_docs": "API დოკუმენტაცია",
+    "status": "სტატუსი",
+    "version": "ვერსია",
+    "engines_count": "232 ძრავა"
+  },
+  "examples": {
+    "try": "ცადეთ მაგალითი",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "ბოლო LLM ნაშრომები"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "როგორ მუშაობს DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "ბოლო LLM ნაშრომები"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR მიმოხილვა"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "ტრანსფორმერის კვლევა"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI რეგულაცია"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "კორეა ტექნოლოგიური"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "კლიმატის პოლიტიკის განახლება"
+      }
+    ]
+  },
+  "interests": {
+    "title": "ინტერესები (თქვენთვის)",
+    "add_placeholder": "დაამატეთ ინტერესი...",
+    "empty": "ინტერესები ავტომატურად ემატება თქვენი ძებნის პროცესში",
+    "remove": "წაშლა"
+  },
+  "factcheck": {
+    "title": "ფაქტების შემოწმების შედეგები",
+    "checking": "ანალიზი...",
+    "analyzing": "წყაროების ანალიზი წინააღმდეგობებისთვის...",
+    "no_contradictions": "წყაროებში წინააღმდეგობები ვერ მოიძებნა",
+    "found": "წინააღმდეგობები მოიძებნა"
+  },
+  "foryou": {
+    "title": "თქვენთვის",
+    "based_on": "მიხედვით: {interests}",
+    "no_interests": "ინტერესები ჯერ არ გაქვთ. ძებნა დაიწყეთ, რათა შექმნათ თქვენი ინტერესები!",
+    "loading": "იტვირთება პერსონალიზებული ფიდი..."
+  },
+  "common": {
+    "search": "ძებნა",
+    "clear": "გასუფთავება",
+    "close": "დახურვა",
+    "save": "შენახვა",
+    "cancel": "გაუქმება",
+    "loading": "იტვირთება...",
+    "error": "შეცდომა",
+    "retry": "მეორე მცდელობა",
+    "more": "მეტი",
+    "less": "ნაკლები"
+  },
+  "trends": {
+    "title": "მიმდინარე ტენდენციები",
+    "loading": "იტვირთება ტენდენციები...",
+    "error": "ტენდენციების დატვირთვა ვერ განხორციელდა",
+    "empty": "არ არსებობს მიმდინარე თემები"
+  },
+  "onboarding": {
+    "welcome": "კეთილი იყოს თქვენი მობრძანება Metasearch-ში",
+    "subtitle": "თქვენი პირადი, AI-ძალად ძებნის ძრავა",
+    "private_search": "პირადი ძებნა",
+    "private_search_desc": "არანაირი შეკითხვის რეგისტრაცია, არასდროს",
+    "ai_answers": "AI პასუხები",
+    "ai_answers_desc": "ადგილობრივი AI აჯამებს შედეგებს",
+    "news_digest": "ახალი ამბების მიმოხილვა",
+    "news_digest_desc": "კურირებული ახალი ამბები ანალიზით",
+    "local_first": "ადგილობრივი პირველი",
+    "local_first_desc": "თქვენი მონაცემები თქვენს მოწყობილობაზე რჩება",
+    "get_started": "დაიწყეთ"
+  },
+  "feeds": {
+    "find": "იპოვეთ ფიდები",
+    "subscribe": "გამოწერა",
+    "unsubscribe": "გამოწერის გაუქმება"
+  },
+  "errors": {
+    "load_trends": "ტენდენციების დატვირთვა ვერ განხორციელდა",
+    "load_feed": "პერსონალიზებული ფიდის დატვირთვა ვერ განხორციელდა",
+    "load_global": "მსოფლიო ფიდის დატვირთვა ვერ განხორციელდა",
+    "translation": "თარგმნა ვერ განხორციელდა"
+  },
+  "compare": {
+    "title": "შედარება შედეგები",
+    "button": "შედარება",
+    "clear": "ყველას გასუფთავება",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "私密搜索网络"
+  },
+  "nav": {
+    "ask": "提问",
+    "discover": "发现",
+    "history": "历史",
+    "options": "设置",
+    "classic": "经典",
+    "stats": "统计",
+    "preferences": "设置"
+  },
+  "tabs": {
+    "general": "综合",
+    "images": "图片",
+    "videos": "视频",
+    "papers": "论文",
+    "news": "新闻",
+    "shopping": "购物"
+  },
+  "search": {
+    "placeholder": "问任何问题…",
+    "placeholder_news": "输入新闻主题，按提问",
+    "placeholder_images": "搜索图片…",
+    "placeholder_papers": "输入问题，按提问",
+    "placeholder_general": "输入问题或主题，按提问",
+    "placeholder_shopping": "搜索商品…",
+    "placeholder_videos": "搜索视频…",
+    "button": "提问",
+    "button_search": "搜索"
+  },
+  "status": {
+    "loading": "加载中…",
+    "loading_stories": "加载文章中…",
+    "searching": "搜索中…",
+    "searching_web": "正在搜索网页…",
+    "searching_images": "正在搜索图片…",
+    "searching_news": "正在搜索新闻…",
+    "searching_papers": "正在搜索学术资源…",
+    "searching_shopping": "正在搜索商品…",
+    "searching_videos": "正在搜索视频…",
+    "search_complete": "搜索完成。",
+    "search_failed": "搜索失败。",
+    "answer_ready": "回答已生成。",
+    "fetching_article": "正在获取文章…",
+    "fetching_publisher": "正在获取原文…",
+    "resolving_article": "正在解析文章…",
+    "resolving_gn": "正在解析 Google 新闻链接…",
+    "rewriting": "正在改写文章…",
+    "rewriting_korean": "正在改写为韩语…",
+    "preparing_rewrite": "正在准备完整改写…",
+    "extracted_rewriting": "已提取文章内容 — 正在改写…",
+    "viewing_prior": "正在查看之前的对话 — 可在下方追问。"
+  },
+  "error": {
+    "no_answer": "未生成 AI 回答 — 请查看下方搜索结果。",
+    "no_news": "未找到相关新闻 — 请尝试其他关键词。",
+    "no_stories": "未找到相关文章 — 请尝试其他关键词。",
+    "no_stories_category": "该分类下没有文章 — 请尝试其他分类。",
+    "rewrite_empty": "文章改写返回为空。",
+    "rewrite_failed": "无法改写文章",
+    "load_news_failed": "无法加载新闻 — 请检查服务器状态。",
+    "model_not_found": "未找到模型 — 请运行 ollama pull 拉取所需模型，或在设置中选择其他模型。",
+    "ollama_not_running": "Ollama 未运行 — 仅返回搜索结果。启动命令: ollama serve",
+    "invalid_thread": "无效的对话记录。",
+    "enter_question": "请输入问题。",
+    "enter_search": "请输入搜索词。"
+  },
+  "article": {
+    "sources": "来源",
+    "research_progress": "研究进度",
+    "thinking": "思考中",
+    "answer": "回答",
+    "key_points": "要点",
+    "summary": "摘要",
+    "related_media": "相关媒体",
+    "view_more": "查看更多 ({count})",
+    "back": "返回",
+    "read_original": "查看原文",
+    "related_image": "相关图片",
+    "related": "Related"
+  },
+  "discover": {
+    "updated": "{time} 更新",
+    "load_more": "加载更多",
+    "scope": {
+      "all": "📰 全部",
+      "local": "🇨🇳 国内",
+      "world": "🌍 国际"
+    },
+    "categories": {
+      "politics": "政治",
+      "economy": "经济",
+      "sports": "体育",
+      "world": "国际",
+      "entertainment": "娱乐",
+      "tech": "科技",
+      "culture": "文化",
+      "health": "健康",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "科技 技术",
+      "ai": "人工智能 AI 机器学习",
+      "world": "国际新闻 世界",
+      "politics": "政治 政府 选举",
+      "business": "商业 经济 企业",
+      "finance": "金融 股市 投资",
+      "health": "健康",
+      "telegram": "Telegram",
+      "climate": "气候变化 环境",
+      "sports": "体育 运动",
+      "entertainment": "娱乐 明星",
+      "art": "艺术 文化",
+      "top": "头条新闻 热门 最新"
+    }
+  },
+  "history": {
+    "open": "打开历史",
+    "close": "关闭历史",
+    "imported": "已导入 {count} 条",
+    "export": "导出",
+    "import": "导入",
+    "clear": "清除",
+    "empty": "Your questions appear here.",
+    "new_chat": "New chat"
+  },
+  "panel": {
+    "history": "History",
+    "bookmarks": "Bookmarks",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "All Bookmarks",
+    "empty": "Bookmark results to save them here.",
+    "export": "Export",
+    "clear_all": "Clear all",
+    "new_collection": "New collection"
+  },
+  "hero": {
+    "private": "隐私优先",
+    "ai_powered": "AI驱动",
+    "local_first": "本地优先"
+  },
+  "options": {
+    "model": "模型",
+    "deep_research": "深度研究",
+    "focus": "聚焦",
+    "theme": "主题",
+    "language": "语言",
+    "answer_language": "AI Language",
+    "answer_auto": "Auto",
+    "research": "研究",
+    "fact_check": "事实核查"
+  },
+  "preferences": {
+    "title": "偏好设置",
+    "language": "语言",
+    "language_desc": "选择您的界面语言",
+    "language_storage": "界面语言存储在您的浏览器中。",
+    "branding": "品牌设置",
+    "branding_desc": "自定义在UI中显示的应用名称、标志和图标",
+    "app_name": "应用程序名称",
+    "app_name_hint": "显示在标题和页面标题中的名称",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "Logo图片的URL或路径（留空使用默认值）",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "网站图标的URL或路径（留空使用浏览器默认值）",
+    "appearance": "外观",
+    "appearance_desc": "自定义视觉风格和布局",
+    "theme": "主题",
+    "font_size": "字体大小",
+    "results_layout": "结果布局",
+    "search": "搜索",
+    "search_desc": "应用于所有搜索的默认设置",
+    "ui_language": "界面语言",
+    "ui_language_hint": "界面语言（存储在浏览器localStorage中）",
+    "interface_language": "界面语言",
+    "stored_in_browser": "存储在浏览器中（localStorage）",
+    "search_defaults": "搜索默认值",
+    "search_language": "搜索语言",
+    "search_language_hint": "auto = 从查询检测；all 或固定区域如 ko-KR",
+    "fallback_language": "后备语言代码",
+    "fallback_language_hint": "当自动检测不确定时使用",
+    "safe_search": "安全搜索",
+    "safe_off": "关闭",
+    "safe_moderate": "适中",
+    "safe_strict": "严格",
+    "results_per_engine": "每个引擎的结果数",
+    "ai": "AI",
+    "ai_desc": "配置用于答案合成和文章重写的AI模型",
+    "ai_provider": "提供者",
+    "ai_provider_local": "本地（Ollama）",
+    "ai_provider_custom": "自定义",
+    "ai_base_url": "API 基础URL",
+    "ai_base_url_hint": "本地: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API密钥",
+    "ai_api_key_hint": "云服务提供商（OpenAI、Anthropic等）需要",
+    "ai_model": "模型",
+    "ai_model_hint": "用于答案合成和查询扩展的聊天/指令模型",
+    "ai_article_model": "文章模型",
+    "ai_article_model_hint": "用于新闻文章重写的模型（默认为主模型）",
+    "ai_timeout": "超时（秒）",
+    "ai_timeout_hint": "模型调用的请求超时",
+    "ai_cost_tracking": "成本追踪",
+    "ai_track_usage": "追踪令牌使用量",
+    "ai_track_usage_hint": "显示AI响应的令牌数和预估成本",
+    "ai_input_cost": "输入成本（$/百万令牌）",
+    "ai_output_cost": "输出成本（$/百万令牌）",
+    "ai_features": "功能",
+    "ai_answer_synthesis": "答案合成",
+    "ai_query_expansion": "查询扩展",
+    "ai_reranking": "重新排序",
+    "ai_clustering": "聚类",
+    "ai_vision": "视觉",
+    "news": "新闻",
+    "news_desc": "新闻聚合和文章设置",
+    "news_per_source": "每个来源的文章数",
+    "news_freshness": "新鲜度半衰期（小时）",
+    "news_freshness_weight": "新鲜度权重",
+    "news_dedup": "去重相似度阈值",
+    "news_max_age": "最大天数",
+    "news_cache_ttl": "缓存TTL（秒）",
+    "news_enrich_max": "最大丰富文章数",
+    "engines": "搜索引擎",
+    "engines_desc": "启用/禁用引擎并调整排名权重。权重越高，对结果顺序的影响越大。",
+    "engine": "引擎",
+    "categories": "分类",
+    "weight": "权重",
+    "privacy": "隐私",
+    "privacy_desc": "控制数据处理方式",
+    "proxy_images": "代理图片",
+    "proxy_images_hint": "通过服务器路由图片以隐藏您的IP",
+    "remove_trackers": "移除跟踪参数",
+    "remove_trackers_hint": "从URL中移除UTM等跟踪参数",
+    "save_history": "保存搜索历史",
+    "save_history_hint": "本地存储在浏览器中（不会发送到服务器）",
+    "clear_data": "清除数据",
+    "clear_localstorage": "清除本地存储",
+    "clear_indexeddb": "清除IndexedDB",
+    "shortcuts": "键盘快捷键",
+    "shortcuts_desc": "高级用户快捷键",
+    "shortcut_focus_search": "聚焦搜索框",
+    "shortcut_close": "关闭面板/取消",
+    "shortcut_navigate": "导航结果",
+    "shortcut_open": "打开选中结果",
+    "shortcut_new_tab": "在新标签页打开",
+    "shortcut_switch_mode": "切换搜索模式",
+    "shortcut_help": "显示帮助",
+    "server": "服务器",
+    "server_desc": "服务器配置和网络设置",
+    "bind_address": "绑定地址",
+    "port": "端口",
+    "max_connections": "最大连接数",
+    "image_proxy": "启用图片代理",
+    "cache_backend": "缓存后端",
+    "cache_dir": "缓存目录",
+    "redis_url": "Redis URL",
+    "advanced": "高级",
+    "advanced_desc": "缓存和超时设置",
+    "cache_ttl": "缓存TTL（秒）",
+    "cache_ttl_hint": "结果缓存有效期（0禁用缓存）",
+    "request_timeout": "请求超时（秒）",
+    "request_timeout_hint": "每个引擎的网络超时",
+    "save": "保存设置",
+    "saved": "已保存",
+    "saved_msg": "已写入settings.yml并应用于新搜索。",
+    "server_settings": "这些设置保存在服务器端：",
+    "raw_config": "配置JSON",
+    "stats": "统计",
+    "home": "首页",
+    "logout": "登出",
+    "ai_embedding_model": "嵌入模型",
+    "ai_vision_model": "视觉模型",
+    "ai_answer_top_n": "答案前N名",
+    "ai_answer_top_n_hint": "用于答案合成的顶部结果数",
+    "ai_news_prompt_ko": "韩语新闻分析提示",
+    "ai_news_prompt_ko_hint": "韩语新闻文章分析提示",
+    "ai_news_prompt_ko_placeholder": "留空使用默认提示。",
+    "ai_news_prompt_en": "英语新闻分析提示",
+    "ai_news_prompt_en_hint": "英语新闻文章分析提示",
+    "ai_news_prompt_en_placeholder": "留空使用默认提示。",
+    "ai_answer_language": "答案语言",
+    "ai_answer_language_hint": "AI生成响应的目标语言",
+    "ai_answer_auto": "自动检测"
+  },
+  "focus": {
+    "general": "综合",
+    "academic": "学术",
+    "writing": "写作",
+    "code": "代码"
+  },
+  "footer": {
+    "grounded_answers": "来自本地模型的可靠回答 — 200+搜索引擎，零查询记录。",
+    "academic_papers": "学术论文来源：arXiv、OpenAlex、Crossref、Europe PMC、Semantic Scholar、DOAJ 等。",
+    "news_digest": "新闻摘要：获取文章页面，通过 Ollama 本地改写 — 仅大图，无图标放大。",
+    "images": "Wikimedia Commons 图片搜索 — 缩略图通过代理获取以保护隐私。",
+    "api_docs": "API文档",
+    "status": "状态",
+    "version": "版本",
+    "engines_count": "232个引擎"
+  },
+  "examples": {
+    "try": "试试这些例子",
+    "general": [
+      {
+        "q": "Rust 异步编程最佳实践",
+        "label": "Rust 异步"
+      },
+      {
+        "q": "2025年最新大语言模型研究论文",
+        "label": "最新 LLM 论文"
+      },
+      {
+        "q": "DNS 的工作原理",
+        "label": "DNS 原理"
+      }
+    ],
+    "papers": [
+      {
+        "q": "2025年最新大语言模型研究论文",
+        "label": "最新 LLM 论文"
+      },
+      {
+        "q": "CRISPR 基因编辑综述论文",
+        "label": "CRISPR 综述"
+      },
+      {
+        "q": "Transformer 架构综述",
+        "label": "Transformer 综述"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI 监管政策",
+        "label": "AI 监管"
+      },
+      {
+        "q": "中国科技新闻",
+        "label": "中国科技"
+      },
+      {
+        "q": "气候政策动态",
+        "label": "气候政策"
+      }
+    ]
+  },
+  "interests": {
+    "title": "兴趣",
+    "add_placeholder": "添加兴趣...",
+    "empty": "搜索时会自动添加兴趣",
+    "remove": "删除"
+  },
+  "factcheck": {
+    "title": "事实核查结果",
+    "checking": "分析中...",
+    "analyzing": "正在分析来源矛盾...",
+    "no_contradictions": "来源中未发现矛盾",
+    "found": "发现矛盾"
+  },
+  "foryou": {
+    "title": "为你推荐",
+    "based_on": "基于: {interests}",
+    "no_interests": "还没有兴趣。搜索以建立你的兴趣!",
+    "loading": "正在加载个性化内容..."
+  },
+  "common": {
+    "search": "Search",
+    "clear": "Clear",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "more": "More",
+    "less": "Less"
+  },
+  "trends": {
+    "title": "Trending Now",
+    "loading": "Loading trends...",
+    "error": "Failed to load trends",
+    "empty": "No trending topics"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Metasearch",
+    "subtitle": "Your private, AI-powered search engine",
+    "private_search": "Private Search",
+    "private_search_desc": "No query logging, ever",
+    "ai_answers": "AI Answers",
+    "ai_answers_desc": "Local AI summarizes results",
+    "news_digest": "News Digest",
+    "news_digest_desc": "Curated news with analysis",
+    "local_first": "Local-First",
+    "local_first_desc": "Your data stays on your device",
+    "get_started": "Get Started"
+  },
+  "feeds": {
+    "find": "Find Feeds",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe"
+  },
+  "errors": {
+    "load_trends": "Failed to load trends",
+    "load_feed": "Failed to load personalized feed",
+    "load_global": "Failed to load global feed",
+    "translation": "Translation failed"
+  },
+  "compare": {
+    "title": "Compare Results",
+    "button": "Compare",
+    "clear": "Clear All",
+    "global_title": "🌍 全球视角",
+    "global_desc": "比较不同地区的搜索结果差异",
+    "select_all": "全部",
+    "clear_all": "清除",
+    "run": "比较"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

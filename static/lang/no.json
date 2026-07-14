@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Spør nettet, privat"
+  },
+  "nav": {
+    "ask": "Spør",
+    "discover": "Oppdag",
+    "history": "Historikk",
+    "options": "Alternativer",
+    "classic": "Klassisk",
+    "stats": "Statistikk",
+    "preferences": "Preferanser"
+  },
+  "tabs": {
+    "general": "Generelt",
+    "images": "Bilder",
+    "videos": "Videoer",
+    "papers": "Artikler",
+    "news": "Nyheter",
+    "shopping": "Shopping"
+  },
+  "search": {
+    "placeholder": "Spør om hva som helst…",
+    "placeholder_news": "Skriv inn et nyhetsemne, trykk Spør",
+    "placeholder_images": "Søk etter bilder…",
+    "placeholder_papers": "Skriv inn et spørsmål, trykk Spør",
+    "placeholder_general": "Skriv inn et spørsmål eller emne, trykk Spør",
+    "placeholder_shopping": "Søk etter produkter…",
+    "placeholder_videos": "Søk etter videoer…",
+    "button": "Spør",
+    "button_search": "Søk"
+  },
+  "status": {
+    "loading": "Laster…",
+    "loading_stories": "Laster historier…",
+    "searching": "Søker…",
+    "searching_web": "Søker på nettet…",
+    "searching_images": "Søker etter bilder…",
+    "searching_news": "Søker i nyhetskilder…",
+    "searching_papers": "Søker i akademiske kilder…",
+    "searching_shopping": "Søker etter produkter…",
+    "searching_videos": "Søker etter videoer…",
+    "search_complete": "Søket er fullført.",
+    "search_failed": "Søket feilet.",
+    "answer_ready": "Svar klart.",
+    "fetching_article": "Henter artikkel…",
+    "fetching_publisher": "Henter utgiverartikkel…",
+    "resolving_article": "Løser artikkel…",
+    "resolving_gn": "Løser Google News-lenke…",
+    "rewriting": "Omskriver artikkel…",
+    "rewriting_korean": "Omskriver på koreansk…",
+    "preparing_rewrite": "Forbereder full omskrivning…",
+    "extracted_rewriting": "Utdraget artikkeltekst — omskriver…",
+    "viewing_prior": "Viser forrige omgang — still et oppfølgingsspørsmål nedenfor."
+  },
+  "error": {
+    "no_answer": "Ingen AI-svar generert — søkresultater nedenfor.",
+    "no_news": "Ingen nyheter funnet — prøv et annet søk.",
+    "no_stories": "Ingen historier funnet — prøv et annet søk.",
+    "no_stories_category": "Ingen historier funnet for denne kategorien — prøv en annen fane.",
+    "rewrite_empty": "Artikkelomskrivning returnerte tom tekst.",
+    "rewrite_failed": "Kunne ikke omskrive artikkel",
+    "load_news_failed": "Kunne ikke laste nyheter — sjekk server.",
+    "model_not_found": "Modell ikke funnet — kjør ollama pull for din konfigurerte modell, eller velg en annen i Alternativer.",
+    "ollama_not_running": "Ollama kjører ikke — svar vil være søkbare. Start: ollama serve",
+    "invalid_thread": "Ugyldig tråd JSON.",
+    "enter_question": "Skriv inn et spørsmål.",
+    "enter_search": "Skriv inn et søkeord."
+  },
+  "article": {
+    "sources": "Kilder",
+    "research_progress": "Forskningsprogresjon",
+    "thinking": "Tenker",
+    "answer": "Svar",
+    "key_points": "Nøkkelpunkter",
+    "summary": "Sammendrag",
+    "related_media": "Relatert media",
+    "view_more": "Se {count} mer",
+    "back": "Tilbake",
+    "read_original": "Les originalen",
+    "related_image": "Relatert bilde",
+    "related": "Relatert"
+  },
+  "discover": {
+    "updated": "Oppdatert {time}",
+    "scope": {
+      "all": "📰 Alle",
+      "local": "🏠 Lokalt",
+      "world": "🌍 Verden"
+    },
+    "categories": {
+      "politics": "Politikk",
+      "economy": "Økonomi",
+      "sports": "Sport",
+      "world": "Verden",
+      "entertainment": "Underholdning",
+      "tech": "Teknologi & Vitenskap",
+      "culture": "Kultur",
+      "health": "Helse",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknologi vitenskap",
+      "ai": "kunstig intelligens AI maskinlæring",
+      "world": "verdensnyheter internasjonalt",
+      "politics": "politikk regjering valg",
+      "business": "virksomhet økonomi selskaper",
+      "finance": "finans markeder aksje",
+      "health": "helse medisin velvære",
+      "climate": "klimaendringer miljø",
+      "sports": "sport",
+      "entertainment": "underholdning kjendis",
+      "art": "kunst kultur",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Åpne historikk",
+    "close": "Lukk historikk",
+    "imported": "Importert {count}",
+    "export": "Eksporter JSON",
+    "import": "Importer JSON",
+    "clear": "Tøm historikk",
+    "empty": "Dine spørsmål vises her.",
+    "new_chat": "Ny chat"
+  },
+  "panel": {
+    "history": "Historikk",
+    "bookmarks": "Bokmerker",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Alle bokmerker",
+    "empty": "Bokmerk resultater for å lagre dem her.",
+    "export": "Eksporter",
+    "clear_all": "Tøm alt",
+    "new_collection": "Ny samling"
+  },
+  "hero": {
+    "private": "Privat",
+    "ai_powered": "AI-Drevet",
+    "local_first": "Lokalt Først"
+  },
+  "options": {
+    "model": "Modell",
+    "deep_research": "Dyp forskning",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Språk",
+    "answer_language": "AI Språk",
+    "answer_auto": "Auto",
+    "research": "Forskning",
+    "fact_check": "Faktasjekk"
+  },
+  "preferences": {
+    "title": "Preferanser",
+    "language": "Språk",
+    "language_desc": "Velg ditt foretrukne grensesnittspråk",
+    "language_storage": "Grensesnittspråket lagres i nettleseren din.",
+    "branding": "Merkevare",
+    "branding_desc": "Tilpass applikasjonsnavn, logo og favicon som vises i UI.",
+    "app_name": "Applikasjonsnavn",
+    "app_name_hint": "Navn vist i overskriften og sidetitler",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "URL eller bane til logoen din (la stå tom for standard)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL eller bane til faviconet ditt (la stå tom for nettleserens standard)",
+    "appearance": "Utseende",
+    "appearance_desc": "Tilpass den visuelle stilen og layouten.",
+    "theme": "Tema",
+    "font_size": "Skriftstørrelse",
+    "results_layout": "Resultatlayout",
+    "search": "Søk",
+    "search_desc": "Standardinnstillinger brukt på alle søk.",
+    "ui_language": "UI Språk",
+    "ui_language_hint": "Grensesnitt språk (lagret i nettleserens localStorage)",
+    "interface_language": "Grensesnitt språk",
+    "stored_in_browser": "Lagring i nettleser (localStorage)",
+    "search_defaults": "Søkeinnstillinger",
+    "search_language": "Søkespråk",
+    "search_language_hint": "auto = oppdag fra forespørsel (Hangul → ko-KR); eller alle, eller en fast lokalitet som ko-KR",
+    "fallback_language": "Fallback Språkkode",
+    "fallback_language_hint": "Brukes når automatisk oppdagelse er uklar",
+    "safe_search": "Sikker Søk",
+    "safe_off": "Av",
+    "safe_moderate": "Moderat",
+    "safe_strict": "Streng",
+    "results_per_engine": "Resultater Per Motor",
+    "ai": "AI",
+    "ai_desc": "Konfigurer AI-modeller for svarsyntese og artikkelomskrivning.",
+    "ai_provider": "Leverandør",
+    "ai_provider_local": "Lokal (Ollama)",
+    "ai_provider_custom": "Egendefinert",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Lokal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API-nøkkel",
+    "ai_api_key_hint": "Nødvendig for skyleverandører (OpenAI, Anthropic, osv.)",
+    "ai_model": "Modell",
+    "ai_model_hint": "Chat/instruksjonsmodell for svarsyntese og forespørselutvidelse",
+    "ai_article_model": "Artikkelmodell",
+    "ai_article_model_hint": "Modell for omskrivning av nyhetsartikler (standard til hovedmodellen)",
+    "ai_timeout": "Timeout (sekunder)",
+    "ai_timeout_hint": "Per-forespørsel timeout for modellanrop",
+    "ai_cost_tracking": "Kostnadssporing",
+    "ai_track_usage": "Spor tokenbruk",
+    "ai_track_usage_hint": "Vis tokenantall og estimert kostnad",
+    "ai_input_cost": "Inngangskostnad",
+    "ai_output_cost": "Utgangskostnad",
+    "ai_features": "Funksjoner",
+    "ai_answer_synthesis": "Svarsyntese",
+    "ai_query_expansion": "Spørringsutvidelse",
+    "ai_reranking": "Omrangering",
+    "ai_clustering": "Klynging",
+    "ai_vision": "Visjon",
+    "news": "Nyheter",
+    "news_desc": "Nyhetsaggregasjon og artikkelinnstillinger.",
+    "news_per_source": "Artikler per kilde",
+    "news_freshness": "Friskhet halveringstid (timer)",
+    "news_freshness_weight": "Friskhet vekt",
+    "news_dedup": "Dedup likhetsterskel",
+    "news_max_age": "Maks alder (dager)",
+    "news_cache_ttl": "Cache TTL (sekunder)",
+    "news_enrich_max": "Maks artikler å berike",
+    "engines": "Søkemotorer",
+    "engines_desc": "Aktiver/deaktiver motorer og juster rangeringen deres. Høyere vekt = mer innflytelse på resultatrekkefølge.",
+    "engine": "motor",
+    "categories": "kategorier",
+    "weight": "vekt",
+    "privacy": "Personvern",
+    "privacy_desc": "Kontroller hvordan dataene dine håndteres.",
+    "proxy_images": "Proxy bilder",
+    "proxy_images_hint": "Rute bilder gjennom server for å skjule IP-en din fra tredjeparter",
+    "remove_trackers": "Fjern sporingsparametere",
+    "remove_trackers_hint": "Fjern UTM og andre sporingsparametere fra URL-er",
+    "save_history": "Lagre søkehistorikk",
+    "save_history_hint": "Lagre søk lokalt i nettleseren (aldri sendt til server)",
+    "clear_data": "Tøm data",
+    "clear_localstorage": "Tøm lokal lagring",
+    "clear_indexeddb": "Tøm IndexedDB",
+    "shortcuts": "Tastatursnarveier",
+    "shortcuts_desc": "Hurtigtilgangstaster for kraftbrukere.",
+    "shortcut_focus_search": "Fokuser søkeboks",
+    "shortcut_close": "Lukk panel / Avbryt",
+    "shortcut_navigate": "Naviger resultater",
+    "shortcut_open": "Åpne valgt resultat",
+    "shortcut_new_tab": "Åpne i ny fane",
+    "shortcut_switch_mode": "Bytt søkemodus",
+    "shortcut_help": "Vis denne hjelpen",
+    "server": "Server",
+    "server_desc": "Serverkonfigurasjon og nettverksinnstillinger.",
+    "bind_address": "Bind adresse",
+    "port": "Port",
+    "max_connections": "Maks forbindelser",
+    "image_proxy": "Aktiver bildeproxy",
+    "cache_backend": "Cache backend",
+    "cache_dir": "Cache-katalog",
+    "redis_url": "Redis URL",
+    "advanced": "Avansert",
+    "advanced_desc": "Cache- og timeout-innstillinger.",
+    "cache_ttl": "Cache TTL (sekunder)",
+    "cache_ttl_hint": "Resultat cache levetid (0 deaktiverer caching)",
+    "request_timeout": "Forespørsel Timeout (sekunder)",
+    "request_timeout_hint": "Per-motor nettverks timeout",
+    "save": "Lagre preferanser",
+    "saved": "Lagt til",
+    "saved_msg": "skrevet til settings.yml og brukt på nye søk.",
+    "server_settings": "Disse innstillingene er lagret på serversiden for",
+    "raw_config": "Konfig JSON",
+    "stats": "Statistikk",
+    "home": "Hjem",
+    "logout": "Logg ut",
+    "ai_embedding_model": "Innbyggingsmodell",
+    "ai_vision_model": "Visjonsmodell",
+    "ai_answer_top_n": "Topp N svar",
+    "ai_answer_top_n_hint": "Antall resultater for svarsyntese",
+    "ai_news_prompt_ko": "Koreansk nyhetsanalyse-prompt",
+    "ai_news_prompt_ko_hint": "Tilpasset prompt for koreansk nyhetsanalyse",
+    "ai_news_prompt_ko_placeholder": "La stå tom for standardprompt.",
+    "ai_news_prompt_en": "Engelsk nyhetsanalyse-prompt",
+    "ai_news_prompt_en_hint": "Tilpasset prompt for engelsk nyhetsanalyse",
+    "ai_news_prompt_en_placeholder": "La stå tom for standardprompt.",
+    "ai_answer_language": "Svarspråk",
+    "ai_answer_language_hint": "Målspråk for AI-svar",
+    "ai_answer_auto": "Automatisk gjenkjenning"
+  },
+  "focus": {
+    "general": "Generelt",
+    "academic": "Akademisk",
+    "writing": "Skriving",
+    "code": "Kode"
+  },
+  "footer": {
+    "grounded_answers": "Grunnlagte svar fra din lokale modell — 200+ søkemotorer, null forespørsel logging.",
+    "academic_papers": "Akademiske artikler fra arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, og mer.",
+    "news_digest": "Nyhetsdigest: henter artikkel sider, omskriver sammendrag lokalt via Ollama — store bilder bare, ingen favicon oppskalering.",
+    "images": "Wikimedia Commons bildesøk — miniatyrbilder proxy for personvern.",
+    "api_docs": "API-dokumentasjon",
+    "status": "Status",
+    "version": "Versjon",
+    "engines_count": "232 motorer"
+  },
+  "examples": {
+    "try": "Prøv et eksempel",
+    "general": [
+      {
+        "q": "Rust async programmering beste praksis",
+        "label": "Rust async"
+      },
+      {
+        "q": "Nyeste LLM forskningsartikler 2025",
+        "label": "Nyeste LLM artikler"
+      },
+      {
+        "q": "Hvordan fungerer DNS",
+        "label": "Hvordan fungerer DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Nyeste LLM forskningsartikler 2025",
+        "label": "Nyeste LLM artikler"
+      },
+      {
+        "q": "CRISPR genredigering gjennomgangsartikler",
+        "label": "CRISPR gjennomgang"
+      },
+      {
+        "q": "transformer arkitektur undersøkelse",
+        "label": "Transformer undersøkelse"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulering",
+        "label": "AI regulering"
+      },
+      {
+        "q": "Korea teknologinyheter",
+        "label": "Korea teknologi"
+      },
+      {
+        "q": "klimapolitikk oppdateringer",
+        "label": "Klimapolitikk"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesser (For Deg)",
+    "add_placeholder": "Legg til interesse...",
+    "empty": "Interesser legges automatisk til når du søker",
+    "remove": "Fjern"
+  },
+  "factcheck": {
+    "title": "Faktasjekk Resultater",
+    "checking": "Analyserer...",
+    "analyzing": "Analyserer kilder for motsetninger...",
+    "no_contradictions": "Ingen motsetninger funnet i kilder",
+    "found": "Motsetninger funnet"
+  },
+  "foryou": {
+    "title": "For Deg",
+    "based_on": "Basert på: {interests}",
+    "no_interests": "Ingen interesser ennå. Søk for å bygge dine interesser!",
+    "loading": "Laster personlig feed..."
+  },
+  "common": {
+    "search": "Søk",
+    "clear": "Tøm",
+    "close": "Lukk",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "loading": "Laster...",
+    "error": "Feil",
+    "retry": "Prøv igjen",
+    "more": "Mer",
+    "less": "Mindre"
+  },
+  "trends": {
+    "title": "Trender Nå",
+    "loading": "Laster trender...",
+    "error": "Kunne ikke laste trender",
+    "empty": "Ingen trending emner"
+  },
+  "onboarding": {
+    "welcome": "Velkommen til Metasøk",
+    "subtitle": "Din private, AI-drevne søkemotor",
+    "private_search": "Privat Søk",
+    "private_search_desc": "Ingen forespørsel logging, noen gang",
+    "ai_answers": "AI Svar",
+    "ai_answers_desc": "Lokal AI oppsummerer resultater",
+    "news_digest": "Nyhetsdigest",
+    "news_digest_desc": "Kuraterte nyheter med analyse",
+    "local_first": "Lokalt Først",
+    "local_first_desc": "Dine data forblir på enheten din",
+    "get_started": "Kom i gang"
+  },
+  "feeds": {
+    "find": "Finn Feeder",
+    "subscribe": "Abonner",
+    "unsubscribe": "Avslutt abonnement"
+  },
+  "errors": {
+    "load_trends": "Kunne ikke laste trender",
+    "load_feed": "Kunne ikke laste personlig feed",
+    "load_global": "Kunne ikke laste global feed",
+    "translation": "Oversettelse feilet"
+  },
+  "compare": {
+    "title": "Sammenlign Resultater",
+    "button": "Sammenlign",
+    "clear": "Tøm Alt",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

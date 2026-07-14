@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Webari galdetu, pribatuki"
+  },
+  "nav": {
+    "ask": "Galdetu",
+    "discover": "Aurkitu",
+    "history": "Historia",
+    "options": "Aukerak",
+    "classic": "Klasikoa",
+    "stats": "Estatistikak",
+    "preferences": "Hautapenak"
+  },
+  "tabs": {
+    "general": "Orokorra",
+    "images": "Irudiak",
+    "videos": "Bideoak",
+    "papers": "Artikuluak",
+    "news": "Albisteak",
+    "shopping": "Erosketak"
+  },
+  "search": {
+    "placeholder": "Ezer galdetu...",
+    "placeholder_news": "Sartu albiste gaia, sakatu Galdetu",
+    "placeholder_images": "Bilatu irudiak...",
+    "placeholder_papers": "Sartu galdera, sakatu Galdetu",
+    "placeholder_general": "Sartu galdera edo gaia, sakatu Galdetu",
+    "placeholder_shopping": "Bilatu produktuak...",
+    "placeholder_videos": "Bilatu bideoak...",
+    "button": "Galdetu",
+    "button_search": "Bilatu"
+  },
+  "status": {
+    "loading": "Kargatzen...",
+    "loading_stories": "Iritziak kargatzen...",
+    "searching": "Bilatzen...",
+    "searching_web": "Webean bilatzen...",
+    "searching_images": "Irudiak bilatzen...",
+    "searching_news": "Albiste iturriak bilatzen...",
+    "searching_papers": "Iturri akademikoak bilatzen...",
+    "searching_shopping": "Produktuak bilatzen...",
+    "searching_videos": "Bideoak bilatzen...",
+    "search_complete": "Bilaketa osatua.",
+    "search_failed": "Bilaketa huts egin du.",
+    "answer_ready": "Erantzuna prest.",
+    "fetching_article": "Artikulua lortzen...",
+    "fetching_publisher": "Argitaletxearen artikulua lortzen...",
+    "resolving_article": "Artikulua ebazten...",
+    "resolving_gn": "Google News esteka ebazten...",
+    "rewriting": "Artikulua berridazten...",
+    "rewriting_korean": "Korean berridazten...",
+    "preparing_rewrite": "Berridazketa osoa prestatzen...",
+    "extracted_rewriting": "Artikulu testua ateratzea — berridazten...",
+    "viewing_prior": "Aurreko txanda ikusten — galdetu jarraipena behean."
+  },
+  "error": {
+    "no_answer": "Ez da AI erantzunik sortu — bilaketa emaitzak behean.",
+    "no_news": "Ez da albisterik aurkitu — saiatu beste galdera batekin.",
+    "no_stories": "Ez da iritzirik aurkitu — saiatu beste galdera batekin.",
+    "no_stories_category": "Ez da iritzirik aurkitu kategori honetan — saiatu beste pilularekin.",
+    "rewrite_empty": "Artikulu berridazketak testu hutsik itzuli du.",
+    "rewrite_failed": "Artikulua berridaztea ez da posible izan",
+    "load_news_failed": "Albisteak kargatzea ez da posible izan — egiaztatu zerbitzaria.",
+    "model_not_found": "Modelo ez da aurkitu — exekutatu ollama pull zure konfiguratutako modelorako, edo aukeratu beste bat Aukeretan.",
+    "ollama_not_running": "Ollama ez dago martxan — erantzunak bilaketa soilik izango dira. Hasi: ollama serve",
+    "invalid_thread": "Thread JSON baliogabea.",
+    "enter_question": "Sartu galdera.",
+    "enter_search": "Sartu bilaketa terminoa."
+  },
+  "article": {
+    "sources": "Iturriak",
+    "research_progress": "Ikerketa Aurrerapena",
+    "thinking": "Pentsatzen",
+    "answer": "Erantzuna",
+    "key_points": "Gako Puntuak",
+    "summary": "Laburpena",
+    "related_media": "Lotutako Media",
+    "view_more": "Ikusi {count} gehiago",
+    "back": "Atzera",
+    "read_original": "Irakurri jatorrizkoa",
+    "related_image": "Lotutako irudia",
+    "related": "Lotutako"
+  },
+  "discover": {
+    "updated": "Eguneratuta {time}",
+    "scope": {
+      "all": "📰 Guztiak",
+      "local": "🏠 Tokikoa",
+      "world": "🌍 Mundua"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomia",
+      "sports": "Kirolak",
+      "world": "Mundua",
+      "entertainment": "Ezkontza",
+      "tech": "Teknologia eta Zientzia",
+      "culture": "Kultura",
+      "health": "Osasuna",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknologia zientzia",
+      "ai": "inteligentzia artifiziala AI makina ikaskuntza",
+      "world": "munduko albisteak nazioarteko",
+      "politics": "politika gobernua hauteskundeak",
+      "business": "negocios ekonomia enpresak",
+      "finance": "finantzak merkatuak akzioen",
+      "health": "osasuna medikuntza ongizatea",
+      "climate": "klima aldaketa ingurumena",
+      "sports": "kirolak",
+      "entertainment": "atzerriko izarrak",
+      "art": "arte kultura",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Ireki historia",
+    "close": "Itxi historia",
+    "imported": "Inportatua {count}",
+    "export": "Esportatu JSON",
+    "import": "Inportatu JSON",
+    "clear": "Garbitu historia",
+    "empty": "Zure galderak hemen agertzen dira.",
+    "new_chat": "Txat berria"
+  },
+  "panel": {
+    "history": "Historia",
+    "bookmarks": "Markatzeak",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Markatze guztiak",
+    "empty": "Markatze emaitzak hemen gorde.",
+    "export": "Esportatu",
+    "clear_all": "Garbitu guztiak",
+    "new_collection": "Bilduma berria"
+  },
+  "hero": {
+    "private": "Pribatua",
+    "ai_powered": "AI-Potentzia",
+    "local_first": "Tokiko Lehen"
+  },
+  "options": {
+    "model": "Modelo",
+    "deep_research": "Ikerketa sakona",
+    "focus": "Fokua",
+    "theme": "Gaia",
+    "language": "Hizkuntza",
+    "answer_language": "AI Hizkuntza",
+    "answer_auto": "Automatikoa",
+    "research": "Ikerketa",
+    "fact_check": "Faktaren egiaztapena"
+  },
+  "preferences": {
+    "title": "Hautapenak",
+    "language": "Hizkuntza",
+    "language_desc": "Hautatu zure interfaze-hizkuntza hobetsia",
+    "language_storage": "Interfazearen hizkuntza zure nabigatzailean gordetzen da.",
+    "branding": "Markaketa",
+    "branding_desc": "Pertsonalizatu aplikazioaren izena, logotipoa, eta UI-n agertzen den favicon-a.",
+    "app_name": "Aplikazioaren Izena",
+    "app_name_hint": "Goiburuan eta orri tituluekin agertzen den izena",
+    "logo_url": "Logotipo URL",
+    "logo_url_hint": "Zure logotipo irudiaren URL-a edo bidea (utzi hutsik lehenetsitakoarentzat)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Zure favicon-aren URL-a edo bidea (utzi hutsik nabigatzaile lehenetsitakoarentzat)",
+    "appearance": "Itxura",
+    "appearance_desc": "Pertsonalizatu estilo bisuala eta antolaketa.",
+    "theme": "Gaia",
+    "font_size": "Letra Tamaina",
+    "results_layout": "Emaitzen Antolaketa",
+    "search": "Bilatu",
+    "search_desc": "Lehenetsitako ezarpenak bilaketa guztietan aplikatzen dira.",
+    "ui_language": "UI Hizkuntza",
+    "ui_language_hint": "Interfazearen hizkuntza (nabigatzaileko localStorage-n gorde)",
+    "interface_language": "Interfazearen hizkuntza",
+    "stored_in_browser": "Nabigatzailean gorde (localStorage)",
+    "search_defaults": "Bilaketa lehenetsitakoak",
+    "search_language": "Bilaketa Hizkuntza",
+    "search_language_hint": "automatikoki = galderatik detektatu (Hangul → ko-KR); edo guztiak, edo ko-KR bezalako locale finkoa",
+    "fallback_language": "Fallback Hizkuntza Kodea",
+    "fallback_language_hint": "Automatikoki detekzioa ez da argia denean erabiltzen da",
+    "safe_search": "Bilaketa Seguru",
+    "safe_off": "Itzali",
+    "safe_moderate": "Ertaina",
+    "safe_strict": "Zurruna",
+    "results_per_engine": "Emaitzak Motor bakoitzeko",
+    "ai": "AI",
+    "ai_desc": "AI modeloak erantzun sintesia eta artikulu berridazketa konfiguratzeko.",
+    "ai_provider": "Hornitzailea",
+    "ai_provider_local": "Tokikoa (Ollama)",
+    "ai_provider_custom": "Pertsonalizatua",
+    "ai_base_url": "API Oinarri URL",
+    "ai_base_url_hint": "Tokikoa: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Gakoa",
+    "ai_api_key_hint": "Hodeiko hornitzaileentzat beharrezkoa (OpenAI, Anthropic, etab.)",
+    "ai_model": "Modelo",
+    "ai_model_hint": "Chat/irakaskuntza modelo erantzun sintesia eta galdera hedapena egiteko",
+    "ai_article_model": "Artikulu Modelo",
+    "ai_article_model_hint": "Albiste artikuluen berridazketarako modelo osoa (lehenetsitako modelo nagusira itzultzen da)",
+    "ai_timeout": "Denbora-muga (segundoak)",
+    "ai_timeout_hint": "Modelo dei bakoitzeko denbora-muga",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Ezaugarriak",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Albisteak",
+    "news_desc": "Albisteen agregazioa eta artikulu ezarpenak.",
+    "news_per_source": "Artikuluak iturri bakoitzeko",
+    "news_freshness": "Freskotasun erdi-bizitza (orduak)",
+    "news_freshness_weight": "Freskotasun pisua",
+    "news_dedup": "Dedup antzekotasun muga",
+    "news_max_age": "Max adina (egunak)",
+    "news_cache_ttl": "Cache TTL (segundoak)",
+    "news_enrich_max": "Max artikuluak aberasteko",
+    "engines": "Bilaketa Motorra",
+    "engines_desc": "Gaitu/desgaitu motorra eta egokitu haien sailkapen pisuak. Pisua handiagoa = emaitzen ordenan eragin handiagoa.",
+    "engine": "motorra",
+    "categories": "kategorizatu",
+    "weight": "pisua",
+    "privacy": "Pribatutasuna",
+    "privacy_desc": "Zure datuak nola kudeatzen diren kontrolatu.",
+    "proxy_images": "Irudiak proxy bidez",
+    "proxy_images_hint": "Irudiak zerbitzariaren bidez bideratu IP-a hirugarren alderdietatik ezkutatzeko",
+    "remove_trackers": "Jarraipen parametroak kendu",
+    "remove_trackers_hint": "UTM eta beste jarraipen parametroak URL-tik kendu",
+    "save_history": "Gorde bilaketa historia",
+    "save_history_hint": "Bilaketak lokalki gorde nabigatzailean (inoiz ez da zerbitzariari bidaliko)",
+    "clear_data": "Garbitu Datuak",
+    "clear_localstorage": "Garbitu Local Storage",
+    "clear_indexeddb": "Garbitu IndexedDB",
+    "shortcuts": "Teklatuko Laburbideak",
+    "shortcuts_desc": "Azkar sarbide gakoak indar erabiltzaileentzat.",
+    "shortcut_focus_search": "Bilaketa kutxa fokatu",
+    "shortcut_close": "Itxi panela / Ezeztatu",
+    "shortcut_navigate": "Emaitzetan nabigatu",
+    "shortcut_open": "Ireki hautatutako emaitza",
+    "shortcut_new_tab": "Ireki fitxa berri batean",
+    "shortcut_switch_mode": "Aldatu bilaketa modua",
+    "shortcut_help": "Erakutsi laguntza hau",
+    "server": "Zerbitzaria",
+    "server_desc": "Zerbitzari konfigurazioa eta sare ezarpenak.",
+    "bind_address": "Lotura Helbidea",
+    "port": "Portua",
+    "max_connections": "Max Konexioak",
+    "image_proxy": "Irudi Proxy gaituta",
+    "cache_backend": "Cache Atzealdea",
+    "cache_dir": "Cache Karpetan",
+    "redis_url": "Redis URL",
+    "advanced": "Aurreratua",
+    "advanced_desc": "Cache eta denbora-muga ezarpenak.",
+    "cache_ttl": "Cache TTL (segundoak)",
+    "cache_ttl_hint": "Emaitzen cache denbora-bizitza (0 cache-a desgaitzen du)",
+    "request_timeout": "Eskaera Denbora-muga (segundoak)",
+    "request_timeout_hint": "Motor bakoitzeko sareko denbora-muga",
+    "save": "Gorde Hautapenak",
+    "saved": "Gordea",
+    "saved_msg": "settings.yml-n idatzita eta bilaketa berrietan aplikatuta.",
+    "server_settings": "Ezarpen hauek zerbitzari aldean iraunkorrak dira",
+    "raw_config": "Config JSON",
+    "stats": "Estatistikak",
+    "home": "Hasiera",
+    "logout": "Saioa itxi",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Orokorra",
+    "academic": "Akademikoa",
+    "writing": "Idazketa",
+    "code": "Kodea"
+  },
+  "footer": {
+    "grounded_answers": "Zure tokiko modelotik lortutako erantzunak — 200+ bilaketa motor, galdera logurik gabe.",
+    "academic_papers": "Akademikoak arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, eta gehiago.",
+    "news_digest": "Albiste laburpena: artikulu orriak lortzen ditu, laburpenak lokalki berridazten ditu Ollama bidez — irudi handiak soilik, ez favicon handitzea.",
+    "images": "Wikimedia Commons irudi bilaketa — irudi txikiak pribatutasunerako proxyatuta.",
+    "api_docs": "API Dokumentazioa",
+    "status": "Egoera",
+    "version": "Bertsioa",
+    "engines_count": "232 motor"
+  },
+  "examples": {
+    "try": "Saiatu adibide batekin",
+    "general": [
+      {
+        "q": "Rust async programazio praktika onenak",
+        "label": "Rust async"
+      },
+      {
+        "q": "2025eko azken LLM ikerketa artikuluak",
+        "label": "Azken LLM artikuluak"
+      },
+      {
+        "q": "Nola funtzionatzen du DNS-k",
+        "label": "Nola funtzionatzen du DNS-k"
+      }
+    ],
+    "papers": [
+      {
+        "q": "2025eko azken LLM ikerketa artikuluak",
+        "label": "Azken LLM artikuluak"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR iritzia"
+      },
+      {
+        "q": "transformer arkitektura ikerketa",
+        "label": "Transformer ikerketa"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI arautzea",
+        "label": "AI arautzea"
+      },
+      {
+        "q": "Korea teknologia albisteak",
+        "label": "Korea teknologia"
+      },
+      {
+        "q": "klima politika eguneratzeak",
+        "label": "Klima politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesak (Zuretzat)",
+    "add_placeholder": "Gehitu interesa...",
+    "empty": "Interesak automatikoki gehitzen dira bilatzen duzunean",
+    "remove": "Kendu"
+  },
+  "factcheck": {
+    "title": "Faktaren Egiaztapen Emaitzak",
+    "checking": "Analizatzen...",
+    "analyzing": "Iturriak kontradikzioen bila analizatzen...",
+    "no_contradictions": "Ez da kontradikziorik aurkitu iturrietan",
+    "found": "Aurkitutako kontradikzioak"
+  },
+  "foryou": {
+    "title": "Zuretzat",
+    "based_on": "Oinarrituta: {interests}",
+    "no_interests": "Ez dago interesik oraindik. Bilatu zure interesak eraikitzeko!",
+    "loading": "Pertsonalizatutako iragazkia kargatzen..."
+  },
+  "common": {
+    "search": "Bilatu",
+    "clear": "Garbitu",
+    "close": "Itxi",
+    "save": "Gorde",
+    "cancel": "Ezeztatu",
+    "loading": "Kargatzen...",
+    "error": "Errorea",
+    "retry": "Saiatu berriro",
+    "more": "Gehiago",
+    "less": "Gutxiago"
+  },
+  "trends": {
+    "title": "Uneko Tendentziak",
+    "loading": "Tendentziak kargatzen...",
+    "error": "Tendentziak kargatzea huts egin du",
+    "empty": "Ez dago tendentzia gaien"
+  },
+  "onboarding": {
+    "welcome": "Ongi etorri Metasearch-era",
+    "subtitle": "Zure pribatua, AI-potentziadun bilatzailea",
+    "private_search": "Bilaketa Pribatua",
+    "private_search_desc": "Ez da galdera logarik, inoiz",
+    "ai_answers": "AI Erantzunak",
+    "ai_answers_desc": "Tokiko AI-k emaitzak laburtzen ditu",
+    "news_digest": "Albiste Laburpena",
+    "news_digest_desc": "Aldizkako albisteak analisiarekin",
+    "local_first": "Tokiko Lehen",
+    "local_first_desc": "Zure datuak zure gailuan geratzen dira",
+    "get_started": "Hasi"
+  },
+  "feeds": {
+    "find": "Aurkitu Iragazkiak",
+    "subscribe": "Harpidetu",
+    "unsubscribe": "Harpidetza ezeztatu"
+  },
+  "errors": {
+    "load_trends": "Tendentziak kargatzea huts egin du",
+    "load_feed": "Pertsonalizatutako iragazkia kargatzea huts egin du",
+    "load_global": "Globala iragazkia kargatzea huts egin du",
+    "translation": "Itzulpena huts egin du"
+  },
+  "compare": {
+    "title": "Emaitzak Konparatu",
+    "button": "Konparatu",
+    "clear": "Garbitu Guztiak",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

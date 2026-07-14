@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Вебээс асуух, хувийн"
+  },
+  "nav": {
+    "ask": "Асуух",
+    "discover": "Мэдэх",
+    "history": "Түүх",
+    "options": "Сонголтууд",
+    "classic": "Классик",
+    "stats": "Статистик",
+    "preferences": "Тохиргоо"
+  },
+  "tabs": {
+    "general": "Ерөнхий",
+    "images": "Зураг",
+    "videos": "Видео",
+    "papers": "Баримт бичиг",
+    "news": "Мэдээ",
+    "shopping": "Дэлгүүр"
+  },
+  "search": {
+    "placeholder": "Юу ч асуух…",
+    "placeholder_news": "Мэдээний сэдвийг оруулж, Асуух товчийг дарна уу",
+    "placeholder_images": "Зургийг хайх…",
+    "placeholder_papers": "Асуулт оруулж, Асуух товчийг дарна уу",
+    "placeholder_general": "Асуулт эсвэл сэдвийг оруулж, Асуух товчийг дарна уу",
+    "placeholder_shopping": "Барааг хайх…",
+    "placeholder_videos": "Видеог хайх…",
+    "button": "Асуух",
+    "button_search": "Хайх"
+  },
+  "status": {
+    "loading": "Ачааллаж байна…",
+    "loading_stories": "Түүхийг ачааллаж байна…",
+    "searching": "Хайж байна…",
+    "searching_web": "Вебийг хайж байна…",
+    "searching_images": "Зургийг хайж байна…",
+    "searching_news": "Мэдээний эх сурвалжийг хайж байна…",
+    "searching_papers": "Академик эх сурвалжийг хайж байна…",
+    "searching_shopping": "Барааг хайж байна…",
+    "searching_videos": "Видеог хайж байна…",
+    "search_complete": "Хайлт дууслаа.",
+    "search_failed": "Хайлт амжилтгүй боллоо.",
+    "answer_ready": "Хариу бэлэн.",
+    "fetching_article": "Макал авах…",
+    "fetching_publisher": "Нийтлэгчийн макал авах…",
+    "resolving_article": "Макалыг шийдвэрлэж байна…",
+    "resolving_gn": "Google News холбоосыг шийдвэрлэж байна…",
+    "rewriting": "Макалыг дахин бичиж байна…",
+    "rewriting_korean": "Солонгосоор дахин бичиж байна…",
+    "preparing_rewrite": "Бүтэн дахин бичлэгийг бэлтгэж байна…",
+    "extracted_rewriting": "Гаргаж авсан макалын текст — дахин бичиж байна…",
+    "viewing_prior": "Өмнөх эргэлтийг үзэж байна — доор дагаж асуух."
+  },
+  "error": {
+    "no_answer": "AI хариу үүсгэгдээгүй — доор хайлтын үр дүн.",
+    "no_news": "Мэдээ олдсонгүй — өөр асуулт туршаад үзээрэй.",
+    "no_stories": "Түүх олдсонгүй — өөр асуулт туршаад үзээрэй.",
+    "no_stories_category": "Энэ ангилалд түүх олдсонгүй — өөр таблет туршаад үзээрэй.",
+    "rewrite_empty": "Макалын дахин бичлэг хоосон текст буцаасан.",
+    "rewrite_failed": "Макалыг дахин бичиж чадсангүй",
+    "load_news_failed": "Мэдээ ачааллаж чадсангүй — серверийг шалгаарай.",
+    "model_not_found": "Загвар олдсонгүй — таны тохируулагдсан загварыг ollama pull командыг гүйцэтгэнэ үү, эсвэл Сонголтуудаас өөрийг сонгоно уу.",
+    "ollama_not_running": "Ollama ажиллахгүй байна — хариултууд зөвхөн хайлтын үр дүнгээр байна. Эхлэх: ollama serve",
+    "invalid_thread": "Буруу утасны JSON.",
+    "enter_question": "Асуулт оруулна уу.",
+    "enter_search": "Хайлт оруулна уу."
+  },
+  "article": {
+    "sources": "Эх сурвалжууд",
+    "research_progress": "Судалгааны явц",
+    "thinking": "Бодож байна",
+    "answer": "Хариу",
+    "key_points": "Чухал цэгүүд",
+    "summary": "Товчоор",
+    "related_media": "Холбоотой медиа",
+    "view_more": "Дэлгэрэнгүй {count} харах",
+    "back": "Буцах",
+    "read_original": "Эх хувилбарыг унших",
+    "related_image": "Холбоотой зураг",
+    "related": "Холбоотой"
+  },
+  "discover": {
+    "updated": "Шинэчлэгдсэн {time}",
+    "scope": {
+      "all": "📰 Бүгд",
+      "local": "🏠 Орон нутгийн",
+      "world": "🌍 Дэлхий"
+    },
+    "categories": {
+      "politics": "Улс төр",
+      "economy": "Эдийн засаг",
+      "sports": "Спорт",
+      "world": "Дэлхий",
+      "entertainment": "Зугаа цэнгэл",
+      "tech": "Технологи & Шинжлэх ухаан",
+      "culture": "Соёл",
+      "health": "Эрүүл мэнд",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "технологи шинжлэх ухаан",
+      "ai": "хиймэл оюун ухаан AI машин сургалт",
+      "world": "дэлхийн мэдээ олон улсын",
+      "politics": "улс төр засгийн газар сонгууль",
+      "business": "бизнес эдийн засаг компаниуд",
+      "finance": "санхүү зах зээл хувьцаа",
+      "health": "эрүүл мэнд эмчилгээ сайн сайхан",
+      "climate": "цаг уурын өөрчлөлт орчин",
+      "sports": "спорт",
+      "entertainment": "зугаа цэнгэл алдартан",
+      "art": "урлаг соёл",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Түүхийг нээх",
+    "close": "Түүхийг хаах",
+    "imported": "Импортолсон {count}",
+    "export": "JSON экспортлох",
+    "import": "JSON импортлох",
+    "clear": "Түүхийг цэвэрлэх",
+    "empty": "Таны асуултууд энд харагдана.",
+    "new_chat": "Шинэ чат"
+  },
+  "panel": {
+    "history": "Түүх",
+    "bookmarks": "Номын тэмдэглэл",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Бүх номын тэмдэглэл",
+    "empty": "Номын тэмдэглэлд үр дүнг хадгалах.",
+    "export": "Экспорт",
+    "clear_all": "Бүгдийг цэвэрлэх",
+    "new_collection": "Шинэ цуглуулга"
+  },
+  "hero": {
+    "private": "Хувийн",
+    "ai_powered": "AI-ээр тэжээгдсэн",
+    "local_first": "Орон нутгийн-Эхлүүлсэн"
+  },
+  "options": {
+    "model": "Загвар",
+    "deep_research": "Гүн судалгаа",
+    "focus": "Анхаарал",
+    "theme": "Сэдэв",
+    "language": "Хэл",
+    "answer_language": "AI Хэл",
+    "answer_auto": "Авто",
+    "research": "Судалгаа",
+    "fact_check": "Баримт шалгах"
+  },
+  "preferences": {
+    "title": "Тохиргоо",
+    "language": "Хэл",
+    "language_desc": "Өөрийн хүссэн интерфейсийн хэлийг сонгоно уу",
+    "language_storage": "Интерфейсийн хэлийг таны хөтөч дээр хадгална.",
+    "branding": "Брэнд",
+    "branding_desc": "Програмын нэр, логог, UI-д үзэгдэх favicon-ыг өөрчлөх.",
+    "app_name": "Програмын нэр",
+    "app_name_hint": "Гарчиг болон хуудасны нэрэнд харагдах нэр",
+    "logo_url": "Логогийн URL",
+    "logo_url_hint": "Логогийн зургийн URL эсвэл зам (үр дүнгүй бол анхдагчийг үлдээнэ)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Favicon-ыг оруулах URL эсвэл зам (үр дүнгүй бол браузерын анхдагчийг үлдээнэ)",
+    "appearance": "Гадаад төрх",
+    "appearance_desc": "Визуал стиль болон зохион байгуулалтыг өөрчлөх.",
+    "theme": "Сэдэв",
+    "font_size": "Фонтын хэмжээ",
+    "results_layout": "Үр дүнгийн зохион байгуулалт",
+    "search": "Хайх",
+    "search_desc": "Бүх хайлтад хэрэглэгдэх анхдагч тохиргоо.",
+    "ui_language": "UI Хэл",
+    "ui_language_hint": "Интерфейсийн хэл (браузерийн localStorage-д хадгалагдана)",
+    "interface_language": "Интерфейсийн хэл",
+    "stored_in_browser": "Браузерийн хадгалагдсан (localStorage)",
+    "search_defaults": "Хайлт анхдагч",
+    "search_language": "Хайлт Хэл",
+    "search_language_hint": "авто = асуултаас илрүүлэх (Hangul → ko-KR); эсвэл бүгд, эсвэл тогтмол орон нутгийн хэлбэртэй байх",
+    "fallback_language": "Нөөц хэлний код",
+    "fallback_language_hint": "Авто илрүүлэлт тодорхойгүй үед ашиглагдана",
+    "safe_search": "Аюулгүй хайлт",
+    "safe_off": "Унтраах",
+    "safe_moderate": "Дунд",
+    "safe_strict": "Чанга",
+    "results_per_engine": "Хайлт бүрийн үр дүн",
+    "ai": "AI",
+    "ai_desc": "Хариу синтез болон макалын дахин бичлэгийн AI загварыг тохируулах.",
+    "ai_provider": "Нийлүүлэгч",
+    "ai_provider_local": "Орон нутгийн (Ollama)",
+    "ai_provider_custom": "Хувийн",
+    "ai_base_url": "API үндсэн URL",
+    "ai_base_url_hint": "Орон нутгийн: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API түлхүүр",
+    "ai_api_key_hint": "Cloud нийлүүлэгчдэд шаардлагатай (OpenAI, Anthropic, гэх мэт)",
+    "ai_model": "Загвар",
+    "ai_model_hint": "Хариу синтез болон асуултын өргөтгөлийн чат/заавар загвар",
+    "ai_article_model": "Макалын загвар",
+    "ai_article_model_hint": "Бүтэн хуудасны мэдээний макалын дахин бичлэгийн загвар (гол загвартай тохирно)",
+    "ai_timeout": "Хугацаа (секунд)",
+    "ai_timeout_hint": "Загварын дуудлагын хувьд хугацаа",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Онцлогууд",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Мэдээ",
+    "news_desc": "Мэдээний агуулах болон макалын тохиргоо.",
+    "news_per_source": "Эх сурвалж бүрийн макал",
+    "news_freshness": "Шинэчлэлийн хагас наслалт (цаг)",
+    "news_freshness_weight": "Шинэчлэлийн жин",
+    "news_dedup": "Давхардлыг арилгах ижил байдлын хязгаар",
+    "news_max_age": "Хамгийн их нас (өдөр)",
+    "news_cache_ttl": "Кэш TTL (секунд)",
+    "news_enrich_max": "Баяжуулах хамгийн их макал",
+    "engines": "Хайлт хөдөлгүүрүүд",
+    "engines_desc": "Хөдөлгүүрүүдийг идэвхжүүлэх/идэвхгүй болгох болон тэдний жинг тохируулах. Илүү жин = үр дүнгийн захиалгад илүү нөлөө.",
+    "engine": "хөдөлгүүр",
+    "categories": "ангилал",
+    "weight": "жин",
+    "privacy": "Нууцлал",
+    "privacy_desc": "Таны өгөгдлийг хэрхэн боловсруулахыг хянах.",
+    "proxy_images": "Зургийг прокси хийх",
+    "proxy_images_hint": "Зургийг серверээр дамжуулан маршрутаар явуулах, гуравдагч талуудын IP-ийг нууцлах",
+    "remove_trackers": "Хянах параметрүүдийг арилгах",
+    "remove_trackers_hint": "URL-ээс UTM болон бусад хянах параметрүүдийг арилгах",
+    "save_history": "Хайлын түүхийг хадгалах",
+    "save_history_hint": "Хайлт бүрийг браузерийн локалд хадгалах (сервэр рүү хэзээ ч илгээгдэхгүй)",
+    "clear_data": "Өгөгдлийг цэвэрлэх",
+    "clear_localstorage": "Локал хадгалагдсан мэдээллийг цэвэрлэх",
+    "clear_indexeddb": "IndexedDB-г цэвэрлэх",
+    "shortcuts": "Тов shortcuts",
+    "shortcuts_desc": "Эрчимтэй хэрэглэгчдэд зориулсан хурдан хандалтын түлхүүр.",
+    "shortcut_focus_search": "Хайлт хийх хайрцагт анхаарал хандуулах",
+    "shortcut_close": "Панелийг хаах / Цуцлах",
+    "shortcut_navigate": "Үр дүнгүүдийг навигац хийх",
+    "shortcut_open": "Сонгосон үр дүнг нээх",
+    "shortcut_new_tab": "Шинэ табд нээх",
+    "shortcut_switch_mode": "Хайлт хийх горимыг солих",
+    "shortcut_help": "Энэ тусламжийг харуулах",
+    "server": "Сервер",
+    "server_desc": "Серверийн тохиргоо болон сүлжээний тохиргоо.",
+    "bind_address": "Холбох хаяг",
+    "port": "Порт",
+    "max_connections": "Хамгийн их холболт",
+    "image_proxy": "Зургийн прокси-г идэвхжүүлэх",
+    "cache_backend": "Кэшийн арын хэсэг",
+    "cache_dir": "Кэшийн директори",
+    "redis_url": "Redis URL",
+    "advanced": "Давуу",
+    "advanced_desc": "Кэш болон хугацааны тохиргоо.",
+    "cache_ttl": "Кэш TTL (секунд)",
+    "cache_ttl_hint": "Үр дүнгийн кэшийн амьдралын хугацаа (0 кэшийг идэвхгүй болгоно)",
+    "request_timeout": "Дуудлагын хугацаа (секунд)",
+    "request_timeout_hint": "Хөдөлгүүр бүрийн сүлжээний хугацаа",
+    "save": "Тохиргоог хадгалах",
+    "saved": "Хадгалагдсан",
+    "saved_msg": "settings.yml-д бичигдсэн бөгөөд шинэ хайлтуудад хэрэглэгдэнэ.",
+    "server_settings": "Эдгээр тохиргоонууд серверийн талд хадгалагдана",
+    "raw_config": "Тохиргооны JSON",
+    "stats": "Статистик",
+    "home": "Нүүр",
+    "logout": "Гарах",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Ерөнхий",
+    "academic": "Академик",
+    "writing": "Бичих",
+    "code": "Код"
+  },
+  "footer": {
+    "grounded_answers": "Таны орон нутгийн загвараас үндэслэсэн хариу — 200+ хайлт хөдөлгүүр, асуултын лог хөтлөхгүй.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, болон бусад академик баримт бичгүүд.",
+    "news_digest": "Мэдээний товчоолол: макалын хуудсуудыг авах, Ollama-ар дамжуулан дүгнэлт бичих — том зургийг л, favicon-ыг томсгохгүй.",
+    "images": "Wikimedia Commons зургийн хайлт — нууцлалын тулд миний зургийг прокси хийсэн.",
+    "api_docs": "API баримт бичиг",
+    "status": "Төлөв",
+    "version": "Хувилбар",
+    "engines_count": "232 хөдөлгүүр"
+  },
+  "examples": {
+    "try": "Жишээг туршаад үзээрэй",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Сүүлийн үеийн LLM баримт бичгүүд"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS хэрхэн ажилладаг вэ"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Сүүлийн үеийн LLM баримт бичгүүд"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR тойм"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer судалгаа"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI зохицуулалт"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "Кореа технологийн мэдээ"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "Цаг уурын бодлогын шинэчлэлт"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Сонирхол (Таны хувьд)",
+    "add_placeholder": "Сонирхол нэмэх...",
+    "empty": "Сонирхол хайж байхдаа автоматаар нэмэгдэнэ",
+    "remove": "Арилгах"
+  },
+  "factcheck": {
+    "title": "Баримт шалгах үр дүн",
+    "checking": "Шалгаж байна...",
+    "analyzing": "Зөрчилдсөн эх сурвалжийг шинжлэх...",
+    "no_contradictions": "Эх сурвалжид зөрчил олдсонгүй",
+    "found": "Зөрчил олдсон"
+  },
+  "foryou": {
+    "title": "Таны хувьд",
+    "based_on": "Үндэслэсэн: {interests}",
+    "no_interests": "Одоогоор сонирхол байхгүй. Сонирхлоо бий болгохын тулд хайлт хийнэ үү!",
+    "loading": "Хувийн фид ачааллаж байна..."
+  },
+  "common": {
+    "search": "Хайх",
+    "clear": "Цэвэрлэх",
+    "close": "Хаах",
+    "save": "Хадгалах",
+    "cancel": "Цуцлах",
+    "loading": "Ачааллаж байна...",
+    "error": "Алдаа",
+    "retry": "Дахин оролдох",
+    "more": "Илүү",
+    "less": "Бага"
+  },
+  "trends": {
+    "title": "Одоогийн тренд",
+    "loading": "Тренд ачааллаж байна...",
+    "error": "Тренд ачааллахад алдаа гарлаа",
+    "empty": "Тренд сэдвүүд байхгүй"
+  },
+  "onboarding": {
+    "welcome": "Metasearch-д тавтай морилно уу",
+    "subtitle": "Таны хувийн, AI-ээр тэжээгдсэн хайлтын хөдөлгүүр",
+    "private_search": "Хувийн хайлт",
+    "private_search_desc": "Асуултын лог хөтлөхгүй, хэзээ ч",
+    "ai_answers": "AI хариултууд",
+    "ai_answers_desc": "Орон нутгийн AI үр дүнг дүгнэдэг",
+    "news_digest": "Мэдээний товчоолол",
+    "news_digest_desc": "Шинжилгээтэй мэдээ",
+    "local_first": "Орон нутгийн-Эхлүүлсэн",
+    "local_first_desc": "Таны өгөгдөл таны төхөөрөмж дээр үлдэнэ",
+    "get_started": "Эхлэх"
+  },
+  "feeds": {
+    "find": "Фидийг олох",
+    "subscribe": "Абонилох",
+    "unsubscribe": "Абониллоо цуцлах"
+  },
+  "errors": {
+    "load_trends": "Тренд ачааллаж чадсангүй",
+    "load_feed": "Хувийн фид ачааллаж чадсангүй",
+    "load_global": "Дэлхийн фид ачааллаж чадсангүй",
+    "translation": "Орчуулга амжилтгүй"
+  },
+  "compare": {
+    "title": "Үр дүнг харьцуулах",
+    "button": "Харьцуулах",
+    "clear": "Бүгдийг цэвэрлэх",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

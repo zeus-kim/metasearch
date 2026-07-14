@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Uliza mtandao, kwa siri"
+  },
+  "nav": {
+    "ask": "Uliza",
+    "discover": "Gundua",
+    "history": "Historia",
+    "options": "Chaguzi",
+    "classic": "Kawaida",
+    "stats": "Takwimu",
+    "preferences": "Mipangilio"
+  },
+  "tabs": {
+    "general": "Kawaida",
+    "images": "Picha",
+    "videos": "Video",
+    "papers": "Karatasi",
+    "news": "Habari",
+    "shopping": "Ununuzi"
+  },
+  "search": {
+    "placeholder": "Uliza chochote…",
+    "placeholder_news": "Ingiza mada ya habari, bonyeza Uliza",
+    "placeholder_images": "Tafuta picha…",
+    "placeholder_papers": "Ingiza swali, bonyeza Uliza",
+    "placeholder_general": "Ingiza swali au mada, bonyeza Uliza",
+    "placeholder_shopping": "Tafuta bidhaa…",
+    "placeholder_videos": "Tafuta video…",
+    "button": "Uliza",
+    "button_search": "Tafuta"
+  },
+  "status": {
+    "loading": "Inapakia…",
+    "loading_stories": "Inapakia hadithi…",
+    "searching": "Inatafuta…",
+    "searching_web": "Inatafuta mtandao…",
+    "searching_images": "Inatafuta picha…",
+    "searching_news": "Inatafuta vyanzo vya habari…",
+    "searching_papers": "Inatafuta vyanzo vya kitaaluma…",
+    "searching_shopping": "Inatafuta bidhaa…",
+    "searching_videos": "Inatafuta video…",
+    "search_complete": "Utafutaji umekamilika.",
+    "search_failed": "Utafutaji umeshindwa.",
+    "answer_ready": "Jibu liko tayari.",
+    "fetching_article": "Inapata makala…",
+    "fetching_publisher": "Inapata makala ya mchapishaji…",
+    "resolving_article": "Inatatua makala…",
+    "resolving_gn": "Inatatua kiungo cha Google News…",
+    "rewriting": "Inandika upya makala…",
+    "rewriting_korean": "Inandika upya kwa Kikorea…",
+    "preparing_rewrite": "Inajiandaa kwa uandishi upya kamili…",
+    "extracted_rewriting": "Maandishi ya makala yaliyotolewa — inandika upya…",
+    "viewing_prior": "Inatazama mzunguko wa awali — uliza swali la ziada hapa chini."
+  },
+  "error": {
+    "no_answer": "Hakuna jibu la AI lililotolewa — matokeo ya utafutaji yapo hapa chini.",
+    "no_news": "Hakuna habari zilizopatikana — jaribu swali lingine.",
+    "no_stories": "Hakuna hadithi zilizopatikana — jaribu swali lingine.",
+    "no_stories_category": "Hakuna hadithi zilizopatikana kwa kundi hili — jaribu kidonge kingine.",
+    "rewrite_empty": "Uandishi upya wa makala umerejea maandiko yasiyo na kitu.",
+    "rewrite_failed": "Haiwezekani kuandika upya makala",
+    "load_news_failed": "Haiwezekani kupakia habari — angalia seva.",
+    "model_not_found": "Mfano haujapatikana — endesha ollama pull kwa mfano wako uliowekwa, au chagua mwingine katika Chaguzi.",
+    "ollama_not_running": "Ollama haiko kazini — majibu yatakuwa ya kutafuta pekee. Anza: ollama serve",
+    "invalid_thread": "Thread ya JSON si halali.",
+    "enter_question": "Ingiza swali.",
+    "enter_search": "Ingiza neno la utafutaji."
+  },
+  "article": {
+    "sources": "Vyanzo",
+    "research_progress": "Maendeleo ya Utafiti",
+    "thinking": "Kufikiri",
+    "answer": "Jibu",
+    "key_points": "Vidokezo Muhimu",
+    "summary": "Muhtasari",
+    "related_media": "Vyombo vya Habari Vinavyohusiana",
+    "view_more": "Tazama {count} zaidi",
+    "back": "Rudi",
+    "read_original": "Soma asili",
+    "related_image": "Picha inayohusiana",
+    "related": "Inayohusiana"
+  },
+  "discover": {
+    "updated": "Imesasishwa {time}",
+    "scope": {
+      "all": "📰 Zote",
+      "local": "🏠 Mitaa",
+      "world": "🌍 Ulimwengu"
+    },
+    "categories": {
+      "politics": "Siasa",
+      "economy": "Uchumi",
+      "sports": "Michezo",
+      "world": "Ulimwengu",
+      "entertainment": "Burudani",
+      "tech": "Teknolojia na Sayansi",
+      "culture": "Utamaduni",
+      "health": "Afya",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "sayansi ya teknolojia",
+      "ai": "akili bandia AI kujifunza mashine",
+      "world": "habari za kimataifa",
+      "politics": "siasa serikali uchaguzi",
+      "business": "biashara uchumi kampuni",
+      "finance": "fedha masoko hisa",
+      "health": "afya dawa ustawi",
+      "climate": "mabadiliko ya tabianchi mazingira",
+      "sports": "michezo",
+      "entertainment": "burudani maarufu",
+      "art": "sanaa utamaduni",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Fungua historia",
+    "close": "Funga historia",
+    "imported": "Imepakiwa {count}",
+    "export": "Export JSON",
+    "import": "Import JSON",
+    "clear": "Futa historia",
+    "empty": "Maswali yako yanaonekana hapa.",
+    "new_chat": "Mjadala Mpya"
+  },
+  "panel": {
+    "history": "Historia",
+    "bookmarks": "Alama",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Alama Zote",
+    "empty": "Alama matokeo ili kuziokoa hapa.",
+    "export": "Export",
+    "clear_all": "Futa zote",
+    "new_collection": "Kukusanya Mpya"
+  },
+  "hero": {
+    "private": "Binafsi",
+    "ai_powered": "Inayoendeshwa na AI",
+    "local_first": "Mitaa Kwanza"
+  },
+  "options": {
+    "model": "Mfano",
+    "deep_research": "Utafiti wa kina",
+    "focus": "Kituo",
+    "theme": "Mandhari",
+    "language": "Lugha",
+    "answer_language": "Lugha ya AI",
+    "answer_auto": "Auto",
+    "research": "Utafiti",
+    "fact_check": "Kagua ukweli"
+  },
+  "preferences": {
+    "title": "Mipangilio",
+    "language": "Lugha",
+    "language_desc": "Chagua lugha unayopendelea ya kiolesura",
+    "language_storage": "Lugha ya kiolesura imehifadhiwa kwenye kivinjari chako.",
+    "branding": "Ujumuishaji",
+    "branding_desc": "Binafsisha jina la programu, nembo, na favicon inayonyeshwa kwenye UI.",
+    "app_name": "Jina la Programu",
+    "app_name_hint": "Jina linaloonyeshwa kwenye kichwa na vichwa vya kurasa",
+    "logo_url": "URL ya Nembo",
+    "logo_url_hint": "URL au njia ya picha yako ya nembo (acha tupu kwa chaguo la kawaida)",
+    "favicon_url": "URL ya Favicon",
+    "favicon_url_hint": "URL au njia ya favicon yako (acha tupu kwa chaguo la kivinjari)",
+    "appearance": "Muonekano",
+    "appearance_desc": "Binafsisha mtindo wa kuona na mpangilio.",
+    "theme": "Mandhari",
+    "font_size": "Ukubwa wa Fonti",
+    "results_layout": "Mpangilio wa Matokeo",
+    "search": "Tafuta",
+    "search_desc": "Mipangilio ya kawaida inatumika kwa utafutaji wote.",
+    "ui_language": "Lugha ya UI",
+    "ui_language_hint": "Lugha ya kiolesura (huhifadhiwa kwenye hifadhi ya ndani ya kivinjari)",
+    "interface_language": "Lugha ya kiolesura",
+    "stored_in_browser": "Huhifadhiwa kwenye kivinjari (hifadhi ya ndani)",
+    "search_defaults": "Mipangilio ya utafutaji",
+    "search_language": "Lugha ya Utafutaji",
+    "search_language_hint": "auto = gundua kutoka kwa swali (Hangul → ko-KR); au zote, au eneo lililowekwa kama ko-KR",
+    "fallback_language": "Nambari ya Lugha ya Kurejelea",
+    "fallback_language_hint": "Inatumika wakati ugunduzi wa moja kwa moja haujaweza",
+    "safe_search": "Utafutaji Salama",
+    "safe_off": "Zimezimwa",
+    "safe_moderate": "Kati",
+    "safe_strict": "Kali",
+    "results_per_engine": "Matokeo Kila Injini",
+    "ai": "AI",
+    "ai_desc": "Sanidi mifano ya AI kwa ajili ya uundaji wa majibu na uandishi upya wa makala.",
+    "ai_provider": "Mtoa huduma",
+    "ai_provider_local": "Mitaa (Ollama)",
+    "ai_provider_custom": "Kawaida",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Mitaa: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "Inahitajika kwa watoa huduma wa wingu (OpenAI, Anthropic, nk.)",
+    "ai_model": "Mfano",
+    "ai_model_hint": "Mfano wa mazungumzo/magizo kwa ajili ya uundaji wa majibu na upanuzi wa swali",
+    "ai_article_model": "Mfano wa Makala",
+    "ai_article_model_hint": "Mfano wa uandishi upya wa makala za habari za ukurasa mzima (huenda ikarejelea mfano mkuu)",
+    "ai_timeout": "Muda wa Kukatika (sekunde)",
+    "ai_timeout_hint": "Muda wa kukatika kwa kila ombi la simu za mfano",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Vipengele",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Habari",
+    "news_desc": "Mkusanyiko wa habari na mipangilio ya makala.",
+    "news_per_source": "Makala kwa kila chanzo",
+    "news_freshness": "Upeo wa ubora wa habari (masaa)",
+    "news_freshness_weight": "Uzito wa ubora wa habari",
+    "news_dedup": "Kukataa kigezo cha kufanana",
+    "news_max_age": "Umri wa juu (siku)",
+    "news_cache_ttl": "TTL ya cache (sekunde)",
+    "news_enrich_max": "Makala nyingi za kuimarisha",
+    "engines": "Injini za Utafutaji",
+    "engines_desc": "Washa/zima injini na kurekebisha uzito wao wa uainishaji. Uzito wa juu = ushawishi zaidi kwenye mpangilio wa matokeo.",
+    "engine": "injini",
+    "categories": "kategoria",
+    "weight": "uzito",
+    "privacy": "Faragha",
+    "privacy_desc": "Dhibiti jinsi data yako inavyoshughulikiwa.",
+    "proxy_images": "Picha za proxy",
+    "proxy_images_hint": "Pitia picha kupitia seva ili kuficha IP yako kutoka kwa wahusika wengine",
+    "remove_trackers": "Ondoa vigezo vya kufuatilia",
+    "remove_trackers_hint": "Ondoa UTM na vigezo vingine vya kufuatilia kutoka kwa URL",
+    "save_history": "Hifadhi historia ya utafutaji",
+    "save_history_hint": "Hifadhi utafutaji kwenye kivinjari (kamwe hazitumwi kwa seva)",
+    "clear_data": "Futa Data",
+    "clear_localstorage": "Futa Hifadhi ya Ndani",
+    "clear_indexeddb": "Futa IndexedDB",
+    "shortcuts": "Funguo za Haraka",
+    "shortcuts_desc": "Funguo za haraka kwa watumiaji wenye nguvu.",
+    "shortcut_focus_search": "Tazama kisanduku cha utafutaji",
+    "shortcut_close": "Funga paneli / Ghafla",
+    "shortcut_navigate": "Naviga matokeo",
+    "shortcut_open": "Fungua matokeo yaliyochaguliwa",
+    "shortcut_new_tab": "Fungua kwenye kichupo kipya",
+    "shortcut_switch_mode": "Badilisha hali ya utafutaji",
+    "shortcut_help": "Onyesha msaada huu",
+    "server": "Seva",
+    "server_desc": "Mipangilio ya seva na mipangilio ya mtandao.",
+    "bind_address": "Anwani ya Kufunga",
+    "port": "Bandari",
+    "max_connections": "Mawasiliano ya Juu",
+    "image_proxy": "Washa Proxy ya Picha",
+    "cache_backend": "Backend ya Cache",
+    "cache_dir": "Direktori ya Cache",
+    "redis_url": "URL ya Redis",
+    "advanced": "Juu",
+    "advanced_desc": "Mipangilio ya cache na muda wa kukatika.",
+    "cache_ttl": "TTL ya Cache (sekunde)",
+    "cache_ttl_hint": "Muda wa kuishi wa cache ya matokeo (0 inazima caching)",
+    "request_timeout": "Muda wa Kukatika kwa Ombi (sekunde)",
+    "request_timeout_hint": "Muda wa kukatika wa mtandao kwa kila injini",
+    "save": "Hifadhi Mipangilio",
+    "saved": "Imepangwa",
+    "saved_msg": "imeandikwa kwenye settings.yml na kutumika kwa utafutaji mpya.",
+    "server_settings": "Mipangilio hii inahifadhiwa upande wa seva ili",
+    "raw_config": "Config JSON",
+    "stats": "Takwimu",
+    "home": "Nyumbani",
+    "logout": "Toka",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Kawaida",
+    "academic": "Kitaaluma",
+    "writing": "Kuandika",
+    "code": "Kanuni"
+  },
+  "footer": {
+    "grounded_answers": "Majibu yaliyothibitishwa kutoka kwa mfano wako wa ndani — injini za utafutaji 200+, hakuna kumbukumbu ya swali.",
+    "academic_papers": "Karatasi za kitaaluma kutoka arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, na zaidi.",
+    "news_digest": "Muhtasari wa Habari: inapata kurasa za makala, inandika muhtasari kwa ndani kupitia Ollama — picha kubwa tu, hakuna kupandisha favicon.",
+    "images": "Utafutaji wa picha za Wikimedia Commons — thumbnails zinafichwa kwa faragha.",
+    "api_docs": "API Docs",
+    "status": "Hali",
+    "version": "Toleo",
+    "engines_count": "232 injini"
+  },
+  "examples": {
+    "try": "Jaribu mfano",
+    "general": [
+      {
+        "q": "Mifano bora ya programu ya Rust async",
+        "label": "Rust async"
+      },
+      {
+        "q": "Karatasi za utafiti za LLM za hivi karibuni 2025",
+        "label": "Karatasi za LLM za hivi karibuni"
+      },
+      {
+        "q": "DNS inafanya kazi vipi",
+        "label": "DNS inafanya kazi vipi"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Karatasi za utafiti za LLM za hivi karibuni 2025",
+        "label": "Karatasi za LLM za hivi karibuni"
+      },
+      {
+        "q": "Karatasi za mapitio ya uhariri wa jeni za CRISPR",
+        "label": "Mapitio ya CRISPR"
+      },
+      {
+        "q": "kuchunguza usanifu wa transformer",
+        "label": "Uchunguzi wa transformer"
+      }
+    ],
+    "news": [
+      {
+        "q": "Udhibiti wa AI",
+        "label": "Udhibiti wa AI"
+      },
+      {
+        "q": "Habari za teknolojia za Korea",
+        "label": "Teknolojia za Korea"
+      },
+      {
+        "q": "sasisho za sera ya tabianchi",
+        "label": "Sera ya tabianchi"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Maslahi (Kwako)",
+    "add_placeholder": "Ongeza interest...",
+    "empty": "Maslahi yanaongezwa kiotomatiki unavyotafuta",
+    "remove": "Ondoa"
+  },
+  "factcheck": {
+    "title": "Matokeo ya Kagua Ukweli",
+    "checking": "Inachambua...",
+    "analyzing": "Inachambua vyanzo kwa ajili ya kutokubaliana...",
+    "no_contradictions": "Hakuna kutokubaliana kuligundulika katika vyanzo",
+    "found": "Kutokubaliana kumegundulika"
+  },
+  "foryou": {
+    "title": "Kwako",
+    "based_on": "Kulingana na: {interests}",
+    "no_interests": "Hakuna maslahi bado. Tafuta ili kujenga maslahi yako!",
+    "loading": "Inapakia mlo wa kibinafsi..."
+  },
+  "common": {
+    "search": "Tafuta",
+    "clear": "Futa",
+    "close": "Funga",
+    "save": "Hifadhi",
+    "cancel": "Ghafla",
+    "loading": "Inapakia...",
+    "error": "Kosa",
+    "retry": "Jaribu tena",
+    "more": "Zaidi",
+    "less": "Kidogo"
+  },
+  "trends": {
+    "title": "Inayoendelea Sasa",
+    "loading": "Inapakia mwenendo...",
+    "error": "Imeshindwa kupakia mwenendo",
+    "empty": "Hakuna mada zinazojitokeza"
+  },
+  "onboarding": {
+    "welcome": "Karibu kwenye Metasearch",
+    "subtitle": "Injini yako ya utafutaji inayotumia AI, ya kibinafsi",
+    "private_search": "Utafutaji wa Kibinafsi",
+    "private_search_desc": "Hakuna kumbukumbu ya swali, kamwe",
+    "ai_answers": "Majibu ya AI",
+    "ai_answers_desc": "AI ya ndani inatoa muhtasari wa matokeo",
+    "news_digest": "Muhtasari wa Habari",
+    "news_digest_desc": "Habari zilizochaguliwa na uchambuzi",
+    "local_first": "Mitaa Kwanza",
+    "local_first_desc": "Data yako inabaki kwenye kifaa chako",
+    "get_started": "Anza"
+  },
+  "feeds": {
+    "find": "Pata Feeds",
+    "subscribe": "Jisajili",
+    "unsubscribe": "Jiondoe"
+  },
+  "errors": {
+    "load_trends": "Imeshindwa kupakia mwenendo",
+    "load_feed": "Imeshindwa kupakia mlo wa kibinafsi",
+    "load_global": "Imeshindwa kupakia mlo wa kimataifa",
+    "translation": "Tafsiri imefeli"
+  },
+  "compare": {
+    "title": "Linganisha Matokeo",
+    "button": "Linganisha",
+    "clear": "Futa Zote",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

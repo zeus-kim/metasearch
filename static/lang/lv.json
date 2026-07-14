@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Uzdodiet jautājumus tīmeklī, privāti"
+  },
+  "nav": {
+    "ask": "Uzdot",
+    "discover": "Atklāt",
+    "history": "Vēsture",
+    "options": "Iespējas",
+    "classic": "Klasiskais",
+    "stats": "Statistika",
+    "preferences": "Iestatījumi"
+  },
+  "tabs": {
+    "general": "Vispārīgi",
+    "images": "Attēli",
+    "videos": "Video",
+    "papers": "Dokumenti",
+    "news": "Jaunumi",
+    "shopping": "Iepirkšanās"
+  },
+  "search": {
+    "placeholder": "Uzdodiet jebko…",
+    "placeholder_news": "Ievadiet jaunumu tēmu, nospiediet Uzdot",
+    "placeholder_images": "Meklēt attēlus…",
+    "placeholder_papers": "Ievadiet jautājumu, nospiediet Uzdot",
+    "placeholder_general": "Ievadiet jautājumu vai tēmu, nospiediet Uzdot",
+    "placeholder_shopping": "Meklēt produktus…",
+    "placeholder_videos": "Meklēt video…",
+    "button": "Uzdot",
+    "button_search": "Meklēt"
+  },
+  "status": {
+    "loading": "Ielādē…",
+    "loading_stories": "Ielādē stāstus…",
+    "searching": "Meklē…",
+    "searching_web": "Meklē tīmeklī…",
+    "searching_images": "Meklē attēlus…",
+    "searching_news": "Meklē jaunumu avotus…",
+    "searching_papers": "Meklē akadēmiskos avotus…",
+    "searching_shopping": "Meklē produktus…",
+    "searching_videos": "Meklē video…",
+    "search_complete": "Meklēšana pabeigta.",
+    "search_failed": "Meklēšana neizdevās.",
+    "answer_ready": "Atbilde gatava.",
+    "fetching_article": "Iegūst rakstu…",
+    "fetching_publisher": "Iegūst izdevēja rakstu…",
+    "resolving_article": "Atrisinot rakstu…",
+    "resolving_gn": "Atrisinot Google News saiti…",
+    "rewriting": "Pārraksta rakstu…",
+    "rewriting_korean": "Pārraksta korejiešu valodā…",
+    "preparing_rewrite": "Sagatavojot pilnu pārrakstīšanu…",
+    "extracted_rewriting": "Iegūts raksta teksts — pārraksta…",
+    "viewing_prior": "Skatīt iepriekšējo kārtu — uzdodiet sekojošu jautājumu zemāk."
+  },
+  "error": {
+    "no_answer": "Nav ģenerētas AI atbildes — meklēšanas rezultāti zemāk.",
+    "no_news": "Nav atrastu jaunumu — mēģiniet citu vaicājumu.",
+    "no_stories": "Nav atrastu stāstu — mēģiniet citu vaicājumu.",
+    "no_stories_category": "Nav atrastu stāstu šajā kategorijā — mēģiniet citu pill.",
+    "rewrite_empty": "Raksta pārrakstīšana atgrieza tukšu tekstu.",
+    "rewrite_failed": "Neizdevās pārrakstīt rakstu",
+    "load_news_failed": "Neizdevās ielādēt jaunumus — pārbaudiet serveri.",
+    "model_not_found": "Modelis nav atrasts — izpildiet ollama pull savam konfigurētajam modelim vai izvēlieties citu Iespējās.",
+    "ollama_not_running": "Ollama nedarbojas — atbildes būs tikai meklēšanas. Sākt: ollama serve",
+    "invalid_thread": "Nederīgs pavediena JSON.",
+    "enter_question": "Ievadiet jautājumu.",
+    "enter_search": "Ievadiet meklēšanas terminu."
+  },
+  "article": {
+    "sources": "Avoti",
+    "research_progress": "Pētniecības progress",
+    "thinking": "Domāšana",
+    "answer": "Atbilde",
+    "key_points": "Galvenie punkti",
+    "summary": "Kopsavilkums",
+    "related_media": "Saistītie mediji",
+    "view_more": "Skatīt {count} vairāk",
+    "back": "Atpakaļ",
+    "read_original": "Lasīt oriģinālu",
+    "related_image": "Saistīts attēls",
+    "related": "Saistīts"
+  },
+  "discover": {
+    "updated": "Atjaunots {time}",
+    "scope": {
+      "all": "📰 Visi",
+      "local": "🏠 Vietējie",
+      "world": "🌍 Pasaule"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomika",
+      "sports": "Sports",
+      "world": "Pasaule",
+      "entertainment": "Izklaide",
+      "tech": "Tehnoloģijas un zinātne",
+      "culture": "Kultūra",
+      "health": "Veselība",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "tehnoloģiju zinātne",
+      "ai": "mākslīgā intelekta AI mašīnmācīšanās",
+      "world": "pasaules jaunumi starptautiskie",
+      "politics": "politika valdība vēlēšanas",
+      "business": "bizness ekonomika uzņēmumi",
+      "finance": "finanses tirgi akcijas",
+      "health": "veselība medicīna labklājība",
+      "climate": "klimata pārmaiņas vide",
+      "sports": "sports",
+      "entertainment": "izklaide slavenības",
+      "art": "māksla kultūra",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Atvērt vēsturi",
+    "close": "Aizvērt vēsturi",
+    "imported": "Importēts {count}",
+    "export": "Eksportēt JSON",
+    "import": "Importēt JSON",
+    "clear": "Notīrīt vēsturi",
+    "empty": "Jūsu jautājumi parādās šeit.",
+    "new_chat": "Jauna saruna"
+  },
+  "panel": {
+    "history": "Vēsture",
+    "bookmarks": "Grāmatzīmes",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Visas grāmatzīmes",
+    "empty": "Grāmatzīmju rezultāti, lai saglabātu tos šeit.",
+    "export": "Eksportēt",
+    "clear_all": "Notīrīt visu",
+    "new_collection": "Jauna kolekcija"
+  },
+  "hero": {
+    "private": "Privāts",
+    "ai_powered": "Mākslīgā intelekta jaudots",
+    "local_first": "Vietējais pirmais"
+  },
+  "options": {
+    "model": "Modelis",
+    "deep_research": "Dziļa pētniecība",
+    "focus": "Fokuss",
+    "theme": "Tēma",
+    "language": "Valoda",
+    "answer_language": "AI valoda",
+    "answer_auto": "Automātiski",
+    "research": "Pētniecība",
+    "fact_check": "Faktu pārbaude"
+  },
+  "preferences": {
+    "title": "Iestatījumi",
+    "language": "Valoda",
+    "language_desc": "Izvēlieties vēlamo saskarnes valodu",
+    "language_storage": "Saskarnes valoda tiek saglabāta jūsų pārlūkprogrammā.",
+    "branding": "Zīmols",
+    "branding_desc": "Pielāgojiet lietojumprogrammas nosaukumu, logotipu un favicon, kas tiek rādīti UI.",
+    "app_name": "Lietojumprogrammas nosaukums",
+    "app_name_hint": "Nosaukums, kas tiek rādīts galvenē un lapas virsrakstos",
+    "logo_url": "Logotipa URL",
+    "logo_url_hint": "URL vai ceļš uz jūsu logotipa attēlu (atstājiet tukšu noklusējumam)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL vai ceļš uz jūsu favicon (atstājiet tukšu pārlūkprogrammas noklusējumam)",
+    "appearance": "Izskats",
+    "appearance_desc": "Pielāgojiet vizuālo stilu un izkārtojumu.",
+    "theme": "Tēma",
+    "font_size": "Fonta izmērs",
+    "results_layout": "Rezultātu izkārtojums",
+    "search": "Meklēt",
+    "search_desc": "Noklusējuma iestatījumi, kas piemēroti visām meklēšanām.",
+    "ui_language": "UI valoda",
+    "ui_language_hint": "Interfeisa valoda (uzglabāta pārlūkprogrammas localStorage)",
+    "interface_language": "Interfeisa valoda",
+    "stored_in_browser": "Uzglabāts pārlūkprogrammā (localStorage)",
+    "search_defaults": "Meklēšanas noklusējumi",
+    "search_language": "Meklēšanas valoda",
+    "search_language_hint": "automātiski = noteikt no vaicājuma (Hangul → ko-KR); vai visi, vai fiksēta lokalizācija, piemēram, ko-KR",
+    "fallback_language": "Aizvietojošās valodas kods",
+    "fallback_language_hint": "Tiek izmantots, kad automātiskā noteikšana ir neskaidra",
+    "safe_search": "Droša meklēšana",
+    "safe_off": "Izslēgts",
+    "safe_moderate": "Mēreni",
+    "safe_strict": "Skaidri",
+    "results_per_engine": "Rezultāti uz dzinēju",
+    "ai": "AI",
+    "ai_desc": "Konfigurējiet AI modeļus atbilžu sintēzei un rakstu pārrakstīšanai.",
+    "ai_provider": "Piegādātājs",
+    "ai_provider_local": "Vietējais (Ollama)",
+    "ai_provider_custom": "Pielāgots",
+    "ai_base_url": "API bāzes URL",
+    "ai_base_url_hint": "Vietējais: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API atslēga",
+    "ai_api_key_hint": "Nepieciešams mākoņa piegādātājiem (OpenAI, Anthropic utt.)",
+    "ai_model": "Modelis",
+    "ai_model_hint": "Čata/instrukciju modelis atbilžu sintēzei un vaicājumu paplašināšanai",
+    "ai_article_model": "Raksta modelis",
+    "ai_article_model_hint": "Modelis pilna lapas ziņu rakstu pārrakstīšanai (noklusējumā uz galveno modeli)",
+    "ai_timeout": "Laika limits (sekundes)",
+    "ai_timeout_hint": "Par pieprasījumu laika limits modeļa izsaukumiem",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Iespējas",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Jaunumi",
+    "news_desc": "Jaunumu apkopošana un rakstu iestatījumi.",
+    "news_per_source": "Raksti uz avotu",
+    "news_freshness": "Jaunumu svaiguma pusperiods (stundas)",
+    "news_freshness_weight": "Jaunumu svaiguma svars",
+    "news_dedup": "Dedup līdzības slieksnis",
+    "news_max_age": "Maksimālais vecums (dienas)",
+    "news_cache_ttl": "Kešatmiņas TTL (sekundes)",
+    "news_enrich_max": "Maksimālais rakstu skaits, ko bagātināt",
+    "engines": "Meklēšanas dzinēji",
+    "engines_desc": "Iespējot/izslēgt dzinējus un pielāgot to rangus. Augstāks svars = lielāka ietekme uz rezultātu kārtību.",
+    "engine": "dzinējs",
+    "categories": "kategorijas",
+    "weight": "svars",
+    "privacy": "Privātums",
+    "privacy_desc": "Kontrolējiet, kā tiek apstrādāti jūsu dati.",
+    "proxy_images": "Attēlu starpniekserveris",
+    "proxy_images_hint": "Maršrutēt attēlus caur serveri, lai slēptu jūsu IP no trešajām pusēm",
+    "remove_trackers": "Noņemt izsekošanas parametrus",
+    "remove_trackers_hint": "Noņemt UTM un citus izsekošanas parametrus no URL",
+    "save_history": "Saglabāt meklēšanas vēsturi",
+    "save_history_hint": "Uzglabāt meklējumus lokāli pārlūkprogrammā (nekad netiek nosūtīti uz serveri)",
+    "clear_data": "Notīrīt datus",
+    "clear_localstorage": "Notīrīt vietējo krātuvi",
+    "clear_indexeddb": "Notīrīt IndexedDB",
+    "shortcuts": "Taustiņu kombinācijas",
+    "shortcuts_desc": "Ātrās piekļuves taustiņi jaudīgiem lietotājiem.",
+    "shortcut_focus_search": "Fokusēt meklēšanas lodziņu",
+    "shortcut_close": "Aizvērt paneli / Atcelt",
+    "shortcut_navigate": "Navigēt rezultātos",
+    "shortcut_open": "Atvērt izvēlēto rezultātu",
+    "shortcut_new_tab": "Atvērt jaunā cilnē",
+    "shortcut_switch_mode": "Pārslēgt meklēšanas režīmu",
+    "shortcut_help": "Rādīt šo palīdzību",
+    "server": "Serveris",
+    "server_desc": "Servera konfigurācija un tīkla iestatījumi.",
+    "bind_address": "Saites adrese",
+    "port": "Ports",
+    "max_connections": "Maksimālais savienojumu skaits",
+    "image_proxy": "Iespējot attēlu starpniekserveri",
+    "cache_backend": "Kešatmiņas aizmugure",
+    "cache_dir": "Kešatmiņas direktorija",
+    "redis_url": "Redis URL",
+    "advanced": "Paplašināts",
+    "advanced_desc": "Kešatmiņas un laika limits iestatījumi.",
+    "cache_ttl": "Kešatmiņas TTL (sekundes)",
+    "cache_ttl_hint": "Rezultātu kešatmiņas derīguma termiņš (0 atslēdz kešatmiņu)",
+    "request_timeout": "Pieprasījuma laika limits (sekundes)",
+    "request_timeout_hint": "Par dzinēju tīkla laika limits",
+    "save": "Saglabāt iestatījumus",
+    "saved": "Saglabāts",
+    "saved_msg": "uzrakstīts settings.yml un piemērots jaunām meklēšanām.",
+    "server_settings": "Šie iestatījumi tiek saglabāti servera pusē",
+    "raw_config": "Konfigurācijas JSON",
+    "stats": "Statistika",
+    "home": "Sākums",
+    "logout": "Iziet",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Vispārīgi",
+    "academic": "Akadēmisks",
+    "writing": "Rakstīšana",
+    "code": "Kods"
+  },
+  "footer": {
+    "grounded_answers": "Pamatotas atbildes no jūsu vietējā modeļa — 200+ meklēšanas dzinēji, nulles vaicājumu žurnāls.",
+    "academic_papers": "Akadēmiskie dokumenti no arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ un citiem.",
+    "news_digest": "Jaunumu kopsavilkums: iegūst rakstu lapas, pārraksta kopsavilkumus lokāli caur Ollama — lieli attēli tikai, nav favicon palielināšanas.",
+    "images": "Wikimedia Commons attēlu meklēšana — sīktēli starpniekserverī privātumam.",
+    "api_docs": "API dokumentācija",
+    "status": "Statuss",
+    "version": "Versija",
+    "engines_count": "232 dzinēji"
+  },
+  "examples": {
+    "try": "Mēģiniet piemēru",
+    "general": [
+      {
+        "q": "Rust async programmēšanas labākās prakses",
+        "label": "Rust async"
+      },
+      {
+        "q": "Jaunākie LLM pētniecības dokumenti 2025",
+        "label": "Jaunākie LLM dokumenti"
+      },
+      {
+        "q": "Kā darbojas DNS",
+        "label": "Kā darbojas DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Jaunākie LLM pētniecības dokumenti 2025",
+        "label": "Jaunākie LLM dokumenti"
+      },
+      {
+        "q": "CRISPR gēnu rediģēšanas pārskata dokumenti",
+        "label": "CRISPR pārskats"
+      },
+      {
+        "q": "transformatoru arhitektūras pārskats",
+        "label": "Transformatoru pārskats"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulējums",
+        "label": "AI regulējums"
+      },
+      {
+        "q": "Korejas tehnoloģiju jaunumi",
+        "label": "Korejas tehnoloģijas"
+      },
+      {
+        "q": "klimata politikas atjauninājumi",
+        "label": "Klimata politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Intereses (Jums)",
+    "add_placeholder": "Pievienot interesi...",
+    "empty": "Intereses tiek pievienotas automātiski, kad meklējat",
+    "remove": "Noņemt"
+  },
+  "factcheck": {
+    "title": "Faktu pārbaudes rezultāti",
+    "checking": "Analizē…",
+    "analyzing": "Analizē avotus pretrunām…",
+    "no_contradictions": "Avotos nav atrastas pretrunas",
+    "found": "Atrastas pretrunas"
+  },
+  "foryou": {
+    "title": "Jums",
+    "based_on": "Balstīts uz: {interests}",
+    "no_interests": "Nav interešu vēl. Meklējiet, lai izveidotu savas intereses!",
+    "loading": "Ielādē personalizēto plūsmu..."
+  },
+  "common": {
+    "search": "Meklēt",
+    "clear": "Notīrīt",
+    "close": "Aizvērt",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "loading": "Ielādē...",
+    "error": "Kļūda",
+    "retry": "Mēģināt vēlreiz",
+    "more": "Vairāk",
+    "less": "Mazāk"
+  },
+  "trends": {
+    "title": "Tagad aktuāli",
+    "loading": "Ielādē tendences...",
+    "error": "Neizdevās ielādēt tendences",
+    "empty": "Nav aktuālu tēmu"
+  },
+  "onboarding": {
+    "welcome": "Laipni lūdzam Metameklēšanā",
+    "subtitle": "Jūsu privātais, AI jaudots meklētājs",
+    "private_search": "Privāta meklēšana",
+    "private_search_desc": "Nekad nav vaicājumu žurnāla",
+    "ai_answers": "AI atbildes",
+    "ai_answers_desc": "Vietējais AI apkopo rezultātus",
+    "news_digest": "Jaunumu kopsavilkums",
+    "news_digest_desc": "Kuratēti jaunumi ar analīzi",
+    "local_first": "Vietējais pirmais",
+    "local_first_desc": "Jūsu dati paliek jūsu ierīcē",
+    "get_started": "Sākt"
+  },
+  "feeds": {
+    "find": "Atrast plūsmas",
+    "subscribe": "Abonēt",
+    "unsubscribe": "Atteikties"
+  },
+  "errors": {
+    "load_trends": "Neizdevās ielādēt tendences",
+    "load_feed": "Neizdevās ielādēt personalizēto plūsmu",
+    "load_global": "Neizdevās ielādēt globālo plūsmu",
+    "translation": "Tulkošana neizdevās"
+  },
+  "compare": {
+    "title": "Salīdzināt rezultātus",
+    "button": "Salīdzināt",
+    "clear": "Notīrīt visu",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

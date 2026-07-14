@@ -1,0 +1,432 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Спросите в интернете, конфиденциально"
+  },
+  "nav": {
+    "ask": "Спросить",
+    "discover": "Открыть",
+    "history": "История",
+    "options": "Опции",
+    "classic": "Классический",
+    "stats": "Статистика",
+    "preferences": "Предпочтения"
+  },
+  "tabs": {
+    "general": "Общее",
+    "images": "Изображения",
+    "videos": "Видео",
+    "papers": "Статьи",
+    "news": "Новости",
+    "shopping": "Покупки"
+  },
+  "search": {
+    "placeholder": "Спросите что угодно…",
+    "placeholder_news": "Введите тему новостей, нажмите Спросить",
+    "placeholder_images": "Поиск изображений…",
+    "placeholder_papers": "Введите вопрос, нажмите Спросить",
+    "placeholder_general": "Введите вопрос или тему, нажмите Спросить",
+    "placeholder_shopping": "Поиск продуктов…",
+    "placeholder_videos": "Поиск видео…",
+    "button": "Спросить",
+    "button_search": "Поиск"
+  },
+  "status": {
+    "loading": "Загрузка…",
+    "loading_stories": "Загрузка историй…",
+    "searching": "Поиск…",
+    "searching_web": "Поиск в интернете…",
+    "searching_images": "Поиск изображений…",
+    "searching_news": "Поиск новостных источников…",
+    "searching_papers": "Поиск академических источников…",
+    "searching_shopping": "Поиск продуктов…",
+    "searching_videos": "Поиск видео…",
+    "search_complete": "Поиск завершен.",
+    "search_failed": "Поиск не удался.",
+    "answer_ready": "Ответ готов.",
+    "fetching_article": "Получение статьи…",
+    "fetching_publisher": "Получение статьи издателя…",
+    "resolving_article": "Разрешение статьи…",
+    "resolving_gn": "Разрешение ссылки Google News…",
+    "rewriting": "Переписывание статьи…",
+    "rewriting_korean": "Переписывание на корейском…",
+    "preparing_rewrite": "Подготовка полного переписывания…",
+    "extracted_rewriting": "Извлеченный текст статьи — переписывание…",
+    "viewing_prior": "Просмотр предыдущего ответа — задайте уточняющий вопрос ниже."
+  },
+  "error": {
+    "no_answer": "Ответ ИИ не сгенерирован — результаты поиска ниже.",
+    "no_news": "Новости не найдены — попробуйте другой запрос.",
+    "no_stories": "Истории не найдены — попробуйте другой запрос.",
+    "no_stories_category": "Истории не найдены для этой категории — попробуйте другую вкладку.",
+    "rewrite_empty": "Переписывание статьи вернуло пустой текст.",
+    "rewrite_failed": "Не удалось переписать статью",
+    "load_news_failed": "Не удалось загрузить новости — проверьте сервер.",
+    "model_not_found": "Модель не найдена — выполните ollama pull для вашей настроенной модели или выберите другую в Опциях.",
+    "ollama_not_running": "Ollama не запущен — ответы будут только по поиску. Запустите: ollama serve",
+    "invalid_thread": "Недопустимый JSON потока.",
+    "enter_question": "Введите вопрос.",
+    "enter_search": "Введите поисковый запрос."
+  },
+  "article": {
+    "sources": "Источники",
+    "research_progress": "Прогресс исследования",
+    "thinking": "Думаю",
+    "answer": "Ответ",
+    "key_points": "Ключевые моменты",
+    "summary": "Резюме",
+    "related_media": "Связанные медиа",
+    "view_more": "Посмотреть еще {count}",
+    "back": "Назад",
+    "read_original": "Читать оригинал",
+    "related_image": "Связанное изображение",
+    "related": "Связанные"
+  },
+  "discover": {
+    "updated": "Обновлено {time}",
+    "scope": {
+      "all": "📰 Все",
+      "local": "🏠 Местные",
+      "world": "🌍 Мир"
+    },
+    "categories": {
+      "politics": "Политика",
+      "economy": "Экономика",
+      "sports": "Спорт",
+      "world": "Мир",
+      "entertainment": "Развлечения",
+      "tech": "Технологии и наука",
+      "culture": "Культура",
+      "health": "Здоровье",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "технологическая наука",
+      "ai": "искусственный интеллект ИИ машинное обучение",
+      "world": "мировые новости международные",
+      "politics": "политика правительство выборы",
+      "business": "бизнес экономика компании",
+      "finance": "финансы рынки акции",
+      "health": "Здоровье",
+      "telegram": "Telegram",
+      "climate": "изменение климата окружающая среда",
+      "sports": "спорт",
+      "entertainment": "развлечения знаменитости",
+      "art": "искусство культура",
+      "top": "главные новости заголовки"
+    }
+  },
+  "history": {
+    "open": "Открыть историю",
+    "close": "Закрыть историю",
+    "imported": "Импортировано {count}",
+    "export": "Экспортировать JSON",
+    "import": "Импортировать JSON",
+    "clear": "Очистить историю",
+    "empty": "Ваши вопросы появляются здесь.",
+    "new_chat": "Новый чат"
+  },
+  "panel": {
+    "history": "История",
+    "bookmarks": "Закладки",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Все закладки",
+    "empty": "Закладите результаты, чтобы сохранить их здесь.",
+    "export": "Экспортировать",
+    "clear_all": "Очистить все",
+    "new_collection": "Новая коллекция"
+  },
+  "hero": {
+    "private": "Конфиденциально",
+    "ai_powered": "На основе ИИ",
+    "local_first": "Сначала локально"
+  },
+  "options": {
+    "model": "Модель",
+    "deep_research": "Глубокое исследование",
+    "focus": "Фокус",
+    "theme": "Тема",
+    "language": "Язык",
+    "answer_language": "Язык ИИ",
+    "answer_auto": "Авто",
+    "research": "Исследование",
+    "fact_check": "Проверка фактов"
+  },
+  "preferences": {
+    "title": "Предпочтения",
+    "language": "Язык",
+    "language_desc": "Выберите предпочитаемый язык интерфейса",
+    "language_storage": "Язык интерфейса сохраняется в вашем браузере.",
+    "branding": "Брендинг",
+    "branding_desc": "Настройте имя приложения, логотип и фавикон, отображаемые в интерфейсе.",
+    "app_name": "Имя приложения",
+    "app_name_hint": "Имя, отображаемое в заголовке и названиях страниц",
+    "logo_url": "URL логотипа",
+    "logo_url_hint": "URL или путь к изображению вашего логотипа (оставьте пустым для значения по умолчанию)",
+    "favicon_url": "URL фавикона",
+    "favicon_url_hint": "URL или путь к вашему фавикону (оставьте пустым для значения по умолчанию браузера)",
+    "appearance": "Внешний вид",
+    "appearance_desc": "Настройте визуальный стиль и макет.",
+    "theme": "Тема",
+    "font_size": "Размер шрифта",
+    "results_layout": "Макет результатов",
+    "search": "Поиск",
+    "search_desc": "Настройки по умолчанию применяются ко всем поискам.",
+    "ui_language": "Язык интерфейса",
+    "ui_language_hint": "Язык интерфейса (хранится в localStorage браузера)",
+    "interface_language": "Язык интерфейса",
+    "stored_in_browser": "Сохранено в браузере (localStorage)",
+    "search_defaults": "Поиск по умолчанию",
+    "search_language": "Язык поиска",
+    "search_language_hint": "авто = определять по запросу (Хангыль → ko-KR); или все, или фиксированная локализация, такая как ko-KR",
+    "fallback_language": "Код языка по умолчанию",
+    "fallback_language_hint": "Используется, когда автоматическое определение не дает однозначного результата",
+    "safe_search": "Безопасный поиск",
+    "safe_off": "Выкл.",
+    "safe_moderate": "Умеренный",
+    "safe_strict": "Строгий",
+    "results_per_engine": "Результатов на движок",
+    "ai": "ИИ",
+    "ai_desc": "Настройте модели ИИ для синтеза ответов и переписывания статей.",
+    "ai_provider": "Поставщик",
+    "ai_provider_local": "Локальный (Ollama)",
+    "ai_provider_custom": "Пользовательский",
+    "ai_base_url": "Базовый URL API",
+    "ai_base_url_hint": "Локальный: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Ключ API",
+    "ai_api_key_hint": "Требуется для облачных провайдеров (OpenAI, Anthropic и т.д.)",
+    "ai_model": "Модель",
+    "ai_model_hint": "Модель чата/инструкции для синтеза ответов и расширения запросов",
+    "ai_article_model": "Модель статьи",
+    "ai_article_model_hint": "Модель для переписывания новостных статей на полной странице (по умолчанию используется основная модель)",
+    "ai_timeout": "Тайм-аут (секунды)",
+    "ai_timeout_hint": "Тайм-аут на запрос для вызовов модели",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Функции",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Новости",
+    "news_desc": "Агрегация новостей и настройки статей.",
+    "news_per_source": "Статей на источник",
+    "news_freshness": "Период полураспада свежести (часы)",
+    "news_freshness_weight": "Вес свежести",
+    "news_dedup": "Порог схожести для дедупликации",
+    "news_max_age": "Максимальный возраст (дни)",
+    "news_cache_ttl": "TTL кэша (секунды)",
+    "news_enrich_max": "Максимум статей для обогащения",
+    "engines": "Поисковые движки",
+    "engines_desc": "Включите/выключите движки и настройте их веса ранжирования. Более высокий вес = большее влияние на порядок результатов.",
+    "engine": "движок",
+    "categories": "категории",
+    "weight": "вес",
+    "privacy": "Конфиденциальность",
+    "privacy_desc": "Контролируйте, как обрабатываются ваши данные.",
+    "proxy_images": "Проксировать изображения",
+    "proxy_images_hint": "Маршрут изображений через сервер, чтобы скрыть ваш IP от третьих лиц",
+    "remove_trackers": "Удалить параметры отслеживания",
+    "remove_trackers_hint": "Удалить UTM и другие параметры отслеживания из URL",
+    "save_history": "Сохранить историю поиска",
+    "save_history_hint": "Хранить поиски локально в браузере (никогда не отправляется на сервер)",
+    "clear_data": "Очистить данные",
+    "clear_localstorage": "Очистить локальное хранилище",
+    "clear_indexeddb": "Очистить IndexedDB",
+    "shortcuts": "Горячие клавиши",
+    "shortcuts_desc": "Клавиши быстрого доступа для опытных пользователей.",
+    "shortcut_focus_search": "Сфокусироваться на поле поиска",
+    "shortcut_close": "Закрыть панель / Отменить",
+    "shortcut_navigate": "Навигировать по результатам",
+    "shortcut_open": "Открыть выбранный результат",
+    "shortcut_new_tab": "Открыть в новой вкладке",
+    "shortcut_switch_mode": "Переключить режим поиска",
+    "shortcut_help": "Показать эту справку",
+    "server": "Сервер",
+    "server_desc": "Настройки сервера и сети.",
+    "bind_address": "Адрес привязки",
+    "port": "Порт",
+    "max_connections": "Максимальное количество подключений",
+    "image_proxy": "Включить прокси для изображений",
+    "cache_backend": "Кэширование",
+    "cache_dir": "Каталог кэша",
+    "redis_url": "URL Redis",
+    "advanced": "Расширенные",
+    "advanced_desc": "Настройки кэширования и тайм-аутов.",
+    "cache_ttl": "TTL кэша (секунды)",
+    "cache_ttl_hint": "Время жизни кэша результата (0 отключает кэширование)",
+    "request_timeout": "Тайм-аут запроса (секунды)",
+    "request_timeout_hint": "Сетевой тайм-аут для каждого движка",
+    "save": "Сохранить предпочтения",
+    "saved": "Сохранено",
+    "saved_msg": "записано в settings.yml и применено к новым поискам.",
+    "server_settings": "Эти настройки сохраняются на стороне сервера для",
+    "raw_config": "Конфигурация JSON",
+    "stats": "Статистика",
+    "home": "Главная",
+    "logout": "Выйти",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Общее",
+    "academic": "Академическое",
+    "writing": "Письмо",
+    "code": "Код"
+  },
+  "footer": {
+    "grounded_answers": "Обоснованные ответы от вашей локальной модели — 200+ поисковых систем, ноль ведения журнала запросов.",
+    "academic_papers": "Академические статьи из arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ и других.",
+    "news_digest": "Новостной дайджест: получает страницы статей, переписывает резюме локально через Ollama — только большие изображения, без увеличения фавиконов.",
+    "images": "Поиск изображений Wikimedia Commons — миниатюры проксируются для конфиденциальности.",
+    "api_docs": "Документация API",
+    "status": "Статус",
+    "version": "Версия",
+    "engines_count": "232 движка"
+  },
+  "examples": {
+    "try": "Попробуйте пример",
+    "general": [
+      {
+        "q": "Лучшие практики асинхронного программирования на Rust",
+        "label": "Асинхронный Rust"
+      },
+      {
+        "q": "Последние статьи по исследованию LLM 2025",
+        "label": "Последние статьи LLM"
+      },
+      {
+        "q": "Как работает DNS",
+        "label": "Как работает DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Последние статьи по исследованию LLM 2025",
+        "label": "Последние статьи LLM"
+      },
+      {
+        "q": "Обзор статей по редактированию генов CRISPR",
+        "label": "Обзор CRISPR"
+      },
+      {
+        "q": "Обзор архитектуры трансформеров",
+        "label": "Обзор трансформеров"
+      }
+    ],
+    "news": [
+      {
+        "q": "Регулирование ИИ",
+        "label": "Регулирование ИИ"
+      },
+      {
+        "q": "Технологические новости Кореи",
+        "label": "Технологии Кореи"
+      },
+      {
+        "q": "Обновления климатической политики",
+        "label": "Климатическая политика"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Интересы (Для вас)",
+    "add_placeholder": "Добавить интерес...",
+    "empty": "Интересы добавляются автоматически по мере поиска",
+    "remove": "Удалить"
+  },
+  "factcheck": {
+    "title": "Результаты проверки фактов",
+    "checking": "Анализирую...",
+    "analyzing": "Анализирую источники на противоречия...",
+    "no_contradictions": "Противоречий в источниках не найдено",
+    "found": "Найдены противоречия"
+  },
+  "foryou": {
+    "title": "Для вас",
+    "based_on": "На основе: {interests}",
+    "no_interests": "Интересов пока нет. Ищите, чтобы сформировать свои интересы!",
+    "loading": "Загрузка персонализированной ленты..."
+  },
+  "common": {
+    "search": "Поиск",
+    "clear": "Очистить",
+    "close": "Закрыть",
+    "save": "Сохранить",
+    "cancel": "Отменить",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "retry": "Попробовать снова",
+    "more": "Больше",
+    "less": "Меньше"
+  },
+  "trends": {
+    "title": "В тренде",
+    "loading": "Загрузка трендов...",
+    "error": "Не удалось загрузить тренды",
+    "empty": "Нет трендовых тем"
+  },
+  "onboarding": {
+    "welcome": "Добро пожаловать в Метапоиск",
+    "subtitle": "Ваш поисковик на основе ИИ, конфиденциальный",
+    "private_search": "Конфиденциальный поиск",
+    "private_search_desc": "Никогда не ведется журнал запросов",
+    "ai_answers": "Ответы ИИ",
+    "ai_answers_desc": "Локальный ИИ резюмирует результаты",
+    "news_digest": "Новостной дайджест",
+    "news_digest_desc": "Курируемые новости с анализом",
+    "local_first": "Сначала локально",
+    "local_first_desc": "Ваши данные остаются на вашем устройстве",
+    "get_started": "Начать"
+  },
+  "feeds": {
+    "find": "Найти ленты",
+    "subscribe": "Подписаться",
+    "unsubscribe": "Отписаться"
+  },
+  "errors": {
+    "load_trends": "Не удалось загрузить тренды",
+    "load_feed": "Не удалось загрузить персонализированную ленту",
+    "load_global": "Не удалось загрузить глобальную ленту",
+    "translation": "Ошибка перевода"
+  },
+  "compare": {
+    "title": "Сравнить результаты",
+    "button": "Сравнить",
+    "clear": "Очистить все",
+    "global_title": "🌍 Глобальный взгляд",
+    "global_desc": "Сравните различия в результатах поиска по регионам",
+    "select_all": "Все",
+    "clear_all": "Очистить",
+    "run": "Сравнить"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

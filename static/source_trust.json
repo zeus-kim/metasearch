@@ -1,0 +1,31 @@
+{
+  "high": {
+    "sources": ["reuters.com", "apnews.com", "bbc.com", "bbc.co.uk", "npr.org", "pbs.org", "nytimes.com", "washingtonpost.com", "theguardian.com", "wsj.com", "economist.com", "ft.com", "nature.com", "science.org", "sciencemag.org", "arxiv.org", "pubmed.gov", "nih.gov", "cdc.gov", "who.int", "un.org", "europa.eu"],
+    "score": 95,
+    "label": "High Trust",
+    "color": "#22c55e"
+  },
+  "medium_high": {
+    "sources": ["bloomberg.com", "cnbc.com", "forbes.com", "businessinsider.com", "techcrunch.com", "wired.com", "arstechnica.com", "theverge.com", "engadget.com", "cnn.com", "abc.com", "nbcnews.com", "cbsnews.com", "politico.com", "thehill.com", "axios.com", "vox.com", "slate.com", "theatlantic.com", "newyorker.com", "time.com", "usatoday.com", "latimes.com", "chicagotribune.com"],
+    "score": 80,
+    "label": "Reliable",
+    "color": "#84cc16"
+  },
+  "medium": {
+    "sources": ["huffpost.com", "buzzfeednews.com", "vice.com", "thedailybeast.com", "salon.com", "motherjones.com", "nationalreview.com", "reason.com", "jacobin.com", "theintercept.com", "propublica.org", "fivethirtyeight.com", "marketwatch.com", "seekingalpha.com", "investopedia.com", "reddit.com", "medium.com", "substack.com"],
+    "score": 65,
+    "label": "Mixed",
+    "color": "#eab308"
+  },
+  "low": {
+    "sources": ["dailymail.co.uk", "nypost.com", "foxnews.com", "breitbart.com", "infowars.com", "naturalnews.com", "zerohedge.com", "rt.com", "sputniknews.com", "oann.com", "newsmax.com", "thegatewaypundit.com", "dailywire.com", "epochtimes.com"],
+    "score": 35,
+    "label": "Low Trust",
+    "color": "#f97316"
+  },
+  "unknown": {
+    "score": 50,
+    "label": "Unrated",
+    "color": "#94a3b8"
+  }
+}

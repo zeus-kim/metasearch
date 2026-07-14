@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "ถามเว็บอย่างเป็นส่วนตัว"
+  },
+  "nav": {
+    "ask": "ถาม",
+    "discover": "ค้นพบ",
+    "history": "ประวัติ",
+    "options": "ตัวเลือก",
+    "classic": "คลาสสิก",
+    "stats": "สถิติ",
+    "preferences": "การตั้งค่า"
+  },
+  "tabs": {
+    "general": "ทั่วไป",
+    "images": "ภาพ",
+    "videos": "วิดีโอ",
+    "papers": "เอกสาร",
+    "news": "ข่าว",
+    "shopping": "ช็อปปิ้ง"
+  },
+  "search": {
+    "placeholder": "ถามอะไรก็ได้…",
+    "placeholder_news": "ใส่หัวข้อข่าว กดถาม",
+    "placeholder_images": "ค้นหารูปภาพ…",
+    "placeholder_papers": "ใส่คำถาม กดถาม",
+    "placeholder_general": "ใส่คำถามหรือหัวข้อ กดถาม",
+    "placeholder_shopping": "ค้นหาสินค้า…",
+    "placeholder_videos": "ค้นหาวิดีโอ…",
+    "button": "ถาม",
+    "button_search": "ค้นหา"
+  },
+  "status": {
+    "loading": "กำลังโหลด…",
+    "loading_stories": "กำลังโหลดเรื่องราว…",
+    "searching": "กำลังค้นหา…",
+    "searching_web": "กำลังค้นหาเว็บ…",
+    "searching_images": "กำลังค้นหารูปภาพ…",
+    "searching_news": "กำลังค้นหาข่าว…",
+    "searching_papers": "กำลังค้นหาเอกสารวิชาการ…",
+    "searching_shopping": "กำลังค้นหาสินค้า…",
+    "searching_videos": "กำลังค้นหาวิดีโอ…",
+    "search_complete": "ค้นหาเสร็จสิ้นแล้ว",
+    "search_failed": "ค้นหาไม่สำเร็จ",
+    "answer_ready": "คำตอบพร้อมแล้ว",
+    "fetching_article": "กำลังดึงบทความ…",
+    "fetching_publisher": "กำลังดึงบทความจากผู้เผยแพร่…",
+    "resolving_article": "กำลังแก้ไขบทความ…",
+    "resolving_gn": "กำลังแก้ไขลิงก์ Google News…",
+    "rewriting": "กำลังเขียนใหม่บทความ…",
+    "rewriting_korean": "กำลังเขียนใหม่เป็นภาษาเกาหลี…",
+    "preparing_rewrite": "กำลังเตรียมการเขียนใหม่ทั้งหมด…",
+    "extracted_rewriting": "ข้อความบทความที่ดึงมา — กำลังเขียนใหม่…",
+    "viewing_prior": "กำลังดูการสนทนาก่อนหน้า — ถามคำถามเพิ่มเติมด้านล่าง."
+  },
+  "error": {
+    "no_answer": "ไม่มีคำตอบจาก AI ที่สร้างขึ้น — ผลลัพธ์การค้นหาด้านล่าง.",
+    "no_news": "ไม่พบข่าว — ลองค้นหาคำถามอื่น.",
+    "no_stories": "ไม่พบเรื่องราว — ลองค้นหาคำถามอื่น.",
+    "no_stories_category": "ไม่พบเรื่องราวในหมวดหมู่นี้ — ลองเลือกหมวดหมู่อื่น.",
+    "rewrite_empty": "การเขียนบทความใหม่ส่งกลับข้อความว่าง.",
+    "rewrite_failed": "ไม่สามารถเขียนบทความใหม่ได้",
+    "load_news_failed": "ไม่สามารถโหลดข่าวได้ — ตรวจสอบเซิร์ฟเวอร์.",
+    "model_not_found": "ไม่พบโมเดล — รัน ollama pull สำหรับโมเดลที่คุณกำหนดไว้ หรือเลือกโมเดลอื่นในตัวเลือก.",
+    "ollama_not_running": "Ollama ไม่ทำงาน — คำตอบจะค้นหาเฉพาะเท่านั้น เริ่ม: ollama serve",
+    "invalid_thread": "JSON ของเธรดไม่ถูกต้อง.",
+    "enter_question": "ใส่คำถาม.",
+    "enter_search": "ใส่คำค้น."
+  },
+  "article": {
+    "sources": "แหล่งที่มา",
+    "research_progress": "ความก้าวหน้าการวิจัย",
+    "thinking": "กำลังคิด",
+    "answer": "คำตอบ",
+    "key_points": "จุดสำคัญ",
+    "summary": "สรุป",
+    "related_media": "สื่อที่เกี่ยวข้อง",
+    "view_more": "ดู {count} เพิ่มเติม",
+    "back": "กลับ",
+    "read_original": "อ่านต้นฉบับ",
+    "related_image": "ภาพที่เกี่ยวข้อง",
+    "related": "ที่เกี่ยวข้อง"
+  },
+  "discover": {
+    "updated": "อัปเดตเมื่อ {time}",
+    "scope": {
+      "all": "📰 ทั้งหมด",
+      "local": "🏠 ท้องถิ่น",
+      "world": "🌍 ทั่วโลก"
+    },
+    "categories": {
+      "politics": "การเมือง",
+      "economy": "เศรษฐกิจ",
+      "sports": "กีฬา",
+      "world": "โลก",
+      "entertainment": "ความบันเทิง",
+      "tech": "เทคโนโลยี & วิทยาศาสตร์",
+      "culture": "วัฒนธรรม",
+      "health": "สุขภาพ",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "วิทยาศาสตร์เทคโนโลยี",
+      "ai": "ปัญญาประดิษฐ์ AI การเรียนรู้ของเครื่อง",
+      "world": "ข่าวโลกสากล",
+      "politics": "การเมือง รัฐบาล การเลือกตั้ง",
+      "business": "ธุรกิจ เศรษฐกิจ บริษัท",
+      "finance": "การเงิน ตลาด หุ้น",
+      "health": "สุขภาพ การแพทย์ สุขภาพดี",
+      "climate": "การเปลี่ยนแปลงสภาพภูมิอากาศ สิ่งแวดล้อม",
+      "sports": "กีฬา",
+      "entertainment": "ความบันเทิง คนดัง",
+      "art": "ศิลปะ วัฒนธรรม",
+      "top": "ข่าวเด่น พาดหัว"
+    }
+  },
+  "history": {
+    "open": "เปิดประวัติ",
+    "close": "ปิดประวัติ",
+    "imported": "นำเข้า {count}",
+    "export": "ส่งออก JSON",
+    "import": "นำเข้า JSON",
+    "clear": "ล้างประวัติ",
+    "empty": "คำถามของคุณจะปรากฏที่นี่.",
+    "new_chat": "แชทใหม่"
+  },
+  "panel": {
+    "history": "ประวัติ",
+    "bookmarks": "บุ๊กมาร์ก",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "บุ๊กมาร์กทั้งหมด",
+    "empty": "บุ๊กมาร์กผลลัพธ์เพื่อบันทึกที่นี่.",
+    "export": "ส่งออก",
+    "clear_all": "ล้างทั้งหมด",
+    "new_collection": "คอลเลกชันใหม่"
+  },
+  "hero": {
+    "private": "เป็นส่วนตัว",
+    "ai_powered": "ขับเคลื่อนด้วย AI",
+    "local_first": "ท้องถิ่นก่อน"
+  },
+  "options": {
+    "model": "โมเดล",
+    "deep_research": "การวิจัยเชิงลึก",
+    "focus": "โฟกัส",
+    "theme": "ธีม",
+    "language": "ภาษา",
+    "answer_language": "ภาษา AI",
+    "answer_auto": "อัตโนมัติ",
+    "research": "การวิจัย",
+    "fact_check": "ตรวจสอบข้อเท็จจริง"
+  },
+  "preferences": {
+    "title": "การตั้งค่า",
+    "language": "ภาษา",
+    "language_desc": "เลือกภาษาอินเทอร์เฟซที่คุณต้องการ",
+    "language_storage": "ภาษาอินเทอร์เฟซถูกเก็บไว้ในเบราว์เซอร์",
+    "branding": "การสร้างแบรนด์",
+    "branding_desc": "ปรับแต่งชื่อแอปพลิเคชัน โลโก้ และฟาวิคอนที่แสดงใน UI.",
+    "app_name": "ชื่อแอปพลิเคชัน",
+    "app_name_hint": "ชื่อที่แสดงในหัวข้อและชื่อหน้า",
+    "logo_url": "URL โลโก้",
+    "logo_url_hint": "URL หรือเส้นทางไปยังภาพโลโก้ของคุณ (เว้นว่างสำหรับค่าเริ่มต้น)",
+    "favicon_url": "URL ฟาวิคอน",
+    "favicon_url_hint": "URL หรือเส้นทางไปยังฟาวิคอนของคุณ (เว้นว่างสำหรับค่าเริ่มต้นของเบราว์เซอร์)",
+    "appearance": "การปรากฏ",
+    "appearance_desc": "ปรับแต่งสไตล์และเลย์เอาต์ภาพ.",
+    "theme": "ธีม",
+    "font_size": "ขนาดตัวอักษร",
+    "results_layout": "เลย์เอาต์ผลลัพธ์",
+    "search": "ค้นหา",
+    "search_desc": "การตั้งค่าเริ่มต้นที่ใช้กับการค้นหาทั้งหมด.",
+    "ui_language": "ภาษา UI",
+    "ui_language_hint": "ภาษาสำหรับอินเตอร์เฟซ (เก็บใน localStorage ของเบราว์เซอร์)",
+    "interface_language": "ภาษาอินเตอร์เฟซ",
+    "stored_in_browser": "เก็บในเบราว์เซอร์ (localStorage)",
+    "search_defaults": "การตั้งค่าเริ่มต้นการค้นหา",
+    "search_language": "ภาษาการค้นหา",
+    "search_language_hint": "อัตโนมัติ = ตรวจจับจากคำค้น (ฮันกึล → ko-KR); หรือทั้งหมด หรือภูมิภาคที่กำหนด เช่น ko-KR",
+    "fallback_language": "รหัสภาษาสำรอง",
+    "fallback_language_hint": "ใช้เมื่อการตรวจจับอัตโนมัติไม่ชัดเจน",
+    "safe_search": "การค้นหาที่ปลอดภัย",
+    "safe_off": "ปิด",
+    "safe_moderate": "ปานกลาง",
+    "safe_strict": "เข้มงวด",
+    "results_per_engine": "ผลลัพธ์ต่อเครื่องมือค้นหา",
+    "ai": "AI",
+    "ai_desc": "กำหนดค่าโมเดล AI สำหรับการสังเคราะห์คำตอบและการเขียนบทความใหม่.",
+    "ai_provider": "ผู้ให้บริการ",
+    "ai_provider_local": "ท้องถิ่น (Ollama)",
+    "ai_provider_custom": "กำหนดเอง",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "ท้องถิ่น: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "จำเป็นสำหรับผู้ให้บริการคลาวด์ (OpenAI, Anthropic, ฯลฯ)",
+    "ai_model": "โมเดล",
+    "ai_model_hint": "โมเดลแชท/สอนสำหรับการสังเคราะห์คำตอบและการขยายคำค้น",
+    "ai_article_model": "โมเดลบทความ",
+    "ai_article_model_hint": "โมเดลสำหรับการเขียนบทความข่าวเต็มหน้า (ค่าเริ่มต้นคือโมเดลหลัก)",
+    "ai_timeout": "เวลาหมดอายุ (วินาที)",
+    "ai_timeout_hint": "เวลาหมดอายุสำหรับการเรียกโมเดลต่อคำขอ",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "ฟีเจอร์",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "ข่าว",
+    "news_desc": "การรวบรวมข่าวและการตั้งค่าบทความ.",
+    "news_per_source": "บทความต่อแหล่งที่มา",
+    "news_freshness": "ความสดใหม่ครึ่งชีวิต (ชั่วโมง)",
+    "news_freshness_weight": "น้ำหนักความสดใหม่",
+    "news_dedup": "เกณฑ์การลบความซ้ำซ้อน",
+    "news_max_age": "อายุสูงสุด (วัน)",
+    "news_cache_ttl": "TTL แคช (วินาที)",
+    "news_enrich_max": "จำนวนบทความสูงสุดที่จะแซะ",
+    "engines": "เครื่องมือค้นหา",
+    "engines_desc": "เปิด/ปิดเครื่องมือค้นหาและปรับน้ำหนักการจัดอันดับของพวกเขา น้ำหนักสูง = มีอิทธิพลมากขึ้นต่อการจัดลำดับผลลัพธ์.",
+    "engine": "เครื่องมือค้นหา",
+    "categories": "หมวดหมู่",
+    "weight": "น้ำหนัก",
+    "privacy": "ความเป็นส่วนตัว",
+    "privacy_desc": "ควบคุมวิธีการจัดการข้อมูลของคุณ.",
+    "proxy_images": "พร็อกซี่ภาพ",
+    "proxy_images_hint": "ส่งภาพผ่านเซิร์ฟเวอร์เพื่อซ่อน IP ของคุณจากบุคคลที่สาม",
+    "remove_trackers": "ลบพารามิเตอร์ติดตาม",
+    "remove_trackers_hint": "ลบ UTM และพารามิเตอร์ติดตามอื่น ๆ ออกจาก URL",
+    "save_history": "บันทึกประวัติการค้นหา",
+    "save_history_hint": "เก็บการค้นหาในเครื่องในเบราว์เซอร์ (ไม่เคยส่งไปยังเซิร์ฟเวอร์)",
+    "clear_data": "ล้างข้อมูล",
+    "clear_localstorage": "ล้าง Local Storage",
+    "clear_indexeddb": "ล้าง IndexedDB",
+    "shortcuts": "ทางลัดคีย์บอร์ด",
+    "shortcuts_desc": "ปุ่มเข้าถึงอย่างรวดเร็วสำหรับผู้ใช้ที่มีประสิทธิภาพ.",
+    "shortcut_focus_search": "มุ่งเน้นที่กล่องค้นหา",
+    "shortcut_close": "ปิดแผง / ยกเลิก",
+    "shortcut_navigate": "นำทางผลลัพธ์",
+    "shortcut_open": "เปิดผลลัพธ์ที่เลือก",
+    "shortcut_new_tab": "เปิดในแท็บใหม่",
+    "shortcut_switch_mode": "สลับโหมดการค้นหา",
+    "shortcut_help": "แสดงความช่วยเหลือนี้",
+    "server": "เซิร์ฟเวอร์",
+    "server_desc": "การกำหนดค่าเซิร์ฟเวอร์และการตั้งค่าเครือข่าย.",
+    "bind_address": "ที่อยู่ที่ผูก",
+    "port": "พอร์ต",
+    "max_connections": "การเชื่อมต่อสูงสุด",
+    "image_proxy": "เปิดใช้งานพร็อกซี่ภาพ",
+    "cache_backend": "แคชแบ็คเอนด์",
+    "cache_dir": "ไดเรกทอรีแคช",
+    "redis_url": "Redis URL",
+    "advanced": "ขั้นสูง",
+    "advanced_desc": "การตั้งค่าแคชและเวลาหมดอายุ.",
+    "cache_ttl": "TTL แคช (วินาที)",
+    "cache_ttl_hint": "เวลาที่ผลลัพธ์จะถูกเก็บในแคช (0 ปิดการเก็บแคช)",
+    "request_timeout": "เวลาหมดอายุคำขอ (วินาที)",
+    "request_timeout_hint": "เวลาหมดอายุเครือข่ายต่อเครื่องมือค้นหา",
+    "save": "บันทึกการตั้งค่า",
+    "saved": "บันทึกแล้ว",
+    "saved_msg": "เขียนลงใน settings.yml และนำไปใช้กับการค้นหาใหม่.",
+    "server_settings": "การตั้งค่าเหล่านี้จะถูกเก็บไว้ที่เซิร์ฟเวอร์",
+    "raw_config": "Config JSON",
+    "stats": "สถิติ",
+    "home": "หน้าแรก",
+    "logout": "ออกจากระบบ",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "ทั่วไป",
+    "academic": "วิชาการ",
+    "writing": "การเขียน",
+    "code": "โค้ด"
+  },
+  "footer": {
+    "grounded_answers": "คำตอบที่มีพื้นฐานจากโมเดลท้องถิ่นของคุณ — 200+ เครื่องมือค้นหา ไม่มีการบันทึกคำค้น.",
+    "academic_papers": "เอกสารวิชาการจาก arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, และอื่น ๆ.",
+    "news_digest": "ข่าวสารย่อย: ดึงหน้าบทความ เขียนสรุปในเครื่องผ่าน Ollama — รูปภาพขนาดใหญ่เท่านั้น ไม่มีการขยายฟาวิคอน.",
+    "images": "การค้นหารูปภาพจาก Wikimedia Commons — รูปขนาดย่อผ่านพร็อกซี่เพื่อความเป็นส่วนตัว.",
+    "api_docs": "เอกสาร API",
+    "status": "สถานะ",
+    "version": "เวอร์ชัน",
+    "engines_count": "232 เครื่องมือค้นหา"
+  },
+  "examples": {
+    "try": "ลองตัวอย่าง",
+    "general": [
+      {
+        "q": "แนวทางการเขียนโปรแกรมแบบอะซิงโครนัส Rust",
+        "label": "Rust async"
+      },
+      {
+        "q": "เอกสารวิจัย LLM ล่าสุด 2025",
+        "label": "เอกสาร LLM ล่าสุด"
+      },
+      {
+        "q": "DNS ทำงานอย่างไร",
+        "label": "DNS ทำงานอย่างไร"
+      }
+    ],
+    "papers": [
+      {
+        "q": "เอกสารวิจัย LLM ล่าสุด 2025",
+        "label": "เอกสาร LLM ล่าสุด"
+      },
+      {
+        "q": "เอกสารรีวิวการตัดต่อยีน CRISPR",
+        "label": "รีวิว CRISPR"
+      },
+      {
+        "q": "สำรวจสถาปัตยกรรมทรานส์ฟอร์เมอร์",
+        "label": "สำรวจทรานส์ฟอร์เมอร์"
+      }
+    ],
+    "news": [
+      {
+        "q": "การควบคุม AI",
+        "label": "การควบคุม AI"
+      },
+      {
+        "q": "ข่าวเทคโนโลยีเกาหลี",
+        "label": "ข่าวเทคโนโลยีเกาหลี"
+      },
+      {
+        "q": "อัปเดตนโยบายสภาพภูมิอากาศ",
+        "label": "นโยบายสภาพภูมิอากาศ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "ความสนใจ (สำหรับคุณ)",
+    "add_placeholder": "เพิ่มความสนใจ...",
+    "empty": "ความสนใจจะถูกเพิ่มโดยอัตโนมัติเมื่อคุณค้นหา",
+    "remove": "ลบ"
+  },
+  "factcheck": {
+    "title": "ผลการตรวจสอบข้อเท็จจริง",
+    "checking": "กำลังวิเคราะห์...",
+    "analyzing": "กำลังวิเคราะห์แหล่งที่มาสำหรับความขัดแย้ง...",
+    "no_contradictions": "ไม่พบความขัดแย้งในแหล่งที่มา",
+    "found": "พบความขัดแย้ง"
+  },
+  "foryou": {
+    "title": "สำหรับคุณ",
+    "based_on": "อิงจาก: {interests}",
+    "no_interests": "ยังไม่มีความสนใจ ค้นหาเพื่อสร้างความสนใจของคุณ!",
+    "loading": "กำลังโหลดฟีดส่วนบุคคล..."
+  },
+  "common": {
+    "search": "ค้นหา",
+    "clear": "ล้าง",
+    "close": "ปิด",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "retry": "ลองอีกครั้ง",
+    "more": "เพิ่มเติม",
+    "less": "น้อยลง"
+  },
+  "trends": {
+    "title": "แนวโน้มตอนนี้",
+    "loading": "กำลังโหลดแนวโน้ม...",
+    "error": "ไม่สามารถโหลดแนวโน้มได้",
+    "empty": "ไม่มีหัวข้อที่กำลังเป็นที่นิยม"
+  },
+  "onboarding": {
+    "welcome": "ยินดีต้อนรับสู่ Metasearch",
+    "subtitle": "เครื่องมือค้นหาที่ขับเคลื่อนด้วย AI ที่เป็นส่วนตัวของคุณ",
+    "private_search": "การค้นหาที่เป็นส่วนตัว",
+    "private_search_desc": "ไม่มีการบันทึกคำค้นเลย",
+    "ai_answers": "คำตอบจาก AI",
+    "ai_answers_desc": "AI ท้องถิ่นสรุปผลลัพธ์",
+    "news_digest": "ข่าวสารย่อย",
+    "news_digest_desc": "ข่าวที่คัดสรรพร้อมการวิเคราะห์",
+    "local_first": "ท้องถิ่นก่อน",
+    "local_first_desc": "ข้อมูลของคุณอยู่บนอุปกรณ์ของคุณ",
+    "get_started": "เริ่มต้น"
+  },
+  "feeds": {
+    "find": "ค้นหาฟีด",
+    "subscribe": "สมัครสมาชิก",
+    "unsubscribe": "ยกเลิกการสมัครสมาชิก"
+  },
+  "errors": {
+    "load_trends": "ไม่สามารถโหลดแนวโน้มได้",
+    "load_feed": "ไม่สามารถโหลดฟีดส่วนบุคคลได้",
+    "load_global": "ไม่สามารถโหลดฟีดทั่วโลกได้",
+    "translation": "การแปลล้มเหลว"
+  },
+  "compare": {
+    "title": "เปรียบเทียบผลลัพธ์",
+    "button": "เปรียบเทียบ",
+    "clear": "ล้างทั้งหมด",
+    "global_title": "🌍 มุมมองโลก",
+    "global_desc": "เปรียบเทียบผลการค้นหาจากภูมิภาคต่างๆ",
+    "select_all": "ทั้งหมด",
+    "clear_all": "ล้าง",
+    "run": "เปรียบเทียบ"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "ਵੈਬ ਨੂੰ ਪੁੱਛੋ, ਨਿੱਜੀ ਤੌਰ 'ਤੇ"
+  },
+  "nav": {
+    "ask": "ਪੁੱਛੋ",
+    "discover": "ਖੋਜੋ",
+    "history": "ਇਤਿਹਾਸ",
+    "options": "ਵਿਕਲਪ",
+    "classic": "ਕਲਾਸਿਕ",
+    "stats": "ਅੰਕੜੇ",
+    "preferences": "ਪਸੰਦਾਂ"
+  },
+  "tabs": {
+    "general": "ਆਮ",
+    "images": "ਤਸਵੀਰਾਂ",
+    "videos": "ਵੀਡੀਓਜ਼",
+    "papers": "ਕਾਗਜ਼",
+    "news": "ਖਬਰਾਂ",
+    "shopping": "ਖਰੀਦਦਾਰੀ"
+  },
+  "search": {
+    "placeholder": "ਕੁਝ ਵੀ ਪੁੱਛੋ…",
+    "placeholder_news": "ਇੱਕ ਖਬਰ ਦਾ ਵਿਸ਼ਾ ਦਰਜ ਕਰੋ, ਪੁੱਛੋ ਦਬਾਓ",
+    "placeholder_images": "ਤਸਵੀਰਾਂ ਖੋਜੋ…",
+    "placeholder_papers": "ਇੱਕ ਸਵਾਲ ਦਰਜ ਕਰੋ, ਪੁੱਛੋ ਦਬਾਓ",
+    "placeholder_general": "ਇੱਕ ਸਵਾਲ ਜਾਂ ਵਿਸ਼ਾ ਦਰਜ ਕਰੋ, ਪੁੱਛੋ ਦਬਾਓ",
+    "placeholder_shopping": "ਉਤਪਾਦ ਖੋਜੋ…",
+    "placeholder_videos": "ਵੀਡੀਓਜ਼ ਖੋਜੋ…",
+    "button": "ਪੁੱਛੋ",
+    "button_search": "ਖੋਜੋ"
+  },
+  "status": {
+    "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
+    "loading_stories": "ਕਹਾਣੀਆਂ ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…",
+    "searching": "ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_web": "ਵੈਬ 'ਤੇ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_images": "ਤਸਵੀਰਾਂ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_news": "ਖਬਰਾਂ ਦੇ ਸਰੋਤਾਂ ਨੂੰ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_papers": "ਅਕਾਦਮਿਕ ਸਰੋਤਾਂ ਨੂੰ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_shopping": "ਉਤਪਾਦ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "searching_videos": "ਵੀਡੀਓਜ਼ ਖੋਜ ਰਿਹਾ ਹੈ…",
+    "search_complete": "ਖੋਜ ਪੂਰੀ ਹੋ ਗਈ।",
+    "search_failed": "ਖੋਜ ਅਸਫਲ ਹੋ ਗਈ।",
+    "answer_ready": "ਜਵਾਬ ਤਿਆਰ ਹੈ।",
+    "fetching_article": "ਲੇਖ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "fetching_publisher": "ਪਬਲਿਸ਼ਰ ਲੇਖ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "resolving_article": "ਲੇਖ ਨੂੰ ਹੱਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "resolving_gn": "ਗੂਗਲ ਨਿਊਜ਼ ਲਿੰਕ ਨੂੰ ਹੱਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…",
+    "rewriting": "ਲੇਖ ਨੂੰ ਦੁਬਾਰਾ ਲਿਖਿਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "rewriting_korean": "ਕੋਰੀਅਨ ਵਿੱਚ ਦੁਬਾਰਾ ਲਿਖਿਆ ਜਾ ਰਿਹਾ ਹੈ…",
+    "preparing_rewrite": "ਪੂਰੀ ਦੁਬਾਰਾ ਲਿਖਾਈ ਲਈ ਤਿਆਰੀ ਕਰਨਾ…",
+    "extracted_rewriting": "ਨਿਕਾਲੀ ਗਈ ਲੇਖ ਦੀ ਪਾਠ — ਦੁਬਾਰਾ ਲਿਖਾਈ…",
+    "viewing_prior": "ਪਿਛਲੇ ਮੋੜ ਨੂੰ ਦੇਖਣਾ — ਹੇਠਾਂ ਇੱਕ ਫਾਲੋ-ਅਪ ਪੁੱਛੋ।"
+  },
+  "error": {
+    "no_answer": "ਕੋਈ AI ਜਵਾਬ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ — ਹੇਠਾਂ ਖੋਜ ਦੇ ਨਤੀਜੇ।",
+    "no_news": "ਕੋਈ ਖਬਰ ਨਹੀਂ ਮਿਲੀ — ਹੋਰ ਪੁੱਛੋ।",
+    "no_stories": "ਕੋਈ ਕਹਾਣੀਆਂ ਨਹੀਂ ਮਿਲੀਆਂ — ਹੋਰ ਪੁੱਛੋ।",
+    "no_stories_category": "ਇਸ ਸ਼੍ਰੇਣੀ ਲਈ ਕੋਈ ਕਹਾਣੀਆਂ ਨਹੀਂ ਮਿਲੀਆਂ — ਹੋਰ ਪਿਲ ਨੂੰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+    "rewrite_empty": "ਲੇਖ ਦੀ ਦੁਬਾਰਾ ਲਿਖਾਈ ਖਾਲੀ ਪਾਠ ਵਾਪਸ ਕਰਦੀ ਹੈ।",
+    "rewrite_failed": "ਲੇਖ ਨੂੰ ਦੁਬਾਰਾ ਨਹੀਂ ਲਿਖਿਆ ਜਾ ਸਕਿਆ",
+    "load_news_failed": "ਖਬਰਾਂ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ — ਸਰਵਰ ਦੀ ਜਾਂਚ ਕਰੋ।",
+    "model_not_found": "ਮਾਡਲ ਨਹੀਂ ਮਿਲਿਆ — ਆਪਣੇ ਸੰਰਚਿਤ ਮਾਡਲ ਲਈ ollama pull ਚਲਾਓ, ਜਾਂ ਵਿਕਲਪਾਂ ਵਿੱਚ ਹੋਰ ਚੁਣੋ।",
+    "ollama_not_running": "Ollama ਚੱਲ ਰਿਹਾ ਨਹੀਂ ਹੈ — ਜਵਾਬ ਸਿਰਫ ਖੋਜ ਹੋਣਗੇ। ਸ਼ੁਰੂ ਕਰੋ: ollama serve",
+    "invalid_thread": "ਗਲਤ ਥ੍ਰੇਡ JSON।",
+    "enter_question": "ਇੱਕ ਸਵਾਲ ਦਰਜ ਕਰੋ।",
+    "enter_search": "ਇੱਕ ਖੋਜ ਸ਼ਰਤ ਦਰਜ ਕਰੋ।"
+  },
+  "article": {
+    "sources": "ਸਰੋਤ",
+    "research_progress": "ਅਨੁਸੰਧਾਨ ਪ੍ਰਗਤੀ",
+    "thinking": "ਸੋਚਣਾ",
+    "answer": "ਜਵਾਬ",
+    "key_points": "ਮੁੱਖ ਬਿੰਦੂ",
+    "summary": "ਸਾਰ",
+    "related_media": "ਸੰਬੰਧਿਤ ਮੀਡੀਆ",
+    "view_more": "ਹੋਰ {count} ਵੇਖੋ",
+    "back": "ਵਾਪਸ",
+    "read_original": "ਮੂਲ ਪੜ੍ਹੋ",
+    "related_image": "ਸੰਬੰਧਿਤ ਤਸਵੀਰ",
+    "related": "ਸੰਬੰਧਿਤ"
+  },
+  "discover": {
+    "updated": "ਅਪਡੇਟ ਕੀਤਾ {time}",
+    "scope": {
+      "all": "📰 ਸਾਰੇ",
+      "local": "🏠 ਸਥਾਨਕ",
+      "world": "🌍 ਦੁਨੀਆ"
+    },
+    "categories": {
+      "politics": "ਰਾਜਨੀਤੀ",
+      "economy": "ਅਰਥਵਿਵਸਥਾ",
+      "sports": "ਖੇਡਾਂ",
+      "world": "ਦੁਨੀਆ",
+      "entertainment": "ਮਨੋਰੰਜਨ",
+      "tech": "ਤਕਨਾਲੋਜੀ ਅਤੇ ਵਿਗਿਆਨ",
+      "culture": "ਸੰਸਕ੍ਰਿਤੀ",
+      "health": "ਸਿਹਤ",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ਤਕਨਾਲੋਜੀ ਵਿਗਿਆਨ",
+      "ai": "ਕ੍ਰਿਤ੍ਰਿਮ ਬੁੱਧੀ AI ਮਸ਼ੀਨ ਸਿੱਖਣਾ",
+      "world": "ਦੁਨੀਆ ਦੀਆਂ ਖਬਰਾਂ ਅੰਤਰਰਾਸ਼ਟਰ",
+      "politics": "ਰਾਜਨੀਤੀ ਸਰਕਾਰ ਚੋਣ",
+      "business": "ਕਾਰੋਬਾਰ ਅਰਥਵਿਵਸਥਾ ਕੰਪਨੀਆਂ",
+      "finance": "ਵਿੱਤ ਬਾਜ਼ਾਰ ਸਟਾਕ",
+      "health": "ਸਿਹਤ ਦਵਾਈਆਂ ਸੁਖ-ਸਮਾਧਾਨ",
+      "climate": "ਜਲਵਾਯੂ ਬਦਲਾਅ ਵਾਤਾਵਰਣ",
+      "sports": "ਖੇਡਾਂ",
+      "entertainment": "ਮਨੋਰੰਜਨ ਸਿਤਾਰੇ",
+      "art": "ਕਲਾ ਸੰਸਕ੍ਰਿਤੀ",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "ਇਤਿਹਾਸ ਖੋਲ੍ਹੋ",
+    "close": "ਇਤਿਹਾਸ ਬੰਦ ਕਰੋ",
+    "imported": "ਆਯਾਤ ਕੀਤਾ {count}",
+    "export": "JSON ਨਿਰਯਾਤ ਕਰੋ",
+    "import": "JSON ਆਯਾਤ ਕਰੋ",
+    "clear": "ਇਤਿਹਾਸ ਸਾਫ ਕਰੋ",
+    "empty": "ਤੁਹਾਡੇ ਸਵਾਲ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੇ।",
+    "new_chat": "ਨਵਾਂ ਚੈਟ"
+  },
+  "panel": {
+    "history": "ਇਤਿਹਾਸ",
+    "bookmarks": "ਬੁੱਕਮਾਰਕ",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "ਸਾਰੇ ਬੁੱਕਮਾਰਕ",
+    "empty": "ਇਨ੍ਹਾਂ ਨੂੰ ਇੱਥੇ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਬੁੱਕਮਾਰਕ ਨਤੀਜੇ।",
+    "export": "ਨਿਰਯਾਤ ਕਰੋ",
+    "clear_all": "ਸਾਰੇ ਸਾਫ ਕਰੋ",
+    "new_collection": "ਨਵਾਂ ਸੰਗ੍ਰਹਿ"
+  },
+  "hero": {
+    "private": "ਨਿੱਜੀ",
+    "ai_powered": "AI-ਚਲਿਤ",
+    "local_first": "ਸਥਾਨਕ-ਪਹਿਲਾਂ"
+  },
+  "options": {
+    "model": "ਮਾਡਲ",
+    "deep_research": "ਗਹਿਰਾ ਅਨੁਸੰਧਾਨ",
+    "focus": "ਕੇਂਦਰਿਤ",
+    "theme": "ਥੀਮ",
+    "language": "ਭਾਸ਼ਾ",
+    "answer_language": "AI ਭਾਸ਼ਾ",
+    "answer_auto": "ਆਟੋ",
+    "research": "ਅਨੁਸੰਧਾਨ",
+    "fact_check": "ਤੱਥ-ਚੈੱਕ"
+  },
+  "preferences": {
+    "title": "ਪਸੰਦਾਂ",
+    "language": "ਭਾਸ਼ਾ",
+    "language_desc": "ਆਪਣੀ ਪਸੰਦੀਦਾ ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ ਚੁਣੋ",
+    "language_storage": "ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਸਟੋਰ ਕੀਤੀ ਗਈ ਹੈ।",
+    "branding": "ਬ੍ਰਾਂਡਿੰਗ",
+    "branding_desc": "ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਨਾਮ, ਲੋਗੋ, ਅਤੇ ਫੇਵਿਕਨ ਜੋ UI ਵਿੱਚ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ।",
+    "app_name": "ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਨਾਮ",
+    "app_name_hint": "ਹੈੱਡਰ ਅਤੇ ਪੇਜ ਟਾਈਟਲ ਵਿੱਚ ਦਿਖਾਈ ਦੇਣ ਵਾਲਾ ਨਾਮ",
+    "logo_url": "ਲੋਗੋ URL",
+    "logo_url_hint": "ਤੁਹਾਡੇ ਲੋਗੋ ਚਿੱਤਰ ਦਾ URL ਜਾਂ ਪਾਥ (ਡਿਫਾਲਟ ਲਈ ਖਾਲੀ ਛੱਡੋ)",
+    "favicon_url": "ਫੇਵਿਕਨ URL",
+    "favicon_url_hint": "ਤੁਹਾਡੇ ਫੇਵਿਕਨ ਦਾ URL ਜਾਂ ਪਾਥ (ਬ੍ਰਾਊਜ਼ਰ ਦੇ ਡਿਫਾਲਟ ਲਈ ਖਾਲੀ ਛੱਡੋ)",
+    "appearance": "ਦਿੱਖ",
+    "appearance_desc": "ਦ੍ਰਿਸ਼ਟੀ ਸ਼ੈਲੀ ਅਤੇ ਲੇਆਉਟ ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ।",
+    "theme": "ਥੀਮ",
+    "font_size": "ਫੋਂਟ ਆਕਾਰ",
+    "results_layout": "ਨਤੀਜੇ ਲੇਆਉਟ",
+    "search": "ਖੋਜ",
+    "search_desc": "ਸਭ ਖੋਜਾਂ 'ਤੇ ਲਾਗੂ ਕੀਤੇ ਗਏ ਡਿਫਾਲਟ ਸੈਟਿੰਗਾਂ।",
+    "ui_language": "UI ਭਾਸ਼ਾ",
+    "ui_language_hint": "ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ (ਬ੍ਰਾਊਜ਼ਰ ਦੇ localStorage ਵਿੱਚ ਸਟੋਰ ਕੀਤੀ ਗਈ)",
+    "interface_language": "ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ",
+    "stored_in_browser": "ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਸਟੋਰ ਕੀਤਾ ਗਿਆ (localStorage)",
+    "search_defaults": "ਖੋਜ ਡਿਫਾਲਟ",
+    "search_language": "ਖੋਜ ਭਾਸ਼ਾ",
+    "search_language_hint": "ਆਟੋ = ਪੁੱਛਣ ਤੋਂ ਪਛਾਣੋ (ਹੰਗੂਲ → ko-KR); ਜਾਂ ਸਾਰੇ, ਜਾਂ ko-KR ਵਰਗਾ ਇੱਕ ਨਿਰਧਾਰਿਤ ਸਥਾਨ",
+    "fallback_language": "ਫਾਲਬੈਕ ਭਾਸ਼ਾ ਕੋਡ",
+    "fallback_language_hint": "ਜਦੋਂ ਆਟੋ-ਪਛਾਣ ਅਸੰਪੂਰਨ ਹੋਵੇ ਤਾਂ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ",
+    "safe_search": "ਸੁਰੱਖਿਅਤ ਖੋਜ",
+    "safe_off": "ਬੰਦ",
+    "safe_moderate": "ਮੋਡਰੇਟ",
+    "safe_strict": "ਕਠੋਰ",
+    "results_per_engine": "ਹਰ ਇੰਜਣ ਲਈ ਨਤੀਜੇ",
+    "ai": "AI",
+    "ai_desc": "ਜਵਾਬ ਸੰਸ਼ਲੇਸ਼ਣ ਅਤੇ ਲੇਖ ਦੁਬਾਰਾ ਲਿਖਣ ਲਈ AI ਮਾਡਲਾਂ ਨੂੰ ਸੰਰਚਿਤ ਕਰੋ।",
+    "ai_provider": "ਪ੍ਰਦਾਤਾ",
+    "ai_provider_local": "ਸਥਾਨਕ (Ollama)",
+    "ai_provider_custom": "ਕਸਟਮ",
+    "ai_base_url": "API ਬੇਸ URL",
+    "ai_base_url_hint": "ਸਥਾਨਕ: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API ਕੁੰਜੀ",
+    "ai_api_key_hint": "ਕਲਾਉਡ ਪ੍ਰਦਾਤਿਆਂ ਲਈ ਲਾਜ਼ਮੀ (OpenAI, Anthropic, ਆਦਿ)",
+    "ai_model": "ਮਾਡਲ",
+    "ai_model_hint": "ਜਵਾਬ ਸੰਸ਼ਲੇਸ਼ਣ ਅਤੇ ਪੁੱਛਣ ਦੀ ਵਿਸ਼ਤਾਰ ਲਈ ਚੈਟ/ਸਿੱਖਿਆ ਮਾਡਲ",
+    "ai_article_model": "ਲੇਖ ਮਾਡਲ",
+    "ai_article_model_hint": "ਪੂਰੇ-ਪੇਜ਼ ਖਬਰਾਂ ਦੇ ਲੇਖਾਂ ਦੀ ਦੁਬਾਰਾ ਲਿਖਾਈ ਲਈ ਮਾਡਲ (ਮੁੱਖ ਮਾਡਲ 'ਤੇ ਡਿਫਾਲਟ)",
+    "ai_timeout": "ਟਾਈਮਆਉਟ (ਸੈਕੰਡ)",
+    "ai_timeout_hint": "ਮਾਡਲ ਕਾਲਾਂ ਲਈ ਪ੍ਰਤੀ-ਬੇਨਤੀ ਟਾਈਮਆਉਟ",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "ਖਬਰਾਂ",
+    "news_desc": "ਖਬਰਾਂ ਦੀ ਇਕੱਠੀ ਕਰਨ ਅਤੇ ਲੇਖ ਸੈਟਿੰਗਾਂ।",
+    "news_per_source": "ਹਰ ਸਰੋਤ ਲਈ ਲੇਖ",
+    "news_freshness": "ਤਾਜ਼ਗੀ ਅੱਧਾ ਜੀਵਨ (ਘੰਟੇ)",
+    "news_freshness_weight": "ਤਾਜ਼ਗੀ ਭਾਰ",
+    "news_dedup": "ਡਿਡਿਊਪ ਸਮਾਨਤਾ ਥ੍ਰੈਸ਼ਹੋਲਡ",
+    "news_max_age": "ਅਧਿਕਤਮ ਉਮਰ (ਦਿਨ)",
+    "news_cache_ttl": "ਕੈਸ਼ TTL (ਸੈਕੰਡ)",
+    "news_enrich_max": "ਸੰਪੂਰਕ ਕਰਨ ਲਈ ਅਧਿਕਤਮ ਲੇਖ",
+    "engines": "ਖੋਜ ਇੰਜਣ",
+    "engines_desc": "ਇੰਜਣਾਂ ਨੂੰ ਚਾਲੂ/ਬੰਦ ਕਰੋ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਰੈਂਕਿੰਗ ਭਾਰ ਨੂੰ ਸਹੀ ਕਰੋ। ਉੱਚਾ ਭਾਰ = ਨਤੀਜੇ ਦੇ ਆਰਡਰ 'ਤੇ ਵੱਧ ਪ੍ਰਭਾਵ।",
+    "engine": "ਇੰਜਣ",
+    "categories": "ਸ਼੍ਰੇਣੀਆਂ",
+    "weight": "ਭਾਰ",
+    "privacy": "ਗੋਪਨੀਯਤਾ",
+    "privacy_desc": "ਤੁਹਾਡੇ ਡੇਟਾ ਦੇ ਸਾਥ ਕੀਤੇ ਜਾਣ ਦੀ ਨਿਗਰਾਨੀ ਕਰੋ।",
+    "proxy_images": "ਪ੍ਰਾਕਸੀ ਤਸਵੀਰਾਂ",
+    "proxy_images_hint": "ਤਸਵੀਰਾਂ ਨੂੰ ਸਰਵਰ ਰਾਹੀਂ ਰੂਟ ਕਰੋ ਤਾਂ ਜੋ ਤੁਹਾਡਾ IP ਤੀਜੀ ਪਾਰਟੀ ਤੋਂ ਛੁਪਿਆ ਰਹੇ",
+    "remove_trackers": "ਟ੍ਰੈਕਿੰਗ ਪੈਰਾਮੀਟਰ ਹਟਾਓ",
+    "remove_trackers_hint": "URLs ਤੋਂ UTM ਅਤੇ ਹੋਰ ਟ੍ਰੈਕਿੰਗ ਪੈਰਾਮੀਟਰ ਹਟਾਓ",
+    "save_history": "ਖੋਜ ਇਤਿਹਾਸ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "save_history_hint": "ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਖੋਜਾਂ ਸਟੋਰ ਕਰੋ (ਕਦੇ ਵੀ ਸਰਵਰ ਨੂੰ ਨਹੀਂ ਭੇਜਿਆ ਗਿਆ)",
+    "clear_data": "ਡੇਟਾ ਸਾਫ ਕਰੋ",
+    "clear_localstorage": "ਲੋਕਲ ਸਟੋਰੇਜ ਸਾਫ ਕਰੋ",
+    "clear_indexeddb": "ਇੰਡੈਕਸਡਬੀ ਸਾਫ ਕਰੋ",
+    "shortcuts": "ਕੀਬੋਰਡ ਸ਼ਾਰਟਕਟ",
+    "shortcuts_desc": "ਪਾਵਰ ਯੂਜ਼ਰਾਂ ਲਈ ਤੇਜ਼ ਪਹੁੰਚ ਕੁੰਜੀਆਂ।",
+    "shortcut_focus_search": "ਖੋਜ ਬਾਕਸ 'ਤੇ ਕੇਂਦਰਿਤ ਕਰੋ",
+    "shortcut_close": "ਪੈਨਲ ਬੰਦ ਕਰੋ / ਰੱਦ ਕਰੋ",
+    "shortcut_navigate": "ਨਤੀਜਿਆਂ ਵਿੱਚ ਨੈਵੀਗੇਟ ਕਰੋ",
+    "shortcut_open": "ਚੁਣੀ ਗਈ ਨਤੀਜਾ ਖੋਲ੍ਹੋ",
+    "shortcut_new_tab": "ਨਵੇਂ ਟੈਬ ਵਿੱਚ ਖੋਲ੍ਹੋ",
+    "shortcut_switch_mode": "ਖੋਜ ਮੋਡ ਬਦਲੋ",
+    "shortcut_help": "ਇਹ ਸਹਾਇਤਾ ਦਿਖਾਓ",
+    "server": "ਸਰਵਰ",
+    "server_desc": "ਸਰਵਰ ਸੰਰਚਨਾ ਅਤੇ ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ।",
+    "bind_address": "ਬਾਈਂਡ ਪਤਾ",
+    "port": "ਪੋਰਟ",
+    "max_connections": "ਅਧਿਕਤਮ ਜੁੜਾਵ",
+    "image_proxy": "ਤਸਵੀਰ ਪ੍ਰਾਕਸੀ ਚਾਲੂ ਕਰੋ",
+    "cache_backend": "ਕੈਸ਼ ਬੈਕਐਂਡ",
+    "cache_dir": "ਕੈਸ਼ ਡਾਇਰੈਕਟਰੀ",
+    "redis_url": "Redis URL",
+    "advanced": "ਉੱਚ",
+    "advanced_desc": "ਕੈਸ਼ ਅਤੇ ਟਾਈਮਆਉਟ ਸੈਟਿੰਗਾਂ।",
+    "cache_ttl": "ਕੈਸ਼ TTL (ਸੈਕੰਡ)",
+    "cache_ttl_hint": "ਨਤੀਜੇ ਕੈਸ਼ ਦਾ ਸਮਾਂ-ਤੱਕ ਜੀਵਨ (0 ਕੈਸ਼ਿੰਗ ਨੂੰ ਬੰਦ ਕਰਦਾ ਹੈ)",
+    "request_timeout": "ਬੇਨਤੀ ਟਾਈਮਆਉਟ (ਸੈਕੰਡ)",
+    "request_timeout_hint": "ਪ੍ਰਤੀ-ਇੰਜਣ ਨੈੱਟਵਰਕ ਟਾਈਮਆਉਟ",
+    "save": "ਪਸੰਦਾਂ ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "saved": "ਸੁਰੱਖਿਅਤ",
+    "saved_msg": "settings.yml ਵਿੱਚ ਲਿਖਿਆ ਗਿਆ ਅਤੇ ਨਵੀਂ ਖੋਜਾਂ 'ਤੇ ਲਾਗੂ ਕੀਤਾ ਗਿਆ।",
+    "server_settings": "ਇਹ ਸੈਟਿੰਗਾਂ ਸਰਵਰ-ਪਾਸੇ ਸੁਰੱਖਿਅਤ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ",
+    "raw_config": "ਕੰਫਿਗ JSON",
+    "stats": "ਅੰਕੜੇ",
+    "home": "ਘਰ",
+    "logout": "ਲੌਗ ਆਉਟ",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "ਆਮ",
+    "academic": "ਅਕਾਦਮਿਕ",
+    "writing": "ਲਿਖਾਈ",
+    "code": "ਕੋਡ"
+  },
+  "footer": {
+    "grounded_answers": "ਤੁਹਾਡੇ ਸਥਾਨਕ ਮਾਡਲ ਤੋਂ ਜ਼ਮੀਨੀ ਜਵਾਬ — 200+ ਖੋਜ ਇੰਜਣ, ਜ਼ੀਰੋ ਪੁੱਛਣ ਦੀ ਲਾਗਤ।",
+    "academic_papers": "ਅਕਾਦਮਿਕ ਪੇਪਰ arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, ਅਤੇ ਹੋਰ ਤੋਂ।",
+    "news_digest": "ਖਬਰਾਂ ਦਾ ਸੰਖੇਪ: ਲੇਖ ਪੇਜਾਂ ਨੂੰ ਲਿਆਉਂਦਾ ਹੈ, ਓਲਾਮਾ ਰਾਹੀਂ ਸਾਰਾਂ ਨੂੰ ਨਿੱਜੀ ਤੌਰ 'ਤੇ ਦੁਬਾਰਾ ਲਿਖਦਾ ਹੈ — ਵੱਡੀਆਂ ਤਸਵੀਰਾਂ ਹੀ, ਕੋਈ ਫੇਵਿਕਨ ਉੱਚਾਈ ਨਹੀਂ।",
+    "images": "ਵਿਕੀਮੀਡੀਆ ਕਾਮਨਸ ਤਸਵੀਰ ਖੋਜ — ਨਿੱਜੀਤਾ ਲਈ ਪ੍ਰਾਕਸੀ ਕੀਤੀਆਂ ਥੰਬਨੇਲ।",
+    "api_docs": "API ਦਸਤਾਵੇਜ਼",
+    "status": "ਸਥਿਤੀ",
+    "version": "ਵਰਜਨ",
+    "engines_count": "232 ਇੰਜਣ"
+  },
+  "examples": {
+    "try": "ਇੱਕ ਉਦਾਹਰਨ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR ਸਮੀਖਿਆ"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer ਸਰਵੇਖਣ"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI ਨਿਯਮ"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "ਕੋਰੀਆ ਤਕਨਾਲੋਜੀ"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "ਜਲਵਾਯੂ ਨੀਤੀ"
+      }
+    ]
+  },
+  "interests": {
+    "title": "ਰੁਚੀਆਂ (ਤੁਹਾਡੇ ਲਈ)",
+    "add_placeholder": "ਰੁਚੀ ਸ਼ਾਮਲ ਕਰੋ...",
+    "empty": "ਤੁਹਾਡੇ ਖੋਜ ਕਰਨ ਦੇ ਨਾਲ ਰੁਚੀਆਂ ਆਟੋਮੈਟਿਕ ਤੌਰ 'ਤੇ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ",
+    "remove": "ਹਟਾਓ"
+  },
+  "factcheck": {
+    "title": "ਤੱਥ-ਚੈੱਕ ਨਤੀਜੇ",
+    "checking": "ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਾ...",
+    "analyzing": "ਵਿਰੋਧਾਂ ਲਈ ਸਰੋਤਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਾ...",
+    "no_contradictions": "ਸਰੋਤਾਂ ਵਿੱਚ ਕੋਈ ਵਿਰੋਧ ਨਹੀਂ ਮਿਲੇ",
+    "found": "ਵਿਰੋਧ ਮਿਲੇ"
+  },
+  "foryou": {
+    "title": "ਤੁਹਾਡੇ ਲਈ",
+    "based_on": "ਅਧਾਰਿਤ: {interests}",
+    "no_interests": "ਅਜੇ ਤੱਕ ਕੋਈ ਰੁਚੀਆਂ ਨਹੀਂ। ਰੁਚੀਆਂ ਬਣਾਉਣ ਲਈ ਖੋਜ ਕਰੋ!",
+    "loading": "ਨਿੱਜੀ ਫੀਡ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
+  },
+  "common": {
+    "search": "ਖੋਜ",
+    "clear": "ਸਾਫ ਕਰੋ",
+    "close": "ਬੰਦ ਕਰੋ",
+    "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
+    "error": "ਗਲਤੀ",
+    "retry": "ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "more": "ਹੋਰ",
+    "less": "ਘੱਟ"
+  },
+  "trends": {
+    "title": "ਹੁਣ ਦੇ ਰੁਝਾਨ",
+    "loading": "ਰੁਝਾਨ ਲੋਡ ਹੋ ਰਹੇ ਹਨ...",
+    "error": "ਰੁਝਾਨ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
+    "empty": "ਕੋਈ ਰੁਝਾਨੀ ਵਿਸ਼ੇ ਨਹੀਂ"
+  },
+  "onboarding": {
+    "welcome": "ਮੈਟਾਸਰਚ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ",
+    "subtitle": "ਤੁਹਾਡਾ ਨਿੱਜੀ, AI-ਚਲਿਤ ਖੋਜ ਇੰਜਣ",
+    "private_search": "ਨਿੱਜੀ ਖੋਜ",
+    "private_search_desc": "ਕਦੇ ਵੀ ਪੁੱਛਣ ਦੀ ਲਾਗਤ ਨਹੀਂ",
+    "ai_answers": "AI ਜਵਾਬ",
+    "ai_answers_desc": "ਸਥਾਨਕ AI ਨਤੀਜੇ ਸੰਖੇਪ ਕਰਦਾ ਹੈ",
+    "news_digest": "ਖਬਰਾਂ ਦਾ ਸੰਖੇਪ",
+    "news_digest_desc": "ਵਿਸ਼ਲੇਸ਼ਣ ਨਾਲ ਚੁਣੀ ਗਈਆਂ ਖਬਰਾਂ",
+    "local_first": "ਸਥਾਨਕ-ਪਹਿਲਾਂ",
+    "local_first_desc": "ਤੁਹਾਡਾ ਡੇਟਾ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਰਹਿੰਦਾ ਹੈ",
+    "get_started": "ਸ਼ੁਰੂ ਕਰੋ"
+  },
+  "feeds": {
+    "find": "ਫੀਡ ਲੱਭੋ",
+    "subscribe": "ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ",
+    "unsubscribe": "ਅਨਸਬਸਕ੍ਰਾਈਬ ਕਰੋ"
+  },
+  "errors": {
+    "load_trends": "ਰੁਝਾਨ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
+    "load_feed": "ਨਿੱਜੀ ਫੀਡ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
+    "load_global": "ਗਲੋਬਲ ਫੀਡ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ",
+    "translation": "ਅਨੁਵਾਦ ਅਸਫਲ"
+  },
+  "compare": {
+    "title": "ਨਤੀਜਿਆਂ ਦੀ ਤੁਲਨਾ ਕਰੋ",
+    "button": "ਤੁਲਨਾ ਕਰੋ",
+    "clear": "ਸਾਰੇ ਸਾਫ ਕਰੋ",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

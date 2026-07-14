@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Ρώτησε το διαδίκτυο, ιδιωτικά"
+  },
+  "nav": {
+    "ask": "Ρώτησε",
+    "discover": "Ανακάλυψε",
+    "history": "Ιστορικό",
+    "options": "Επιλογές",
+    "classic": "Κλασικό",
+    "stats": "Στατιστικά",
+    "preferences": "Προτιμήσεις"
+  },
+  "tabs": {
+    "general": "Γενικά",
+    "images": "Εικόνες",
+    "videos": "Βίντεο",
+    "papers": "Έγγραφα",
+    "news": "Νέα",
+    "shopping": "Αγορές"
+  },
+  "search": {
+    "placeholder": "Ρώτησε οτιδήποτε…",
+    "placeholder_news": "Εισάγετε ένα θέμα ειδήσεων, πατήστε Ρώτησε",
+    "placeholder_images": "Αναζήτηση εικόνων…",
+    "placeholder_papers": "Εισάγετε μια ερώτηση, πατήστε Ρώτησε",
+    "placeholder_general": "Εισάγετε μια ερώτηση ή θέμα, πατήστε Ρώτησε",
+    "placeholder_shopping": "Αναζήτηση προϊόντων…",
+    "placeholder_videos": "Αναζήτηση βίντεο…",
+    "button": "Ρώτησε",
+    "button_search": "Αναζήτηση"
+  },
+  "status": {
+    "loading": "Φόρτωση…",
+    "loading_stories": "Φόρτωση ιστοριών…",
+    "searching": "Αναζήτηση…",
+    "searching_web": "Αναζήτηση στο διαδίκτυο…",
+    "searching_images": "Αναζήτηση εικόνων…",
+    "searching_news": "Αναζήτηση πηγών ειδήσεων…",
+    "searching_papers": "Αναζήτηση ακαδημαϊκών πηγών…",
+    "searching_shopping": "Αναζήτηση προϊόντων…",
+    "searching_videos": "Αναζήτηση βίντεο…",
+    "search_complete": "Η αναζήτηση ολοκληρώθηκε.",
+    "search_failed": "Η αναζήτηση απέτυχε.",
+    "answer_ready": "Η απάντηση είναι έτοιμη.",
+    "fetching_article": "Ανάκτηση άρθρου…",
+    "fetching_publisher": "Ανάκτηση άρθρου εκδότη…",
+    "resolving_article": "Επίλυση άρθρου…",
+    "resolving_gn": "Επίλυση συνδέσμου Google News…",
+    "rewriting": "Επαναγραφή άρθρου…",
+    "rewriting_korean": "Επαναγραφή στα Κορεατικά…",
+    "preparing_rewrite": "Προετοιμασία πλήρους επαναγραφής…",
+    "extracted_rewriting": "Κείμενο άρθρου — επαναγραφή…",
+    "viewing_prior": "Προβολή προηγούμενης απάντησης — ρώτησε μια συνέχεια παρακάτω."
+  },
+  "error": {
+    "no_answer": "Δεν δημιουργήθηκε καμία απάντηση AI — αποτελέσματα αναζήτησης παρακάτω.",
+    "no_news": "Δεν βρέθηκαν ειδήσεις — δοκιμάστε άλλη ερώτηση.",
+    "no_stories": "Δεν βρέθηκαν ιστορίες — δοκιμάστε άλλη ερώτηση.",
+    "no_stories_category": "Δεν βρέθηκαν ιστορίες για αυτή την κατηγορία — δοκιμάστε άλλη επιλογή.",
+    "rewrite_empty": "Η επαναγραφή άρθρου επέστρεψε κενό κείμενο.",
+    "rewrite_failed": "Δεν ήταν δυνατή η επαναγραφή του άρθρου",
+    "load_news_failed": "Δεν ήταν δυνατή η φόρτωση ειδήσεων — ελέγξτε τον διακομιστή.",
+    "model_not_found": "Το μοντέλο δεν βρέθηκε — εκτελέστε το ollama pull για το ρυθμισμένο μοντέλο σας ή επιλέξτε άλλο στις Επιλογές.",
+    "ollama_not_running": "Το Ollama δεν εκτελείται — οι απαντήσεις θα είναι μόνο αναζητήσεις. Ξεκινήστε: ollama serve",
+    "invalid_thread": "Μη έγκυρο JSON νήμα.",
+    "enter_question": "Εισάγετε μια ερώτηση.",
+    "enter_search": "Εισάγετε έναν όρο αναζήτησης."
+  },
+  "article": {
+    "sources": "Πηγές",
+    "research_progress": "Πρόοδος Έρευνας",
+    "thinking": "Σκέψη",
+    "answer": "Απάντηση",
+    "key_points": "Κύρια Σημεία",
+    "summary": "Περίληψη",
+    "related_media": "Σχετικά Μέσα",
+    "view_more": "Δείτε {count} περισσότερα",
+    "back": "Πίσω",
+    "read_original": "Διαβάστε το πρωτότυπο",
+    "related_image": "Σχετική εικόνα",
+    "related": "Σχετικά"
+  },
+  "discover": {
+    "updated": "Ενημερώθηκε {time}",
+    "scope": {
+      "all": "📰 Όλα",
+      "local": "🏠 Τοπικά",
+      "world": "🌍 Παγκόσμια"
+    },
+    "categories": {
+      "politics": "Πολιτική",
+      "economy": "Οικονομία",
+      "sports": "Αθλητικά",
+      "world": "Παγκόσμια",
+      "entertainment": "Ψυχαγωγία",
+      "tech": "Τεχνολογία & Επιστήμη",
+      "culture": "Πολιτισμός",
+      "health": "Υγεία",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "τεχνολογία επιστήμη",
+      "ai": "τεχνητή νοημοσύνη AI μηχανική μάθηση",
+      "world": "παγκόσμιες ειδήσεις διεθνείς",
+      "politics": "πολιτική κυβέρνηση εκλογές",
+      "business": "επιχειρήσεις οικονομία εταιρείες",
+      "finance": "χρηματοοικονομικά αγορές μετοχές",
+      "health": "υγεία ιατρική ευεξία",
+      "climate": "κλιματική αλλαγή περιβάλλον",
+      "sports": "αθλητικά",
+      "entertainment": "ψυχαγωγία διασημότητες",
+      "art": "τέχνη πολιτισμός",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Άνοιγμα ιστορικού",
+    "close": "Κλείσιμο ιστορικού",
+    "imported": "Εισαγόμενο {count}",
+    "export": "Εξαγωγή JSON",
+    "import": "Εισαγωγή JSON",
+    "clear": "Καθαρισμός ιστορικού",
+    "empty": "Οι ερωτήσεις σας εμφανίζονται εδώ.",
+    "new_chat": "Νέα συνομιλία"
+  },
+  "panel": {
+    "history": "Ιστορικό",
+    "bookmarks": "Σελιδοδείκτες",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Όλοι οι Σελιδοδείκτες",
+    "empty": "Αποθηκεύστε αποτελέσματα σελιδοδεικτών εδώ.",
+    "export": "Εξαγωγή",
+    "clear_all": "Καθαρισμός όλων",
+    "new_collection": "Νέα συλλογή"
+  },
+  "hero": {
+    "private": "Ιδιωτικό",
+    "ai_powered": "Powered by AI",
+    "local_first": "Τοπικά Πρώτα"
+  },
+  "options": {
+    "model": "Μοντέλο",
+    "deep_research": "Βαθιά έρευνα",
+    "focus": "Εστίαση",
+    "theme": "Θέμα",
+    "language": "Γλώσσα",
+    "answer_language": "Γλώσσα AI",
+    "answer_auto": "Αυτόματα",
+    "research": "Έρευνα",
+    "fact_check": "Έλεγχος γεγονότων"
+  },
+  "preferences": {
+    "title": "Προτιμήσεις",
+    "language": "Γλώσσα",
+    "language_desc": "Επιλέξτε την προτιμώμενη γλώσσα διεπαφής",
+    "language_storage": "Η γλώσσα διεπαφής αποθηκεύεται στον περιηγητή σας.",
+    "branding": "Μάρκα",
+    "branding_desc": "Προσαρμόστε το όνομα της εφαρμογής, το λογότυπο και το favicon που εμφανίζονται στο UI.",
+    "app_name": "Όνομα Εφαρμογής",
+    "app_name_hint": "Όνομα που εμφανίζεται στην κεφαλίδα και στους τίτλους σελίδων",
+    "logo_url": "URL Λογότυπου",
+    "logo_url_hint": "URL ή διαδρομή προς την εικόνα του λογότυπού σας (αφήστε κενό για προεπιλογή)",
+    "favicon_url": "URL Favicon",
+    "favicon_url_hint": "URL ή διαδρομή προς το favicon σας (αφήστε κενό για προεπιλογή του προγράμματος περιήγησης)",
+    "appearance": "Εμφάνιση",
+    "appearance_desc": "Προσαρμόστε το οπτικό στυλ και τη διάταξη.",
+    "theme": "Θέμα",
+    "font_size": "Μέγεθος Γραμματοσειράς",
+    "results_layout": "Διάταξη Αποτελεσμάτων",
+    "search": "Αναζήτηση",
+    "search_desc": "Προεπιλεγμένες ρυθμίσεις που εφαρμόζονται σε όλες τις αναζητήσεις.",
+    "ui_language": "Γλώσσα UI",
+    "ui_language_hint": "Γλώσσα διεπαφής (αποθηκεύεται στο localStorage του προγράμματος περιήγησης)",
+    "interface_language": "Γλώσσα διεπαφής",
+    "stored_in_browser": "Αποθηκεύεται στο πρόγραμμα περιήγησης (localStorage)",
+    "search_defaults": "Προεπιλογές αναζήτησης",
+    "search_language": "Γλώσσα αναζήτησης",
+    "search_language_hint": "αυτόματα = ανίχνευση από ερώτηση (Hangul → ko-KR); ή όλα, ή μια σταθερή τοποθεσία όπως ko-KR",
+    "fallback_language": "Κωδικός γλώσσας εναλλακτικής λύσης",
+    "fallback_language_hint": "Χρησιμοποιείται όταν η αυτόματη ανίχνευση είναι αβέβαιη",
+    "safe_search": "Ασφαλής Αναζήτηση",
+    "safe_off": "Απενεργοποιημένο",
+    "safe_moderate": "Μέτριο",
+    "safe_strict": "Αυστηρό",
+    "results_per_engine": "Αποτελέσματα ανά Μηχανή",
+    "ai": "AI",
+    "ai_desc": "Ρυθμίστε τα μοντέλα AI για σύνθεση απαντήσεων και επαναγραφή άρθρων.",
+    "ai_provider": "Πάροχος",
+    "ai_provider_local": "Τοπικός (Ollama)",
+    "ai_provider_custom": "Προσαρμοσμένος",
+    "ai_base_url": "Βασικό URL API",
+    "ai_base_url_hint": "Τοπικό: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Κλειδί API",
+    "ai_api_key_hint": "Απαιτείται για παρόχους cloud (OpenAI, Anthropic, κ.λπ.)",
+    "ai_model": "Μοντέλο",
+    "ai_model_hint": "Μοντέλο συνομιλίας/οδηγιών για σύνθεση απαντήσεων και επέκταση ερωτήσεων",
+    "ai_article_model": "Μοντέλο Άρθρου",
+    "ai_article_model_hint": "Μοντέλο για επαναγραφές άρθρων πλήρους σελίδας (προεπιλογή στο κύριο μοντέλο)",
+    "ai_timeout": "Χρόνος λήξης (δευτερόλεπτα)",
+    "ai_timeout_hint": "Χρόνος λήξης ανά αίτημα για κλήσεις μοντέλου",
+    "ai_cost_tracking": "Παρακολούθηση κόστους",
+    "ai_track_usage": "Παρακολούθηση χρήσης token",
+    "ai_track_usage_hint": "Εμφάνιση αριθμού token και κόστους",
+    "ai_input_cost": "Κόστος εισόδου",
+    "ai_output_cost": "Κόστος εξόδου",
+    "ai_features": "Χαρακτηριστικά",
+    "ai_answer_synthesis": "Σύνθεση απάντησης",
+    "ai_query_expansion": "Επέκταση ερωτήματος",
+    "ai_reranking": "Επανακατάταξη",
+    "ai_clustering": "Ομαδοποίηση",
+    "ai_vision": "Όραση",
+    "news": "Νέα",
+    "news_desc": "Συγκέντρωση ειδήσεων και ρυθμίσεις άρθρων.",
+    "news_per_source": "Άρθρα ανά πηγή",
+    "news_freshness": "Φρεσκάδα μισής ζωής (ώρες)",
+    "news_freshness_weight": "Βάρος φρεσκάδας",
+    "news_dedup": "Κατώφλι ομοιότητας αφαίρεσης",
+    "news_max_age": "Μέγιστη ηλικία (ημέρες)",
+    "news_cache_ttl": "Cache TTL (δευτερόλεπτα)",
+    "news_enrich_max": "Μέγιστος αριθμός άρθρων για εμπλουτισμό",
+    "engines": "Μηχανές Αναζήτησης",
+    "engines_desc": "Ενεργοποιήστε/απενεργοποιήστε τις μηχανές και ρυθμίστε τα βάρη κατάταξης τους. Υψηλότερο βάρος = περισσότερη επιρροή στη σειρά αποτελεσμάτων.",
+    "engine": "μηχανή",
+    "categories": "κατηγορίες",
+    "weight": "βάρος",
+    "privacy": "Απόρρητο",
+    "privacy_desc": "Ελέγξτε πώς διαχειρίζονται τα δεδομένα σας.",
+    "proxy_images": "Proxy εικόνες",
+    "proxy_images_hint": "Δρομολόγηση εικόνων μέσω του διακομιστή για να κρύψετε το IP σας από τρίτους",
+    "remove_trackers": "Αφαίρεση παραμέτρων παρακολούθησης",
+    "remove_trackers_hint": "Αφαίρεση παραμέτρων UTM και άλλων παραμέτρων παρακολούθησης από URLs",
+    "save_history": "Αποθήκευση ιστορικού αναζητήσεων",
+    "save_history_hint": "Αποθήκευση αναζητήσεων τοπικά στο πρόγραμμα περιήγησης (ποτέ δεν αποστέλλεται στον διακομιστή)",
+    "clear_data": "Καθαρισμός Δεδομένων",
+    "clear_localstorage": "Καθαρισμός Τοπικής Αποθήκευσης",
+    "clear_indexeddb": "Καθαρισμός IndexedDB",
+    "shortcuts": "Συντομεύσεις Πληκτρολογίου",
+    "shortcuts_desc": "Γρήγοροι κωδικοί πρόσβασης για χρήστες εξουσίας.",
+    "shortcut_focus_search": "Εστίαση στο πλαίσιο αναζήτησης",
+    "shortcut_close": "Κλείσιμο πίνακα / Ακύρωση",
+    "shortcut_navigate": "Πλοήγηση στα αποτελέσματα",
+    "shortcut_open": "Άνοιγμα επιλεγμένου αποτελέσματος",
+    "shortcut_new_tab": "Άνοιγμα σε νέα καρτέλα",
+    "shortcut_switch_mode": "Εναλλαγή τρόπου αναζήτησης",
+    "shortcut_help": "Εμφάνιση αυτής της βοήθειας",
+    "server": "Διακομιστής",
+    "server_desc": "Ρυθμίσεις διακομιστή και δικτύου.",
+    "bind_address": "Διεύθυνση Δέσμευσης",
+    "port": "Θύρα",
+    "max_connections": "Μέγιστες Συνδέσεις",
+    "image_proxy": "Ενεργοποίηση Proxy Εικόνας",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Κατάλογος Cache",
+    "redis_url": "URL Redis",
+    "advanced": "Προχωρημένες",
+    "advanced_desc": "Ρυθμίσεις cache και χρόνου λήξης.",
+    "cache_ttl": "Cache TTL (δευτερόλεπτα)",
+    "cache_ttl_hint": "Χρόνος ζωής cache αποτελεσμάτων (0 απενεργοποιεί την cache)",
+    "request_timeout": "Χρόνος λήξης Αίτησης (δευτερόλεπτα)",
+    "request_timeout_hint": "Χρόνος λήξης δικτύου ανά μηχανή",
+    "save": "Αποθήκευση Προτιμήσεων",
+    "saved": "Αποθηκεύτηκε",
+    "saved_msg": "γραμμένο στο settings.yml και εφαρμόστηκε σε νέες αναζητήσεις.",
+    "server_settings": "Αυτές οι ρυθμίσεις διατηρούνται στον διακομιστή",
+    "raw_config": "Config JSON",
+    "stats": "Στατιστικά",
+    "home": "Αρχική",
+    "logout": "Αποσύνδεση",
+    "ai_embedding_model": "Μοντέλο ενσωμάτωσης",
+    "ai_vision_model": "Μοντέλο όρασης",
+    "ai_answer_top_n": "Κορυφαίες N απαντήσεις",
+    "ai_answer_top_n_hint": "Αριθμός αποτελεσμάτων για σύνθεση απάντησης",
+    "ai_news_prompt_ko": "Κορεάτικη ανάλυση ειδήσεων",
+    "ai_news_prompt_ko_hint": "Προσαρμοσμένο prompt για κορεάτικες ειδήσεις",
+    "ai_news_prompt_ko_placeholder": "Αφήστε κενό για προεπιλογή.",
+    "ai_news_prompt_en": "Αγγλική ανάλυση ειδήσεων",
+    "ai_news_prompt_en_hint": "Προσαρμοσμένο prompt για αγγλικές ειδήσεις",
+    "ai_news_prompt_en_placeholder": "Αφήστε κενό για προεπιλογή.",
+    "ai_answer_language": "Γλώσσα απάντησης",
+    "ai_answer_language_hint": "Γλώσσα-στόχος για απαντήσεις AI",
+    "ai_answer_auto": "Αυτόματη ανίχνευση"
+  },
+  "focus": {
+    "general": "Γενικά",
+    "academic": "Ακαδημαϊκά",
+    "writing": "Γραφή",
+    "code": "Κώδικας"
+  },
+  "footer": {
+    "grounded_answers": "Εδραιωμένες απαντήσεις από το τοπικό σας μοντέλο — 200+ μηχανές αναζήτησης, μηδενική καταγραφή ερωτήσεων.",
+    "academic_papers": "Ακαδημαϊκά έγγραφα από arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ και άλλα.",
+    "news_digest": "Περίληψη ειδήσεων: ανακτά άρθρα, επαναγράφει περιλήψεις τοπικά μέσω Ollama — μεγάλες εικόνες μόνο, χωρίς αναβάθμιση favicon.",
+    "images": "Αναζήτηση εικόνας Wikimedia Commons — μικρογραφίες που προορίζονται για ιδιωτικότητα.",
+    "api_docs": "API Docs",
+    "status": "Κατάσταση",
+    "version": "Έκδοση",
+    "engines_count": "232 μηχανές"
+  },
+  "examples": {
+    "try": "Δοκιμάστε ένα παράδειγμα",
+    "general": [
+      {
+        "q": "Καλές πρακτικές προγραμματισμού Rust async",
+        "label": "Rust async"
+      },
+      {
+        "q": "Τελευταία έγγραφα έρευνας LLM 2025",
+        "label": "Τελευταία έγγραφα LLM"
+      },
+      {
+        "q": "Πώς λειτουργεί το DNS",
+        "label": "Πώς λειτουργεί το DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Τελευταία έγγραφα έρευνας LLM 2025",
+        "label": "Τελευταία έγγραφα LLM"
+      },
+      {
+        "q": "Έγγραφα ανασκόπησης γονιδιακής επεξεργασίας CRISPR",
+        "label": "Ανασκόπηση CRISPR"
+      },
+      {
+        "q": "έρευνα αρχιτεκτονικής μετασχηματιστή",
+        "label": "Έρευνα μετασχηματιστή"
+      }
+    ],
+    "news": [
+      {
+        "q": "Κανονισμός AI",
+        "label": "Κανονισμός AI"
+      },
+      {
+        "q": "Τεχνολογικές ειδήσεις Κορέας",
+        "label": "Τεχνολογικές ειδήσεις Κορέας"
+      },
+      {
+        "q": "ενημερώσεις πολιτικής κλίματος",
+        "label": "Πολιτική κλίματος"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Ενδιαφέροντα (Για Εσάς)",
+    "add_placeholder": "Προσθέστε ενδιαφέρον...",
+    "empty": "Τα ενδιαφέροντα προστίθενται αυτόματα καθώς αναζητάτε",
+    "remove": "Αφαίρεση"
+  },
+  "factcheck": {
+    "title": "Αποτελέσματα Έλεγχου Γεγονότων",
+    "checking": "Ανάλυση...",
+    "analyzing": "Ανάλυση πηγών για αντιφάσεις...",
+    "no_contradictions": "Δεν βρέθηκαν αντιφάσεις στις πηγές",
+    "found": "Βρέθηκαν αντιφάσεις"
+  },
+  "foryou": {
+    "title": "Για Εσάς",
+    "based_on": "Βασισμένο σε: {interests}",
+    "no_interests": "Δεν υπάρχουν ακόμη ενδιαφέροντα. Αναζητήστε για να δημιουργήσετε τα ενδιαφέροντά σας!",
+    "loading": "Φόρτωση εξατομικευμένης ροής..."
+  },
+  "common": {
+    "search": "Αναζήτηση",
+    "clear": "Καθαρισμός",
+    "close": "Κλείσιμο",
+    "save": "Αποθήκευση",
+    "cancel": "Ακύρωση",
+    "loading": "Φόρτωση...",
+    "error": "Σφάλμα",
+    "retry": "Δοκιμάστε ξανά",
+    "more": "Περισσότερα",
+    "less": "Λιγότερα"
+  },
+  "trends": {
+    "title": "Τάσεις Τώρα",
+    "loading": "Φόρτωση τάσεων...",
+    "error": "Αποτυχία φόρτωσης τάσεων",
+    "empty": "Δεν υπάρχουν τάσεις"
+  },
+  "onboarding": {
+    "welcome": "Καλώς ήρθατε στο Metasearch",
+    "subtitle": "Η ιδιωτική σας μηχανή αναζήτησης με AI",
+    "private_search": "Ιδιωτική Αναζήτηση",
+    "private_search_desc": "Καμία καταγραφή ερωτήσεων, ποτέ",
+    "ai_answers": "Απαντήσεις AI",
+    "ai_answers_desc": "Το τοπικό AI συνοψίζει τα αποτελέσματα",
+    "news_digest": "Περίληψη ειδήσεων",
+    "news_digest_desc": "Επιμελημένες ειδήσεις με ανάλυση",
+    "local_first": "Τοπικά Πρώτα",
+    "local_first_desc": "Τα δεδομένα σας παραμένουν στη συσκευή σας",
+    "get_started": "Αρχίστε"
+  },
+  "feeds": {
+    "find": "Βρείτε Ροές",
+    "subscribe": "Εγγραφή",
+    "unsubscribe": "Αποεγγραφή"
+  },
+  "errors": {
+    "load_trends": "Αποτυχία φόρτωσης τάσεων",
+    "load_feed": "Αποτυχία φόρτωσης εξατομικευμένης ροής",
+    "load_global": "Αποτυχία φόρτωσης παγκόσμιας ροής",
+    "translation": "Αποτυχία μετάφρασης"
+  },
+  "compare": {
+    "title": "Σύγκριση Αποτελεσμάτων",
+    "button": "Σύγκριση",
+    "clear": "Καθαρισμός Όλων",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Küsi veebist, privaatselt"
+  },
+  "nav": {
+    "ask": "Küsi",
+    "discover": "Avasta",
+    "history": "Ajalugu",
+    "options": "Valikud",
+    "classic": "Klassikaline",
+    "stats": "Statistika",
+    "preferences": "Eelistused"
+  },
+  "tabs": {
+    "general": "Üldine",
+    "images": "Pildid",
+    "videos": "Videod",
+    "papers": "Dokumendid",
+    "news": "Uudised",
+    "shopping": "Ostmine"
+  },
+  "search": {
+    "placeholder": "Küsi midagi…",
+    "placeholder_news": "Sisesta uudiste teema, vajuta Küsi",
+    "placeholder_images": "Otsi pilte…",
+    "placeholder_papers": "Sisesta küsimus, vajuta Küsi",
+    "placeholder_general": "Sisesta küsimus või teema, vajuta Küsi",
+    "placeholder_shopping": "Otsi tooteid…",
+    "placeholder_videos": "Otsi videoid…",
+    "button": "Küsi",
+    "button_search": "Otsi"
+  },
+  "status": {
+    "loading": "Laadimine…",
+    "loading_stories": "Lugude laadimine…",
+    "searching": "Otsimine…",
+    "searching_web": "Otsimine veebis…",
+    "searching_images": "Otsimine piltides…",
+    "searching_news": "Otsimine uudiste allikatest…",
+    "searching_papers": "Otsimine akadeemilistest allikatest…",
+    "searching_shopping": "Otsimine toodetest…",
+    "searching_videos": "Otsimine videotest…",
+    "search_complete": "Otsing lõpetatud.",
+    "search_failed": "Otsing ebaõnnestus.",
+    "answer_ready": "Vastus valmis.",
+    "fetching_article": "Artikli toomine…",
+    "fetching_publisher": "Väljaande artikli toomine…",
+    "resolving_article": "Artikli lahendamine…",
+    "resolving_gn": "Google News lingi lahendamine…",
+    "rewriting": "Artikli ümberkirjutamine…",
+    "rewriting_korean": "Ümberkirjutamine korea keeles…",
+    "preparing_rewrite": "Täieliku ümberkirjutamise ettevalmistamine…",
+    "extracted_rewriting": "Ekstraheeritud artikli tekst — ümberkirjutamine…",
+    "viewing_prior": "Eelmise pöörde vaatamine — küsi allpool järgmist."
+  },
+  "error": {
+    "no_answer": "AI vastust ei genereeritud — otsingutulemused allpool.",
+    "no_news": "Uudiseid ei leitud — proovi teist päringut.",
+    "no_stories": "Lugusid ei leitud — proovi teist päringut.",
+    "no_stories_category": "Selle kategooria lugusid ei leitud — proovi teist vahekaarti.",
+    "rewrite_empty": "Artikli ümberkirjutamine tagastas tühja teksti.",
+    "rewrite_failed": "Artikli ümberkirjutamine ebaõnnestus",
+    "load_news_failed": "Uudiste laadimine ebaõnnestus — kontrolli serverit.",
+    "model_not_found": "Mudelit ei leitud — käivita ollama pull oma konfigureeritud mudeli jaoks või vali teine valikutes.",
+    "ollama_not_running": "Ollama ei tööta — vastused on ainult otsingupõhised. Alusta: ollama serve",
+    "invalid_thread": "Kehtetu teema JSON.",
+    "enter_question": "Sisesta küsimus.",
+    "enter_search": "Sisesta otsingutermin."
+  },
+  "article": {
+    "sources": "Allikad",
+    "research_progress": "Uuringu Edusamm",
+    "thinking": "Mõtleme",
+    "answer": "Vastus",
+    "key_points": "Peamised Punktid",
+    "summary": "Kokkuvõte",
+    "related_media": "Seotud Meedia",
+    "view_more": "Vaata {count} rohkem",
+    "back": "Tagasi",
+    "read_original": "Loe originaali",
+    "related_image": "Seotud pilt",
+    "related": "Seotud"
+  },
+  "discover": {
+    "updated": "Uuendatud {time}",
+    "scope": {
+      "all": "📰 Kõik",
+      "local": "🏠 Kohalik",
+      "world": "🌍 Maailm"
+    },
+    "categories": {
+      "politics": "Poliitika",
+      "economy": "Majandus",
+      "sports": "Sport",
+      "world": "Maailm",
+      "entertainment": "Meelelahutus",
+      "tech": "Tehnoloogia ja Teadus",
+      "culture": "Kultuur",
+      "health": "Tervis",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "tehnoloogia teadus",
+      "ai": "tehisintellekt AI masinõpe",
+      "world": "maailma uudised rahvusvaheline",
+      "politics": "poliitika valitsus valim",
+      "business": "äri majandus ettevõtted",
+      "finance": "rahandus turud aktsiad",
+      "health": "tervis meditsiin heaolu",
+      "climate": "kliimamuutus keskkond",
+      "sports": "sport",
+      "entertainment": "meelelahutus kuulsus",
+      "art": "kunst kultuur",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Ava ajalugu",
+    "close": "Sulge ajalugu",
+    "imported": "Imporditud {count}",
+    "export": "Eksporti JSON",
+    "import": "Impordi JSON",
+    "clear": "Kustuta ajalugu",
+    "empty": "Sinu küsimused ilmuvad siia.",
+    "new_chat": "Uus vestlus"
+  },
+  "panel": {
+    "history": "Ajalugu",
+    "bookmarks": "Märgid",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Kõik Märgid",
+    "empty": "Märgi tulemusi, et salvestada need siia.",
+    "export": "Eksport",
+    "clear_all": "Kustuta kõik",
+    "new_collection": "Uus kollektsioon"
+  },
+  "hero": {
+    "private": "Privaatne",
+    "ai_powered": "AI-Toetatud",
+    "local_first": "Kohalik Esiteks"
+  },
+  "options": {
+    "model": "Mudel",
+    "deep_research": "Süva uurimine",
+    "focus": "Fookus",
+    "theme": "Teema",
+    "language": "Keel",
+    "answer_language": "AI Keel",
+    "answer_auto": "Automaatne",
+    "research": "Uuring",
+    "fact_check": "Faktikontroll"
+  },
+  "preferences": {
+    "title": "Eelistused",
+    "language": "Keel",
+    "language_desc": "Valige eelistatud liidese keel",
+    "language_storage": "Liidese keel salvestatakse teie brauserisse.",
+    "branding": "Bränding",
+    "branding_desc": "Kohanda rakenduse nime, logo ja favicon, mis kuvatakse kasutajaliideses.",
+    "app_name": "Rakenduse Nimi",
+    "app_name_hint": "Nimi, mis kuvatakse päises ja lehe pealkirjades",
+    "logo_url": "Logo URL",
+    "logo_url_hint": "URL või tee sinu logo pildi juurde (jätke tühi vaikimisi)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL või tee sinu favicon'i juurde (jätke tühi brauseri vaikimisi)",
+    "appearance": "Välimus",
+    "appearance_desc": "Kohanda visuaalset stiili ja paigutust.",
+    "theme": "Teema",
+    "font_size": "Fondisuurus",
+    "results_layout": "Tulemuste Paigutus",
+    "search": "Otsi",
+    "search_desc": "Vaikeseaded, mis kehtivad kõigi otsingute kohta.",
+    "ui_language": "Kasutajaliidese Keel",
+    "ui_language_hint": "Liidese keel (salvestatakse brauseri localStorage's)",
+    "interface_language": "Liidese keel",
+    "stored_in_browser": "Salvestatud brauserisse (localStorage)",
+    "search_defaults": "Otsingu vaikeseaded",
+    "search_language": "Otsingu Keel",
+    "search_language_hint": "automaatne = tuvastada päringust (Hangul → ko-KR); või kõik, või fikseeritud piirkond nagu ko-KR",
+    "fallback_language": "Tagasipöördumise Keel",
+    "fallback_language_hint": "Kasutatakse, kui automaatne tuvastamine ei ole lõplik",
+    "safe_search": "Ohutu Otsing",
+    "safe_off": "Väljas",
+    "safe_moderate": "Mõõdukas",
+    "safe_strict": "Range",
+    "results_per_engine": "Tulemused Iga Mootori Kohta",
+    "ai": "AI",
+    "ai_desc": "Konfigureeri AI mudeleid vastuste sünteesimiseks ja artikli ümberkirjutamiseks.",
+    "ai_provider": "Pakkuja",
+    "ai_provider_local": "Kohalik (Ollama)",
+    "ai_provider_custom": "Kohandatud",
+    "ai_base_url": "API Põhi URL",
+    "ai_base_url_hint": "Kohalik: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Võti",
+    "ai_api_key_hint": "Nõutav pilvepakkujate jaoks (OpenAI, Anthropic jne)",
+    "ai_model": "Mudel",
+    "ai_model_hint": "Vestlus/õpetusmudel vastuste sünteesimiseks ja päringu laiendamiseks",
+    "ai_article_model": "Artikli Mudel",
+    "ai_article_model_hint": "Mudel täislehe uudiseartiklite ümberkirjutamiseks (vaikimisi peamine mudel)",
+    "ai_timeout": "Aegumine (sekundites)",
+    "ai_timeout_hint": "Mudeli kõnede jaoks päringu aegumine",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Funktsioonid",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Uudised",
+    "news_desc": "Uudiste kogumine ja artikli seaded.",
+    "news_per_source": "Artiklid iga allika kohta",
+    "news_freshness": "Uudiste värskuse poolest (tunnid)",
+    "news_freshness_weight": "Värskuse kaal",
+    "news_dedup": "Dedup sarnasuslävi",
+    "news_max_age": "Maksimaalne vanus (päevad)",
+    "news_cache_ttl": "Cache TTL (sekundid)",
+    "news_enrich_max": "Maksimaalne artiklite arv rikastamiseks",
+    "engines": "Otsingumootorid",
+    "engines_desc": "Luba/keela mootoreid ja kohanda nende järjestuse kaalu. Kõrgem kaal = suurem mõju tulemuste järjekorrale.",
+    "engine": "mootor",
+    "categories": "kategooriad",
+    "weight": "kaal",
+    "privacy": "Privaatsus",
+    "privacy_desc": "Kontrolli, kuidas sinu andmeid käsitletakse.",
+    "proxy_images": "Proxita pildid",
+    "proxy_images_hint": "Suuna pildid serveri kaudu, et varjata oma IP-d kolmandate osapoolte eest",
+    "remove_trackers": "Eemalda jälgimisparameetrid",
+    "remove_trackers_hint": "Eemalda UTM ja muud jälgimisparameetrid URL-idest",
+    "save_history": "Salvesta otsingu ajalugu",
+    "save_history_hint": "Salvesta otsingud kohalikult brauserisse (kunagi ei saadeta serverisse)",
+    "clear_data": "Kustuta Andmed",
+    "clear_localstorage": "Kustuta Kohalik Salvestus",
+    "clear_indexeddb": "Kustuta IndexedDB",
+    "shortcuts": "Klaviatuuri Otseteed",
+    "shortcuts_desc": "Kiire juurdepääsuvõtmed võimekas kasutajatele.",
+    "shortcut_focus_search": "Fookus otsingukastile",
+    "shortcut_close": "Sulge paneel / Tühista",
+    "shortcut_navigate": "Navigeeri tulemustes",
+    "shortcut_open": "Ava valitud tulemus",
+    "shortcut_new_tab": "Ava uues vahekaardis",
+    "shortcut_switch_mode": "Vaheta otsingurežiimi",
+    "shortcut_help": "Kuva see abi",
+    "server": "Server",
+    "server_desc": "Serveri konfiguratsioon ja võrgu seaded.",
+    "bind_address": "Sidumise Aadress",
+    "port": "Port",
+    "max_connections": "Maksimaalsed Ühendused",
+    "image_proxy": "Luba Pildi Proxii",
+    "cache_backend": "Cache Tagumine Pool",
+    "cache_dir": "Cache Kataloog",
+    "redis_url": "Redis URL",
+    "advanced": "Täpsem",
+    "advanced_desc": "Cache ja aegumise seaded.",
+    "cache_ttl": "Cache TTL (sekundites)",
+    "cache_ttl_hint": "Tulemuste cache aegumisaeg (0 keelab cache'i)",
+    "request_timeout": "Päringu Aegumine (sekundites)",
+    "request_timeout_hint": "Iga mootori võrgu aegumine",
+    "save": "Salvesta Eelistused",
+    "saved": "Salvestatud",
+    "saved_msg": "kirjutatud settings.yml ja rakendatud uutele otsingutele.",
+    "server_settings": "Need seaded salvestatakse serveripoolsetesse",
+    "raw_config": "Konfiguratsiooni JSON",
+    "stats": "Statistika",
+    "home": "Avaleht",
+    "logout": "Logi välja",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Üldine",
+    "academic": "Akadeemiline",
+    "writing": "Kirjutamine",
+    "code": "Kood"
+  },
+  "footer": {
+    "grounded_answers": "Põhjalikud vastused sinu kohalikust mudelist — 200+ otsingumootorit, null päringu logimist.",
+    "academic_papers": "Akadeemilised artiklid arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ ja rohkem.",
+    "news_digest": "Uudiste kokkuvõte: toob artikli lehed, ümberkirjutab kokkuvõtted kohalikult läbi Ollama — suured pildid ainult, ei favicon'i suurendust.",
+    "images": "Wikimedia Commons pildiotsing — minipildid proxied privaatsuse jaoks.",
+    "api_docs": "API Dokumendid",
+    "status": "Olek",
+    "version": "Versioon",
+    "engines_count": "232 mootorit"
+  },
+  "examples": {
+    "try": "Proovi näidet",
+    "general": [
+      {
+        "q": "Rust async programmeerimise parimad praktikad",
+        "label": "Rust async"
+      },
+      {
+        "q": "Viimased LLM teadusartiklid 2025",
+        "label": "Viimased LLM artiklid"
+      },
+      {
+        "q": "Kuidas DNS töötab",
+        "label": "Kuidas DNS töötab"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Viimased LLM teadusartiklid 2025",
+        "label": "Viimased LLM artiklid"
+      },
+      {
+        "q": "CRISPR geenide redigeerimise ülevaateartiklid",
+        "label": "CRISPR ülevaade"
+      },
+      {
+        "q": "transformer arhitektuuri ülevaade",
+        "label": "Transformer ülevaade"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulatsioon",
+        "label": "AI regulatsioon"
+      },
+      {
+        "q": "Korea tehnoloogia uudised",
+        "label": "Korea tehnoloogia"
+      },
+      {
+        "q": "kliimapoliitika uuendused",
+        "label": "Kliimapoliitika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Huvitavad (Sinu jaoks)",
+    "add_placeholder": "Lisa huvi...",
+    "empty": "Huvitavad lisatakse automaatselt, kui otsid",
+    "remove": "Eemalda"
+  },
+  "factcheck": {
+    "title": "Faktikontrolli Tulemused",
+    "checking": "Analüüsime...",
+    "analyzing": "Analüüsime allikaid vastuolude leidmiseks...",
+    "no_contradictions": "Allikates ei leitud vastuolusid",
+    "found": "Vastuolud leitud"
+  },
+  "foryou": {
+    "title": "Sinu jaoks",
+    "based_on": "Põhineb: {interests}",
+    "no_interests": "Huvitavaid pole veel. Otsi, et luua oma huvid!",
+    "loading": "Laadime isikupärastatud voogu..."
+  },
+  "common": {
+    "search": "Otsi",
+    "clear": "Kustuta",
+    "close": "Sulge",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "loading": "Laadimine...",
+    "error": "Viga",
+    "retry": "Proovi uuesti",
+    "more": "Rohkem",
+    "less": "Vähem"
+  },
+  "trends": {
+    "title": "Praegu Trendikas",
+    "loading": "Laadime trende...",
+    "error": "Trendide laadimine ebaõnnestus",
+    "empty": "Ei ole trendikaid teemasid"
+  },
+  "onboarding": {
+    "welcome": "Tere tulemast Metasearchi",
+    "subtitle": "Sinu privaatne, AI-toetatud otsingumootor",
+    "private_search": "Privaatne Otsing",
+    "private_search_desc": "Kunagi ei logita päringut",
+    "ai_answers": "AI Vastused",
+    "ai_answers_desc": "Kohalik AI kokkuvõtted tulemustest",
+    "news_digest": "Uudiste kokkuvõte",
+    "news_digest_desc": "Kuraeritud uudised koos analüüsiga",
+    "local_first": "Kohalik Esiteks",
+    "local_first_desc": "Sinu andmed jäävad sinu seadmesse",
+    "get_started": "Alusta"
+  },
+  "feeds": {
+    "find": "Leia Vooge",
+    "subscribe": "Telli",
+    "unsubscribe": "Telli lõpetamine"
+  },
+  "errors": {
+    "load_trends": "Trendide laadimine ebaõnnestus",
+    "load_feed": "Isikupärastatud voogu laadimine ebaõnnestus",
+    "load_global": "Globaalset voogu laadimine ebaõnnestus",
+    "translation": "Tõlkimine ebaõnnestus"
+  },
+  "compare": {
+    "title": "Võrdle Tulemusi",
+    "button": "Võrdle",
+    "clear": "Kustuta Kõik",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

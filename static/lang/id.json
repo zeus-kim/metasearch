@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Tanyakan web, secara pribadi"
+  },
+  "nav": {
+    "ask": "Tanya",
+    "discover": "Temukan",
+    "history": "Riwayat",
+    "options": "Opsi",
+    "classic": "Klasik",
+    "stats": "Statistik",
+    "preferences": "Preferensi"
+  },
+  "tabs": {
+    "general": "Umum",
+    "images": "Gambar",
+    "videos": "Video",
+    "papers": "Makalah",
+    "news": "Berita",
+    "shopping": "Belanja"
+  },
+  "search": {
+    "placeholder": "Tanyakan apapun…",
+    "placeholder_news": "Masukkan topik berita, tekan Tanya",
+    "placeholder_images": "Cari gambar…",
+    "placeholder_papers": "Masukkan pertanyaan, tekan Tanya",
+    "placeholder_general": "Masukkan pertanyaan atau topik, tekan Tanya",
+    "placeholder_shopping": "Cari produk…",
+    "placeholder_videos": "Cari video…",
+    "button": "Tanya",
+    "button_search": "Cari"
+  },
+  "status": {
+    "loading": "Memuat…",
+    "loading_stories": "Memuat cerita…",
+    "searching": "Mencari…",
+    "searching_web": "Mencari di web…",
+    "searching_images": "Mencari gambar…",
+    "searching_news": "Mencari sumber berita…",
+    "searching_papers": "Mencari sumber akademis…",
+    "searching_shopping": "Mencari produk…",
+    "searching_videos": "Mencari video…",
+    "search_complete": "Pencarian selesai.",
+    "search_failed": "Pencarian gagal.",
+    "answer_ready": "Jawaban siap.",
+    "fetching_article": "Mengambil artikel…",
+    "fetching_publisher": "Mengambil artikel penerbit…",
+    "resolving_article": "Menyelesaikan artikel…",
+    "resolving_gn": "Menyelesaikan tautan Google News…",
+    "rewriting": "Menulis ulang artikel…",
+    "rewriting_korean": "Menulis ulang dalam bahasa Korea…",
+    "preparing_rewrite": "Mempersiapkan penulisan ulang penuh…",
+    "extracted_rewriting": "Teks artikel yang diekstrak — menulis ulang…",
+    "viewing_prior": "Melihat giliran sebelumnya — tanyakan lanjutan di bawah."
+  },
+  "error": {
+    "no_answer": "Tidak ada jawaban AI yang dihasilkan — hasil pencarian di bawah.",
+    "no_news": "Tidak ada berita ditemukan — coba kueri lain.",
+    "no_stories": "Tidak ada cerita ditemukan — coba kueri lain.",
+    "no_stories_category": "Tidak ada cerita ditemukan untuk kategori ini — coba pil lain.",
+    "rewrite_empty": "Penulisan ulang artikel mengembalikan teks kosong.",
+    "rewrite_failed": "Tidak dapat menulis ulang artikel",
+    "load_news_failed": "Tidak dapat memuat berita — periksa server.",
+    "model_not_found": "Model tidak ditemukan — jalankan ollama pull untuk model yang telah Anda konfigurasikan, atau pilih yang lain di Opsi.",
+    "ollama_not_running": "Ollama tidak berjalan — jawaban hanya akan dicari. Mulai: ollama serve",
+    "invalid_thread": "JSON thread tidak valid.",
+    "enter_question": "Masukkan pertanyaan.",
+    "enter_search": "Masukkan istilah pencarian."
+  },
+  "article": {
+    "sources": "Sumber",
+    "research_progress": "Kemajuan Penelitian",
+    "thinking": "Berpikir",
+    "answer": "Jawaban",
+    "key_points": "Poin Kunci",
+    "summary": "Ringkasan",
+    "related_media": "Media Terkait",
+    "view_more": "Lihat {count} lebih banyak",
+    "back": "Kembali",
+    "read_original": "Baca yang asli",
+    "related_image": "Gambar terkait",
+    "related": "Terkait"
+  },
+  "discover": {
+    "updated": "Diperbarui {time}",
+    "scope": {
+      "all": "📰 Semua",
+      "local": "🏠 Lokal",
+      "world": "🌍 Dunia"
+    },
+    "categories": {
+      "politics": "Politik",
+      "economy": "Ekonomi",
+      "sports": "Olahraga",
+      "world": "Dunia",
+      "entertainment": "Hiburan",
+      "tech": "Teknologi & Sains",
+      "culture": "Budaya",
+      "health": "Kesehatan",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ilmu teknologi",
+      "ai": "kecerdasan buatan AI pembelajaran mesin",
+      "world": "berita dunia internasional",
+      "politics": "politik pemerintahan pemilihan",
+      "business": "bisnis ekonomi perusahaan",
+      "finance": "keuangan pasar saham",
+      "health": "kesehatan obat kesehatan",
+      "climate": "perubahan iklim lingkungan",
+      "sports": "olahraga",
+      "entertainment": "hiburan selebriti",
+      "art": "seni budaya",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Buka riwayat",
+    "close": "Tutup riwayat",
+    "imported": "Diimpor {count}",
+    "export": "Ekspor JSON",
+    "import": "Impor JSON",
+    "clear": "Bersihkan riwayat",
+    "empty": "Pertanyaan Anda muncul di sini.",
+    "new_chat": "Obrolan baru"
+  },
+  "panel": {
+    "history": "Riwayat",
+    "bookmarks": "Tanda Buku",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Semua Tanda Buku",
+    "empty": "Tandai hasil untuk menyimpannya di sini.",
+    "export": "Ekspor",
+    "clear_all": "Bersihkan semua",
+    "new_collection": "Koleksi baru"
+  },
+  "hero": {
+    "private": "Pribadi",
+    "ai_powered": "Didukung AI",
+    "local_first": "Pertama Lokal"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Penelitian mendalam",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Bahasa",
+    "answer_language": "Bahasa AI",
+    "answer_auto": "Otomatis",
+    "research": "Penelitian",
+    "fact_check": "Cek fakta"
+  },
+  "preferences": {
+    "title": "Preferensi",
+    "language": "Bahasa",
+    "language_desc": "Pilih bahasa antarmuka pilihan Anda",
+    "language_storage": "Bahasa antarmuka disimpan di browser Anda.",
+    "branding": "Merek",
+    "branding_desc": "Sesuaikan nama aplikasi, logo, dan favicon yang ditampilkan di UI.",
+    "app_name": "Nama Aplikasi",
+    "app_name_hint": "Nama yang ditampilkan di header dan judul halaman",
+    "logo_url": "URL Logo",
+    "logo_url_hint": "URL atau jalur ke gambar logo Anda (biarkan kosong untuk default)",
+    "favicon_url": "URL Favicon",
+    "favicon_url_hint": "URL atau jalur ke favicon Anda (biarkan kosong untuk default browser)",
+    "appearance": "Penampilan",
+    "appearance_desc": "Sesuaikan gaya visual dan tata letak.",
+    "theme": "Tema",
+    "font_size": "Ukuran Font",
+    "results_layout": "Tata Letak Hasil",
+    "search": "Pencarian",
+    "search_desc": "Pengaturan default diterapkan untuk semua pencarian.",
+    "ui_language": "Bahasa UI",
+    "ui_language_hint": "Bahasa antarmuka (disimpan di localStorage browser)",
+    "interface_language": "Bahasa antarmuka",
+    "stored_in_browser": "Disimpan di browser (localStorage)",
+    "search_defaults": "Default pencarian",
+    "search_language": "Bahasa Pencarian",
+    "search_language_hint": "otomatis = deteksi dari kueri (Hangul → ko-KR); atau semua, atau lokal tetap seperti ko-KR",
+    "fallback_language": "Kode Bahasa Cadangan",
+    "fallback_language_hint": "Digunakan ketika deteksi otomatis tidak jelas",
+    "safe_search": "Pencarian Aman",
+    "safe_off": "Matikan",
+    "safe_moderate": "Sedang",
+    "safe_strict": "Ketat",
+    "results_per_engine": "Hasil Per Mesin",
+    "ai": "AI",
+    "ai_desc": "Konfigurasi model AI untuk sintesis jawaban dan penulisan ulang artikel.",
+    "ai_provider": "Penyedia",
+    "ai_provider_local": "Lokal (Ollama)",
+    "ai_provider_custom": "Kustom",
+    "ai_base_url": "URL Dasar API",
+    "ai_base_url_hint": "Lokal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Kunci API",
+    "ai_api_key_hint": "Diperlukan untuk penyedia cloud (OpenAI, Anthropic, dll.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Model chat/instruksi untuk sintesis jawaban dan perluasan kueri",
+    "ai_article_model": "Model Artikel",
+    "ai_article_model_hint": "Model untuk penulisan ulang artikel berita halaman penuh (default ke model utama)",
+    "ai_timeout": "Timeout (detik)",
+    "ai_timeout_hint": "Timeout per permintaan untuk panggilan model",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Fitur",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Berita",
+    "news_desc": "Agregasi berita dan pengaturan artikel.",
+    "news_per_source": "Artikel per sumber",
+    "news_freshness": "Kedalaman kesegaran (jam)",
+    "news_freshness_weight": "Bobot kesegaran",
+    "news_dedup": "Ambang kesamaan dedup",
+    "news_max_age": "Usia maksimum (hari)",
+    "news_cache_ttl": "TTL cache (detik)",
+    "news_enrich_max": "Maks artikel untuk memperkaya",
+    "engines": "Mesin Pencari",
+    "engines_desc": "Aktifkan/nonaktifkan mesin dan sesuaikan bobot peringkat mereka. Bobot lebih tinggi = lebih banyak pengaruh pada urutan hasil.",
+    "engine": "mesin",
+    "categories": "kategori",
+    "weight": "bobot",
+    "privacy": "Privasi",
+    "privacy_desc": "Kontrol bagaimana data Anda ditangani.",
+    "proxy_images": "Gambar proxy",
+    "proxy_images_hint": "Rute gambar melalui server untuk menyembunyikan IP Anda dari pihak ketiga",
+    "remove_trackers": "Hapus parameter pelacakan",
+    "remove_trackers_hint": "Hapus parameter UTM dan pelacakan lainnya dari URL",
+    "save_history": "Simpan riwayat pencarian",
+    "save_history_hint": "Simpan pencarian secara lokal di browser (tidak pernah dikirim ke server)",
+    "clear_data": "Hapus Data",
+    "clear_localstorage": "Hapus Penyimpanan Lokal",
+    "clear_indexeddb": "Hapus IndexedDB",
+    "shortcuts": "Pintasan Keyboard",
+    "shortcuts_desc": "Tombol akses cepat untuk pengguna tingkat lanjut.",
+    "shortcut_focus_search": "Fokus kotak pencarian",
+    "shortcut_close": "Tutup panel / Batalkan",
+    "shortcut_navigate": "Navigasi hasil",
+    "shortcut_open": "Buka hasil yang dipilih",
+    "shortcut_new_tab": "Buka di tab baru",
+    "shortcut_switch_mode": "Beralih mode pencarian",
+    "shortcut_help": "Tampilkan bantuan ini",
+    "server": "Server",
+    "server_desc": "Konfigurasi server dan pengaturan jaringan.",
+    "bind_address": "Alamat Bind",
+    "port": "Port",
+    "max_connections": "Koneksi Maksimum",
+    "image_proxy": "Aktifkan Proxy Gambar",
+    "cache_backend": "Backend Cache",
+    "cache_dir": "Direktori Cache",
+    "redis_url": "URL Redis",
+    "advanced": "Lanjutan",
+    "advanced_desc": "Pengaturan cache dan timeout.",
+    "cache_ttl": "TTL cache (detik)",
+    "cache_ttl_hint": "Waktu hidup cache hasil (0 menonaktifkan caching)",
+    "request_timeout": "Timeout Permintaan (detik)",
+    "request_timeout_hint": "Timeout jaringan per mesin",
+    "save": "Simpan Preferensi",
+    "saved": "Disimpan",
+    "saved_msg": "ditulis ke settings.yml dan diterapkan pada pencarian baru.",
+    "server_settings": "Pengaturan ini disimpan di sisi server untuk",
+    "raw_config": "Config JSON",
+    "stats": "Statistik",
+    "home": "Beranda",
+    "logout": "Keluar",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Umum",
+    "academic": "Akademik",
+    "writing": "Menulis",
+    "code": "Kode"
+  },
+  "footer": {
+    "grounded_answers": "Jawaban yang terhubung dari model lokal Anda — 200+ mesin pencari, tanpa pencatatan kueri.",
+    "academic_papers": "Makalah akademik dari arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, dan lainnya.",
+    "news_digest": "Ringkasan berita: mengambil halaman artikel, menulis ulang ringkasan secara lokal melalui Ollama — gambar besar saja, tidak ada peningkatan favicon.",
+    "images": "Pencarian gambar Wikimedia Commons — thumbnail diproksi untuk privasi.",
+    "api_docs": "Dokumen API",
+    "status": "Status",
+    "version": "Versi",
+    "engines_count": "232 mesin"
+  },
+  "examples": {
+    "try": "Coba contoh",
+    "general": [
+      {
+        "q": "Praktik terbaik pemrograman async Rust",
+        "label": "Rust async"
+      },
+      {
+        "q": "Makalah penelitian LLM terbaru 2025",
+        "label": "Makalah LLM terbaru"
+      },
+      {
+        "q": "Bagaimana cara kerja DNS",
+        "label": "Bagaimana cara kerja DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Makalah penelitian LLM terbaru 2025",
+        "label": "Makalah LLM terbaru"
+      },
+      {
+        "q": "Makalah tinjauan pengeditan gen CRISPR",
+        "label": "Tinjauan CRISPR"
+      },
+      {
+        "q": "survei arsitektur transformer",
+        "label": "Survei transformer"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulasi AI",
+        "label": "Regulasi AI"
+      },
+      {
+        "q": "Berita teknologi Korea",
+        "label": "Teknologi Korea"
+      },
+      {
+        "q": "pembaruan kebijakan iklim",
+        "label": "Kebijakan iklim"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Minat (Untuk Anda)",
+    "add_placeholder": "Tambahkan minat...",
+    "empty": "Minat ditambahkan secara otomatis saat Anda mencari",
+    "remove": "Hapus"
+  },
+  "factcheck": {
+    "title": "Hasil Cek Fakta",
+    "checking": "Menganalisis...",
+    "analyzing": "Menganalisis sumber untuk kontradiksi...",
+    "no_contradictions": "Tidak ada kontradiksi ditemukan di sumber",
+    "found": "Kontradiksi ditemukan"
+  },
+  "foryou": {
+    "title": "Untuk Anda",
+    "based_on": "Berdasarkan: {interests}",
+    "no_interests": "Belum ada minat. Cari untuk membangun minat Anda!",
+    "loading": "Memuat umpan yang dipersonalisasi..."
+  },
+  "common": {
+    "search": "Cari",
+    "clear": "Bersihkan",
+    "close": "Tutup",
+    "save": "Simpan",
+    "cancel": "Batalkan",
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "retry": "Coba lagi",
+    "more": "Lebih",
+    "less": "Kurang"
+  },
+  "trends": {
+    "title": "Sedang Tren",
+    "loading": "Memuat tren...",
+    "error": "Gagal memuat tren",
+    "empty": "Tidak ada topik yang sedang tren"
+  },
+  "onboarding": {
+    "welcome": "Selamat datang di Metasearch",
+    "subtitle": "Mesin pencari Anda yang pribadi, didukung AI",
+    "private_search": "Pencarian Pribadi",
+    "private_search_desc": "Tidak ada pencatatan kueri, selamanya",
+    "ai_answers": "Jawaban AI",
+    "ai_answers_desc": "AI lokal merangkum hasil",
+    "news_digest": "Ringkasan Berita",
+    "news_digest_desc": "Berita yang dikurasi dengan analisis",
+    "local_first": "Pertama Lokal",
+    "local_first_desc": "Data Anda tetap di perangkat Anda",
+    "get_started": "Mulai"
+  },
+  "feeds": {
+    "find": "Temukan Umpan",
+    "subscribe": "Langganan",
+    "unsubscribe": "Berhenti Langganan"
+  },
+  "errors": {
+    "load_trends": "Gagal memuat tren",
+    "load_feed": "Gagal memuat umpan yang dipersonalisasi",
+    "load_global": "Gagal memuat umpan global",
+    "translation": "Terjemahan gagal"
+  },
+  "compare": {
+    "title": "Bandingkan Hasil",
+    "button": "Bandingkan",
+    "clear": "Bersihkan Semua",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

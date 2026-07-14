@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Kysy verkkosivuilta, yksityisesti"
+  },
+  "nav": {
+    "ask": "Kysy",
+    "discover": "Löydä",
+    "history": "Historia",
+    "options": "Asetukset",
+    "classic": "Klassinen",
+    "stats": "Tilastot",
+    "preferences": "Asetukset"
+  },
+  "tabs": {
+    "general": "Yleinen",
+    "images": "Kuvat",
+    "videos": "Videot",
+    "papers": "Julkaisut",
+    "news": "Uutiset",
+    "shopping": "Ostokset"
+  },
+  "search": {
+    "placeholder": "Kysy mitä tahansa…",
+    "placeholder_news": "Syötä uutisteema, paina Kysy",
+    "placeholder_images": "Etsi kuvia…",
+    "placeholder_papers": "Syötä kysymys, paina Kysy",
+    "placeholder_general": "Syötä kysymys tai aihe, paina Kysy",
+    "placeholder_shopping": "Etsi tuotteita…",
+    "placeholder_videos": "Etsi videoita…",
+    "button": "Kysy",
+    "button_search": "Etsi"
+  },
+  "status": {
+    "loading": "Ladataan…",
+    "loading_stories": "Ladataan tarinoita…",
+    "searching": "Etsitään…",
+    "searching_web": "Etsitään verkkosivuilta…",
+    "searching_images": "Etsitään kuvia…",
+    "searching_news": "Etsitään uutislähteitä…",
+    "searching_papers": "Etsitään akateemisia lähteitä…",
+    "searching_shopping": "Etsitään tuotteita…",
+    "searching_videos": "Etsitään videoita…",
+    "search_complete": "Haku valmis.",
+    "search_failed": "Haku epäonnistui.",
+    "answer_ready": "Vastaus valmis.",
+    "fetching_article": "Hakee artikkelia…",
+    "fetching_publisher": "Hakee julkaisijan artikkelia…",
+    "resolving_article": "Ratkaisee artikkelia…",
+    "resolving_gn": "Ratkaisee Google News -linkkiä…",
+    "rewriting": "Uudelleenkirjoittaa artikkelia…",
+    "rewriting_korean": "Uudelleenkirjoittaa koreaksi…",
+    "preparing_rewrite": "Valmistaa täydellistä uudelleenkirjoitusta…",
+    "extracted_rewriting": "Poimittu artikkelin teksti — uudelleenkirjoitetaan…",
+    "viewing_prior": "Katsotaan edellistä vuoroa — kysy jatkokysymys alla."
+  },
+  "error": {
+    "no_answer": "Ei AI-vastausta luotu — hakutulokset alla.",
+    "no_news": "Ei uutisia löytynyt — kokeile toista kyselyä.",
+    "no_stories": "Ei tarinoita löytynyt — kokeile toista kyselyä.",
+    "no_stories_category": "Ei tarinoita löytynyt tälle kategoriolle — kokeile toista pillereitä.",
+    "rewrite_empty": "Artikkelin uudelleenkirjoitus palautti tyhjää tekstiä.",
+    "rewrite_failed": "Artikkelia ei voitu uudelleenkirjoittaa",
+    "load_news_failed": "Uutisia ei voitu ladata — tarkista palvelin.",
+    "model_not_found": "Mallia ei löytynyt — suorita ollama pull konfiguroitua malliisi varten tai valitse toinen Asetuksista.",
+    "ollama_not_running": "Ollama ei ole käynnissä — vastaukset ovat vain hakupohjaisia. Aloita: ollama serve",
+    "invalid_thread": "Virheellinen thread JSON.",
+    "enter_question": "Syötä kysymys.",
+    "enter_search": "Syötä hakusana."
+  },
+  "article": {
+    "sources": "Lähteet",
+    "research_progress": "Tutkimuksen edistyminen",
+    "thinking": "Ajatellaan",
+    "answer": "Vastaus",
+    "key_points": "Keskeiset kohdat",
+    "summary": "Yhteenveto",
+    "related_media": "Liittyvä media",
+    "view_more": "Näytä {count} lisää",
+    "back": "Takaisin",
+    "read_original": "Lue alkuperäinen",
+    "related_image": "Liittyvä kuva",
+    "related": "Liittyvä"
+  },
+  "discover": {
+    "updated": "Päivitetty {time}",
+    "scope": {
+      "all": "📰 Kaikki",
+      "local": "🏠 Paikallinen",
+      "world": "🌍 Maailma"
+    },
+    "categories": {
+      "politics": "Politiikka",
+      "economy": "Talous",
+      "sports": "Urheilu",
+      "world": "Maailma",
+      "entertainment": "Viihde",
+      "tech": "Teknologia & Tiede",
+      "culture": "Kulttuuri",
+      "health": "Terveys",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknologia tiede",
+      "ai": "tekoäly AI koneoppiminen",
+      "world": "maailman uutiset kansainväliset",
+      "politics": "politiikka hallitus vaalit",
+      "business": "liiketoiminta talous yritykset",
+      "finance": "rahoitus markkinat osakkeet",
+      "health": "terveys lääketiede hyvinvointi",
+      "climate": "ilmastonmuutos ympäristö",
+      "sports": "urheilu",
+      "entertainment": "viihde julkkis",
+      "art": "taide kulttuuri",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Avaa historia",
+    "close": "Sulje historia",
+    "imported": "Tuotu {count}",
+    "export": "Vie JSON",
+    "import": "Tuo JSON",
+    "clear": "Tyhjennä historia",
+    "empty": "Kysymyksesi näkyvät täällä.",
+    "new_chat": "Uusi keskustelu"
+  },
+  "panel": {
+    "history": "Historia",
+    "bookmarks": "Kirjanmerkit",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Kaikki kirjanmerkit",
+    "empty": "Tallenna tulokset kirjanmerkkeihin.",
+    "export": "Vie",
+    "clear_all": "Tyhjennä kaikki",
+    "new_collection": "Uusi kokoelma"
+  },
+  "hero": {
+    "private": "Yksityinen",
+    "ai_powered": "AI-vetoinen",
+    "local_first": "Paikallinen ensisijaisesti"
+  },
+  "options": {
+    "model": "Malli",
+    "deep_research": "Syvä tutkimus",
+    "focus": "Kohdistus",
+    "theme": "Teema",
+    "language": "Kieli",
+    "answer_language": "AI Kieli",
+    "answer_auto": "Automaattinen",
+    "research": "Tutkimus",
+    "fact_check": "Tosiasioiden tarkistus"
+  },
+  "preferences": {
+    "title": "Asetukset",
+    "language": "Kieli",
+    "language_desc": "Valitse haluamasi käyttöliittymän kieli",
+    "language_storage": "Käyttöliittymän kieli tallennetaan selaimeesi.",
+    "branding": "Brändäys",
+    "branding_desc": "Mukauta sovelluksen nimeä, logoa ja faviconia, jotka näkyvät käyttöliittymässä.",
+    "app_name": "Sovelluksen nimi",
+    "app_name_hint": "Nimi, joka näkyy otsikossa ja sivun otsikoissa",
+    "logo_url": "Logon URL",
+    "logo_url_hint": "URL tai polku logo-kuvaasi (jätä tyhjäksi oletukselle)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL tai polku faviconillesi (jätä tyhjäksi selaimen oletukselle)",
+    "appearance": "Ulkoasu",
+    "appearance_desc": "Mukauta visuaalista tyyliä ja asettelua.",
+    "theme": "Teema",
+    "font_size": "Fonttikoko",
+    "results_layout": "Tulosten asettelu",
+    "search": "Haku",
+    "search_desc": "Oletusasetukset, joita sovelletaan kaikkiin hakuun.",
+    "ui_language": "Käyttöliittymän kieli",
+    "ui_language_hint": "Käyttöliittymän kieli (tallennettu selaimen localStorage)",
+    "interface_language": "Käyttöliittymän kieli",
+    "stored_in_browser": "Tallennettu selaimeen (localStorage)",
+    "search_defaults": "Hakudefaultit",
+    "search_language": "Hakukieli",
+    "search_language_hint": "automaattinen = tunnista kyselystä (Hangul → ko-KR); tai kaikki, tai kiinteä alue kuten ko-KR",
+    "fallback_language": "Varakielikoodi",
+    "fallback_language_hint": "Käytetään, kun automaattinen tunnistus on epäselvä",
+    "safe_search": "Turvallinen haku",
+    "safe_off": "Pois",
+    "safe_moderate": "Kohtalainen",
+    "safe_strict": "Tiukka",
+    "results_per_engine": "Tulokset per moottori",
+    "ai": "AI",
+    "ai_desc": "Määritä AI-mallit vastausten synteesiin ja artikkelin uudelleenkirjoitukseen.",
+    "ai_provider": "Palveluntarjoaja",
+    "ai_provider_local": "Paikallinen (Ollama)",
+    "ai_provider_custom": "Mukautettu",
+    "ai_base_url": "API Perus URL",
+    "ai_base_url_hint": "Paikallinen: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API-avain",
+    "ai_api_key_hint": "Vaaditaan pilvipalveluntarjoajilta (OpenAI, Anthropic, jne.)",
+    "ai_model": "Malli",
+    "ai_model_hint": "Chat/instruct-malli vastausten synteesiin ja kyselyn laajentamiseen",
+    "ai_article_model": "Artikkelimalli",
+    "ai_article_model_hint": "Malli koko sivun uutisartikkelien uudelleenkirjoitukseen (oletuksena päämalli)",
+    "ai_timeout": "Aika ylitys (sekuntia)",
+    "ai_timeout_hint": "Per-pyyntö aikaraja mallikutsuille",
+    "ai_cost_tracking": "Kustannusten seuranta",
+    "ai_track_usage": "Seuraa token-käyttöä",
+    "ai_track_usage_hint": "Näytä token-määrä ja arvioitu kustannus",
+    "ai_input_cost": "Syötekustannus",
+    "ai_output_cost": "Tulostekustannus",
+    "ai_features": "Ominaisuudet",
+    "ai_answer_synthesis": "Vastaussynteesi",
+    "ai_query_expansion": "Kyselynlaajennus",
+    "ai_reranking": "Uudelleenjärjestely",
+    "ai_clustering": "Klusterointi",
+    "ai_vision": "Näkö",
+    "news": "Uutiset",
+    "news_desc": "Uutisten aggregointi ja artikkelin asetukset.",
+    "news_per_source": "Artikkeleita per lähde",
+    "news_freshness": "Tuoreus puoli-elinikä (tunnit)",
+    "news_freshness_weight": "Tuoreuden paino",
+    "news_dedup": "Dedup samankaltaisuuden kynnys",
+    "news_max_age": "Maksimi-ikä (päivät)",
+    "news_cache_ttl": "Välimuistin TTL (sekuntia)",
+    "news_enrich_max": "Maksimi artikkeleita rikastettavaksi",
+    "engines": "Hakumoottorit",
+    "engines_desc": "Ota käyttöön/poista käytöstä moottorit ja säädä niiden painotuksia. Korkeampi paino = enemmän vaikutusta tulosten järjestykseen.",
+    "engine": "moottori",
+    "categories": "kategoriat",
+    "weight": "paino",
+    "privacy": "Yksityisyys",
+    "privacy_desc": "Säädä, miten tietojasi käsitellään.",
+    "proxy_images": "Proxy-kuvat",
+    "proxy_images_hint": "Reititä kuvat palvelimen kautta piilottaaksesi IP-osoitteesi kolmansilta osapuolilta",
+    "remove_trackers": "Poista seurantaparametrit",
+    "remove_trackers_hint": "Poista UTM- ja muut seurantaparametrit URL-osoitteista",
+    "save_history": "Tallenna hakuhistoria",
+    "save_history_hint": "Tallenna haut paikallisesti selaimeen (ei koskaan lähetetä palvelimelle)",
+    "clear_data": "Tyhjennä tiedot",
+    "clear_localstorage": "Tyhjennä paikallinen tallennus",
+    "clear_indexeddb": "Tyhjennä IndexedDB",
+    "shortcuts": "Pikanäppäimet",
+    "shortcuts_desc": "Nopea pääsy näppäimillä teho käyttäjille.",
+    "shortcut_focus_search": "Kohdista hakukenttä",
+    "shortcut_close": "Sulje paneeli / Peruuta",
+    "shortcut_navigate": "Selaa tuloksia",
+    "shortcut_open": "Avaa valittu tulos",
+    "shortcut_new_tab": "Avaa uudessa välilehdessä",
+    "shortcut_switch_mode": "Vaihda hakutilaa",
+    "shortcut_help": "Näytä tämä ohje",
+    "server": "Palvelin",
+    "server_desc": "Palvelin asetukset ja verkkoasetukset.",
+    "bind_address": "Sitoutumisosoite",
+    "port": "Portti",
+    "max_connections": "Maksimi yhteydet",
+    "image_proxy": "Ota käyttöön kuva proxy",
+    "cache_backend": "Välimuistin tausta",
+    "cache_dir": "Välimuistin hakemisto",
+    "redis_url": "Redis URL",
+    "advanced": "Edistynyt",
+    "advanced_desc": "Välimuisti- ja aikaraja-asetukset.",
+    "cache_ttl": "Välimuistin TTL (sekuntia)",
+    "cache_ttl_hint": "Tuloksen välimuistin elinikä (0 poistaa välimuistin käytöstä)",
+    "request_timeout": "Pyyntö aikaraja (sekuntia)",
+    "request_timeout_hint": "Per-moottori verkko aikaraja",
+    "save": "Tallenna asetukset",
+    "saved": "Tallennettu",
+    "saved_msg": "kirjoitettu settings.yml ja sovellettu uusiin hakuun.",
+    "server_settings": "Nämä asetukset tallennetaan palvelinpuolelle",
+    "raw_config": "Konfiguraatio JSON",
+    "stats": "Tilastot",
+    "home": "Koti",
+    "logout": "Kirjaudu ulos",
+    "ai_embedding_model": "Upotus malli",
+    "ai_vision_model": "Näkömalli",
+    "ai_answer_top_n": "Top N vastaukset",
+    "ai_answer_top_n_hint": "Tulosten määrä vastaussynteesiin",
+    "ai_news_prompt_ko": "Korean uutisanalyysi-kehote",
+    "ai_news_prompt_ko_hint": "Mukautettu kehote korealaiselle uutisanalyysille",
+    "ai_news_prompt_ko_placeholder": "Jätä tyhjäksi oletuskehotteelle.",
+    "ai_news_prompt_en": "Englannin uutisanalyysi-kehote",
+    "ai_news_prompt_en_hint": "Mukautettu kehote englanninkieliselle uutisanalyysille",
+    "ai_news_prompt_en_placeholder": "Jätä tyhjäksi oletuskehotteelle.",
+    "ai_answer_language": "Vastauskieli",
+    "ai_answer_language_hint": "AI-vastausten kohdekieli",
+    "ai_answer_auto": "Automaattinen tunnistus"
+  },
+  "focus": {
+    "general": "Yleinen",
+    "academic": "Akateeminen",
+    "writing": "Kirjoittaminen",
+    "code": "Koodi"
+  },
+  "footer": {
+    "grounded_answers": "Perustellut vastaukset paikalliselta malliltasi — 200+ hakumoottoria, nolla kyselylokitusta.",
+    "academic_papers": "Akateemiset julkaisut arXivista, OpenAlexista, Crossrefistä, Europe PMC:stä, Semantic Scholarista, DOAJ:sta ja muista.",
+    "news_digest": "Uutiskatsaus: hakee artikkelisivut, kirjoittaa yhteenvedot paikallisesti Ollaman kautta — suuret kuvat vain, ei faviconin suurennusta.",
+    "images": "Wikimedia Commonsin kuvahaku — pikkukuvat proxyttuna yksityisyyden vuoksi.",
+    "api_docs": "API-dokumentaatio",
+    "status": "Tila",
+    "version": "Versio",
+    "engines_count": "232 moottoria"
+  },
+  "examples": {
+    "try": "Kokeile esimerkkiä",
+    "general": [
+      {
+        "q": "Rust async ohjelmoinnin parhaat käytännöt",
+        "label": "Rust async"
+      },
+      {
+        "q": "Viimeisimmät LLM tutkimuspaperit 2025",
+        "label": "Viimeisimmät LLM paperit"
+      },
+      {
+        "q": "Miten DNS toimii",
+        "label": "Miten DNS toimii"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Viimeisimmät LLM tutkimuspaperit 2025",
+        "label": "Viimeisimmät LLM paperit"
+      },
+      {
+        "q": "CRISPR geenieditoinnin arviointipaperit",
+        "label": "CRISPR arviointi"
+      },
+      {
+        "q": "transformer-arkkitehtuurin tutkimus",
+        "label": "Transformer tutkimus"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI sääntely",
+        "label": "AI sääntely"
+      },
+      {
+        "q": "Korean teknologiauutiset",
+        "label": "Korean teknologia"
+      },
+      {
+        "q": "ilmastopolitiikan päivitykset",
+        "label": "Ilmastopolitiikka"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Kiinnostukset (Sinulle)",
+    "add_placeholder": "Lisää kiinnostus...",
+    "empty": "Kiinnostukset lisätään automaattisesti, kun haet",
+    "remove": "Poista"
+  },
+  "factcheck": {
+    "title": "Tosiasioiden tarkistus",
+    "checking": "Analysoidaan...",
+    "analyzing": "Analysoidaan lähteitä ristiriitojen varalta...",
+    "no_contradictions": "Ei ristiriitoja löytynyt lähteistä",
+    "found": "Ristiriitoja löytyi"
+  },
+  "foryou": {
+    "title": "Sinulle",
+    "based_on": "Perustuu: {interests}",
+    "no_interests": "Ei vielä kiinnostuksia. Hae rakentaaksesi kiinnostuksesi!",
+    "loading": "Ladataan henkilökohtaista syötettä..."
+  },
+  "common": {
+    "search": "Haku",
+    "clear": "Tyhjennä",
+    "close": "Sulje",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "retry": "Yritä uudelleen",
+    "more": "Lisää",
+    "less": "Vähemmän"
+  },
+  "trends": {
+    "title": "Trendit nyt",
+    "loading": "Ladataan trendejä...",
+    "error": "Trendien lataaminen epäonnistui",
+    "empty": "Ei trendikkäitä aiheita"
+  },
+  "onboarding": {
+    "welcome": "Tervetuloa Metahakuun",
+    "subtitle": "Yksityinen, AI-vetoinen hakukoneesi",
+    "private_search": "Yksityinen haku",
+    "private_search_desc": "Ei kyselylokitusta, koskaan",
+    "ai_answers": "AI-vastaukset",
+    "ai_answers_desc": "Paikallinen AI tiivistää tulokset",
+    "news_digest": "Uutiskatsaus",
+    "news_digest_desc": "Kuraattiset uutiset analyysilla",
+    "local_first": "Paikallinen ensisijaisesti",
+    "local_first_desc": "Tietosi pysyvät laitteellasi",
+    "get_started": "Aloita"
+  },
+  "feeds": {
+    "find": "Löydä syötteet",
+    "subscribe": "Tilaa",
+    "unsubscribe": "Peruuta tilaus"
+  },
+  "errors": {
+    "load_trends": "Trendien lataaminen epäonnistui",
+    "load_feed": "Henkilökohtaisen syötteen lataaminen epäonnistui",
+    "load_global": "Globaalin syötteen lataaminen epäonnistui",
+    "translation": "Käännös epäonnistui"
+  },
+  "compare": {
+    "title": "Vertaile tuloksia",
+    "button": "Vertaile",
+    "clear": "Tyhjennä kaikki",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

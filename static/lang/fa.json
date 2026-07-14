@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "به صورت خصوصی از وب بپرسید"
+  },
+  "nav": {
+    "ask": "بپرسید",
+    "discover": "کشف کنید",
+    "history": "تاریخچه",
+    "options": "گزینه‌ها",
+    "classic": "کلاسیک",
+    "stats": "آمار",
+    "preferences": "تنظیمات"
+  },
+  "tabs": {
+    "general": "عمومی",
+    "images": "تصاویر",
+    "videos": "ویدیوها",
+    "papers": "مقالات",
+    "news": "اخبار",
+    "shopping": "خرید"
+  },
+  "search": {
+    "placeholder": "هر چیزی بپرسید...",
+    "placeholder_news": "موضوع خبری را وارد کنید، بپرسید را فشار دهید",
+    "placeholder_images": "تصاویر را جستجو کنید...",
+    "placeholder_papers": "سوالی وارد کنید، بپرسید را فشار دهید",
+    "placeholder_general": "سوالی یا موضوعی وارد کنید، بپرسید را فشار دهید",
+    "placeholder_shopping": "محصولات را جستجو کنید...",
+    "placeholder_videos": "ویدیوها را جستجو کنید...",
+    "button": "بپرسید",
+    "button_search": "جستجو"
+  },
+  "status": {
+    "loading": "در حال بارگذاری...",
+    "loading_stories": "در حال بارگذاری داستان‌ها...",
+    "searching": "در حال جستجو...",
+    "searching_web": "در حال جستجوی وب...",
+    "searching_images": "در حال جستجوی تصاویر...",
+    "searching_news": "در حال جستجوی منابع خبری...",
+    "searching_papers": "در حال جستجوی منابع علمی...",
+    "searching_shopping": "در حال جستجوی محصولات...",
+    "searching_videos": "در حال جستجوی ویدیوها...",
+    "search_complete": "جستجو کامل شد.",
+    "search_failed": "جستجو ناموفق بود.",
+    "answer_ready": "پاسخ آماده است.",
+    "fetching_article": "در حال دریافت مقاله...",
+    "fetching_publisher": "در حال دریافت مقاله ناشر...",
+    "resolving_article": "در حال حل مقاله...",
+    "resolving_gn": "در حال حل لینک Google News...",
+    "rewriting": "در حال بازنویسی مقاله...",
+    "rewriting_korean": "در حال بازنویسی به کره‌ای...",
+    "preparing_rewrite": "در حال آماده‌سازی بازنویسی کامل...",
+    "extracted_rewriting": "متن مقاله استخراج شده — در حال بازنویسی...",
+    "viewing_prior": "در حال مشاهده نوبت قبلی — سوالی زیر بپرسید."
+  },
+  "error": {
+    "no_answer": "پاسخ AI تولید نشد — نتایج جستجو در زیر.",
+    "no_news": "هیچ خبری پیدا نشد — یک پرسش دیگر امتحان کنید.",
+    "no_stories": "هیچ داستانی پیدا نشد — یک پرسش دیگر امتحان کنید.",
+    "no_stories_category": "هیچ داستانی برای این دسته پیدا نشد — یک گزینه دیگر امتحان کنید.",
+    "rewrite_empty": "بازنویسی مقاله متنی خالی برگرداند.",
+    "rewrite_failed": "نتوانست مقاله را بازنویسی کند",
+    "load_news_failed": "نتوانست اخبار را بارگذاری کند — سرور را بررسی کنید.",
+    "model_not_found": "مدل پیدا نشد — برای مدل پیکربندی شده خود ollama pull را اجرا کنید، یا یکی دیگر را در گزینه‌ها انتخاب کنید.",
+    "ollama_not_running": "Ollama در حال اجرا نیست — پاسخ‌ها فقط جستجو خواهند بود. شروع: ollama serve",
+    "invalid_thread": "JSON نخی نامعتبر.",
+    "enter_question": "سوالی وارد کنید.",
+    "enter_search": "یک عبارت جستجو وارد کنید."
+  },
+  "article": {
+    "sources": "منابع",
+    "research_progress": "پیشرفت تحقیق",
+    "thinking": "در حال فکر کردن",
+    "answer": "پاسخ",
+    "key_points": "نکات کلیدی",
+    "summary": "خلاصه",
+    "related_media": "رسانه‌های مرتبط",
+    "view_more": "مشاهده {count} بیشتر",
+    "back": "بازگشت",
+    "read_original": "متن اصلی را بخوانید",
+    "related_image": "تصویر مرتبط",
+    "related": "مرتبط"
+  },
+  "discover": {
+    "updated": "به‌روزرسانی شده {time}",
+    "scope": {
+      "all": "📰 همه",
+      "local": "🏠 محلی",
+      "world": "🌍 جهانی"
+    },
+    "categories": {
+      "politics": "سیاست",
+      "economy": "اقتصاد",
+      "sports": "ورزش",
+      "world": "جهان",
+      "entertainment": "سرگرمی",
+      "tech": "فناوری و علم",
+      "culture": "فرهنگ",
+      "health": "سلامت",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "علم فناوری",
+      "ai": "هوش مصنوعی AI یادگیری ماشین",
+      "world": "اخبار جهانی بین‌المللی",
+      "politics": "سیاست دولت انتخابات",
+      "business": "کسب و کار اقتصاد شرکت‌ها",
+      "finance": "مالی بازارها سهام",
+      "health": "سلامت پزشکی رفاه",
+      "climate": "تغییرات اقلیمی محیط زیست",
+      "sports": "ورزش",
+      "entertainment": "سرگرمی سلبریتی",
+      "art": "هنر فرهنگ",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "باز کردن تاریخچه",
+    "close": "بستن تاریخچه",
+    "imported": "وارد شده {count}",
+    "export": "صادرات JSON",
+    "import": "وارد کردن JSON",
+    "clear": "پاک کردن تاریخچه",
+    "empty": "سوالات شما در اینجا ظاهر می‌شوند.",
+    "new_chat": "چت جدید"
+  },
+  "panel": {
+    "history": "تاریخچه",
+    "bookmarks": "نشانه‌ها",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "همه نشانه‌ها",
+    "empty": "نتایج نشانه‌گذاری شده را برای ذخیره در اینجا قرار دهید.",
+    "export": "صادرات",
+    "clear_all": "پاک کردن همه",
+    "new_collection": "مجموعه جدید"
+  },
+  "hero": {
+    "private": "خصوصی",
+    "ai_powered": "مجهز به AI",
+    "local_first": "محلی اول"
+  },
+  "options": {
+    "model": "مدل",
+    "deep_research": "تحقیق عمیق",
+    "focus": "تمرکز",
+    "theme": "تم",
+    "language": "زبان",
+    "answer_language": "زبان AI",
+    "answer_auto": "خودکار",
+    "research": "تحقیق",
+    "fact_check": "بررسی واقعیت"
+  },
+  "preferences": {
+    "title": "تنظیمات",
+    "language": "زبان",
+    "language_desc": "زبان رابط کاربری مورد نظر خود را انتخاب کنید",
+    "language_storage": "زبان رابط کاربری در مرورگر شما ذخیره می‌شود.",
+    "branding": "برندینگ",
+    "branding_desc": "نام برنامه، لوگو و آیکون نمایش داده شده در UI را سفارشی کنید.",
+    "app_name": "نام برنامه",
+    "app_name_hint": "نام نمایش داده شده در هدر و عناوین صفحات",
+    "logo_url": "آدرس لوگو",
+    "logo_url_hint": "آدرس یا مسیر تصویر لوگوی شما (برای پیش‌فرض خالی بگذارید)",
+    "favicon_url": "آدرس آیکون",
+    "favicon_url_hint": "آدرس یا مسیر آیکون شما (برای پیش‌فرض مرورگر خالی بگذارید)",
+    "appearance": "ظاهر",
+    "appearance_desc": "سبک بصری و چیدمان را سفارشی کنید.",
+    "theme": "تم",
+    "font_size": "اندازه فونت",
+    "results_layout": "چیدمان نتایج",
+    "search": "جستجو",
+    "search_desc": "تنظیمات پیش‌فرض برای تمام جستجوها اعمال می‌شود.",
+    "ui_language": "زبان UI",
+    "ui_language_hint": "زبان رابط (در localStorage مرورگر ذخیره می‌شود)",
+    "interface_language": "زبان رابط",
+    "stored_in_browser": "در مرورگر ذخیره شده (localStorage)",
+    "search_defaults": "پیش‌فرض‌های جستجو",
+    "search_language": "زبان جستجو",
+    "search_language_hint": "خودکار = تشخیص از پرسش (Hangul → ko-KR)؛ یا همه، یا یک منطقه ثابت مانند ko-KR",
+    "fallback_language": "کد زبان پشتیبان",
+    "fallback_language_hint": "زمانی که تشخیص خودکار نامشخص است استفاده می‌شود",
+    "safe_search": "جستجوی ایمن",
+    "safe_off": "خاموش",
+    "safe_moderate": "متوسط",
+    "safe_strict": "سختگیرانه",
+    "results_per_engine": "نتایج در هر موتور",
+    "ai": "AI",
+    "ai_desc": "مدل‌های AI را برای ترکیب پاسخ و بازنویسی مقاله پیکربندی کنید.",
+    "ai_provider": "ارائه‌دهنده",
+    "ai_provider_local": "محلی (Ollama)",
+    "ai_provider_custom": "سفارشی",
+    "ai_base_url": "آدرس پایه API",
+    "ai_base_url_hint": "محلی: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "کلید API",
+    "ai_api_key_hint": "برای ارائه‌دهندگان ابری (OpenAI، Anthropic و غیره) الزامی است.",
+    "ai_model": "مدل",
+    "ai_model_hint": "مدل چت/آموزش برای ترکیب پاسخ و گسترش پرسش",
+    "ai_article_model": "مدل مقاله",
+    "ai_article_model_hint": "مدل برای بازنویسی مقالات خبری کامل (به طور پیش‌فرض به مدل اصلی) ",
+    "ai_timeout": "زمان‌بر (ثانیه)",
+    "ai_timeout_hint": "زمان‌بر برای هر درخواست برای تماس‌های مدل",
+    "ai_cost_tracking": "ردیابی هزینه",
+    "ai_track_usage": "ردیابی مصرف توکن",
+    "ai_track_usage_hint": "نمایش تعداد توکن و هزینه",
+    "ai_input_cost": "هزینه ورودی",
+    "ai_output_cost": "هزینه خروجی",
+    "ai_features": "ویژگی‌ها",
+    "ai_answer_synthesis": "سنتز پاسخ",
+    "ai_query_expansion": "گسترش پرس‌وجو",
+    "ai_reranking": "بازرتبه‌بندی",
+    "ai_clustering": "خوشه‌بندی",
+    "ai_vision": "بینایی",
+    "news": "اخبار",
+    "news_desc": "تنظیمات تجمیع اخبار و مقالات.",
+    "news_per_source": "مقالات در هر منبع",
+    "news_freshness": "نیمه‌عمر تازگی (ساعت)",
+    "news_freshness_weight": "وزن تازگی",
+    "news_dedup": "آستانه شباهت حذف تکراری",
+    "news_max_age": "حداکثر سن (روز)",
+    "news_cache_ttl": "TTL کش (ثانیه)",
+    "news_enrich_max": "حداکثر مقالات برای غنی‌سازی",
+    "engines": "موتورهای جستجو",
+    "engines_desc": "موتورها را فعال/غیرفعال کنید و وزن‌های رتبه‌بندی آن‌ها را تنظیم کنید. وزن بالاتر = تأثیر بیشتر بر ترتیب نتایج.",
+    "engine": "موتور",
+    "categories": "دسته‌ها",
+    "weight": "وزن",
+    "privacy": "حریم خصوصی",
+    "privacy_desc": "کنترل کنید که داده‌های شما چگونه مدیریت می‌شود.",
+    "proxy_images": "تصاویر پروکسی",
+    "proxy_images_hint": "تصاویر را از طریق سرور مسیریابی کنید تا IP شما از طرف‌های ثالث پنهان شود",
+    "remove_trackers": "حذف پارامترهای ردیابی",
+    "remove_trackers_hint": "پارامترهای UTM و سایر پارامترهای ردیابی را از URLها حذف کنید",
+    "save_history": "ذخیره تاریخچه جستجو",
+    "save_history_hint": "جستجوها را به صورت محلی در مرورگر ذخیره کنید (هرگز به سرور ارسال نمی‌شود)",
+    "clear_data": "پاک کردن داده‌ها",
+    "clear_localstorage": "پاک کردن ذخیره محلی",
+    "clear_indexeddb": "پاک کردن IndexedDB",
+    "shortcuts": "میانبرهای صفحه کلید",
+    "shortcuts_desc": "کلیدهای دسترسی سریع برای کاربران حرفه‌ای.",
+    "shortcut_focus_search": "تمرکز بر جعبه جستجو",
+    "shortcut_close": "بستن پنل / لغو",
+    "shortcut_navigate": "ناوبری نتایج",
+    "shortcut_open": "باز کردن نتیجه انتخاب شده",
+    "shortcut_new_tab": "باز کردن در تب جدید",
+    "shortcut_switch_mode": "تغییر حالت جستجو",
+    "shortcut_help": "نمایش این راهنما",
+    "server": "سرور",
+    "server_desc": "تنظیمات پیکربندی سرور و شبکه.",
+    "bind_address": "آدرس اتصال",
+    "port": "پورت",
+    "max_connections": "حداکثر اتصالات",
+    "image_proxy": "فعال کردن پروکسی تصویر",
+    "cache_backend": "پشتیبانی کش",
+    "cache_dir": "دایرکتوری کش",
+    "redis_url": "آدرس Redis",
+    "advanced": "پیشرفته",
+    "advanced_desc": "تنظیمات کش و زمان‌بر.",
+    "cache_ttl": "TTL کش (ثانیه)",
+    "cache_ttl_hint": "زمان زندگی کش نتیجه (0 کش را غیرفعال می‌کند)",
+    "request_timeout": "زمان‌بر درخواست (ثانیه)",
+    "request_timeout_hint": "زمان‌بر شبکه برای هر موتور",
+    "save": "ذخیره تنظیمات",
+    "saved": "ذخیره شد",
+    "saved_msg": "به settings.yml نوشته شده و به جستجوهای جدید اعمال شد.",
+    "server_settings": "این تنظیمات در سمت سرور حفظ می‌شوند",
+    "raw_config": "پیکربندی JSON",
+    "stats": "آمار",
+    "home": "خانه",
+    "logout": "خروج",
+    "ai_embedding_model": "مدل جاسازی",
+    "ai_vision_model": "مدل بینایی",
+    "ai_answer_top_n": "N پاسخ برتر",
+    "ai_answer_top_n_hint": "تعداد نتایج برای سنتز پاسخ",
+    "ai_news_prompt_ko": "پرامپت تحلیل اخبار کره‌ای",
+    "ai_news_prompt_ko_hint": "پرامپت سفارشی برای اخبار کره‌ای",
+    "ai_news_prompt_ko_placeholder": "برای پیش‌فرض خالی بگذارید.",
+    "ai_news_prompt_en": "پرامپت تحلیل اخبار انگلیسی",
+    "ai_news_prompt_en_hint": "پرامپت سفارشی برای اخبار انگلیسی",
+    "ai_news_prompt_en_placeholder": "برای پیش‌فرض خالی بگذارید.",
+    "ai_answer_language": "زبان پاسخ",
+    "ai_answer_language_hint": "زبان هدف برای پاسخ‌های AI",
+    "ai_answer_auto": "تشخیص خودکار"
+  },
+  "focus": {
+    "general": "عمومی",
+    "academic": "آکادمیک",
+    "writing": "نوشتن",
+    "code": "کد"
+  },
+  "footer": {
+    "grounded_answers": "پاسخ‌های مبتنی بر مدل محلی شما — 200+ موتور جستجو، بدون ثبت پرسش.",
+    "academic_papers": "مقالات علمی از arXiv، OpenAlex، Crossref، Europe PMC، Semantic Scholar، DOAJ و بیشتر.",
+    "news_digest": "خلاصه اخبار: صفحات مقاله را دریافت می‌کند، خلاصه‌ها را به صورت محلی از طریق Ollama بازنویسی می‌کند — فقط تصاویر بزرگ، بدون افزایش آیکون.",
+    "images": "جستجوی تصویر Wikimedia Commons — تصاویر کوچک پروکسی شده برای حریم خصوصی.",
+    "api_docs": "مستندات API",
+    "status": "وضعیت",
+    "version": "نسخه",
+    "engines_count": "232 موتور"
+  },
+  "examples": {
+    "try": "یک مثال امتحان کنید",
+    "general": [
+      {
+        "q": "بهترین شیوه‌های برنامه‌نویسی غیرهمزمان Rust",
+        "label": "Rust غیرهمزمان"
+      },
+      {
+        "q": "آخرین مقالات تحقیقاتی LLM 2025",
+        "label": "آخرین مقالات LLM"
+      },
+      {
+        "q": "DNS چگونه کار می‌کند",
+        "label": "DNS چگونه کار می‌کند"
+      }
+    ],
+    "papers": [
+      {
+        "q": "آخرین مقالات تحقیقاتی LLM 2025",
+        "label": "آخرین مقالات LLM"
+      },
+      {
+        "q": "مقالات بررسی ویرایش ژن CRISPR",
+        "label": "بررسی CRISPR"
+      },
+      {
+        "q": "بررسی معماری ترنسفورمر",
+        "label": "بررسی ترنسفورمر"
+      }
+    ],
+    "news": [
+      {
+        "q": "تنظیمات AI",
+        "label": "تنظیمات AI"
+      },
+      {
+        "q": "اخبار فناوری کره",
+        "label": "فناوری کره"
+      },
+      {
+        "q": "به‌روزرسانی‌های سیاست اقلیمی",
+        "label": "سیاست اقلیمی"
+      }
+    ]
+  },
+  "interests": {
+    "title": "علاقه‌مندی‌ها (برای شما)",
+    "add_placeholder": "علاقه‌مندی اضافه کنید...",
+    "empty": "علاقه‌مندی‌ها به طور خودکار به محض جستجو اضافه می‌شوند",
+    "remove": "حذف"
+  },
+  "factcheck": {
+    "title": "نتایج بررسی واقعیت",
+    "checking": "در حال تحلیل...",
+    "analyzing": "در حال تحلیل منابع برای تناقضات...",
+    "no_contradictions": "هیچ تناقضی در منابع پیدا نشد",
+    "found": "تناقضات پیدا شد"
+  },
+  "foryou": {
+    "title": "برای شما",
+    "based_on": "بر اساس: {interests}",
+    "no_interests": "هنوز هیچ علاقه‌مندی وجود ندارد. جستجو کنید تا علاقه‌مندی‌های خود را بسازید!",
+    "loading": "در حال بارگذاری فید شخصی‌سازی شده..."
+  },
+  "common": {
+    "search": "جستجو",
+    "clear": "پاک کردن",
+    "close": "بستن",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "loading": "در حال بارگذاری...",
+    "error": "خطا",
+    "retry": "تلاش مجدد",
+    "more": "بیشتر",
+    "less": "کمتر"
+  },
+  "trends": {
+    "title": "موضوعات داغ",
+    "loading": "در حال بارگذاری روندها...",
+    "error": "بارگذاری روندها ناموفق بود",
+    "empty": "هیچ موضوع داغی وجود ندارد"
+  },
+  "onboarding": {
+    "welcome": "به Metasearch خوش آمدید",
+    "subtitle": "موتور جستجوی خصوصی و مجهز به AI شما",
+    "private_search": "جستجوی خصوصی",
+    "private_search_desc": "هرگز ثبت پرسش وجود ندارد",
+    "ai_answers": "پاسخ‌های AI",
+    "ai_answers_desc": "AI محلی نتایج را خلاصه می‌کند",
+    "news_digest": "خلاصه اخبار",
+    "news_digest_desc": "اخبار منتخب با تحلیل",
+    "local_first": "محلی اول",
+    "local_first_desc": "داده‌های شما در دستگاه شما باقی می‌ماند",
+    "get_started": "شروع کنید"
+  },
+  "feeds": {
+    "find": "یافتن فیدها",
+    "subscribe": "مشترک شوید",
+    "unsubscribe": "لغو اشتراک"
+  },
+  "errors": {
+    "load_trends": "بارگذاری روندها ناموفق بود",
+    "load_feed": "بارگذاری فید شخصی‌سازی شده ناموفق بود",
+    "load_global": "بارگذاری فید جهانی ناموفق بود",
+    "translation": "ترجمه ناموفق بود"
+  },
+  "compare": {
+    "title": "مقایسه نتایج",
+    "button": "مقایسه",
+    "clear": "پاک کردن همه",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Pýtajte sa na webe, súkromne"
+  },
+  "nav": {
+    "ask": "Pýtajte sa",
+    "discover": "Objavte",
+    "history": "História",
+    "options": "Možnosti",
+    "classic": "Klasické",
+    "stats": "Štatistiky",
+    "preferences": "Predvoľby"
+  },
+  "tabs": {
+    "general": "Všeobecné",
+    "images": "Obrázky",
+    "videos": "Videá",
+    "papers": "Dokumenty",
+    "news": "Novinky",
+    "shopping": "Nákupy"
+  },
+  "search": {
+    "placeholder": "Pýtajte sa na čokoľvek…",
+    "placeholder_news": "Zadajte tému noviniek, stlačte Pýtajte sa",
+    "placeholder_images": "Hľadajte obrázky…",
+    "placeholder_papers": "Zadajte otázku, stlačte Pýtajte sa",
+    "placeholder_general": "Zadajte otázku alebo tému, stlačte Pýtajte sa",
+    "placeholder_shopping": "Hľadajte produkty…",
+    "placeholder_videos": "Hľadajte videá…",
+    "button": "Pýtajte sa",
+    "button_search": "Hľadať"
+  },
+  "status": {
+    "loading": "Načítava sa…",
+    "loading_stories": "Načítava sa príbehy…",
+    "searching": "Hľadám…",
+    "searching_web": "Hľadám na webe…",
+    "searching_images": "Hľadám obrázky…",
+    "searching_news": "Hľadám správy…",
+    "searching_papers": "Hľadám akademické zdroje…",
+    "searching_shopping": "Hľadám produkty…",
+    "searching_videos": "Hľadám videá…",
+    "search_complete": "Hľadanie dokončené.",
+    "search_failed": "Hľadanie zlyhalo.",
+    "answer_ready": "Odpoveď je pripravená.",
+    "fetching_article": "Načítavam článok…",
+    "fetching_publisher": "Načítavam článok vydavateľa…",
+    "resolving_article": "Riešim článok…",
+    "resolving_gn": "Riešim odkaz Google News…",
+    "rewriting": "Prepisujem článok…",
+    "rewriting_korean": "Prepisujem v kórejčine…",
+    "preparing_rewrite": "Pripravujem úplný prepis…",
+    "extracted_rewriting": "Extrahovaný text článku — prepisujem…",
+    "viewing_prior": "Zobrazenie predchádzajúceho kroku — pýtajte sa na ďalšiu otázku nižšie."
+  },
+  "error": {
+    "no_answer": "Nebola vygenerovaná žiadna odpoveď AI — výsledky vyhľadávania nižšie.",
+    "no_news": "Neboli nájdené žiadne novinky — skúste inú otázku.",
+    "no_stories": "Neboli nájdené žiadne príbehy — skúste inú otázku.",
+    "no_stories_category": "Neboli nájdené žiadne príbehy pre túto kategóriu — skúste iný pill.",
+    "rewrite_empty": "Prepis článku vrátil prázdny text.",
+    "rewrite_failed": "Nepodarilo sa prepísať článok",
+    "load_news_failed": "Nepodarilo sa načítať novinky — skontrolujte server.",
+    "model_not_found": "Model nebol nájdený — spustite ollama pull pre váš nakonfigurovaný model, alebo si vyberte iný v Možnostiach.",
+    "ollama_not_running": "Ollama nie je spustená — odpovede budú len na základe vyhľadávania. Spustite: ollama serve",
+    "invalid_thread": "Neplatný thread JSON.",
+    "enter_question": "Zadajte otázku.",
+    "enter_search": "Zadajte hľadaný výraz."
+  },
+  "article": {
+    "sources": "Zdroje",
+    "research_progress": "Pokrok v výskume",
+    "thinking": "Premýšľam",
+    "answer": "Odpoveď",
+    "key_points": "Kľúčové body",
+    "summary": "Zhrnutie",
+    "related_media": "Súvisiace médiá",
+    "view_more": "Zobraziť {count} viac",
+    "back": "Späť",
+    "read_original": "Prečítajte si originál",
+    "related_image": "Súvisiaci obrázok",
+    "related": "Súvisiace"
+  },
+  "discover": {
+    "updated": "Aktualizované {time}",
+    "scope": {
+      "all": "📰 Všetko",
+      "local": "🏠 Miestne",
+      "world": "🌍 Svet"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Hospodárstvo",
+      "sports": "Šport",
+      "world": "Svet",
+      "entertainment": "Zábava",
+      "tech": "Technológie a veda",
+      "culture": "Kultúra",
+      "health": "Zdravie",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "technológie veda",
+      "ai": "umelá inteligencia AI strojové učenie",
+      "world": "svetové správy medzinárodné",
+      "politics": "politika vláda voľby",
+      "business": "podnikanie hospodárstvo spoločnosti",
+      "finance": "financie trhy akcie",
+      "health": "zdravie medicína wellness",
+      "climate": "klimatické zmeny životné prostredie",
+      "sports": "šport",
+      "entertainment": "zábava celebrity",
+      "art": "umenie kultúra",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Otvorenie histórie",
+    "close": "Zatvorenie histórie",
+    "imported": "Importované {count}",
+    "export": "Exportovať JSON",
+    "import": "Importovať JSON",
+    "clear": "Vymazať históriu",
+    "empty": "Vaše otázky sa tu zobrazia.",
+    "new_chat": "Nový chat"
+  },
+  "panel": {
+    "history": "História",
+    "bookmarks": "Záložky",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Všetky záložky",
+    "empty": "Uložte výsledky záložiek sem.",
+    "export": "Exportovať",
+    "clear_all": "Vymazať všetko",
+    "new_collection": "Nová zbierka"
+  },
+  "hero": {
+    "private": "Súkromné",
+    "ai_powered": "Poháňané AI",
+    "local_first": "Miestne-prvé"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Hlboký výskum",
+    "focus": "Zameranie",
+    "theme": "Téma",
+    "language": "Jazyk",
+    "answer_language": "Jazyk AI",
+    "answer_auto": "Automaticky",
+    "research": "Výskum",
+    "fact_check": "Overenie faktov"
+  },
+  "preferences": {
+    "title": "Predvoľby",
+    "language": "Jazyk",
+    "language_desc": "Vyberte preferovaný jazyk rozhrania",
+    "language_storage": "Jazyk rozhrania je uložený vo vašom prehliadači.",
+    "branding": "Značka",
+    "branding_desc": "Prispôsobte názov aplikácie, logo a favicon zobrazené v UI.",
+    "app_name": "Názov aplikácie",
+    "app_name_hint": "Názov zobrazený v hlavičke a názvoch stránok",
+    "logo_url": "URL loga",
+    "logo_url_hint": "URL alebo cesta k obrázku loga (nechajte prázdne pre predvolené)",
+    "favicon_url": "URL faviconu",
+    "favicon_url_hint": "URL alebo cesta k vášmu faviconu (nechajte prázdne pre predvolené prehliadača)",
+    "appearance": "Vzhľad",
+    "appearance_desc": "Prispôsobte vizuálny štýl a rozloženie.",
+    "theme": "Téma",
+    "font_size": "Veľkosť písma",
+    "results_layout": "Rozloženie výsledkov",
+    "search": "Hľadať",
+    "search_desc": "Predvolené nastavenia aplikované na všetky vyhľadávania.",
+    "ui_language": "Jazyk UI",
+    "ui_language_hint": "Jazyk rozhrania (uložené v localStorage prehliadača)",
+    "interface_language": "Jazyk rozhrania",
+    "stored_in_browser": "Uložené v prehliadači (localStorage)",
+    "search_defaults": "Predvolené vyhľadávania",
+    "search_language": "Jazyk vyhľadávania",
+    "search_language_hint": "auto = detekovať z dopytu (Hangul → ko-KR); alebo všetko, alebo pevná lokalita ako ko-KR",
+    "fallback_language": "Kód jazyka pre zálohu",
+    "fallback_language_hint": "Používa sa, keď automatická detekcia je nejednoznačná",
+    "safe_search": "Bezpečné vyhľadávanie",
+    "safe_off": "Vypnuté",
+    "safe_moderate": "Mierne",
+    "safe_strict": "Prísne",
+    "results_per_engine": "Výsledky na motor",
+    "ai": "AI",
+    "ai_desc": "Konfigurácia AI modelov pre syntézu odpovedí a prepis článkov.",
+    "ai_provider": "Poskytovateľ",
+    "ai_provider_local": "Miestny (Ollama)",
+    "ai_provider_custom": "Vlastný",
+    "ai_base_url": "Základná URL API",
+    "ai_base_url_hint": "Miestne: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API kľúč",
+    "ai_api_key_hint": "Povinné pre cloudových poskytovateľov (OpenAI, Anthropic, atď.)",
+    "ai_model": "Model",
+    "ai_model_hint": "Chat/inštrukčný model pre syntézu odpovedí a rozšírenie dopytu",
+    "ai_article_model": "Model článku",
+    "ai_article_model_hint": "Model pre prepisy článkov s plnou stránkou (predvolene na hlavný model)",
+    "ai_timeout": "Časový limit (sekundy)",
+    "ai_timeout_hint": "Časový limit na požiadavku pre volania modelu",
+    "ai_cost_tracking": "Sledovanie nákladov",
+    "ai_track_usage": "Sledovanie tokenov",
+    "ai_track_usage_hint": "Zobraziť počet tokenov a cenu",
+    "ai_input_cost": "Vstupná cena",
+    "ai_output_cost": "Výstupná cena",
+    "ai_features": "Funkcie",
+    "ai_answer_synthesis": "Syntéza odpovede",
+    "ai_query_expansion": "Rozšírenie dotazu",
+    "ai_reranking": "Preradenie",
+    "ai_clustering": "Zhlukovanie",
+    "ai_vision": "Videnie",
+    "news": "Novinky",
+    "news_desc": "Agregácia správ a nastavenia článkov.",
+    "news_per_source": "Články na zdroj",
+    "news_freshness": "Čerstvosť polčas (hodiny)",
+    "news_freshness_weight": "Váha čerstvosti",
+    "news_dedup": "Odstránenie podobnosti prahu",
+    "news_max_age": "Maximálny vek (dni)",
+    "news_cache_ttl": "Cache TTL (sekundy)",
+    "news_enrich_max": "Maximálny počet článkov na obohatenie",
+    "engines": "Vyhľadávacie motory",
+    "engines_desc": "Povoliť/zakázať motory a upraviť ich váhy hodnotenia. Vyššia váha = väčší vplyv na poradie výsledkov.",
+    "engine": "motor",
+    "categories": "kategórie",
+    "weight": "váha",
+    "privacy": "Ochrana súkromia",
+    "privacy_desc": "Ovládajte, ako sa s vašimi údajmi zaobchádza.",
+    "proxy_images": "Proxy obrázky",
+    "proxy_images_hint": "Smerujte obrázky cez server, aby ste skryli svoju IP adresu pred tretími stranami",
+    "remove_trackers": "Odstrániť sledovacie parametre",
+    "remove_trackers_hint": "Odstrániť UTM a iné sledovacie parametre z URL",
+    "save_history": "Uložiť históriu vyhľadávania",
+    "save_history_hint": "Uložiť vyhľadávania lokálne v prehliadači (nikdy sa neposiela na server)",
+    "clear_data": "Vymazať údaje",
+    "clear_localstorage": "Vymazať miestne úložisko",
+    "clear_indexeddb": "Vymazať IndexedDB",
+    "shortcuts": "Klávesové skratky",
+    "shortcuts_desc": "Rýchle prístupové klávesy pre pokročilých používateľov.",
+    "shortcut_focus_search": "Zamerať sa na vyhľadávacie pole",
+    "shortcut_close": "Zatvoriť panel / Zrušiť",
+    "shortcut_navigate": "Navigovať výsledky",
+    "shortcut_open": "Otvoriť vybraný výsledok",
+    "shortcut_new_tab": "Otvoriť v novej karte",
+    "shortcut_switch_mode": "Prepnúť režim vyhľadávania",
+    "shortcut_help": "Zobraziť túto pomoc",
+    "server": "Server",
+    "server_desc": "Konfigurácia servera a sieťové nastavenia.",
+    "bind_address": "Pripojiť adresu",
+    "port": "Port",
+    "max_connections": "Maximálne pripojenia",
+    "image_proxy": "Povoliť proxy obrázkov",
+    "cache_backend": "Cache backend",
+    "cache_dir": "Cache adresár",
+    "redis_url": "Redis URL",
+    "advanced": "Pokročilé",
+    "advanced_desc": "Nastavenia cache a časového limitu.",
+    "cache_ttl": "Cache TTL (sekundy)",
+    "cache_ttl_hint": "Časový limit pre uchovávanie výsledkov (0 zakáže cache)",
+    "request_timeout": "Časový limit požiadavky (sekundy)",
+    "request_timeout_hint": "Časový limit siete pre každý motor",
+    "save": "Uložiť predvoľby",
+    "saved": "Uložené",
+    "saved_msg": "zapísané do settings.yml a aplikované na nové vyhľadávania.",
+    "server_settings": "Tieto nastavenia sú uložené na strane servera",
+    "raw_config": "Konfigurácia JSON",
+    "stats": "Štatistiky",
+    "home": "Domov",
+    "logout": "Odhlásiť sa",
+    "ai_embedding_model": "Model vloženia",
+    "ai_vision_model": "Model videnia",
+    "ai_answer_top_n": "Top N odpovedí",
+    "ai_answer_top_n_hint": "Počet výsledkov pre syntézu odpovede",
+    "ai_news_prompt_ko": "Prompt pre kórejské správy",
+    "ai_news_prompt_ko_hint": "Vlastný prompt pre kórejské správy",
+    "ai_news_prompt_ko_placeholder": "Nechajte prázdne pre predvolené.",
+    "ai_news_prompt_en": "Prompt pre anglické správy",
+    "ai_news_prompt_en_hint": "Vlastný prompt pre anglické správy",
+    "ai_news_prompt_en_placeholder": "Nechajte prázdne pre predvolené.",
+    "ai_answer_language": "Jazyk odpovede",
+    "ai_answer_language_hint": "Cieľový jazyk pre AI odpovede",
+    "ai_answer_auto": "Automatická detekcia"
+  },
+  "focus": {
+    "general": "Všeobecné",
+    "academic": "Akademické",
+    "writing": "Písanie",
+    "code": "Kód"
+  },
+  "footer": {
+    "grounded_answers": "Podložené odpovede z vášho miestneho modelu — 200+ vyhľadávacích motorov, žiadne zaznamenávanie dopytov.",
+    "academic_papers": "Akademické články z arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ a ďalších.",
+    "news_digest": "Zhrnutie správ: načítava článkové stránky, prepíše zhrnutia lokálne cez Ollama — len veľké obrázky, žiadne zväčšovanie faviconu.",
+    "images": "Hľadanie obrázkov Wikimedia Commons — náhľady proxy pre súkromie.",
+    "api_docs": "API dokumentácia",
+    "status": "Stav",
+    "version": "Verzia",
+    "engines_count": "232 motory"
+  },
+  "examples": {
+    "try": "Skúste príklad",
+    "general": [
+      {
+        "q": "Najlepšie praktiky programovania v Rust async",
+        "label": "Rust async"
+      },
+      {
+        "q": "Najnovšie výskumné články LLM 2025",
+        "label": "Najnovšie články LLM"
+      },
+      {
+        "q": "Ako funguje DNS",
+        "label": "Ako funguje DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Najnovšie výskumné články LLM 2025",
+        "label": "Najnovšie články LLM"
+      },
+      {
+        "q": "Recenzné články o CRISPR génovej editácii",
+        "label": "Recenzia CRISPR"
+      },
+      {
+        "q": "Prieskum architektúry transformátorov",
+        "label": "Prieskum transformátorov"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulácia AI",
+        "label": "Regulácia AI"
+      },
+      {
+        "q": "Technologické novinky z Kórey",
+        "label": "Technológie Kórea"
+      },
+      {
+        "q": "Aktualizácie klimatickej politiky",
+        "label": "Klimatická politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Záujmy (Pre vás)",
+    "add_placeholder": "Pridať záujem...",
+    "empty": "Záujmy sú pridávané automaticky, keď vyhľadávate",
+    "remove": "Odstrániť"
+  },
+  "factcheck": {
+    "title": "Výsledky overenia faktov",
+    "checking": "Analyzujem...",
+    "analyzing": "Analyzujem zdroje na rozporuplnosti...",
+    "no_contradictions": "Neboli nájdené žiadne rozporuplnosti v zdrojoch",
+    "found": "Nájdené rozporuplnosti"
+  },
+  "foryou": {
+    "title": "Pre vás",
+    "based_on": "Na základe: {interests}",
+    "no_interests": "Zatiaľ žiadne záujmy. Vyhľadávajte, aby ste si vytvorili svoje záujmy!",
+    "loading": "Načítavam personalizovaný obsah..."
+  },
+  "common": {
+    "search": "Hľadať",
+    "clear": "Vymazať",
+    "close": "Zatvoriť",
+    "save": "Uložiť",
+    "cancel": "Zrušiť",
+    "loading": "Načítava sa...",
+    "error": "Chyba",
+    "retry": "Skúsiť znova",
+    "more": "Viac",
+    "less": "Menej"
+  },
+  "trends": {
+    "title": "Trendy teraz",
+    "loading": "Načítavam trendy...",
+    "error": "Nepodarilo sa načítať trendy",
+    "empty": "Žiadne trendy"
+  },
+  "onboarding": {
+    "welcome": "Vitajte v Metavyhľadávaní",
+    "subtitle": "Váš súkromný, AI-poháňaný vyhľadávač",
+    "private_search": "Súkromné vyhľadávanie",
+    "private_search_desc": "Žiadne zaznamenávanie dopytov, nikdy",
+    "ai_answers": "Odpovede AI",
+    "ai_answers_desc": "Miestna AI zhrňuje výsledky",
+    "news_digest": "Zhrnutie správ",
+    "news_digest_desc": "Kurátorované správy s analýzou",
+    "local_first": "Miestne-prvé",
+    "local_first_desc": "Vaše údaje zostávajú na vašom zariadení",
+    "get_started": "Začnite"
+  },
+  "feeds": {
+    "find": "Nájsť kanály",
+    "subscribe": "Prihlásiť sa",
+    "unsubscribe": "Odhlásiť sa"
+  },
+  "errors": {
+    "load_trends": "Nepodarilo sa načítať trendy",
+    "load_feed": "Nepodarilo sa načítať personalizovaný kanál",
+    "load_global": "Nepodarilo sa načítať globálny kanál",
+    "translation": "Preklad zlyhal"
+  },
+  "compare": {
+    "title": "Porovnať výsledky",
+    "button": "Porovnať",
+    "clear": "Vymazať všetko",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

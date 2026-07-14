@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Internetdan so'rang, shaxsiy ravishda"
+  },
+  "nav": {
+    "ask": "So'rang",
+    "discover": "Kashf eting",
+    "history": "Tarix",
+    "options": "Variantlar",
+    "classic": "Klassik",
+    "stats": "Statistika",
+    "preferences": "Afzalliklar"
+  },
+  "tabs": {
+    "general": "Umumiy",
+    "images": "Rasmlar",
+    "videos": "Videolar",
+    "papers": "Hujjatlar",
+    "news": "Yangiliklar",
+    "shopping": "Sotib olish"
+  },
+  "search": {
+    "placeholder": "Har qanday narsani so'rang…",
+    "placeholder_news": "Yangilik mavzusini kiriting, So'rang tugmasini bosing",
+    "placeholder_images": "Rasmlarni qidiring…",
+    "placeholder_papers": "Savolni kiriting, So'rang tugmasini bosing",
+    "placeholder_general": "Savol yoki mavzuni kiriting, So'rang tugmasini bosing",
+    "placeholder_shopping": "Mahsulotlarni qidiring…",
+    "placeholder_videos": "Videolarni qidiring…",
+    "button": "So'rang",
+    "button_search": "Qidiring"
+  },
+  "status": {
+    "loading": "Yuklanmoqda…",
+    "loading_stories": "Hikoyalar yuklanmoqda…",
+    "searching": "Qidirilmoqda…",
+    "searching_web": "Internetda qidirilmoqda…",
+    "searching_images": "Rasmlarni qidirilmoqda…",
+    "searching_news": "Yangilik manbalarini qidirilmoqda…",
+    "searching_papers": "Akademik manbalarni qidirilmoqda…",
+    "searching_shopping": "Mahsulotlarni qidirilmoqda…",
+    "searching_videos": "Videolarni qidirilmoqda…",
+    "search_complete": "Qidirish tugadi.",
+    "search_failed": "Qidirish muvaffaqiyatsiz bo'ldi.",
+    "answer_ready": "Javob tayyor.",
+    "fetching_article": "Maqola olinmoqda…",
+    "fetching_publisher": "Nashriyot maqolasi olinmoqda…",
+    "resolving_article": "Maqola hal qilinmoqda…",
+    "resolving_gn": "Google News havolasini hal qilinmoqda…",
+    "rewriting": "Maqola qayta yozilmoqda…",
+    "rewriting_korean": "Koreys tilida qayta yozilmoqda…",
+    "preparing_rewrite": "To'liq qayta yozish tayyorlanmoqda…",
+    "extracted_rewriting": "Olingan maqola matni — qayta yozilmoqda…",
+    "viewing_prior": "Oldingi navbatni ko'rish — quyida qo'shimcha so'rang."
+  },
+  "error": {
+    "no_answer": "AI javobi yaratilmadi — quyida qidiruv natijalari.",
+    "no_news": "Yangiliklar topilmadi — boshqa so'rovni sinab ko'ring.",
+    "no_stories": "Hikoyalar topilmadi — boshqa so'rovni sinab ko'ring.",
+    "no_stories_category": "Ushbu kategoriya uchun hikoyalar topilmadi — boshqa bo'limni sinab ko'ring.",
+    "rewrite_empty": "Maqola qayta yozish bo'sh matn qaytardi.",
+    "rewrite_failed": "Maqolani qayta yozib bo'lmadi",
+    "load_news_failed": "Yangiliklarni yuklab bo'lmadi — serverni tekshiring.",
+    "model_not_found": "Model topilmadi — sozlangan model uchun ollama pull ni ishga tushiring, yoki Variantlar ichidan boshqa modelni tanlang.",
+    "ollama_not_running": "Ollama ishga tushmagan — javoblar faqat qidiruv bo'ladi. Boshlash: ollama serve",
+    "invalid_thread": "Noto'g'ri ip JSON.",
+    "enter_question": "Savol kiriting.",
+    "enter_search": "Qidiruv so'zini kiriting."
+  },
+  "article": {
+    "sources": "Manbalar",
+    "research_progress": "Tadqiqot jarayoni",
+    "thinking": "O'ylash",
+    "answer": "Javob",
+    "key_points": "Asosiy nuqtalar",
+    "summary": "Xulosa",
+    "related_media": "Bog'liq media",
+    "view_more": "Bundan {count} ko'proq ko'ring",
+    "back": "Orqaga",
+    "read_original": "Aslini o'qing",
+    "related_image": "Bog'liq rasm",
+    "related": "Bog'liq"
+  },
+  "discover": {
+    "updated": "Yangilandi {time}",
+    "scope": {
+      "all": "📰 Barchasi",
+      "local": "🏠 Mahalliy",
+      "world": "🌍 Dunyo"
+    },
+    "categories": {
+      "politics": "Siyosat",
+      "economy": "Iqtisod",
+      "sports": "Sport",
+      "world": "Dunyo",
+      "entertainment": "Ko'ngilochar",
+      "tech": "Texnologiya va Fan",
+      "culture": "Madaniyat",
+      "health": "Sog'liq",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "texnologiya fani",
+      "ai": "sun'iy intellekt AI mashinani o'rganish",
+      "world": "dunyo yangiliklari xalqaro",
+      "politics": "siyosat hukumat saylov",
+      "business": "biznes iqtisod kompaniyalar",
+      "finance": "moliya bozorlar aksiyalar",
+      "health": "sog'liq tibbiyot farovonlik",
+      "climate": "iqlim o'zgarishi muhit",
+      "sports": "sport",
+      "entertainment": "ko'ngilochar mashhurlar",
+      "art": "san'at madaniyat",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Tarixni oching",
+    "close": "Tarixni yoping",
+    "imported": "Import qilingan {count}",
+    "export": "JSON ni eksport qilish",
+    "import": "JSON ni import qilish",
+    "clear": "Tarixni tozalash",
+    "empty": "Sizning savollaringiz bu yerda ko'rinadi.",
+    "new_chat": "Yangi suhbat"
+  },
+  "panel": {
+    "history": "Tarix",
+    "bookmarks": "Belgilashlar",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Barcha Belgilashlar",
+    "empty": "Natijalarni belgilab, ularni bu yerda saqlang.",
+    "export": "Eksport",
+    "clear_all": "Hammasini tozalash",
+    "new_collection": "Yangi to'plam"
+  },
+  "hero": {
+    "private": "Shaxsiy",
+    "ai_powered": "AI bilan quvvatlangan",
+    "local_first": "Mahalliy birinchi"
+  },
+  "options": {
+    "model": "Model",
+    "deep_research": "Chuqur tadqiqot",
+    "focus": "Diqqat",
+    "theme": "Mavzu",
+    "language": "Til",
+    "answer_language": "AI Tili",
+    "answer_auto": "Avtomatik",
+    "research": "Tadqiqot",
+    "fact_check": "Faktni tekshirish"
+  },
+  "preferences": {
+    "title": "Afzalliklar",
+    "language": "Til",
+    "language_desc": "O'zingizga yoqqan interfeys tilini tanlang",
+    "language_storage": "Interfeys tili brauzeringizda saqlanadi.",
+    "branding": "Brend",
+    "branding_desc": "Ilova nomi, logotipi va UI da ko'rsatiladigan faviconni moslashtiring.",
+    "app_name": "Ilova nomi",
+    "app_name_hint": "Sarlavhalar va sahifa nomlarida ko'rsatiladigan nom",
+    "logo_url": "Logotip URL",
+    "logo_url_hint": "Logotip rasmiga URL yoki yo'l (standart uchun bo'sh qoldiring)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "Favicon uchun URL yoki yo'l (brauzer standart uchun bo'sh qoldiring)",
+    "appearance": "Ko'rinish",
+    "appearance_desc": "Vizual uslub va tartibni moslashtiring.",
+    "theme": "Mavzu",
+    "font_size": "Shrift o'lchami",
+    "results_layout": "Natijalar tartibi",
+    "search": "Qidirish",
+    "search_desc": "Barcha qidiruvlarga qo'llaniladigan standart sozlamalar.",
+    "ui_language": "UI Tili",
+    "ui_language_hint": "Interfeys tili (brauzer localStorage da saqlanadi)",
+    "interface_language": "Interfeys tili",
+    "stored_in_browser": "Brauzerda saqlanadi (localStorage)",
+    "search_defaults": "Qidiruv standartlari",
+    "search_language": "Qidiruv tili",
+    "search_language_hint": "avtomatik = so'rovdan aniqlash (Hangul → ko-KR); yoki barchasi, yoki ko-KR kabi belgilangan hudud",
+    "fallback_language": "Zaxira til kodi",
+    "fallback_language_hint": "Avtomatik aniqlash aniq bo'lmaganida ishlatiladi",
+    "safe_search": "Xavfsiz qidiruv",
+    "safe_off": "O'chirilgan",
+    "safe_moderate": "O'rtacha",
+    "safe_strict": "Qattiq",
+    "results_per_engine": "Har bir dvijda natijalar",
+    "ai": "AI",
+    "ai_desc": "Javoblarni sintez qilish va maqolalarni qayta yozish uchun AI modellarini sozlang.",
+    "ai_provider": "Ta'minotchisi",
+    "ai_provider_local": "Mahalliy (Ollama)",
+    "ai_provider_custom": "Maxsus",
+    "ai_base_url": "API Asosiy URL",
+    "ai_base_url_hint": "Mahalliy: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Kaliti",
+    "ai_api_key_hint": "Bulut ta'minotchilari uchun zarur (OpenAI, Anthropic va boshqalar)",
+    "ai_model": "Model",
+    "ai_model_hint": "Javoblarni sintez qilish va so'rov kengaytirish uchun chat/instruct modeli",
+    "ai_article_model": "Maqola modeli",
+    "ai_article_model_hint": "To'liq sahifa yangilik maqolalarini qayta yozish uchun model (asosiy modelga o'rnatiladi)",
+    "ai_timeout": "Vaqt o'tishi (soniya)",
+    "ai_timeout_hint": "Model chaqiriqlari uchun har bir so'rovda vaqt o'tishi",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Xususiyatlar",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Yangiliklar",
+    "news_desc": "Yangiliklarni yig'ish va maqola sozlamalari.",
+    "news_per_source": "Manba boshiga maqolalar",
+    "news_freshness": "Yangilikning yangilanish yarim hayoti (soat)",
+    "news_freshness_weight": "Yangilanish og'irligi",
+    "news_dedup": "O'xshashlikni ajratish chegarasi",
+    "news_max_age": "Maksimal yosh (kun)",
+    "news_cache_ttl": "Cache TTL (soniya)",
+    "news_enrich_max": "Boyitish uchun maksimal maqolalar",
+    "engines": "Qidiruv Dvigatellari",
+    "engines_desc": "Dvigatellarni yoqish/o'chirish va ularning reyting og'irliklarini sozlash. Yuqori og'irlik = natija tartibiga ko'proq ta'sir.",
+    "engine": "dvigatel",
+    "categories": "kategoriyalar",
+    "weight": "og'irlik",
+    "privacy": "Maxfiylik",
+    "privacy_desc": "Ma'lumotlaringiz qanday boshqarilishini nazorat qiling.",
+    "proxy_images": "Rasmni proksi qilish",
+    "proxy_images_hint": "Rasmlarni server orqali yo'naltirish, IP manzilingizni uchinchi shaxslardan yashirish uchun",
+    "remove_trackers": "Izlovchi parametrlarni olib tashlash",
+    "remove_trackers_hint": "URL dan UTM va boshqa izlovchi parametrlarni olib tashlash",
+    "save_history": "Qidiruv tarixini saqlash",
+    "save_history_hint": "Qidiruvlarni mahalliy brauzerda saqlash (hech qachon serverga yuborilmaydi)",
+    "clear_data": "Ma'lumotlarni tozalash",
+    "clear_localstorage": "Mahalliy saqlashni tozalash",
+    "clear_indexeddb": "IndexedDB ni tozalash",
+    "shortcuts": "Klaviatura qisqa tugmalari",
+    "shortcuts_desc": "Kuchli foydalanuvchilar uchun tezkor kirish tugmalari.",
+    "shortcut_focus_search": "Qidiruv qutisiga diqqatni jamlang",
+    "shortcut_close": "Panelni yoping / Bekor qiling",
+    "shortcut_navigate": "Natijalarni ko'rib chiqing",
+    "shortcut_open": "Tanlangan natijani oching",
+    "shortcut_new_tab": "Yangi tabda oching",
+    "shortcut_switch_mode": "Qidiruv rejimini o'zgartiring",
+    "shortcut_help": "Ushbu yordamni ko'rsating",
+    "server": "Server",
+    "server_desc": "Server konfiguratsiyasi va tarmoq sozlamalari.",
+    "bind_address": "Bog'lanish manzili",
+    "port": "Port",
+    "max_connections": "Maksimal ulanishlar",
+    "image_proxy": "Rasm proksisini yoqish",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Katalogi",
+    "redis_url": "Redis URL",
+    "advanced": "Ilg'or",
+    "advanced_desc": "Cache va vaqt o'tishi sozlamalari.",
+    "cache_ttl": "Cache TTL (soniya)",
+    "cache_ttl_hint": "Natija cache vaqtini yashash (0 cache ni o'chiradi)",
+    "request_timeout": "So'rov vaqt o'tishi (soniya)",
+    "request_timeout_hint": "Har bir dvij uchun tarmoq vaqt o'tishi",
+    "save": "Afzalliklarni saqlash",
+    "saved": "Saqlangan",
+    "saved_msg": "settings.yml ga yozilgan va yangi qidiruvlarga qo'llanilgan.",
+    "server_settings": "Ushbu sozlamalar server tomonida saqlanadi",
+    "raw_config": "Config JSON",
+    "stats": "Statistika",
+    "home": "Bosh sahifa",
+    "logout": "Chiqish",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Umumiy",
+    "academic": "Akademik",
+    "writing": "Yozish",
+    "code": "Kod"
+  },
+  "footer": {
+    "grounded_answers": "Mahalliy modelingizdan asoslangan javoblar — 200+ qidiruv dvigatellari, nol so'rov logi.",
+    "academic_papers": "Akademik maqolalar arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ va boshqalardan.",
+    "news_digest": "Yangiliklar xulosasi: maqola sahifalarini oladi, Ollama orqali mahalliy ravishda xulosalarni qayta yozadi — katta rasmlar faqat, faviconni oshirish yo'q.",
+    "images": "Wikimedia Commons rasm qidiruvi — maxfiylik uchun proksi qilingan mini rasmlar.",
+    "api_docs": "API Hujjatlari",
+    "status": "Holat",
+    "version": "Versiya",
+    "engines_count": "232 dvigatel"
+  },
+  "examples": {
+    "try": "Misolni sinab ko'ring",
+    "general": [
+      {
+        "q": "Rust async dasturlash eng yaxshi amaliyotlari",
+        "label": "Rust async"
+      },
+      {
+        "q": "Eng so'nggi LLM tadqiqot maqolalari 2025",
+        "label": "Eng so'nggi LLM maqolalari"
+      },
+      {
+        "q": "DNS qanday ishlaydi",
+        "label": "DNS qanday ishlaydi"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Eng so'nggi LLM tadqiqot maqolalari 2025",
+        "label": "Eng so'nggi LLM maqolalari"
+      },
+      {
+        "q": "CRISPR gen tahrirlash sharh maqolalari",
+        "label": "CRISPR sharhi"
+      },
+      {
+        "q": "transformer arxitekturasi so'rovi",
+        "label": "Transformer so'rovi"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI tartibga solish",
+        "label": "AI tartibga solish"
+      },
+      {
+        "q": "Koreya texnologiya yangiliklari",
+        "label": "Koreya texnologiya"
+      },
+      {
+        "q": "iqlim siyosati yangilanishlari",
+        "label": "Iqlim siyosati"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Qiziqishlar (Siz uchun)",
+    "add_placeholder": "Qiziqishni qo'shing...",
+    "empty": "Qiziqishlar avtomatik ravishda qidirganingizda qo'shiladi",
+    "remove": "Olib tashlash"
+  },
+  "factcheck": {
+    "title": "Faktni tekshirish natijalari",
+    "checking": "Tahlil qilinmoqda...",
+    "analyzing": "Noto'g'ri ma'lumotlar uchun manbalarni tahlil qilinmoqda...",
+    "no_contradictions": "Manbalarda hech qanday qarama-qarshilik topilmadi",
+    "found": "Qarama-qarshiliklar topildi"
+  },
+  "foryou": {
+    "title": "Siz uchun",
+    "based_on": "Asosida: {interests}",
+    "no_interests": "Hali qiziqishlar yo'q. Qiziqishlaringizni shakllantirish uchun qidiring!",
+    "loading": "Shaxsiylashtirilgan oqim yuklanmoqda..."
+  },
+  "common": {
+    "search": "Qidirish",
+    "clear": "Tozalash",
+    "close": "Yopish",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "loading": "Yuklanmoqda...",
+    "error": "Xato",
+    "retry": "Qayta urinib ko'ring",
+    "more": "Ko'proq",
+    "less": "Kamroq"
+  },
+  "trends": {
+    "title": "Hozirgi trendlar",
+    "loading": "Trendlar yuklanmoqda...",
+    "error": "Trendlarni yuklab bo'lmadi",
+    "empty": "Hech qanday trend mavzular yo'q"
+  },
+  "onboarding": {
+    "welcome": "Metasearch ga xush kelibsiz",
+    "subtitle": "Sizning shaxsiy, AI bilan quvvatlangan qidiruv dvigatelingiz",
+    "private_search": "Shaxsiy Qidiruv",
+    "private_search_desc": "Hech qachon so'rov logi yo'q",
+    "ai_answers": "AI Javoblari",
+    "ai_answers_desc": "Mahalliy AI natijalarni qisqacha bayon qiladi",
+    "news_digest": "Yangiliklar xulosasi",
+    "news_digest_desc": "Tahlil bilan tanlangan yangiliklar",
+    "local_first": "Mahalliy birinchi",
+    "local_first_desc": "Ma'lumotlaringiz qurilmangizda qoladi",
+    "get_started": "Boshlash"
+  },
+  "feeds": {
+    "find": "Oqimlarni toping",
+    "subscribe": "Obuna bo'lish",
+    "unsubscribe": "Obunani bekor qilish"
+  },
+  "errors": {
+    "load_trends": "Trendlarni yuklab bo'lmadi",
+    "load_feed": "Shaxsiylashtirilgan oqimni yuklab bo'lmadi",
+    "load_global": "Global oqimni yuklab bo'lmadi",
+    "translation": "Tarjima muvaffaqiyatsiz bo'ldi"
+  },
+  "compare": {
+    "title": "Natijalarni taqqoslash",
+    "button": "Taqqoslash",
+    "clear": "Hammasini tozalash",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

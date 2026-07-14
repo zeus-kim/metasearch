@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "నిజంగా వెబ్‌ను అడగండి"
+  },
+  "nav": {
+    "ask": "అడగండి",
+    "discover": "కనుగొనండి",
+    "history": "చరిత్ర",
+    "options": "ఎంపికలు",
+    "classic": "క్లాసిక్",
+    "stats": "సంఖ్యలు",
+    "preferences": "ఇష్టాలు"
+  },
+  "tabs": {
+    "general": "సామాన్య",
+    "images": "చిత్రాలు",
+    "videos": "వీడియోలు",
+    "papers": "పత్రాలు",
+    "news": "సమాచారం",
+    "shopping": "షాపింగ్"
+  },
+  "search": {
+    "placeholder": "ఏదైనా అడగండి…",
+    "placeholder_news": "ఒక వార్తా అంశాన్ని నమోదు చేయండి, అడగండి నొక్కండి",
+    "placeholder_images": "చిత్రాలను శోధించండి…",
+    "placeholder_papers": "ఒక ప్రశ్నను నమోదు చేయండి, అడగండి నొక్కండి",
+    "placeholder_general": "ఒక ప్రశ్న లేదా అంశాన్ని నమోదు చేయండి, అడగండి నొక్కండి",
+    "placeholder_shopping": "ఉత్పత్తులను శోధించండి…",
+    "placeholder_videos": "వీడియోలను శోధించండి…",
+    "button": "అడగండి",
+    "button_search": "శోధించండి"
+  },
+  "status": {
+    "loading": "లోడ్ అవుతోంది…",
+    "loading_stories": "కథలు లోడ్ అవుతున్నాయి…",
+    "searching": "శోధిస్తున్నది…",
+    "searching_web": "వెబ్‌ను శోధిస్తున్నది…",
+    "searching_images": "చిత్రాలను శోధిస్తున్నది…",
+    "searching_news": "వార్తా మూలాలను శోధిస్తున్నది…",
+    "searching_papers": "అకాడమిక్ మూలాలను శోధిస్తున్నది…",
+    "searching_shopping": "ఉత్పత్తులను శోధిస్తున్నది…",
+    "searching_videos": "వీడియోలను శోధిస్తున్నది…",
+    "search_complete": "శోధన పూర్తి.",
+    "search_failed": "శోధన విఫలమైంది.",
+    "answer_ready": "సమాధానం సిద్ధంగా ఉంది.",
+    "fetching_article": "ఆర్టికల్‌ను పొందుతున్నది…",
+    "fetching_publisher": "ప్రచురక ఆర్టికల్‌ను పొందుతున్నది…",
+    "resolving_article": "ఆర్టికల్‌ను పరిష్కరించడం…",
+    "resolving_gn": "గూగుల్ న్యూస్ లింక్‌ను పరిష్కరించడం…",
+    "rewriting": "ఆర్టికల్‌ను పునరాయనించడం…",
+    "rewriting_korean": "కోరియన్‌లో పునరాయనించడం…",
+    "preparing_rewrite": "పూర్తి పునరాయనాన్ని సిద్ధం చేయడం…",
+    "extracted_rewriting": "నిష్కర్షిత ఆర్టికల్ పాఠ్యం — పునరాయనించడం…",
+    "viewing_prior": "మునుపటి టర్న్‌ను వీక్షించడం — కింద ఫాలో-అప్ అడగండి."
+  },
+  "error": {
+    "no_answer": "ఏ AI సమాధానం రూపొందించబడలేదు — కింద శోధన ఫలితాలు.",
+    "no_news": "ఏ వార్తలు కనుగొనబడలేదు — మరో ప్రశ్నను ప్రయత్నించండి.",
+    "no_stories": "ఏ కథలు కనుగొనబడలేదు — మరో ప్రశ్నను ప్రయత్నించండి.",
+    "no_stories_category": "ఈ వర్గానికి ఏ కథలు కనుగొనబడలేదు — మరో పిల్‌ను ప్రయత్నించండి.",
+    "rewrite_empty": "ఆర్టికల్ పునరాయనంలో ఖాళీ పాఠ్యం తిరిగి వచ్చింది.",
+    "rewrite_failed": "ఆర్టికల్‌ను పునరాయనించలేకపోయారు",
+    "load_news_failed": "వార్తలను లోడ్ చేయలేకపోయారు — సర్వర్‌ను తనిఖీ చేయండి.",
+    "model_not_found": "మోడల్ కనుగొనబడలేదు — మీ కాన్ఫిగర్ చేసిన మోడల్ కోసం ollama pull నడపండి, లేదా ఎంపికలలో మరోదాన్ని ఎంచుకోండి.",
+    "ollama_not_running": "Ollama నడుస్తున్నది కాదు — సమాధానాలు కేవలం శోధన మాత్రమే ఉంటాయి. ప్రారంభించండి: ollama serve",
+    "invalid_thread": "చెల్లని థ్రెడ్ JSON.",
+    "enter_question": "ఒక ప్రశ్నను నమోదు చేయండి.",
+    "enter_search": "ఒక శోధన పదాన్ని నమోదు చేయండి."
+  },
+  "article": {
+    "sources": "మూలాలు",
+    "research_progress": "సంవిధానం పురోగతి",
+    "thinking": "చింతన",
+    "answer": "సమాధానం",
+    "key_points": "కీ పాయింట్లు",
+    "summary": "సారాంశం",
+    "related_media": "సంబంధిత మీడియా",
+    "view_more": "మరిన్ని {count} చూడండి",
+    "back": "తిరిగి",
+    "read_original": "మూలాన్ని చదవండి",
+    "related_image": "సంబంధిత చిత్రం",
+    "related": "సంబంధిత"
+  },
+  "discover": {
+    "updated": "నవీకరించబడింది {time}",
+    "scope": {
+      "all": "📰 అన్ని",
+      "local": "🏠 స్థానిక",
+      "world": "🌍 ప్రపంచ"
+    },
+    "categories": {
+      "politics": "రాజకీయాలు",
+      "economy": "ఆర్థికం",
+      "sports": "క్రీడలు",
+      "world": "ప్రపంచం",
+      "entertainment": "వినోదం",
+      "tech": "టెక్ & శాస్త్రం",
+      "culture": "సంస్కృతి",
+      "health": "ఆరోగ్యం",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "సాంకేతిక శాస్త్రం",
+      "ai": "కృత్రిమ మేధస్సు AI యంత్రం అభ్యాసం",
+      "world": "ప్రపంచ వార్తలు అంతర్జాతీయ",
+      "politics": "రాజకీయాలు ప్రభుత్వం ఎన్నిక",
+      "business": "వ్యాపారం ఆర్థికం కంపెనీలు",
+      "finance": "ఆర్థికం మార్కెట్లు స్టాక్",
+      "health": "ఆరోగ్యం వైద్యం ఆరోగ్యము",
+      "climate": "వాతావరణ మార్పు పర్యావరణం",
+      "sports": "క్రీడలు",
+      "entertainment": "వినోదం సెలబ్రిటీ",
+      "art": "కళ సంస్కృతి",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "చరిత్రను తెరవండి",
+    "close": "చరిత్రను మూసివేయండి",
+    "imported": "నిర్యాత {count}",
+    "export": "JSON ఎగుమతి చేయండి",
+    "import": "JSON దిగుమతి చేయండి",
+    "clear": "చరిత్రను క్లియర్ చేయండి",
+    "empty": "మీ ప్రశ్నలు ఇక్కడ కనిపిస్తాయి.",
+    "new_chat": "కొత్త చాట్"
+  },
+  "panel": {
+    "history": "చరిత్ర",
+    "bookmarks": "బుక్‌మార్క్‌లు",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "అన్నీ బుక్‌మార్క్‌లు",
+    "empty": "బుక్‌మార్క్ ఫలితాలను ఇక్కడ సేవ్ చేయండి.",
+    "export": "ఎగుమతి",
+    "clear_all": "అన్ని క్లియర్ చేయండి",
+    "new_collection": "కొత్త సేకరణ"
+  },
+  "hero": {
+    "private": "ప్రైవేట్",
+    "ai_powered": "AI-శక్తి",
+    "local_first": "స్థానిక-మొదటి"
+  },
+  "options": {
+    "model": "మోడల్",
+    "deep_research": "గాఢ పరిశోధన",
+    "focus": "కేంద్రీకరించు",
+    "theme": "థీమ్",
+    "language": "భాష",
+    "answer_language": "AI భాష",
+    "answer_auto": "ఆటో",
+    "research": "పరిశోధన",
+    "fact_check": "తథ్యం తనిఖీ"
+  },
+  "preferences": {
+    "title": "ఇష్టాలు",
+    "language": "భాష",
+    "language_desc": "మీ ఇష్టమైన ఇంటర్‌ఫేస్ భాషను ఎంచుకోండి",
+    "language_storage": "ఇంటర్‌ఫేస్ భాష మీ బ్రౌజర్‌లో నిల్వ చేయబడుతుంది.",
+    "branding": "బ్రాండింగ్",
+    "branding_desc": "UIలో ప్రదర్శించబడే అప్లికేషన్ పేరు, లోగో మరియు ఫేవికాన్‌ను అనుకూలీకరించండి.",
+    "app_name": "అప్లికేషన్ పేరు",
+    "app_name_hint": "తలకోణం మరియు పేజీ శీర్షికలలో చూపబడే పేరు",
+    "logo_url": "లోగో URL",
+    "logo_url_hint": "మీ లోగో చిత్రానికి URL లేదా మార్గం (డిఫాల్ట్ కోసం ఖాళీగా వదిలించండి)",
+    "favicon_url": "ఫేవికాన్ URL",
+    "favicon_url_hint": "మీ ఫేవికాన్‌కు URL లేదా మార్గం (బ్రౌజర్ డిఫాల్ట్ కోసం ఖాళీగా వదిలించండి)",
+    "appearance": "రూపం",
+    "appearance_desc": "దృశ్య శైలిని మరియు ఆకృతిని అనుకూలీకరించండి.",
+    "theme": "థీమ్",
+    "font_size": "ఫాంట్ పరిమాణం",
+    "results_layout": "ఫలితాల ఆకృతి",
+    "search": "శోధన",
+    "search_desc": "అన్ని శోధనలకు వర్తించే డిఫాల్ట్ సెట్టింగులు.",
+    "ui_language": "UI భాష",
+    "ui_language_hint": "ఇంటర్‌ఫేస్ భాష (బ్రౌజర్ స్థానిక నిల్వలో నిల్వ చేయబడింది)",
+    "interface_language": "ఇంటర్‌ఫేస్ భాష",
+    "stored_in_browser": "బ్రౌజర్‌లో నిల్వ చేయబడింది (స్థానిక నిల్వ)",
+    "search_defaults": "శోధన డిఫాల్ట్‌లు",
+    "search_language": "శోధన భాష",
+    "search_language_hint": "ఆటో = ప్రశ్న నుండి గుర్తించండి (హంగూల్ → ko-KR); లేదా అన్ని, లేదా ko-KR వంటి స్థిర స్థానికం",
+    "fallback_language": "ఫాల్బాక్ భాష కోడ్",
+    "fallback_language_hint": "ఆటో-గమనిక అసంపూర్ణమైనప్పుడు ఉపయోగించబడుతుంది",
+    "safe_search": "సురక్షిత శోధన",
+    "safe_off": "ఆఫ్",
+    "safe_moderate": "మోస్తారు",
+    "safe_strict": "కఠినమైన",
+    "results_per_engine": "ప్రతి ఇంజిన్‌కు ఫలితాలు",
+    "ai": "AI",
+    "ai_desc": "సమాధాన సింథసిస్ మరియు ఆర్టికల్ పునరాయనానికి AI మోడళ్లను కాన్ఫిగర్ చేయండి.",
+    "ai_provider": "ప్రదాత",
+    "ai_provider_local": "స్థానిక (Ollama)",
+    "ai_provider_custom": "అనుకూల",
+    "ai_base_url": "API ప్రాథమిక URL",
+    "ai_base_url_hint": "స్థానిక: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API కీ",
+    "ai_api_key_hint": "క్లౌడ్ ప్రదాతల కోసం అవసరం (OpenAI, Anthropic, మొదలైనవి)",
+    "ai_model": "మోడల్",
+    "ai_model_hint": "సమాధాన సింథసిస్ మరియు ప్రశ్న విస్తరణ కోసం చాట్/సూచన మోడల్",
+    "ai_article_model": "ఆర్టికల్ మోడల్",
+    "ai_article_model_hint": "పూర్తి-పేజీ వార్తా ఆర్టికల్ పునరాయనాలకు మోడల్ (ప్రధాన మోడల్‌కు డిఫాల్ట్)",
+    "ai_timeout": "టైమ్‌ఔట్ (సెకన్లు)",
+    "ai_timeout_hint": "మోడల్ కాల్‌ల కోసం ప్రతి అభ్యర్థన టైమ్‌ఔట్",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "ఫీచర్లు",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "వార్తలు",
+    "news_desc": "వార్తల సమాహారం మరియు ఆర్టికల్ సెట్టింగులు.",
+    "news_per_source": "ప్రతి మూలానికి ఆర్టికల్స్",
+    "news_freshness": "తాజా అర్ధజీవితం (గంటలు)",
+    "news_freshness_weight": "తాజా బరువు",
+    "news_dedup": "డెడుప్ సమానత్వం త్రెషోల్డ్",
+    "news_max_age": "గరిష్ట వయస్సు (రోజులు)",
+    "news_cache_ttl": "కాష్ TTL (సెకన్లు)",
+    "news_enrich_max": "సంప్రదింపులు పెంచడానికి గరిష్ట ఆర్టికల్స్",
+    "engines": "శోధన ఇంజిన్లు",
+    "engines_desc": "ఇంజిన్లను ప్రారంభించండి/ఆపండి మరియు వాటి ర్యాంకింగ్ బరువులను సర్దుబాటు చేయండి. ఎక్కువ బరువు = ఫలితాల క్రమంలో ఎక్కువ ప్రభావం.",
+    "engine": "ఇంజిన్",
+    "categories": "వర్గాలు",
+    "weight": "బరువు",
+    "privacy": "గోప్యత",
+    "privacy_desc": "మీ డేటా ఎలా నిర్వహించబడుతుందో నియంత్రించండి.",
+    "proxy_images": "ప్రాక్సీ చిత్రాలు",
+    "proxy_images_hint": "మీ IPని మూడవ పక్షాల నుండి దాచడానికి చిత్రాలను సర్వర్ ద్వారా మార్గం చూపండి",
+    "remove_trackers": "ట్రాకింగ్ పారామీటర్లను తొలగించండి",
+    "remove_trackers_hint": "URLs నుండి UTM మరియు ఇతర ట్రాకింగ్ పారామీటర్లను తొలగించండి",
+    "save_history": "శోధన చరిత్రను సేవ్ చేయండి",
+    "save_history_hint": "బ్రౌజర్‌లో స్థానికంగా శోధనలను నిల్వ చేయండి (సర్వర్‌కు పంపబడదు)",
+    "clear_data": "డేటాను క్లియర్ చేయండి",
+    "clear_localstorage": "స్థానిక నిల్వను క్లియర్ చేయండి",
+    "clear_indexeddb": "ఇండెక్స్ చేయబడిన DBని క్లియర్ చేయండి",
+    "shortcuts": "కీబోర్డ్ షార్ట్‌కట్స్",
+    "shortcuts_desc": "శక్తివంతమైన వినియోగదారుల కోసం తక్షణ యాక్సెస్ కీలు.",
+    "shortcut_focus_search": "శోధన బాక్స్‌పై కేంద్రీకరించండి",
+    "shortcut_close": "ప్యానెల్‌ను మూసివేయండి / రద్దు చేయండి",
+    "shortcut_navigate": "ఫలితాలను నావిగేట్ చేయండి",
+    "shortcut_open": "ఎంచుకున్న ఫలితాన్ని తెరవండి",
+    "shortcut_new_tab": "కొత్త టాబ్‌లో తెరవండి",
+    "shortcut_switch_mode": "శోధన మోడ్‌ను మార్చండి",
+    "shortcut_help": "ఈ సహాయాన్ని చూపించండి",
+    "server": "సర్వర్",
+    "server_desc": "సర్వర్ కాన్ఫిగరేషన్ మరియు నెట్‌వర్క్ సెట్టింగులు.",
+    "bind_address": "బైండ్ చిరునామా",
+    "port": "పోర్ట్",
+    "max_connections": "గరిష్ట కనెక్షన్లు",
+    "image_proxy": "చిత్ర ప్రాక్సీని ప్రారంభించండి",
+    "cache_backend": "కాష్ బ్యాక్‌ఎండ్",
+    "cache_dir": "కాష్ డైరెక్టరీ",
+    "redis_url": "రెడ్డిస్ URL",
+    "advanced": "అధిక",
+    "advanced_desc": "కాష్ మరియు టైమ్‌ఔట్ సెట్టింగులు.",
+    "cache_ttl": "కాష్ TTL (సెకన్లు)",
+    "cache_ttl_hint": "ఫలితాల కాష్ సమయానికి-జీవితం (0 కాషింగ్‌ను ఆపుతుంది)",
+    "request_timeout": "అభ్యర్థన టైమ్‌ఔట్ (సెకన్లు)",
+    "request_timeout_hint": "ప్రతి ఇంజిన్ నెట్‌వర్క్ టైమ్‌ఔట్",
+    "save": "ఇష్టాలను సేవ్ చేయండి",
+    "saved": "సేవ్ చేయబడింది",
+    "saved_msg": "settings.yml కు రాయబడింది మరియు కొత్త శోధనలకు వర్తించబడింది.",
+    "server_settings": "ఈ సెట్టింగులు సర్వర్-పక్కకు నిల్వ చేయబడతాయి",
+    "raw_config": "కాన్ఫిగ్ JSON",
+    "stats": "సంఖ్యలు",
+    "home": "హోమ్",
+    "logout": "లాగ్ అవుట్",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "సామాన్య",
+    "academic": "అకాడమిక్",
+    "writing": "రచన",
+    "code": "కోడ్"
+  },
+  "footer": {
+    "grounded_answers": "మీ స్థానిక మోడల్ నుండి గ్రౌండెడ్ సమాధానాలు — 200+ శోధన ఇంజిన్లు, జీరో ప్రశ్న లాగింగ్.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ మరియు మరిన్ని నుండి అకాడమిక్ పత్రాలు.",
+    "news_digest": "వార్తల సమాహారం: ఆర్టికల్ పేజీలను పొందిస్తుంది, Ollama ద్వారా స్థానికంగా సారాంశాలను పునరాయనిస్తుంది — పెద్ద చిత్రాలు మాత్రమే, ఫేవికాన్ అప్స్కేల్ లేదు.",
+    "images": "వికీమీడియా కామన్స్ చిత్రం శోధన — గోప్యత కోసం ప్రాక్సీ చేసిన థంబ్‌నెయిల్స్.",
+    "api_docs": "API డాక్స్",
+    "status": "స్థితి",
+    "version": "మార్పు",
+    "engines_count": "232 ఇంజిన్లు"
+  },
+  "examples": {
+    "try": "ఒక ఉదాహరణను ప్రయత్నించండి",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS ఎలా పనిచేస్తుంది"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR సమీక్ష"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "ట్రాన్స్‌ఫార్మర్ సర్వే"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI నియంత్రణ"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "కోరియా టెక్"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "వాతావరణ విధానాలు"
+      }
+    ]
+  },
+  "interests": {
+    "title": "రుచి (మీ కోసం)",
+    "add_placeholder": "రుచి జోడించండి...",
+    "empty": "మీరు శోధించినప్పుడు రుచులు ఆటోమేటిక్‌గా జోడించబడతాయి",
+    "remove": "తొలగించండి"
+  },
+  "factcheck": {
+    "title": "తథ్యం తనిఖీ ఫలితాలు",
+    "checking": "విశ్లేషణ చేస్తున్నది...",
+    "analyzing": "వ్యతిరేకతలకు మూలాలను విశ్లేషిస్తున్నది...",
+    "no_contradictions": "మూలాలలో ఏ వ్యతిరేకతలు కనుగొనబడలేదు",
+    "found": "వ్యతిరేకతలు కనుగొనబడ్డాయి"
+  },
+  "foryou": {
+    "title": "మీ కోసం",
+    "based_on": "ఆధారంగా: {interests}",
+    "no_interests": "ఇంకా ఏ రుచులు లేవు. మీ రుచులను నిర్మించడానికి శోధించండి!",
+    "loading": "వ్యక్తిగత ఫీడ్‌ను లోడ్ చేస్తున్నది..."
+  },
+  "common": {
+    "search": "శోధన",
+    "clear": "క్లియర్",
+    "close": "మూసివేయండి",
+    "save": "సేవ్",
+    "cancel": "రద్దు చేయండి",
+    "loading": "లోడ్ అవుతోంది...",
+    "error": "లోపం",
+    "retry": "మరలా ప్రయత్నించండి",
+    "more": "మరింత",
+    "less": "తక్కువ"
+  },
+  "trends": {
+    "title": "ప్రస్తుతం ట్రెండింగ్",
+    "loading": "ట్రెండ్స్‌ను లోడ్ చేస్తున్నది...",
+    "error": "ట్రెండ్స్‌ను లోడ్ చేయడంలో విఫలమైంది",
+    "empty": "ట్రెండింగ్ అంశాలు లేవు"
+  },
+  "onboarding": {
+    "welcome": "మెటాసెర్చ్‌కు స్వాగతం",
+    "subtitle": "మీ ప్రైవేట్, AI-శక్తి శోధన ఇంజిన్",
+    "private_search": "ప్రైవేట్ శోధన",
+    "private_search_desc": "ఏ ప్రశ్న లాగింగ్ లేదు, ఎప్పుడూ కాదు",
+    "ai_answers": "AI సమాధానాలు",
+    "ai_answers_desc": "స్థానిక AI ఫలితాలను సారాంశం చేస్తుంది",
+    "news_digest": "వార్తల సమాహారం",
+    "news_digest_desc": "విశ్లేషణతో కూర్చిన వార్తలు",
+    "local_first": "స్థానిక-మొదటి",
+    "local_first_desc": "మీ డేటా మీ పరికరంలోనే ఉంటుంది",
+    "get_started": "ప్రారంభించండి"
+  },
+  "feeds": {
+    "find": "ఫీడ్స్ కనుగొనండి",
+    "subscribe": "సబ్‌స్క్రైబ్ చేయండి",
+    "unsubscribe": "సబ్‌స్క్రిప్షన్ రద్దు చేయండి"
+  },
+  "errors": {
+    "load_trends": "ట్రెండ్స్‌ను లోడ్ చేయడంలో విఫలమైంది",
+    "load_feed": "వ్యక్తిగత ఫీడ్‌ను లోడ్ చేయడంలో విఫలమైంది",
+    "load_global": "ప్రపంచ ఫీడ్‌ను లోడ్ చేయడంలో విఫలమైంది",
+    "translation": "అనువాదం విఫలమైంది"
+  },
+  "compare": {
+    "title": "ఫలితాలను పోల్చండి",
+    "button": "పోల్చండి",
+    "clear": "అన్ని క్లియర్ చేయండి",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

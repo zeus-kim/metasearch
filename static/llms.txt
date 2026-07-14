@@ -1,0 +1,28 @@
+# Metasearch AI Handoff
+
+Project summary:
+Metasearch is a privacy-first, self-hostable search and answer engine. It provides streaming AI answers, search APIs, Discover/News features, local Ollama integration, and multi-language support.
+
+Local development:
+Source repo: /Users/dragon/Projects/metasearch
+
+API endpoints:
+- /api/v1/health
+- /api/v1/search?q=
+- /api/v1/answer?q=
+- /api/v1/trending?geo=
+- /api/v1/news_digest?q=
+
+Project docs:
+- docs/PROJECT-STATUS.md
+- docs/CONTINUATION.md
+- docs/adding-an-engine.md
+- docs/custom-engines.md
+
+Privacy rules:
+- No tracking, analytics, or third-party beacons
+- Local Ollama-compatible AI only
+- No query logging
+
+Current build:
+{{BUILD}}

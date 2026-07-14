@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "ویب سے پوچھیں، نجی طور پر"
+  },
+  "nav": {
+    "ask": "پوچھیں",
+    "discover": "دریافت کریں",
+    "history": "تاریخ",
+    "options": "اختیارات",
+    "classic": "کلاسک",
+    "stats": "اعداد و شمار",
+    "preferences": "ترجیحات"
+  },
+  "tabs": {
+    "general": "عام",
+    "images": "تصاویر",
+    "videos": "ویڈیوز",
+    "papers": "تحقیقی مضامین",
+    "news": "خبریں",
+    "shopping": "خریداری"
+  },
+  "search": {
+    "placeholder": "کچھ پوچھیں…",
+    "placeholder_news": "ایک خبر کا موضوع درج کریں، پوچھیں دبائیں",
+    "placeholder_images": "تصاویر تلاش کریں…",
+    "placeholder_papers": "ایک سوال درج کریں، پوچھیں دبائیں",
+    "placeholder_general": "ایک سوال یا موضوع درج کریں، پوچھیں دبائیں",
+    "placeholder_shopping": "مصنوعات تلاش کریں…",
+    "placeholder_videos": "ویڈیوز تلاش کریں…",
+    "button": "پوچھیں",
+    "button_search": "تلاش کریں"
+  },
+  "status": {
+    "loading": "لوڈ ہو رہا ہے…",
+    "loading_stories": "کہانیاں لوڈ ہو رہی ہیں…",
+    "searching": "تلاش کر رہے ہیں…",
+    "searching_web": "ویب پر تلاش کر رہے ہیں…",
+    "searching_images": "تصاویر تلاش کر رہے ہیں…",
+    "searching_news": "خبری ذرائع تلاش کر رہے ہیں…",
+    "searching_papers": "تحقیقی ذرائع تلاش کر رہے ہیں…",
+    "searching_shopping": "مصنوعات تلاش کر رہے ہیں…",
+    "searching_videos": "ویڈیوز تلاش کر رہے ہیں…",
+    "search_complete": "تلاش مکمل ہو گئی۔",
+    "search_failed": "تلاش ناکام ہو گئی۔",
+    "answer_ready": "جواب تیار ہے۔",
+    "fetching_article": "مضمون حاصل کر رہے ہیں…",
+    "fetching_publisher": "پبلشر کا مضمون حاصل کر رہے ہیں…",
+    "resolving_article": "مضمون حل کر رہے ہیں…",
+    "resolving_gn": "گوگل نیوز لنک حل کر رہے ہیں…",
+    "rewriting": "مضمون دوبارہ لکھ رہے ہیں…",
+    "rewriting_korean": "کوریائی میں دوبارہ لکھ رہے ہیں…",
+    "preparing_rewrite": "مکمل دوبارہ لکھنے کی تیاری کر رہے ہیں…",
+    "extracted_rewriting": "نکالا گیا مضمون متن — دوبارہ لکھنے میں…",
+    "viewing_prior": "پچھلے موڑ کو دیکھ رہے ہیں — نیچے ایک فالو اپ پوچھیں۔"
+  },
+  "error": {
+    "no_answer": "کوئی AI جواب تیار نہیں ہوا — نیچے تلاش کے نتائج۔",
+    "no_news": "کوئی خبر نہیں ملی — دوسرا سوال آزمائیں۔",
+    "no_stories": "کوئی کہانیاں نہیں ملی — دوسرا سوال آزمائیں۔",
+    "no_stories_category": "اس زمرے کے لیے کوئی کہانیاں نہیں ملی — دوسرا پِل آزمائیں۔",
+    "rewrite_empty": "مضمون کا دوبارہ لکھنا خالی متن واپس آیا۔",
+    "rewrite_failed": "مضمون دوبارہ لکھنے میں ناکام",
+    "load_news_failed": "خبریں لوڈ کرنے میں ناکام — سرور چیک کریں۔",
+    "model_not_found": "ماڈل نہیں ملا — اپنے کنفیگر کردہ ماڈل کے لیے ollama pull چلائیں، یا اختیارات میں دوسرا منتخب کریں۔",
+    "ollama_not_running": "Ollama چل نہیں رہا — جوابات صرف تلاش ہوں گے۔ شروع کریں: ollama serve",
+    "invalid_thread": "غلط تھریڈ JSON۔",
+    "enter_question": "ایک سوال درج کریں۔",
+    "enter_search": "ایک تلاش کا لفظ درج کریں۔"
+  },
+  "article": {
+    "sources": "ذرائع",
+    "research_progress": "تحقیقی ترقی",
+    "thinking": "سوچنا",
+    "answer": "جواب",
+    "key_points": "اہم نکات",
+    "summary": "خلاصہ",
+    "related_media": "متعلقہ میڈیا",
+    "view_more": "مزید {count} دیکھیں",
+    "back": "پیچھے",
+    "read_original": "اصل پڑھیں",
+    "related_image": "متعلقہ تصویر",
+    "related": "متعلقہ"
+  },
+  "discover": {
+    "updated": "اپ ڈیٹ کیا گیا {time}",
+    "scope": {
+      "all": "📰 سب",
+      "local": "🏠 مقامی",
+      "world": "🌍 دنیا"
+    },
+    "categories": {
+      "politics": "سیاست",
+      "economy": "معیشت",
+      "sports": "کھیل",
+      "world": "دنیا",
+      "entertainment": "تفریح",
+      "tech": "ٹیکنالوجی اور سائنس",
+      "culture": "ثقافت",
+      "health": "صحت",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "ٹیکنالوجی سائنس",
+      "ai": "مصنوعی ذہانت AI مشین لرننگ",
+      "world": "عالمی خبریں بین الاقوامی",
+      "politics": "سیاست حکومت انتخابات",
+      "business": "کاروبار معیشت کمپنیاں",
+      "finance": "مالیات مارکیٹس اسٹاک",
+      "health": "صحت دوا صحت",
+      "climate": "ماحولیاتی تبدیلی",
+      "sports": "کھیل",
+      "entertainment": "تفریح مشہور شخصیات",
+      "art": "فن ثقافت",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "تاریخ کھولیں",
+    "close": "تاریخ بند کریں",
+    "imported": "درآمد شدہ {count}",
+    "export": "JSON برآمد کریں",
+    "import": "JSON درآمد کریں",
+    "clear": "تاریخ صاف کریں",
+    "empty": "آپ کے سوالات یہاں ظاہر ہوں گے۔",
+    "new_chat": "نیا چیٹ"
+  },
+  "panel": {
+    "history": "تاریخ",
+    "bookmarks": "کتاب کے نشانات",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "تمام کتاب کے نشانات",
+    "empty": "کتاب کے نشانات کے نتائج کو یہاں محفوظ کریں۔",
+    "export": "برآمد کریں",
+    "clear_all": "سب صاف کریں",
+    "new_collection": "نئی کلیکشن"
+  },
+  "hero": {
+    "private": "نجی",
+    "ai_powered": "AI سے چلنے والا",
+    "local_first": "مقامی-پہلا"
+  },
+  "options": {
+    "model": "ماڈل",
+    "deep_research": "گہری تحقیق",
+    "focus": "توجہ",
+    "theme": "تھیم",
+    "language": "زبان",
+    "answer_language": "AI زبان",
+    "answer_auto": "خودکار",
+    "research": "تحقیق",
+    "fact_check": "حقائق کی جانچ"
+  },
+  "preferences": {
+    "title": "ترجیحات",
+    "language": "زبان",
+    "language_desc": "اپنی پسندیدہ انٹرفیس زبان منتخب کریں",
+    "language_storage": "انٹرفیس کی زبان آپ کے براؤزر میں محفوظ ہے۔",
+    "branding": "برانڈنگ",
+    "branding_desc": "ایپلیکیشن کا نام، لوگو، اور UI میں دکھائے جانے والے فیویکون کو اپنی مرضی کے مطابق بنائیں۔",
+    "app_name": "ایپلیکیشن کا نام",
+    "app_name_hint": "ہیڈر اور صفحے کے عنوانات میں دکھایا جانے والا نام",
+    "logo_url": "لوگو URL",
+    "logo_url_hint": "آپ کی لوگو تصویر کا URL یا راستہ (ڈیفالٹ کے لیے خالی چھوڑ دیں)",
+    "favicon_url": "فیویکون URL",
+    "favicon_url_hint": "آپ کے فیویکون کا URL یا راستہ (براؤزر کے ڈیفالٹ کے لیے خالی چھوڑ دیں)",
+    "appearance": "ظاہری شکل",
+    "appearance_desc": "بصری طرز اور ترتیب کو اپنی مرضی کے مطابق بنائیں۔",
+    "theme": "تھیم",
+    "font_size": "فونٹ کا سائز",
+    "results_layout": "نتائج کی ترتیب",
+    "search": "تلاش",
+    "search_desc": "تمام تلاشوں پر لاگو ہونے والی ڈیفالٹ ترتیبات۔",
+    "ui_language": "UI زبان",
+    "ui_language_hint": "انٹرفیس کی زبان (براؤزر کے مقامی اسٹوریج میں محفوظ کی گئی)",
+    "interface_language": "انٹرفیس کی زبان",
+    "stored_in_browser": "براؤزر میں محفوظ ہے (مقامی اسٹوریج)",
+    "search_defaults": "تلاش کے ڈیفالٹس",
+    "search_language": "تلاش کی زبان",
+    "search_language_hint": "خودکار = تلاش سے پتہ لگائیں (ہنگول → ko-KR)؛ یا سب، یا ایک مقررہ مقامی جیسے ko-KR",
+    "fallback_language": "متبادل زبان کا کوڈ",
+    "fallback_language_hint": "جب خودکار پتہ لگانا غیر یقینی ہو تو استعمال ہوتا ہے",
+    "safe_search": "محفوظ تلاش",
+    "safe_off": "بند",
+    "safe_moderate": "درمیانہ",
+    "safe_strict": "سخت",
+    "results_per_engine": "ہر انجن کے نتائج",
+    "ai": "AI",
+    "ai_desc": "جواب کی ترکیب اور مضمون کے دوبارہ لکھنے کے لیے AI ماڈلز کو ترتیب دیں۔",
+    "ai_provider": "فراہم کنندہ",
+    "ai_provider_local": "مقامی (Ollama)",
+    "ai_provider_custom": "حسب ضرورت",
+    "ai_base_url": "API بنیادی URL",
+    "ai_base_url_hint": "مقامی: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API کلید",
+    "ai_api_key_hint": "کلاؤڈ فراہم کنندگان کے لیے درکار (OpenAI، Anthropic، وغیرہ)",
+    "ai_model": "ماڈل",
+    "ai_model_hint": "جواب کی ترکیب اور سوال کی توسیع کے لیے چیٹ/ہدایات ماڈل",
+    "ai_article_model": "مضمون ماڈل",
+    "ai_article_model_hint": "مکمل صفحے کے نیوز مضمون کے دوبارہ لکھنے کے لیے ماڈل (اہم ماڈل پر ڈیفالٹ)",
+    "ai_timeout": "ٹائم آؤٹ (سیکنڈ)",
+    "ai_timeout_hint": "ماڈل کالز کے لیے فی درخواست ٹائم آؤٹ",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "خصوصیات",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "خبریں",
+    "news_desc": "خبروں کی جمع آوری اور مضمون کی ترتیبات۔",
+    "news_per_source": "ہر ذریعہ کے لیے مضامین",
+    "news_freshness": "تازگی کا نصف عمر (گھنٹے)",
+    "news_freshness_weight": "تازگی کا وزن",
+    "news_dedup": "ڈیڈوپ مماثلت کی حد",
+    "news_max_age": "زیادہ سے زیادہ عمر (دن)",
+    "news_cache_ttl": "کیچ TTL (سیکنڈ)",
+    "news_enrich_max": "زیادہ سے زیادہ مضامین کو مالا مال کریں",
+    "engines": "تلاش کے انجن",
+    "engines_desc": "انجن کو فعال/غیر فعال کریں اور ان کے درجہ بندی کے وزن کو ایڈجسٹ کریں۔ زیادہ وزن = نتیجے کے ترتیب پر زیادہ اثر۔",
+    "engine": "انجن",
+    "categories": "زمرے",
+    "weight": "وزن",
+    "privacy": "رازداری",
+    "privacy_desc": "کنٹرول کریں کہ آپ کے ڈیٹا کے ساتھ کیسا سلوک کیا جائے۔",
+    "proxy_images": "تصاویر کی پروکسی",
+    "proxy_images_hint": "تیسرے فریقوں سے آپ کا IP چھپانے کے لیے سرور کے ذریعے تصاویر کی راہنمائی کریں",
+    "remove_trackers": "ٹریکنگ کے پیرامیٹرز ہٹائیں",
+    "remove_trackers_hint": "URLs سے UTM اور دیگر ٹریکنگ کے پیرامیٹرز کو ہٹا دیں",
+    "save_history": "تلاش کی تاریخ محفوظ کریں",
+    "save_history_hint": "تلاشوں کو مقامی طور پر براؤزر میں محفوظ کریں (کبھی بھی سرور پر نہیں بھیجا جاتا)",
+    "clear_data": "ڈیٹا صاف کریں",
+    "clear_localstorage": "مقامی اسٹوریج صاف کریں",
+    "clear_indexeddb": "انڈیکسڈDB صاف کریں",
+    "shortcuts": "کی بورڈ کے شارٹ کٹس",
+    "shortcuts_desc": "طاقتور صارفین کے لیے فوری رسائی کی چابیاں۔",
+    "shortcut_focus_search": "تلاش کے باکس پر توجہ مرکوز کریں",
+    "shortcut_close": "پینل بند کریں / منسوخ کریں",
+    "shortcut_navigate": "نتائج میں نیویگیٹ کریں",
+    "shortcut_open": "منتخب کردہ نتیجہ کھولیں",
+    "shortcut_new_tab": "نئے ٹیب میں کھولیں",
+    "shortcut_switch_mode": "تلاش کے موڈ کو تبدیل کریں",
+    "shortcut_help": "یہ مدد دکھائیں",
+    "server": "سرور",
+    "server_desc": "سرور کی تشکیل اور نیٹ ورک کی ترتیبات۔",
+    "bind_address": "بائنڈ ایڈریس",
+    "port": "پورٹ",
+    "max_connections": "زیادہ سے زیادہ کنکشن",
+    "image_proxy": "تصویر کی پروکسی کو فعال کریں",
+    "cache_backend": "کیچ بیک اینڈ",
+    "cache_dir": "کیچ ڈائریکٹری",
+    "redis_url": "ریڈیس URL",
+    "advanced": "ایڈوانس",
+    "advanced_desc": "کیچ اور ٹائم آؤٹ کی ترتیبات۔",
+    "cache_ttl": "کیچ TTL (سیکنڈ)",
+    "cache_ttl_hint": "نتیجے کی کیچ کی زندگی کا وقت (0 کیچنگ کو غیر فعال کرتا ہے)",
+    "request_timeout": "درخواست کا ٹائم آؤٹ (سیکنڈ)",
+    "request_timeout_hint": "فی انجن نیٹ ورک ٹائم آؤٹ",
+    "save": "ترجیحات محفوظ کریں",
+    "saved": "محفوظ کیا گیا",
+    "saved_msg": "settings.yml میں لکھا گیا اور نئی تلاشوں پر لاگو کیا گیا۔",
+    "server_settings": "یہ ترتیبات سرور سائیڈ پر برقرار رکھی جاتی ہیں",
+    "raw_config": "خام کنفیگریشن JSON",
+    "stats": "اعداد و شمار",
+    "home": "ہوم",
+    "logout": "لاگ آؤٹ",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "عام",
+    "academic": "تعلیمی",
+    "writing": "تحریر",
+    "code": "کوڈ"
+  },
+  "footer": {
+    "grounded_answers": "آپ کے مقامی ماڈل سے جڑے ہوئے جوابات — 200+ تلاش کے انجن، صفر سوال کی لاگنگ۔",
+    "academic_papers": "تعلیمی مضامین arXiv، OpenAlex، Crossref، Europe PMC، Semantic Scholar، DOAJ، اور مزید سے۔",
+    "news_digest": "خبروں کا خلاصہ: مضمون کے صفحات کو حاصل کرتا ہے، مقامی طور پر خلاصے دوبارہ لکھتا ہے Ollama کے ذریعے — صرف بڑے تصاویر، کوئی فیویکون اپ اسکیل نہیں۔",
+    "images": "ویکیمیڈیا کامنز کی تصویر کی تلاش — رازداری کے لیے تھمب نیلز کی پروکسی۔",
+    "api_docs": "API دستاویزات",
+    "status": "حالت",
+    "version": "ورژن",
+    "engines_count": "232 انجن"
+  },
+  "examples": {
+    "try": "ایک مثال آزمائیں",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS کیسے کام کرتا ہے"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR جائزہ"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer جائزہ"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI ریگولیشن"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "کوریائی ٹیک"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "ماحولیاتی پالیسی"
+      }
+    ]
+  },
+  "interests": {
+    "title": "دلچسپیاں (آپ کے لیے)",
+    "add_placeholder": "دلچسپی شامل کریں...",
+    "empty": "دلچسپیاں خود بخود شامل کی جاتی ہیں جب آپ تلاش کرتے ہیں",
+    "remove": "ہٹائیں"
+  },
+  "factcheck": {
+    "title": "حقائق کی جانچ کے نتائج",
+    "checking": "تجزیہ کر رہے ہیں...",
+    "analyzing": "متضاد ذرائع کا تجزیہ کر رہے ہیں...",
+    "no_contradictions": "ذرائع میں کوئی تضاد نہیں ملا",
+    "found": "تضاد ملا"
+  },
+  "foryou": {
+    "title": "آپ کے لیے",
+    "based_on": "کی بنیاد پر: {interests}",
+    "no_interests": "ابھی کوئی دلچسپیاں نہیں ہیں۔ دلچسپیاں بنانے کے لیے تلاش کریں!",
+    "loading": "ذاتی نوعیت کا فیڈ لوڈ ہو رہا ہے..."
+  },
+  "common": {
+    "search": "تلاش",
+    "clear": "صاف کریں",
+    "close": "بند کریں",
+    "save": "محفوظ کریں",
+    "cancel": "منسوخ کریں",
+    "loading": "لوڈ ہو رہا ہے...",
+    "error": "غلطی",
+    "retry": "دوبارہ کوشش کریں",
+    "more": "مزید",
+    "less": "کم"
+  },
+  "trends": {
+    "title": "ابھی کے رجحانات",
+    "loading": "رجحانات لوڈ ہو رہے ہیں...",
+    "error": "رجحانات لوڈ کرنے میں ناکام",
+    "empty": "کوئی رجحان موضوعات نہیں"
+  },
+  "onboarding": {
+    "welcome": "Metasearch میں خوش آمدید",
+    "subtitle": "آپ کا نجی، AI سے چلنے والا تلاش کا انجن",
+    "private_search": "نجی تلاش",
+    "private_search_desc": "کبھی بھی کوئی سوال لاگ نہیں ہوتا",
+    "ai_answers": "AI جوابات",
+    "ai_answers_desc": "مقامی AI نتائج کا خلاصہ کرتا ہے",
+    "news_digest": "خبروں کا خلاصہ",
+    "news_digest_desc": "تجزیے کے ساتھ منتخب کردہ خبریں",
+    "local_first": "مقامی-پہلا",
+    "local_first_desc": "آپ کا ڈیٹا آپ کے آلے پر رہتا ہے",
+    "get_started": "شروع کریں"
+  },
+  "feeds": {
+    "find": "فیڈ تلاش کریں",
+    "subscribe": "سبسکرائب کریں",
+    "unsubscribe": "ان سبسکرائب کریں"
+  },
+  "errors": {
+    "load_trends": "رجحانات لوڈ کرنے میں ناکام",
+    "load_feed": "ذاتی نوعیت کا فیڈ لوڈ کرنے میں ناکام",
+    "load_global": "عالمی فیڈ لوڈ کرنے میں ناکام",
+    "translation": "ترجمہ ناکام"
+  },
+  "compare": {
+    "title": "نتائج کا موازنہ کریں",
+    "button": "موازنہ کریں",
+    "clear": "سب صاف کریں",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

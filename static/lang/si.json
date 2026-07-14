@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "අන්තර්ජාලය අසන්න, පෞද්ගලිකව"
+  },
+  "nav": {
+    "ask": "අසන්න",
+    "discover": "අපි හඳුන්වා දෙමු",
+    "history": "ඉතිහාසය",
+    "options": "විකල්ප",
+    "classic": "පැරණි",
+    "stats": "සංඛ්‍යානය",
+    "preferences": "පREFERENCES"
+  },
+  "tabs": {
+    "general": "සාමාන්‍ය",
+    "images": "රූප",
+    "videos": "වීඩියෝ",
+    "papers": "පත්‍ර",
+    "news": "සමාචාර",
+    "shopping": "සාප්පු"
+  },
+  "search": {
+    "placeholder": "ඇත්තක් අසන්න…",
+    "placeholder_news": "සමාචාර මාතෘකාවක් ඇතුළත් කරන්න, අසන්න යන්න ඔබන්න",
+    "placeholder_images": "රූප සොයාගන්න…",
+    "placeholder_papers": "ප්‍රශ්නයක් ඇතුළත් කරන්න, අසන්න යන්න ඔබන්න",
+    "placeholder_general": "ප්‍රශ්නයක් හෝ මාතෘකාවක් ඇතුළත් කරන්න, අසන්න යන්න ඔබන්න",
+    "placeholder_shopping": "නිෂ්පාදන සොයාගන්න…",
+    "placeholder_videos": "වීඩියෝ සොයාගන්න…",
+    "button": "අසන්න",
+    "button_search": "සොයන්න"
+  },
+  "status": {
+    "loading": "ඉදිරියට යමින්…",
+    "loading_stories": "කතා ඉදිරියට යමින්…",
+    "searching": "සොයමින්…",
+    "searching_web": "අන්තර්ජාලය සොයමින්…",
+    "searching_images": "රූප සොයමින්…",
+    "searching_news": "සමාචාර මූලාශ්‍ර සොයමින්…",
+    "searching_papers": "අධ්‍යයන මූලාශ්‍ර සොයමින්…",
+    "searching_shopping": "නිෂ්පාදන සොයමින්…",
+    "searching_videos": "වීඩියෝ සොයමින්…",
+    "search_complete": "සොයීම සම්පූර්ණයි.",
+    "search_failed": "සොයීම අසාර්ථකයි.",
+    "answer_ready": "පිළිතුර සූදානම්.",
+    "fetching_article": "කතාපත්‍රය ලබාගන්නා…",
+    "fetching_publisher": "පPublisher කතාපත්‍රය ලබාගන්නා…",
+    "resolving_article": "කතාපත්‍රය විසඳමින්…",
+    "resolving_gn": "Google News සම්බන්ධතාවය විසඳමින්…",
+    "rewriting": "කතාපත්‍රය නැවත ලියමින්…",
+    "rewriting_korean": "කොරියානු භාෂාවෙන් නැවත ලියමින්…",
+    "preparing_rewrite": "සම්පූර්ණ නැවත ලියන සූදානම්…",
+    "extracted_rewriting": "ආශ්‍රිත කතාපත්‍ර පාඨය — නැවත ලියමින්…",
+    "viewing_prior": "පෙර පියවර දැකීම — පහළින් අනුගමනය කරන්න."
+  },
+  "error": {
+    "no_answer": "AI පිළිතුරක් නිර්මාණය නොකෙරුණි — පහළින් සොයාගත් ප්‍රතිඵල.",
+    "no_news": "සමාචාර කිසිවක් නොමැත — වෙනත් ප්‍රශ්නයක් උත්සාහ කරන්න.",
+    "no_stories": "කතා කිසිවක් නොමැත — වෙනත් ප්‍රශ්නයක් උත්සාහ කරන්න.",
+    "no_stories_category": "මෙම කාණ්ඩය සඳහා කතා කිසිවක් නොමැත — වෙනත් පෝල් එකක් උත්සාහ කරන්න.",
+    "rewrite_empty": "කතාපත්‍ර නැවත ලියන විශාල පාඨයක් ලබා නොදුන්නේය.",
+    "rewrite_failed": "කතාපත්‍රය නැවත ලියන්න නොහැකි විය",
+    "load_news_failed": "සමාචාරය ලබාගන්න නොහැකි විය — සේවාදායකය පරීක්ෂා කරන්න.",
+    "model_not_found": "මොඩලය සොයාගත නොහැක — ඔබගේ වින්‍යාසිත මොඩලය සඳහා ollama pull ක්‍රියාත්මක කරන්න, හෝ විකල්ප වලින් වෙනත් එකක් තෝරන්න.",
+    "ollama_not_running": "Ollama ක්‍රියාත්මක නොවේ — පිළිතුරු සොයන්න පමණක් වේ. ආරම්භ කරන්න: ollama serve",
+    "invalid_thread": "අසාර්ථක ත්‍රෙඩ් JSON.",
+    "enter_question": "ප්‍රශ්නයක් ඇතුළත් කරන්න.",
+    "enter_search": "සොයන්නාගේ පදයක් ඇතුළත් කරන්න."
+  },
+  "article": {
+    "sources": "මූලාශ්‍ර",
+    "research_progress": "අධ්‍යයන ප්‍රගතිය",
+    "thinking": "සිතනවා",
+    "answer": "පිළිතුර",
+    "key_points": "ප්‍රධාන ලක්ෂණ",
+    "summary": "සාරාංශය",
+    "related_media": "සම්බන්ධ මාධ්‍ය",
+    "view_more": "තවත් {count} බලන්න",
+    "back": "පසු",
+    "read_original": "මූලිකය කියවන්න",
+    "related_image": "සම්බන්ධ රූපය",
+    "related": "සම්බන්ධ"
+  },
+  "discover": {
+    "updated": "අලුත් කළේ {time}",
+    "scope": {
+      "all": "📰 සියල්ල",
+      "local": "🏠 දේශීය",
+      "world": "🌍 ලෝකය"
+    },
+    "categories": {
+      "politics": "රාජ්‍යය",
+      "economy": "ආර්ථිකය",
+      "sports": "ක්‍රීඩා",
+      "world": "ලෝකය",
+      "entertainment": "ආනන්දය",
+      "tech": "තාක්ෂණය සහ විද්‍යාව",
+      "culture": "සංස්කෘතිය",
+      "health": "සෞඛ්‍යය",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "තාක්ෂණ විද්‍යාව",
+      "ai": "කෘතිම බුද්ධිය AI යන්ත්‍ර ඉගෙනීම",
+      "world": "ලෝක සමාචාර ජාත්‍යන්තර",
+      "politics": "රාජ්‍යය රජය ඡන්දය",
+      "business": "ව්‍යාපාරය ආර්ථිකය සමාගම්",
+      "finance": "මාලාවන් වෙළඳපොළ",
+      "health": "සෞඛ්‍යය වෛද්‍යය සෞඛ්‍යය",
+      "climate": "කාලගුණය වෙනස්වීම පරිසරය",
+      "sports": "ක්‍රීඩා",
+      "entertainment": "ආනන්දය ප්‍රසිද්ධිය",
+      "art": "කලා සංස්කෘතිය",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "ඉතිහාසය විවෘත කරන්න",
+    "close": "ඉතිහාසය වසා දැමීම",
+    "imported": "ආනයනය කරන ලදී {count}",
+    "export": "JSON අපනයනය කරන්න",
+    "import": "JSON ආනයනය කරන්න",
+    "clear": "ඉතිහාසය මකන්න",
+    "empty": "ඔබේ ප්‍රශ්න මෙහි පෙනේ.",
+    "new_chat": "නව කතාබහ"
+  },
+  "panel": {
+    "history": "ඉතිහාසය",
+    "bookmarks": "සුරැකීම්",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "සියලු සුරැකීම්",
+    "empty": "මෙහි සුරැකීමට සුරැකීම් ප්‍රතිඵල කරන්න.",
+    "export": "අපනයනය කරන්න",
+    "clear_all": "සියල්ල මකන්න",
+    "new_collection": "නව එකතුව"
+  },
+  "hero": {
+    "private": "පෞද්ගලික",
+    "ai_powered": "AI-සක්‍රීය",
+    "local_first": "දේශීය-පළමු"
+  },
+  "options": {
+    "model": "මොඩලය",
+    "deep_research": "ගැඹුරු පර්යේෂණය",
+    "focus": "ආකර්ෂණය",
+    "theme": "තේමාව",
+    "language": "භාෂාව",
+    "answer_language": "AI භාෂාව",
+    "answer_auto": "ස්වයංක්‍රීය",
+    "research": "පර්යේෂණය",
+    "fact_check": "තාක්ෂණය පරීක්ෂා කරන්න"
+  },
+  "preferences": {
+    "title": "පREFERENCES",
+    "language": "භාෂාව",
+    "language_desc": "ඔබේ කැමති අතුරුමුහුණත් භාෂාව තෝරන්න",
+    "language_storage": "අතුරුමුහුණත් භාෂාව ඔබේ බ්‍රවුසරයේ ගබඩා කර ඇත.",
+    "branding": "අවස්ථා",
+    "branding_desc": "UI හි පෙන්වන යෙදුම් නම, ලාංඡනය, සහ ෆැවිකොන් අභිරුචි කරන්න.",
+    "app_name": "යෙදුම් නම",
+    "app_name_hint": "ශීර්ෂය සහ පිටු මාතෘකාවල පෙන්වන නම",
+    "logo_url": "ලාංඡන URL",
+    "logo_url_hint": "ඔබේ ලාංඡන රූපය සඳහා URL හෝ මාර්ගය (පෙරනිමිය සඳහා හිස් තබන්න)",
+    "favicon_url": "ෆැවිකොන් URL",
+    "favicon_url_hint": "ඔබේ ෆැවිකොන් සඳහා URL හෝ මාර්ගය (පෙරනිමිය සඳහා හිස් තබන්න)",
+    "appearance": "පෙනුම",
+    "appearance_desc": "දෘශ්‍ය ශෛලිය සහ සැලැස්ම අභිරුචි කරන්න.",
+    "theme": "තේමාව",
+    "font_size": "අකුරු ප්‍රමාණය",
+    "results_layout": "ප්‍රතිඵල සැලැස්ම",
+    "search": "සොයන්න",
+    "search_desc": "සියලු සොයීම් සඳහා යාවත්කාලීන සැකසුම් යෙදේ.",
+    "ui_language": "UI භාෂාව",
+    "ui_language_hint": "අතුරුමුහුණත් භාෂාව (බ්‍රව්සරයේ localStorage හි සුරකින ලදි)",
+    "interface_language": "අතුරුමුහුණත් භාෂාව",
+    "stored_in_browser": "බ්‍රව්සරයේ සුරකින ලදි (localStorage)",
+    "search_defaults": "සොයන්නාගේ පෙරනිමිය",
+    "search_language": "සොයන්නාගේ භාෂාව",
+    "search_language_hint": "ස්වයංක්‍රීය = ප්‍රශ්නයෙන් හඳුනාගන්න (Hangul → ko-KR); හෝ සියල්ල, හෝ ko-KR වැනි ස්ථිර භාෂාවක්",
+    "fallback_language": "Fallback Language Code",
+    "fallback_language_hint": "ස්වයංක්‍රීය හඳුනාගැනීම අසාර්ථක වූ විට භාවිතා වේ",
+    "safe_search": "ආරක්ෂිත සොයන්න",
+    "safe_off": "අක්‍රිය",
+    "safe_moderate": "මධ්‍යස්ථ",
+    "safe_strict": "කඩිනම්",
+    "results_per_engine": "එන්ජින් එකකට ප්‍රතිඵල",
+    "ai": "AI",
+    "ai_desc": "පිළිතුරු සංයෝජනය සහ කතාපත්‍ර නැවත ලියන සඳහා AI මොඩල සැකසීම.",
+    "ai_provider": "පැවැත්ම",
+    "ai_provider_local": "දේශීය (Ollama)",
+    "ai_provider_custom": "අභිරුචි",
+    "ai_base_url": "API මූලික URL",
+    "ai_base_url_hint": "දේශීය: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API යතුව",
+    "ai_api_key_hint": "මහනුවර සැපයුම්කරුවන් සඳහා අවශ්‍යයි (OpenAI, Anthropic, ආදිය)",
+    "ai_model": "මොඩලය",
+    "ai_model_hint": "පිළිතුරු සංයෝජනය සහ ප්‍රශ්න විශාලනය සඳහා කතා/උපදෙස් මොඩලය",
+    "ai_article_model": "කතාපත්‍ර මොඩලය",
+    "ai_article_model_hint": "සම්පූර්ණ පිටු සමාචාර කතාපත්‍ර නැවත ලියන මොඩලය (ප්‍රධාන මොඩලයට පෙරනිමිය වේ)",
+    "ai_timeout": "කාලය අවසන් වේ (තත්පර)",
+    "ai_timeout_hint": "මොඩල ඇමතුම් සඳහා ප්‍රතිඵල කාලය",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "විශේෂාංග",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "සමාචාර",
+    "news_desc": "සමාචාර එකතු කිරීම සහ කතාපත්‍ර සැකසුම්.",
+    "news_per_source": "මූලාශ්‍රයකට කතාපත්‍ර",
+    "news_freshness": "නවත්වීමේ අර්ධ ජීවිතය (පැය)",
+    "news_freshness_weight": "නවත්වීමේ බර",
+    "news_dedup": "අනුකූලතාවය අහෝසි කිරීමේ තරම",
+    "news_max_age": "උපරිම වයස (දින)",
+    "news_cache_ttl": "කැෂේ TTL (තත්පර)",
+    "news_enrich_max": "සම්පූර්ණ කිරීමට උපරිම කතාපත්‍ර",
+    "engines": "සොයන්නාගේ එන්ජින්",
+    "engines_desc": "එන්ජින් සක්‍රීය/අක්‍රීය කරන්න සහ ඔවුන්ගේ ශ්‍රේණිගත කිරීමේ බර වෙනස් කරන්න. උසස් බර = ප්‍රතිඵල ඇණවුම් මත වැඩි බලපෑමක්.",
+    "engine": "එන්ජින්",
+    "categories": "කාණ්ඩ",
+    "weight": "බර",
+    "privacy": "රහස",
+    "privacy_desc": "ඔබේ දත්ත කෙසේ හසුරුවන බව පාලනය කරන්න.",
+    "proxy_images": "පින්තූර ප්‍රොක්සි කරන්න",
+    "proxy_images_hint": "ඔබේ IP තෙවන පාර්ශවයන්ගෙන් සඟවා ගැනීමට සේවාදායකය හරහා පින්තූර මාර්ගගත කරන්න",
+    "remove_trackers": "පරික්ෂක පරාමිතීන් ඉවත් කරන්න",
+    "remove_trackers_hint": "URLs වලින් UTM සහ අනෙකුත් පරික්ෂක පරාමිතීන් ඉවත් කරන්න",
+    "save_history": "සොයන්නාගේ ඉතිහාසය සුරකින්න",
+    "save_history_hint": "බ්‍රව්සරයේ ස්ථානයේ සොයන්නන් සුරකින්න (සේවාදායකයට කිසිදා යවනු නොලැබේ)",
+    "clear_data": "දත්ත මකන්න",
+    "clear_localstorage": "දේශීය ගබඩා මකන්න",
+    "clear_indexeddb": "IndexedDB මකන්න",
+    "shortcuts": "කී පාරිභෝගික",
+    "shortcuts_desc": "බලශක්ති භාවිතා කරන්නන් සඳහා වේගවත් ප්‍රවේශ යතුරු.",
+    "shortcut_focus_search": "සොයන්නාගේ පෙළ කොටුවට අවධානය යොමු කරන්න",
+    "shortcut_close": "පැනලය වසා දැමීම / අවලංගු කිරීම",
+    "shortcut_navigate": "ප්‍රතිඵල නාවිකය",
+    "shortcut_open": "තෝරාගත් ප්‍රතිඵලය විවෘත කරන්න",
+    "shortcut_new_tab": "නව ටැබ් එකක විවෘත කරන්න",
+    "shortcut_switch_mode": "සොයන්නාගේ ආකාරය මාරු කරන්න",
+    "shortcut_help": "මෙම උදව් පෙන්වන්න",
+    "server": "සේවාදායකය",
+    "server_desc": "සේවාදායක වින්‍යාස සහ ජාල සැකසුම්.",
+    "bind_address": "බඳන ලිපිනය",
+    "port": "පොර්ට්",
+    "max_connections": "උපරිම සම්බන්ධතා",
+    "image_proxy": "පින්තූර ප්‍රොක්සි සක්‍රීය කරන්න",
+    "cache_backend": "කැෂේ පසුබැසීම",
+    "cache_dir": "කැෂේ ඩිරෙක්ටරිය",
+    "redis_url": "Redis URL",
+    "advanced": "උසස්",
+    "advanced_desc": "කැෂේ සහ කාලය අවසන් වීමේ සැකසුම්.",
+    "cache_ttl": "කැෂේ TTL (තත්පර)",
+    "cache_ttl_hint": "ප්‍රතිඵල කැෂේ කාලය (0 කැෂේ අක්‍රිය කරයි)",
+    "request_timeout": "ඇමතුම් කාලය අවසන් වේ (තත්පර)",
+    "request_timeout_hint": "එන්ජින් සදහා ජාල කාලය අවසන් වේ",
+    "save": "පREFERENCES සුරකින්න",
+    "saved": "සුරකින ලදී",
+    "saved_msg": "settings.yml වෙත ලියන ලදී සහ නව සොයීම් සඳහා යෙදුම් කළේය.",
+    "server_settings": "මෙම සැකසුම් සේවාදායකය පැවැත්ම කරයි",
+    "raw_config": "කොන්ෆිග් JSON",
+    "stats": "සංඛ්‍යානය",
+    "home": "මුල් පිටුව",
+    "logout": "ඉවත් වන්න",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "සාමාන්‍ය",
+    "academic": "අධ්‍යයන",
+    "writing": "ලියනවා",
+    "code": "කේතය"
+  },
+  "footer": {
+    "grounded_answers": "ඔබේ දේශීය මොඩලයෙන් පදනම් වූ පිළිතුරු — 200+ සොයන්නාගේ එන්ජින්, කිසිදු ප්‍රශ්න ලොග් කිරීමක් නැත.",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, සහ තවත් අධ්‍යයන කතාපත්‍ර.",
+    "news_digest": "සමාචාර සාරාංශය: කතාපත්‍ර පිටු ලබා ගන්න, Ollama හරහා සාරාංශ නැවත ලියන්න — විශාල රූප පමණක්, කිසිදු ෆැවිකොන් උසස් කිරීමක් නැත.",
+    "images": "Wikimedia Commons රූප සොයාගැනීම — පෞද්ගලිකත්වය සඳහා ප්‍රොක්සි කළ තොටුපොළ.",
+    "api_docs": "API ලේඛන",
+    "status": "තත්වය",
+    "version": "අංකය",
+    "engines_count": "232 එන්ජින්"
+  },
+  "examples": {
+    "try": "උදාහරණයක් උත්සාහ කරන්න",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "How does DNS work"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR review"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer survey"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI regulation"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "Korea tech"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "Climate policy"
+      }
+    ]
+  },
+  "interests": {
+    "title": "රුචි (ඔබට)",
+    "add_placeholder": "රුචියක් එක් කරන්න...",
+    "empty": "ඔබ සොයාගන්නා විට රුචි ස්වයංක්‍රීයව එක් වේ",
+    "remove": "ඉවත් කරන්න"
+  },
+  "factcheck": {
+    "title": "තාක්ෂණය පරීක්ෂා කිරීමේ ප්‍රතිඵල",
+    "checking": "විශ්ලේෂණය කරමින්...",
+    "analyzing": "අසත්‍යතා සඳහා මූලාශ්‍ර විශ්ලේෂණය කරමින්...",
+    "no_contradictions": "මූලාශ්‍ර වල අසත්‍යතා කිසිවක් සොයාගන්නා ලදි",
+    "found": "අසත්‍යතා සොයාගන්නා ලදි"
+  },
+  "foryou": {
+    "title": "ඔබට",
+    "based_on": "පදනම් වූ: {interests}",
+    "no_interests": "අපට ඕනෑම රුචියක් නැත. ඔබේ රුචි ගොඩනැගීමට සොයාගන්න!",
+    "loading": "අභිරුචි කළ ආහාරය ඉදිරියට යමින්..."
+  },
+  "common": {
+    "search": "සොයන්න",
+    "clear": "මකන්න",
+    "close": "වසා දැමීම",
+    "save": "සුරකින්න",
+    "cancel": "අවලංගු කරන්න",
+    "loading": "ඉදිරියට යමින්...",
+    "error": "දෝෂයක්",
+    "retry": "නැවත උත්සාහ කරන්න",
+    "more": "තවත්",
+    "less": "අඩු"
+  },
+  "trends": {
+    "title": "දැන් ප්‍රවණතා",
+    "loading": "ප්‍රවණතා ඉදිරියට යමින්...",
+    "error": "ප්‍රවණතා ලබාගැනීම අසාර්ථකයි",
+    "empty": "ප්‍රවණතා මාතෘකාවන් කිසිවක් නැත"
+  },
+  "onboarding": {
+    "welcome": "Metasearch වෙත සාදරයෙන් පිළිගනිමු",
+    "subtitle": "ඔබේ පෞද්ගලික, AI-සක්‍රීය සොයන්නා",
+    "private_search": "පෞද්ගලික සොයන්නා",
+    "private_search_desc": "කිසිදු ප්‍රශ්න ලොග් කිරීමක් නැත, කිසිදා",
+    "ai_answers": "AI පිළිතුරු",
+    "ai_answers_desc": "දේශීය AI ප්‍රතිඵල සාරාංශය කරයි",
+    "news_digest": "සමාචාර සාරාංශය",
+    "news_digest_desc": "විශ්ලේෂණය සමඟ සකස් කළ සමාචාර",
+    "local_first": "දේශීය-පළමු",
+    "local_first_desc": "ඔබේ දත්ත ඔබේ උපාංගයේ පවතී",
+    "get_started": "ආරම්භ කරන්න"
+  },
+  "feeds": {
+    "find": "ආහාර සොයාගන්න",
+    "subscribe": "අනුයුක්ත වන්න",
+    "unsubscribe": "අනුයුක්ත වීම අහෝසි කරන්න"
+  },
+  "errors": {
+    "load_trends": "ප්‍රවණතා ලබාගැනීම අසාර්ථකයි",
+    "load_feed": "අභිරුචි ආහාරය ලබාගැනීම අසාර්ථකයි",
+    "load_global": "ජාත්‍යන්තර ආහාරය ලබාගැනීම අසාර්ථකයි",
+    "translation": "පරිවර්තනය අසාර්ථකයි"
+  },
+  "compare": {
+    "title": "ප්‍රතිඵල සසඳන්න",
+    "button": "සසඳන්න",
+    "clear": "සියල්ල මකන්න",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

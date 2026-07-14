@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Klauskite internete, privaciai"
+  },
+  "nav": {
+    "ask": "Klauskite",
+    "discover": "Atraskite",
+    "history": "Istorija",
+    "options": "Parinktys",
+    "classic": "Klasikinis",
+    "stats": "Statistika",
+    "preferences": "Nustatymai"
+  },
+  "tabs": {
+    "general": "Bendra",
+    "images": "Vaizdai",
+    "videos": "Vaizdo įrašai",
+    "papers": "Dokumentai",
+    "news": "Naujienos",
+    "shopping": "Pirkimas"
+  },
+  "search": {
+    "placeholder": "Klauskite bet ko…",
+    "placeholder_news": "Įveskite naujienų temą, paspauskite Klauskite",
+    "placeholder_images": "Ieškoti vaizdų…",
+    "placeholder_papers": "Įveskite klausimą, paspauskite Klauskite",
+    "placeholder_general": "Įveskite klausimą ar temą, paspauskite Klauskite",
+    "placeholder_shopping": "Ieškoti produktų…",
+    "placeholder_videos": "Ieškoti vaizdo įrašų…",
+    "button": "Klauskite",
+    "button_search": "Ieškoti"
+  },
+  "status": {
+    "loading": "Kraunama…",
+    "loading_stories": "Kraunamos istorijos…",
+    "searching": "Ieškoma…",
+    "searching_web": "Ieškoma internete…",
+    "searching_images": "Ieškoma vaizdų…",
+    "searching_news": "Ieškoma naujienų šaltinių…",
+    "searching_papers": "Ieškoma akademinių šaltinių…",
+    "searching_shopping": "Ieškoma produktų…",
+    "searching_videos": "Ieškoma vaizdo įrašų…",
+    "search_complete": "Paieška baigta.",
+    "search_failed": "Paieška nepavyko.",
+    "answer_ready": "Atsakymas paruoštas.",
+    "fetching_article": "Gaunamas straipsnis…",
+    "fetching_publisher": "Gaunamas leidėjo straipsnis…",
+    "resolving_article": "Sprendžiamas straipsnis…",
+    "resolving_gn": "Sprendžiamas Google News nuoroda…",
+    "rewriting": "Perrašoma straipsnis…",
+    "rewriting_korean": "Perrašoma korėjiečių kalba…",
+    "preparing_rewrite": "Ruošiamas visiškas perrašymas…",
+    "extracted_rewriting": "Išgautas straipsnio tekstas — perrašoma…",
+    "viewing_prior": "Peržiūrima ankstesnė eilė — klauskite papildomai žemiau."
+  },
+  "error": {
+    "no_answer": "Nėra AI atsakymo — žemiau pateikiami paieškos rezultatai.",
+    "no_news": "Nėra rasta naujienų — pabandykite kitą užklausą.",
+    "no_stories": "Nėra rasta istorijų — pabandykite kitą užklausą.",
+    "no_stories_category": "Nėra rasta istorijų šiai kategorijai — pabandykite kitą piliulę.",
+    "rewrite_empty": "Straipsnio perrašymas grąžino tuščią tekstą.",
+    "rewrite_failed": "Nepavyko perrašyti straipsnio",
+    "load_news_failed": "Nepavyko įkelti naujienų — patikrinkite serverį.",
+    "model_not_found": "Modelis nerastas — paleiskite ollama pull savo sukonfigūruotam modeliui, arba pasirinkite kitą Parinktyse.",
+    "ollama_not_running": "Ollama neveikia — atsakymai bus tik paieškos. Pradėti: ollama serve",
+    "invalid_thread": "Neteisingas thread JSON.",
+    "enter_question": "Įveskite klausimą.",
+    "enter_search": "Įveskite paieškos terminą."
+  },
+  "article": {
+    "sources": "Šaltiniai",
+    "research_progress": "Tyrimo pažanga",
+    "thinking": "Galvojama",
+    "answer": "Atsakymas",
+    "key_points": "Pagrindiniai punktai",
+    "summary": "Santrauka",
+    "related_media": "Susijusi žiniasklaida",
+    "view_more": "Peržiūrėti {count} daugiau",
+    "back": "Atgal",
+    "read_original": "Skaityti originalą",
+    "related_image": "Susijęs vaizdas",
+    "related": "Susijęs"
+  },
+  "discover": {
+    "updated": "Atnaujinta {time}",
+    "scope": {
+      "all": "📰 Visi",
+      "local": "🏠 Vietiniai",
+      "world": "🌍 Pasaulis"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomika",
+      "sports": "Sportas",
+      "world": "Pasaulis",
+      "entertainment": "Pramogos",
+      "tech": "Technologijos ir mokslas",
+      "culture": "Kultūra",
+      "health": "Sveikata",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "technologijų mokslas",
+      "ai": "dirbtinis intelektas AI mašininis mokymasis",
+      "world": "pasaulio naujienos tarptautinės",
+      "politics": "politika vyriausybė rinkimai",
+      "business": "verslas ekonomika įmonės",
+      "finance": "finansai rinkos akcijos",
+      "health": "sveikata medicina gerovė",
+      "climate": "klimato kaita aplinka",
+      "sports": "sportas",
+      "entertainment": "pramogos įžymybės",
+      "art": "menas kultūra",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Atidaryti istoriją",
+    "close": "Uždaryti istoriją",
+    "imported": "Importuota {count}",
+    "export": "Eksportuoti JSON",
+    "import": "Importuoti JSON",
+    "clear": "Išvalyti istoriją",
+    "empty": "Jūsų klausimai pasirodo čia.",
+    "new_chat": "Naujas pokalbis"
+  },
+  "panel": {
+    "history": "Istorija",
+    "bookmarks": "Žymos",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Visos žymos",
+    "empty": "Žymėkite rezultatus, kad išsaugotumėte juos čia.",
+    "export": "Eksportuoti",
+    "clear_all": "Išvalyti viską",
+    "new_collection": "Nauja kolekcija"
+  },
+  "hero": {
+    "private": "Privatus",
+    "ai_powered": "AI-Palaikomas",
+    "local_first": "Vietinis pirmas"
+  },
+  "options": {
+    "model": "Modelis",
+    "deep_research": "Gilus tyrimas",
+    "focus": "Dėmesys",
+    "theme": "Tema",
+    "language": "Kalba",
+    "answer_language": "AI kalba",
+    "answer_auto": "Automatiškai",
+    "research": "Tyrimas",
+    "fact_check": "Faktų tikrinimas"
+  },
+  "preferences": {
+    "title": "Nustatymai",
+    "language": "Kalba",
+    "language_desc": "Pasirinkite pageidaujamą sąsajos kalbą",
+    "language_storage": "Sąsajos kalba saugoma jūsų naršyklėje.",
+    "branding": "Prekės ženklas",
+    "branding_desc": "Priklausomai nuo programos pavadinimo, logotipo ir favicon, rodomo UI.",
+    "app_name": "Programos pavadinimas",
+    "app_name_hint": "Pavadinimas, rodomas antraštėje ir puslapio pavadinimuose",
+    "logo_url": "Logotipo URL",
+    "logo_url_hint": "URL arba kelias į jūsų logotipo vaizdą (palikite tuščią, jei norite numatytojo)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL arba kelias į jūsų favicon (palikite tuščią, jei norite naršyklės numatytojo)",
+    "appearance": "Išvaizda",
+    "appearance_desc": "Priklausomai nuo vizualinio stiliaus ir išdėstymo.",
+    "theme": "Tema",
+    "font_size": "Šrifto dydis",
+    "results_layout": "Rezultatų išdėstymas",
+    "search": "Paieška",
+    "search_desc": "Numatytieji nustatymai taikomi visoms paieškoms.",
+    "ui_language": "UI kalba",
+    "ui_language_hint": "Sąsajos kalba (saugoma naršyklės localStorage)",
+    "interface_language": "Sąsajos kalba",
+    "stored_in_browser": "Saugojama naršyklėje (localStorage)",
+    "search_defaults": "Paieškos numatyti nustatymai",
+    "search_language": "Paieškos kalba",
+    "search_language_hint": "automatiškai = nustatyti iš užklausos (Hangul → ko-KR); arba visos, arba fiksuota lokalė, pvz., ko-KR",
+    "fallback_language": "Atsarginės kalbos kodas",
+    "fallback_language_hint": "Naudojama, kai automatinis nustatymas yra neaiškus",
+    "safe_search": "Saugus paieška",
+    "safe_off": "Išjungta",
+    "safe_moderate": "Vidutinė",
+    "safe_strict": "Griežta",
+    "results_per_engine": "Rezultatai per variklį",
+    "ai": "AI",
+    "ai_desc": "Konfigūruoti AI modelius atsakymų sintezei ir straipsnių perrašymui.",
+    "ai_provider": "Teikėjas",
+    "ai_provider_local": "Vietinis (Ollama)",
+    "ai_provider_custom": "Pritaikytas",
+    "ai_base_url": "API pagrindinis URL",
+    "ai_base_url_hint": "Vietinis: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API raktas",
+    "ai_api_key_hint": "Reikalingas debesų teikėjams (OpenAI, Anthropic ir kt.)",
+    "ai_model": "Modelis",
+    "ai_model_hint": "Chat/instruct modelis atsakymų sintezei ir užklausų plėtrai",
+    "ai_article_model": "Straipsnio modelis",
+    "ai_article_model_hint": "Modelis viso puslapio naujienų straipsnių perrašymams (numatyta pagrindiniam modeliui)",
+    "ai_timeout": "Laikas (sekundėmis)",
+    "ai_timeout_hint": "Per užklausą laikas modelio skambučiams",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Funkcijos",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Naujienos",
+    "news_desc": "Naujienų agregacija ir straipsnių nustatymai.",
+    "news_per_source": "Straipsniai per šaltinį",
+    "news_freshness": "Naujienų šviežumo pusperiodis (valandos)",
+    "news_freshness_weight": "Naujienų šviežumo svoris",
+    "news_dedup": "Dedup panašumo slenkstis",
+    "news_max_age": "Maksimalus amžius (dienos)",
+    "news_cache_ttl": "Cache TTL (sekundės)",
+    "news_enrich_max": "Maksimalus straipsnių skaičius, kuriuos reikia praturtinti",
+    "engines": "Paieškos varikliai",
+    "engines_desc": "Įjungti/išjungti variklius ir reguliuoti jų reitingo svorius. Didelis svoris = didesnis poveikis rezultatų tvarkai.",
+    "engine": "variklis",
+    "categories": "kategorijos",
+    "weight": "svoris",
+    "privacy": "Privatumas",
+    "privacy_desc": "Kontroliuoti, kaip tvarkomi jūsų duomenys.",
+    "proxy_images": "Proxy vaizdai",
+    "proxy_images_hint": "Maršrutuoti vaizdus per serverį, kad paslėptumėte savo IP nuo trečiųjų šalių",
+    "remove_trackers": "Pašalinti sekimo parametrus",
+    "remove_trackers_hint": "Išvalyti UTM ir kitus sekimo parametrus iš URL",
+    "save_history": "Išsaugoti paieškos istoriją",
+    "save_history_hint": "Saugo paieškas lokaliai naršyklėje (niekada nesiunčiama į serverį)",
+    "clear_data": "Išvalyti duomenis",
+    "clear_localstorage": "Išvalyti vietinę saugyklą",
+    "clear_indexeddb": "Išvalyti IndexedDB",
+    "shortcuts": "Klaviatūros spartieji klavišai",
+    "shortcuts_desc": "Greito prieigos klavišai galingiems vartotojams.",
+    "shortcut_focus_search": "Sutelkti dėmesį į paieškos laukelį",
+    "shortcut_close": "Uždaryti panelę / Atšaukti",
+    "shortcut_navigate": "Naršyti rezultatus",
+    "shortcut_open": "Atidaryti pasirinktą rezultatą",
+    "shortcut_new_tab": "Atidaryti naujame skirtuke",
+    "shortcut_switch_mode": "Perjungti paieškos režimą",
+    "shortcut_help": "Rodyti šią pagalbą",
+    "server": "Serveris",
+    "server_desc": "Serverio konfigūracija ir tinklo nustatymai.",
+    "bind_address": "Pririšti adresą",
+    "port": "Prievadas",
+    "max_connections": "Maksimalus prisijungimų skaičius",
+    "image_proxy": "Įjungti vaizdų proxy",
+    "cache_backend": "Cache backend",
+    "cache_dir": "Cache katalogas",
+    "redis_url": "Redis URL",
+    "advanced": "Išplėstinė",
+    "advanced_desc": "Cache ir laiko nustatymai.",
+    "cache_ttl": "Cache TTL (sekundės)",
+    "cache_ttl_hint": "Rezultatų cache galiojimo laikas (0 išjungia cache)",
+    "request_timeout": "Užklausos laiko limitas (sekundės)",
+    "request_timeout_hint": "Per variklį tinklo laiko limitas",
+    "save": "Išsaugoti nustatymus",
+    "saved": "Išsaugota",
+    "saved_msg": "įrašyta į settings.yml ir taikoma naujoms paieškoms.",
+    "server_settings": "Šie nustatymai išlieka serverio pusėje",
+    "raw_config": "Konfigūracijos JSON",
+    "stats": "Statistika",
+    "home": "Pradžia",
+    "logout": "Atsijungti",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Bendra",
+    "academic": "Akademinė",
+    "writing": "Rašymas",
+    "code": "Kodas"
+  },
+  "footer": {
+    "grounded_answers": "Pagrįsti atsakymai iš jūsų vietinio modelio — 200+ paieškos variklių, nulis užklausų registravimo.",
+    "academic_papers": "Akademiniai straipsniai iš arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ ir kt.",
+    "news_digest": "Naujienų santrauka: gauna straipsnių puslapius, perrašo santraukas lokaliai per Ollama — dideli vaizdai tik, be favicon didinimo.",
+    "images": "Wikimedia Commons vaizdų paieška — miniatiūros proxy už privatumo.",
+    "api_docs": "API Dokumentai",
+    "status": "Statusas",
+    "version": "Versija",
+    "engines_count": "232 varikliai"
+  },
+  "examples": {
+    "try": "Išbandykite pavyzdį",
+    "general": [
+      {
+        "q": "Rust async programavimo geriausios praktikos",
+        "label": "Rust async"
+      },
+      {
+        "q": "Naujausi LLM tyrimų straipsniai 2025",
+        "label": "Naujausi LLM straipsniai"
+      },
+      {
+        "q": "Kaip veikia DNS",
+        "label": "Kaip veikia DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Naujausi LLM tyrimų straipsniai 2025",
+        "label": "Naujausi LLM straipsniai"
+      },
+      {
+        "q": "CRISPR genų redagavimo apžvalgos straipsniai",
+        "label": "CRISPR apžvalga"
+      },
+      {
+        "q": "transformer architektūros apžvalga",
+        "label": "Transformer apžvalga"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI reguliavimas",
+        "label": "AI reguliavimas"
+      },
+      {
+        "q": "Korėjos technologijų naujienos",
+        "label": "Korėjos technologijos"
+      },
+      {
+        "q": "klimato politikos atnaujinimai",
+        "label": "Klimato politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesai (Jums)",
+    "add_placeholder": "Pridėti interesą...",
+    "empty": "Interesai automatiškai pridedami, kai ieškote",
+    "remove": "Pašalinti"
+  },
+  "factcheck": {
+    "title": "Faktų tikrinimo rezultatai",
+    "checking": "Analizuojama...",
+    "analyzing": "Analizuojami šaltiniai dėl prieštaravimų...",
+    "no_contradictions": "Šaltiniuose nerasta prieštaravimų",
+    "found": "Rasta prieštaravimų"
+  },
+  "foryou": {
+    "title": "Jums",
+    "based_on": "Remiasi: {interests}",
+    "no_interests": "Dar nėra interesų. Ieškokite, kad sukurtumėte savo interesus!",
+    "loading": "Kraunama personalizuota srautas..."
+  },
+  "common": {
+    "search": "Paieška",
+    "clear": "Išvalyti",
+    "close": "Uždaryti",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "loading": "Kraunama...",
+    "error": "Klaida",
+    "retry": "Pakartoti",
+    "more": "Daugiau",
+    "less": "Mažiau"
+  },
+  "trends": {
+    "title": "Dabar populiaru",
+    "loading": "Kraunamos tendencijos...",
+    "error": "Nepavyko įkelti tendencijų",
+    "empty": "Nėra populiarių temų"
+  },
+  "onboarding": {
+    "welcome": "Sveiki atvykę į Metapaiešką",
+    "subtitle": "Jūsų privatus, AI-palaikomas paieškos variklis",
+    "private_search": "Privati paieška",
+    "private_search_desc": "Niekada neregistruojame užklausų",
+    "ai_answers": "AI atsakymai",
+    "ai_answers_desc": "Vietinis AI apibendrina rezultatus",
+    "news_digest": "Naujienų santrauka",
+    "news_digest_desc": "Kuruotos naujienos su analize",
+    "local_first": "Vietinis pirmas",
+    "local_first_desc": "Jūsų duomenys lieka jūsų įrenginyje",
+    "get_started": "Pradėti"
+  },
+  "feeds": {
+    "find": "Rasti srautus",
+    "subscribe": "Prenumeruoti",
+    "unsubscribe": "Atsisakyti prenumeratos"
+  },
+  "errors": {
+    "load_trends": "Nepavyko įkelti tendencijų",
+    "load_feed": "Nepavyko įkelti personalizuoto srauto",
+    "load_global": "Nepavyko įkelti globalaus srauto",
+    "translation": "Vertimas nepavyko"
+  },
+  "compare": {
+    "title": "Palyginti rezultatus",
+    "button": "Palyginti",
+    "clear": "Išvalyti viską",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

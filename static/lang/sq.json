@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Pyesni webin, në mënyrë private"
+  },
+  "nav": {
+    "ask": "Pyesni",
+    "discover": "Zbuloni",
+    "history": "Historia",
+    "options": "Opsionet",
+    "classic": "Klasik",
+    "stats": "Statistika",
+    "preferences": "Preferencat"
+  },
+  "tabs": {
+    "general": "Gjenerale",
+    "images": "Imazhe",
+    "videos": "Video",
+    "papers": "Dokumente",
+    "news": "Lajme",
+    "shopping": "Blerje"
+  },
+  "search": {
+    "placeholder": "Pyesni çdo gjë…",
+    "placeholder_news": "Shkruani një temë lajmi, shtypni Pyesni",
+    "placeholder_images": "Kërkoni imazhe…",
+    "placeholder_papers": "Shkruani një pyetje, shtypni Pyesni",
+    "placeholder_general": "Shkruani një pyetje ose temë, shtypni Pyesni",
+    "placeholder_shopping": "Kërkoni produkte…",
+    "placeholder_videos": "Kërkoni video…",
+    "button": "Pyesni",
+    "button_search": "Kërkoni"
+  },
+  "status": {
+    "loading": "Duke ngarkuar…",
+    "loading_stories": "Duke ngarkuar histori…",
+    "searching": "Duke kërkuar…",
+    "searching_web": "Duke kërkuar në web…",
+    "searching_images": "Duke kërkuar imazhe…",
+    "searching_news": "Duke kërkuar burime lajmesh…",
+    "searching_papers": "Duke kërkuar burime akademike…",
+    "searching_shopping": "Duke kërkuar produkte…",
+    "searching_videos": "Duke kërkuar video…",
+    "search_complete": "Kërkimi përfundoi.",
+    "search_failed": "Kërkimi dështoi.",
+    "answer_ready": "Përgjigjja është gati.",
+    "fetching_article": "Duke marrë artikullin…",
+    "fetching_publisher": "Duke marrë artikullin e botuesit…",
+    "resolving_article": "Duke zgjidhur artikullin…",
+    "resolving_gn": "Duke zgjidhur lidhjen e Google News…",
+    "rewriting": "Duke rishkruar artikullin…",
+    "rewriting_korean": "Duke rishkruar në koreane…",
+    "preparing_rewrite": "Duke përgatitur rishkrimin e plotë…",
+    "extracted_rewriting": "Teksti i artikullit të nxjerrë — duke rishkruar…",
+    "viewing_prior": "Duke parë kthesën e mëparshme — pyesni një ndihmë më poshtë."
+  },
+  "error": {
+    "no_answer": "Nuk u gjenerua përgjigje nga AI — rezultatet e kërkimit më poshtë.",
+    "no_news": "Nuk u gjetën lajme — provoni një pyetje tjetër.",
+    "no_stories": "Nuk u gjetën histori — provoni një pyetje tjetër.",
+    "no_stories_category": "Nuk u gjetën histori për këtë kategori — provoni një pill tjetër.",
+    "rewrite_empty": "Rishkrimi i artikullit ktheu tekst të zbrazët.",
+    "rewrite_failed": "Nuk mund të rishkruhej artikulli",
+    "load_news_failed": "Nuk mund të ngarkoheshin lajmet — kontrolloni serverin.",
+    "model_not_found": "Modeli nuk u gjet — ekzekutoni ollama pull për modelin tuaj të konfiguruar, ose zgjidhni një tjetër në Opsione.",
+    "ollama_not_running": "Ollama nuk po funksionon — përgjigjet do të jenë vetëm për kërkimin. Filloni: ollama serve",
+    "invalid_thread": "JSON i pavlefshëm për temën.",
+    "enter_question": "Shkruani një pyetje.",
+    "enter_search": "Shkruani një term kërkimi."
+  },
+  "article": {
+    "sources": "Burimet",
+    "research_progress": "Progresi i Kërkimeve",
+    "thinking": "Mendimi",
+    "answer": "Përgjigjja",
+    "key_points": "Pikat Kryesore",
+    "summary": "Përmbledhja",
+    "related_media": "Mediat e lidhura",
+    "view_more": "Shihni {count} më shumë",
+    "back": "Kthehu",
+    "read_original": "Lexoni origjinalin",
+    "related_image": "Imazhi i lidhur",
+    "related": "Të lidhura"
+  },
+  "discover": {
+    "updated": "E përditësuar {time}",
+    "scope": {
+      "all": "📰 Të gjitha",
+      "local": "🏠 Lokale",
+      "world": "🌍 Botë"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomia",
+      "sports": "Sportet",
+      "world": "Bota",
+      "entertainment": "Argëtimi",
+      "tech": "Teknologji & Shkencë",
+      "culture": "Kultura",
+      "health": "Shëndeti",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "shkenca e teknologjisë",
+      "ai": "inteligjenca artificiale AI mësimi i makinave",
+      "world": "lajme botërore ndërkombëtare",
+      "politics": "politika qeveri zgjedhje",
+      "business": "biznesi ekonomia kompanitë",
+      "finance": "financat tregjet aksionet",
+      "health": "shëndeti mjekësia mirëqenia",
+      "climate": "ndryshimi i klimës mjedisi",
+      "sports": "sportet",
+      "entertainment": "argëtimi celebrity",
+      "art": "art kultura",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Hap historinë",
+    "close": "Mbyll historinë",
+    "imported": "E importuar {count}",
+    "export": "Eksporto JSON",
+    "import": "Importo JSON",
+    "clear": "Pastro historinë",
+    "empty": "Pyetjet tuaja shfaqen këtu.",
+    "new_chat": "Bisedë e re"
+  },
+  "panel": {
+    "history": "Historia",
+    "bookmarks": "Shënimet e preferuara",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Të gjitha Shënimet e Preferuara",
+    "empty": "Shënoni rezultatet për t'i ruajtur këtu.",
+    "export": "Eksporto",
+    "clear_all": "Pastro të gjitha",
+    "new_collection": "Koleksion i ri"
+  },
+  "hero": {
+    "private": "Private",
+    "ai_powered": "Me energji AI",
+    "local_first": "Lokale e Para"
+  },
+  "options": {
+    "model": "Modeli",
+    "deep_research": "Kërkim i thellë",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Gjuha",
+    "answer_language": "Gjuha e AI",
+    "answer_auto": "Automatik",
+    "research": "Kërkimi",
+    "fact_check": "Kontrolli i faktit"
+  },
+  "preferences": {
+    "title": "Preferencat",
+    "language": "Gjuha",
+    "language_desc": "Zgjidhni gjuhën e preferuar të ndërfaqes",
+    "language_storage": "Gjuha e ndërfaqes ruhet në shfletuesin tuaj.",
+    "branding": "Markimi",
+    "branding_desc": "Personalizoni emrin e aplikacionit, logon dhe favicon-in e shfaqur në UI.",
+    "app_name": "Emri i Aplikacionit",
+    "app_name_hint": "Emri i shfaqur në titujt e header-it dhe faqeve",
+    "logo_url": "URL e logos",
+    "logo_url_hint": "URL ose rruga për imazhin tuaj të logos (lini bosh për parazgjedhjen)",
+    "favicon_url": "URL e favicon-it",
+    "favicon_url_hint": "URL ose rruga për favicon-in tuaj (lini bosh për parazgjedhjen e shfletuesit)",
+    "appearance": "Pamja",
+    "appearance_desc": "Personalizoni stilin vizual dhe skemën.",
+    "theme": "Tema",
+    "font_size": "Madhësia e Shkronjave",
+    "results_layout": "Skema e Rezultateve",
+    "search": "Kërko",
+    "search_desc": "Cilësimet e parazgjedhura të aplikuara për të gjitha kërkimet.",
+    "ui_language": "Gjuha e UI",
+    "ui_language_hint": "Gjuha e ndërfaqes (ruhet në localStorage të shfletuesit)",
+    "interface_language": "Gjuha e ndërfaqes",
+    "stored_in_browser": "Ruhet në shfletues (localStorage)",
+    "search_defaults": "Parazgjedhjet e kërkimit",
+    "search_language": "Gjuha e Kërkimit",
+    "search_language_hint": "automatik = zbulo nga pyetja (Hangul → ko-KR); ose të gjitha, ose një lokal të fiksuar si ko-KR",
+    "fallback_language": "Kodi i Gjuha e Zëvendësimit",
+    "fallback_language_hint": "Përdoret kur zbulesa automatike është e paqartë",
+    "safe_search": "Kërkimi i Sigurt",
+    "safe_off": "Mbyllur",
+    "safe_moderate": "Moderat",
+    "safe_strict": "Të Rreptë",
+    "results_per_engine": "Rezultatet për Motorin",
+    "ai": "AI",
+    "ai_desc": "Konfiguroni modelet AI për sintezën e përgjigjeve dhe rishkrimin e artikujve.",
+    "ai_provider": "Ofruesi",
+    "ai_provider_local": "Lokal (Ollama)",
+    "ai_provider_custom": "Të Personalizuar",
+    "ai_base_url": "URL e Bazës API",
+    "ai_base_url_hint": "Lokal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "Çelësi API",
+    "ai_api_key_hint": "I nevojshëm për ofruesit e cloud (OpenAI, Anthropic, etj.)",
+    "ai_model": "Modeli",
+    "ai_model_hint": "Modeli për bisedë/instruksion për sintezën e përgjigjeve dhe zgjerimin e pyetjeve",
+    "ai_article_model": "Modeli i Artikujve",
+    "ai_article_model_hint": "Modeli për rishkrimet e artikujve të lajmeve në faqe të plota (parazgjedhja është modeli kryesor)",
+    "ai_timeout": "Koha e skadimit (sekonda)",
+    "ai_timeout_hint": "Koha e skadimit për thirrjet e modelit për çdo kërkesë",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Karakteristikat",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Lajme",
+    "news_desc": "Agregimi i lajmeve dhe cilësimet e artikujve.",
+    "news_per_source": "Artikuj për burim",
+    "news_freshness": "Për freskinë gjysmë-jete (orë)",
+    "news_freshness_weight": "Pesha e freskisë",
+    "news_dedup": "Pra, prag i ngjashmërisë",
+    "news_max_age": "Mosha maksimale (ditë)",
+    "news_cache_ttl": "Cache TTL (sekonda)",
+    "news_enrich_max": "Artikuj maksimale për të pasuruar",
+    "engines": "Motorrat e Kërkimit",
+    "engines_desc": "Aktivizoni/çaktivizoni motorët dhe rregulloni peshat e renditjes së tyre. Pesha më e lartë = më shumë ndikim në rendin e rezultateve.",
+    "engine": "motori",
+    "categories": "kategoritë",
+    "weight": "pesha",
+    "privacy": "Privatësia",
+    "privacy_desc": "Kontrolloni si trajtohet të dhënat tuaja.",
+    "proxy_images": "Imazhet e Proxyt",
+    "proxy_images_hint": "Rrjedhni imazhet përmes serverit për të fshehur IP-në tuaj nga palët e treta",
+    "remove_trackers": "Hiqni parametrat e gjurmimit",
+    "remove_trackers_hint": "Hiqni UTM dhe parametrat e tjerë të gjurmimit nga URL-të",
+    "save_history": "Ruani historinë e kërkimeve",
+    "save_history_hint": "Ruani kërkimet lokal në shfletues (kurrë nuk dërgohen në server)",
+    "clear_data": "Pastro të Dhënat",
+    "clear_localstorage": "Pastro Ruajtjen Lokale",
+    "clear_indexeddb": "Pastro IndexedDB",
+    "shortcuts": "Shkurtore të Tastierës",
+    "shortcuts_desc": "Çelësat e shpejtë për përdoruesit e fuqishëm.",
+    "shortcut_focus_search": "Fokusoni kutinë e kërkimit",
+    "shortcut_close": "Mbyll panelin / Anulo",
+    "shortcut_navigate": "Navigoni rezultatet",
+    "shortcut_open": "Hapni rezultatin e zgjedhur",
+    "shortcut_new_tab": "Hapni në një tab të ri",
+    "shortcut_switch_mode": "Ndryshoni modin e kërkimit",
+    "shortcut_help": "Shfaqni këtë ndihmë",
+    "server": "Serveri",
+    "server_desc": "Konfigurimi i serverit dhe cilësimet e rrjetit.",
+    "bind_address": "Adresa e lidhjes",
+    "port": "Porti",
+    "max_connections": "Koneksionet Maksimale",
+    "image_proxy": "Aktivizo Proxyn e Imazheve",
+    "cache_backend": "Backend i Cache",
+    "cache_dir": "Katalogu i Cache",
+    "redis_url": "URL e Redis",
+    "advanced": "Avancuar",
+    "advanced_desc": "Cilësimet e cache dhe koha e skadimit.",
+    "cache_ttl": "Cache TTL (sekonda)",
+    "cache_ttl_hint": "Koha e jetës së cache të rezultateve (0 çaktivizon caching)",
+    "request_timeout": "Koha e skadimit të kërkesës (sekonda)",
+    "request_timeout_hint": "Koha e skadimit të rrjetit për çdo motor",
+    "save": "Ruaj Preferencat",
+    "saved": "Ruajtur",
+    "saved_msg": "shkruar në settings.yml dhe aplikuar për kërkimet e reja.",
+    "server_settings": "Këto cilësime ruhen në anën e serverit për",
+    "raw_config": "Konfigurimi JSON",
+    "stats": "Statistika",
+    "home": "Shtëpia",
+    "logout": "Shkyçuni",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Gjenerale",
+    "academic": "Akademike",
+    "writing": "Shkrim",
+    "code": "Kod"
+  },
+  "footer": {
+    "grounded_answers": "Përgjigje të bazuara nga modeli juaj lokal — 200+ motorë kërkimi, zero regjistrim pyetjesh.",
+    "academic_papers": "Dokumente akademike nga arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, dhe më shumë.",
+    "news_digest": "Përmbledhje lajmesh: merr faqet e artikujve, rishkruan përmbledhjet lokalisht përmes Ollama — imazhe të mëdha vetëm, pa rritje të favicon.",
+    "images": "Kërkimi i imazheve Wikimedia Commons — miniatura të proxyt për privatësi.",
+    "api_docs": "Dokumentet API",
+    "status": "Statusi",
+    "version": "Versioni",
+    "engines_count": "232 motorë"
+  },
+  "examples": {
+    "try": "Provo një shembull",
+    "general": [
+      {
+        "q": "Praktikat më të mira të programimit asinkron në Rust",
+        "label": "Rust asinkron"
+      },
+      {
+        "q": "Dokumentet më të fundit të kërkimeve LLM 2025",
+        "label": "Dokumentet më të fundit LLM"
+      },
+      {
+        "q": "Si funksionon DNS",
+        "label": "Si funksionon DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Dokumentet më të fundit të kërkimeve LLM 2025",
+        "label": "Dokumentet më të fundit LLM"
+      },
+      {
+        "q": "Dokumentet e rishikimit të redaktimit të gjenomit CRISPR",
+        "label": "Rishikimi CRISPR"
+      },
+      {
+        "q": "anketa mbi arkitekturën transformuese",
+        "label": "Anketa mbi transformatorin"
+      }
+    ],
+    "news": [
+      {
+        "q": "Rregullimi i AI",
+        "label": "Rregullimi i AI"
+      },
+      {
+        "q": "Lajmet teknologjike të Koresë",
+        "label": "Tehnologjia e Koresë"
+      },
+      {
+        "q": "përditësimet e politikës klimatike",
+        "label": "Politika klimatike"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interesat (Për Ju)",
+    "add_placeholder": "Shtoni interes...",
+    "empty": "Interesat shtohen automatikisht ndërsa kërkoni",
+    "remove": "Hiqni"
+  },
+  "factcheck": {
+    "title": "Rezultatet e Kontrollit të Faktit",
+    "checking": "Duke analizuar...",
+    "analyzing": "Duke analizuar burimet për kontradikta...",
+    "no_contradictions": "Nuk u gjetën kontradikta në burime",
+    "found": "Kontradikta u gjetën"
+  },
+  "foryou": {
+    "title": "Për Ju",
+    "based_on": "Bazuar në: {interests}",
+    "no_interests": "Nuk ka interesa ende. Kërkoni për të ndërtuar interesat tuaja!",
+    "loading": "Duke ngarkuar feed-in personalizuar..."
+  },
+  "common": {
+    "search": "Kërko",
+    "clear": "Pastro",
+    "close": "Mbyll",
+    "save": "Ruaj",
+    "cancel": "Anulo",
+    "loading": "Duke ngarkuar...",
+    "error": "Gabim",
+    "retry": "Provo përsëri",
+    "more": "Më shumë",
+    "less": "Më pak"
+  },
+  "trends": {
+    "title": "Tendencat Tani",
+    "loading": "Duke ngarkuar tendencat...",
+    "error": "Dështoi të ngarkohej tendencat",
+    "empty": "Nuk ka tema të tendencave"
+  },
+  "onboarding": {
+    "welcome": "Mirë se vini në Metasearch",
+    "subtitle": "Motori juaj i kërkimit privat, i fuqizuar nga AI",
+    "private_search": "Kërkimi Privat",
+    "private_search_desc": "Nuk ka regjistrim pyetjesh, kurrë",
+    "ai_answers": "Përgjigjet AI",
+    "ai_answers_desc": "AI lokale përmbledh rezultate",
+    "news_digest": "Përmbledhje lajmesh",
+    "news_digest_desc": "Lajme të kuruara me analizë",
+    "local_first": "Lokale e Para",
+    "local_first_desc": "Të dhënat tuaja qëndrojnë në pajisjen tuaj",
+    "get_started": "Filloni"
+  },
+  "feeds": {
+    "find": "Gjeni Feed-e",
+    "subscribe": "Abonohuni",
+    "unsubscribe": "Anulo abonimin"
+  },
+  "errors": {
+    "load_trends": "Dështoi të ngarkohej tendencat",
+    "load_feed": "Dështoi të ngarkohej feed-i personalizuar",
+    "load_global": "Dështoi të ngarkohej feed-i global",
+    "translation": "Përkthimi dështoi"
+  },
+  "compare": {
+    "title": "Krahasoni Rezultatet",
+    "button": "Krahasoni",
+    "clear": "Pastro Të Gjitha",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

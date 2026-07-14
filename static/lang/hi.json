@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "वेब से पूछें, निजी तौर पर"
+  },
+  "nav": {
+    "ask": "पूछें",
+    "discover": "खोजें",
+    "history": "इतिहास",
+    "options": "विकल्प",
+    "classic": "क्लासिक",
+    "stats": "आंकड़े",
+    "preferences": "प्राथमिकताएँ"
+  },
+  "tabs": {
+    "general": "सामान्य",
+    "images": "छवियाँ",
+    "videos": "वीडियो",
+    "papers": "पत्र",
+    "news": "समाचार",
+    "shopping": "खरीदारी"
+  },
+  "search": {
+    "placeholder": "कुछ पूछें…",
+    "placeholder_news": "एक समाचार विषय दर्ज करें, पूछें दबाएँ",
+    "placeholder_images": "छवियाँ खोजें…",
+    "placeholder_papers": "एक प्रश्न दर्ज करें, पूछें दबाएँ",
+    "placeholder_general": "एक प्रश्न या विषय दर्ज करें, पूछें दबाएँ",
+    "placeholder_shopping": "उत्पाद खोजें…",
+    "placeholder_videos": "वीडियो खोजें…",
+    "button": "पूछें",
+    "button_search": "खोजें"
+  },
+  "status": {
+    "loading": "लोड हो रहा है…",
+    "loading_stories": "कहानियाँ लोड हो रही हैं…",
+    "searching": "खोज रहा है…",
+    "searching_web": "वेब की खोज कर रहा है…",
+    "searching_images": "छवियों की खोज कर रहा है…",
+    "searching_news": "समाचार स्रोतों की खोज कर रहा है…",
+    "searching_papers": "शैक्षणिक स्रोतों की खोज कर रहा है…",
+    "searching_shopping": "उत्पादों की खोज कर रहा है…",
+    "searching_videos": "वीडियो की खोज कर रहा है…",
+    "search_complete": "खोज पूर्ण।",
+    "search_failed": "खोज विफल।",
+    "answer_ready": "उत्तर तैयार।",
+    "fetching_article": "लेख लोड कर रहा है…",
+    "fetching_publisher": "प्रकाशक लेख लोड कर रहा है…",
+    "resolving_article": "लेख को हल कर रहा है…",
+    "resolving_gn": "गूगल समाचार लिंक को हल कर रहा है…",
+    "rewriting": "लेख को फिर से लिख रहा है…",
+    "rewriting_korean": "कोरियन में फिर से लिख रहा है…",
+    "preparing_rewrite": "पूर्ण पुनर्लेखन की तैयारी कर रहा है…",
+    "extracted_rewriting": "निकाला गया लेख पाठ — फिर से लिखना…",
+    "viewing_prior": "पिछले मोड़ को देखना — नीचे एक फॉलो-अप पूछें।"
+  },
+  "error": {
+    "no_answer": "कोई AI उत्तर उत्पन्न नहीं हुआ — नीचे खोज परिणाम।",
+    "no_news": "कोई समाचार नहीं मिला — एक और प्रश्न आजमाएँ।",
+    "no_stories": "कोई कहानियाँ नहीं मिलीं — एक और प्रश्न आजमाएँ।",
+    "no_stories_category": "इस श्रेणी के लिए कोई कहानियाँ नहीं मिलीं — एक और पिल आजमाएँ।",
+    "rewrite_empty": "लेख पुनर्लेखन ने खाली पाठ लौटाया।",
+    "rewrite_failed": "लेख को फिर से लिखने में असफल।",
+    "load_news_failed": "समाचार लोड करने में असफल — सर्वर की जाँच करें।",
+    "model_not_found": "मॉडल नहीं मिला — आपके कॉन्फ़िगर किए गए मॉडल के लिए ollama pull चलाएँ, या विकल्पों में से कोई और चुनें।",
+    "ollama_not_running": "Ollama चल नहीं रहा है — उत्तर केवल खोज होंगे। प्रारंभ करें: ollama serve",
+    "invalid_thread": "अमान्य थ्रेड JSON।",
+    "enter_question": "एक प्रश्न दर्ज करें।",
+    "enter_search": "एक खोज शब्द दर्ज करें।"
+  },
+  "article": {
+    "sources": "स्रोत",
+    "research_progress": "अनुसंधान प्रगति",
+    "thinking": "सोच रहा है",
+    "answer": "उत्तर",
+    "key_points": "मुख्य बिंदु",
+    "summary": "सारांश",
+    "related_media": "संबंधित मीडिया",
+    "view_more": "{count} और देखें",
+    "back": "वापस",
+    "read_original": "मूल पढ़ें",
+    "related_image": "संबंधित छवि",
+    "related": "संबंधित"
+  },
+  "discover": {
+    "updated": "अपडेट किया गया {time}",
+    "scope": {
+      "all": "📰 सभी",
+      "local": "🏠 स्थानीय",
+      "world": "🌍 विश्व"
+    },
+    "categories": {
+      "politics": "राजनीति",
+      "economy": "अर्थव्यवस्था",
+      "sports": "खेल",
+      "world": "विश्व",
+      "entertainment": "मनोरंजन",
+      "tech": "तकनीक और विज्ञान",
+      "culture": "संस्कृति",
+      "health": "स्वास्थ्य",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "तकनीकी विज्ञान",
+      "ai": "कृत्रिम बुद्धिमत्ता AI मशीन लर्निंग",
+      "world": "विश्व समाचार अंतरराष्ट्रीय",
+      "politics": "राजनीति सरकार चुनाव",
+      "business": "व्यापार अर्थव्यवस्था कंपनियाँ",
+      "finance": "वित्त बाजार स्टॉक",
+      "health": "स्वास्थ्य चिकित्सा कल्याण",
+      "climate": "जलवायु परिवर्तन पर्यावरण",
+      "sports": "खेल",
+      "entertainment": "मनोरंजन सेलिब्रिटी",
+      "art": "कला संस्कृति",
+      "top": "शीर्ष समाचार सुर्खियाँ"
+    }
+  },
+  "history": {
+    "open": "इतिहास खोलें",
+    "close": "इतिहास बंद करें",
+    "imported": "आयातित {count}",
+    "export": "JSON निर्यात करें",
+    "import": "JSON आयात करें",
+    "clear": "इतिहास साफ करें",
+    "empty": "आपके प्रश्न यहाँ दिखाई देते हैं।",
+    "new_chat": "नई चैट"
+  },
+  "panel": {
+    "history": "इतिहास",
+    "bookmarks": "बुकमार्क",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "सभी बुकमार्क",
+    "empty": "बुकमार्क परिणामों को यहाँ सहेजें।",
+    "export": "निर्यात करें",
+    "clear_all": "सभी साफ करें",
+    "new_collection": "नई संग्रह"
+  },
+  "hero": {
+    "private": "निजी",
+    "ai_powered": "AI-संचालित",
+    "local_first": "स्थानीय-प्रथम"
+  },
+  "options": {
+    "model": "मॉडल",
+    "deep_research": "गहन अनुसंधान",
+    "focus": "फोकस",
+    "theme": "थीम",
+    "language": "भाषा",
+    "answer_language": "AI भाषा",
+    "answer_auto": "स्वचालित",
+    "research": "अनुसंधान",
+    "fact_check": "तथ्य-जांच"
+  },
+  "preferences": {
+    "title": "प्राथमिकताएँ",
+    "language": "भाषा",
+    "language_desc": "अपनी पसंदीदा इंटरफ़ेस भाषा चुनें",
+    "language_storage": "इंटरफ़ेस भाषा आपके ब्राउज़र में संग्रहीत है।",
+    "branding": "ब्रांडिंग",
+    "branding_desc": "UI में प्रदर्शित एप्लिकेशन नाम, लोगो और फ़ेविकॉन को अनुकूलित करें।",
+    "app_name": "एप्लिकेशन नाम",
+    "app_name_hint": "हेडर और पृष्ठ शीर्षकों में प्रदर्शित नाम",
+    "logo_url": "लोगो URL",
+    "logo_url_hint": "आपकी लोगो छवि के लिए URL या पथ (डिफ़ॉल्ट के लिए खाली छोड़ें)",
+    "favicon_url": "फ़ेविकॉन URL",
+    "favicon_url_hint": "आपके फ़ेविकॉन के लिए URL या पथ (ब्राउज़र डिफ़ॉल्ट के लिए खाली छोड़ें)",
+    "appearance": "दृश्य",
+    "appearance_desc": "दृश्य शैली और लेआउट को अनुकूलित करें।",
+    "theme": "थीम",
+    "font_size": "फॉन्ट आकार",
+    "results_layout": "परिणाम लेआउट",
+    "search": "खोजें",
+    "search_desc": "सभी खोजों पर लागू होने वाले डिफ़ॉल्ट सेटिंग्स।",
+    "ui_language": "UI भाषा",
+    "ui_language_hint": "इंटरफेस भाषा (ब्राउज़र localStorage में संग्रहीत)",
+    "interface_language": "इंटरफेस भाषा",
+    "stored_in_browser": "ब्राउज़र में संग्रहीत (localStorage)",
+    "search_defaults": "खोज डिफ़ॉल्ट",
+    "search_language": "खोज भाषा",
+    "search_language_hint": "स्वचालित = प्रश्न से पहचानें (हंगुल → ko-KR); या सभी, या एक निश्चित स्थान जैसे ko-KR",
+    "fallback_language": "फॉलबैक भाषा कोड",
+    "fallback_language_hint": "जब स्वचालित पहचान निष्कर्षहीन हो तो उपयोग किया जाता है",
+    "safe_search": "सुरक्षित खोज",
+    "safe_off": "बंद",
+    "safe_moderate": "मध्यम",
+    "safe_strict": "कठोर",
+    "results_per_engine": "प्रत्येक इंजन के लिए परिणाम",
+    "ai": "AI",
+    "ai_desc": "उत्तर संश्लेषण और लेख पुनर्लेखन के लिए AI मॉडल कॉन्फ़िगर करें।",
+    "ai_provider": "प्रदाता",
+    "ai_provider_local": "स्थानीय (Ollama)",
+    "ai_provider_custom": "कस्टम",
+    "ai_base_url": "API बेस URL",
+    "ai_base_url_hint": "स्थानीय: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API कुंजी",
+    "ai_api_key_hint": "क्लाउड प्रदाताओं (OpenAI, Anthropic, आदि) के लिए आवश्यक।",
+    "ai_model": "मॉडल",
+    "ai_model_hint": "उत्तर संश्लेषण और प्रश्न विस्तार के लिए चैट/निर्देश मॉडल",
+    "ai_article_model": "लेख मॉडल",
+    "ai_article_model_hint": "पूर्ण-पृष्ठ समाचार लेख पुनर्लेखन के लिए मॉडल (मुख्य मॉडल पर डिफ़ॉल्ट)",
+    "ai_timeout": "समय सीमा (सेकंड)",
+    "ai_timeout_hint": "मॉडल कॉल के लिए प्रति-अनुरोध समय सीमा",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "विशेषताएँ",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "समाचार",
+    "news_desc": "समाचार संग्रहण और लेख सेटिंग्स।",
+    "news_per_source": "प्रत्येक स्रोत के लिए लेख",
+    "news_freshness": "ताजगी आधा जीवन (घंटे)",
+    "news_freshness_weight": "ताजगी वजन",
+    "news_dedup": "डुप्लिकेट समानता थ्रेशोल्ड",
+    "news_max_age": "अधिकतम आयु (दिन)",
+    "news_cache_ttl": "कैश TTL (सेकंड)",
+    "news_enrich_max": "समृद्ध करने के लिए अधिकतम लेख",
+    "engines": "खोज इंजन",
+    "engines_desc": "इंजनों को सक्षम/अक्षम करें और उनके रैंकिंग वजन को समायोजित करें। उच्च वजन = परिणाम क्रम पर अधिक प्रभाव।",
+    "engine": "इंजन",
+    "categories": "श्रेणियाँ",
+    "weight": "वजन",
+    "privacy": "गोपनीयता",
+    "privacy_desc": "आपके डेटा के प्रबंधन को नियंत्रित करें।",
+    "proxy_images": "प्रॉक्सी छवियाँ",
+    "proxy_images_hint": "तीसरे पक्ष से अपने IP को छिपाने के लिए छवियों को सर्वर के माध्यम से रूट करें",
+    "remove_trackers": "ट्रैकिंग पैरामीटर हटाएँ",
+    "remove_trackers_hint": "URLs से UTM और अन्य ट्रैकिंग पैरामीटर को हटा दें",
+    "save_history": "खोज इतिहास सहेजें",
+    "save_history_hint": "ब्राउज़र में स्थानीय रूप से खोजों को संग्रहीत करें (कभी भी सर्वर पर नहीं भेजा जाता)",
+    "clear_data": "डेटा साफ करें",
+    "clear_localstorage": "स्थानीय संग्रह साफ करें",
+    "clear_indexeddb": "इंडेक्स्डDB साफ करें",
+    "shortcuts": "कीबोर्ड शॉर्टकट",
+    "shortcuts_desc": "पावर उपयोगकर्ताओं के लिए त्वरित पहुँच कुंजी।",
+    "shortcut_focus_search": "खोज बॉक्स पर ध्यान केंद्रित करें",
+    "shortcut_close": "पैनल बंद करें / रद्द करें",
+    "shortcut_navigate": "परिणामों में नेविगेट करें",
+    "shortcut_open": "चयनित परिणाम खोलें",
+    "shortcut_new_tab": "नए टैब में खोलें",
+    "shortcut_switch_mode": "खोज मोड स्विच करें",
+    "shortcut_help": "यह सहायता दिखाएँ",
+    "server": "सर्वर",
+    "server_desc": "सर्वर कॉन्फ़िगरेशन और नेटवर्क सेटिंग्स।",
+    "bind_address": "बाइंड पता",
+    "port": "पोर्ट",
+    "max_connections": "अधिकतम कनेक्शन",
+    "image_proxy": "छवि प्रॉक्सी सक्षम करें",
+    "cache_backend": "कैश बैकएंड",
+    "cache_dir": "कैश निर्देशिका",
+    "redis_url": "Redis URL",
+    "advanced": "उन्नत",
+    "advanced_desc": "कैश और समय सीमा सेटिंग्स।",
+    "cache_ttl": "कैश TTL (सेकंड)",
+    "cache_ttl_hint": "परिणाम कैश समय-से-जीवित (0 कैशिंग को अक्षम करता है)",
+    "request_timeout": "अनुरोध समय सीमा (सेकंड)",
+    "request_timeout_hint": "प्रति-इंजन नेटवर्क समय सीमा",
+    "save": "प्राथमिकताएँ सहेजें",
+    "saved": "सहेजा गया",
+    "saved_msg": "settings.yml में लिखा गया और नए खोजों पर लागू किया गया।",
+    "server_settings": "ये सेटिंग्स सर्वर-साइड पर स्थायी होती हैं",
+    "raw_config": "कॉन्फ़िग JSON",
+    "stats": "आंकड़े",
+    "home": "मुख्य पृष्ठ",
+    "logout": "लॉग आउट",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "सामान्य",
+    "academic": "शैक्षणिक",
+    "writing": "लेखन",
+    "code": "कोड"
+  },
+  "footer": {
+    "grounded_answers": "आपके स्थानीय मॉडल से ग्राउंडेड उत्तर — 200+ खोज इंजन, शून्य प्रश्न लॉगिंग।",
+    "academic_papers": "arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, और अधिक से शैक्षणिक पत्र।",
+    "news_digest": "समाचार डाइजेस्ट: लेख पृष्ठों को लाता है, ओलामा के माध्यम से स्थानीय रूप से सारांशों को फिर से लिखता है — केवल बड़े चित्र, कोई फ़ेविकॉन अपस्केल नहीं।",
+    "images": "विकिमीडिया कॉमन्स छवि खोज — गोपनीयता के लिए थंबनेल प्रॉक्सी।",
+    "api_docs": "API दस्तावेज़",
+    "status": "स्थिति",
+    "version": "संस्करण",
+    "engines_count": "232 इंजन"
+  },
+  "examples": {
+    "try": "एक उदाहरण आजमाएँ",
+    "general": [
+      {
+        "q": "Rust async programming best practices",
+        "label": "Rust async"
+      },
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "How does DNS work",
+        "label": "DNS कैसे काम करता है"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Latest LLM research papers 2025",
+        "label": "Latest LLM papers"
+      },
+      {
+        "q": "CRISPR gene editing review papers",
+        "label": "CRISPR समीक्षा"
+      },
+      {
+        "q": "transformer architecture survey",
+        "label": "Transformer सर्वेक्षण"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI regulation",
+        "label": "AI विनियमन"
+      },
+      {
+        "q": "Korea tech news",
+        "label": "कोरिया तकनीक"
+      },
+      {
+        "q": "climate policy updates",
+        "label": "जलवायु नीति"
+      }
+    ]
+  },
+  "interests": {
+    "title": "रुचियाँ (आपके लिए)",
+    "add_placeholder": "रुचि जोड़ें...",
+    "empty": "आपकी खोज के अनुसार रुचियाँ स्वचालित रूप से जोड़ी जाती हैं",
+    "remove": "हटाएँ"
+  },
+  "factcheck": {
+    "title": "तथ्य-जांच परिणाम",
+    "checking": "विश्लेषण कर रहा है...",
+    "analyzing": "विरोधाभासों के लिए स्रोतों का विश्लेषण कर रहा है...",
+    "no_contradictions": "स्रोतों में कोई विरोधाभास नहीं मिला",
+    "found": "विरोधाभास मिले"
+  },
+  "foryou": {
+    "title": "आपके लिए",
+    "based_on": "आधारित: {interests}",
+    "no_interests": "अभी तक कोई रुचियाँ नहीं। अपनी रुचियों को बनाने के लिए खोजें!",
+    "loading": "व्यक्तिगत फ़ीड लोड हो रहा है..."
+  },
+  "common": {
+    "search": "खोजें",
+    "clear": "साफ करें",
+    "close": "बंद करें",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "retry": "फिर से प्रयास करें",
+    "more": "अधिक",
+    "less": "कम"
+  },
+  "trends": {
+    "title": "अब ट्रेंड कर रहा है",
+    "loading": "प्रवृत्तियाँ लोड हो रही हैं...",
+    "error": "प्रवृत्तियाँ लोड करने में विफल",
+    "empty": "कोई ट्रेंडिंग विषय नहीं"
+  },
+  "onboarding": {
+    "welcome": "मेटासर्च में आपका स्वागत है",
+    "subtitle": "आपका निजी, AI-संचालित खोज इंजन",
+    "private_search": "निजी खोज",
+    "private_search_desc": "कोई प्रश्न लॉगिंग नहीं, कभी नहीं",
+    "ai_answers": "AI उत्तर",
+    "ai_answers_desc": "स्थानीय AI परिणामों का सारांश बनाता है",
+    "news_digest": "समाचार डाइजेस्ट",
+    "news_digest_desc": "विश्लेषण के साथ चयनित समाचार",
+    "local_first": "स्थानीय-प्रथम",
+    "local_first_desc": "आपका डेटा आपके डिवाइस पर रहता है",
+    "get_started": "शुरू करें"
+  },
+  "feeds": {
+    "find": "फ़ीड खोजें",
+    "subscribe": "सदस्यता लें",
+    "unsubscribe": "सदस्यता समाप्त करें"
+  },
+  "errors": {
+    "load_trends": "प्रवृत्तियाँ लोड करने में विफल",
+    "load_feed": "व्यक्तिगत फ़ीड लोड करने में विफल",
+    "load_global": "वैश्विक फ़ीड लोड करने में विफल",
+    "translation": "अनुवाद विफल"
+  },
+  "compare": {
+    "title": "परिणामों की तुलना करें",
+    "button": "तुलना करें",
+    "clear": "सभी साफ करें",
+    "global_title": "🌍 वैश्विक परिप्रेक्ष्य",
+    "global_desc": "क्षेत्रों के अनुसार खोज परिणामों की तुलना करें",
+    "select_all": "सभी",
+    "clear_all": "साफ़",
+    "run": "तुलना"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

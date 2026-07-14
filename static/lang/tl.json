@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Tanungin ang web, nang pribado"
+  },
+  "nav": {
+    "ask": "Tanungin",
+    "discover": "Tuklasin",
+    "history": "Kasaysayan",
+    "options": "Mga Opsyon",
+    "classic": "Klasiko",
+    "stats": "Stats",
+    "preferences": "Mga Kagustuhan"
+  },
+  "tabs": {
+    "general": "Pangkalahatan",
+    "images": "Mga Imahe",
+    "videos": "Mga Video",
+    "papers": "Mga Papel",
+    "news": "Balita",
+    "shopping": "Pamimili"
+  },
+  "search": {
+    "placeholder": "Tanungin ang kahit ano…",
+    "placeholder_news": "Ilagay ang paksa ng balita, pindutin ang Tanungin",
+    "placeholder_images": "Maghanap ng mga imahe…",
+    "placeholder_papers": "Ilagay ang isang tanong, pindutin ang Tanungin",
+    "placeholder_general": "Ilagay ang isang tanong o paksa, pindutin ang Tanungin",
+    "placeholder_shopping": "Maghanap ng mga produkto…",
+    "placeholder_videos": "Maghanap ng mga video…",
+    "button": "Tanungin",
+    "button_search": "Maghanap"
+  },
+  "status": {
+    "loading": "Naglo-load…",
+    "loading_stories": "Naglo-load ng mga kwento…",
+    "searching": "Naghahanap…",
+    "searching_web": "Naghahanap sa web…",
+    "searching_images": "Naghahanap ng mga imahe…",
+    "searching_news": "Naghahanap ng mga mapagkukunan ng balita…",
+    "searching_papers": "Naghahanap ng mga akademikong mapagkukunan…",
+    "searching_shopping": "Naghahanap ng mga produkto…",
+    "searching_videos": "Naghahanap ng mga video…",
+    "search_complete": "Kumpleto ang paghahanap.",
+    "search_failed": "Nabigo ang paghahanap.",
+    "answer_ready": "Handa na ang sagot.",
+    "fetching_article": "Kinuha ang artikulo…",
+    "fetching_publisher": "Kinuha ang artikulo ng publisher…",
+    "resolving_article": "Nire-resolba ang artikulo…",
+    "resolving_gn": "Nire-resolba ang link ng Google News…",
+    "rewriting": "Nire-rewrite ang artikulo…",
+    "rewriting_korean": "Nire-rewrite sa Korean…",
+    "preparing_rewrite": "Naghahanda ng buong rewrite…",
+    "extracted_rewriting": "Nakuha ang teksto ng artikulo — nire-rewrite…",
+    "viewing_prior": "Tinitingnan ang nakaraang turn — tanungin ang isang follow-up sa ibaba."
+  },
+  "error": {
+    "no_answer": "Walang nabuong sagot mula sa AI — mga resulta ng paghahanap sa ibaba.",
+    "no_news": "Walang nahanap na balita — subukan ang ibang query.",
+    "no_stories": "Walang nahanap na kwento — subukan ang ibang query.",
+    "no_stories_category": "Walang nahanap na kwento para sa kategoryang ito — subukan ang ibang pill.",
+    "rewrite_empty": "Ang rewrite ng artikulo ay nagbalik ng walang laman na teksto.",
+    "rewrite_failed": "Hindi ma-rewrite ang artikulo",
+    "load_news_failed": "Hindi ma-load ang balita — suriin ang server.",
+    "model_not_found": "Hindi natagpuan ang modelo — patakbuhin ang ollama pull para sa iyong naka-configure na modelo, o pumili ng iba sa Mga Opsyon.",
+    "ollama_not_running": "Hindi tumatakbo ang Ollama — ang mga sagot ay magiging search-only. Simulan: ollama serve",
+    "invalid_thread": "Hindi wastong thread JSON.",
+    "enter_question": "Ilagay ang isang tanong.",
+    "enter_search": "Ilagay ang isang search term."
+  },
+  "article": {
+    "sources": "Mga Pinagmulan",
+    "research_progress": "Pag-unlad ng Pananaliksik",
+    "thinking": "Nag-iisip",
+    "answer": "Sagot",
+    "key_points": "Mga Pangunahing Punto",
+    "summary": "Buod",
+    "related_media": "Kaugnay na Media",
+    "view_more": "Tingnan ang {count} higit pa",
+    "back": "Bumalik",
+    "read_original": "Basahin ang orihinal",
+    "related_image": "Kaugnay na imahe",
+    "related": "Kaugnay"
+  },
+  "discover": {
+    "updated": "Na-update {time}",
+    "scope": {
+      "all": "📰 Lahat",
+      "local": "🏠 Lokal",
+      "world": "🌍 Mundo"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Ekonomiya",
+      "sports": "Isports",
+      "world": "Mundo",
+      "entertainment": "Libangan",
+      "tech": "Teknolohiya at Agham",
+      "culture": "Kultura",
+      "health": "Kalusugan",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknolohiya agham",
+      "ai": "artipisyal na intelihensiya AI machine learning",
+      "world": "mga balita sa mundo internasyonal",
+      "politics": "politika gobyerno halalan",
+      "business": "negosyo ekonomiya kumpanya",
+      "finance": "pananalapi merkado stock",
+      "health": "kalusugan medisina kagalingan",
+      "climate": "pagbabago ng klima kapaligiran",
+      "sports": "isports",
+      "entertainment": "libangan sikat",
+      "art": "sining kultura",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Buksan ang kasaysayan",
+    "close": "Isara ang kasaysayan",
+    "imported": "Na-import {count}",
+    "export": "I-export ang JSON",
+    "import": "I-import ang JSON",
+    "clear": "I-clear ang kasaysayan",
+    "empty": "Ang iyong mga tanong ay lumalabas dito.",
+    "new_chat": "Bagong chat"
+  },
+  "panel": {
+    "history": "Kasaysayan",
+    "bookmarks": "Mga Bookmark",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Lahat ng Mga Bookmark",
+    "empty": "I-bookmark ang mga resulta upang mai-save ang mga ito dito.",
+    "export": "I-export",
+    "clear_all": "I-clear ang lahat",
+    "new_collection": "Bagong koleksyon"
+  },
+  "hero": {
+    "private": "Pribado",
+    "ai_powered": "Pinapagana ng AI",
+    "local_first": "Unang Lokal"
+  },
+  "options": {
+    "model": "Modelo",
+    "deep_research": "Malalim na pananaliksik",
+    "focus": "Tumutok",
+    "theme": "Tema",
+    "language": "Wika",
+    "answer_language": "Wika ng AI",
+    "answer_auto": "Awtomatiko",
+    "research": "Pananaliksik",
+    "fact_check": "Suriin ang Katotohanan"
+  },
+  "preferences": {
+    "title": "Mga Kagustuhan",
+    "language": "Wika",
+    "language_desc": "Piliin ang iyong gustong wika ng interface",
+    "language_storage": "Ang wika ng interface ay naka-imbak sa iyong browser.",
+    "branding": "Pagba-brand",
+    "branding_desc": "I-customize ang pangalan ng aplikasyon, logo, at favicon na ipinapakita sa UI.",
+    "app_name": "Pangalan ng Aplikasyon",
+    "app_name_hint": "Pangalan na ipinapakita sa header at mga pamagat ng pahina",
+    "logo_url": "URL ng Logo",
+    "logo_url_hint": "URL o landas sa iyong logo na imahe (iwanang walang laman para sa default)",
+    "favicon_url": "URL ng Favicon",
+    "favicon_url_hint": "URL o landas sa iyong favicon (iwanang walang laman para sa default ng browser)",
+    "appearance": "Hitsura",
+    "appearance_desc": "I-customize ang visual na estilo at layout.",
+    "theme": "Tema",
+    "font_size": "Sukat ng Font",
+    "results_layout": "Layout ng Mga Resulta",
+    "search": "Maghanap",
+    "search_desc": "Mga default na setting na inilapat sa lahat ng paghahanap.",
+    "ui_language": "Wika ng UI",
+    "ui_language_hint": "Wika ng interface (naka-imbak sa browser localStorage)",
+    "interface_language": "Wika ng interface",
+    "stored_in_browser": "Naka-imbak sa browser (localStorage)",
+    "search_defaults": "Mga default na paghahanap",
+    "search_language": "Wika ng Paghahanap",
+    "search_language_hint": "awtomatiko = tukuyin mula sa query (Hangul → ko-KR); o lahat, o isang nakapirming lokal tulad ng ko-KR",
+    "fallback_language": "Fallback Language Code",
+    "fallback_language_hint": "Ginagamit kapag ang auto-detection ay hindi tiyak",
+    "safe_search": "Ligtas na Paghahanap",
+    "safe_off": "Off",
+    "safe_moderate": "Katamtaman",
+    "safe_strict": "Mahigpit",
+    "results_per_engine": "Mga Resulta Bawat Engine",
+    "ai": "AI",
+    "ai_desc": "I-configure ang mga modelo ng AI para sa synthesis ng sagot at pag-rewrite ng artikulo.",
+    "ai_provider": "Tagapagbigay",
+    "ai_provider_local": "Lokal (Ollama)",
+    "ai_provider_custom": "Custom",
+    "ai_base_url": "API Base URL",
+    "ai_base_url_hint": "Lokal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Key",
+    "ai_api_key_hint": "Kinakailangan para sa mga cloud provider (OpenAI, Anthropic, atbp.)",
+    "ai_model": "Modelo",
+    "ai_model_hint": "Chat/instruct model para sa synthesis ng sagot at pagpapalawak ng query",
+    "ai_article_model": "Modelo ng Artikulo",
+    "ai_article_model_hint": "Modelo para sa mga full-page news article rewrites (default sa pangunahing modelo)",
+    "ai_timeout": "Timeout (segundo)",
+    "ai_timeout_hint": "Per-request timeout para sa mga tawag ng modelo",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Mga Tampok",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Balita",
+    "news_desc": "Pagsasama-sama ng balita at mga setting ng artikulo.",
+    "news_per_source": "Mga artikulo bawat pinagmulan",
+    "news_freshness": "Freshness half-life (oras)",
+    "news_freshness_weight": "Freshness weight",
+    "news_dedup": "Dedup similarity threshold",
+    "news_max_age": "Max age (araw)",
+    "news_cache_ttl": "Cache TTL (segundo)",
+    "news_enrich_max": "Max articles to enrich",
+    "engines": "Mga Search Engine",
+    "engines_desc": "I-enable/i-disable ang mga engine at ayusin ang kanilang ranking weights. Mas mataas na timbang = mas maraming impluwensya sa pagkakasunod-sunod ng resulta.",
+    "engine": "engine",
+    "categories": "mga kategorya",
+    "weight": "timbang",
+    "privacy": "Pribadong",
+    "privacy_desc": "Kontrolin kung paano hinahawakan ang iyong data.",
+    "proxy_images": "Proxy images",
+    "proxy_images_hint": "I-route ang mga imahe sa pamamagitan ng server upang itago ang iyong IP mula sa mga third party",
+    "remove_trackers": "Tanggalin ang mga tracking parameter",
+    "remove_trackers_hint": "Tanggalin ang UTM at iba pang tracking parameter mula sa mga URL",
+    "save_history": "I-save ang kasaysayan ng paghahanap",
+    "save_history_hint": "I-imbak ang mga paghahanap nang lokal sa browser (hindi kailanman ipinadala sa server)",
+    "clear_data": "I-clear ang Data",
+    "clear_localstorage": "I-clear ang Local Storage",
+    "clear_indexeddb": "I-clear ang IndexedDB",
+    "shortcuts": "Mga Keyboard Shortcut",
+    "shortcuts_desc": "Mabilis na access keys para sa mga power users.",
+    "shortcut_focus_search": "Tumutok sa search box",
+    "shortcut_close": "Isara ang panel / Kanselahin",
+    "shortcut_navigate": "Mag-navigate sa mga resulta",
+    "shortcut_open": "Buksan ang napiling resulta",
+    "shortcut_new_tab": "Buksan sa bagong tab",
+    "shortcut_switch_mode": "Palitan ang search mode",
+    "shortcut_help": "Ipakita ang tulong na ito",
+    "server": "Server",
+    "server_desc": "Mga setting ng configuration at network ng server.",
+    "bind_address": "Bind Address",
+    "port": "Port",
+    "max_connections": "Max Connections",
+    "image_proxy": "I-enable ang Image Proxy",
+    "cache_backend": "Cache Backend",
+    "cache_dir": "Cache Directory",
+    "redis_url": "Redis URL",
+    "advanced": "Advanced",
+    "advanced_desc": "Mga setting ng cache at timeout.",
+    "cache_ttl": "Cache TTL (segundo)",
+    "cache_ttl_hint": "Result cache time-to-live (0 ay nag-disable ng caching)",
+    "request_timeout": "Request Timeout (segundo)",
+    "request_timeout_hint": "Per-engine network timeout",
+    "save": "I-save ang Mga Kagustuhan",
+    "saved": "Naka-save",
+    "saved_msg": "naitala sa settings.yml at inilapat sa mga bagong paghahanap.",
+    "server_settings": "Ang mga setting na ito ay nananatili sa server-side",
+    "raw_config": "Config JSON",
+    "stats": "Stats",
+    "home": "Bahay",
+    "logout": "Mag-logout",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Pangkalahatan",
+    "academic": "Akademiko",
+    "writing": "Pagsusulat",
+    "code": "Kodigo"
+  },
+  "footer": {
+    "grounded_answers": "Nakatagong mga sagot mula sa iyong lokal na modelo — 200+ search engines, zero query logging.",
+    "academic_papers": "Mga akademikong papel mula sa arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, at iba pa.",
+    "news_digest": "News digest: kumukuha ng mga pahina ng artikulo, nire-rewrite ang mga buod nang lokal sa pamamagitan ng Ollama — malalaking imahe lamang, walang favicon upscale.",
+    "images": "Wikimedia Commons image search — mga thumbnail na proxied para sa privacy.",
+    "api_docs": "API Docs",
+    "status": "Katayuan",
+    "version": "Bersyon",
+    "engines_count": "232 engines"
+  },
+  "examples": {
+    "try": "Subukan ang isang halimbawa",
+    "general": [
+      {
+        "q": "Pinakamahusay na kasanayan sa Rust async programming",
+        "label": "Rust async"
+      },
+      {
+        "q": "Pinakabagong mga papel sa pananaliksik ng LLM 2025",
+        "label": "Pinakabagong mga papel ng LLM"
+      },
+      {
+        "q": "Paano gumagana ang DNS",
+        "label": "Paano gumagana ang DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Pinakabagong mga papel sa pananaliksik ng LLM 2025",
+        "label": "Pinakabagong mga papel ng LLM"
+      },
+      {
+        "q": "Mga papel sa pagsusuri ng CRISPR gene editing",
+        "label": "CRISPR pagsusuri"
+      },
+      {
+        "q": "survey ng transformer architecture",
+        "label": "Survey ng transformer"
+      }
+    ],
+    "news": [
+      {
+        "q": "Regulasyon ng AI",
+        "label": "Regulasyon ng AI"
+      },
+      {
+        "q": "Balita sa teknolohiya ng Korea",
+        "label": "Teknolohiya ng Korea"
+      },
+      {
+        "q": "mga update sa patakaran sa klima",
+        "label": "Patakaran sa klima"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Mga Interes (Para sa Iyo)",
+    "add_placeholder": "Magdagdag ng interes...",
+    "empty": "Ang mga interes ay awtomatikong idinadagdag habang nagha-hanap ka",
+    "remove": "Tanggalin"
+  },
+  "factcheck": {
+    "title": "Mga Resulta ng Pagsusuri ng Katotohanan",
+    "checking": "Nanaliksik...",
+    "analyzing": "Nanaliksik ng mga pinagmulan para sa mga kontradiksyon...",
+    "no_contradictions": "Walang natagpuang kontradiksyon sa mga pinagmulan",
+    "found": "Natagpuan ang mga kontradiksyon"
+  },
+  "foryou": {
+    "title": "Para sa Iyo",
+    "based_on": "Batay sa: {interests}",
+    "no_interests": "Walang interes pa. Maghanap upang bumuo ng iyong mga interes!",
+    "loading": "Naglo-load ng personalized feed..."
+  },
+  "common": {
+    "search": "Maghanap",
+    "clear": "I-clear",
+    "close": "Isara",
+    "save": "I-save",
+    "cancel": "Kanselahin",
+    "loading": "Naglo-load...",
+    "error": "Error",
+    "retry": "Subukan muli",
+    "more": "Higit pa",
+    "less": "Mas kaunti"
+  },
+  "trends": {
+    "title": "Trending Ngayon",
+    "loading": "Naglo-load ng mga trend...",
+    "error": "Nabigong i-load ang mga trend",
+    "empty": "Walang trending na paksa"
+  },
+  "onboarding": {
+    "welcome": "Maligayang pagdating sa Metasearch",
+    "subtitle": "Ang iyong pribado, pinapagana ng AI na search engine",
+    "private_search": "Pribadong Paghahanap",
+    "private_search_desc": "Walang query logging, kailanman",
+    "ai_answers": "Mga Sagot ng AI",
+    "ai_answers_desc": "Nire-resume ng lokal na AI ang mga resulta",
+    "news_digest": "News Digest",
+    "news_digest_desc": "Curated news with analysis",
+    "local_first": "Unang Lokal",
+    "local_first_desc": "Ang iyong data ay nananatili sa iyong device",
+    "get_started": "Magsimula"
+  },
+  "feeds": {
+    "find": "Hanapin ang Mga Feed",
+    "subscribe": "Mag-subscribe",
+    "unsubscribe": "Mag-unsubscribe"
+  },
+  "errors": {
+    "load_trends": "Nabigong i-load ang mga trend",
+    "load_feed": "Nabigong i-load ang personalized feed",
+    "load_global": "Nabigong i-load ang global feed",
+    "translation": "Nabigong isalin"
+  },
+  "compare": {
+    "title": "Ihambing ang Mga Resulta",
+    "button": "Ihambing",
+    "clear": "I-clear ang Lahat",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Fråga webben, privat"
+  },
+  "nav": {
+    "ask": "Fråga",
+    "discover": "Upptäck",
+    "history": "Historik",
+    "options": "Alternativ",
+    "classic": "Klassisk",
+    "stats": "Statistik",
+    "preferences": "Inställningar"
+  },
+  "tabs": {
+    "general": "Allmänt",
+    "images": "Bilder",
+    "videos": "Videor",
+    "papers": "Artiklar",
+    "news": "Nyheter",
+    "shopping": "Shopping"
+  },
+  "search": {
+    "placeholder": "Fråga vad som helst…",
+    "placeholder_news": "Ange ett nyhetsämne, tryck på Fråga",
+    "placeholder_images": "Sök bilder…",
+    "placeholder_papers": "Ange en fråga, tryck på Fråga",
+    "placeholder_general": "Ange en fråga eller ämne, tryck på Fråga",
+    "placeholder_shopping": "Sök produkter…",
+    "placeholder_videos": "Sök videor…",
+    "button": "Fråga",
+    "button_search": "Sök"
+  },
+  "status": {
+    "loading": "Laddar…",
+    "loading_stories": "Laddar berättelser…",
+    "searching": "Söker…",
+    "searching_web": "Söker på webben…",
+    "searching_images": "Söker bilder…",
+    "searching_news": "Söker nyhetskällor…",
+    "searching_papers": "Söker akademiska källor…",
+    "searching_shopping": "Söker produkter…",
+    "searching_videos": "Söker videor…",
+    "search_complete": "Sökning slutförd.",
+    "search_failed": "Sökning misslyckades.",
+    "answer_ready": "Svar klart.",
+    "fetching_article": "Hämtar artikel…",
+    "fetching_publisher": "Hämtar utgivarartikel…",
+    "resolving_article": "Löser artikel…",
+    "resolving_gn": "Löser Google News-länk…",
+    "rewriting": "Omarbetar artikel…",
+    "rewriting_korean": "Omarbetar på koreanska…",
+    "preparing_rewrite": "Förbereder fullständig omarbetning…",
+    "extracted_rewriting": "Utdraget artikeltext — omarbetar…",
+    "viewing_prior": "Visar tidigare tur — ställ en följdfråga nedan."
+  },
+  "error": {
+    "no_answer": "Ingen AI-svar genererad — sökresultat nedan.",
+    "no_news": "Inga nyheter hittades — försök med en annan fråga.",
+    "no_stories": "Inga berättelser hittades — försök med en annan fråga.",
+    "no_stories_category": "Inga berättelser hittades för denna kategori — försök med en annan flik.",
+    "rewrite_empty": "Artikelomskrivning returnerade tom text.",
+    "rewrite_failed": "Kunde inte omarbeta artikel",
+    "load_news_failed": "Kunde inte ladda nyheter — kontrollera servern.",
+    "model_not_found": "Modell hittades inte — kör ollama pull för din konfigurerade modell, eller välj en annan i Alternativ.",
+    "ollama_not_running": "Ollama körs inte — svar kommer att vara sökbara endast. Starta: ollama serve",
+    "invalid_thread": "Ogiltig tråd JSON.",
+    "enter_question": "Ange en fråga.",
+    "enter_search": "Ange en sökterm."
+  },
+  "article": {
+    "sources": "Källor",
+    "research_progress": "Forskningsframsteg",
+    "thinking": "Tänker",
+    "answer": "Svar",
+    "key_points": "Nyckelpunkter",
+    "summary": "Sammanfattning",
+    "related_media": "Relaterad media",
+    "view_more": "Visa {count} mer",
+    "back": "Tillbaka",
+    "read_original": "Läs originalet",
+    "related_image": "Relaterad bild",
+    "related": "Relaterad"
+  },
+  "discover": {
+    "updated": "Uppdaterad {time}",
+    "scope": {
+      "all": "📰 Alla",
+      "local": "🏠 Lokal",
+      "world": "🌍 Världen"
+    },
+    "categories": {
+      "politics": "Politik",
+      "economy": "Ekonomi",
+      "sports": "Sport",
+      "world": "Världen",
+      "entertainment": "Underhållning",
+      "tech": "Teknik & Vetenskap",
+      "culture": "Kultur",
+      "health": "Hälsa",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "teknologi vetenskap",
+      "ai": "artificiell intelligens AI maskininlärning",
+      "world": "världen nyheter internationellt",
+      "politics": "politik regering val",
+      "business": "affärer ekonomi företag",
+      "finance": "finans marknader aktier",
+      "health": "hälsa medicin välbefinnande",
+      "climate": "klimatförändringar miljö",
+      "sports": "sport",
+      "entertainment": "underhållning kändisar",
+      "art": "konst kultur",
+      "top": "toppnyheter rubriker"
+    }
+  },
+  "history": {
+    "open": "Öppna historik",
+    "close": "Stäng historik",
+    "imported": "Importerad {count}",
+    "export": "Exportera JSON",
+    "import": "Importera JSON",
+    "clear": "Rensa historik",
+    "empty": "Dina frågor visas här.",
+    "new_chat": "Ny chatt"
+  },
+  "panel": {
+    "history": "Historik",
+    "bookmarks": "Bokmärken",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Alla bokmärken",
+    "empty": "Bokmärk resultat för att spara dem här.",
+    "export": "Exportera",
+    "clear_all": "Rensa allt",
+    "new_collection": "Ny samling"
+  },
+  "hero": {
+    "private": "Privat",
+    "ai_powered": "AI-Driven",
+    "local_first": "Lokal-Först"
+  },
+  "options": {
+    "model": "Modell",
+    "deep_research": "Djup forskning",
+    "focus": "Fokus",
+    "theme": "Tema",
+    "language": "Språk",
+    "answer_language": "AI-språk",
+    "answer_auto": "Automatisk",
+    "research": "Forskning",
+    "fact_check": "Faktakontroll"
+  },
+  "preferences": {
+    "title": "Inställningar",
+    "language": "Språk",
+    "language_desc": "Välj ditt föredragna gränssnittsspråk",
+    "language_storage": "Gränssnittsspråket lagras i din webbläsare.",
+    "branding": "Varumärke",
+    "branding_desc": "Anpassa applikationsnamn, logotyp och favicon som visas i UI.",
+    "app_name": "Applikationsnamn",
+    "app_name_hint": "Namn som visas i rubriken och sidtitlar",
+    "logo_url": "Logotyp URL",
+    "logo_url_hint": "URL eller sökväg till din logotypbild (lämna tomt för standard)",
+    "favicon_url": "Favicon URL",
+    "favicon_url_hint": "URL eller sökväg till din favicon (lämna tomt för webbläsarens standard)",
+    "appearance": "Utseende",
+    "appearance_desc": "Anpassa den visuella stilen och layouten.",
+    "theme": "Tema",
+    "font_size": "Teckenstorlek",
+    "results_layout": "Resultatlayout",
+    "search": "Sök",
+    "search_desc": "Standardinställningar tillämpas på alla sökningar.",
+    "ui_language": "UI-språk",
+    "ui_language_hint": "Gränssnittsspråk (lagras i webbläsarens localStorage)",
+    "interface_language": "Gränssnittsspråk",
+    "stored_in_browser": "Lagrad i webbläsaren (localStorage)",
+    "search_defaults": "Sökstandarder",
+    "search_language": "Sökspråk",
+    "search_language_hint": "auto = upptäck från fråga (Hangul → ko-KR); eller alla, eller en fast lokal som ko-KR",
+    "fallback_language": "Fallback-språk kod",
+    "fallback_language_hint": "Används när automatisk upptäckning är otydlig",
+    "safe_search": "Säker sökning",
+    "safe_off": "Av",
+    "safe_moderate": "Måttlig",
+    "safe_strict": "Strikt",
+    "results_per_engine": "Resultat per motor",
+    "ai": "AI",
+    "ai_desc": "Konfigurera AI-modeller för svarssyntes och artikelomskrivning.",
+    "ai_provider": "Leverantör",
+    "ai_provider_local": "Lokal (Ollama)",
+    "ai_provider_custom": "Anpassad",
+    "ai_base_url": "API Bas URL",
+    "ai_base_url_hint": "Lokal: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API-nyckel",
+    "ai_api_key_hint": "Krävs för molnleverantörer (OpenAI, Anthropic, etc.)",
+    "ai_model": "Modell",
+    "ai_model_hint": "Chatt/instruktionsmodell för svarssyntes och frågaexpansion",
+    "ai_article_model": "Artikelmodell",
+    "ai_article_model_hint": "Modell för omarbetning av fullständiga nyhetsartiklar (standard till huvudmodellen)",
+    "ai_timeout": "Timeout (sekunder)",
+    "ai_timeout_hint": "Per-begäran timeout för modellanrop",
+    "ai_cost_tracking": "Kostnadsspårning",
+    "ai_track_usage": "Spåra tokenanvändning",
+    "ai_track_usage_hint": "Visa tokenantal och beräknad kostnad",
+    "ai_input_cost": "Inmatningskostnad",
+    "ai_output_cost": "Utmatningskostnad",
+    "ai_features": "Funktioner",
+    "ai_answer_synthesis": "Svarssyntes",
+    "ai_query_expansion": "Frågeexpansion",
+    "ai_reranking": "Omrankning",
+    "ai_clustering": "Klustring",
+    "ai_vision": "Vision",
+    "news": "Nyheter",
+    "news_desc": "Nyhetsaggregat och artikelinställningar.",
+    "news_per_source": "Artiklar per källa",
+    "news_freshness": "Fräschhet halveringstid (timmar)",
+    "news_freshness_weight": "Fräschhet vikt",
+    "news_dedup": "Dedup likhetströskel",
+    "news_max_age": "Max ålder (dagar)",
+    "news_cache_ttl": "Cache TTL (sekunder)",
+    "news_enrich_max": "Max artiklar att berika",
+    "engines": "Sökmotorer",
+    "engines_desc": "Aktivera/inaktivera motorer och justera deras rangordningsvikter. Högre vikt = mer påverkan på resultatordningen.",
+    "engine": "motor",
+    "categories": "kategorier",
+    "weight": "vikt",
+    "privacy": "Integritet",
+    "privacy_desc": "Kontrollera hur dina data hanteras.",
+    "proxy_images": "Proxy-bilder",
+    "proxy_images_hint": "Routa bilder genom servern för att dölja din IP från tredje part",
+    "remove_trackers": "Ta bort spårningsparametrar",
+    "remove_trackers_hint": "Ta bort UTM och andra spårningsparametrar från URL:er",
+    "save_history": "Spara sökhistorik",
+    "save_history_hint": "Lagra sökningar lokalt i webbläsaren (aldrig skickas till servern)",
+    "clear_data": "Rensa data",
+    "clear_localstorage": "Rensa lokal lagring",
+    "clear_indexeddb": "Rensa IndexedDB",
+    "shortcuts": "Tangentbordsgenvägar",
+    "shortcuts_desc": "Snabbt åtkomstnycklar för avancerade användare.",
+    "shortcut_focus_search": "Fokusera sökruta",
+    "shortcut_close": "Stäng panel / Avbryt",
+    "shortcut_navigate": "Navigera resultat",
+    "shortcut_open": "Öppna valt resultat",
+    "shortcut_new_tab": "Öppna i ny flik",
+    "shortcut_switch_mode": "Byt sökläge",
+    "shortcut_help": "Visa denna hjälp",
+    "server": "Server",
+    "server_desc": "Serverkonfiguration och nätverksinställningar.",
+    "bind_address": "Bindadress",
+    "port": "Port",
+    "max_connections": "Max anslutningar",
+    "image_proxy": "Aktivera bildproxy",
+    "cache_backend": "Cache-backend",
+    "cache_dir": "Cache-katalog",
+    "redis_url": "Redis URL",
+    "advanced": "Avancerat",
+    "advanced_desc": "Cache- och timeoutinställningar.",
+    "cache_ttl": "Cache TTL (sekunder)",
+    "cache_ttl_hint": "Resultat cache livslängd (0 inaktiverar caching)",
+    "request_timeout": "Begärning Timeout (sekunder)",
+    "request_timeout_hint": "Per-motor nätverks timeout",
+    "save": "Spara inställningar",
+    "saved": "Sparad",
+    "saved_msg": "skriven till settings.yml och tillämpad på nya sökningar.",
+    "server_settings": "Dessa inställningar sparas server-sidan till",
+    "raw_config": "Konfig JSON",
+    "stats": "Statistik",
+    "home": "Hem",
+    "logout": "Logga ut",
+    "ai_embedding_model": "Inbäddningsmodell",
+    "ai_vision_model": "Visionsmodell",
+    "ai_answer_top_n": "Topp N svar",
+    "ai_answer_top_n_hint": "Antal resultat för svarssyntes",
+    "ai_news_prompt_ko": "Koreansk nyhetsanalys-prompt",
+    "ai_news_prompt_ko_hint": "Anpassad prompt för koreansk nyhetsanalys",
+    "ai_news_prompt_ko_placeholder": "Lämna tom för standardprompt.",
+    "ai_news_prompt_en": "Engelsk nyhetsanalys-prompt",
+    "ai_news_prompt_en_hint": "Anpassad prompt för engelsk nyhetsanalys",
+    "ai_news_prompt_en_placeholder": "Lämna tom för standardprompt.",
+    "ai_answer_language": "Svarsspråk",
+    "ai_answer_language_hint": "Målspråk för AI-svar",
+    "ai_answer_auto": "Automatisk detektering"
+  },
+  "focus": {
+    "general": "Allmänt",
+    "academic": "Akademiskt",
+    "writing": "Skrivande",
+    "code": "Kod"
+  },
+  "footer": {
+    "grounded_answers": "Grundade svar från din lokala modell — 200+ sökmotorer, ingen frågeloggning.",
+    "academic_papers": "Akademiska artiklar från arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, och mer.",
+    "news_digest": "Nyhetsöversikt: hämtar artikel sidor, omarbetar sammanfattningar lokalt via Ollama — stora bilder endast, ingen favicon uppskalning.",
+    "images": "Wikimedia Commons bildsökning — miniatyrer proxy för integritet.",
+    "api_docs": "API-dokumentation",
+    "status": "Status",
+    "version": "Version",
+    "engines_count": "232 motorer"
+  },
+  "examples": {
+    "try": "Prova ett exempel",
+    "general": [
+      {
+        "q": "Rust asynkron programmering bästa metoder",
+        "label": "Rust asynkron"
+      },
+      {
+        "q": "Senaste LLM forskningsartiklar 2025",
+        "label": "Senaste LLM artiklar"
+      },
+      {
+        "q": "Hur fungerar DNS",
+        "label": "Hur fungerar DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Senaste LLM forskningsartiklar 2025",
+        "label": "Senaste LLM artiklar"
+      },
+      {
+        "q": "CRISPR genredigeringsöversiktsartiklar",
+        "label": "CRISPR översikt"
+      },
+      {
+        "q": "transformatorarkitektur översikt",
+        "label": "Transformator översikt"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI-reglering",
+        "label": "AI-reglering"
+      },
+      {
+        "q": "Korea tekniknyheter",
+        "label": "Korea teknik"
+      },
+      {
+        "q": "klimatpolitik uppdateringar",
+        "label": "Klimatpolitik"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Intressen (För Dig)",
+    "add_placeholder": "Lägg till intresse...",
+    "empty": "Intressen läggs till automatiskt när du söker",
+    "remove": "Ta bort"
+  },
+  "factcheck": {
+    "title": "Faktakontroll Resultat",
+    "checking": "Analyserar...",
+    "analyzing": "Analyserar källor för motsägelser...",
+    "no_contradictions": "Inga motsägelser hittades i källorna",
+    "found": "Motsägelser hittades"
+  },
+  "foryou": {
+    "title": "För Dig",
+    "based_on": "Baserat på: {interests}",
+    "no_interests": "Inga intressen ännu. Sök för att bygga dina intressen!",
+    "loading": "Laddar personlig feed..."
+  },
+  "common": {
+    "search": "Sök",
+    "clear": "Rensa",
+    "close": "Stäng",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "loading": "Laddar...",
+    "error": "Fel",
+    "retry": "Försök igen",
+    "more": "Mer",
+    "less": "Mindre"
+  },
+  "trends": {
+    "title": "Trendar Nu",
+    "loading": "Laddar trender...",
+    "error": "Misslyckades med att ladda trender",
+    "empty": "Inga trendande ämnen"
+  },
+  "onboarding": {
+    "welcome": "Välkommen till Metasökning",
+    "subtitle": "Din privata, AI-drivna sökmotor",
+    "private_search": "Privat Sökning",
+    "private_search_desc": "Ingen frågeloggning, någonsin",
+    "ai_answers": "AI Svar",
+    "ai_answers_desc": "Lokal AI sammanfattar resultat",
+    "news_digest": "Nyhetsöversikt",
+    "news_digest_desc": "Kurerade nyheter med analys",
+    "local_first": "Lokal-Först",
+    "local_first_desc": "Dina data stannar på din enhet",
+    "get_started": "Kom igång"
+  },
+  "feeds": {
+    "find": "Hitta Flöden",
+    "subscribe": "Prenumerera",
+    "unsubscribe": "Avprenumerera"
+  },
+  "errors": {
+    "load_trends": "Misslyckades med att ladda trender",
+    "load_feed": "Misslyckades med att ladda personlig feed",
+    "load_global": "Misslyckades med att ladda global feed",
+    "translation": "Översättning misslyckades"
+  },
+  "compare": {
+    "title": "Jämför Resultat",
+    "button": "Jämför",
+    "clear": "Rensa Allt",
+    "global_title": "🌍 Globalt perspektiv",
+    "global_desc": "Jämför hur sökresultat skiljer sig mellan regioner",
+    "select_all": "Alla",
+    "clear_all": "Rensa",
+    "run": "Jämför"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

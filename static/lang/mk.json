@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Прашајте го вебот, приватно"
+  },
+  "nav": {
+    "ask": "Прашај",
+    "discover": "Откриј",
+    "history": "Историја",
+    "options": "Опции",
+    "classic": "Класичен",
+    "stats": "Статистика",
+    "preferences": "Преференции"
+  },
+  "tabs": {
+    "general": "Општо",
+    "images": "Слики",
+    "videos": "Видеа",
+    "papers": "Статии",
+    "news": "Вести",
+    "shopping": "Шопинг"
+  },
+  "search": {
+    "placeholder": "Прашајте било што…",
+    "placeholder_news": "Внесете тема за вести, притиснете Прашај",
+    "placeholder_images": "Пребарајте слики…",
+    "placeholder_papers": "Внесете прашање, притиснете Прашај",
+    "placeholder_general": "Внесете прашање или тема, притиснете Прашај",
+    "placeholder_shopping": "Пребарајте производи…",
+    "placeholder_videos": "Пребарајте видеа…",
+    "button": "Прашај",
+    "button_search": "Пребарај"
+  },
+  "status": {
+    "loading": "Вчитување…",
+    "loading_stories": "Вчитување приказни…",
+    "searching": "Пребарување…",
+    "searching_web": "Пребарување на вебот…",
+    "searching_images": "Пребарување на слики…",
+    "searching_news": "Пребарување на извори на вести…",
+    "searching_papers": "Пребарување на академски извори…",
+    "searching_shopping": "Пребарување на производи…",
+    "searching_videos": "Пребарување на видеа…",
+    "search_complete": "Пребарувањето заврши.",
+    "search_failed": "Пребарувањето не успеа.",
+    "answer_ready": "Одговорот е подготвен.",
+    "fetching_article": "Вчитување на член…",
+    "fetching_publisher": "Вчитување на член од издавачот…",
+    "resolving_article": "Разрешување на член…",
+    "resolving_gn": "Разрешување на Google News линк…",
+    "rewriting": "Преформулирање на член…",
+    "rewriting_korean": "Преформулирање на корејски…",
+    "preparing_rewrite": "Подготовка на целосно преформулирање…",
+    "extracted_rewriting": "Извлечен текст од член — преформулирање…",
+    "viewing_prior": "Гледање на претходниот одговор — поставете следно прашање подолу."
+  },
+  "error": {
+    "no_answer": "Нема генериран одговор од AI — резултати од пребарувањето подолу.",
+    "no_news": "Нема пронајдени вести — пробајте со друга побара.",
+    "no_stories": "Нема пронајдени приказни — пробајте со друга побара.",
+    "no_stories_category": "Нема пронајдени приказни за оваа категорија — пробајте со друга таб.",
+    "rewrite_empty": "Преформулирањето на членот врати празен текст.",
+    "rewrite_failed": "Не можеше да се преформулира членот",
+    "load_news_failed": "Не можеше да се вчитат вести — проверете го серверот.",
+    "model_not_found": "Моделот не е пронајден — извршете ollama pull за вашиот конфигуриран модел, или изберете друг во Опции.",
+    "ollama_not_running": "Ollama не работи — одговорите ќе бидат само пребарување. Започнете: ollama serve",
+    "invalid_thread": "Неважечка JSON нишка.",
+    "enter_question": "Внесете прашање.",
+    "enter_search": "Внесете термин за пребарување."
+  },
+  "article": {
+    "sources": "Извори",
+    "research_progress": "Напредок во истражувањето",
+    "thinking": "Размислување",
+    "answer": "Одговор",
+    "key_points": "Клучни точки",
+    "summary": "Резиме",
+    "related_media": "Поврзани медиуми",
+    "view_more": "Погледнете {count} повеќе",
+    "back": "Назад",
+    "read_original": "Прочитајте оригиналот",
+    "related_image": "Поврзана слика",
+    "related": "Поврзано"
+  },
+  "discover": {
+    "updated": "Ажурирано {time}",
+    "scope": {
+      "all": "📰 Сè",
+      "local": "🏠 Локално",
+      "world": "🌍 Свет"
+    },
+    "categories": {
+      "politics": "Политика",
+      "economy": "Економија",
+      "sports": "Спорт",
+      "world": "Свет",
+      "entertainment": "Забава",
+      "tech": "Технологија и наука",
+      "culture": "Култура",
+      "health": "Здравје",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "технологија наука",
+      "ai": "вештачка интелигенција AI машинско учење",
+      "world": "светски вести меѓународни",
+      "politics": "политика влада избори",
+      "business": "бизнис економија компании",
+      "finance": "финансии пазари акции",
+      "health": "здравје медицина благосостојба",
+      "climate": "климатски промени животна средина",
+      "sports": "спорт",
+      "entertainment": "забава познати личности",
+      "art": "уметност култура",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Отвори историја",
+    "close": "Затвори историја",
+    "imported": "Увезени {count}",
+    "export": "Извези JSON",
+    "import": "Увези JSON",
+    "clear": "Избриши историја",
+    "empty": "Вашите прашања се појавуваат тука.",
+    "new_chat": "Нова чет"
+  },
+  "panel": {
+    "history": "Историја",
+    "bookmarks": "Забелешки",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Сите Забелешки",
+    "empty": "Забележете ги резултатите за да ги зачувате тука.",
+    "export": "Извези",
+    "clear_all": "Избриши сè",
+    "new_collection": "Нова колекција"
+  },
+  "hero": {
+    "private": "Приватно",
+    "ai_powered": "Поддржано од AI",
+    "local_first": "Локално прво"
+  },
+  "options": {
+    "model": "Модел",
+    "deep_research": "Длабинско истражување",
+    "focus": "Фокус",
+    "theme": "Тема",
+    "language": "Јазик",
+    "answer_language": "Јазик на AI",
+    "answer_auto": "Автоматски",
+    "research": "Истражување",
+    "fact_check": "Проверка на факти"
+  },
+  "preferences": {
+    "title": "Преференции",
+    "language": "Јазик",
+    "language_desc": "Изберете го претпочитаниот јазик",
+    "language_storage": "Јазикот на интерфејсот е зачуван во вашиот прелистувач.",
+    "branding": "Брендирање",
+    "branding_desc": "Прилагодете го името на апликацијата, логото и фавикон што се прикажуваат во UI.",
+    "app_name": "Име на апликацијата",
+    "app_name_hint": "Името што се прикажува во заглавието и насловите на страниците",
+    "logo_url": "URL на логото",
+    "logo_url_hint": "URL или пат до вашата слика на лого (оставете празно за подразбирано)",
+    "favicon_url": "URL на фавикон",
+    "favicon_url_hint": "URL или пат до вашиот фавикон (оставете празно за подразбирано)",
+    "appearance": "Изглед",
+    "appearance_desc": "Прилагодете го визуелниот стил и распоредот.",
+    "theme": "Тема",
+    "font_size": "Големина на фонт",
+    "results_layout": "Распоред на резултати",
+    "search": "Пребарување",
+    "search_desc": "Подразбирачки поставки применети на сите пребарувања.",
+    "ui_language": "Јазик на UI",
+    "ui_language_hint": "Јазик на интерфејсот (чуван во локалното складиште на прелистувачот)",
+    "interface_language": "Јазик на интерфејсот",
+    "stored_in_browser": "Чувано во прелистувачот (локално складирање)",
+    "search_defaults": "Подразбирачки пребарувања",
+    "search_language": "Јазик на пребарување",
+    "search_language_hint": "авто = детектирај од побара (Хангул → ко-КР); или сите, или фиксна локализација како ко-КР",
+    "fallback_language": "Код на резервен јазик",
+    "fallback_language_hint": "Користи кога автоматското откривање е нејасно",
+    "safe_search": "Безбедно пребарување",
+    "safe_off": "Исклучено",
+    "safe_moderate": "Умерено",
+    "safe_strict": "Строго",
+    "results_per_engine": "Резултати по мотор",
+    "ai": "AI",
+    "ai_desc": "Конфигурирајте AI модели за синтеза на одговори и преформулирање на членови.",
+    "ai_provider": "Добавувач",
+    "ai_provider_local": "Локално (Ollama)",
+    "ai_provider_custom": "Прилагодено",
+    "ai_base_url": "Основен URL на API",
+    "ai_base_url_hint": "Локално: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API Клуч",
+    "ai_api_key_hint": "Потребно за облачни добавувачи (OpenAI, Anthropic, итн.)",
+    "ai_model": "Модел",
+    "ai_model_hint": "Chat/instruct модел за синтеза на одговори и проширување на побара",
+    "ai_article_model": "Модел на член",
+    "ai_article_model_hint": "Модел за преформулирање на целосни новински статии (подразбира на главниот модел)",
+    "ai_timeout": "Време на истекување (секунди)",
+    "ai_timeout_hint": "Време на истекување по барање за повици на моделот",
+    "ai_cost_tracking": "Cost Tracking",
+    "ai_track_usage": "Track token usage",
+    "ai_track_usage_hint": "Show token count and cost",
+    "ai_input_cost": "Input cost ($/1M tokens)",
+    "ai_output_cost": "Output cost ($/1M tokens)",
+    "ai_features": "Функции",
+    "ai_answer_synthesis": "Answer synthesis",
+    "ai_query_expansion": "Query expansion",
+    "ai_reranking": "Re-ranking",
+    "ai_clustering": "Clustering",
+    "ai_vision": "Vision",
+    "news": "Вести",
+    "news_desc": "Агреација на вести и поставки за статии.",
+    "news_per_source": "Статии по извор",
+    "news_freshness": "Свежина на половина живот (часови)",
+    "news_freshness_weight": "Тежина на свежина",
+    "news_dedup": "Праг на сличност за дупликати",
+    "news_max_age": "Максимална возраст (дни)",
+    "news_cache_ttl": "TTL на кеш (секунди)",
+    "news_enrich_max": "Максимален број на статии за обогаќување",
+    "engines": "Мотори за пребарување",
+    "engines_desc": "Овозможете/онеможете мотори и прилагодете ги нивните тежински вредности. Поголема тежина = поголемо влијание на редоследот на резултатите.",
+    "engine": "мотор",
+    "categories": "категории",
+    "weight": "тежина",
+    "privacy": "Приватност",
+    "privacy_desc": "Контролирајте како се управува со вашите податоци.",
+    "proxy_images": "Прокси слики",
+    "proxy_images_hint": "Патувајте слики преку серверот за да го сокриете вашиот IP од трети страни",
+    "remove_trackers": "Отстранете ги трагачите",
+    "remove_trackers_hint": "Отстранете UTM и други параметри за следење од URL-ите",
+    "save_history": "Зачувајте ја историјата на пребарување",
+    "save_history_hint": "Чувајте пребарувања локално во прелистувачот (никогаш не се испраќаат на сервер)",
+    "clear_data": "Избриши податоци",
+    "clear_localstorage": "Избриши локално складирање",
+    "clear_indexeddb": "Избриши IndexedDB",
+    "shortcuts": "Кратенки на тастатура",
+    "shortcuts_desc": "Кратки клучеви за моќни корисници.",
+    "shortcut_focus_search": "Фокусирајте се на полето за пребарување",
+    "shortcut_close": "Затвори панел / Откажи",
+    "shortcut_navigate": "Навигирајте резултати",
+    "shortcut_open": "Отворете избран резултат",
+    "shortcut_new_tab": "Отворете во нова таб",
+    "shortcut_switch_mode": "Променете го режимот на пребарување",
+    "shortcut_help": "Прикажи ја оваа помош",
+    "server": "Сервер",
+    "server_desc": "Конфигурација на серверот и мрежни поставки.",
+    "bind_address": "Адреса за поврзување",
+    "port": "Порт",
+    "max_connections": "Максимални поврзувања",
+    "image_proxy": "Овозможи прокси слики",
+    "cache_backend": "Кеш позадина",
+    "cache_dir": "Директориум за кеш",
+    "redis_url": "Redis URL",
+    "advanced": "Напредно",
+    "advanced_desc": "Поставки за кеш и време на истекување.",
+    "cache_ttl": "TTL на кеш (секунди)",
+    "cache_ttl_hint": "Време на живот на кеш резултатите (0 исклучува кеширање)",
+    "request_timeout": "Време на истекување на барањето (секунди)",
+    "request_timeout_hint": "Време на истекување на мрежата по мотор",
+    "save": "Зачувајте ги преференциите",
+    "saved": "Зачувано",
+    "saved_msg": "напишано во settings.yml и применето на нови пребарувања.",
+    "server_settings": "Овие поставки се зачувани на серверот",
+    "raw_config": "Конфигурација JSON",
+    "stats": "Статистика",
+    "home": "Дома",
+    "logout": "Одјави се",
+    "ai_embedding_model": "Embedding Model",
+    "ai_vision_model": "Vision Model",
+    "ai_answer_top_n": "Answer Top N",
+    "ai_answer_top_n_hint": "Number of results for answer synthesis",
+    "ai_news_prompt_ko": "Korean News Analysis Prompt",
+    "ai_news_prompt_ko_hint": "Custom prompt for Korean news",
+    "ai_news_prompt_ko_placeholder": "Leave empty for default.",
+    "ai_news_prompt_en": "English News Analysis Prompt",
+    "ai_news_prompt_en_hint": "Custom prompt for English news",
+    "ai_news_prompt_en_placeholder": "Leave empty for default.",
+    "ai_answer_language": "Answer Language",
+    "ai_answer_language_hint": "Target language for AI responses",
+    "ai_answer_auto": "Auto-detect"
+  },
+  "focus": {
+    "general": "Општо",
+    "academic": "Академски",
+    "writing": "Пишување",
+    "code": "Код"
+  },
+  "footer": {
+    "grounded_answers": "Засновани одговори од вашиот локален модел — 200+ мотори за пребарување, нула логирање на побарувања.",
+    "academic_papers": "Академски статии од arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ, и повеќе.",
+    "news_digest": "Резиме на вести: вчитува страници на статии, преформулира резимеа локално преку Ollama — големи слики само, без зголемување на фавикон.",
+    "images": "Пребарување на слики на Wikimedia Commons — минијатури проксирани за приватност.",
+    "api_docs": "API Документација",
+    "status": "Статус",
+    "version": "Верзија",
+    "engines_count": "232 мотори"
+  },
+  "examples": {
+    "try": "Пробајте пример",
+    "general": [
+      {
+        "q": "Најдобри практики за Rust async програмирање",
+        "label": "Rust async"
+      },
+      {
+        "q": "Најнови LLM истражувачки статии 2025",
+        "label": "Најнови LLM статии"
+      },
+      {
+        "q": "Како работи DNS",
+        "label": "Како работи DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Најнови LLM истражувачки статии 2025",
+        "label": "Најнови LLM статии"
+      },
+      {
+        "q": "CRISPR преглед на статии за генетско уредување",
+        "label": "CRISPR преглед"
+      },
+      {
+        "q": "преглед на архитектура на трансформатор",
+        "label": "Преглед на трансформатор"
+      }
+    ],
+    "news": [
+      {
+        "q": "Регулација на AI",
+        "label": "Регулација на AI"
+      },
+      {
+        "q": "Технолошки вести од Кореја",
+        "label": "Технолошки вести од Кореја"
+      },
+      {
+        "q": "Ажурирања на климатската политика",
+        "label": "Климатска политика"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Интереси (За Вас)",
+    "add_placeholder": "Додајте интерес...",
+    "empty": "Интересите се додаваат автоматски како што пребарувате",
+    "remove": "Отстрани"
+  },
+  "factcheck": {
+    "title": "Резултати од проверка на факти",
+    "checking": "Анализирање...",
+    "analyzing": "Анализирање на извори за контрадикции...",
+    "no_contradictions": "Нема пронајдени контрадикции во изворите",
+    "found": "Пронајдени контрадикции"
+  },
+  "foryou": {
+    "title": "За Вас",
+    "based_on": "Врз основа на: {interests}",
+    "no_interests": "Нема интереси досега. Пребарувајте за да ги изградите вашите интереси!",
+    "loading": "Вчитување на персонализирана фид…"
+  },
+  "common": {
+    "search": "Пребарување",
+    "clear": "Избриши",
+    "close": "Затвори",
+    "save": "Зачувај",
+    "cancel": "Откажи",
+    "loading": "Вчитување...",
+    "error": "Грешка",
+    "retry": "Пробај повторно",
+    "more": "Повеќе",
+    "less": "Помалку"
+  },
+  "trends": {
+    "title": "Трендови",
+    "loading": "Вчитување на трендови...",
+    "error": "Не успеа да се вчитат трендовите",
+    "empty": "Нема трендови"
+  },
+  "onboarding": {
+    "welcome": "Добредојдовте во Метапребарување",
+    "subtitle": "Вашиот приватен, AI-поддржан мотор за пребарување",
+    "private_search": "Приватно пребарување",
+    "private_search_desc": "Никогаш не се логираат побарувања",
+    "ai_answers": "AI Одговори",
+    "ai_answers_desc": "Локалниот AI сумира резултати",
+    "news_digest": "Резиме на вести",
+    "news_digest_desc": "Курирани вести со анализа",
+    "local_first": "Локално прво",
+    "local_first_desc": "Вашите податоци остануваат на вашето уредство",
+    "get_started": "Започнете"
+  },
+  "feeds": {
+    "find": "Најдете фидови",
+    "subscribe": "Пријавете се",
+    "unsubscribe": "Откажете се"
+  },
+  "errors": {
+    "load_trends": "Не успеа да се вчитат трендовите",
+    "load_feed": "Не успеа да се вчитат персонализираниот фид",
+    "load_global": "Не успеа да се вчитат глобалниот фид",
+    "translation": "Преводот не успеа"
+  },
+  "compare": {
+    "title": "Споредба на резултати",
+    "button": "Споредба",
+    "clear": "Избриши сè",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}

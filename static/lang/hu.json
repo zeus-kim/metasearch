@@ -1,0 +1,431 @@
+{
+  "app": {
+    "name": "Orgos",
+    "tagline": "Kérdezd meg a webet, privát módon"
+  },
+  "nav": {
+    "ask": "Kérdezd",
+    "discover": "Felfedezés",
+    "history": "Történelem",
+    "options": "Beállítások",
+    "classic": "Klasszikus",
+    "stats": "Statisztikák",
+    "preferences": "Preferenciák"
+  },
+  "tabs": {
+    "general": "Általános",
+    "images": "Képek",
+    "videos": "Videók",
+    "papers": "Cikkek",
+    "news": "Hírek",
+    "shopping": "Vásárlás"
+  },
+  "search": {
+    "placeholder": "Kérdezz bármit…",
+    "placeholder_news": "Írj be egy hírtémát, nyomj a Kérdezd gombra",
+    "placeholder_images": "Képek keresése…",
+    "placeholder_papers": "Írj be egy kérdést, nyomj a Kérdezd gombra",
+    "placeholder_general": "Írj be egy kérdést vagy témát, nyomj a Kérdezd gombra",
+    "placeholder_shopping": "Termékek keresése…",
+    "placeholder_videos": "Videók keresése…",
+    "button": "Kérdezd",
+    "button_search": "Keresés"
+  },
+  "status": {
+    "loading": "Betöltés…",
+    "loading_stories": "Történetek betöltése…",
+    "searching": "Keresés…",
+    "searching_web": "Web keresése…",
+    "searching_images": "Képek keresése…",
+    "searching_news": "Hírek forrásainak keresése…",
+    "searching_papers": "Tudományos források keresése…",
+    "searching_shopping": "Termékek keresése…",
+    "searching_videos": "Videók keresése…",
+    "search_complete": "Keresés befejezve.",
+    "search_failed": "A keresés meghiúsult.",
+    "answer_ready": "A válasz kész.",
+    "fetching_article": "Cikk betöltése…",
+    "fetching_publisher": "Kiadói cikk betöltése…",
+    "resolving_article": "Cikk megoldása…",
+    "resolving_gn": "Google News link megoldása…",
+    "rewriting": "Cikk újraírása…",
+    "rewriting_korean": "Újraírás koreai nyelven…",
+    "preparing_rewrite": "Teljes újraírás előkészítése…",
+    "extracted_rewriting": "Kivont cikk szöveg — újraírás alatt…",
+    "viewing_prior": "Előző forduló megtekintése — kérdezz egy következő kérdést alább."
+  },
+  "error": {
+    "no_answer": "Nincs AI válasz generálva — keresési eredmények alább.",
+    "no_news": "Nincs hír találva — próbálj meg egy másik lekérdezést.",
+    "no_stories": "Nincs történet találva — próbálj meg egy másik lekérdezést.",
+    "no_stories_category": "Nincs történet találva ebben a kategóriában — próbálj meg egy másik pillát.",
+    "rewrite_empty": "A cikk újraírása üres szöveget adott vissza.",
+    "rewrite_failed": "Nem sikerült újraírás a cikknek",
+    "load_news_failed": "Nem sikerült betölteni a híreket — ellenőrizd a szervert.",
+    "model_not_found": "A modell nem található — futtasd az ollama pull parancsot a konfigurált modelledhez, vagy válassz egy másikat a Beállításokban.",
+    "ollama_not_running": "Az Ollama nem fut — a válaszok csak keresés alapúak lesznek. Indítás: ollama serve",
+    "invalid_thread": "Érvénytelen szál JSON.",
+    "enter_question": "Írj be egy kérdést.",
+    "enter_search": "Írj be egy keresési kifejezést."
+  },
+  "article": {
+    "sources": "Források",
+    "research_progress": "Kutatási előrehaladás",
+    "thinking": "Gondolkodás",
+    "answer": "Válasz",
+    "key_points": "Kulcspontok",
+    "summary": "Összefoglaló",
+    "related_media": "Kapcsolódó média",
+    "view_more": "Nézd meg a {count} többit",
+    "back": "Vissza",
+    "read_original": "Eredeti olvasása",
+    "related_image": "Kapcsolódó kép",
+    "related": "Kapcsolódó"
+  },
+  "discover": {
+    "updated": "Frissítve: {time}",
+    "scope": {
+      "all": "📰 Minden",
+      "local": "🏠 Helyi",
+      "world": "🌍 Világ"
+    },
+    "categories": {
+      "politics": "Politika",
+      "economy": "Gazdaság",
+      "sports": "Sport",
+      "world": "Világ",
+      "entertainment": "Szórakozás",
+      "tech": "Technológia és Tudomány",
+      "culture": "Kultúra",
+      "health": "Egészség",
+      "telegram": "Telegram"
+    },
+    "seeds": {
+      "tech": "technológia tudomány",
+      "ai": "mesterséges intelligencia AI gépi tanulás",
+      "world": "világhírek nemzetközi",
+      "politics": "politika kormány választás",
+      "business": "üzlet gazdaság cégek",
+      "finance": "pénzügyek piacok részvények",
+      "health": "egészség orvostudomány jólét",
+      "climate": "klímaváltozás környezet",
+      "sports": "sport",
+      "entertainment": "szórakozás hírességek",
+      "art": "művészet kultúra",
+      "top": "top news trending headlines"
+    }
+  },
+  "history": {
+    "open": "Történelem megnyitása",
+    "close": "Történelem bezárása",
+    "imported": "Importálva: {count}",
+    "export": "JSON exportálása",
+    "import": "JSON importálása",
+    "clear": "Történelem törlése",
+    "empty": "A kérdéseid itt jelennek meg.",
+    "new_chat": "Új csevegés"
+  },
+  "panel": {
+    "history": "Történelem",
+    "bookmarks": "Könyvjelzők",
+    "tokens": "Tokens"
+  },
+  "bookmarks": {
+    "all": "Minden könyvjelző",
+    "empty": "Könyvjelző eredmények mentéséhez itt.",
+    "export": "Exportálás",
+    "clear_all": "Összes törlése",
+    "new_collection": "Új gyűjtemény"
+  },
+  "hero": {
+    "private": "Privát",
+    "ai_powered": "AI-vezérelt",
+    "local_first": "Helyi első"
+  },
+  "options": {
+    "model": "Modell",
+    "deep_research": "Mély kutatás",
+    "focus": "Fókusz",
+    "theme": "Téma",
+    "language": "Nyelv",
+    "answer_language": "AI nyelv",
+    "answer_auto": "Automatikus",
+    "research": "Kutatás",
+    "fact_check": "Tényellenőrzés"
+  },
+  "preferences": {
+    "title": "Preferenciák",
+    "language": "Nyelv",
+    "language_desc": "Válassza ki a kívánt felületi nyelvet",
+    "language_storage": "A felület nyelve a böngészőjében tárolódik.",
+    "branding": "Márkázás",
+    "branding_desc": "Testreszabhatod az alkalmazás nevét, logóját és favikonját, amely a felhasználói felületen jelenik meg.",
+    "app_name": "Alkalmazás neve",
+    "app_name_hint": "A fejlécben és az oldalcímekben megjelenő név",
+    "logo_url": "Logó URL",
+    "logo_url_hint": "URL vagy útvonal a logó képedhez (hagyj üresen az alapértelmezetthez)",
+    "favicon_url": "Favikon URL",
+    "favicon_url_hint": "URL vagy útvonal a favikonodhoz (hagyj üresen a böngésző alapértelmezettjéhez)",
+    "appearance": "Megjelenés",
+    "appearance_desc": "Testreszabhatod a vizuális stílust és elrendezést.",
+    "theme": "Téma",
+    "font_size": "Betűméret",
+    "results_layout": "Eredmények elrendezése",
+    "search": "Keresés",
+    "search_desc": "Alapértelmezett beállítások alkalmazva minden kereséshez.",
+    "ui_language": "UI nyelv",
+    "ui_language_hint": "Felhasználói felület nyelve (böngésző helyi tárolójában tárolva)",
+    "interface_language": "Felhasználói felület nyelve",
+    "stored_in_browser": "Böngészőben tárolva (helyi tároló)",
+    "search_defaults": "Keresési alapértelmezettek",
+    "search_language": "Keresési nyelv",
+    "search_language_hint": "automatikus = észlelés a lekérdezésből (Hangul → ko-KR); vagy minden, vagy egy rögzített nyelv, mint a ko-KR",
+    "fallback_language": "Visszaállási nyelvkód",
+    "fallback_language_hint": "Használva, amikor az automatikus észlelés nem egyértelmű",
+    "safe_search": "Biztonságos keresés",
+    "safe_off": "Ki",
+    "safe_moderate": "Mérsékelt",
+    "safe_strict": "Szigorú",
+    "results_per_engine": "Eredmények motoronként",
+    "ai": "AI",
+    "ai_desc": "AI modellek konfigurálása a válasz szintéziséhez és a cikk újraírásához.",
+    "ai_provider": "Szolgáltató",
+    "ai_provider_local": "Helyi (Ollama)",
+    "ai_provider_custom": "Egyedi",
+    "ai_base_url": "API alap URL",
+    "ai_base_url_hint": "Helyi: http://127.0.0.1:11434 | OpenAI: https://api.openai.com/v1",
+    "ai_api_key": "API kulcs",
+    "ai_api_key_hint": "Szükséges felhőszolgáltatókhoz (OpenAI, Anthropic, stb.)",
+    "ai_model": "Modell",
+    "ai_model_hint": "Chat/instrukciós modell a válasz szintéziséhez és a lekérdezés bővítéséhez",
+    "ai_article_model": "Cikk modell",
+    "ai_article_model_hint": "Modell a teljes oldalas hírcikkek újraírásához (alapértelmezett a fő modell)",
+    "ai_timeout": "Időtúllépés (másodperc)",
+    "ai_timeout_hint": "Kérésenkénti időtúllépés a modellhívásokhoz",
+    "ai_cost_tracking": "Költségkövetés",
+    "ai_track_usage": "Token használat követése",
+    "ai_track_usage_hint": "Token szám és becsült költség",
+    "ai_input_cost": "Bemeneti költség",
+    "ai_output_cost": "Kimeneti költség",
+    "ai_features": "Funkciók",
+    "ai_answer_synthesis": "Válasz szintézis",
+    "ai_query_expansion": "Lekérdezés bővítés",
+    "ai_reranking": "Újrarangsorolás",
+    "ai_clustering": "Klaszterezés",
+    "ai_vision": "Látás",
+    "news": "Hírek",
+    "news_desc": "Hírek aggregálása és cikkbeállítások.",
+    "news_per_source": "Cikkek forrásonként",
+    "news_freshness": "Frissesség fél életidő (órák)",
+    "news_freshness_weight": "Frissesség súly",
+    "news_dedup": "Dedup hasonlósági küszöb",
+    "news_max_age": "Max életkor (napok)",
+    "news_cache_ttl": "Cache TTL (másodpercek)",
+    "news_enrich_max": "Max cikkek gazdagítása",
+    "engines": "Keresőmotorok",
+    "engines_desc": "Motorok engedélyezése/letiltása és rangsorolási súlyok beállítása. Magasabb súly = nagyobb befolyás az eredmény sorrendjére.",
+    "engine": "motor",
+    "categories": "kategóriák",
+    "weight": "súly",
+    "privacy": "Adatvédelem",
+    "privacy_desc": "Irányítsd, hogyan kezelik az adataidat.",
+    "proxy_images": "Képek proxyzása",
+    "proxy_images_hint": "Képek átirányítása a szerveren keresztül, hogy elrejtsd az IP címedet harmadik felek elől",
+    "remove_trackers": "Követő paraméterek eltávolítása",
+    "remove_trackers_hint": "UTM és más követő paraméterek eltávolítása az URL-ekből",
+    "save_history": "Keresési előzmények mentése",
+    "save_history_hint": "Keresések helyben tárolása a böngészőben (soha nem küldve a szervernek)",
+    "clear_data": "Adatok törlése",
+    "clear_localstorage": "Helyi tároló törlése",
+    "clear_indexeddb": "IndexedDB törlése",
+    "shortcuts": "Billentyűparancsok",
+    "shortcuts_desc": "Gyors hozzáférési billentyűk a haladó felhasználók számára.",
+    "shortcut_focus_search": "Keresőmező fókuszálása",
+    "shortcut_close": "Panel bezárása / Mégse",
+    "shortcut_navigate": "Eredmények navigálása",
+    "shortcut_open": "Kiválasztott eredmény megnyitása",
+    "shortcut_new_tab": "Megnyitás új fülön",
+    "shortcut_switch_mode": "Keresési mód váltása",
+    "shortcut_help": "Ez a segítség megjelenítése",
+    "server": "Szerver",
+    "server_desc": "Szerver konfiguráció és hálózati beállítások.",
+    "bind_address": "Kötési cím",
+    "port": "Port",
+    "max_connections": "Max kapcsolatok",
+    "image_proxy": "Kép proxy engedélyezése",
+    "cache_backend": "Cache háttér",
+    "cache_dir": "Cache könyvtár",
+    "redis_url": "Redis URL",
+    "advanced": "Haladó",
+    "advanced_desc": "Cache és időtúllépési beállítások.",
+    "cache_ttl": "Cache TTL (másodpercek)",
+    "cache_ttl_hint": "Eredmény cache élettartama (0 letiltja a cache-t)",
+    "request_timeout": "Kérés időtúllépés (másodpercek)",
+    "request_timeout_hint": "Motoronkénti hálózati időtúllépés",
+    "save": "Preferenciák mentése",
+    "saved": "Mentve",
+    "saved_msg": "beírva a settings.yml-be és alkalmazva az új keresésekre.",
+    "server_settings": "Ezek a beállítások a szerveroldalon megmaradnak",
+    "raw_config": "Konfiguráció JSON",
+    "stats": "Statisztikák",
+    "home": "Kezdőlap",
+    "logout": "Kijelentkezés",
+    "ai_embedding_model": "Beágyazási modell",
+    "ai_vision_model": "Látásmodell",
+    "ai_answer_top_n": "Top N válasz",
+    "ai_answer_top_n_hint": "Eredmények száma válasz szintézishez",
+    "ai_news_prompt_ko": "Koreai hírelemzés prompt",
+    "ai_news_prompt_ko_hint": "Egyéni prompt koreai hírelemzéshez",
+    "ai_news_prompt_ko_placeholder": "Hagyja üresen az alapértelmezetthez.",
+    "ai_news_prompt_en": "Angol hírelemzés prompt",
+    "ai_news_prompt_en_hint": "Egyéni prompt angol hírelemzéshez",
+    "ai_news_prompt_en_placeholder": "Hagyja üresen az alapértelmezetthez.",
+    "ai_answer_language": "Válasz nyelve",
+    "ai_answer_language_hint": "Célnyelv AI válaszokhoz",
+    "ai_answer_auto": "Automatikus felismerés"
+  },
+  "focus": {
+    "general": "Általános",
+    "academic": "Akadémiai",
+    "writing": "Írás",
+    "code": "Kód"
+  },
+  "footer": {
+    "grounded_answers": "Alapozott válaszok a helyi modelledből — 200+ keresőmotor, nulla lekérdezés naplózás.",
+    "academic_papers": "Akadémiai cikkek az arXiv, OpenAlex, Crossref, Europe PMC, Semantic Scholar, DOAJ és még sok más forrásból.",
+    "news_digest": "Hírek összefoglalója: cikkoldalak lekérése, összefoglalók helyben való újraírása az Ollama segítségével — nagy képek csak, nincs favikon felnagyítás.",
+    "images": "Wikimedia Commons képkutatás — miniatűrök proxyzva a magánélet védelme érdekében.",
+    "api_docs": "API dokumentáció",
+    "status": "Állapot",
+    "version": "Verzió",
+    "engines_count": "232 motor"
+  },
+  "examples": {
+    "try": "Próbálj ki egy példát",
+    "general": [
+      {
+        "q": "Rust aszinkron programozás legjobb gyakorlatai",
+        "label": "Rust aszinkron"
+      },
+      {
+        "q": "Legújabb LLM kutatási cikkek 2025",
+        "label": "Legújabb LLM cikkek"
+      },
+      {
+        "q": "Hogyan működik a DNS",
+        "label": "Hogyan működik a DNS"
+      }
+    ],
+    "papers": [
+      {
+        "q": "Legújabb LLM kutatási cikkek 2025",
+        "label": "Legújabb LLM cikkek"
+      },
+      {
+        "q": "CRISPR génszerkesztési áttekintő cikkek",
+        "label": "CRISPR áttekintés"
+      },
+      {
+        "q": "transformer architektúra felmérés",
+        "label": "Transformer felmérés"
+      }
+    ],
+    "news": [
+      {
+        "q": "AI szabályozás",
+        "label": "AI szabályozás"
+      },
+      {
+        "q": "Korea technológiai hírek",
+        "label": "Korea technológia"
+      },
+      {
+        "q": "klíma politika frissítések",
+        "label": "Klíma politika"
+      }
+    ]
+  },
+  "interests": {
+    "title": "Érdeklődések (Számodra)",
+    "add_placeholder": "Add hozzá az érdeklődést...",
+    "empty": "Az érdeklődések automatikusan hozzáadódnak, ahogy keresel",
+    "remove": "Eltávolítás"
+  },
+  "factcheck": {
+    "title": "Tényellenőrzési eredmények",
+    "checking": "Elemzés...",
+    "analyzing": "Források ellentmondásainak elemzése...",
+    "no_contradictions": "Nincs ellentmondás a forrásokban",
+    "found": "Talált ellentmondások"
+  },
+  "foryou": {
+    "title": "Számodra",
+    "based_on": "Alapján: {interests}",
+    "no_interests": "Még nincs érdeklődés. Kereséssel építsd fel az érdeklődéseidet!",
+    "loading": "Személyre szabott feed betöltése..."
+  },
+  "common": {
+    "search": "Keresés",
+    "clear": "Törlés",
+    "close": "Bezárás",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "loading": "Betöltés...",
+    "error": "Hiba",
+    "retry": "Újrapróbálkozás",
+    "more": "Több",
+    "less": "Kevesebb"
+  },
+  "trends": {
+    "title": "Jelenlegi trendek",
+    "loading": "Trendek betöltése...",
+    "error": "A trendek betöltése meghiúsult",
+    "empty": "Nincs trendi téma"
+  },
+  "onboarding": {
+    "welcome": "Üdvözlünk a Metakeresésben",
+    "subtitle": "A privát, AI-vezérelt keresőmotorod",
+    "private_search": "Privát keresés",
+    "private_search_desc": "Soha nincs lekérdezés naplózás",
+    "ai_answers": "AI válaszok",
+    "ai_answers_desc": "Helyi AI összefoglalja az eredményeket",
+    "news_digest": "Hírek összefoglalója",
+    "news_digest_desc": "Kuratált hírek elemzéssel",
+    "local_first": "Helyi első",
+    "local_first_desc": "Az adataid a készülékeden maradnak",
+    "get_started": "Kezdj el"
+  },
+  "feeds": {
+    "find": "Hírek keresése",
+    "subscribe": "Feliratkozás",
+    "unsubscribe": "Leiratkozás"
+  },
+  "errors": {
+    "load_trends": "A trendek betöltése meghiúsult",
+    "load_feed": "A személyre szabott feed betöltése meghiúsult",
+    "load_global": "A globális feed betöltése meghiúsult",
+    "translation": "A fordítás meghiúsult"
+  },
+  "compare": {
+    "title": "Eredmények összehasonlítása",
+    "button": "Összehasonlítás",
+    "clear": "Összes törlése",
+    "global_title": "🌍 Global Perspective",
+    "global_desc": "Compare how search results differ across regions",
+    "select_all": "All",
+    "clear_all": "Clear",
+    "run": "Compare"
+  },
+  "tokens": {
+    "session_usage": "Session Usage",
+    "total": "Total",
+    "input": "Input",
+    "output": "Output",
+    "cost": "Cost",
+    "calls": "Calls",
+    "limit_settings": "Limit Settings",
+    "daily_limit": "Daily token limit",
+    "cost_limit": "Daily cost limit ($)",
+    "reset": "Reset session"
+  }
+}
