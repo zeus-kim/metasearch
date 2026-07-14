@@ -440,7 +440,7 @@ custom_engines:
 
   - name: pixabay
     type: json
-    url_template: "https://pixabay.com/api/?key=2488108-3c13e6c6d3de5f6b9ebeee659&q={query}&per_page=25"
+    url_template: "https://pixabay.com/api/?key={api_key}&q={query}&per_page=25"
     categories: [images]
     enabled: false
     weight: 0.9
@@ -479,7 +479,7 @@ custom_engines:
 
   - name: giphy
     type: json
-    url_template: "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q={query}&limit=25"
+    url_template: "https://api.giphy.com/v1/gifs/search?api_key={api_key}&q={query}&limit=25"
     categories: [images]
     enabled: false
     weight: 0.6
