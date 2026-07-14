@@ -101,6 +101,16 @@ impl ArticleStore {
 
             CREATE INDEX IF NOT EXISTS idx_feed_quality_status ON feed_quality(status);
             CREATE INDEX IF NOT EXISTS idx_feed_quality_score ON feed_quality(quality_score DESC);
+
+            -- Domain extraction stats (content extraction success/failure)
+            CREATE TABLE IF NOT EXISTS domain_extraction_stats (
+                domain TEXT PRIMARY KEY,
+                success_count INTEGER DEFAULT 0,
+                fail_count INTEGER DEFAULT 0,
+                last_attempt_at INTEGER,
+                extractable INTEGER DEFAULT 1
+            );
+            CREATE INDEX IF NOT EXISTS idx_domain_extractable ON domain_extraction_stats(extractable);
         "#)?;
 
         // Migration: add columns that may be missing from older DBs
@@ -418,10 +428,60 @@ impl ArticleStore {
             rusqlite::params![cutoff]
         )?;
 
+        // Embeddings reference articles with ON DELETE CASCADE, but rusqlite
+        // connections don't enable foreign_keys by default — drop orphans.
+        conn.execute(
+            "DELETE FROM article_embeddings WHERE article_id NOT IN (SELECT id FROM articles)",
+            [],
+        )?;
+
         // Optimize database
         conn.execute_batch("PRAGMA optimize;")?;
 
         Ok(deleted)
+    }
+
+    /// Bytes of live data in the database (page count minus freelist), i.e.
+    /// what the file would shrink to after a VACUUM.
+    pub fn disk_usage_bytes(&self) -> Result<u64, rusqlite::Error> {
+        let conn = self.conn.lock().unwrap();
+        let page_size: i64 = conn.query_row("PRAGMA page_size", [], |r| r.get(0))?;
+        let page_count: i64 = conn.query_row("PRAGMA page_count", [], |r| r.get(0))?;
+        let freelist: i64 = conn.query_row("PRAGMA freelist_count", [], |r| r.get(0))?;
+        Ok((page_count - freelist).max(0) as u64 * page_size.max(0) as u64)
+    }
+
+    /// Evict oldest articles until live data fits under `max_disk_mb` MiB,
+    /// then VACUUM to actually return the space to the filesystem. No-op when
+    /// `max_disk_mb` is 0 (unlimited). Returns the number of evicted articles.
+    pub fn enforce_disk_cap(&self, max_disk_mb: u64) -> Result<usize, rusqlite::Error> {
+        if max_disk_mb == 0 {
+            return Ok(0);
+        }
+        let cap_bytes = max_disk_mb.saturating_mul(1024 * 1024);
+        let mut evicted = 0usize;
+        while self.disk_usage_bytes()? > cap_bytes {
+            let conn = self.conn.lock().unwrap();
+            let deleted = conn.execute(
+                "DELETE FROM articles WHERE id IN
+                     (SELECT id FROM articles ORDER BY indexed_at ASC LIMIT 500)",
+                [],
+            )?;
+            conn.execute(
+                "DELETE FROM article_embeddings WHERE article_id NOT IN (SELECT id FROM articles)",
+                [],
+            )?;
+            drop(conn);
+            if deleted == 0 {
+                break; // nothing left to evict; cap smaller than fixed overhead
+            }
+            evicted += deleted;
+        }
+        if evicted > 0 {
+            let conn = self.conn.lock().unwrap();
+            conn.execute_batch("VACUUM;")?;
+        }
+        Ok(evicted)
     }
 
     /// Get statistics
@@ -604,6 +664,110 @@ impl ArticleStore {
         }
         Ok(())
     }
+
+    /// Record domain extraction success
+    pub fn record_extraction_success(&self, url: &str) {
+        if let Some(domain) = extract_domain(url) {
+            let conn = match self.conn.lock() {
+                Ok(c) => c,
+                Err(_) => return,
+            };
+            let now = std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .map(|d| d.as_secs() as i64)
+                .unwrap_or(0);
+
+            let _ = conn.execute(
+                "INSERT INTO domain_extraction_stats (domain, success_count, last_attempt_at)
+                 VALUES (?1, 1, ?2)
+                 ON CONFLICT(domain) DO UPDATE SET
+                    success_count = success_count + 1,
+                    last_attempt_at = ?2,
+                    extractable = CASE
+                        WHEN CAST(success_count + 1 AS REAL) / (success_count + fail_count + 1) >= 0.3 THEN 1
+                        ELSE 0
+                    END",
+                rusqlite::params![domain, now]
+            );
+        }
+    }
+
+    /// Record domain extraction failure
+    pub fn record_extraction_failure(&self, url: &str) {
+        if let Some(domain) = extract_domain(url) {
+            let conn = match self.conn.lock() {
+                Ok(c) => c,
+                Err(_) => return,
+            };
+            let now = std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .map(|d| d.as_secs() as i64)
+                .unwrap_or(0);
+
+            let _ = conn.execute(
+                "INSERT INTO domain_extraction_stats (domain, fail_count, last_attempt_at, extractable)
+                 VALUES (?1, 1, ?2, 1)
+                 ON CONFLICT(domain) DO UPDATE SET
+                    fail_count = fail_count + 1,
+                    last_attempt_at = ?2,
+                    extractable = CASE
+                        WHEN CAST(success_count AS REAL) / (success_count + fail_count + 1) >= 0.3 THEN 1
+                        ELSE 0
+                    END",
+                rusqlite::params![domain, now]
+            );
+        }
+    }
+
+    /// Check if domain is extractable (success rate >= 30%)
+    pub fn is_domain_extractable(&self, url: &str) -> bool {
+        let domain = match extract_domain(url) {
+            Some(d) => d,
+            None => return true, // Unknown domain, assume extractable
+        };
+
+        let conn = match self.conn.lock() {
+            Ok(c) => c,
+            Err(_) => return true,
+        };
+
+        let result: Result<i64, _> = conn.query_row(
+            "SELECT extractable FROM domain_extraction_stats WHERE domain = ?1",
+            rusqlite::params![domain],
+            |row| row.get(0)
+        );
+
+        match result {
+            Ok(extractable) => extractable == 1,
+            Err(_) => true, // No data yet, assume extractable
+        }
+    }
+
+    /// Get list of non-extractable domains
+    pub fn get_non_extractable_domains(&self) -> Vec<String> {
+        let conn = match self.conn.lock() {
+            Ok(c) => c,
+            Err(_) => return vec![],
+        };
+
+        let mut stmt = match conn.prepare(
+            "SELECT domain FROM domain_extraction_stats WHERE extractable = 0"
+        ) {
+            Ok(s) => s,
+            Err(_) => return vec![],
+        };
+
+        stmt.query_map([], |row| row.get(0))
+            .map(|rows| rows.filter_map(|r| r.ok()).collect())
+            .unwrap_or_default()
+    }
+}
+
+/// Extract domain from URL
+fn extract_domain(url: &str) -> Option<String> {
+    url::Url::parse(url)
+        .ok()
+        .and_then(|u| u.host_str().map(|h| h.to_lowercase()))
 }
 
 /// Store statistics

@@ -34,6 +34,8 @@ pub struct PollerConfig {
     pub timeout_secs: u64,
     /// User agent for requests
     pub user_agent: String,
+    /// Hard cap on the on-disk article index in MiB (0 = unlimited).
+    pub max_disk_mb: u64,
 }
 
 impl Default for PollerConfig {
@@ -43,6 +45,7 @@ impl Default for PollerConfig {
             poll_interval_mins: DEFAULT_POLL_INTERVAL_MINS,
             timeout_secs: 30,
             user_agent: "Metasearch/1.0 RSS Reader".to_string(),
+            max_disk_mb: 0,
         }
     }
 }
@@ -516,6 +519,16 @@ impl FeedCache {
         }
     }
 
+    /// Stats from the on-disk article store, if one is open.
+    pub fn db_stats(&self) -> Option<super::store::StoreStats> {
+        self.store.as_ref().and_then(|s| s.stats().ok())
+    }
+
+    /// Live bytes used by the on-disk article store, if one is open.
+    pub fn db_usage_bytes(&self) -> Option<u64> {
+        self.store.as_ref().and_then(|s| s.disk_usage_bytes().ok())
+    }
+
     /// Clean up old articles beyond retention period
     pub fn cleanup_old_articles(&self) {
         let retention_secs = (self.settings.retention_days as i64) * 24 * 60 * 60;
@@ -531,6 +544,24 @@ impl FeedCache {
                         .map(|ts| now_ts - ts <= retention_secs)
                         .unwrap_or(true)
                 });
+            }
+        }
+
+        // The retain above only trims the in-memory hot cache; prune the
+        // on-disk index too, then enforce the disk cap if one is set.
+        if let Some(ref store) = self.store {
+            match store.cleanup() {
+                Ok(n) if n > 0 => eprintln!("[RSS] DB cleanup: {n} expired articles deleted"),
+                Err(e) => eprintln!("[RSS] DB cleanup error: {e}"),
+                _ => {}
+            }
+            match store.enforce_disk_cap(self.settings.max_disk_mb) {
+                Ok(n) if n > 0 => eprintln!(
+                    "[RSS] Disk cap {}MiB: {n} oldest articles evicted",
+                    self.settings.max_disk_mb
+                ),
+                Err(e) => eprintln!("[RSS] Disk cap error: {e}"),
+                _ => {}
             }
         }
     }
@@ -770,6 +801,38 @@ impl FeedCache {
 
         extract_og_image(head).ok_or(())
     }
+
+    /// Record successful article extraction for a domain
+    pub fn record_extraction_success(&self, url: &str) {
+        if let Some(ref store) = self.store {
+            store.record_extraction_success(url);
+        }
+    }
+
+    /// Record failed article extraction for a domain
+    pub fn record_extraction_failure(&self, url: &str) {
+        if let Some(ref store) = self.store {
+            store.record_extraction_failure(url);
+        }
+    }
+
+    /// Check if domain is extractable
+    pub fn is_domain_extractable(&self, url: &str) -> bool {
+        if let Some(ref store) = self.store {
+            store.is_domain_extractable(url)
+        } else {
+            true // No store, assume extractable
+        }
+    }
+
+    /// Get non-extractable domains
+    pub fn get_non_extractable_domains(&self) -> Vec<String> {
+        if let Some(ref store) = self.store {
+            store.get_non_extractable_domains()
+        } else {
+            vec![]
+        }
+    }
 }
 
 /// Feed cache statistics
@@ -810,12 +873,14 @@ impl FeedPoller {
         let mut offset = 0;
 
         // === BOOST PHASE: Tier 1 feeds first ===
+        // Skip boost if METASEARCH_SKIP_BOOST=1 (for large existing DBs)
+        let skip_boost = std::env::var("METASEARCH_SKIP_BOOST").map(|v| v == "1").unwrap_or(false);
         let tier1_feeds: Vec<_> = load_registry().iter()
             .filter(|f| f.tier == 1)
             .collect();
         let tier1_count = tier1_feeds.len();
 
-        if tier1_count > 0 {
+        if tier1_count > 0 && !skip_boost {
             eprintln!("\n[BOOST] Starting rapid indexing of {} tier-1 major news sources...", tier1_count);
             eprintln!("[BOOST] Your Discover feed will be ready in ~2-3 minutes\n");
 
@@ -825,8 +890,11 @@ impl FeedPoller {
 
             for chunk in tier1_feeds.chunks(boost_batch) {
                 let urls: Vec<_> = chunk.iter().map(|f| f.url.clone()).collect();
-                self.cache.bulk_fetch_urls(&urls, 20).await; // 20 concurrent
+                self.cache.bulk_fetch_urls(&urls, 3).await; // 3 concurrent for stability
                 fetched += chunk.len();
+
+                // Yield to user requests between batches
+                tokio::time::sleep(Duration::from_secs(1)).await;
 
                 let elapsed = boost_start.elapsed().as_secs();
                 let eta = if fetched > 0 {

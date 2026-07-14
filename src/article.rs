@@ -129,9 +129,57 @@ pub async fn fetch_article(url: &str, title_hint: &str) -> ArticleBody {
         }
     }
 
+    // Try direct fetch first
+    let result = fetch_article_direct(&fetch_url, title_hint).await;
+
+    // If extraction failed, try Jina Reader as fallback for JS-rendered sites
+    let final_result = if result.error.is_some() || result.text.trim().is_empty() {
+        if let Some(jina_result) = fetch_via_jina(&fetch_url, title_hint).await {
+            if is_usable_article_text(&jina_result.text, title_hint) {
+                Some(ArticleBody {
+                    url: if fetch_url != original { fetch_url.clone() } else { original.to_string() },
+                    ..jina_result
+                })
+            } else {
+                None
+            }
+        } else {
+            None
+        }
+    } else {
+        None
+    };
+
+    // Record extraction result for domain tracking
+    if let Some(cache) = crate::engines::local_feeds::get_feed_cache_public() {
+        if final_result.is_some() || (result.error.is_none() && !result.text.trim().is_empty()) {
+            cache.record_extraction_success(&fetch_url);
+        } else {
+            cache.record_extraction_failure(&fetch_url);
+        }
+    }
+
+    // Return Jina result if successful, otherwise original result
+    if let Some(jina_result) = final_result {
+        return jina_result;
+    }
+
+    ArticleBody {
+        url: if fetch_url != original && result.url == fetch_url {
+            fetch_url
+        } else if result.url != original {
+            result.url
+        } else {
+            original.to_string()
+        },
+        ..result
+    }
+}
+
+async fn fetch_article_direct(fetch_url: &str, title_hint: &str) -> ArticleBody {
     let client = safe_fetch_client();
     let resp = match client
-        .get(&fetch_url)
+        .get(fetch_url)
         .header(reqwest::header::USER_AGENT, ARTICLE_USER_AGENT)
         .header(reqwest::header::ACCEPT, "text/html,application/xhtml+xml")
         .timeout(FETCH_TIMEOUT)
@@ -139,29 +187,29 @@ pub async fn fetch_article(url: &str, title_hint: &str) -> ArticleBody {
         .await
     {
         Ok(r) => r,
-        Err(e) => return err_body(original, title_hint, &format!("fetch failed: {e}")),
+        Err(e) => return err_body(fetch_url, title_hint, &format!("fetch failed: {e}")),
     };
 
     if !resp.status().is_success() {
         return err_body(
-            original,
+            fetch_url,
             title_hint,
-            &format!("http {} (resolved: {fetch_url})", resp.status()),
+            &format!("http {}", resp.status()),
         );
     }
 
     let bytes = match resp.bytes().await {
         Ok(b) => b,
-        Err(e) => return err_body(original, title_hint, &format!("read failed: {e}")),
+        Err(e) => return err_body(fetch_url, title_hint, &format!("read failed: {e}")),
     };
     if bytes.len() > MAX_HTML_BYTES {
-        return err_body(original, title_hint, "response too large");
+        return err_body(fetch_url, title_hint, "response too large");
     }
 
     let html = String::from_utf8_lossy(&bytes);
     let (title, text) = extract_article_text(&html, title_hint);
     let images = extract_large_images(&html);
-    let fetch_url_still_gn = crate::googlenews_decode::is_google_news_article_url(&fetch_url);
+    let fetch_url_still_gn = crate::googlenews_decode::is_google_news_article_url(fetch_url);
     let error = if text.trim().is_empty() {
         Some("no extractable text".into())
     } else if fetch_url_still_gn || is_boilerplate_article_text(&text, title_hint) {
@@ -170,11 +218,7 @@ pub async fn fetch_article(url: &str, title_hint: &str) -> ArticleBody {
         None
     };
     ArticleBody {
-        url: if fetch_url != original {
-            fetch_url
-        } else {
-            original.to_string()
-        },
+        url: fetch_url.to_string(),
         title: if title.trim().eq_ignore_ascii_case("Google News") {
             title_hint.to_string()
         } else {
@@ -184,6 +228,47 @@ pub async fn fetch_article(url: &str, title_hint: &str) -> ArticleBody {
         images,
         error,
     }
+}
+
+async fn fetch_via_jina(url: &str, title_hint: &str) -> Option<ArticleBody> {
+    let jina_url = format!("https://r.jina.ai/{}", url);
+    let client = safe_fetch_client();
+
+    let resp = client
+        .get(&jina_url)
+        .header(reqwest::header::USER_AGENT, ARTICLE_USER_AGENT)
+        .header("Accept", "text/plain")
+        .timeout(Duration::from_secs(10))
+        .send()
+        .await
+        .ok()?;
+
+    if !resp.status().is_success() {
+        return None;
+    }
+
+    let text = resp.text().await.ok()?;
+    if text.trim().len() < 100 {
+        return None;
+    }
+
+    // Jina returns markdown - extract title from first # heading if present
+    let mut lines = text.lines();
+    let title = lines
+        .next()
+        .and_then(|l| l.strip_prefix("# "))
+        .unwrap_or(title_hint)
+        .to_string();
+
+    let body_text: String = lines.collect::<Vec<_>>().join("\n");
+
+    Some(ArticleBody {
+        url: url.to_string(),
+        title,
+        text: body_text.trim().to_string(),
+        images: Vec::new(),
+        error: None,
+    })
 }
 
 fn err_body(url: &str, title_hint: &str, msg: &str) -> ArticleBody {
@@ -234,9 +319,9 @@ pub fn has_hangul(s: &str) -> bool {
 
 fn boilerplate_error_message(title_hint: &str) -> String {
     if has_hangul(title_hint) {
-        "기사 본문을 불러오지 못했습니다 (Google News 안내 페이지만 추출됨). 아래 원문 링크를 이용해 주세요.".into()
+        "기사 본문을 추출하지 못했습니다. 아래 원문 링크를 이용해 주세요.".into()
     } else {
-        "Could not extract the publisher article (Google News interstitial only). Use the original link below.".into()
+        "Could not extract article content. Use the original link below.".into()
     }
 }
 

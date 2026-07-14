@@ -7,6 +7,7 @@ use crate::feeds::FeedCache;
 use crate::types::EngineResult;
 use super::EngineContext;
 use std::sync::{Arc, OnceLock};
+use std::time::Duration;
 
 static FEED_CACHE: OnceLock<Arc<FeedCache>> = OnceLock::new();
 
@@ -45,9 +46,25 @@ pub async fn search(ctx: &EngineContext<'_>) -> Result<Vec<EngineResult>, String
     let country = ctx.country;
     eprintln!("[local_feeds] DB query for lang={}, category={:?}, country={:?}, query={}, is_social={}", lang, category, country, query, is_social);
 
+    // Use timeout to prevent slow DB queries from blocking the entire search
+    let db_timeout = Duration::from_secs(3);
+
+    // Get list of non-extractable domains to filter out
+    let non_extractable = cache.get_non_extractable_domains();
+    let should_filter_extractable = !non_extractable.is_empty();
+
     let filtered: Vec<_> = if is_generic || category.is_some() || is_social || country.is_some() {
         // Generic query or category/country browsing: get from DB with filters
-        let items = cache.get_items_from_db_with_country(lang, category, country, ctx.max_results * 5).await;
+        let items = match tokio::time::timeout(
+            db_timeout,
+            cache.get_items_from_db_with_country(lang, category, country, ctx.max_results * 3)
+        ).await {
+            Ok(items) => items,
+            Err(_) => {
+                eprintln!("[local_feeds] DB query timed out after {}s", db_timeout.as_secs());
+                return Ok(vec![]);
+            }
+        };
         eprintln!("[local_feeds] get_items_from_db returned {} items", items.len());
         let items: Vec<_> = if is_social {
             // For social category, filter to blog sources only
@@ -60,10 +77,27 @@ pub async fn search(ctx: &EngineContext<'_>) -> Result<Vec<EngineResult>, String
         } else {
             items
         };
-        items.into_iter().take(ctx.max_results * 3).collect()
+        // Filter out non-extractable domains for Discover
+        let items: Vec<_> = if should_filter_extractable {
+            items.into_iter().filter(|item| {
+                !non_extractable.iter().any(|d| item.url.contains(d))
+            }).collect()
+        } else {
+            items
+        };
+        items.into_iter().take(ctx.max_results * 2).collect()
     } else {
         // Specific query without category: use FTS search
-        let items = cache.search(query, lang, ctx.max_results * 5).await;
+        let items = match tokio::time::timeout(
+            db_timeout,
+            cache.search(query, lang, ctx.max_results * 3)
+        ).await {
+            Ok(items) => items,
+            Err(_) => {
+                eprintln!("[local_feeds] FTS search timed out after {}s", db_timeout.as_secs());
+                return Ok(vec![]);
+            }
+        };
         eprintln!("[local_feeds] FTS search returned {} items", items.len());
         items
     };
