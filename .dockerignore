@@ -1,0 +1,56 @@
+# Build artifacts
+target/
+*.rlib
+*.rmeta
+
+# Cache directories
+.metasearch-cache/
+.cache/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Documentation (not needed in image)
+*.md
+!README.md
+docs/
+ARCHITECTURE.md
+DESIGN.md
+LICENSE
+
+# Test files
+tests/
+**/*.test.rs
+**/*_test.rs
+
+# Local configuration (use volume mounts instead)
+*.local.yml
+*.local.yaml
+.env
+.env.*
+!.env.example
+
+# Logs
+**/*.log
+nohup.out
+
+# Deploy scripts (not needed in image)
+deploy/
+scripts/
+Makefile
+Caddyfile
+
+# Docker files themselves
+Dockerfile*
+docker-compose*.yml
+.dockerignore
