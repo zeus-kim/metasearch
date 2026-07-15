@@ -594,14 +594,15 @@ fn parse_crypto(body: &Value, req: &CryptoRequest) -> Option<Answer> {
 pub fn weather_request(q: &str) -> Option<String> {
     let lower = q.trim().to_ascii_lowercase();
 
-    // Check for weather keywords (including common typos)
+    // Check for weather keywords (including common typos). English keywords
+    // must match whole words — "weatherproof" is not a weather query.
     let has_weather_keyword = lower.contains("날씨")
         || lower.contains("날시")  // typo
-        || lower.contains("weather")
         || lower.contains("기온")
         || lower.contains("온도")
-        || lower.contains("forecast")
-        || lower.contains("temperature");
+        || lower
+            .split_whitespace()
+            .any(|w| matches!(w, "weather" | "forecast" | "temperature"));
 
     if !has_weather_keyword {
         return None;
@@ -614,28 +615,29 @@ pub fn weather_request(q: &str) -> Option<String> {
         return Some(place);
     }
 
-    // Default fallback
-    Some("Seoul".to_string())
+    // No place in the query — don't guess one; let normal search handle it.
+    None
 }
 
 fn extract_place_from_query(q: &str) -> String {
-    // Remove weather keywords and extract the place
-    let clean = q
-        .replace("날씨", "")
-        .replace("날시", "")  // typo
-        .replace("기온", "")
-        .replace("온도", "")
-        .replace("weather", "")
-        .replace("forecast", "")
-        .replace("temperature", "")
-        .replace("in", "")
-        .replace("today", "")
-        .replace("now", "")
-        .replace("?", "")
-        .trim()
-        .to_string();
-
-    if clean.is_empty() { "Seoul".to_string() } else { clean }
+    // Korean keywords attach without spaces ("서울날씨") — substring removal.
+    let mut cleaned = q.replace('?', " ");
+    for k in ["날씨", "날시", "기온", "온도"] {
+        cleaned = cleaned.replace(k, " ");
+    }
+    // English keywords and connectives are removed as whole words only —
+    // a substring replace of "in" would eat into place names like "berlin".
+    cleaned
+        .split_whitespace()
+        .filter(|w| {
+            !matches!(
+                *w,
+                "weather" | "forecast" | "temperature" | "in" | "for" | "at" | "the" | "today"
+                    | "now" | "tomorrow"
+            )
+        })
+        .collect::<Vec<_>>()
+        .join(" ")
 }
 
 pub async fn fetch_weather(client: &reqwest::Client, place: &str, timeout: Duration) -> Option<Answer> {
@@ -1984,7 +1986,7 @@ mod tests {
         let a = parse_weather(&wx, &label).unwrap();
         assert!(a.answer.contains("London, United Kingdom"));
         assert!(a.answer.contains("14.2"));
-        assert!(a.answer.contains("Rain"));
+        assert!(a.answer.contains("🌧"), "weather_code 61 renders the rain icon");
         assert!(a.answer.contains("18.5"));
     }
 

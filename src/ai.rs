@@ -2180,14 +2180,18 @@ mod tests {
 
     #[test]
     fn news_prompt_demands_structure_language_and_citation() {
-        let p = news_full_page_prompt("Headline", "https://example.com/a", &"x".repeat(80));
+        let ai = AiSettings::default();
+        let p = news_full_page_prompt(&ai, "Headline", "https://example.com/a", &"x".repeat(80), None);
         assert!(p.contains("## "));
         assert!(p.contains("[1]"));
-        assert!(p.to_lowercase().contains("same language"));
+        // Latin content auto-detects to the English template.
+        assert!(p.contains("Write in English only"));
         let ko = news_full_page_prompt(
+            &ai,
             "박근혜·이명박 '동시 등판'",
             "https://news.kbs.co.kr/x",
             &"x".repeat(80),
+            None,
         );
         assert!(ko.contains("한글"));
     }

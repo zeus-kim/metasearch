@@ -201,7 +201,7 @@ async fn fetch_news_fallback(
         categories: vec!["news".to_string()],
         pageno: 1,
         language: language.map(|s| s.to_string()),
-        time_range: Some("day".to_string()), // Recent news only
+        time_range: None, // Use max_age_hours from settings instead of fixed time_range
         safe_search: None,
         ai_answer: Some(false), // No AI synthesis for fallback
         context: None,
@@ -2735,6 +2735,7 @@ mod tests {
                     title: format!("t{i}"),
                     url: format!("https://example.com/{i}"),
                     engine: "news".into(),
+                    source: String::new(),
                     teaser: String::new(),
                     image_url_large: String::new(),
                     publisher_url: String::new(),
@@ -2829,6 +2830,7 @@ mod tests {
             title: "Story".into(),
             url: "https://news.google.com/rss/articles/abc".into(),
             engine: "googlenews".into(),
+            source: String::new(),
             teaser: String::new(),
             image_url_large: image.into(),
             publisher_url: String::new(),

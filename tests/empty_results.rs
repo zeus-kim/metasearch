@@ -18,12 +18,24 @@ fn cooling(ht: &HealthTracker, engine: &str) -> bool {
 }
 
 #[test]
-fn consecutive_empty_results_trip_cooldown() {
+fn empty_results_do_not_trip_cooldown_alone() {
+    // Empty results are often query-specific (especially non-English), so
+    // they are recorded for visibility but never trip the cool-down —
+    // see FailureClass::counts_toward_cooldown.
     let ht = HealthTracker::new(3, 60);
-    for _ in 0..2 {
+    for _ in 0..5 {
         assert!(!ht.record_failure("brave", FailureClass::EmptyResults));
     }
-    assert!(ht.record_failure("brave", FailureClass::EmptyResults));
+    assert!(!cooling(&ht, "brave"));
+}
+
+#[test]
+fn consecutive_hard_failures_trip_cooldown() {
+    let ht = HealthTracker::new(3, 60);
+    for _ in 0..2 {
+        assert!(!ht.record_failure("brave", FailureClass::BotBlock));
+    }
+    assert!(ht.record_failure("brave", FailureClass::BotBlock));
     assert!(cooling(&ht, "brave"));
 }
 

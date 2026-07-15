@@ -115,7 +115,8 @@ async fn stream_answer_live() {
         },
     )
     .await
-    .expect("model should stream a grounded answer from the fixture sources");
+    .expect("model should stream a grounded answer from the fixture sources")
+    .article;
     let elapsed = started.elapsed();
 
     let chunks = tokens.lock().unwrap().clone();

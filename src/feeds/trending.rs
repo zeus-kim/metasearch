@@ -143,14 +143,35 @@ impl EntityExtractor {
     }
 
     /// Extract entities from text using all script patterns
+    /// Crude Korean particle (조사) stripper: headline text glues particles
+    /// onto entities ("삼성전자가", "스마트폰을") — dropping one trailing
+    /// particle recovers the entity. Only strips when 2+ chars remain.
+    fn strip_korean_josa(s: &str) -> &str {
+        const JOSA: &[char] = &[
+            '가', '이', '은', '는', '을', '를', '의', '에', '와', '과', '도', '만', '로',
+        ];
+        let mut chars = s.chars();
+        if let Some(last) = chars.next_back() {
+            if JOSA.contains(&last) && chars.clone().count() >= 2 {
+                return chars.as_str();
+            }
+        }
+        s
+    }
+
     pub fn extract(&self, text: &str) -> Vec<Entity> {
         let mut entities = Vec::new();
         let mut seen = std::collections::HashSet::new();
 
         // Extract using all patterns
-        for (_name, pattern) in &self.patterns {
+        for (name, pattern) in &self.patterns {
             for cap in pattern.find_iter(text) {
-                let s = cap.as_str().to_string();
+                let matched = cap.as_str();
+                let s = if *name == "korean" {
+                    Self::strip_korean_josa(matched).to_string()
+                } else {
+                    matched.to_string()
+                };
                 if s.len() >= 2 && !self.stopwords.contains(&s) && !seen.contains(&s) {
                     seen.insert(s.clone());
                     entities.push(Entity {

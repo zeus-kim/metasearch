@@ -61,6 +61,7 @@ fn ai_settings() -> AiSettings {
         vision_model: "llava".into(),
         answer_top_n: 5,
         timeout_secs: 60,
+        ..AiSettings::default()
     }
 }
 
