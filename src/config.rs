@@ -11,6 +11,11 @@ use std::path::Path;
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Settings {
+    /// Run mode: `full` (default) or `proxy`. Proxy mode serves external-engine
+    /// search only — no feed polling, no embedding worker, and nothing written
+    /// to disk (discover-cache persistence and disk caches are disabled too).
+    #[serde(default = "default_mode")]
+    pub mode: String,
     #[serde(default)]
     pub search: SearchSettings,
     #[serde(default)]
@@ -503,10 +508,20 @@ pub struct FeedsSettings {
     /// Disabled feed URLs (user can disable specific feeds from the pool).
     #[serde(default)]
     pub disabled_feeds: Vec<String>,
+    /// Generate embeddings for indexed articles (needs a local Ollama server
+    /// with `bge-m3`). Off by default: embedding whole feeds is heavy and only
+    /// worth it on machines with headroom.
+    #[serde(default)]
+    pub embeddings: bool,
+    /// Hard cap on the on-disk article index, in MiB. 0 = unlimited. Enforced
+    /// during the hourly cleanup by evicting oldest articles first.
+    #[serde(default)]
+    pub max_disk_mb: u64,
 }
 
 fn default_feeds_retention_days() -> u32 { 7 }
 fn default_feeds_poll_interval() -> u64 { 15 }
+fn default_mode() -> String { "full".into() }
 
 impl Default for FeedsSettings {
     fn default() -> Self {
@@ -516,6 +531,8 @@ impl Default for FeedsSettings {
             poll_interval_mins: default_feeds_poll_interval(),
             languages: vec![],
             disabled_feeds: vec![],
+            embeddings: false,
+            max_disk_mb: 0,
         }
     }
 }
@@ -791,6 +808,7 @@ impl Default for AiSettings {
 impl Default for Settings {
     fn default() -> Self {
         let mut s = Settings {
+            mode: default_mode(),
             search: SearchSettings::default(),
             server: ServerSettings::default(),
             ai: AiSettings::default(),
@@ -913,12 +931,24 @@ impl Settings {
         if self.engines.is_empty() {
             self.engines = Self::default_engines();
         }
+        // Proxy mode promises zero disk writes — a disk result cache would
+        // break that, so fall back to the in-memory backend.
+        if self.is_proxy_only() && self.server.cache_backend == "disk" {
+            self.server.cache_backend = "memory".into();
+        }
+    }
+
+    /// True when running in proxy-only mode (external-engine search only, no
+    /// feed index, no embeddings, no disk writes).
+    pub fn is_proxy_only(&self) -> bool {
+        self.mode.eq_ignore_ascii_case("proxy")
     }
 
     /// Overlay environment variables onto the config (called after load).
     ///
     /// * `METASEARCH_AI_BASE_URL` — Ollama-compatible base URL for AI features.
     /// * `OPENAI_API_KEY` or `METASEARCH_AI_API_KEY` — API key for AI features.
+    /// * `METASEARCH_MODE` — `full` or `proxy` (see [`Settings::mode`]).
     pub fn apply_env(&mut self) {
         if let Ok(base) = std::env::var("METASEARCH_AI_BASE_URL") {
             let base = base.trim().to_string();
@@ -954,6 +984,17 @@ impl Settings {
                     self.server.port = p;
                 }
             }
+        }
+        if let Ok(mode) = std::env::var("METASEARCH_MODE") {
+            let mode = mode.trim().to_string();
+            if !mode.is_empty() {
+                self.mode = mode;
+            }
+        }
+        // Re-apply the proxy-mode cache fallback: the env override above can
+        // switch the mode after ensure_defaults() already ran.
+        if self.is_proxy_only() && self.server.cache_backend == "disk" {
+            self.server.cache_backend = "memory".into();
         }
         // Key-based engines: a key in the environment both supplies the
         // credential and auto-enables the engine (it stays off without one).

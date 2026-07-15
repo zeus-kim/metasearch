@@ -430,15 +430,32 @@ impl ArticleStore {
 
         // Embeddings reference articles with ON DELETE CASCADE, but rusqlite
         // connections don't enable foreign_keys by default — drop orphans.
-        conn.execute(
-            "DELETE FROM article_embeddings WHERE article_id NOT IN (SELECT id FROM articles)",
-            [],
-        )?;
+        Self::drop_orphaned_embeddings(&conn)?;
 
         // Optimize database
         conn.execute_batch("PRAGMA optimize;")?;
 
         Ok(deleted)
+    }
+
+    /// Remove embedding rows whose article is gone. The `article_embeddings`
+    /// table is created by [`super::embeddings::EmbeddingStore`], so it only
+    /// exists once embeddings have been enabled at least once — skip otherwise.
+    fn drop_orphaned_embeddings(conn: &rusqlite::Connection) -> Result<(), rusqlite::Error> {
+        let has_table: bool = conn
+            .query_row(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='article_embeddings'",
+                [],
+                |_| Ok(true),
+            )
+            .unwrap_or(false);
+        if has_table {
+            conn.execute(
+                "DELETE FROM article_embeddings WHERE article_id NOT IN (SELECT id FROM articles)",
+                [],
+            )?;
+        }
+        Ok(())
     }
 
     /// Bytes of live data in the database (page count minus freelist), i.e.
@@ -467,9 +484,13 @@ impl ArticleStore {
                      (SELECT id FROM articles ORDER BY indexed_at ASC LIMIT 500)",
                 [],
             )?;
-            conn.execute(
-                "DELETE FROM article_embeddings WHERE article_id NOT IN (SELECT id FROM articles)",
-                [],
+            Self::drop_orphaned_embeddings(&conn)?;
+            // External-content FTS5 tables only append delete markers on
+            // DELETE; live pages don't shrink until the index is merged.
+            // Without this the loop can't observe its own progress.
+            conn.execute_batch(
+                "INSERT INTO articles_fts(articles_fts) VALUES('optimize');
+                 INSERT INTO articles_fts_trigram(articles_fts_trigram) VALUES('optimize');",
             )?;
             drop(conn);
             if deleted == 0 {
@@ -873,5 +894,91 @@ mod tests {
         assert!(words.contains(&"apple".to_string()));
         assert!(words.contains(&"iphone".to_string()));
         assert!(!words.contains(&"the".to_string()));
+    }
+
+    fn test_item(i: usize, desc_len: usize) -> RssItem {
+        let now = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .map(|d| d.as_secs() as i64)
+            .unwrap_or(0);
+        RssItem {
+            title: format!("Article {i}"),
+            url: format!("https://example.com/{i}"),
+            description: "x".repeat(desc_len),
+            published: Some(now - i as i64),
+            source: "test".into(),
+            thumbnail: None,
+            category: None,
+            language: Some("en".into()),
+            feed_type: None,
+            country: None,
+            normalized_category: None,
+            tier: 2,
+        }
+    }
+
+    #[test]
+    fn disk_cap_evicts_oldest_until_under_cap() {
+        let store = ArticleStore::open_memory(7).unwrap();
+        let items: Vec<RssItem> = (0..1200).map(|i| test_item(i, 5_000)).collect();
+        let inserted = store.insert_articles(&items).unwrap();
+        assert_eq!(inserted, 1200);
+        assert!(store.disk_usage_bytes().unwrap() > 3 * 1024 * 1024);
+
+        // Cap 0 is unlimited: must be a no-op.
+        assert_eq!(store.enforce_disk_cap(0).unwrap(), 0);
+        assert_eq!(store.stats().unwrap().total_articles, 1200);
+
+        let evicted = store.enforce_disk_cap(3).unwrap();
+        let remaining = store.stats().unwrap().total_articles;
+        assert!(evicted > 0);
+        assert!(remaining > 0, "cap should trim, not wipe the index");
+        assert!(store.disk_usage_bytes().unwrap() <= 3 * 1024 * 1024);
+        assert_eq!(remaining + evicted, 1200);
+    }
+
+    #[test]
+    fn cleanup_ok_without_embeddings_table() {
+        // A DB where embeddings were never enabled has no article_embeddings
+        // table — cleanup and the disk cap must still work.
+        let store = ArticleStore::open_memory(7).unwrap();
+        store.insert_articles(&[test_item(1, 10)]).unwrap();
+        store.cleanup().unwrap();
+        store.enforce_disk_cap(1).unwrap();
+    }
+
+    #[test]
+    fn cleanup_drops_orphaned_embeddings() {
+        let store = ArticleStore::open_memory(7).unwrap();
+        store.insert_articles(&[test_item(1, 10)]).unwrap();
+        {
+            // Simulate a DB where EmbeddingStore ran at least once. FK
+            // enforcement is on in this build, so switch it off to plant the
+            // orphan row (mimicking a row left behind by another connection).
+            let conn = store.conn.lock().unwrap();
+            conn.execute_batch("PRAGMA foreign_keys=OFF;").unwrap();
+            conn.execute_batch(
+                "CREATE TABLE IF NOT EXISTS article_embeddings (
+                     article_id INTEGER PRIMARY KEY,
+                     embedding BLOB NOT NULL,
+                     model TEXT DEFAULT 'bge-m3',
+                     created_at INTEGER NOT NULL,
+                     FOREIGN KEY(article_id) REFERENCES articles(id) ON DELETE CASCADE
+                 );",
+            )
+            .unwrap();
+            conn.execute(
+                "INSERT INTO article_embeddings (article_id, embedding, created_at)
+                 VALUES (999, x'00', strftime('%s','now'))",
+                [],
+            )
+            .unwrap();
+        }
+        store.cleanup().unwrap();
+        let conn = store.conn.lock().unwrap();
+        let orphans: i64 = conn
+            .query_row("SELECT COUNT(*) FROM article_embeddings", [], |r| r.get(0))
+            .unwrap();
+        assert_eq!(orphans, 0);
     }
 }

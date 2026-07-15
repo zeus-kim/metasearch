@@ -55,6 +55,7 @@ fn get_global_feed_cache(settings: &Settings) -> std::sync::Arc<crate::feeds::Fe
             poll_interval_mins: settings.feeds.poll_interval_mins,
             timeout_secs: 30,
             user_agent: "Metasearch/1.0".into(),
+            max_disk_mb: settings.feeds.max_disk_mb,
         };
         std::sync::Arc::new(crate::feeds::FeedCache::new(config).expect("Failed to init feed cache"))
     }).clone()
@@ -399,14 +400,23 @@ pub async fn serve(settings: Settings, open_browser: bool) -> std::io::Result<()
         metrics: Metrics::new(),
     });
 
+    // Proxy-only mode: external-engine search only — no feed poller, no
+    // embedding worker, no discover-cache persistence, zero disk writes.
+    let proxy_only = ctx.settings().is_proxy_only();
+    if proxy_only {
+        eprintln!("[Mode] proxy-only: feed indexing, embeddings and disk persistence disabled");
+    }
+
     // Load discover cache from disk on startup
     const DISCOVER_CACHE_PATH: &str = "data/discover_cache.json";
-    ctx.rt.discover_snapshot_cache.load_from_disk(DISCOVER_CACHE_PATH);
+    if !proxy_only {
+        ctx.rt.discover_snapshot_cache.load_from_disk(DISCOVER_CACHE_PATH);
+    }
 
     let limiter = Arc::new(Semaphore::new(max_conns));
 
     // Background: periodic discover cache save (every 5 minutes)
-    {
+    if !proxy_only {
         let save_ctx = ctx.clone();
         tokio::spawn(async move {
             loop {
@@ -429,7 +439,7 @@ pub async fn serve(settings: Settings, open_browser: bool) -> std::io::Result<()
     }
 
     // Background: RSS feed poller (standalone mode)
-    {
+    if !proxy_only {
         let settings = ctx.settings();
         if settings.feeds.enabled {
             // Share the feed cache with local_feeds engine
@@ -456,10 +466,15 @@ pub async fn serve(settings: Settings, open_browser: bool) -> std::io::Result<()
             poller.run().await;
         });
 
-        // Start embedding worker (background, separate from indexing)
+        // Start embedding worker (background, separate from indexing).
+        // Explicitly opt-in via `feeds.embeddings` — a reachable Ollama alone
+        // is not consent to embed every indexed article.
         let embed_ctx = Arc::clone(&ctx);
         tokio::spawn(async move {
             let settings = embed_ctx.settings();
+            if !settings.feeds.enabled || !settings.feeds.embeddings {
+                return;
+            }
             let ollama_url = "http://localhost:11434".to_string();
 
             // Check if Ollama is available before starting embedding worker
@@ -523,19 +538,20 @@ pub async fn serve(settings: Settings, open_browser: bool) -> std::io::Result<()
     );
 
     // Background: warm Discover cache for common categories (initial + periodic refresh)
-    // DISABLED: warming competes with user requests for DB - use disk cache instead
-    if false && ctx.settings().search.news.discover_cache_ttl_hours > 0 {
+    if !proxy_only && ctx.settings().search.news.discover_cache_ttl_hours > 0 {
         let warm_ctx = ctx.clone();
         tokio::spawn(async move {
-            // Initial warm
+            // Wait for boost phase to start, then warm discover cache
+            tokio::time::sleep(std::time::Duration::from_secs(60)).await;
+            eprintln!("[Discover] Starting initial cache warm...");
             warm_discover_cache(&warm_ctx).await;
 
-            // Periodic refresh every 3 minutes
-            let mut interval = tokio::time::interval(std::time::Duration::from_secs(180));
+            // Periodic refresh every 10 minutes
+            let mut interval = tokio::time::interval(std::time::Duration::from_secs(600));
             interval.tick().await; // skip first immediate tick
             loop {
                 interval.tick().await;
-                eprintln!("[metasearch] Refreshing Discover cache...");
+                eprintln!("[Discover] Refreshing cache...");
                 warm_discover_cache(&warm_ctx).await;
             }
         });
@@ -914,6 +930,7 @@ async fn route(
         "/api/v1/standalone_feed" => standalone_feed_json(query, ctx).await,
         "/api/v1/feed_pool" => feed_pool_json(ctx).await,
         "/api/v1/feed_manager/stats" => feed_manager_stats_json(ctx).await,
+        "/api/v1/storage" => storage_json(ctx),
         // "/api/v1/local_trending" => local_trending_json(query, ctx).await, // disabled: hardcoded filters don't scale
         "/api/v1/briefing" => briefing_proxy(query).await,
         "/api/v1/briefing/audio" => briefing_audio_proxy(query).await,
@@ -2551,8 +2568,15 @@ async fn feed_pool_json(ctx: &Ctx) -> Response {
 }
 
 /// `GET /api/v1/feed_manager/stats` — Feed manager statistics.
-async fn feed_manager_stats_json(_ctx: &Ctx) -> Response {
+async fn feed_manager_stats_json(ctx: &Ctx) -> Response {
     use std::sync::OnceLock;
+
+    // Proxy mode: report zeros instead of lazily creating feeds.db on disk.
+    if ctx.settings().is_proxy_only() {
+        return Response::json(
+            r#"{"total_feeds":0,"active_feeds":0,"total_documents":0}"#.into(),
+        );
+    }
 
     static MANAGER: OnceLock<crate::feeds::FeedManager> = OnceLock::new();
 
@@ -2568,6 +2592,62 @@ async fn feed_manager_stats_json(_ctx: &Ctx) -> Response {
         "total_documents": stats.total_documents,
     });
     Response::json(serde_json::to_string(&json).unwrap_or_else(|_| r#"{}"#.into()))
+}
+
+/// `GET /api/v1/storage` — on-disk footprint of the feed index and caches,
+/// plus the retention/cap settings that bound it. Lets clients (e.g. a
+/// desktop app embedding this server) show disk usage next to the toggles.
+fn storage_json(ctx: &Ctx) -> Response {
+    fn file_bytes(path: &std::path::Path) -> u64 {
+        std::fs::metadata(path).map(|m| m.len()).unwrap_or(0)
+    }
+    fn dir_bytes(path: &std::path::Path) -> u64 {
+        let Ok(entries) = std::fs::read_dir(path) else {
+            return 0;
+        };
+        entries
+            .flatten()
+            .map(|e| {
+                let p = e.path();
+                if p.is_dir() {
+                    dir_bytes(&p)
+                } else {
+                    file_bytes(&p)
+                }
+            })
+            .sum()
+    }
+
+    let settings = ctx.settings();
+    let data_dir = std::env::var("METASEARCH_DATA_DIR").unwrap_or_else(|_| "data".to_string());
+    let data_path = std::path::Path::new(&data_dir);
+    // WAL/SHM sidecars count toward the real footprint.
+    let articles_db_bytes: u64 = ["articles.db", "articles.db-wal", "articles.db-shm"]
+        .iter()
+        .map(|f| file_bytes(&data_path.join(f)))
+        .sum();
+    let discover_cache_bytes = file_bytes(&data_path.join("discover_cache.json"));
+    let cache_dir_bytes = dir_bytes(std::path::Path::new(&settings.server.cache_dir));
+    // Never initialize the global feed cache just to report stats — proxy
+    // mode must not create the DB. Only read counts if the poller opened it.
+    let articles = GLOBAL_FEED_CACHE
+        .get()
+        .and_then(|c| c.db_stats())
+        .map(|s| s.total_articles);
+    let json = serde_json::json!({
+        "mode": if settings.is_proxy_only() { "proxy" } else { "full" },
+        "data_dir": data_dir,
+        "articles_db_bytes": articles_db_bytes,
+        "discover_cache_bytes": discover_cache_bytes,
+        "cache_dir_bytes": cache_dir_bytes,
+        "total_bytes": articles_db_bytes + discover_cache_bytes + cache_dir_bytes,
+        "articles": articles,
+        "feeds_enabled": settings.feeds.enabled,
+        "embeddings": settings.feeds.embeddings,
+        "retention_days": settings.feeds.retention_days,
+        "max_disk_mb": settings.feeds.max_disk_mb,
+    });
+    Response::json(json.to_string())
 }
 
 /// Simple cache for trending results (5 minute TTL)
